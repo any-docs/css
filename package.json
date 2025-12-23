@@ -5,6 +5,9 @@
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
   },
+  "dependencies": {
+    "oxc-minify": "^0.104.0"
+  },
   "devDependencies": {
     "vitepress": "^2.0.0-alpha.15"
   },
