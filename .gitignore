@@ -1,5 +1,7 @@
 .vitepress/dist
 .idea
+.env
+.turbo
 node_modules
 
 **/.DS_Store
