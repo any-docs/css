@@ -7,5 +7,13 @@
   },
   "devDependencies": {
     "vitepress": "^2.0.0-alpha.15"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@latest"
+    }
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@latest"
   }
 }
