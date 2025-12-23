@@ -1,0 +1,65 @@
+---
+title: "CSS: Cascading Style Sheets"
+titleTemplate: "AnyDocs"
+short-title: CSS
+slug: Web/CSS
+page-type: landing-page
+sidebar: cssref
+---
+
+# {{ $frontmatter.title }}
+
+**Cascading Style Sheets** (**CSS**) is a [stylesheet](/en-US/docs/Web/API/StyleSheet) language used to describe the presentation of a document written in [HTML](/en-US/docs/Web/HTML) or [XML](/en-US/docs/Web/XML/Guides/XML_introduction) (including XML dialects such as [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML) or {{Glossary("XHTML")}}). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+
+CSS is among the core languages of the **open web** and is standardized across Web browsers according to [W3C specifications](https://www.w3.org/Style/CSS/#specs). Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now just "CSS" with individual CSS modules having version numbers.
+
+After CSS 2.1, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to [develop and release recommendations separately per module](https://www.w3.org/Style/CSS/current-work). Instead of versioning the CSS specification, W3C now periodically takes a snapshot of [the latest stable state of the CSS specification](https://www.w3.org/TR/css/) and individual modules progress. CSS modules now have version numbers, or levels, such as [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/).
+
+## Beginner's tutorials
+
+Our [learn web development core modules](/en-US/docs/Learn_web_development/Core) contain modern, up-to-date tutorials covering CSS fundamentals.
+
+- [Your first website: Styling the content](/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content)
+  - This article provides a brief tour of what CSS is and how to use it, aimed at people who are completely new to web development.
+- [CSS styling basics](/en-US/docs/Learn_web_development/Core/Styling_basics)
+  - This module provides all the CSS fundamentals you'll need to start learning the technology effectively, including syntax, features, and techniques.
+- [CSS text styling](/en-US/docs/Learn_web_development/Core/Text_styling)
+  - Here we look at CSS text fundamentals including setting font, boldness, italics, line and letter spacing, and drop shadows. We round off the module by looking at applying custom fonts to your page, and styling lists and links.
+- [CSS layout](/en-US/docs/Learn_web_development/Core/CSS_layout)
+  - This module looks at floats, positioning, other modern layout tools, and building responsive designs that will adapt to different devices, screen sizes, and resolutions.
+
+## Reference
+
+The [CSS reference](/en-US/docs/Web/CSS/Reference) is an exhaustive reference for seasoned Web developers, describing every property and concept of CSS, including:
+
+- The [syntax and forms of the language](/guides/Syntax/Introduction)
+- [Specificity](/guides/Cascade/Specificity), [inheritance](/guides/Cascade/Inheritance), and [the cascade](/guides/Cascade/Introduction)
+- [CSS selectors](/guides/Selectors), including [pseudo-elements](/guides/Pseudo-elements), [nesting](/guides/Nesting), [scoping](/guides/Scoping) and [shadow parts](/guides/Shadow_parts)
+- [CSS at-rules](/guides/Syntax/At-rules), including [media](/guides/Media_queries) and [container](/guides/Containment) queries
+- [CSS values and units](/guides/Values_and_units) module, including [numeric data types](/guides/Values_and_units/Numeric_data_types), [textual data types](/guides/Values_and_units/Textual_data_types) and [functional notations](/reference/values/Functions)
+- [Box model](/guides/Box_model/Introduction) and [margin collapse](/guides/Box_model/Margin_collapsing)
+- The [containing block](/guides/Display/Containing_block)
+- [Stacking](/guides/Positioned_layout/Stacking_context) and [block-formatting](/guides/Display/Block_formatting_context) contexts
+- [Initial](/guides/Cascade/Property_value_processing#initial_value), [computed](/guides/Cascade/Property_value_processing#computed_value), [used](/guides/Cascade/Property_value_processing#used_value), and [actual](/guides/Cascade/Property_value_processing#actual_value) values
+- [CSS shorthand properties](/guides/Cascade/Shorthand_properties)
+- [CSS flexible box](/guides/Flexible_box_layout), [multi-column](/guides/Multicol_layout) and [grid](/guides/Grid_layout) layout
+- [Animation](/guides/Animations), [transitions](/guides/Transitions), and [transforms](/guides/Transforms)
+
+## Cookbook
+
+The [CSS layout cookbook](/en-US/docs/Web/CSS/How_to/Layout_cookbook) aims to bring together recipes for common layout patterns, things you might need to implement in your sites. In addition to providing code you can use as a starting point in your projects, these recipes highlight the different ways layout specifications can be used and the choices you can make as a developer.
+
+## Tools for CSS development
+
+- You can use the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to check if your CSS is valid. This is an invaluable debugging tool.
+- [Firefox Developer Tools](https://firefox-source-docs.mozilla.org/devtools-user/index.html) lets you view and edit a page's live CSS via the [Inspector](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/index.html) and [Style Editor](https://firefox-source-docs.mozilla.org/devtools-user/style_editor/index.html) tools.
+- The [Web Developer extension](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) for Firefox lets you track and edit live CSS on watched sites.
+
+## Meta bugs
+
+- Firefox: [Firefox bug 1323667](https://bugzil.la/1323667)
+
+## See also
+
+- Web languages to which CSS is often applied: [HTML](/en-US/docs/Web/HTML), [SVG](/en-US/docs/Web/SVG), [MathML](/en-US/docs/Web/MathML), {{Glossary("XHTML")}}, and [XML](/en-US/docs/Web/XML/Guides/XML_introduction).
+- [Stack Overflow questions about CSS](https://stackoverflow.com/questions/tagged/css)

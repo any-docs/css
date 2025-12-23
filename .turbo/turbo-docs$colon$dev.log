@@ -1,0 +1,190 @@
+
+[0m[2m[35m$[0m [2m[1mvitepress dev[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mvitepress[22m v2.0.0-alpha.15[39m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh[22m[2m to show help[22m
+[33m
+(!) Found dead link [36m/en-US/docs/Web/API/StyleSheet[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Web/HTML[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Web/XML/Guides/XML_introduction[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Web/SVG[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Web/MathML[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Learn_web_development/Core[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Learn_web_development/Core/Styling_basics[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Learn_web_development/Core/Text_styling[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Learn_web_development/Core/CSS_layout[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Web/CSS/Reference[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Syntax/Introduction[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Cascade/Specificity[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Cascade/Inheritance[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Cascade/Introduction[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Selectors[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Pseudo-elements[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Nesting[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Scoping[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Shadow_parts[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Syntax/At-rules[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Media_queries[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Containment[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Values_and_units[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Values_and_units/Numeric_data_types[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Values_and_units/Textual_data_types[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/reference/values/Functions[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Box_model/Introduction[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Box_model/Margin_collapsing[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Display/Containing_block[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Positioned_layout/Stacking_context[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Display/Block_formatting_context[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Cascade/Property_value_processing[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Cascade/Shorthand_properties[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Flexible_box_layout[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Multicol_layout[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Grid_layout[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Animations[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Transitions[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/css/guides/Transforms[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+[33m(!) Found dead link [36m/en-US/docs/Web/CSS/How_to/Layout_cookbook[33m in file [37m[2m/Users/dluague/Code/anydocs/docs/css/content/index.md[22m[33m[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m11:40:01 AM[22m [36m[1m[vitepress][22m[39m [32m.vitepress/config.mts changed, restarting server...
+[39m
+[31mfailed to load config from /Users/dluague/Code/anydocs/docs/css/.vitepress/config.mts[39m
+[31mfailed to resolve config. error:[39m
+Build failed with 2 errors:
+
+[31m[UNRESOLVED_IMPORT] Error:[0m Could not resolve './sidebars/html' in .vitepress/config.mts
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m .vitepress/config.mts:2:41 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249mH[0m[38;5;249mT[0m[38;5;249mM[0m[38;5;249mL[0m[38;5;249mS[0m[38;5;249mi[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mb[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mI[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"./sidebars/html"[38;5;249m;[0m
+ [38;5;240m  │[0m                                         ────────┬────────  
+ [38;5;240m  │[0m                                                 ╰────────── Module not found.
+[38;5;246m───╯[0m
+
+[31m[UNRESOLVED_IMPORT] Error:[0m Could not resolve './sidebars/css' in .vitepress/config.mts
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m .vitepress/config.mts:3:40 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m3 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249mC[0m[38;5;249mS[0m[38;5;249mS[0m[38;5;249mS[0m[38;5;249mi[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mb[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mI[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"./sidebars/css"[38;5;249m;[0m
+ [38;5;240m  │[0m                                        ────────┬───────  
+ [38;5;240m  │[0m                                                ╰───────── Module not found.
+[38;5;246m───╯[0m
+
+Error: Build failed with 2 errors:
+
+[31m[UNRESOLVED_IMPORT] Error:[0m Could not resolve './sidebars/html' in .vitepress/config.mts
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m .vitepress/config.mts:2:41 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m2 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249mH[0m[38;5;249mT[0m[38;5;249mM[0m[38;5;249mL[0m[38;5;249mS[0m[38;5;249mi[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mb[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mI[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"./sidebars/html"[38;5;249m;[0m
+ [38;5;240m  │[0m                                         ────────┬────────  
+ [38;5;240m  │[0m                                                 ╰────────── Module not found.
+[38;5;246m───╯[0m
+
+[31m[UNRESOLVED_IMPORT] Error:[0m Could not resolve './sidebars/css' in .vitepress/config.mts
+   [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m .vitepress/config.mts:3:40 [38;5;246m][0m
+   [38;5;246m│[0m
+ [38;5;246m3 │[0m [38;5;249mi[0m[38;5;249mm[0m[38;5;249mp[0m[38;5;249mo[0m[38;5;249mr[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249m{[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249ma[0m[38;5;249ms[0m[38;5;249m [0m[38;5;249mC[0m[38;5;249mS[0m[38;5;249mS[0m[38;5;249mS[0m[38;5;249mi[0m[38;5;249md[0m[38;5;249me[0m[38;5;249mb[0m[38;5;249ma[0m[38;5;249mr[0m[38;5;249mI[0m[38;5;249mt[0m[38;5;249me[0m[38;5;249mm[0m[38;5;249ms[0m[38;5;249m}[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249mr[0m[38;5;249mo[0m[38;5;249mm[0m[38;5;249m [0m"./sidebars/css"[38;5;249m;[0m
+ [38;5;240m  │[0m                                        ────────┬───────  
+ [38;5;240m  │[0m                                                ╰───────── Module not found.
+[38;5;246m───╯[0m
+
+    at aggregateBindingErrorsIntoJsError (file:///Users/dluague/Code/anydocs/node_modules/rolldown/dist/shared/bindingify-input-options-Bk0BBr2s.mjs:56:18)
+    at unwrapBindingResult (file:///Users/dluague/Code/anydocs/node_modules/rolldown/dist/shared/bindingify-input-options-Bk0BBr2s.mjs:31:128)
+    at #build (file:///Users/dluague/Code/anydocs/node_modules/rolldown/dist/shared/rolldown-build-BEU8N80I.mjs:2260:34)
+    at async bundleConfigFile (file:///Users/dluague/Code/anydocs/node_modules/vite/dist/node/chunks/node.js:35435:17)
+    at async bundleAndLoadConfigFile (file:///Users/dluague/Code/anydocs/node_modules/vite/dist/node/chunks/node.js:35345:18)
+    at async loadConfigFromFile (file:///Users/dluague/Code/anydocs/node_modules/vite/dist/node/chunks/node.js:35314:42)
+    at async resolveUserConfig (file:///Users/dluague/Code/anydocs/node_modules/vitepress/dist/node/chunk-BssBsV50.js:18518:27)
+    at async resolveConfig (file:///Users/dluague/Code/anydocs/node_modules/vitepress/dist/node/chunk-BssBsV50.js:18409:48)
+    at async file:///Users/dluague/Code/anydocs/node_modules/vitepress/dist/node/cli.js:435:22
+    at async handleHMRUpdate (file:///Users/dluague/Code/anydocs/node_modules/vite/dist/node/chunks/node.js:26937:28)
