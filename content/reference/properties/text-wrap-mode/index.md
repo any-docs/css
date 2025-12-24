@@ -6,10 +6,10 @@ browser-compat: css.properties.text-wrap-mode
 sidebar: cssref
 ---
 
-The **`text-wrap-mode`** [CSS](/en-US/docs/Web/CSS) property controls whether the text inside an element is wrapped. The different values provide alternate ways of wrapping the content of a block element. It can also be set, and reset, using the {{CSSXRef("text-wrap")}} shorthand or the {{CSSXRef("white-space")}} shorthand.
+The **`text-wrap-mode`** [CSS](/en-US/docs/Web/CSS) property controls whether the text inside an element is wrapped. The different values provide alternate ways of wrapping the content of a block element. It can also be set, and reset, using the `text-wrap` shorthand or the `white-space` shorthand.
 
 > [!NOTE]
-> The {{CSSxRef("white-space-collapse")}} and `text-wrap-mode` properties can be declared together using the {{CSSxRef("white-space")}} shorthand property.
+> The `white-space-collapse` and `text-wrap-mode` properties can be declared together using the `white-space` shorthand property.
 
 > [!NOTE]
 > The name of this property is a placeholder, pending the CSSWG finding a better name.
@@ -154,5 +154,5 @@ In this example the content will **not** flow over to the next line so that it f
 
 ## See also
 
-- {{CSSxRef("text-wrap")}}
-- {{CSSxRef("text-wrap-style")}}
+- `text-wrap`
+- `text-wrap-style`

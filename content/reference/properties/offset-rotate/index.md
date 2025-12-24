@@ -6,7 +6,7 @@ browser-compat: css.properties.offset-rotate
 sidebar: cssref
 ---
 
-The **`offset-rotate`** [CSS](/en-US/docs/Web/CSS) property defines the orientation/direction of the element as it is positioned along the {{cssxref("offset-path")}}.
+The **`offset-rotate`** [CSS](/en-US/docs/Web/CSS) property defines the orientation/direction of the element as it is positioned along the `offset-path`.
 
 {{InteractiveExample("CSS Demo: offset-rotate")}}
 
@@ -114,11 +114,11 @@ offset-rotate: unset;
 ```
 
 - `auto`
-  - The element is rotated by the angle of the direction of the {{cssxref("offset-path")}}, relative to the positive x-axis. This is the default value.
-- {{cssxref("angle")}}
+  - The element is rotated by the angle of the direction of the `offset-path`, relative to the positive x-axis. This is the default value.
+- `angle`
   - The element has a constant clockwise rotation transformation applied to it by the specified rotation angle.
 - `auto <angle>`
-  - If `auto` is followed by an {{cssxref("angle")}}, the computed value of the angle is added to the computed value of `auto`.
+  - If `auto` is followed by an `angle`, the computed value of the angle is added to the computed value of `auto`.
 - `reverse`
   - The element is rotated similar to `auto`, except it faces the opposite direction. It is the same as specifying a value of `auto 180deg`.
 
@@ -186,8 +186,8 @@ div:nth-child(3) {
 
 ## See also
 
-- {{cssxref("offset")}}
-- {{cssxref("offset-anchor")}}
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-path")}}
-- {{cssxref("offset-position")}}
+- `offset`
+- `offset-anchor`
+- `offset-distance`
+- `offset-path`
+- `offset-position`

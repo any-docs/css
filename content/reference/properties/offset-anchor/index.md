@@ -6,7 +6,7 @@ browser-compat: css.properties.offset-anchor
 sidebar: cssref
 ---
 
-The **`offset-anchor`** [CSS](/en-US/docs/Web/CSS) property specifies the point inside the box of an element traveling along an {{cssxref("offset-path")}} that is actually moving along the path.
+The **`offset-anchor`** [CSS](/en-US/docs/Web/CSS) property specifies the point inside the box of an element traveling along an `offset-path` that is actually moving along the path.
 
 {{InteractiveExample("CSS Demo: offset-anchor")}}
 
@@ -128,9 +128,9 @@ offset-anchor: unset;
 ### Values
 
 - `auto`
-  - `offset-anchor` is given the same value as the element's {{cssxref("transform-origin")}}, unless {{cssxref("offset-path")}} is `none`, in which case it takes its value from {{cssxref("offset-position")}}.
+  - `offset-anchor` is given the same value as the element's `transform-origin`, unless `offset-path` is `none`, in which case it takes its value from `offset-position`.
 - `<position>`
-  - A {{cssxref("&lt;position&gt;")}} defines an x/y coordinate, to place an item relative to the edges of an element's box. It can be defined using one to four values. For more specifics, see the {{cssxref("&lt;position&gt;")}} and {{cssxref("background-position")}} reference pages. Note that the 3-value position syntax does not work for any usage of `<position>`, except for in `background(-position)`.
+  - A `&lt;position&gt;` defines an x/y coordinate, to place an item relative to the edges of an element's box. It can be defined using one to four values. For more specifics, see the `&lt;position&gt;` and `background-position` reference pages. Note that the 3-value position syntax does not work for any usage of `<position>`, except for in `background(-position)`.
 
 ## Formal definition
 
@@ -144,7 +144,7 @@ offset-anchor: unset;
 
 ### Setting various offset-anchor values
 
-In the following example, we have three {{htmlelement("div")}} elements nested in {{htmlelement("section")}} elements. Each `<div>` is given the same {{cssxref("offset-path")}} (a horizontal line 200 pixels long) and animated to move along it. The three are then given different {{cssxref("background-color")}} and `offset-anchor` values.
+In the following example, we have three {{htmlelement("div")}} elements nested in {{htmlelement("section")}} elements. Each `<div>` is given the same `offset-path` (a horizontal line 200 pixels long) and animated to move along it. The three are then given different `background-color` and `offset-anchor` values.
 
 Each `<section>` has been styled with a linear gradient to give it a horizontal line running through its center, to give you a visual display of where the `<div>`'s offset paths are running.
 
@@ -226,7 +226,7 @@ section {
 
 ## See also
 
-- {{cssxref("offset")}}
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-rotate")}}
+- `offset`
+- `offset-distance`
+- `offset-rotate`
 - [SVG `<path>`](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths)

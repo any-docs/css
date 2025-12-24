@@ -117,28 +117,28 @@ The `clip-path` property is specified as one or a combination of the values list
 ### Values
 
 - `<clip-source>`
-  - A {{cssxref("url_value", "&lt;url&gt;")}} referencing an [SVG](/en-US/docs/Web/SVG) {{SVGElement("clipPath")}} element.
-- {{cssxref("basic-shape")}}
+  - A `&lt;url&gt;` referencing an [SVG](/en-US/docs/Web/SVG) {{SVGElement("clipPath")}} element.
+- `basic-shape`
   - A shape whose size and position is defined by the `<geometry-box>` value. If no geometry box is specified, the `border-box` will be used as the reference box. One of:
-    - {{cssxref("basic-shape/inset","inset()")}}
+    - `inset()`
       - Defines an inset rectangle.
-    - {{cssxref("basic-shape/circle","circle()")}}
+    - `circle()`
       - Defines a circle using a radius and a position.
-    - {{cssxref("basic-shape/ellipse","ellipse()")}}
+    - `ellipse()`
       - Defines an ellipse using two radii and a position.
-    - {{cssxref("basic-shape/polygon","polygon()")}}
+    - `polygon()`
       - Defines a polygon using an SVG filling rule and a set of vertices.
-    - {{cssxref("basic-shape/path","path()")}}
+    - `path()`
       - Defines a shape using an optional SVG filling rule and an SVG path definition.
-    - {{cssxref("basic-shape/rect","rect()")}}
+    - `rect()`
       - Defines a rectangle using the specified distances from the edges of the reference box.
-    - {{cssxref("basic-shape/shape","shape()")}}
+    - `shape()`
       - Defines a shape using an optional SVG filling rule and shape commands for lines, curves, and arcs.
-    - {{cssxref("basic-shape/xywh","xywh()")}}
+    - `xywh()`
       - Defines a rectangle using the specified distances from the top and left edges of the reference box and the specified width and height of the rectangle.
 
 - `<geometry-box>`
-  - If specified in combination with a `<basic-shape>`, this value defines the reference box for the basic shape. If specified by itself, it causes the edges of the specified box, including any corner shaping (such as a {{cssxref("border-radius")}}), to be the clipping path. The geometry box can be one of the following values:
+  - If specified in combination with a `<basic-shape>`, this value defines the reference box for the basic shape. If specified by itself, it causes the edges of the specified box, including any corner shaping (such as a `border-radius`), to be the clipping path. The geometry box can be one of the following values:
     - `margin-box`
       - Uses the [margin box](/guides/Shapes/From_box_values#margin-box) as the reference box.
     - `border-box`
@@ -158,7 +158,7 @@ The `clip-path` property is specified as one or a combination of the values list
   - No clipping path is created.
 
 > [!NOTE]
-> A computed value other than **`none`** results in the creation of a new [stacking context](/guides/Positioned_layout/Stacking_context) the same way that CSS {{cssxref("opacity")}} does for values other than `1`.
+> A computed value other than **`none`** results in the creation of a new [stacking context](/guides/Positioned_layout/Stacking_context) the same way that CSS `opacity` does for values other than `1`.
 
 ## Formal definition
 
@@ -172,7 +172,7 @@ The `clip-path` property is specified as one or a combination of the values list
 
 ### Shapes and geometry boxes
 
-In this example, two triangles are created by defining a `polygon()` as the clip path on {{htmlelement("div")}} elements. Each one has a solid colored background and a thick {{cssxref("border")}}. The second `<div>` element has its reference box set to `content-box`:
+In this example, two triangles are created by defining a `polygon()` as the clip path on {{htmlelement("div")}} elements. Each one has a solid colored background and a thick `border`. The second `<div>` element has its reference box set to `content-box`:
 
 #### HTML
 
@@ -215,7 +215,7 @@ For the first triangle, we didn't specify a reference box; it therefore defaults
 
 ### `shape()` versus `path()` functions
 
-Expanding on the previous example, we create the same triangle with different `<basic-shape>` values, demonstrating how the {{cssxref("basic-shape/shape", "shape()")}} and {{cssxref("basic-shape/path", "path()")}} functions can also be used to create clipping paths, with `shape()` being a more flexible solution.
+Expanding on the previous example, we create the same triangle with different `<basic-shape>` values, demonstrating how the `shape()` and `path()` functions can also be used to create clipping paths, with `shape()` being a more flexible solution.
 
 We use `path()` to define the first element's clipping path, and `shape()` for the second, both using the default `border-box` as their reference box:
 
@@ -233,7 +233,7 @@ As a result, the path defined with the shape() function grows with the element, 
 
 {{EmbedLiveSample("shapes2", "", "230")}}
 
-Because the `shape()` function allows using {{cssxref("percentage")}} values (and [custom properties](/reference/properties/--*) too), it is more robust.
+Because the `shape()` function allows using `percentage` values (and [custom properties](/reference/properties/--*) too), it is more robust.
 
 We'll demonstrate this by increasing the size of the underlying element:
 
@@ -278,7 +278,7 @@ We include two {{htmlElement("div")}} elements and an `<svg>` element containing
 
 #### CSS
 
-We use [flexbox](/guides/Flexible_box_layout) to allow our elements to sit side-by-side with a gap between them, if there is space available. We define a {{cssxref("gradient/conic-gradient", "conic-gradient()")}} background image on both `<div>` elements, providing an interesting visual to clip, along with a {{cssxref("border")}}.
+We use [flexbox](/guides/Flexible_box_layout) to allow our elements to sit side-by-side with a gap between them, if there is space available. We define a `conic-gradient()` background image on both `<div>` elements, providing an interesting visual to clip, along with a `border`.
 
 ```css
 body {
@@ -304,7 +304,7 @@ div {
 }
 ```
 
-We then set the `id` of the `<clipPath>` as the `<clip-source>`. We center the text in the `cross` example vertically using {{cssxref("align-content")}}, as otherwise the text would be clipped, as is happening in the `window` example.
+We then set the `id` of the `<clipPath>` as the `<clip-source>`. We center the text in the `cross` example vertically using `align-content`, as otherwise the text would be clipped, as is happening in the `window` example.
 
 ```css
 .window {
@@ -400,7 +400,7 @@ function log(text) {
 Select different options to change the `clip-path` value.
 
 > [!NOTE]
-> While it is possible to define a path of text, if you want to clip a background image to text rather than a shape, see the {{cssxref("background-clip")}} property.
+> While it is possible to define a path of text, if you want to clip a background image to text rather than a shape, see the `background-clip` property.
 
 ## Specifications
 
@@ -412,10 +412,10 @@ Select different options to change the `clip-path` value.
 
 ## See also
 
-- {{CSSxRef("clip-rule")}}
-- {{CSSxRef("mask")}}
-- {{CSSxRef("filter")}}
-- {{cssxref("background-clip")}}
+- `clip-rule`
+- `mask`
+- `filter`
+- `background-clip`
 - [Introduction to CSS clipping](/guides/Masking/Clipping)
 - [CSS masking](/guides/Masking) module
 - SVG {{SVGAttr("clip-path")}} attribute

@@ -6,7 +6,7 @@ browser-compat: css.at-rules.counter-style.symbols
 sidebar: cssref
 ---
 
-The **`symbols`** [CSS](/en-US/docs/Web/CSS) descriptor of the {{cssxref("@counter-style")}} at-rule is used to specify the symbols for creating counter representations in the specified counter system. Specifying this descriptor is mandatory when the value of the {{cssxref('@counter-style/system', 'system')}} descriptor is `cyclic`, `numeric`, `alphabetic`, `symbolic`, or `fixed`.
+The **`symbols`** [CSS](/en-US/docs/Web/CSS) descriptor of the `@counter-style` at-rule is used to specify the symbols for creating counter representations in the specified counter system. Specifying this descriptor is mandatory when the value of the {{cssxref('@counter-style/system', 'system')}} descriptor is `cyclic`, `numeric`, `alphabetic`, `symbolic`, or `fixed`.
 
 ## Syntax
 
@@ -23,14 +23,14 @@ symbols: indic-numbers;
 The `symbols` descriptor is specified as a list of one or more space-separated `<symbol>` values.
 
 - `<symbol>`
-  - Specifies the symbol to use within the counter system. Each symbol in the list can be either a {{cssxref("&lt;string&gt;")}}, an {{cssxref("image")}}, or a {{cssxref("&lt;custom-ident&gt;")}}. The `<image>` value can, in turn, be specified as a {{cssxref("url_value", "&lt;url&gt;")}} or {{cssxref("gradient")}}.
+  - Specifies the symbol to use within the counter system. Each symbol in the list can be either a `&lt;string&gt;`, an `image`, or a `&lt;custom-ident&gt;`. The `<image>` value can, in turn, be specified as a `&lt;url&gt;` or `gradient`.
 
 > [!NOTE]
 > When using an {{glossary("identifier")}} for a symbol, note that {{glossary("ASCII")}} non-letters such as `*`, `"`, and `\` are not considered identifiers. They must be either quoted as a string or escaped.
 
 ## Description
 
-A symbol can be a string, image, or identifier. It is used within the {{cssxref("@counter-style")}} [at-rule](/guides/Syntax/At-rules).
+A symbol can be a string, image, or identifier. It is used within the `@counter-style` [at-rule](/guides/Syntax/At-rules).
 
 When the value of the {{cssxref('@counter-style/system', 'system')}} descriptor is `cyclic`, `numeric`, `alphabetic`, `symbolic`, or `fixed`, the `symbols` descriptor must be specified. For the `additive` system, use the {{cssxref('@counter-style/additive-symbols', 'additive-symbols')}} descriptor instead to specify the symbols.
 
@@ -91,8 +91,8 @@ In this example, the list of values for the `symbols` descriptor include letters
 
 ## See also
 
-- {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, {{cssxref("@counter-style/fallback", "fallback")}}
-- List style properties: {{cssxref("list-style")}}, {{cssxref("list-style-image")}}, {{cssxref("list-style-position")}}
-- {{cssxref("symbols()")}} function
-- {{cssxref("url_value", "&lt;url&gt;")}} type
+- `@counter-style` descriptors: `system`, `additive-symbols`, `negative`, `prefix`, `suffix`, `range`, `pad`, `speak-as`, `fallback`
+- List style properties: `list-style`, `list-style-image`, `list-style-position`
+- `symbols()` function
+- `&lt;url&gt;` type
 - [CSS counter styles](/guides/Counter_styles) module

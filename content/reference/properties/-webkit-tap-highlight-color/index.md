@@ -28,7 +28,7 @@ sidebar: cssref
 
 ### Values
 
-A {{Cssxref("&lt;color&gt;")}}.
+A `&lt;color&gt;`.
 
 ## Formal definition
 
@@ -49,6 +49,6 @@ Not part of any standard. Apple has [a description in the Safari Web Content Gui
 
 - [WebKit CSS extensions](/en-US/docs/Web/CSS/Reference/Webkit_extensions)
 - Related CSS pseudo-classes:
-  - {{cssxref(":hover")}}
-  - {{cssxref(":active")}}
-  - {{cssxref(":visited")}}
+  - `:hover`
+  - `:active`
+  - `:visited`

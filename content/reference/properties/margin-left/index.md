@@ -87,21 +87,21 @@ The `margin-left` property is specified as the keyword `auto`, or a `<length>`, 
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the margin as a fixed value.
-    - For _anchor-positioned elements_, the {{cssxref("anchor-size()")}} function resolves to a {{cssxref("&lt;length&gt;")}} value relative to the associated _anchor element_'s width or height (see [Setting element margin based on anchor size](/guides/Anchor_positioning/Using#setting_element_margin_based_on_anchor_size)).
+    - For _anchor-positioned elements_, the `anchor-size()` function resolves to a `&lt;length&gt;` value relative to the associated _anchor element_'s width or height (see [Setting element margin based on anchor size](/guides/Anchor_positioning/Using#setting_element_margin_based_on_anchor_size)).
 
-- {{cssxref("&lt;percentage&gt;")}}
-  - The size of the margin as a percentage, relative to the inline size (_width_ in a horizontal language, defined by {{cssxref("writing-mode")}}) of the [containing block](/guides/Display/Containing_block).
+- `&lt;percentage&gt;`
+  - The size of the margin as a percentage, relative to the inline size (_width_ in a horizontal language, defined by `writing-mode`) of the [containing block](/guides/Display/Containing_block).
 - `auto`
   - The left margin receives a share of the unused horizontal space, as determined mainly by the layout mode that is used. If the values of `margin-left` and `margin-right` are both `auto`, the calculated space is evenly distributed. This table summarizes the different cases:
 
     <table class="standard-table">
       <thead>
         <tr>
-          <th scope="col">Value of {{cssxref("display")}}</th>
-          <th scope="col">Value of {{cssxref("float")}}</th>
-          <th scope="col">Value of {{cssxref("position")}}</th>
+          <th scope="col">Value of `display`</th>
+          <th scope="col">Value of `float`</th>
+          <th scope="col">Value of `position`</th>
           <th scope="col">Computed value of <code>auto</code></th>
           <th scope="col">Comment</th>
         </tr>
@@ -240,8 +240,8 @@ Percentage values for `margin-left` are relative to the container's inline size.
 
 ## See also
 
-- {{cssxref("margin-top")}}, {{cssxref("margin-right")}}, and {{cssxref("margin-bottom")}}
-- {{cssxref("margin")}} shorthand
-- {{cssxref("margin-block-start")}}, {{cssxref("margin-block-end")}}, {{cssxref("margin-inline-start")}}, and {{cssxref("margin-inline-end")}}
-- {{cssxref("margin-block")}} and {{cssxref("margin-inline")}} shorthands
+- `margin-top`, `margin-right`, and `margin-bottom`
+- `margin` shorthand
+- `margin-block-start`, `margin-block-end`, `margin-inline-start`, and `margin-inline-end`
+- `margin-block` and `margin-inline` shorthands
 - [CSS box model](/guides/Box_model) module

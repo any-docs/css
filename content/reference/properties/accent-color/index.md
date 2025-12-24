@@ -76,7 +76,7 @@ accent-color: unset;
 
 - `auto`
   - Represents a UA-chosen color, which should match the accent color of the platform, if any.
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - Specifies the color to be used as the accent color.
 
 ## Description
@@ -141,6 +141,6 @@ input.custom {
 
 ## See also
 
-- {{cssxref("background-color")}}, {{cssxref("border-color")}}, {{cssxref("caret-color")}}, {{cssxref("color")}}, {{cssxref("column-rule-color")}}, {{cssxref("outline-color")}}, {{cssxref("text-decoration-color")}}, {{cssxref("text-emphasis-color")}}, {{cssxref("text-shadow")}}: Other color-related properties
-- {{cssxref("&lt;color&gt;")}}: Related data type
+- `background-color`, `border-color`, `caret-color`, `color`, `column-rule-color`, `outline-color`, `text-decoration-color`, `text-emphasis-color`, `text-shadow`: Other color-related properties
+- `&lt;color&gt;`: Related data type
 - {{HTMLElement("input")}}: Related HTML element

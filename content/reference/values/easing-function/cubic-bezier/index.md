@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`cubic-bezier()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates a smooth transition using a cubic [Bézier curve](/en-US/docs/Glossary/Bezier_curve).
-As an {{cssxref("easing-function")}}, it can be used to smooth out the start and end of the {{Glossary("interpolation")}}.
+As an `easing-function`, it can be used to smooth out the start and end of the {{Glossary("interpolation")}}.
 
 ## Syntax
 
@@ -22,19 +22,19 @@ cubic-bezier(0, 0, 1, 1)
 The function accepts the following four parameters, which represent the coordinates of two control points:
 
 - `<x1>`
-  - A {{cssxref("&lt;number&gt;")}} representing the x-axis coordinate of the first control point.
+  - A `&lt;number&gt;` representing the x-axis coordinate of the first control point.
     It must be in the `[0, 1]` range.
 - `<y1>`
-  - A {{cssxref("&lt;number&gt;")}} representing the y-axis coordinate of the first control point.
+  - A `&lt;number&gt;` representing the y-axis coordinate of the first control point.
 - `<x2>`
-  - A {{cssxref("&lt;number&gt;")}} representing the x-axis coordinate of the second control point.
+  - A `&lt;number&gt;` representing the x-axis coordinate of the second control point.
     It must be in the `[0, 1]` range.
 - `<y2>`
-  - A {{cssxref("&lt;number&gt;")}} representing the y-axis coordinate of the second control point.
+  - A `&lt;number&gt;` representing the y-axis coordinate of the second control point.
 
 ## Description
 
-The cubic Bézier functions, often called "smooth" easing functions, correlate an input progress to an output progress, both expressed as {{cssxref("&lt;number&gt;")}}s, where `0.0` represents the initial state and `1.0` represents the final state.
+The cubic Bézier functions, often called "smooth" easing functions, correlate an input progress to an output progress, both expressed as `&lt;number&gt;`s, where `0.0` represents the initial state and `1.0` represents the final state.
 If the cubic Bézier curve is invalid, CSS ignores the whole property.
 
 A cubic Bézier curve is defined by four points: P0, P1, P2, and P3. The points P0 and P3 represent the start and the end of the curve. In CSS, the start point P0 is fixed at `(0, 0)` and the end point P3 is fixed at `(1, 1)`, while intermediate points P1 and P2 are defined by the function parameters `(<x1>, <y1>)` and `(<x2>, <y2>)` respectively. The x-axis represents input progress and the y-axis represents output progress.
@@ -47,7 +47,7 @@ Cubic Bézier curves with the P1 or P2 ordinate outside the `[0, 1]` range can c
 
 ![Graphs of the easing function cubic-bezier(0.3, 0.2, 0.2, 1.4), one of which shows the output progress going above 1 starting from a certain input progress, the other shows the output progress reaching and then staying at 1.](cubic-bezier_out_of_range.svg)
 
-However, certain properties will restrict the output if it goes outside an allowable range. For example, a color component greater than `255` or smaller than `0` in {{CSSXref("color_value/rgb", "rgb()")}} will be clipped to the closest allowed value (`255` and `0`, respectively). Some `cubic-bezier()` values exhibit this property.
+However, certain properties will restrict the output if it goes outside an allowable range. For example, a color component greater than `255` or smaller than `0` in `rgb()` will be clipped to the closest allowed value (`255` and `0`, respectively). Some `cubic-bezier()` values exhibit this property.
 
 ## Formal syntax
 
@@ -140,6 +140,6 @@ cubic-bezier(-1.9, 0.3, -0.2, 2.1)
 
 ## See also
 
-- Other easing functions: {{cssxref("easing-function/linear", "linear()")}} and {{cssxref("easing-function/steps", "steps()")}}
+- Other easing functions: `linear()` and `steps()`
 - [CSS easing functions](/guides/Easing_functions) module
 - [cubic-bezier.com](https://cubic-bezier.com/) by Lea Verou

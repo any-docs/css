@@ -90,7 +90,7 @@ scroll-margin-right: unset;
 
 ### Values
 
-- {{CSSXref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - An outset from the right edge of the scroll container.
 
 ## Formal definition

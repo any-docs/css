@@ -131,4 +131,4 @@ noKern.textContent = input.value;
 
 ## See also
 
-- {{cssxref("font-variant")}}, {{cssxref("font-variant-position")}}, {{cssxref("font-variant-east-asian")}}, {{cssxref("font-variant-caps")}}, {{cssxref("font-variant-ligatures")}}, {{cssxref("font-variant-numeric")}}, {{cssxref("font-variant-alternates")}}, {{cssxref("font-synthesis")}}, {{cssxref("letter-spacing")}}
+- `font-variant`, `font-variant-position`, `font-variant-east-asian`, `font-variant-caps`, `font-variant-ligatures`, `font-variant-numeric`, `font-variant-alternates`, `font-synthesis`, `letter-spacing`

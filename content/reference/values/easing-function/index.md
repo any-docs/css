@@ -54,8 +54,8 @@ An `<easing-function>` can be one of the following types:
         > [!NOTE]
         > The `linear` keyword is always interpreted as `linear(0, 1)`, whereas the function `linear(0, 1)` is interpreted as `linear(0 0%, 1 100%)`.
 
-    - {{cssxref("easing-function/linear", "linear()")}}
-      - Defines multiple points of progress using {{cssxref("&lt;number&gt;")}} values, with optional {{cssxref("&lt;percentage&gt;")}} values to control their timing.
+    - `linear()`
+      - Defines multiple points of progress using `&lt;number&gt;` values, with optional `&lt;percentage&gt;` values to control their timing.
 
 - `<cubic-bezier-easing-function>`
   - Creates smooth transitions with variable rates of change. This function can be specified using one of the following:
@@ -79,8 +79,8 @@ An `<easing-function>` can be one of the following types:
 
         ![Graphs of Input progress to Output progress, of which ease shows a curved line quickly rising from the origin to (1, 1); ease-in shows a shallow curved line from the origin that straightens out as it approaches (1, 1); ease-out shows a straight diagonal line that slightly curves as it gets close to (1, 1); and ease-in-out shows a symmetrical, S-shaped line curving from the origin to (1, 1).](ease.svg)
 
-    - {{cssxref("easing-function/cubic-bezier", "cubic-bezier()")}}
-      - Defines a custom curve using four {{cssxref("&lt;number&gt;")}} values that specify the coordinates of two control points.
+    - `cubic-bezier()`
+      - Defines a custom curve using four `&lt;number&gt;` values that specify the coordinates of two control points.
         The x-coordinates must be in the range `[0, 1]`.
 
 - `<step-easing-function>`
@@ -96,8 +96,8 @@ An `<easing-function>` can be one of the following types:
 
         ![Two graphs of Input progress to Output progress. In the step-start graph, an unfilled circle represents the origin point (0, 0), with a horizontal line extending from (0, 1) to (1, 1). In the step-end graph, a horizontal line extends from the origin to (1, 0), with an unfilled circle at (1,0) and a solid circle at (1, 1).](step.svg)
 
-    - {{cssxref("easing-function/steps", "steps()")}}
-      - Creates a stair-shaped curve using an {{cssxref("&lt;integer&gt;")}} to specify the number of intervals and an optional keyword to control the timing of jumps.
+    - `steps()`
+      - Creates a stair-shaped curve using an `&lt;integer&gt;` to specify the number of intervals and an optional keyword to control the timing of jumps.
 
 ## Formal syntax
 

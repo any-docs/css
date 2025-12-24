@@ -30,9 +30,9 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef("::-webkit-slider-thumb")}}
+- `::-webkit-slider-thumb`
 - Similar pseudo-elements used by other browsers:
-  - {{CSSxRef("::-moz-range-track")}}
+  - `::-moz-range-track`
 
 - [CSS-Tricks: Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
 - [QuirksMode: Styling and scripting sliders](https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html)

@@ -10,10 +10,10 @@ sidebar: cssref
 
 {{deprecated_header}}
 
-The **`<shape>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) defines the specific form (shape) of a region. The region represents the part of an element to which the {{cssxref("clip")}} property applies.
+The **`<shape>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) defines the specific form (shape) of a region. The region represents the part of an element to which the `clip` property applies.
 
 > [!NOTE]
-> `<shape>` and `rect()` work in conjunction with {{cssxref("clip")}}, which has been deprecated in favor of {{cssxref("clip-path")}}. When possible, use `clip-path` and the {{cssxref("basic-shape")}} data type instead.
+> `<shape>` and `rect()` work in conjunction with `clip`, which has been deprecated in favor of `clip-path`. When possible, use `clip-path` and the `basic-shape` data type instead.
 
 ## Syntax
 
@@ -30,13 +30,13 @@ rect(top, right, bottom, left)
 ![A graph showing top, right, bottom, and left, as described below. These define the rectangle's shape. The upper left corner is defined by the top and left values. The bottom right corner is defined by the bottom and right values.](rect.png)
 
 - _top_
-  - Is a {{cssxref("length")}} representing the offset for the top of the rectangle relative to the top border of the element's box.
+  - Is a `length` representing the offset for the top of the rectangle relative to the top border of the element's box.
 - _right_
-  - Is a {{cssxref("length")}} representing the offset for the right of the rectangle relative to the left border of the element's box.
+  - Is a `length` representing the offset for the right of the rectangle relative to the left border of the element's box.
 - _bottom_
-  - Is a {{cssxref("length")}} representing the offset for the bottom of the rectangle relative to the top border of the element's box.
+  - Is a `length` representing the offset for the bottom of the rectangle relative to the top border of the element's box.
 - _left_
-  - Is a {{cssxref("length")}} representing the offset for the left of the rectangle relative to the left border of the element's box.
+  - Is a `length` representing the offset for the left of the rectangle relative to the left border of the element's box.
 
 ## Interpolation
 

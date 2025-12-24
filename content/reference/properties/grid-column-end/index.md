@@ -100,7 +100,7 @@ grid-column-end: unset;
 
     If a name is given as a \<custom-ident>, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position.
 
-    An {{cssxref("integer")}} value of `0` is invalid.
+    An `integer` value of `0` is invalid.
 
 - `span && [ <integer> || <custom-ident> ]`
   - Contributes a grid span to the grid item's placement such that the column end edge of the grid item's grid area is n lines from the start edge.
@@ -199,10 +199,10 @@ grid-column-end: unset;
 
 ## See also
 
-- {{cssxref("grid-column-start")}}
-- {{cssxref("grid-column")}}
-- {{cssxref("grid-row-start")}}
-- {{cssxref("grid-row-end")}}
-- {{cssxref("grid-row")}}
+- `grid-column-start`
+- `grid-column`
+- `grid-row-start`
+- `grid-row-end`
+- `grid-row`
 - [Line-based placement with CSS grid](/guides/Grid_layout/Line-based_placement)
 - Video: [Line-based placement](https://gridbyexample.com/video/series-line-based-placement/)

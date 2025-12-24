@@ -10,16 +10,16 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`corner-inline-end-shape`** [CSS](/en-US/docs/Web/CSS) property specifies the shape of both the corners on a box's inline-end edge, within their {{cssxref("border-radius")}} area.
+The **`corner-inline-end-shape`** [CSS](/en-US/docs/Web/CSS) property specifies the shape of both the corners on a box's inline-end edge, within their `border-radius` area.
 
-For a full description of corner shape behavior and multiple examples, see the {{cssxref("corner-shape")}} shorthand property page.
+For a full description of corner shape behavior and multiple examples, see the `corner-shape` shorthand property page.
 
 ## Constituent properties
 
 The `corner-inline-end-shape` property is a shorthand for the following physical properties:
 
-- {{cssxref("corner-start-end-shape")}}
-- {{cssxref("corner-end-end-shape")}}
+- `corner-start-end-shape`
+- `corner-end-end-shape`
 
 ## Syntax
 
@@ -46,7 +46,7 @@ corner-inline-end-shape: unset;
 
 ### Values
 
-The `corner-inline-end-shape` property is specified using one or two {{cssxref("&lt;corner-shape-value>")}} values:
+The `corner-inline-end-shape` property is specified using one or two `&lt;corner-shape-value>` values:
 
 - If **one value** is used, it specifies the shape of **both inline-end** corners.
 - If **two values** are used, the first one specifies the shape of the **block-start/inline-end** corner, and the second one specifies the shape of the **block-end/inline-end** corner.
@@ -61,7 +61,7 @@ The `corner-inline-end-shape` property is specified using one or two {{cssxref("
 
 ## Examples
 
-You can find other related examples on the {{cssxref("corner-shape")}} reference page.
+You can find other related examples on the `corner-shape` reference page.
 
 ### Basic `corner-inline-end-shape` usage
 
@@ -75,7 +75,7 @@ The markup for this example contains a single {{htmlelement("div")}} element.
 
 #### CSS
 
-We give the box some basic styles, which we've hidden for brevity. We also apply a {{cssxref("box-shadow")}}, a `border-radius` of `15% 30%`, and a `corner-inline-end-shape` of `bevel squircle`.
+We give the box some basic styles, which we've hidden for brevity. We also apply a `box-shadow`, a `border-radius` of `15% 30%`, and a `corner-inline-end-shape` of `bevel squircle`.
 
 ```css hidden live-sample___basic-usage
 body {
@@ -123,10 +123,10 @@ The rendered result looks like this:
 
 ## See also
 
-- {{cssxref("corner-shape")}} shorthand property
-- {{cssxref("corner-block-start-shape")}}, {{cssxref("corner-block-end-shape")}}, and {{cssxref("corner-inline-start-shape")}}
-- {{cssxref("corner-top-shape")}}, {{cssxref("corner-bottom-shape")}}, {{cssxref("corner-left-shape")}}, and {{cssxref("corner-right-shape")}}
-- {{cssxref("border-radius")}} shorthand property
-- {{cssxref("border-start-end-radius")}} and {{cssxref("border-end-end-radius")}}
+- `corner-shape` shorthand property
+- `corner-block-start-shape`, `corner-block-end-shape`, and `corner-inline-start-shape`
+- `corner-top-shape`, `corner-bottom-shape`, `corner-left-shape`, and `corner-right-shape`
+- `border-radius` shorthand property
+- `border-start-end-radius` and `border-end-end-radius`
 - [CSS borders and box decorations](/guides/Borders_and_box_decorations) module
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module

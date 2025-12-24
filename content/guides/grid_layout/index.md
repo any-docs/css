@@ -75,37 +75,37 @@ The example shows a three-column track grid with new rows created at a minimum o
 
 {{EmbedLiveSample("Grid_layout_in_action", "100%", "460")}}
 
-This sample animation uses {{cssxref("display")}}, {{cssxref("grid-template-columns")}}, {{cssxref("grid-template-rows")}}, and {{cssxref("gap")}} to create the grid, and {{cssxref("grid-column")}} and {{cssxref("grid-row")}} to position items within in the grid. To view and edit the HTML and CSS used, click the 'Play' at the top right of the example.
+This sample animation uses `display`, `grid-template-columns`, `grid-template-rows`, and `gap` to create the grid, and `grid-column` and `grid-row` to position items within in the grid. To view and edit the HTML and CSS used, click the 'Play' at the top right of the example.
 
 ## Reference
 
 ### Properties
 
-- {{CSSxRef("grid-auto-columns")}}
-- {{CSSxRef("grid-auto-flow")}}
-- {{CSSxRef("grid-auto-rows")}}
-- {{CSSxRef("grid-template-columns")}}
-- {{CSSxRef("grid-template-rows")}}
-- {{CSSxRef("grid-template-areas")}}
-- {{CSSxRef("grid-template")}} shorthand
-- {{CSSxRef("grid")}} shorthand
-- {{CSSxRef("grid-column-start")}}
-- {{CSSxRef("grid-column-end")}}
-- {{CSSxRef("grid-column")}} shorthand
-- {{CSSxRef("grid-row-start")}}
-- {{CSSxRef("grid-row-end")}}
-- {{CSSxRef("grid-row")}} shorthand
-- {{CSSxRef("grid-area")}} shorthand
+- `grid-auto-columns`
+- `grid-auto-flow`
+- `grid-auto-rows`
+- `grid-template-columns`
+- `grid-template-rows`
+- `grid-template-areas`
+- `grid-template` shorthand
+- `grid` shorthand
+- `grid-column-start`
+- `grid-column-end`
+- `grid-column` shorthand
+- `grid-row-start`
+- `grid-row-end`
+- `grid-row` shorthand
+- `grid-area` shorthand
 
 ### Functions
 
-- {{cssxref("repeat()")}}
-- {{cssxref("minmax()")}}
-- {{cssxref("fit-content()")}}
+- `repeat()`
+- `minmax()`
+- `fit-content()`
 
 ### Data types and values
 
-- {{CSSxRef("&lt;flex&gt;")}} (`fr` unit)
+- `&lt;flex&gt;` (`fr` unit)
 
 ### Terms and glossary definitions
 
@@ -150,7 +150,7 @@ This sample animation uses {{cssxref("display")}}, {{cssxref("grid-template-colu
   - A look at how CSS grid layout can both help and harm accessibility.
 
 - [Realizing common layouts using grids](/guides/Grid_layout/Common_grid_layouts)
-  - A few different layouts demonstrating different techniques you can use when designing with CSS grid layouts, including using {{cssxref("grid-template-areas")}}, a 12-column flexible grid system, and a product listing using auto-placement.
+  - A few different layouts demonstrating different techniques you can use when designing with CSS grid layouts, including using `grid-template-areas`, a 12-column flexible grid system, and a product listing using auto-placement.
 
 - [Subgrid](/guides/Grid_layout/Subgrid)
   - What subgrid does with use cases and design patterns that subgrid solves.
@@ -165,39 +165,39 @@ This sample animation uses {{cssxref("display")}}, {{cssxref("grid-template-colu
 
 [CSS display](/guides/Display) module
 
-- {{CSSxRef("display")}}
-- {{CSSxRef("order")}}
+- `display`
+- `order`
 
 [CSS box alignment](/guides/Box_alignment) module
 
-- {{cssxref("align-content")}}
-- {{cssxref("align-items")}}
-- {{cssxref("align-self")}}
-- {{cssxref("column-gap")}}
-- {{cssxref("gap")}}
-- {{cssxref("justify-content")}}
-- {{cssxref("justify-items")}}
-- {{cssxref("justify-self")}}
-- {{cssxref("place-content")}}
-- {{cssxref("place-items")}}
-- {{cssxref("place-self")}}
-- {{cssxref("row-gap")}}
+- `align-content`
+- `align-items`
+- `align-self`
+- `column-gap`
+- `gap`
+- `justify-content`
+- `justify-items`
+- `justify-self`
+- `place-content`
+- `place-items`
+- `place-self`
+- `row-gap`
 
 [CSS box sizing](/guides/Box_sizing) module
 
-- {{cssxref("aspect-ratio")}}
-- {{cssxref("box-sizing")}}
-- {{cssxref("height")}}
-- {{cssxref("max-height")}}
-- {{cssxref("max-width")}}
-- {{cssxref("min-height")}}
-- {{cssxref("min-width")}}
-- {{cssxref("width")}}
-- {{cssxref("ratio")}} data type
-- {{cssxref("min-content")}} value
-- {{cssxref("max-content")}} value
-- {{cssxref("fit-content")}} value
-- {{cssxref("fit-content()")}} function
+- `aspect-ratio`
+- `box-sizing`
+- `height`
+- `max-height`
+- `max-width`
+- `min-height`
+- `min-width`
+- `width`
+- `ratio` data type
+- `min-content` value
+- `max-content` value
+- `fit-content` value
+- `fit-content()` function
 
 ## Specifications
 

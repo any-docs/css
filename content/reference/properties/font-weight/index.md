@@ -6,7 +6,7 @@ browser-compat: css.properties.font-weight
 sidebar: cssref
 ---
 
-The **`font-weight`** [CSS](/en-US/docs/Web/CSS) property sets the weight (or boldness) of the font. The weights available depend on the {{cssxref("font-family")}} that is currently set.
+The **`font-weight`** [CSS](/en-US/docs/Web/CSS) property sets the weight (or boldness) of the font. The weights available depend on the `font-family` that is currently set.
 
 {{InteractiveExample("CSS Demo: font-weight")}}
 
@@ -93,7 +93,7 @@ The `font-weight` property is specified using either a `<font-weight-absolute>` 
   - Bold font weight. Same as `700`.
 
 - `<number>`
-  - A {{cssxref("&lt;number&gt;")}} value between 1 and 1000, both values included. Higher numbers represent weights that are bolder than (or as bold as) lower numbers. This allows fine-grain control for [variable fonts](#variable_fonts). For non-variable fonts, if the exact specified weight is unavailable, a [fallback weight](#fallback_weights) algorithm is used — numeric values that are divisible by 100 correspond to common weight names, as described in the [Common weight name mapping](#common_weight_name_mapping) section below.
+  - A `&lt;number&gt;` value between 1 and 1000, both values included. Higher numbers represent weights that are bolder than (or as bold as) lower numbers. This allows fine-grain control for [variable fonts](#variable_fonts). For non-variable fonts, if the exact specified weight is unavailable, a [fallback weight](#fallback_weights) algorithm is used — numeric values that are divisible by 100 correspond to common weight names, as described in the [Common weight name mapping](#common_weight_name_mapping) section below.
 
 - `lighter`
   - One relative font weight lighter than the parent element. Note that only four font weights are considered for relative weight calculation; see the [Meaning of relative weights](#meaning_of_relative_weights) section below.
@@ -300,8 +300,8 @@ span {
 
 ## See also
 
-- {{cssxref("font-family")}}
-- {{cssxref("font-style")}}
+- `font-family`
+- `font-style`
 - SVG {{SVGAttr("font-weight")}} attribute
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
 - [CSS fonts](/guides/Fonts) module

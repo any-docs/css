@@ -6,7 +6,7 @@ browser-compat: css.properties.border-bottom
 sidebar: cssref
 ---
 
-The **`border-bottom`** [shorthand](/guides/Cascade/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property sets an element's bottom [border](/reference/properties/border). It sets the values of {{cssxref("border-bottom-width")}}, {{cssxref("border-bottom-style")}} and {{cssxref("border-bottom-color")}}.
+The **`border-bottom`** [shorthand](/guides/Cascade/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property sets an element's bottom [border](/reference/properties/border). It sets the values of `border-bottom-width`, `border-bottom-style` and `border-bottom-color`.
 
 {{InteractiveExample("CSS Demo: border-bottom")}}
 
@@ -52,9 +52,9 @@ border-bottom: 4mm ridge rgb(211 220 50 / 0.6);
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-bottom-color")}}
-- {{cssxref("border-bottom-style")}}
-- {{cssxref("border-bottom-width")}}
+- `border-bottom-color`
+- `border-bottom-style`
+- `border-bottom-width`
 
 ## Syntax
 
@@ -76,11 +76,11 @@ The three values of the shorthand property can be specified in any order, and on
 ### Values
 
 - `<br-width>`
-  - See {{cssxref("border-bottom-width")}}.
+  - See `border-bottom-width`.
 - `<br-style>`
-  - See {{cssxref("border-bottom-style")}}.
-- {{cssxref("&lt;color&gt;")}}
-  - See {{cssxref("border-bottom-color")}}.
+  - See `border-bottom-style`.
+- `&lt;color&gt;`
+  - See `border-bottom-color`.
 
 ## Description
 
@@ -98,7 +98,7 @@ border-bottom-style: dotted;
 border-bottom: none thick green;
 ```
 
-The value of {{cssxref("border-bottom-style")}} given before `border-bottom` is ignored. Since the default value of {{cssxref("border-bottom-style")}} is `none`, not specifying the `border-style` part results in no border.
+The value of `border-bottom-style` given before `border-bottom` is ignored. Since the default value of `border-bottom-style` is `none`, not specifying the `border-style` part results in no border.
 
 ## Formal definition
 
@@ -145,6 +145,6 @@ div {
 
 ## See also
 
-- {{cssxref("border")}}
-- {{cssxref("border-block")}}
-- {{cssxref("outline")}}
+- `border`
+- `border-block`
+- `outline`

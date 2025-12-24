@@ -31,18 +31,18 @@ Fortunately, we can create accessible carousels with associated controls without
 
 The CSS carousel features provide pseudo-elements and pseudo-classes that enable the creation of carousels using only CSS and HTML, with the browser handling most of the scrolling and link references in an accessible, flexible, and consistent manner. These features are as follows:
 
-- {{cssxref("::scroll-button()")}}
+- `::scroll-button()`
   - Generated inside a {{glossary("scroll container")}}, these pseudo-elements represent scroll buttons, which scroll the container in a specified direction.
-- {{cssxref("::scroll-marker-group")}}
+- `::scroll-marker-group`
   - Generated inside a scroll container; used to collect together and lay out scroll markers.
-- {{cssxref("::scroll-marker")}}
-  - Generated inside the children of a scroll container ancestor or within a scroll container's columns, to represent their scroll markers. These can be selected to scroll the container to their associated child elements or column, and are collected inside the scroll container's {{cssxref("::scroll-marker-group")}} for layout purposes.
-- {{cssxref(":target-current")}}
+- `::scroll-marker`
+  - Generated inside the children of a scroll container ancestor or within a scroll container's columns, to represent their scroll markers. These can be selected to scroll the container to their associated child elements or column, and are collected inside the scroll container's `::scroll-marker-group` for layout purposes.
+- `:target-current`
   - Used to select the currently active scroll marker and style it. The ability to style the active scroll marker is important for both usability and accessibility.
-- {{cssxref(":target-before")}} and {{cssxref(":target-after")}}
+- `:target-before` and `:target-after`
   - Used to select and style scroll markers before and after the currently active scroll marker, respectively. They are useful for styling navigation items that come before and after the active navigation position, indicating items the user has already viewed and those that are still to come.
-- {{cssxref("::column")}}
-  - Represents the individual columns generated when a container is set to display its content in multiple columns via [CSS multi-column layout](/guides/Multicol_layout). The `::column` pseudo-element can be used in conjunction with {{cssxref("::scroll-marker")}} to generate a scroll marker for each column.
+- `::column`
+  - Represents the individual columns generated when a container is set to display its content in multiple columns via [CSS multi-column layout](/guides/Multicol_layout). The `::column` pseudo-element can be used in conjunction with `::scroll-marker` to generate a scroll marker for each column.
 
 ## Carousel with single pages
 
@@ -74,7 +74,7 @@ The HTML consists of a [heading element](/en-US/docs/Web/HTML/Reference/Elements
 
 We use [flexbox](/guides/Flexible_box_layout) to create a single row of items; the `<ul>` is the flex container, and the `<li>` child list items are displayed horizontally with each item taking up the full width of the carousel.
 
-The unordered list is made to fill the full width of the viewport with a width {{cssxref("width")}} of `100vw`; it is also given a {{cssxref("height")}} of `300px`, and some {{cssxref("padding")}}. We then use flexbox to lay out the list — setting a {{cssxref("display")}} value of `flex` to cause the child list items to display in a row (due to the default {{cssxref("flex-direction")}} value of `row`), with a {{cssxref("gap")}} of `4vw` between each one.
+The unordered list is made to fill the full width of the viewport with a width `width` of `100vw`; it is also given a `height` of `300px`, and some `padding`. We then use flexbox to lay out the list — setting a `display` value of `flex` to cause the child list items to display in a row (due to the default `flex-direction` value of `row`), with a `gap` of `4vw` between each one.
 
 ```css hidden live-sample___first-example live-sample___first-example-step1 live-sample___first-example-step2
 * {
@@ -102,7 +102,7 @@ ul {
 }
 ```
 
-Now it's time to style the list items. The first declarations provide rudimentary styling. The important declaration is the {{cssxref("flex")}} value of `0 0 100%`, which forces each item to be as wide as the container (the `<ul>`). As a result, the content will overflow its container, and the viewport will scroll horizontally.
+Now it's time to style the list items. The first declarations provide rudimentary styling. The important declaration is the `flex` value of `0 0 100%`, which forces each item to be as wide as the container (the `<ul>`). As a result, the content will overflow its container, and the viewport will scroll horizontally.
 
 ```css live-sample___first-example live-sample___first-example-step1 live-sample___first-example-step2
 li {
@@ -119,13 +119,13 @@ li:nth-child(even) {
 }
 ```
 
-In addition, every even-numbered list item is given a different background-color via {{cssxref(":nth-child()")}}, so that it is easier to see the scrolling effect.
+In addition, every even-numbered list item is given a different background-color via `:nth-child()`, so that it is easier to see the scrolling effect.
 
 ### Setting up scroll snapping on the list
 
 In this section, we will set an overflow value on the `<ul>` to turn it into a {{glossary("scroll container")}}, then apply [CSS scroll snapping](/guides/Scroll_snap) to cause the list to snap to the center of each list item as the content is scrolled.
 
-An {{cssxref("overflow-x")}} value of `scroll` is set on the `<ul>` so that its content will scroll horizontally within the list, rather than the entire viewport scrolling. [CSS scroll snap](/guides/Scroll_snap) is then used to snap to each "page" — a {{cssxref("scroll-snap-type")}} value of `x mandatory` is set to make the list into a [scroll snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container). The `x` keyword causes the container's [snap targets](/en-US/docs/Glossary/Scroll_snap#snap_target) to be snapped to horizontally, while the `mandatory` keyword means that the container will always snap to a snap target at the end of a scrolling action.
+An `overflow-x` value of `scroll` is set on the `<ul>` so that its content will scroll horizontally within the list, rather than the entire viewport scrolling. [CSS scroll snap](/guides/Scroll_snap) is then used to snap to each "page" — a `scroll-snap-type` value of `x mandatory` is set to make the list into a [scroll snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container). The `x` keyword causes the container's [snap targets](/en-US/docs/Glossary/Scroll_snap#snap_target) to be snapped to horizontally, while the `mandatory` keyword means that the container will always snap to a snap target at the end of a scrolling action.
 
 ```css live-sample___first-example live-sample___first-example-step1 live-sample___first-example-step2
 ul {
@@ -134,7 +134,7 @@ ul {
 }
 ```
 
-Next, a {{cssxref("scroll-snap-align")}} value of `center` is set on the list items so that, when the list is scrolled, it snaps to the center of each list item.
+Next, a `scroll-snap-align` value of `center` is set on the list items so that, when the list is scrolled, it snaps to the center of each list item.
 
 ```css live-sample___first-example live-sample___first-example-step1 live-sample___first-example-step2
 li {
@@ -153,13 +153,13 @@ Try scrolling the list by swiping or using the scrollbar to see the scroll snapp
 
 ### Creating scroll buttons
 
-In this section we add "previous" and "next" scroll buttons to the demo to provide a tool to navigate between carousel pages. This is achieved using the {{cssxref("::scroll-button()")}} pseudo-element.
+In this section we add "previous" and "next" scroll buttons to the demo to provide a tool to navigate between carousel pages. This is achieved using the `::scroll-button()` pseudo-element.
 
-The `::scroll-button()` pseudo-elements generate buttons inside a scroll container only when their {{cssxref("content")}} properties are set to a value other than `none`. Each `::scroll-button()` represents a scroll button, the scrolling direction of which is specified by the selector's argument. You can generate up to four scroll buttons per scroll container, each scrolling the container's content towards the start or end of the block or inline axis.
+The `::scroll-button()` pseudo-elements generate buttons inside a scroll container only when their `content` properties are set to a value other than `none`. Each `::scroll-button()` represents a scroll button, the scrolling direction of which is specified by the selector's argument. You can generate up to four scroll buttons per scroll container, each scrolling the container's content towards the start or end of the block or inline axis.
 
 You can also specify an argument of `*` to target all of the `::scroll-button()` pseudo-elements with styles.
 
-First, all scroll buttons are targeted with some rudimentary styles, as well as styling based on different states. It is important to set {{cssxref(":focus")}} styles for keyboard users. Also, as scroll buttons are automatically set to [`disabled`](/en-US/docs/Web/HTML/Reference/Attributes/disabled) when no more scrolling can occur in that direction, we use the {{cssxref(":disabled")}} pseudo-class to target this state.
+First, all scroll buttons are targeted with some rudimentary styles, as well as styling based on different states. It is important to set `:focus` styles for keyboard users. Also, as scroll buttons are automatically set to [`disabled`](/en-US/docs/Web/HTML/Reference/Attributes/disabled) when no more scrolling can occur in that direction, we use the `:disabled` pseudo-class to target this state.
 
 ```css live-sample___first-example live-sample___first-example-step2
 ul::scroll-button(*) {
@@ -187,7 +187,7 @@ ul::scroll-button(*):disabled {
 ```
 
 > [!NOTE]
-> We also set a {{cssxref("cursor")}} value of `pointer` on the scroll buttons to make it more obvious that they can be interacted with (an improvement for both general [UX](/en-US/docs/Glossary/UX) and [cognitive accessibility](/en-US/docs/Web/Accessibility/Guides/Cognitive_accessibility)), unsetting it when the scroll buttons are `:disabled`.
+> We also set a `cursor` value of `pointer` on the scroll buttons to make it more obvious that they can be interacted with (an improvement for both general [UX](/en-US/docs/Glossary/UX) and [cognitive accessibility](/en-US/docs/Web/Accessibility/Guides/Cognitive_accessibility)), unsetting it when the scroll buttons are `:disabled`.
 
 Next, an appropriate icon is set on the left and right scroll buttons via the `content` property, which is also what causes the scroll buttons to be generated:
 
@@ -208,7 +208,7 @@ ul::scroll-button(right) {
 
 We've created the scroll buttons. Now we will position them relative to the carousel using [CSS anchor positioning](/guides/Anchor_positioning).
 
-First of all, a reference {{cssxref("anchor-name")}} is set on the list. Next, each scroll button has its {{cssxref("position")}} set to `absolute`, and its {{cssxref("position-anchor")}} property set to the same reference name defined on the list, to associate the two together.
+First of all, a reference `anchor-name` is set on the list. Next, each scroll button has its `position` set to `absolute`, and its `position-anchor` property set to the same reference name defined on the list, to associate the two together.
 
 ```css live-sample___first-example live-sample___first-example-step2
 ul {
@@ -221,7 +221,7 @@ ul::scroll-button(*) {
 }
 ```
 
-To actually position each scroll button, we set values on their {{glossary("inset properties")}}. We use {{cssxref("anchor()")}} functions to position the specified sides of the buttons relative to the sides of the carousel. In each case, the {{cssxref("calc()")}} function is used to add some space between the button edge and the carousel edge. For example, the right-hand edge of the left scroll button is positioned 70 pixels to the right of the carousel's left-hand edge.
+To actually position each scroll button, we set values on their {{glossary("inset properties")}}. We use `anchor()` functions to position the specified sides of the buttons relative to the sides of the carousel. In each case, the `calc()` function is used to add some space between the button edge and the carousel edge. For example, the right-hand edge of the left scroll button is positioned 70 pixels to the right of the carousel's left-hand edge.
 
 ```css live-sample___first-example live-sample___first-example-step2
 ul::scroll-button(left) {
@@ -247,9 +247,9 @@ Scroll markers are a group of buttons, each one of which scrolls the carousel to
 
 In this section, we will add scroll markers to the carousel, which involves three main features:
 
-- The {{cssxref("scroll-marker-group")}} property is set on the scroll container element. It needs to be set to a non-`none` value for the {{cssxref("::scroll-marker-group")}} pseudo-element to be generated; its value specifies where the scroll marker group appears in the carousel's tab order and layout box order (but not DOM structure) — `before` puts it at the start, before the scroll buttons, while `after` puts it at the end.
-- The {{cssxref("::scroll-marker-group")}} pseudo-element exists inside a scroll container, and is used to collect together, contain, and lay out scroll markers as a whole group.
-- {{cssxref("::scroll-marker")}} pseudo-elements exist inside the children and {{cssxref("::column")}} fragments of a scroll container ancestor, and represent their scroll markers. These are collected inside the ancestor's {{cssxref("::scroll-marker-group")}} for layout purposes.
+- The `scroll-marker-group` property is set on the scroll container element. It needs to be set to a non-`none` value for the `::scroll-marker-group` pseudo-element to be generated; its value specifies where the scroll marker group appears in the carousel's tab order and layout box order (but not DOM structure) — `before` puts it at the start, before the scroll buttons, while `after` puts it at the end.
+- The `::scroll-marker-group` pseudo-element exists inside a scroll container, and is used to collect together, contain, and lay out scroll markers as a whole group.
+- `::scroll-marker` pseudo-elements exist inside the children and `::column` fragments of a scroll container ancestor, and represent their scroll markers. These are collected inside the ancestor's `::scroll-marker-group` for layout purposes.
 
 To begin with, the list's `scroll-marker-group` property is set to `after`, so the `::scroll-marker-group` pseudo-element is placed after the list's DOM content in the focus and layout box order; this means it comes after the scroll buttons:
 
@@ -260,9 +260,9 @@ ul {
 ```
 
 > [!NOTE]
-> Alternatively, a scroll marker group container can be created from an existing element containing a set of {{htmlelement("a")}} elements using {{cssxref("scroll-target-group")}}.
+> Alternatively, a scroll marker group container can be created from an existing element containing a set of {{htmlelement("a")}} elements using `scroll-target-group`.
 
-Next, the list's `::scroll-marker-group` pseudo-element is positioned relative to the carousel using CSS anchor positioning, similar to the scroll button's, except that it is horizontally centered on the carousel using a {{cssxref("justify-self")}} value of `anchor-center`. The group is laid out using flexbox, with a {{cssxref("justify-content")}} value of `center` and a {{cssxref("gap")}} of `20px` so that its children (the `::scroll-marker` pseudo-elements) are centered inside the `::scroll-marker-group` with a gap between each one.
+Next, the list's `::scroll-marker-group` pseudo-element is positioned relative to the carousel using CSS anchor positioning, similar to the scroll button's, except that it is horizontally centered on the carousel using a `justify-self` value of `anchor-center`. The group is laid out using flexbox, with a `justify-content` value of `center` and a `gap` of `20px` so that its children (the `::scroll-marker` pseudo-elements) are centered inside the `::scroll-marker-group` with a gap between each one.
 
 ```css live-sample___first-example
 ul::scroll-marker-group {
@@ -293,7 +293,7 @@ li::scroll-marker {
 > [!NOTE]
 > Generated content is inline by default; we can apply `width` and `height` to our scroll markers because they are being laid out as flex items.
 
-Finally for this section, the {{cssxref(":target-current")}} pseudo-class is used to select whichever scroll marker corresponds to the currently visible "page", highlighting how far the user has scrolled through the content. In this case, we set the `background-color` to `black` so it is styled as a filled-in circle.
+Finally for this section, the `:target-current` pseudo-class is used to select whichever scroll marker corresponds to the currently visible "page", highlighting how far the user has scrolled through the content. In this case, we set the `background-color` to `black` so it is styled as a filled-in circle.
 
 ```css live-sample___first-example
 li::scroll-marker:target-current {
@@ -318,7 +318,7 @@ You can also navigate between pages by swiping left and right, dragging the scro
 
 The second demo is a carousel with multiple items per page, which again includes [scroll buttons](#creating_scroll_buttons) and [scroll markers](#creating_scroll_markers) for navigating through the pages. This demo is also responsive — different numbers of items appear on each page depending on the viewport width.
 
-This demo is very similar to the [Carousel with single pages](#carousel_with_single_pages) demo, except that instead of using flexbox for layout, it uses [CSS multi-column layout](/guides/Multicol_layout) and the {{cssxref("::column")}} pseudo-element to create arbitrary columns that span the full width of the carousel and may contain multiple items.
+This demo is very similar to the [Carousel with single pages](#carousel_with_single_pages) demo, except that instead of using flexbox for layout, it uses [CSS multi-column layout](/guides/Multicol_layout) and the `::column` pseudo-element to create arbitrary columns that span the full width of the carousel and may contain multiple items.
 
 Using this approach, we can be sure that if the viewport grows or shrinks, while the item size remains constant, we'll never have a partial item displayed off the edge of the scrollport. In this case, the scroll markers are created on scroll container fragments, per-column, rather than on children, per-item.
 
@@ -387,7 +387,7 @@ This demo also has very similar CSS, with the exception of the rules explained i
 
 ### Carousel layout using columns
 
-This example uses [CSS multi-column layout](/guides/Multicol_layout), rather than flexbox, to layout the carousel items. The {{cssxref("columns")}} value of `1` forces each column to be the full width of the container, with the contents displaying a single column at a time. A {{cssxref("text-align")}} value of `center` is also applied, forcing the contents to align with the center of the list.
+This example uses [CSS multi-column layout](/guides/Multicol_layout), rather than flexbox, to layout the carousel items. The `columns` value of `1` forces each column to be the full width of the container, with the contents displaying a single column at a time. A `text-align` value of `center` is also applied, forcing the contents to align with the center of the list.
 
 ```css hidden live-sample___second-example
 * {
@@ -444,11 +444,11 @@ li:nth-child(even) {
 
 The key layout properties are as follows:
 
-- A {{cssxref("display")}} value of `inline-block` has been set to force the list items to sit alongside one another and make the list scroll horizontally.
-- An absolute {{cssxref("width")}} of `200px` has been set on them to control their sizing, meaning one or more will fit in a column that grows and shrinks along with the width of the viewport.
+- A `display` value of `inline-block` has been set to force the list items to sit alongside one another and make the list scroll horizontally.
+- An absolute `width` of `200px` has been set on them to control their sizing, meaning one or more will fit in a column that grows and shrinks along with the width of the viewport.
 - A `text-align` value of `left` is set on them to override the `text-align: center` set on the parent container, so the item content will be left-aligned.
 
-The {{cssxref("scroll-snap-align")}} property is now set on the {{cssxref("::column")}} pseudo-elements — which represent the content columns generated by the `columns` property — rather than the list items. We want to snap to each complete column rather than every individual list item, showing all new items with each scroll action.
+The `scroll-snap-align` property is now set on the `::column` pseudo-elements — which represent the content columns generated by the `columns` property — rather than the list items. We want to snap to each complete column rather than every individual list item, showing all new items with each scroll action.
 
 ```css live-sample___second-example
 ul::column {
@@ -537,7 +537,7 @@ ul::column::scroll-marker {
 }
 ```
 
-Finally, we use the `:target-current` pseudo-class to mark the active scroll marker, providing the user with an idea of where they are in the navigation. We also use the {{cssxref(":target-before")}} and {{cssxref(":target-after")}} pseudo-classes to apply some custom styling to the scroll markers before and after the active one. We also set a {{cssxref("transition")}} on the `ul::column::scroll-marker:target-current` rule so that the style changes between the different states animate smoothly.
+Finally, we use the `:target-current` pseudo-class to mark the active scroll marker, providing the user with an idea of where they are in the navigation. We also use the `:target-before` and `:target-after` pseudo-classes to apply some custom styling to the scroll markers before and after the active one. We also set a `transition` on the `ul::column::scroll-marker:target-current` rule so that the style changes between the different states animate smoothly.
 
 ```css live-sample___second-example
 ul::column::scroll-marker:target-before {

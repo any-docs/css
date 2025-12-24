@@ -41,10 +41,10 @@ anchor(<anchor-name> <anchor-side>, <length-percentage>)
 The parameters are:
 
 #### `<anchor-name>` <Badge type="info" text="Optional" />
-  - The {{cssxref("anchor-name")}} property value of an anchor element you want to position the element's side relative to. This is a `<dashed-ident>` value. If omitted, the element's **default anchor**, referenced in its {{cssxref("position-anchor")}} property, or associated with the element via the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute, is used.
+  - The `anchor-name` property value of an anchor element you want to position the element's side relative to. This is a `<dashed-ident>` value. If omitted, the element's **default anchor**, referenced in its `position-anchor` property, or associated with the element via the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute, is used.
 
     > [!NOTE]
-    > Specifying an `<anchor-name>` inside an `anchor()` function does not associate an element with an anchor; it only positions the element relative to that anchor. The {{cssxref("position-anchor")}} CSS property or the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute is still needed to create the association.
+    > Specifying an `<anchor-name>` inside an `anchor()` function does not associate an element with an anchor; it only positions the element relative to that anchor. The `position-anchor` CSS property or the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute is still needed to create the association.
 
 #### `<anchor-side>`
   - Specifies the side of the anchor, or the relative distance from the `start` side, which the element is positioned relative to. If a physical or logical value is used that is not [compatible](#compatibility_of_inset_properties_and_anchor-side_values) with the inset property on which `anchor()` is set, the fallback value is used. Valid values include:
@@ -70,23 +70,23 @@ The parameters are:
       - The logical end of the anchor element's content along the axis of the inset property on which the `anchor()` function is set.
     - `center`
       - The center of the axis of the inset property on which the `anchor()` function is set.
-    - {{cssxref("percentage")}}
+    - `percentage`
       - Specifies the distance, as a percentage, from the start of the element's content along the axis of the inset property on which the `anchor()` function is set.
 
-- {{cssxref("length-percentage")}} <Badge type="info" text="Optional" />
+- `length-percentage` <Badge type="info" text="Optional" />
   - Specifies a fallback value the function should resolve to if the `anchor()` function would otherwise not be valid.
 
 ### Return value
 
-Returns a {{cssxref("length")}} value.
+Returns a `length` value.
 
 ## Description
 
 The `anchor()` function enables positioning an element relative to the edges of an anchor element. It is only valid within {{glossary("inset properties", "inset property")}} values set on absolute or fixed position elements.
 
-It returns a `<length>` value specifying the distance between the anchor-positioned element side specified by the inset value, and the side of the anchor element specified by the chosen `<anchor-side>` value. As it returns a `<length>`, it can be used within [other CSS functions](/reference/values/Functions) that accept length values, including {{cssxref("calc()")}}, {{cssxref("clamp()")}}, etc.
+It returns a `<length>` value specifying the distance between the anchor-positioned element side specified by the inset value, and the side of the anchor element specified by the chosen `<anchor-side>` value. As it returns a `<length>`, it can be used within [other CSS functions](/reference/values/Functions) that accept length values, including `calc()`, `clamp()`, etc.
 
-If no anchor with the name specified by the `<anchor-name>` exists, or if the positioned element does not have an anchor associated with it (i.e., via the {{cssxref("position-anchor")}} property), the first parameter is considered invalid and the fallback `<length-percentage>` value is used if one is available. For example, if `top: anchor(bottom, 50px)` were specified on the positioned element but no anchor was associated with it, the fallback value would be used, so `top` would get a computed value of `50px`.
+If no anchor with the name specified by the `<anchor-name>` exists, or if the positioned element does not have an anchor associated with it (i.e., via the `position-anchor` property), the first parameter is considered invalid and the fallback `<length-percentage>` value is used if one is available. For example, if `top: anchor(bottom, 50px)` were specified on the positioned element but no anchor was associated with it, the fallback value would be used, so `top` would get a computed value of `50px`.
 
 For detailed information on anchor features and usage, see the [CSS anchor positioning](/guides/Anchor_positioning) module landing page and the [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide.
 
@@ -94,17 +94,17 @@ For detailed information on anchor features and usage, see the [CSS anchor posit
 
 The CSS {{glossary("inset properties")}} that accept an `anchor()` function as a value component include:
 
-- {{cssxref("top")}}
-- {{cssxref("left")}}
-- {{cssxref("bottom")}}
-- {{cssxref("right")}}
-- {{cssxref("inset")}} shorthand
-- {{cssxref("inset-block-start")}}
-- {{cssxref("inset-block-end")}}
-- {{cssxref("inset-block")}} shorthand
-- {{cssxref("inset-inline-start")}}
-- {{cssxref("inset-inline-end")}}
-- {{cssxref("inset-inline")}} shorthand
+- `top`
+- `left`
+- `bottom`
+- `right`
+- `inset` shorthand
+- `inset-block-start`
+- `inset-block-end`
+- `inset-block` shorthand
+- `inset-inline-start`
+- `inset-inline-end`
+- `inset-inline` shorthand
 
 ### Compatibility of inset properties and `<anchor-side>` values
 
@@ -149,7 +149,7 @@ The CSS working group is [looking at ways to avoid requiring this workaround](ht
 
 ### Using `anchor()` inside `calc()`
 
-When the `anchor()` function refers to a side of the default anchor, you can include a {{cssxref("margin")}} to create spacing between the edges of the anchor and positioned element as needed. Alternatively, you can include the `anchor()` function within a {{cssxref("calc")}} function to add spacing.
+When the `anchor()` function refers to a side of the default anchor, you can include a `margin` to create spacing between the edges of the anchor and positioned element as needed. Alternatively, you can include the `anchor()` function within a `calc` function to add spacing.
 
 This example positions the right edge of the positioned element flush to the anchor element's left edge then adds margin to make some space between the edges:
 
@@ -172,7 +172,7 @@ This example positions the positioned element's logical block end edge `10px` fr
 
 You can position an element relative to multiple anchors by specifying different `<anchor-name>` values inside the `anchor()` function of different inset properties on the same element (see [Element positioned relative to multiple anchors](#element_positioned_relative_to_multiple_anchors) below). This can be used to create useful functionality such as drag handles at the corners of a positioned element that can be used to resize it.
 
-While a positioned element can be positioned relative to more than one anchor element, it is only ever associated with the single anchor defined via its {{cssxref("position-anchor")}} property (or the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute). This is the anchor the element will scroll with when the page scrolls; it can also be used to control when the element is [conditionally hidden](/guides/Anchor_positioning/Try_options_hiding#conditionally_hiding_anchor-positioned_elements).
+While a positioned element can be positioned relative to more than one anchor element, it is only ever associated with the single anchor defined via its `position-anchor` property (or the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute). This is the anchor the element will scroll with when the page scrolls; it can also be used to control when the element is [conditionally hidden](/guides/Anchor_positioning/Try_options_hiding#conditionally_hiding_anchor-positioned_elements).
 
 ## Formal syntax
 
@@ -225,7 +225,7 @@ We set the anchor element's `anchor-name` value as the value of the positioned e
 
 ### Comparison of different anchor-side values
 
-This example shows an element positioned relative to an anchor via its {{cssxref("top")}} and {{cssxref("left")}} properties, which are defined using `anchor()` functions. It also includes two drop-down menus that allow you to vary the `<anchor-side>` values inside those `anchor()` functions, so you can see what effect they have.
+This example shows an element positioned relative to an anchor via its `top` and `left` properties, which are defined using `anchor()` functions. It also includes two drop-down menus that allow you to vary the `<anchor-side>` values inside those `anchor()` functions, so you can see what effect they have.
 
 #### HTML
 
@@ -301,7 +301,7 @@ We also include some filler text around the two `<div>` elements to make the {{h
 
 #### CSS
 
-We declare the `anchor` `<div>` as an anchor element by setting an anchor name on it via the {{cssxref("anchor-name")}} property. We then associate it with the positioned element by setting the same value for its {{cssxref("position-anchor")}} property. `top: anchor(--my-anchor bottom)` positions the infobox's top edge flush to the bottom edge of its anchor, while `left: anchor(right)` positions the infobox's left edge flush to the right edge of its anchor. This provides an initial position that will be overwritten when different values are selected from the drop-down menus.
+We declare the `anchor` `<div>` as an anchor element by setting an anchor name on it via the `anchor-name` property. We then associate it with the positioned element by setting the same value for its `position-anchor` property. `top: anchor(--my-anchor bottom)` positions the infobox's top edge flush to the bottom edge of its anchor, while `left: anchor(right)` positions the infobox's left edge flush to the right edge of its anchor. This provides an initial position that will be overwritten when different values are selected from the drop-down menus.
 
 ```css hidden
 .anchor {
@@ -440,7 +440,7 @@ body {
 }
 ```
 
-The anchors are each given a different {{cssxref("anchor-name")}} value, a {{cssxref("position")}} value of `absolute`, and different inset values to position the anchors in a rectangle formation.
+The anchors are each given a different `anchor-name` value, a `position` value of `absolute`, and different inset values to position the anchors in a rectangle formation.
 
 ```css
 .anchor {
@@ -460,7 +460,7 @@ The anchors are each given a different {{cssxref("anchor-name")}} value, a {{css
 }
 ```
 
-The anchor-positioned element, with its `position` set to `fixed`, is associated with one anchor via its {{cssxref("position-anchor")}} property. It is positioned relative to two anchors by including two different `<anchor-name>` values with the `anchor()` functions set on its inset properties. In this case, we used {{cssxref("percentage")}} values for the `<anchor-side>` parameter, specifying the distance from the start of the axis of the inset property on which the function is set.
+The anchor-positioned element, with its `position` set to `fixed`, is associated with one anchor via its `position-anchor` property. It is positioned relative to two anchors by including two different `<anchor-name>` values with the `anchor()` functions set on its inset properties. In this case, we used `percentage` values for the `<anchor-side>` parameter, specifying the distance from the start of the axis of the inset property on which the function is set.
 
 ```css
 .infobox {
@@ -559,9 +559,9 @@ The positioned element is positioned relative to both anchor elements. Drag them
 
 ## See also
 
-- {{cssxref("position-anchor")}}
-- {{cssxref("position-area")}}
-- {{cssxref("anchor-size()")}} function
+- `position-anchor`
+- `position-area`
+- `anchor-size()` function
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide
 - [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide
 - [CSS anchor positioning](/guides/Anchor_positioning) module

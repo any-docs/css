@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`::scroll-marker`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) can be generated inside any element and represents its scroll marker. All elements can have a `::scroll-marker` pseudo-element, which is placed into the {{cssxref("::scroll-marker-group")}} of the nearest {{glossary("scroll container")}} ancestor. A scroll marker behaves like an anchor ({{htmlelement("a")}} element) whose scroll target is the marker's originating element — and scrolls the scroll container to that element when activated.
+The **`::scroll-marker`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) can be generated inside any element and represents its scroll marker. All elements can have a `::scroll-marker` pseudo-element, which is placed into the `::scroll-marker-group` of the nearest {{glossary("scroll container")}} ancestor. A scroll marker behaves like an anchor ({{htmlelement("a")}} element) whose scroll target is the marker's originating element — and scrolls the scroll container to that element when activated.
 
 ## Syntax
 
@@ -22,12 +22,12 @@ The **`::scroll-marker`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/doc
 
 ## Description
 
-A `::scroll-marker` is generated on an element when the `::scroll-marker`'s {{cssxref("content")}} property is set to a non-`none` value, and its has an ancestor scroll container with a non-`none` {{cssxref("scroll-marker-group")}} property value (meaning that it will generate a {{cssxref("::scroll-marker-group")}} pseudo-element).
+A `::scroll-marker` is generated on an element when the `::scroll-marker`'s `content` property is set to a non-`none` value, and its has an ancestor scroll container with a non-`none` `scroll-marker-group` property value (meaning that it will generate a `::scroll-marker-group` pseudo-element).
 
 The scroll container's `::scroll-marker-group` pseudo-element automatically contains any `::scroll-marker` pseudo-elements generated on the scroll container or its descendants. This allows them to be positioned and laid out as a group and is typically used when creating a CSS carousel to create a scroll position indicator. The individual scroll markers can be used to navigate to their associated content items.
 
 > [!NOTE]
-> Alternatively, a scroll marker group container can be created from an existing element container using {{cssxref("scroll-target-group")}}; any contained {{htmlelement("a")}} elements with fragment identifiers linking to sections of the page automatically behave like scroll markers.
+> Alternatively, a scroll marker group container can be created from an existing element container using `scroll-target-group`; any contained {{htmlelement("a")}} elements with fragment identifiers linking to sections of the page automatically behave like scroll markers.
 
 When a scroll marker group container is created on a scroll container using the `scroll-marker-group` property, the scroll container is rendered with [`tablist`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/tablist_role)/[`tab`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/tab_role) semantics. You can <kbd>Tab</kbd> to it with the keyboard, then move between the different "pages" using the left and right (or up and down) cursor keys, which also changes the state of the associated scroll markers and scroll buttons as expected. The scroll markers can also be tabbed between normally, as expected.
 
@@ -58,7 +58,7 @@ We have a basic HTML {{htmlelement("ul")}} list with several {{htmlelement("li")
 
 #### CSS
 
-We convert our `<ul>` into a scroll snapping overflow container by setting the {{cssxref("display")}} to `flex`, creating a single, non-wrapping row of `<li>` elements. The {{cssxref("overflow-x")}} property is set to `auto`, meaning if the items overflow their container on the x-axis, the content will scroll horizontally. We then convert the `<ul>` into a [scroll-snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container), ensuring that items always snap into place when the container is scrolled with a {{cssxref("scroll-snap-type")}} value of `mandatory`.
+We convert our `<ul>` into a scroll snapping overflow container by setting the `display` to `flex`, creating a single, non-wrapping row of `<li>` elements. The `overflow-x` property is set to `auto`, meaning if the items overflow their container on the x-axis, the content will scroll horizontally. We then convert the `<ul>` into a [scroll-snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container), ensuring that items always snap into place when the container is scrolled with a `scroll-snap-type` value of `mandatory`.
 
 We create a scroll marker group container with the `scroll-marker-group` property, placing it after all the content.
 
@@ -74,7 +74,7 @@ ul {
 }
 ```
 
-Next, we style the `<li>` elements, using the {{cssxref("flex")}} property to make them `33%` of the width of the container. The {{cssxref("scroll-snap-align")}} value of `start` causes the left-hand side of the left-most visible item to snap to the left edge of the container when the content is scrolled.
+Next, we style the `<li>` elements, using the `flex` property to make them `33%` of the width of the container. The `scroll-snap-align` value of `start` causes the left-hand side of the left-most visible item to snap to the left edge of the container when the content is scrolled.
 
 ```css live-sample___creating-scroll-markers live-sample___custom-numbering
 li {
@@ -99,7 +99,7 @@ li::scroll-marker {
 }
 ```
 
-We also apply styles to the {{cssxref("::scroll-marker-group")}} pseudo-element to lay out the scroll markers in the center of the row with a `0.4em` gap between each one:
+We also apply styles to the `::scroll-marker-group` pseudo-element to lay out the scroll markers in the center of the row with a `0.4em` gap between each one:
 
 ```css live-sample___creating-scroll-markers live-sample___custom-numbering
 ::scroll-marker-group {
@@ -109,7 +109,7 @@ We also apply styles to the {{cssxref("::scroll-marker-group")}} pseudo-element 
 }
 ```
 
-Finally, we style the marker of the currently-scrolled element differently from the others, targeting the marker with the {{cssxref(":target-current")}} pseudo-class.
+Finally, we style the marker of the currently-scrolled element differently from the others, targeting the marker with the `:target-current` pseudo-class.
 
 ```css live-sample___creating-scroll-markers
 ::scroll-marker:target-current {
@@ -127,7 +127,7 @@ This example is the same as the previous one, except that we have applied some d
 
 ### CSS
 
-In this example, we set a name of a counter we want to increment on each `<li>` — `markers` — using the {{cssxref("counter-increment")}} property:
+In this example, we set a name of a counter we want to increment on each `<li>` — `markers` — using the `counter-increment` property:
 
 ```css live-sample___custom-numbering
 li {
@@ -135,7 +135,7 @@ li {
 }
 ```
 
-We then set the `::scroll-marker` pseudo-element's {{cssxref("content")}} property to the {{cssxref("counter()")}} function, passing it the `markers` counter name as an argument. This has the effect of inserting a number into each marker, which increments automatically. The rest of the styling is rudimentary, but it illustrates how the markers can be fully-styled.
+We then set the `::scroll-marker` pseudo-element's `content` property to the `counter()` function, passing it the `markers` counter name as an argument. This has the effect of inserting a number into each marker, which increments automatically. The rest of the styling is rudimentary, but it illustrates how the markers can be fully-styled.
 
 ```css live-sample___custom-numbering
 li::scroll-marker {
@@ -152,7 +152,7 @@ li::scroll-marker {
 }
 ```
 
-For another interesting customization, we include two rules to select the marker of the first and last list items by inserting {{cssxref(":first-child")}} and {{cssxref(":last-child")}} into the selector chain, respectively. We give the first marker text content of "First", and the last marker text content of "Last".
+For another interesting customization, we include two rules to select the marker of the first and last list items by inserting `:first-child` and `:last-child` into the selector chain, respectively. We give the first marker text content of "First", and the last marker text content of "Last".
 
 ```css live-sample___custom-numbering
 li:first-child::scroll-marker {
@@ -164,7 +164,7 @@ li:last-child::scroll-marker {
 }
 ```
 
-To improve user experience, we set a different color on the markers on {{cssxref(":hover")}} and use the `:target-current` pseudo-class to set a different {{cssxref("color")}} and {{cssxref("background-color")}} on the currently-scrolled element's marker so users know which item is currently in view:
+To improve user experience, we set a different color on the markers on `:hover` and use the `:target-current` pseudo-class to set a different `color` and `background-color` on the currently-scrolled element's marker so users know which item is currently in view:
 
 ```css live-sample___custom-numbering
 ::scroll-marker:hover {
@@ -191,13 +191,13 @@ To improve user experience, we set a different color on the markers on {{cssxref
 
 ## See also
 
-- {{cssxref("scroll-marker-group")}}
-- {{cssxref("scroll-target-group")}}
-- {{cssxref("::scroll-button()")}}
-- {{cssxref("::scroll-marker-group")}}
-- {{cssxref(":target-current")}}
-- {{cssxref(":target-before")}}
-- {{cssxref(":target-after")}}
+- `scroll-marker-group`
+- `scroll-target-group`
+- `::scroll-button()`
+- `::scroll-marker-group`
+- `:target-current`
+- `:target-before`
+- `:target-after`
 - [Creating CSS carousels](/guides/Overflow/Carousels)
 - [CSS lists and counters](/guides/Lists) module
 - [CSS overflow](/guides/Overflow) module

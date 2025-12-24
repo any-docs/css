@@ -35,7 +35,7 @@ p {
 }
 ```
 
-`text-decoration-skip-ink` is not part of the {{cssxref("text-decoration")}} shorthand.
+`text-decoration-skip-ink` is not part of the `text-decoration` shorthand.
 
 ## Syntax
 

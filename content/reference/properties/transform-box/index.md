@@ -6,7 +6,7 @@ browser-compat: css.properties.transform-box
 sidebar: cssref
 ---
 
-The **`transform-box`** [CSS](/en-US/docs/Web/CSS) property defines the layout box to which the {{cssxref("transform")}}, individual transform properties {{cssxref("translate")}}, {{cssxref("scale")}}, and {{cssxref("rotate")}}, and {{cssxref("transform-origin")}} properties relate.
+The **`transform-box`** [CSS](/en-US/docs/Web/CSS) property defines the layout box to which the `transform`, individual transform properties `translate`, `scale`, and `rotate`, and `transform-origin` properties relate.
 
 ## Syntax
 
@@ -111,8 +111,8 @@ svg {
 ## See also
 
 - [Using CSS transforms](/guides/Transforms/Using)
-- {{cssxref("transform")}}, {{cssxref("transform-origin")}}
+- `transform`, `transform-origin`
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`

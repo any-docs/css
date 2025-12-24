@@ -15,33 +15,33 @@ The **CSS view transitions** module defines the behavior of the [View Transition
 
 ### Properties
 
-- {{cssxref("view-transition-class")}}
-- {{cssxref("view-transition-name")}}
+- `view-transition-class`
+- `view-transition-name`
 
 ### At-rules and descriptors
 
-- {{cssxref("@view-transition")}}
+- `@view-transition`
   - [`navigation`](/en-US/docs/Web/CSS/Reference/At-rules/@view-transition#navigation) descriptor
 
 ### Selectors and pseudo-elements
 
-- {{cssxref(":active-view-transition")}}
-- {{cssxref(":active-view-transition-type()")}}
-- {{cssxref("::view-transition")}}
-- {{cssxref("::view-transition-image-pair()")}}
-- {{cssxref("::view-transition-group()")}}
-- {{cssxref("::view-transition-new()")}}
-- {{cssxref("::view-transition-old()")}}
+- `:active-view-transition`
+- `:active-view-transition-type()`
+- `::view-transition`
+- `::view-transition-image-pair()`
+- `::view-transition-group()`
+- `::view-transition-new()`
+- `::view-transition-old()`
 
 ### Interfaces
 
-- {{domxref("CSSViewTransitionRule")}}
-- {{domxref("ViewTransition")}}
-  - {{domxref("ViewTransition.skipTransition()")}} method
-  - {{domxref("ViewTransition.updateCallbackDone")}}
-  - {{domxref("ViewTransition.ready")}}
-  - {{domxref("ViewTransition.finished")}}
-- {{domxref("Document.startViewTransition()")}} method
+- `CSSViewTransitionRule`
+- `ViewTransition`
+  - `ViewTransition.skipTransition()` method
+  - `ViewTransition.updateCallbackDone`
+  - `ViewTransition.ready`
+  - `ViewTransition.finished`
+- `Document.startViewTransition()` method
 
 ## Guides
 
@@ -50,20 +50,20 @@ The **CSS view transitions** module defines the behavior of the [View Transition
 
 ## Related concepts
 
-- {{domxref("PageRevealEvent", "pagereveal")}} event
-- {{domxref("PageSwapEvent", "pageswap")}} event
-- {{domxref("Document.visibilityState")}}
+- `pagereveal` event
+- `pageswap` event
+- `Document.visibilityState`
 
 - [CSS animations](/guides/Animations) module
-  - {{cssxref("animation")}}
-  - {{cssxref("@keyframes")}}
-  - {{domxref("CSSKeyframesRule")}}
-  - {{domxref("CSSStyleRule")}}
+  - `animation`
+  - `@keyframes`
+  - `CSSKeyframesRule`
+  - `CSSStyleRule`
   - [Web animations API](/en-US/docs/Web/API/Web_Animations_API)
 
 - [CSS transforms](/guides/Transforms) module
-  - {{cssxref("transform")}}
-  - {{cssxref("transform-function")}}
+  - `transform`
+  - `transform-function`
 
 ## Specifications
 

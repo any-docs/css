@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`rotate3d()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that rotates an element around a
-fixed axis in 3D space, without deforming it. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+fixed axis in 3D space, without deforming it. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: rotate3d()")}}
 
@@ -114,13 +114,13 @@ rotate3d(x, y, z, a)
 ### Values
 
 - `x`
-  - Is a {{cssxref("&lt;number&gt;")}} describing the x-coordinate of the vector denoting the axis of rotation which
+  - Is a `&lt;number&gt;` describing the x-coordinate of the vector denoting the axis of rotation which
     can be a positive or negative number.
 - `y`
-  - Is a {{cssxref("&lt;number&gt;")}} describing the y-coordinate of the vector denoting the axis of rotation which
+  - Is a `&lt;number&gt;` describing the y-coordinate of the vector denoting the axis of rotation which
     can be a positive or negative number.
 - `z`
-  - Is a {{cssxref("&lt;number&gt;")}} describing the z-coordinate of the vector denoting the axis of rotation which
+  - Is a `&lt;number&gt;` describing the z-coordinate of the vector denoting the axis of rotation which
     can be a positive or negative number.
 - `a`
   - Is an {{ cssxref("&lt;angle&gt;") }} representing the angle of the rotation. A positive angle denotes a clockwise
@@ -236,6 +236,6 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}} property
-- {{cssxref("rotate")}} property
-- {{cssxref("&lt;transform-function&gt;")}}
+- `transform` property
+- `rotate` property
+- `&lt;transform-function&gt;`

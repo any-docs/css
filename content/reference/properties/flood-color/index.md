@@ -29,8 +29,8 @@ flood-color: unset;
 
 ### Values
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - The flood's color. This can be any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- `&lt;color>`
+  - The flood's color. This can be any valid CSS `&lt;color>` value.
 
 ## Formal definition
 
@@ -66,7 +66,7 @@ We have an SVG with two {{SVGElement("filter")}} elements, each with a {{SVGElem
 
 #### CSS
 
-We define the size and position of our `<rect>` using the CSS {{cssxref("height")}}, {{cssxref("width")}}, {{cssxref("x")}}, and {{cssxref("y")}} properties:
+We define the size and position of our `<rect>` using the CSS `height`, `width`, `x`, and `y` properties:
 
 ```css
 rect {
@@ -107,15 +107,15 @@ The attributes defined the squares as seagreen, but these values were overridden
 
 ## See also
 
-- {{cssxref("flood-opacity")}}
-- {{cssxref("color")}}
-- {{cssxref("fill")}}
-- {{cssxref("lighting-color")}}
-- {{cssxref("stop-color")}}
-- {{cssxref("stroke")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("text-shadow")}}
-- {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
-- {{cssxref("filter-function")}}
+- `flood-opacity`
+- `color`
+- `fill`
+- `lighting-color`
+- `stop-color`
+- `stroke`
+- `box-shadow`
+- `text-shadow`
+- `background-color`
+- `&lt;color>`
+- `filter-function`
 - SVG {{SVGAttr("flood-color")}} attribute

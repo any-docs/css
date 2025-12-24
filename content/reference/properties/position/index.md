@@ -6,7 +6,7 @@ browser-compat: css.properties.position
 sidebar: cssref
 ---
 
-The **`position`** [CSS](/en-US/docs/Web/CSS) property sets how an element is positioned in a document. The {{Cssxref("top")}}, {{Cssxref("right")}}, {{Cssxref("bottom")}}, and {{Cssxref("left")}} physical properties and the {{cssxref("inset-block-start")}}, {{cssxref("inset-block-end")}}, {{cssxref("inset-inline-start")}}, and {{cssxref("inset-inline-end")}} flow-relative logical properties can be used to determine the final location of positioned elements.
+The **`position`** [CSS](/en-US/docs/Web/CSS) property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` physical properties and the `inset-block-start`, `inset-block-end`, `inset-inline-start`, and `inset-inline-end` flow-relative logical properties can be used to determine the final location of positioned elements.
 
 {{InteractiveExample("CSS Demo: position")}}
 
@@ -122,7 +122,7 @@ position: unset;
 ### Values
 
 - `static`
-  - The element is positioned according to the [Normal Flow](/en-US/docs/Learn_web_development/Core/CSS_layout/Introduction#normal_layout_flow) of the document. The {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, {{cssxref("left")}}, and {{cssxref("z-index")}} properties have _no effect_. This is the default value.
+  - The element is positioned according to the [Normal Flow](/en-US/docs/Learn_web_development/Core/CSS_layout/Introduction#normal_layout_flow) of the document. The `top`, `right`, `bottom`, `left`, and `z-index` properties have _no effect_. This is the default value.
 - `relative`
   - The element is positioned according to the normal flow of the document, and then offset _relative to itself_ based on the values of `top`, `right`, `bottom`, and `left`. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were `static`.
 
@@ -144,23 +144,23 @@ position: unset;
     This value always creates a new [stacking context](/guides/Positioned_layout/Stacking_context). Note that a sticky element "sticks" to its nearest ancestor that has a "scrolling mechanism" (created when `overflow` is `hidden`, `scroll`, `auto`, or `overlay`), even if that ancestor isn't the nearest actually scrolling ancestor.
 
     > [!NOTE]
-    > At least one [inset](/reference/properties/inset) property ({{cssxref("top")}}, {{cssxref("inset-block-start")}}, {{cssxref("right")}}, {{cssxref("inset-inline-end")}}, etc.) needs to be set to a non-`auto` value for the axis on which the element needs to be made sticky. If both `inset` properties for an axis are set to `auto`, on that axis the `sticky` value will behave as `relative`.
+    > At least one [inset](/reference/properties/inset) property (`top`, `inset-block-start`, `right`, `inset-inline-end`, etc.) needs to be set to a non-`auto` value for the axis on which the element needs to be made sticky. If both `inset` properties for an axis are set to `auto`, on that axis the `sticky` value will behave as `relative`.
 
 ## Description
 
 ### Types of positioning
 
 - A **positioned element** is an element whose [computed](/guides/Cascade/Property_value_processing#computed_value) `position` value is either `relative`, `absolute`, `fixed`, or `sticky`. (In other words, it's anything except `static`.)
-- A **relatively positioned element** is an element whose [computed](/guides/Cascade/Property_value_processing#computed_value) `position` value is `relative`. The {{Cssxref("top")}} and {{Cssxref("bottom")}} properties specify the vertical offset from its normal position; the {{Cssxref("left")}} and {{Cssxref("right")}} properties specify the horizontal offset.
-- An **absolutely positioned element** is an element whose [computed](/guides/Cascade/Property_value_processing#computed_value) `position` value is `absolute` or `fixed`. The {{Cssxref("top")}}, {{Cssxref("right")}}, {{Cssxref("bottom")}}, and {{Cssxref("left")}} properties specify offsets from the edges of the element's [containing block](/guides/Display/Containing_block). (The containing block is the ancestor relative to which the element is positioned.) If the element has margins, they are added to the offset. The element establishes a new [block formatting context](/guides/Display/Block_formatting_context) (BFC) for its contents.
-- A **stickily positioned element** is an element whose [computed](/guides/Cascade/Property_value_processing#computed_value) `position` value is `sticky`. It's treated as relatively positioned until its [containing block](/guides/Display/Containing_block) crosses a specified threshold (such as setting {{Cssxref("top")}} to value other than auto) within its flow root (or the container it scrolls within), at which point it is treated as "stuck" until meeting the opposite edge of its [containing block](/guides/Display/Containing_block).
+- A **relatively positioned element** is an element whose [computed](/guides/Cascade/Property_value_processing#computed_value) `position` value is `relative`. The `top` and `bottom` properties specify the vertical offset from its normal position; the `left` and `right` properties specify the horizontal offset.
+- An **absolutely positioned element** is an element whose [computed](/guides/Cascade/Property_value_processing#computed_value) `position` value is `absolute` or `fixed`. The `top`, `right`, `bottom`, and `left` properties specify offsets from the edges of the element's [containing block](/guides/Display/Containing_block). (The containing block is the ancestor relative to which the element is positioned.) If the element has margins, they are added to the offset. The element establishes a new [block formatting context](/guides/Display/Block_formatting_context) (BFC) for its contents.
+- A **stickily positioned element** is an element whose [computed](/guides/Cascade/Property_value_processing#computed_value) `position` value is `sticky`. It's treated as relatively positioned until its [containing block](/guides/Display/Containing_block) crosses a specified threshold (such as setting `top` to value other than auto) within its flow root (or the container it scrolls within), at which point it is treated as "stuck" until meeting the opposite edge of its [containing block](/guides/Display/Containing_block).
 
-Most of the time, absolutely positioned elements that have {{Cssxref("height")}} and {{Cssxref("width")}} set to `auto` are sized so as to fit their contents. However, non-[replaced](/en-US/docs/Glossary/Replaced_elements), absolutely positioned elements can be made to fill the available vertical space by specifying both {{Cssxref("top")}} and {{Cssxref("bottom")}} and leaving {{Cssxref("height")}} unspecified (that is, `auto`). They can likewise be made to fill the available horizontal space by specifying both {{Cssxref("left")}} and {{Cssxref("right")}} and leaving {{Cssxref("width")}} as `auto`.
+Most of the time, absolutely positioned elements that have `height` and `width` set to `auto` are sized so as to fit their contents. However, non-[replaced](/en-US/docs/Glossary/Replaced_elements), absolutely positioned elements can be made to fill the available vertical space by specifying both `top` and `bottom` and leaving `height` unspecified (that is, `auto`). They can likewise be made to fill the available horizontal space by specifying both `left` and `right` and leaving `width` as `auto`.
 
 Except for the case just described (of absolutely positioned elements filling the available space):
 
 - If both `top` and `bottom` are specified (technically, not `auto`), `top` wins.
-- If both `left` and `right` are specified, `left` wins when {{Cssxref("direction")}} is `ltr` (English, horizontal Japanese, etc.) and `right` wins when {{Cssxref("direction")}} is `rtl` (Persian, Arabic, Hebrew, etc.).
+- If both `left` and `right` are specified, `left` wins when `direction` is `ltr` (English, horizontal Japanese, etc.) and `right` wins when `direction` is `rtl` (Persian, Arabic, Hebrew, etc.).
 
 ## Accessibility
 
@@ -171,7 +171,7 @@ Ensure that elements positioned with an `absolute` or `fixed` value do not obscu
 
 ### Performance & Accessibility
 
-Scrolling elements containing `fixed` or `sticky` content can cause performance and accessibility issues. As a user scrolls, the browser must repaint the sticky or fixed content in a new location. Depending on the content needing to be repainted, the browser performance, and the device's processing speed, the browser may not be able to manage repaints at 60 fps. Such a scenario can lead to [jank](/en-US/docs/Glossary/Jank) and, more importantly, accessibility concerns for people with sensitivities. One solution is to add {{cssxref("will-change", "will-change: transform")}} to the positioned elements to render the element in its own layer, improving repaint speed and therefore improving performance and accessibility.
+Scrolling elements containing `fixed` or `sticky` content can cause performance and accessibility issues. As a user scrolls, the browser must repaint the sticky or fixed content in a new location. Depending on the content needing to be repainted, the browser performance, and the device's processing speed, the browser may not be able to manage repaints at 60 fps. Such a scenario can lead to [jank](/en-US/docs/Glossary/Jank) and, more importantly, accessibility concerns for people with sensitivities. One solution is to add `will-change: transform` to the positioned elements to render the element in its own layer, improving repaint speed and therefore improving performance and accessibility.
 
 ## Formal definition
 
@@ -294,7 +294,7 @@ span {
 
 ### Fixed positioning
 
-Fixed positioning is similar to absolute positioning, with the exception that the element's [containing block](/guides/Display/Containing_block) is the initial containing block established by the _viewport_, unless any ancestor has `transform`, `perspective`, or `filter` property set to something other than `none` (see [fixed positioning containing block](https://drafts.csswg.org/css-position/#fixed-positioning-containing-block)), which then causes that ancestor to take the place of the elements [containing block](/guides/Display/Containing_block). This can be used to create a "floating" element that stays in the same position regardless of scrolling. In the example below, box "One" is fixed at 80 pixels from the top of the page and 10 pixels from the left. Even after scrolling, it remains in the same place relative to the viewport. Also, when the {{cssxref("will-change")}} property is set to `transform`, a new containing block is established.
+Fixed positioning is similar to absolute positioning, with the exception that the element's [containing block](/guides/Display/Containing_block) is the initial containing block established by the _viewport_, unless any ancestor has `transform`, `perspective`, or `filter` property set to something other than `none` (see [fixed positioning containing block](https://drafts.csswg.org/css-position/#fixed-positioning-containing-block)), which then causes that ancestor to take the place of the elements [containing block](/guides/Display/Containing_block). This can be used to create a "floating" element that stays in the same position regardless of scrolling. In the example below, box "One" is fixed at 80 pixels from the top of the page and 10 pixels from the left. Even after scrolling, it remains in the same place relative to the viewport. Also, when the `will-change` property is set to `transform`, a new containing block is established.
 
 #### HTML
 

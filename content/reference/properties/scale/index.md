@@ -6,7 +6,7 @@ browser-compat: css.properties.scale
 sidebar: cssref
 ---
 
-The **`scale`** [CSS](/en-US/docs/Web/CSS) property allows you to specify scale transforms individually and independently of the {{CSSxRef("transform")}} property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
+The **`scale`** [CSS](/en-US/docs/Web/CSS) property allows you to specify scale transforms individually and independently of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
 
 {{InteractiveExample("CSS Demo: scale")}}
 
@@ -129,11 +129,11 @@ scale: unset;
 ### Values
 
 - Single value
-  - A {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} specifying a scale factor to make the affected element scale by the same factor along both the X and Y axes. Equivalent to a `scale()` (2D scaling) function with a single value specified.
+  - A `&lt;number&gt;` or `&lt;percentage&gt;` specifying a scale factor to make the affected element scale by the same factor along both the X and Y axes. Equivalent to a `scale()` (2D scaling) function with a single value specified.
 - Two values
-  - Two {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} values that specify the X and Y axis scaling values (respectively) of a 2D scale. Equivalent to a `scale()` (2D scaling) function with two values specified.
+  - Two `&lt;number&gt;` or `&lt;percentage&gt;` values that specify the X and Y axis scaling values (respectively) of a 2D scale. Equivalent to a `scale()` (2D scaling) function with two values specified.
 - Three values
-  - Three {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} values that specify the X, Y, and Z axis scaling values (respectively) of a 3D scale. Equivalent to a `scale3d()` (3D scaling) function.
+  - Three `&lt;number&gt;` or `&lt;percentage&gt;` values that specify the X, Y, and Z axis scaling values (respectively) of a 3D scale. Equivalent to a `scale3d()` (3D scaling) function.
 - `none`
   - Specifies that no scaling should be applied.
 

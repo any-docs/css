@@ -6,7 +6,7 @@ browser-compat: css.properties.scroll-padding
 sidebar: cssref
 ---
 
-The **`scroll-padding`** [shorthand property](/guides/Cascade/Shorthand_properties) sets scroll padding on all sides of an element at once, much like the {{cssxref("padding")}} property does for padding on an element.
+The **`scroll-padding`** [shorthand property](/guides/Cascade/Shorthand_properties) sets scroll padding on all sides of an element at once, much like the `padding` property does for padding on an element.
 
 {{InteractiveExample("CSS Demo: scroll-padding")}}
 
@@ -76,10 +76,10 @@ The `scroll-padding-*` properties define offsets for the _optimal viewing region
 
 This property is a shorthand for the following CSS properties:
 
-- {{CSSXref("scroll-padding-bottom")}}
-- {{CSSXref("scroll-padding-left")}}
-- {{CSSXref("scroll-padding-right")}}
-- {{CSSXref("scroll-padding-top")}}
+- `scroll-padding-bottom`
+- `scroll-padding-left`
+- `scroll-padding-right`
+- `scroll-padding-top`
 
 ## Syntax
 
@@ -102,8 +102,8 @@ scroll-padding: unset;
 
 ### Values
 
-- {{cssxref("&lt;length-percentage&gt;")}}
-  - An inwards offset from the corresponding edge of the scrollport, as a valid {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}.
+- `&lt;length-percentage&gt;`
+  - An inwards offset from the corresponding edge of the scrollport, as a valid `&lt;length&gt;` or a `&lt;percentage&gt;`.
 - `auto`
   - The offset is determined by the user agent. This will generally be `0px`, but the user agent is free to detect and do something else if a non-zero value is more appropriate.
 

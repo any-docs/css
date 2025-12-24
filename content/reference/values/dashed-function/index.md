@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`<dashed-function>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents the syntax used to call [CSS custom functions](/guides/Custom_functions_and_mixins/Using_custom_functions), which are defined using the {{cssxref("@function")}} at-rule.
+The **`<dashed-function>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents the syntax used to call [CSS custom functions](/guides/Custom_functions_and_mixins/Using_custom_functions), which are defined using the `@function` at-rule.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ In our styles, we first define the CSS custom function. The function is called `
 }
 ```
 
-Next, we define a `--base-color` custom property with a value of `#faa6ff` on the `:root` element. We assign that property to be the value of the `<p>` element's {{cssxref("border")}} color, and then set its {{cssxref("background-color")}} value to equal a transparent version of the same color. This is done by setting the value to equal the `<dashed-function>` syntax, specifying the `--transparent()` function and passing it arguments of `var(--base-color)` and `0.8`.
+Next, we define a `--base-color` custom property with a value of `#faa6ff` on the `:root` element. We assign that property to be the value of the `<p>` element's `border` color, and then set its `background-color` value to equal a transparent version of the same color. This is done by setting the value to equal the `<dashed-function>` syntax, specifying the `--transparent()` function and passing it arguments of `var(--base-color)` and `0.8`.
 
 ```css hidden live-sample___basic-example
 html,
@@ -96,7 +96,7 @@ p {
 ## See also
 
 - [CSS custom properties](/reference/properties/--*)
-- {{cssxref("@function")}} at-rule
+- `@function` at-rule
 - [`type()`](/reference/values/type) function
 - [Using CSS custom functions](/guides/Custom_functions_and_mixins/Using_custom_functions)
 - [CSS custom functions and mixins](/guides/Custom_functions_and_mixins) module

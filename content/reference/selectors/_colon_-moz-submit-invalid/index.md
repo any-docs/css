@@ -32,7 +32,7 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef(":valid")}}
-- {{CSSxRef(":invalid")}}
-- {{CSSxRef(":required")}}
-- {{CSSxRef(":optional")}}
+- `:valid`
+- `:invalid`
+- `:required`
+- `:optional`

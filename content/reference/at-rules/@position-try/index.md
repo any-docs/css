@@ -6,9 +6,9 @@ browser-compat: css.at-rules.position-try
 sidebar: cssref
 ---
 
-The **`@position-try`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) is used to define a custom position try fallback option, which can be used to define positioning and alignment for anchor-positioned elements. One or more sets of position try fallback options can be applied to the anchored element via the {{cssxref("position-try-fallbacks")}} property or {{cssxref("position-try")}} shorthand. When the positioned element is moved to a position where it starts to overflow its containing block or the viewport, the browser will select the first position try fallback option it finds that places the positioned element fully back on-screen.
+The **`@position-try`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) is used to define a custom position try fallback option, which can be used to define positioning and alignment for anchor-positioned elements. One or more sets of position try fallback options can be applied to the anchored element via the `position-try-fallbacks` property or `position-try` shorthand. When the positioned element is moved to a position where it starts to overflow its containing block or the viewport, the browser will select the first position try fallback option it finds that places the positioned element fully back on-screen.
 
-Each position option is named with a {{cssxref("dashed-ident")}} and contains a descriptor list specifying declarations that define information such as inset position, margin, sizing, and self-alignment. The `<dashed-ident>` is used to reference the custom position option in the {{cssxref("position-try-fallbacks")}} property and {{cssxref("position-try")}} shorthand.
+Each position option is named with a `dashed-ident` and contains a descriptor list specifying declarations that define information such as inset position, margin, sizing, and self-alignment. The `<dashed-ident>` is used to reference the custom position option in the `position-try-fallbacks` property and `position-try` shorthand.
 
 For detailed information on anchor features and position try fallback usage, see the [CSS anchor positioning](/guides/Anchor_positioning) module landing page and the [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide.
 
@@ -21,58 +21,58 @@ For detailed information on anchor features and position try fallback usage, see
 ```
 
 > [!NOTE]
-> The `--try-option-name` is a {{cssxref("dashed-ident")}} specifying an identifying name for the custom position option, which can then be used to add that fallback option to the {{cssxref("position-try-fallbacks")}} list.
+> The `--try-option-name` is a `dashed-ident` specifying an identifying name for the custom position option, which can then be used to add that fallback option to the `position-try-fallbacks` list.
 
 ### Descriptors
 
 The descriptors specify property values that define the behavior of the custom position option, i.e., where it will result in the positioned element being placed.
 
 - `position-anchor`
-  - Specifies a {{cssxref("position-anchor")}} property value that defines the anchor element that the positioned element is tethered to, by specifying a {{cssxref("dashed-ident")}} value equal to the anchor element's {{cssxref("anchor-name")}} property value.
+  - Specifies a `position-anchor` property value that defines the anchor element that the positioned element is tethered to, by specifying a `dashed-ident` value equal to the anchor element's `anchor-name` property value.
 - `position-area`
-  - Specifies a {{cssxref("position-area")}} property value that defines the position of the anchor-positioned element relative to the anchor.
+  - Specifies a `position-area` property value that defines the position of the anchor-positioned element relative to the anchor.
 - [Inset property](/en-US/docs/Glossary/Inset_properties) descriptors
   - Specify [`anchor()`](/reference/values/anchor) function values that define the position of the anchor-positioned element's edges relative to the anchor element's edge. Inset property descriptors can be set that represent the following properties:
-    - {{cssxref("top")}}
-    - {{cssxref("left")}}
-    - {{cssxref("bottom")}}
-    - {{cssxref("right")}}.
-    - {{cssxref("inset-block-start")}}
-    - {{cssxref("inset-block-end")}}
-    - {{cssxref("inset-inline-start")}}
-    - {{cssxref("inset-inline-end")}}
-    - {{cssxref("inset-block")}}
-    - {{cssxref("inset-inline")}}
-    - {{cssxref("inset")}}
+    - `top`
+    - `left`
+    - `bottom`
+    - `right`.
+    - `inset-block-start`
+    - `inset-block-end`
+    - `inset-inline-start`
+    - `inset-inline-end`
+    - `inset-block`
+    - `inset-inline`
+    - `inset`
 - Margin property descriptors
   - Specify the margin set on the anchor-positioned element. Margin property descriptors can be set that represent the following properties:
-    - {{cssxref("margin-top")}}
-    - {{cssxref("margin-left")}}
-    - {{cssxref("margin-bottom")}}
-    - {{cssxref("margin-right")}}
-    - {{cssxref("margin-block-start")}}
-    - {{cssxref("margin-block-end")}}
-    - {{cssxref("margin-inline-start")}}
-    - {{cssxref("margin-inline-end")}}
-    - {{cssxref("margin")}}
-    - {{cssxref("margin-block")}}
-    - {{cssxref("margin-inline")}}
+    - `margin-top`
+    - `margin-left`
+    - `margin-bottom`
+    - `margin-right`
+    - `margin-block-start`
+    - `margin-block-end`
+    - `margin-inline-start`
+    - `margin-inline-end`
+    - `margin`
+    - `margin-block`
+    - `margin-inline`
 - Sizing property descriptors
   - Specify [`anchor-size()`](/reference/values/anchor-size) function values that define the size of the anchor-positioned element relative to the anchor element size. Sizing property descriptors can be set that represent the following properties:
-    - {{cssxref("width")}}
-    - {{cssxref("height")}}
-    - {{cssxref("min-width")}}
-    - {{cssxref("min-height")}}
-    - {{cssxref("max-width")}}
-    - {{cssxref("max-height")}}
-    - {{cssxref("block-size")}}
-    - {{cssxref("inline-size")}}
-    - {{cssxref("min-block-size")}}
-    - {{cssxref("min-inline-size")}}
-    - {{cssxref("max-block-size")}}
-    - {{cssxref("max-inline-size")}}
+    - `width`
+    - `height`
+    - `min-width`
+    - `min-height`
+    - `max-width`
+    - `max-height`
+    - `block-size`
+    - `inline-size`
+    - `min-block-size`
+    - `min-inline-size`
+    - `max-block-size`
+    - `max-inline-size`
 - Self-alignment property descriptors
-  - Specify the [`anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center) value to align the anchor-positioned element relative to the anchor element's center, in the block or inline direction. {{cssxref("align-self")}} and {{cssxref("justify-self")}} property descriptors can take the `anchor-center` value.
+  - Specify the [`anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center) value to align the anchor-positioned element relative to the anchor element's center, in the block or inline direction. `align-self` and `justify-self` property descriptors can take the `anchor-center` value.
 
 > [!NOTE]
 > When a custom position option is applied to an element, the property values defined in the `@position-try` at-rule descriptor takes precedence over the values set on the element via standard CSS properties.
@@ -123,7 +123,7 @@ body {
 }
 ```
 
-The anchor is given an {{cssxref("anchor-name")}} and has a {{cssxref("position")}} value of `absolute` set on it. We then position it somewhere near the center of the initial `<body>` rendering using {{cssxref("top")}} and {{cssxref("left")}} values:
+The anchor is given an `anchor-name` and has a `position` value of `absolute` set on it. We then position it somewhere near the center of the initial `<body>` rendering using `top` and `left` values:
 
 ```css
 .anchor {
@@ -145,13 +145,13 @@ The anchor is given an {{cssxref("anchor-name")}} and has a {{cssxref("position"
 }
 ```
 
-Next, we use the `@position-try` at-rule to define four custom position options, with descriptive {{cssxref("dashed-ident")}} names to identify them and describe their purpose. Each one places the positioned element in a specific position around the anchor element and gives it an appropriate `10px` margin between the positioned element and its anchor. The positioning is handled in a variety of ways, to demonstrate the different techniques available:
+Next, we use the `@position-try` at-rule to define four custom position options, with descriptive `dashed-ident` names to identify them and describe their purpose. Each one places the positioned element in a specific position around the anchor element and gives it an appropriate `10px` margin between the positioned element and its anchor. The positioning is handled in a variety of ways, to demonstrate the different techniques available:
 
-- The first and last position options use a {{cssxref("position-area")}}.
-- The second position option uses {{cssxref("top")}} with an {{cssxref("anchor()")}} value and {{cssxref("justify-self", "justify-self: anchor-center")}} to center the positioned element on the anchor in the inline direction.
-- The third position option uses {{cssxref("left")}} with an {{cssxref("anchor()")}} value, wrapped inside a {{cssxref("calc()")}} function that adds `10px` of spacing (rather than creating the spacing with {{cssxref("margin")}} like the other options do). It then uses {{cssxref("align-self", "align-self: anchor-center")}} to center the positioned element on the anchor in the block direction.
+- The first and last position options use a `position-area`.
+- The second position option uses `top` with an `anchor()` value and `justify-self: anchor-center` to center the positioned element on the anchor in the inline direction.
+- The third position option uses `left` with an `anchor()` value, wrapped inside a `calc()` function that adds `10px` of spacing (rather than creating the spacing with `margin` like the other options do). It then uses `align-self: anchor-center` to center the positioned element on the anchor in the block direction.
 
-Finally, the left and right position options are given a narrower {{cssxref("width")}}
+Finally, the left and right position options are given a narrower `width`
 
 ```css
 @position-try --custom-left {
@@ -180,7 +180,7 @@ Finally, the left and right position options are given a narrower {{cssxref("wid
 }
 ```
 
-The infobox is given fixed positioning, a {{cssxref("position-anchor")}} property that references the anchor's `anchor-name` to associate the two together, and it is tethered to the anchor's top edge using a {{cssxref("position-area")}}. We also give it a fixed {{cssxref("width")}} and some bottom {{cssxref("margin")}}. The custom position options are then referenced in the {{cssxref("position-try-fallbacks")}} property to prevent the positioned element from overflowing, or being scrolled out of view, when the anchor gets near the edge of the viewport.
+The infobox is given fixed positioning, a `position-anchor` property that references the anchor's `anchor-name` to associate the two together, and it is tethered to the anchor's top edge using a `position-area`. We also give it a fixed `width` and some bottom `margin`. The custom position options are then referenced in the `position-try-fallbacks` property to prevent the positioned element from overflowing, or being scrolled out of view, when the anchor gets near the edge of the viewport.
 
 ```css
 .infobox {
@@ -222,13 +222,13 @@ In some cases, we need to set values inside the custom position options to turn 
 
 ## See also
 
-- {{cssxref("position-area")}}
-- {{cssxref("position-anchor")}}
-- {{cssxref("position-try-fallbacks")}}
-- {{cssxref("position-try")}}
-- The {{cssxref("anchor()")}} function
-- The {{cssxref("anchor-size()")}} function
+- `position-area`
+- `position-anchor`
+- `position-try-fallbacks`
+- `position-try`
+- The `anchor()` function
+- The `anchor-size()` function
 - [CSS anchor positioning](/guides/Anchor_positioning) module
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide
 - [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide
-- {{domxref("CSSPositionTryRule")}}
+- `CSSPositionTryRule`

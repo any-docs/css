@@ -67,20 +67,20 @@ The `outline-color` property is specified as any one of the values listed below.
 
 ### Values
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the outline, specified as a `<color>`.
 
-The specification also lists an additional value, `auto`, which is not currently supported in any browsers. When implemented, `auto` will compute to [`currentColor`](/reference/values/color_value#currentcolor_keyword) unless {{cssxref("outline-style")}} is set to `auto` then it will compute to the [accent color](/reference/properties/accent-color).
+The specification also lists an additional value, `auto`, which is not currently supported in any browsers. When implemented, `auto` will compute to [`currentColor`](/reference/values/color_value#currentcolor_keyword) unless `outline-style` is set to `auto` then it will compute to the [accent color](/reference/properties/accent-color).
 
 ## Description
 
-An outline is a line that is drawn around an element, outside the {{cssxref("border")}}. Unlike the element's border, the outline is drawn outside the element's frame, and may overlap other content. The border, on the other hand, will actually alter the page's layout to ensure that it fits without overlapping anything else (unless you explicitly set it to overlap).
+An outline is a line that is drawn around an element, outside the `border`. Unlike the element's border, the outline is drawn outside the element's frame, and may overlap other content. The border, on the other hand, will actually alter the page's layout to ensure that it fits without overlapping anything else (unless you explicitly set it to overlap).
 
-It is often more convenient to use the shorthand property {{cssxref("outline")}} when defining the appearance of an outline.
+It is often more convenient to use the shorthand property `outline` when defining the appearance of an outline.
 
 ## Accessibility
 
-Custom [focus styles](/en-US/docs/Web/CSS/Reference/Selectors/:focus) commonly involve making adjustments to the {{cssxref("outline")}} property. If the color of the outline is adjusted, it is important to ensure that the contrast ratio between it and the background the outline is placed over is high enough that people experiencing low vision conditions will be able to perceive it.
+Custom [focus styles](/en-US/docs/Web/CSS/Reference/Selectors/:focus) commonly involve making adjustments to the `outline` property. If the color of the outline is adjusted, it is important to ensure that the contrast ratio between it and the background the outline is placed over is high enough that people experiencing low vision conditions will be able to perceive it.
 
 Color contrast ratio is determined by comparing the luminosity of the text and background color values. In order to meet current [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/), a ratio of 4.5:1 is required for text content and 3:1 for larger text such as headings. Large text is defined as 18.66px and [bold](/reference/properties/font-weight) or larger, or 24px or larger.
 
@@ -130,8 +130,8 @@ p {
 
 ## See also
 
-- {{cssxref("outline")}}
-- {{cssxref("outline-width")}}
-- {{cssxref("outline-style")}}
-- The {{cssxref("&lt;color&gt;")}} data type
-- Other color-related properties: {{cssxref("color")}}, {{cssxref("background-color")}}, {{cssxref("border-color")}}, {{cssxref("text-decoration-color")}}, {{cssxref("text-emphasis-color")}}, {{cssxref("text-shadow")}}, {{cssxref("caret-color")}}, and {{cssxref("column-rule-color")}}
+- `outline`
+- `outline-width`
+- `outline-style`
+- The `&lt;color&gt;` data type
+- Other color-related properties: `color`, `background-color`, `border-color`, `text-decoration-color`, `text-emphasis-color`, `text-shadow`, `caret-color`, and `column-rule-color`

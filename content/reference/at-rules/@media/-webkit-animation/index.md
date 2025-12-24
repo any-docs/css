@@ -14,12 +14,12 @@ sidebar: cssref
 > [!NOTE]
 > All browsers support the [`animation`](/reference/properties/animation#browser_compatibility) property without vendor prefixes. Only WebKit (Safari), and not Chromium, based browsers supports the `-webkit-animation` media feature. No browsers support `animation`, without the prefix, as a media query. Use the [`@supports (animation)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
 
-The **`-webkit-animation`** Boolean [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features) is a [WebKit extension](/en-US/docs/Web/CSS/Reference/Webkit_extensions) whose value is `true` if vendor-prefixed CSS {{cssxref("animation")}}s are supported.
+The **`-webkit-animation`** Boolean [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features) is a [WebKit extension](/en-US/docs/Web/CSS/Reference/Webkit_extensions) whose value is `true` if vendor-prefixed CSS `animation`s are supported.
 
 Apple has [a description in Safari CSS Reference](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariCSSRef/Articles/OtherStandardCSS3Features.html#//apple_ref/doc/uid/TP40007601-SW3).
 
 > [!NOTE]
-> This media feature is only supported by WebKit. If possible, use an {{cssxref("@supports")}} feature query instead.
+> This media feature is only supported by WebKit. If possible, use an `@supports` feature query instead.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ The `-webkit-animation` media feature is a Boolean whose value is `true` if the 
 ### Values
 
 - `true`
-  - The browser supports `-webkit` prefixed CSS {{cssxref("animation")}}.
+  - The browser supports `-webkit` prefixed CSS `animation`.
 - `false`
   - The browser doesn't support these prefixed CSS animations.
 
@@ -56,6 +56,6 @@ Not part of any standard.
 - [`-webkit-transform-2d`](/en-US/docs/Web/CSS/Reference/At-rules/@media/-webkit-transform-2d)
 - [`-webkit-transition`](/en-US/docs/Web/CSS/Reference/At-rules/@media/-webkit-transition)
 - [Test page at quirksmode.org](https://www.quirksmode.org/css/tests/mediaqueries/animation.html)
-- {{cssxref("animation")}} and [using CSS animations](/guides/Animations/Using)
-- {{cssxref("@media")}} and [Using media queries](/guides/Media_queries/Using)
-- {{cssxref("@supports")}} and [using feature queries](/guides/Conditional_rules/Using_feature_queries)
+- `animation` and [using CSS animations](/guides/Animations/Using)
+- `@media` and [Using media queries](/guides/Media_queries/Using)
+- `@supports` and [using feature queries](/guides/Conditional_rules/Using_feature_queries)

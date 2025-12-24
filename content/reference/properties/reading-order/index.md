@@ -29,12 +29,12 @@ reading-order: unset;
 
 ### Value
 
-- {{cssxref("&lt;integer&gt;")}}
+- `&lt;integer&gt;`
   - Represents the ordinal group the element belongs to.
 
 ## Description
 
-When an element's [block](/en-US/docs/Glossary/Block/CSS), [flex](/guides/Flexible_box_layout), or [grid](/guides/Grid_layout) parent container has a {{cssxref("reading-flow")}} property set to a value other than `normal`, the `reading-order` property can be used to set the element's [reading flow](/en-US/docs/Glossary/Reading_order#reading_flow) position relative to that of its siblings.
+When an element's [block](/en-US/docs/Glossary/Block/CSS), [flex](/guides/Flexible_box_layout), or [grid](/guides/Grid_layout) parent container has a `reading-flow` property set to a value other than `normal`, the `reading-order` property can be used to set the element's [reading flow](/en-US/docs/Glossary/Reading_order#reading_flow) position relative to that of its siblings.
 
 For reading and navigation, elements inside a block, flex, or grid container are sorted by ascending `reading-order` value. If multiple siblings have the same `reading-order` value, those items are sorted according to the container's `reading-flow`. Siblings not given an explicit `reading-order` value are assigned the default value of `0`, which puts all the children of a reading flow container in the same ordinal group by default.
 
@@ -75,7 +75,7 @@ In our markup we have six {{htmlelement("a")}} elements contained inside a wrapp
 
 #### CSS
 
-On the `<div>`, we set the [grid-auto-flow](/reference/properties/grid-auto-flow) property to `dense`, therefore items may display out of source order. The `reading-order` property on the `<a>` element with a class of `top` is set to `-1`, therefore "Item 4" will be the first item in reading flow. The `reading-order` property on the `<a>` element with a class of `bottom` is set to `21`, therefore "Item 4" will be the last item in the reading order. The remaining items will be visited in between, in grid row order, as the `<div>` element's {{cssxref("reading-flow")}} property is set to [grid-rows](/reference/properties/grid-row).
+On the `<div>`, we set the [grid-auto-flow](/reference/properties/grid-auto-flow) property to `dense`, therefore items may display out of source order. The `reading-order` property on the `<a>` element with a class of `top` is set to `-1`, therefore "Item 4" will be the first item in reading flow. The `reading-order` property on the `<a>` element with a class of `bottom` is set to `21`, therefore "Item 4" will be the last item in the reading order. The remaining items will be visited in between, in grid row order, as the `<div>` element's `reading-flow` property is set to [grid-rows](/reference/properties/grid-row).
 
 ```css
 .wrapper {
@@ -156,5 +156,5 @@ Try tabbing through the links, and note how "Item 1", "Item 3", and "Item 5" are
 
 ## See also
 
-- {{cssxref("reading-flow")}}
+- `reading-flow`
 - [CSS `reading-flow` examples](https://chrome.dev/reading-flow-examples/) via chrome.dev

@@ -90,11 +90,11 @@ button.addEventListener("click", () => {
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("offset-anchor")}}
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-path")}}
-- {{cssxref("offset-position")}}
-- {{cssxref("offset-rotate")}}
+- `offset-anchor`
+- `offset-distance`
+- `offset-path`
+- `offset-position`
+- `offset-rotate`
 
 ## Syntax
 
@@ -182,8 +182,8 @@ offset: unset;
 
 ## See also
 
-- {{cssxref("offset-anchor")}}
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-path")}}
-- {{cssxref("offset-position")}}
-- {{cssxref("offset-rotate")}}
+- `offset-anchor`
+- `offset-distance`
+- `offset-path`
+- `offset-position`
+- `offset-rotate`

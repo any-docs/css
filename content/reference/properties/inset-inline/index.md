@@ -6,7 +6,7 @@ browser-compat: css.properties.inset-inline
 sidebar: cssref
 ---
 
-The **`inset-inline`** [CSS](/en-US/docs/Web/CSS) property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("top")}} and {{cssxref("bottom")}}, or {{cssxref("right")}} and {{cssxref("left")}} properties depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The **`inset-inline`** [CSS](/en-US/docs/Web/CSS) property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 This {{glossary("inset properties", "inset property")}} has no effect on non-positioned elements.
 
@@ -65,8 +65,8 @@ direction: rtl;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("inset-inline-end")}}
-- {{cssxref("inset-inline-start")}}
+- `inset-inline-end`
+- `inset-inline-start`
 
 ## Syntax
 
@@ -94,7 +94,7 @@ inset-inline: unset;
 
 ### Values
 
-The `inset-inline` property takes the same values as the {{cssxref("left")}} property.
+The `inset-inline` property takes the same values as the `left` property.
 
 ## Formal definition
 
@@ -147,7 +147,7 @@ div {
 
 ## See also
 
-- The mapped physical properties: {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, and {{cssxref("left")}}
-- The mapped physical shortcut: {{cssxref("inset")}}
-- The mapped block shortcut: {{cssxref("inset-block")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- The mapped physical properties: `top`, `right`, `bottom`, and `left`
+- The mapped physical shortcut: `inset`
+- The mapped block shortcut: `inset-block`
+- `writing-mode`, `direction`, `text-orientation`

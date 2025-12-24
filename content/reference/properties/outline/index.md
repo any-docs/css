@@ -51,9 +51,9 @@ border-radius: 2rem;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("outline-width")}}
-- {{cssxref("outline-style")}}
-- {{cssxref("outline-color")}}
+- `outline-width`
+- `outline-style`
+- `outline-color`
 
 ## Syntax
 
@@ -86,17 +86,17 @@ The `outline` property may be specified using one, two, or three of the values l
 ### Values
 
 - `<'outline-width'>`
-  - Sets the thickness of the outline. Defaults to `medium` if absent. See {{cssxref("outline-width")}}.
+  - Sets the thickness of the outline. Defaults to `medium` if absent. See `outline-width`.
 - `<'outline-style'>`
-  - Sets the style of the outline. Defaults to `none` if absent. See {{cssxref("outline-style")}}.
+  - Sets the style of the outline. Defaults to `none` if absent. See `outline-style`.
 - `<'outline-color'>`
-  - Sets the color of the outline. Defaults to `invert` for browsers supporting it, `currentColor` for the others. See {{cssxref("outline-color")}}.
+  - Sets the color of the outline. Defaults to `invert` for browsers supporting it, `currentColor` for the others. See `outline-color`.
 
 ## Description
 
 Outline is a line outside of the element's [border](/reference/properties/border). Unlike other areas of the box, outlines don't take up space, so they don't affect the layout of the document in any way.
 
-There are a few properties that affect an outline's appearance. It is possible to change the style, color, and width using the `outline` property, the distance from the border using the {{cssxref("outline-offset")}} property, and corner angles using the {{cssxref("border-radius")}} property.
+There are a few properties that affect an outline's appearance. It is possible to change the style, color, and width using the `outline` property, the distance from the border using the `outline-offset` property, and corner angles using the `border-radius` property.
 
 An outline is not required to be rectangular: While dealing with multiline text, some browsers will draw an outline for each line box separately, while others will wrap the whole text with a single outline.
 
@@ -157,7 +157,7 @@ a:focus {
 
 ## See also
 
-- {{cssxref("outline-width")}}
-- {{cssxref("outline-style")}}
-- {{cssxref("outline-color")}}
-- {{Cssxref("border")}}
+- `outline-width`
+- `outline-style`
+- `outline-color`
+- `border`

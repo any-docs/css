@@ -10,7 +10,7 @@ The **`@container`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rule
 Style declarations are filtered by a condition and applied to the container if the condition is true.
 The condition is evaluated when the queried container size, [`<style-feature>`](#container_style_queries), or scroll-state changes.
 
-The {{cssxref("container-name")}} property specifies a list of query container names. These names can be used by `@container` rules to filter which query containers are targeted. The optional, case-sensitive `<container-name>` filters the query containers that are targeted by the query.
+The `container-name` property specifies a list of query container names. These names can be used by `@container` rules to filter which query containers are targeted. The optional, case-sensitive `<container-name>` filters the query containers that are targeted by the query.
 
 Once an eligible query container has been selected for an element, each container feature in the `<container-condition>` is evaluated against that query container.
 
@@ -66,7 +66,7 @@ Once an eligible query container has been selected for an element, each containe
 - `<container-condition>`
   - An optional `<container-name>` and a `<container-query>`. Styles defined in the `<stylesheet>` are applied if the condition is true.
     - `<container-name>`
-      - Optional. The name of the container that the styles will be applied to when the query evaluates to true, specified as an {{cssxref("ident")}}.
+      - Optional. The name of the container that the styles will be applied to when the query evaluates to true, specified as an `ident`.
     - `<container-query>`
       - A set of features that are evaluated against the query container when the size, [`<style-feature>`](#container_style_queries), or scroll-state of the container changes.
 
@@ -94,7 +94,7 @@ Logical keywords can be used to define the container condition:
 
 ### Named containment contexts
 
-A containment context can be named using the {{cssxref("container-name")}} property.
+A containment context can be named using the `container-name` property.
 
 ```css
 .post {
@@ -103,7 +103,7 @@ A containment context can be named using the {{cssxref("container-name")}} prope
 }
 ```
 
-The shorthand syntax for this is to use {{cssxref("container")}} in the form `container: <name> / <type>`, for example:
+The shorthand syntax for this is to use `container` in the form `container: <name> / <type>`, for example:
 
 ```css
 .post {
@@ -111,7 +111,7 @@ The shorthand syntax for this is to use {{cssxref("container")}} in the form `co
 }
 ```
 
-In container queries, the {{cssxref("container-name")}} property is used to filter the set of containers to those with a matching query container name:
+In container queries, the `container-name` property is used to filter the set of containers to those with a matching query container name:
 
 ```css
 @container sidebar (width > 400px) {
@@ -119,7 +119,7 @@ In container queries, the {{cssxref("container-name")}} property is used to filt
 }
 ```
 
-Details about usage and naming restrictions are described in the {{cssxref("container-name")}} page.
+Details about usage and naming restrictions are described in the `container-name` page.
 
 ### Descriptors
 
@@ -127,7 +127,7 @@ The `<container-condition>` queries include [size](#size_container_descriptors) 
 
 #### Size container descriptors
 
-The `<container-condition>` can include one or more boolean size queries, each within a set of parentheses. A size query includes a size descriptor, a value, and — depending on the descriptor — a comparison operator. The queries always measures the [content box](/reference/values/box-edge#content-box) as the comparison. The syntax for including multiple conditions is the same as for {{cssxref("@media")}} size feature queries.
+The `<container-condition>` can include one or more boolean size queries, each within a set of parentheses. A size query includes a size descriptor, a value, and — depending on the descriptor — a comparison operator. The queries always measures the [content box](/reference/values/box-edge#content-box) as the comparison. The syntax for including multiple conditions is the same as for `@media` size feature queries.
 
 ```css
 @container (min-width: 400px) {
@@ -142,22 +142,22 @@ The `<container-condition>` can include one or more boolean size queries, each w
 ```
 
 - `aspect-ratio`
-  - The {{cssxref("aspect-ratio")}} of the container calculated as the width to the height of the container expressed as a {{cssxref("ratio")}} value.
+  - The `aspect-ratio` of the container calculated as the width to the height of the container expressed as a `ratio` value.
 
 - `block-size`
-  - The {{cssxref("block-size")}} of the container expressed as a {{cssxref("length")}} value.
+  - The `block-size` of the container expressed as a `length` value.
 
 - `height`
-  - The height of the container expressed as a {{cssxref("length")}} value.
+  - The height of the container expressed as a `length` value.
 
 - `inline-size`
-  - The {{cssxref("inline-size")}} of the container expressed as a {{cssxref("length")}} value.
+  - The `inline-size` of the container expressed as a `length` value.
 
 - `orientation`
   - The [orientation](/en-US/docs/Web/CSS/Reference/At-rules/@media/orientation) of the container, either `landscape` or `portrait`.
 
 - `width`
-  - The width of the container expressed as a {{cssxref("length")}} value.
+  - The width of the container expressed as a `length` value.
 
 #### Scroll-state container descriptors
 
@@ -231,7 +231,7 @@ Supported keywords for scroll-state container descriptors include physical and {
     - `both`
       - The container is both a horizontal and vertical scroll snap target for its ancestor scroll container and is snapping to its ancestor in both directions. The container won't match if it is only snapping to its ancestor along the horizontal _or_ vertical axis. It needs to be both.
 
-    To evaluate a container with a non-`none` `snapped` scroll-state query, it must be a container with a scroll container ancestor having a {{cssxref("scroll-snap-type")}} value other than `none`. A `snapped: none` query will match even when there is no scroll container ancestor.
+    To evaluate a container with a non-`none` `snapped` scroll-state query, it must be a container with a scroll container ancestor having a `scroll-snap-type` value other than `none`. A `snapped: none` query will match even when there is no scroll container ancestor.
 
     Evaluations occur when [`scrollsnapchanging`](/en-US/docs/Web/API/Element/scrollsnapchanging_event) events fire on the scroll snap container. If the test passes, the rules inside the `@container` block are applied to descendants of the container.
 
@@ -244,7 +244,7 @@ Supported keywords for scroll-state container descriptors include physical and {
     ```
 
 - `stuck`
-  - Queries whether a container with a {{cssxref("position")}} value of [`sticky`](/en-US/docs/Learn_web_development/Core/CSS_layout/Positioning#sticky_positioning) is stuck to an edge of its scrolling container ancestor. Valid `stuck` values include the following keywords:
+  - Queries whether a container with a `position` value of [`sticky`](/en-US/docs/Learn_web_development/Core/CSS_layout/Positioning#sticky_positioning) is stuck to an edge of its scrolling container ancestor. Valid `stuck` values include the following keywords:
     - `none`
       - The container is not stuck to any edges of its container. Note that `none` queries will match even if the container does not have `position: sticky` set on it.
     - `top`
@@ -370,7 +370,7 @@ Given the following HTML example which is a card component with a title and some
 ```
 
 First, create a container context using the `container-type` and `container-name` properties.
-The shorthand syntax for this declaration is described in the {{cssxref("container")}} page.
+The shorthand syntax for this declaration is described in the `container` page.
 
 ```css
 .post {
@@ -441,7 +441,7 @@ The following container query checks if the [computed value](/guides/Cascade/Pro
 ```
 
 > [!NOTE]
-> If a custom property has a value of `blue`, the equivalent hexadecimal code `#0000ff` will not match unless the property has been defined as a color with {{cssxref("@property")}} so the browser can properly compare computed values.
+> If a custom property has a value of `blue`, the equivalent hexadecimal code `#0000ff` will not match unless the property has been defined as a color with `@property` so the browser can properly compare computed values.
 
 Style features that query a shorthand property are true if the computed values match for each of its longhand properties, and false otherwise. For example, `@container style(border: 2px solid red)` will resolve to true if all 12 longhand properties (`border-bottom-style`, etc.) that make up that shorthand are true.
 
@@ -464,9 +464,9 @@ See [Using container scroll-state queries](/guides/Conditional_rules/Container_s
 - [Using container queries](/guides/Containment/Container_queries)
 - [Using container size and style queries](/guides/Containment/Container_size_and_style_queries)
 - [Using container scroll-state queries](/guides/Conditional_rules/Container_scroll-state_queries)
-- {{Cssxref("container-name")}}
-- {{Cssxref("container-type")}}
-- {{Cssxref("contain")}}
-- {{Cssxref("content-visibility")}}
+- `container-name`
+- `container-type`
+- `contain`
+- `content-visibility`
 - [CSS containment module](/guides/Containment)
 - [CSS at-rule functions](/en-US/docs/Web/CSS/Reference/At-rules/At-rule_functions)

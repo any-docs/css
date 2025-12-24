@@ -71,19 +71,19 @@ section {
 }
 ```
 
-As with any shorthand property, any individual value that is not specified is set to its corresponding initial value (possibly overriding values previously set using non-shorthand properties). Though not directly settable by `font`, the longhands {{cssxref("font-size-adjust")}} and {{cssxref("font-kerning")}} are also reset to their initial values.
+As with any shorthand property, any individual value that is not specified is set to its corresponding initial value (possibly overriding values previously set using non-shorthand properties). Though not directly settable by `font`, the longhands `font-size-adjust` and `font-kerning` are also reset to their initial values.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("font-family")}}
-- {{cssxref("font-size")}}
-- {{cssxref("font-stretch")}}
-- {{cssxref("font-style")}}
-- {{cssxref("font-variant")}}
-- {{cssxref("font-weight")}}
-- {{cssxref("line-height")}}
+- `font-family`
+- `font-size`
+- `font-stretch`
+- `font-style`
+- `font-variant`
+- `font-weight`
+- `line-height`
 
 ## Syntax
 
@@ -111,15 +111,15 @@ If `font` is specified as a system keyword, it must be one of: `caption`, `icon`
 If `font` is specified as a shorthand for several font-related properties, then:
 
 - it must include values for:
-  - {{cssxref("&lt;font-size&gt;")}}
-  - {{cssxref("&lt;font-family&gt;")}}
+  - `&lt;font-size&gt;`
+  - `&lt;font-family&gt;`
 
 - it may optionally include values for:
-  - {{cssxref("&lt;font-style&gt;")}}
-  - {{cssxref("&lt;font-variant&gt;")}}
-  - {{cssxref("&lt;font-weight&gt;")}}
-  - {{cssxref("&lt;font-stretch&gt;")}}
-  - {{cssxref("&lt;line-height&gt;")}}
+  - `&lt;font-style&gt;`
+  - `&lt;font-variant&gt;`
+  - `&lt;font-weight&gt;`
+  - `&lt;font-stretch&gt;`
+  - `&lt;line-height&gt;`
 
 - `font-style`, `font-variant` and `font-weight` must precede `font-size`.
 - `font-variant` may only specify the values defined in CSS 2.1, that is `normal` and `small-caps`.
@@ -130,19 +130,19 @@ If `font` is specified as a shorthand for several font-related properties, then:
 ### Values
 
 - `<'font-style'>`
-  - See the {{cssxref("font-style")}} CSS property.
+  - See the `font-style` CSS property.
 - `<'font-variant'>`
-  - See the {{cssxref("font-variant")}} CSS property.
+  - See the `font-variant` CSS property.
 - `<'font-weight'>`
-  - See the {{cssxref("font-weight")}} CSS property.
+  - See the `font-weight` CSS property.
 - `<'font-stretch'>`
-  - See the {{cssxref("font-stretch")}} CSS property.
+  - See the `font-stretch` CSS property.
 - `<'font-size'>`
-  - See the {{cssxref("font-size")}} CSS property.
+  - See the `font-size` CSS property.
 - `<'line-height'>`
-  - See the {{cssxref("line-height")}} CSS property.
+  - See the `line-height` CSS property.
 - `<'font-family'>`
-  - See the {{cssxref("font-family")}} CSS property.
+  - See the `font-family` CSS property.
 
 #### System font values
 
@@ -524,6 +524,6 @@ document.querySelectorAll("input[type='radio']").forEach((el) => {
 
 ## See also
 
-- {{cssxref("font-style")}}
-- {{cssxref("font-weight")}}
+- `font-style`
+- `font-weight`
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)

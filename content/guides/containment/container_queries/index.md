@@ -21,7 +21,7 @@ This article provides an introduction to using container queries, specifically f
 ## Using container size queries
 
 While container queries apply styles based on the container type, container size queries apply styles specifically based on the container's dimensions. To use container size queries, you need to declare a **containment context** on an element so that the browser knows you might want to query the dimensions of this container later.
-To do this, use the {{cssxref("container-type")}} property with a value of `size`, `inline-size`, or `normal`.
+To do this, use the `container-type` property with a value of `size`, `inline-size`, or `normal`.
 
 These values have the following effects:
 
@@ -53,7 +53,7 @@ You can create a containment context using the `container-type` property:
 }
 ```
 
-Next, use the {{cssxref("@container")}} at-rule to define a container query.
+Next, use the `@container` at-rule to define a container query.
 The query in the following example will apply styles to elements based on the size of the nearest ancestor with a containment context.
 Specifically, this query will apply a larger font size for the card title if the container is wider than `700px`:
 
@@ -74,12 +74,12 @@ Specifically, this query will apply a larger font size for the card title if the
 Using container queries, the card can be reused in multiple areas of a page without needing to know specifically where it will be placed each time.
 If the container with the card is narrower than `700px`, the font of the card title will be small, and if the card is in a container that's wider than `700px`, the font of the card title will be bigger.
 
-For more information on the syntax of container queries, see the {{cssxref("@container")}} page.
+For more information on the syntax of container queries, see the `@container` page.
 
 ### Naming containment contexts
 
 In the previous section, a container query applied styles based on the nearest ancestor with a containment context.
-It's possible to give a containment context a name using the {{Cssxref("container-name")}} property. Once named, the name can be used in a `@container` query so as to target a specific container.
+It's possible to give a containment context a name using the `container-name` property. Once named, the name can be used in a `@container` query so as to target a specific container.
 The following example creates a containment context with the name `sidebar`:
 
 ```css
@@ -99,7 +99,7 @@ You can then target this containment context using the `@container` at-rule:
 }
 ```
 
-More information on naming containment contexts is available on the {{cssxref("container-name")}} page.
+More information on naming containment contexts is available on the `container-name` page.
 
 ### Shorthand container syntax
 
@@ -111,7 +111,7 @@ The shorthand way of declaring a containment context is to use the `container` p
 }
 ```
 
-For more information on this property, see the {{Cssxref("container")}} reference.
+For more information on this property, see the `container` reference.
 
 ### Container query length units
 
@@ -144,8 +144,8 @@ For more information on these units, see the [Container query length units](/ref
 
 ## Fallbacks for container queries
 
-For browsers that don't yet support container queries, {{cssxref("grid")}} and {{cssxref("flex")}} can be used to create a similar effect for the card component used on this page.
-The following example uses a {{cssxref("grid-template-columns")}} declaration to create a two-column layout for the card component.
+For browsers that don't yet support container queries, `grid` and `flex` can be used to create a similar effect for the card component used on this page.
+The following example uses a `grid-template-columns` declaration to create a two-column layout for the card component.
 
 ```css
 .card {
@@ -167,11 +167,11 @@ If you want to use a single-column layout for devices with a smaller viewport, y
 ## See also
 
 - [Media queries](/guides/Media_queries)
-- CSS {{Cssxref("@container")}} at-rule
-- CSS {{Cssxref("contain")}} property
-- CSS {{Cssxref("container")}} shorthand property
-- CSS {{Cssxref("container-name")}} property
-- CSS {{cssxref("content-visibility")}} property
+- CSS `@container` at-rule
+- CSS `contain` property
+- CSS `container` shorthand property
+- CSS `container-name` property
+- CSS `content-visibility` property
 - [Using container size and style queries](/guides/Containment/Container_size_and_style_queries)
 - [Using container scroll-state queries](/guides/Conditional_rules/Container_scroll-state_queries)
 - [Say Hello to CSS Container Queries](https://ishadeed.com/article/say-hello-to-css-container-queries/) by Ahmad Shadeed

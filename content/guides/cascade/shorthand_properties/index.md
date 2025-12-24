@@ -7,7 +7,7 @@ sidebar: cssref
 
 **_Shorthand properties_** are CSS properties that let you set the values of multiple other CSS properties simultaneously. Using a shorthand property, you can write more concise (and often more readable) style sheets, saving time and energy.
 
-The CSS specification defines shorthand properties to group the definition of common properties acting on the same theme. For instance, the CSS {{cssxref("background")}} property is a shorthand property that's able to define the values of {{cssxref("background-color")}}, {{cssxref("background-image")}}, {{cssxref("background-repeat")}}, and {{cssxref("background-position")}}. Similarly, the most common font-related properties can be defined using the shorthand {{cssxref("font")}}, and the different margins around a box can be defined using the {{cssxref("margin")}} shorthand.
+The CSS specification defines shorthand properties to group the definition of common properties acting on the same theme. For instance, the CSS `background` property is a shorthand property that's able to define the values of `background-color`, `background-image`, `background-repeat`, and `background-position`. Similarly, the most common font-related properties can be defined using the shorthand `font`, and the different margins around a box can be defined using the `margin` shorthand.
 
 ## Tricky edge cases
 
@@ -24,7 +24,7 @@ p {
 }
 ```
 
-This will not set the color of the background to `red` but to the default value for {{cssxref("background-color")}}, which is `transparent`.
+This will not set the color of the background to `red` but to the default value for `background-color`, which is `transparent`.
 
 Only the individual properties values can inherit. As missing values are replaced by their initial value, it is impossible to allow inheritance of individual properties by omitting them. The keyword `inherit` can be applied to a property, but only as a whole, not as a keyword for one value or another. That means that the only way to make some specific value to be inherited is to use the longhand property with the keyword `inherit`.
 
@@ -34,12 +34,12 @@ Shorthand properties try not to force a specific order for the values of the pro
 
 Two important cases here are:
 
-- properties related to the edges of a box, like {{cssxref("border-style")}}, {{cssxref("margin")}} or {{cssxref("padding")}}
-- properties related to the corners of a box, like {{cssxref("border-radius")}}
+- properties related to the edges of a box, like `border-style`, `margin` or `padding`
+- properties related to the corners of a box, like `border-radius`
 
 #### Edges of a box
 
-Shorthands handling properties related to edges of a box, like {{cssxref("border-style")}}, {{cssxref("margin")}} or {{cssxref("padding")}}, always use a consistent 1-to-4-value syntax representing those edges:
+Shorthands handling properties related to edges of a box, like `border-style`, `margin` or `padding`, always use a consistent 1-to-4-value syntax representing those edges:
 
 - **1-value syntax:** `border-width: 1em` — The single value represents all edges: ![Box edges with one-value syntax](border1.png)
 
@@ -51,7 +51,7 @@ Shorthands handling properties related to edges of a box, like {{cssxref("border
 
 #### Corners of a box
 
-Similarly, shorthands handling properties related to corners of a box, like {{cssxref("border-radius")}}, always use a consistent 1-to-4-value syntax representing those corners:
+Similarly, shorthands handling properties related to corners of a box, like `border-radius`, always use a consistent 1-to-4-value syntax representing those corners:
 
 - **1-value syntax:** `border-radius: 1em` — The single value represents all corners: ![Box corners with one-value syntax](corner1.png)
 
@@ -80,7 +80,7 @@ background: black url("images/bg.gif") no-repeat left top;
 
 (The shorthand form is actually the equivalent of the longhand properties above plus `background-attachment: scroll` and, in CSS3, some additional properties.)
 
-See {{cssxref("background")}} for more detailed information, including CSS3 properties.
+See `background` for more detailed information, including CSS3 properties.
 
 ## Font properties
 
@@ -165,83 +165,83 @@ Just like margins and paddings, the inset values are ordered clockwise - top, ri
 
 ## The universal shorthand property
 
-CSS provides a universal shorthand property, {{cssxref("all")}}, which applies its value to every property in the document. Its purpose is to change the properties' inheritance model.
+CSS provides a universal shorthand property, `all`, which applies its value to every property in the document. Its purpose is to change the properties' inheritance model.
 
 See [Handling conflicts](/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts) or [Introducing the CSS Cascade](/guides/Cascade/Introduction) for more information about how inheritance works in CSS.
 
 ## Shorthand properties
 
-- {{cssxref("all")}}
-- {{cssxref("animation")}}
-- {{cssxref("animation-range")}}
-- {{cssxref("background")}}
-- {{cssxref("border")}}
-- {{cssxref("border-block")}}
-- {{cssxref("border-block-end")}}
-- {{cssxref("border-block-start")}}
-- {{cssxref("border-bottom")}}
-- {{cssxref("border-color")}}
-- {{cssxref("border-image")}}
-- {{cssxref("border-inline")}}
-- {{cssxref("border-inline-end")}}
-- {{cssxref("border-inline-start")}}
-- {{cssxref("border-left")}}
-- {{cssxref("border-radius")}}
-- {{cssxref("border-right")}}
-- {{cssxref("border-style")}}
-- {{cssxref("border-top")}}
-- {{cssxref("border-width")}}
-- {{cssxref("column-rule")}}
-- {{cssxref("columns")}}
-- {{cssxref("contain-intrinsic-size")}}
-- {{cssxref("container")}}
-- {{cssxref("flex")}}
-- {{cssxref("flex-flow")}}
-- {{cssxref("font")}}
-- {{cssxref("font-synthesis")}}
-- {{cssxref("font-variant")}}
-- {{cssxref("gap")}}
-- {{cssxref("grid")}}
-- {{cssxref("grid-area")}}
-- {{cssxref("grid-column")}}
-- {{cssxref("grid-row")}}
-- {{cssxref("grid-template")}}
-- {{cssxref("inset")}}
-- {{cssxref("inset-block")}}
-- {{cssxref("inset-inline")}}
-- {{cssxref("list-style")}}
-- {{cssxref("margin")}}
-- {{cssxref("margin-block")}}
-- {{cssxref("margin-inline")}}
-- {{cssxref("mask")}}
-- {{cssxref("mask-border")}}
-- {{cssxref("offset")}}
-- {{cssxref("outline")}}
-- {{cssxref("overflow")}}
-- {{cssxref("overscroll-behavior")}}
-- {{cssxref("padding")}}
-- {{cssxref("padding-block")}}
-- {{cssxref("padding-inline")}}
-- {{cssxref("place-content")}}
-- {{cssxref("place-items")}}
-- {{cssxref("place-self")}}
-- {{cssxref("position-try")}}
-- {{cssxref("scroll-margin")}}
-- {{cssxref("scroll-margin-block")}}
-- {{cssxref("scroll-margin-inline")}}
-- {{cssxref("scroll-padding")}}
-- {{cssxref("scroll-padding-block")}}
-- {{cssxref("scroll-padding-inline")}}
-- {{cssxref("scroll-timeline")}}
-- {{cssxref("text-box")}}
-- {{cssxref("text-decoration")}}
-- {{cssxref("text-emphasis")}}
-- {{cssxref("text-wrap")}}
-- {{cssxref("transition")}}
-- {{cssxref("view-timeline")}}
-- {{cssxref("-webkit-text-stroke")}}
-- {{cssxref("-webkit-border-before")}}
-- {{cssxref("-webkit-mask-box-image")}}
+- `all`
+- `animation`
+- `animation-range`
+- `background`
+- `border`
+- `border-block`
+- `border-block-end`
+- `border-block-start`
+- `border-bottom`
+- `border-color`
+- `border-image`
+- `border-inline`
+- `border-inline-end`
+- `border-inline-start`
+- `border-left`
+- `border-radius`
+- `border-right`
+- `border-style`
+- `border-top`
+- `border-width`
+- `column-rule`
+- `columns`
+- `contain-intrinsic-size`
+- `container`
+- `flex`
+- `flex-flow`
+- `font`
+- `font-synthesis`
+- `font-variant`
+- `gap`
+- `grid`
+- `grid-area`
+- `grid-column`
+- `grid-row`
+- `grid-template`
+- `inset`
+- `inset-block`
+- `inset-inline`
+- `list-style`
+- `margin`
+- `margin-block`
+- `margin-inline`
+- `mask`
+- `mask-border`
+- `offset`
+- `outline`
+- `overflow`
+- `overscroll-behavior`
+- `padding`
+- `padding-block`
+- `padding-inline`
+- `place-content`
+- `place-items`
+- `place-self`
+- `position-try`
+- `scroll-margin`
+- `scroll-margin-block`
+- `scroll-margin-inline`
+- `scroll-padding`
+- `scroll-padding-block`
+- `scroll-padding-inline`
+- `scroll-timeline`
+- `text-box`
+- `text-decoration`
+- `text-emphasis`
+- `text-wrap`
+- `transition`
+- `view-timeline`
+- `-webkit-text-stroke`
+- `-webkit-border-before`
+- `-webkit-mask-box-image`
 
 ## See also
 

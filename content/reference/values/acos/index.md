@@ -6,7 +6,7 @@ browser-compat: css.types.acos
 sidebar: cssref
 ---
 
-The **`acos()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the inverse cosine of a number between `-1` and `1`. The function contains a single calculation that returns an {{cssxref("angle")}} between `0deg` and `180deg`.
+The **`acos()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the inverse cosine of a number between `-1` and `1`. The function contains a single calculation that returns an `angle` between `0deg` and `180deg`.
 
 ## Syntax
 
@@ -25,11 +25,11 @@ transform: rotate(acos(e / 3));
 The `acos(number)` function accepts only one value as its parameter.
 
 - `number`
-  - A calculation which resolves to a {{cssxref("&lt;number&gt;")}} between `-1` and `1`.
+  - A calculation which resolves to a `&lt;number&gt;` between `-1` and `1`.
 
 ### Return value
 
-The inverse cosine of a `number` will always return an {{cssxref("angle")}} between `0deg` and `180deg`.
+The inverse cosine of a `number` will always return an `angle` between `0deg` and `180deg`.
 
 - If `number` is less than `-1` or greater than `1`, the result is `NaN`.
 - If `number` is exactly `1`, the result is `0`.
@@ -42,7 +42,7 @@ The inverse cosine of a `number` will always return an {{cssxref("angle")}} betw
 
 ### Rotate elements
 
-The `acos()` function can be used to {{cssxref("transform-function/rotate", "rotate")}} elements as it return an {{cssxref("angle")}}.
+The `acos()` function can be used to `rotate` elements as it return an `angle`.
 
 #### HTML
 
@@ -103,9 +103,9 @@ div.box-5 {
 
 ## See also
 
-- {{CSSxRef("sin")}}
-- {{CSSxRef("cos")}}
-- {{CSSxRef("tan")}}
-- {{CSSxRef("asin")}}
-- {{CSSxRef("atan")}}
-- {{CSSxRef("atan2")}}
+- `sin`
+- `cos`
+- `tan`
+- `asin`
+- `atan`
+- `atan2`

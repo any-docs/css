@@ -90,8 +90,8 @@ h2 {
 
 ## See also
 
-- {{cssxref("@font-palette-values")}}
-- {{cssxref("@font-palette-values/font-family", "font-family")}} descriptor
-- {{cssxref("@font-palette-values/override-colors", "override-colors")}} descriptor
-- {{cssxref("font-palette")}} property
-- {{domxref("CSSFontPaletteValuesRule.basePalette")}}
+- `@font-palette-values`
+- `font-family` descriptor
+- `override-colors` descriptor
+- `font-palette` property
+- `CSSFontPaletteValuesRule.basePalette`

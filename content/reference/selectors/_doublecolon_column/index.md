@@ -22,11 +22,11 @@ The **`::column`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/C
 
 ## Description
 
-When CSS multi-column layout is used to lay out a container's content in multiple columns (for example, using the {{cssxref("column-count")}} property), `::column` pseudo-elements are generated to contain each individual column.
+When CSS multi-column layout is used to lay out a container's content in multiple columns (for example, using the `column-count` property), `::column` pseudo-elements are generated to contain each individual column.
 
-The `::column` pseudo-element only accepts scroll snap properties that apply to elements inside a scroll container, including {{cssxref("scroll-margin")}}, {{cssxref("scroll-snap-align")}}, and {{cssxref("scroll-snap-stop")}}.
+The `::column` pseudo-element only accepts scroll snap properties that apply to elements inside a scroll container, including `scroll-margin`, `scroll-snap-align`, and `scroll-snap-stop`.
 
-The `::column` pseudo-element can have a {{cssxref("::scroll-marker")}} pseudo-element. Other pseudo-elements like {{cssxref("::before")}} and {{cssxref("::after")}} are not generated on `::column`. Applying `::column::scroll-marker` creates a marker for every column of the originating [scroll container](/en-US/docs/Glossary/Scroll_container), with the `::scroll-marker` pseudo-elements inheriting from the `::column` pseudo-element's originating element rather than the `::column` itself.
+The `::column` pseudo-element can have a `::scroll-marker` pseudo-element. Other pseudo-elements like `::before` and `::after` are not generated on `::column`. Applying `::column::scroll-marker` creates a marker for every column of the originating [scroll container](/en-US/docs/Glossary/Scroll_container), with the `::scroll-marker` pseudo-elements inheriting from the `::column` pseudo-element's originating element rather than the `::column` itself.
 
 This is useful for [CSS carousels](/guides/Overflow/Carousels) — `::column` can be used to generate `::scroll-marker` pseudo-elements for each column, and set them as [snap targets](/en-US/docs/Glossary/Scroll_snap#snap_target) using [CSS scroll snap](/guides/Scroll_snap).
 
@@ -36,7 +36,7 @@ While the styling that can be applied to `::column` is very limited, it may be e
 
 ### Scrolling column layout
 
-This demo creates a responsive container that snaps each "page" of content into place. It uses the {{cssxref("columns")}} property and the `::column` pseudo-element to create content columns that span the full width of their parent {{glossary("scroll container")}}, which can be scrolled horizontally. Each column contains one or more list items, which vary in number depending on the viewport width.
+This demo creates a responsive container that snaps each "page" of content into place. It uses the `columns` property and the `::column` pseudo-element to create content columns that span the full width of their parent {{glossary("scroll container")}}, which can be scrolled horizontally. Each column contains one or more list items, which vary in number depending on the viewport width.
 
 #### HTML
 
@@ -104,7 +104,7 @@ The HTML consists of an [unordered list](/en-US/docs/Web/HTML/Reference/Elements
 
 #### CSS
 
-The list is given a fixed {{cssxref("height")}} and a {{cssxref("width")}} of `100vw` to make it span the full width of the viewport. An {{cssxref("overflow-x")}} value of `scroll` is then set so that the content will scroll horizontally, and [CSS scroll snap](/guides/Scroll_snap) is used to snap to each item or "page" — a {{cssxref("scroll-snap-type")}} value of `x mandatory` is used to make the list into a [scroll snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container). Finally, a {{cssxref("columns")}} value of `1` is set to force the list contents to display as a single column. A {{cssxref("text-align")}} value of `center` is also applied, to align the content with the center of the list.
+The list is given a fixed `height` and a `width` of `100vw` to make it span the full width of the viewport. An `overflow-x` value of `scroll` is then set so that the content will scroll horizontally, and [CSS scroll snap](/guides/Scroll_snap) is used to snap to each item or "page" — a `scroll-snap-type` value of `x mandatory` is used to make the list into a [scroll snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container). Finally, a `columns` value of `1` is set to force the list contents to display as a single column. A `text-align` value of `center` is also applied, to align the content with the center of the list.
 
 ```css hidden live-sample___column-layout-example live-sample___carousel-example
 * {
@@ -133,10 +133,10 @@ ul {
 
 The list items are then styled:
 
-- A {{cssxref("display")}} value of `inline-block` is set to make the list items sit alongside one another and make the list scroll horizontally.
-- A fixed {{cssxref("width")}} and {{cssxref("height")}} has been set on them.
+- A `display` value of `inline-block` is set to make the list items sit alongside one another and make the list scroll horizontally.
+- A fixed `width` and `height` has been set on them.
 - A `text-align` value of `left` is set on them to override the `text-align: center` set on the parent container, so the item content will be left-aligned.
-- Every even-numbered list item is given a different background-color via {{cssxref(":nth-child()")}}, so that it is easier to see the scrolling effect.
+- Every even-numbered list item is given a different background-color via `:nth-child()`, so that it is easier to see the scrolling effect.
 
 ```css live-sample___column-layout-example live-sample___carousel-example
 li {
@@ -158,7 +158,7 @@ li:nth-child(even) {
 }
 ```
 
-The {{cssxref("scroll-snap-align")}} property is set on the `::column` pseudo-elements — which represent the content columns generated by the `columns` property — so that when scrolled, a column is snapped to be centered within the scroll container.
+The `scroll-snap-align` property is set on the `::column` pseudo-elements — which represent the content columns generated by the `columns` property — so that when scrolled, a column is snapped to be centered within the scroll container.
 
 ```css live-sample___column-layout-example live-sample___carousel-example
 ul::column {
@@ -172,11 +172,11 @@ ul::column {
 
 ### Column-based carousel with scroll markers
 
-Expanding on the previous example, we will create scroll markers to enable direct navigation to different columns by applying a {{cssxref("scroll-marker-group")}} to the container and a {{cssxref("::scroll-marker")}} to each `::column` pseudo-element. The HTML remains unchanged.
+Expanding on the previous example, we will create scroll markers to enable direct navigation to different columns by applying a `scroll-marker-group` to the container and a `::scroll-marker` to each `::column` pseudo-element. The HTML remains unchanged.
 
 #### CSS
 
-We create a scroll marker group with the {{cssxref("scroll-marker-group")}} property, placing the group after all the content:
+We create a scroll marker group with the `scroll-marker-group` property, placing the group after all the content:
 
 ```css live-sample___carousel-example
 ul {
@@ -184,7 +184,7 @@ ul {
 }
 ```
 
-We then apply styles to the {{cssxref("::scroll-marker-group")}} pseudo-element to lay out the scroll markers in the center of the row with a `0.4em` gap between each one:
+We then apply styles to the `::scroll-marker-group` pseudo-element to lay out the scroll markers in the center of the row with a `0.4em` gap between each one:
 
 ```css live-sample___carousel-example
 ::scroll-marker-group {
@@ -194,7 +194,7 @@ We then apply styles to the {{cssxref("::scroll-marker-group")}} pseudo-element 
 }
 ```
 
-Finally, we use the {{cssxref("::scroll-marker")}} pseudo-element to create a round, transparent marker for each list item with a black border, then style the marker of the currently-scrolled element differently from the others, targeting the marker with the {{cssxref(":target-current")}} pseudo-class:
+Finally, we use the `::scroll-marker` pseudo-element to create a round, transparent marker for each list item with a black border, then style the marker of the currently-scrolled element differently from the others, targeting the marker with the `:target-current` pseudo-class:
 
 ```css live-sample___carousel-example
 ul::column::scroll-marker {
@@ -229,10 +229,10 @@ See [Creating CSS carousels](/guides/Overflow/Carousels) for more carousel examp
 
 ## See also
 
-- {{cssxref("columns")}}
-- {{cssxref("::scroll-marker")}}
-- {{cssxref("::scroll-marker-group")}}
-- {{cssxref(":target-current")}}
+- `columns`
+- `::scroll-marker`
+- `::scroll-marker-group`
+- `:target-current`
 - [Creating CSS carousels](/guides/Overflow/Carousels)
 - [CSS multi-column layout](/guides/Multicol_layout) module
 - [CSS overflow](/guides/Overflow) module

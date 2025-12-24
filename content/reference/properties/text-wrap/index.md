@@ -65,8 +65,8 @@ text-wrap: stable;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("text-wrap-mode")}}
-- {{cssxref("text-wrap-style")}}
+- `text-wrap-mode`
+- `text-wrap-style`
 
 ## Syntax
 
@@ -178,8 +178,8 @@ The text in the example is editable. Change the text, adding long words, to view
 
 ## See also
 
-- {{CSSxRef("white-space")}}
-- {{CSSxRef("white-space-collapse")}}
+- `white-space`
+- `white-space-collapse`
 - [CSS text module](/guides/Text)
 - [CSS `text-wrap: balance`](https://developer.chrome.com/docs/css-ui/css-text-wrap-balance) on developer.chrome.com (2023)
 - [CSS `text-wrap: pretty`](https://developer.chrome.com/blog/css-text-wrap-pretty/) on developer.chrome.com (2023)

@@ -12,7 +12,7 @@ As this guide aims to detail things which are specific to CSS grid layout and Bo
 
 ## Basic example
 
-In this example using [grid layout](/guides/Grid_layout/Basic_concepts), there is extra space in the {{ glossary("grid container") }} after laying out the fixed-width tracks on the inline {{ glossary("main axis") }}. This space is distributed using {{ cssxref("justify-content") }}. On the block {{ glossary("cross axis") }} the alignment of the items inside their grid areas is controlled with {{cssxref("align-items")}}. The first item overrides the `align-items` value set on the group by setting {{cssxref("align-self")}} to `center`.
+In this example using [grid layout](/guides/Grid_layout/Basic_concepts), there is extra space in the {{ glossary("grid container") }} after laying out the fixed-width tracks on the inline {{ glossary("main axis") }}. This space is distributed using {{ cssxref("justify-content") }}. On the block {{ glossary("cross axis") }} the alignment of the items inside their grid areas is controlled with `align-items`. The first item overrides the `align-items` value set on the group by setting `align-self` to `center`.
 
 ```html live-sample___grid-align-items
 <div class="box">
@@ -61,11 +61,11 @@ The inline axis is the axis that corresponds to the direction that words in a se
 
 ![Inline axes are horizontal.](inline_axis.png)
 
-To align things on the inline axis you use the properties that start with `justify-`: {{cssxref("justify-content")}}, {{cssxref("justify-items")}} and {{cssxref("justify-self")}}.
+To align things on the inline axis you use the properties that start with `justify-`: `justify-content`, `justify-items` and `justify-self`.
 
 The block axis crosses the inline axis in the direction that blocks are displayed down the page — for example, paragraphs in English are displayed one below the other vertically. This is the block dimension.
 
-To align things on the block axis you use the properties that start with `align-`, {{cssxref("align-content")}}, {{cssxref("align-items")}} and {{cssxref("align-self")}}.
+To align things on the block axis you use the properties that start with `align-`, `align-content`, `align-items` and `align-self`.
 
 ![The block axes are vertical.](block_axis.png)
 
@@ -73,12 +73,12 @@ To align things on the block axis you use the properties that start with `align-
 
 These properties deal with aligning the item inside the grid area it is placed into:
 
-- {{cssxref("justify-self")}}
-- {{cssxref("align-self")}}
-- {{cssxref("place-self")}}
-- {{cssxref("justify-items")}}
-- {{cssxref("align-items")}}
-- {{cssxref("place-items")}}
+- `justify-self`
+- `align-self`
+- `place-self`
+- `justify-items`
+- `align-items`
+- `place-items`
 
 The `*-items` properties, `align-items` and `justify-items`, are applied to the grid container and set alignment for all grid items as a group. The `*-self` properties, `align-self` and `justify-self`, are instead set on grid items. This means that you can set alignment on all grid items, and then override any items that need a different alignment by applying the `align-self` or `justify-self` property to the rules for the individual grid items.
 
@@ -88,9 +88,9 @@ The initial value for `align-items` and `justify-items` is `stretch`, and the in
 
 These properties deal with aligning the tracks of the grid when there is extra space to distribute:
 
-- {{cssxref("justify-content")}}
-- {{cssxref("align-content")}}
-- {{cssxref("place-content")}}
+- `justify-content`
+- `align-content`
+- `place-content`
 
 This scenario will occur if the tracks that you have defined total less than the total width of the grid container.
 
@@ -98,11 +98,11 @@ This scenario will occur if the tracks that you have defined total less than the
 
 These properties define the spacing between grid items within a grid container:
 
-- {{cssxref("row-gap")}}
-- {{cssxref("column-gap")}}
-- {{cssxref("gap")}}
+- `row-gap`
+- `column-gap`
+- `gap`
 
-The grid specification originally contained the definition for the properties {{cssxref("row-gap", "grid-row-gap")}}, {{cssxref("column-gap", "grid-column-gap")}} and {{cssxref("gap", "grid-gap")}}. These have since been moved into the Box Alignment specification and aliased to {{cssxref("row-gap")}}, {{cssxref("column-gap")}}, and {{cssxref("gap")}}. This allows them to be used for other layout methods where a gap between items makes sense.
+The grid specification originally contained the definition for the properties `grid-row-gap`, `grid-column-gap` and `grid-gap`. These have since been moved into the Box Alignment specification and aliased to `row-gap`, `column-gap`, and `gap`. This allows them to be used for other layout methods where a gap between items makes sense.
 
 ## See also
 

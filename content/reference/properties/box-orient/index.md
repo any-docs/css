@@ -48,7 +48,7 @@ The inline and block axes are the writing-mode dependent keywords which, in Engl
 
 ## Description
 
-HTML DOM elements lay out their contents along the inline-axis by default. This CSS property will only apply to HTML elements with a CSS {{CSSxRef("display")}} value of `box` or `inline-box`.
+HTML DOM elements lay out their contents along the inline-axis by default. This CSS property will only apply to HTML elements with a CSS `display` value of `box` or `inline-box`.
 
 ## Formal definition
 
@@ -101,7 +101,7 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef("box-direction")}}
-- {{CSSxRef("box-pack")}}
-- {{CSSxRef("box-align")}}
-- {{CSSxRef("flex-direction")}}
+- `box-direction`
+- `box-pack`
+- `box-align`
+- `flex-direction`

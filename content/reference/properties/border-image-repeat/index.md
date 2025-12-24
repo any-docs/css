@@ -6,7 +6,7 @@ browser-compat: css.properties.border-image-repeat
 sidebar: cssref
 ---
 
-The **`border-image-repeat`** [CSS](/en-US/docs/Web/CSS) property defines how the images for the sides and the middle part of the [border image](/reference/properties/border-image) are scaled and tiled. The middle region can be displayed by using the keyword "fill" in the {{cssxref("border-image-slice")}} property.
+The **`border-image-repeat`** [CSS](/en-US/docs/Web/CSS) property defines how the images for the sides and the middle part of the [border image](/reference/properties/border-image) are scaled and tiled. The middle region can be displayed by using the keyword "fill" in the `border-image-slice` property.
 
 {{InteractiveExample("CSS Demo: border-image-repeat")}}
 

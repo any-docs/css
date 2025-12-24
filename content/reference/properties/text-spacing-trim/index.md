@@ -173,6 +173,6 @@ p {
 
 ## See also
 
-- {{CSSXref("text-autospace")}}
+- `text-autospace`
 - [`ic`](/guides/Values_and_units/Numeric_data_types#local_font-relative_lengths) and [`ric`](/guides/Values_and_units/Numeric_data_types#root_font-relative_lengths) units
 - [CSS text](/guides/Text) module

@@ -73,6 +73,6 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref("-moz-user-input")}}
-- {{cssxref("user-modify")}}
-- {{cssxref("user-select", "-moz-user-select")}}
+- `-moz-user-input`
+- `user-modify`
+- `-moz-user-select`

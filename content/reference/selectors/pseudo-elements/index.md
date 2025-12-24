@@ -23,7 +23,7 @@ selector::pseudo-element {
 }
 ```
 
-For example, {{CSSxRef("::first-line")}} can be used to change the font of the first line of a paragraph.
+For example, `::first-line` can be used to change the font of the first line of a paragraph.
 
 ```css
 /* The first line of every <p> element. */
@@ -44,11 +44,11 @@ A pseudo-element can be selected based on the current state of the originating e
 
 ## Typographic pseudo-elements
 
-- {{CSSxRef("::first-line")}}
+- `::first-line`
   - The first line-box of the originating element.
-- {{CSSxRef("::first-letter")}}
+- `::first-letter`
   - The first letter, number, or symbol character on the first line of its originating element.
-- {{CSSxRef("::cue")}}
+- `::cue`
   - The [WebVTT](/en-US/docs/Web/API/WebVTT_API) cues within a selected element.
     This can be used to [style captions and other cues](/en-US/docs/Web/API/WebVTT_API#styling_webvtt_in_html_or_a_stylesheet) in media with VTT tracks.
     The [CSS pseudo-elements](/guides/Pseudo-elements) module also defines the `::postfix` and `::prefix` sub-pseudo elements. These are not yet supported by any browser.
@@ -57,62 +57,62 @@ A pseudo-element can be selected based on the current state of the originating e
 
 Selects document sections based on content and document status, enabling those areas to be styled differently to indicate that status to the user.
 
-- {{CSSxRef("::selection")}}
+- `::selection`
   - The portion of a document that has been selected.
-- {{CSSxRef("::target-text")}}
+- `::target-text`
   - The document's target element. The target element is identified using the URL's fragment identifier.
-- {{CSSxRef("::spelling-error")}}
+- `::spelling-error`
   - A portion of text that the browser thinks is misspelled.
-- {{CSSxRef("::grammar-error")}}
+- `::grammar-error`
   - A portion of text that the browser thinks is grammatically incorrect.
-- {{CSSxRef("::highlight()")}}
+- `::highlight()`
   - The elements in the [highlight registry](/en-US/docs/Web/API/CSS/highlights_static). It is used to create custom highlights.
 
 ## Tree-Abiding pseudo-elements
 
 These pseudo-elements behave like regular elements, fitting seamlessly within the box model. They act as a child element that can be styled directly within the originating element hierarchy.
 
-- {{CSSxRef("::before")}}
+- `::before`
   - Creates a pseudo-element that is the first child of the selected element.
-- {{CSSxRef("::after")}}
+- `::after`
   - Creates a pseudo-element that is the last child of the selected element.
-- {{CSSxRef("::column")}}
+- `::column`
   - Each column fragment of a [multi-column layout](/guides/Multicol_layout).
-- {{CSSxRef("::marker")}}
+- `::marker`
   - The automatically generated marker box of a list item.
-- {{CSSxRef("::backdrop")}}
+- `::backdrop`
   - The backdrop of the originating element rendered in the [top layer](/en-US/docs/Glossary/Top_layer).
-- {{CSSxRef("::scroll-button()")}}
+- `::scroll-button()`
   - Creates a button that can control the scrolling of the {{glossary("scroll container")}} to which it is applied.
-- {{CSSxRef("::scroll-marker")}}
+- `::scroll-marker`
   - Creates a pseudo-element that is a scroll marker — a scroll target button for its originating element nested in a scroll-marker group.
-- {{CSSxRef("::scroll-marker-group")}}
-  - Generates a container before or after a scroll container to contain the {{cssxref("::scroll-marker")}} pseudo-elements generated on the element or its descendants.
+- `::scroll-marker-group`
+  - Generates a container before or after a scroll container to contain the `::scroll-marker` pseudo-elements generated on the element or its descendants.
 
 ## Element-backed pseudo-elements
 
 These pseudo-elements are real elements that are not otherwise selectable.
 
-- {{CSSxRef("::details-content")}}
+- `::details-content`
   - The expandable/collapsible contents of a {{HTMLElement("details")}} element.
-- {{cssxref("::part()")}}
+- `::part()`
   - Any element within a [shadow tree](/en-US/docs/Web/API/Web_components/Using_shadow_DOM) that has a matching [`part`](/en-US/docs/Web/HTML/Reference/Global_attributes/part) attribute.
-- {{cssxref("::slotted()")}}
+- `::slotted()`
   - Any element placed into a slot inside an HTML template.
 
 ## Form-related pseudo-elements
 
 The pseudo-elements are related to form controls.
 
-- {{CSSxRef("::checkmark")}}
+- `::checkmark`
   - Targets the checkmark placed inside the currently-selected `<option>` element of a [customizable select element](/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select) to provide a visual indication of which one is selected.
-- {{CSSxRef("::file-selector-button")}}
+- `::file-selector-button`
   - The button of an {{HTMLElement("input") }} of [`type="file"`](/en-US/docs/Web/HTML/Reference/Elements/input/file).
-- {{CSSxRef("::picker()")}}
+- `::picker()`
   - The picker part of an element, for example the drop-down picker of a [customizable select element](/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select).
-- {{CSSxRef("::picker-icon")}}
+- `::picker-icon`
   - The picker icon inside form controls that have an icon associated with them. In the case of a [customizable select element](/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select), it selects the arrow that points down when the select is closed.
-- {{CSSxRef("::placeholder")}}
+- `::placeholder`
   - The placeholder text in an input field.
 
 ## Alphabetical index
@@ -121,68 +121,68 @@ Pseudo-elements defined by a set of CSS specifications include the following:
 
 A
 
-- {{CSSxRef("::after")}}
+- `::after`
 
 B
 
-- {{CSSxRef("::backdrop")}}
-- {{CSSxRef("::before")}}
+- `::backdrop`
+- `::before`
 
 C
 
-- {{CSSxRef("::column")}}
-- {{CSSxRef("::checkmark")}}
-- {{CSSxRef("::cue")}} (and {{cssxref("::cue()")}})
+- `::column`
+- `::checkmark`
+- `::cue` (and `::cue()`)
 
 D
 
-- {{CSSxRef("::details-content")}}
+- `::details-content`
 
 F
 
-- {{CSSxRef("::file-selector-button")}}
-- {{CSSxRef("::first-letter")}}
-- {{CSSxRef("::first-line")}}
+- `::file-selector-button`
+- `::first-letter`
+- `::first-line`
 
 G
 
-- {{CSSxRef("::grammar-error")}}
+- `::grammar-error`
 
 H
 
-- {{CSSxRef("::highlight()")}}
+- `::highlight()`
 
 M
 
-- {{CSSxRef("::marker")}}
+- `::marker`
 
 P
 
-- {{cssxref("::part()")}}
-- {{CSSxRef("::picker()")}}
-- {{CSSxRef("::picker-icon")}}
-- {{CSSxRef("::placeholder")}}
+- `::part()`
+- `::picker()`
+- `::picker-icon`
+- `::placeholder`
 
 S
 
-- {{CSSxRef("::scroll-button()")}}
-- {{CSSxRef("::scroll-marker")}}
-- {{CSSxRef("::scroll-marker-group")}}
-- {{CSSxRef("::selection")}}
-- {{cssxref("::slotted()")}}
-- {{CSSxRef("::spelling-error")}}
+- `::scroll-button()`
+- `::scroll-marker`
+- `::scroll-marker-group`
+- `::selection`
+- `::slotted()`
+- `::spelling-error`
 
 T
 
-- {{CSSxRef("::target-text")}}
+- `::target-text`
 
 V
 
-- {{cssxref("::view-transition")}}
-- {{cssxref("::view-transition-image-pair()")}}
-- {{cssxref("::view-transition-group()")}}
-- {{cssxref("::view-transition-new()")}}
-- {{cssxref("::view-transition-old()")}}
+- `::view-transition`
+- `::view-transition-image-pair()`
+- `::view-transition-group()`
+- `::view-transition-new()`
+- `::view-transition-old()`
 
 ### Non-standard pseudo-elements
 
@@ -190,47 +190,47 @@ Non-standard vendor-prefixed pseudo-elements include:
 
 #### `-moz-` prefix
 
-- {{CSSxRef("::-moz-color-swatch")}}
-- {{CSSxRef("::-moz-focus-inner")}}
-- {{CSSxRef("::-moz-list-bullet")}}
-- {{CSSxRef("::-moz-list-number")}}
-- {{CSSxRef("::-moz-meter-bar")}}
-- {{CSSxRef("::-moz-progress-bar")}}
-- {{CSSxRef("::-moz-range-progress")}}
-- {{CSSxRef("::-moz-range-thumb")}}
-- {{CSSxRef("::-moz-range-track")}}
+- `::-moz-color-swatch`
+- `::-moz-focus-inner`
+- `::-moz-list-bullet`
+- `::-moz-list-number`
+- `::-moz-meter-bar`
+- `::-moz-progress-bar`
+- `::-moz-range-progress`
+- `::-moz-range-thumb`
+- `::-moz-range-track`
 
 #### `-webkit-` prefix
 
-- {{CSSxRef("::-webkit-inner-spin-button")}}
-- {{CSSxRef("::-webkit-meter-bar")}}
-- {{CSSxRef("::-webkit-meter-even-less-good-value")}}
-- {{CSSxRef("::-webkit-meter-inner-element")}}
-- {{CSSxRef("::-webkit-meter-optimum-value")}}
-- {{CSSxRef("::-webkit-meter-suboptimum-value")}}
-- {{CSSxRef("::-webkit-progress-bar")}}
-- {{CSSxRef("::-webkit-progress-inner-element")}}
-- {{CSSxRef("::-webkit-progress-value")}}
-- {{CSSxRef("::-webkit-scrollbar")}}
-- {{CSSxRef("::-webkit-search-cancel-button")}}
-- {{CSSxRef("::-webkit-search-results-button")}}
-- {{CSSxRef("::-webkit-slider-runnable-track")}}
-- {{CSSxRef("::-webkit-slider-thumb")}}
+- `::-webkit-inner-spin-button`
+- `::-webkit-meter-bar`
+- `::-webkit-meter-even-less-good-value`
+- `::-webkit-meter-inner-element`
+- `::-webkit-meter-optimum-value`
+- `::-webkit-meter-suboptimum-value`
+- `::-webkit-progress-bar`
+- `::-webkit-progress-inner-element`
+- `::-webkit-progress-value`
+- `::-webkit-scrollbar`
+- `::-webkit-search-cancel-button`
+- `::-webkit-search-results-button`
+- `::-webkit-slider-runnable-track`
+- `::-webkit-slider-thumb`
 
 ## Nesting pseudo-elements
 
 You can chain some pseudo-element selectors together to style pseudo-elements nested inside other pseudo-elements. The following nested pseudo-element combinations are supported:
 
-- {{CSSxRef("::after")}}
-  - `::after::marker`: Selects the {{CSSxRef("::marker")}} pseudo-element of an `::after` pseudo-element, when `::after` is styled as a list item, with {{CSSxRef("display", "display: list-item")}}.
-- {{CSSxRef("::before")}}
-  - `::before::marker`: Selects the {{CSSxRef("::marker")}} pseudo-element of a `::before` pseudo-element, when `::before` is styled as a list item, with {{CSSxRef("display", "display: list-item")}}.
+- `::after`
+  - `::after::marker`: Selects the `::marker` pseudo-element of an `::after` pseudo-element, when `::after` is styled as a list item, with `display: list-item`.
+- `::before`
+  - `::before::marker`: Selects the `::marker` pseudo-element of a `::before` pseudo-element, when `::before` is styled as a list item, with `display: list-item`.
 
 Check out the individual pseudo-element reference pages for examples and browser compatibility information.
 
 ## Highlight pseudo-elements inheritance
 
-[Highlight pseudo-elements](#highlight_pseudo-elements), such as {{CSSxref("::selection")}}, {{CSSxref("::target-text")}}, {{CSSxref("::highlight()")}}, {{CSSxref("::spelling-error")}}, and {{CSSxref("::grammar-error")}}, follow a consistent inheritance model that differs from [regular element inheritance](/guides/Cascade/Inheritance).
+[Highlight pseudo-elements](#highlight_pseudo-elements), such as `::selection`, `::target-text`, `::highlight()`, `::spelling-error`, and `::grammar-error`, follow a consistent inheritance model that differs from [regular element inheritance](/guides/Cascade/Inheritance).
 
 When you apply styles to highlight pseudo-elements, they inherit from both:
 
@@ -250,7 +250,7 @@ First, we have some HTML that includes two nested {{htmlelement("div")}} element
 </div>
 ```
 
-Next we include some CSS, which selects the parent and child `<div>` elements separately and gives them different {{cssxref("color")}} values, and selects the parent and child's selected text ({{cssxref("::selection")}}). This gives each `<div>` a different {{cssxref("background-color")}} and sets a different text `color` on the parent selection.
+Next we include some CSS, which selects the parent and child `<div>` elements separately and gives them different `color` values, and selects the parent and child's selected text (`::selection`). This gives each `<div>` a different `background-color` and sets a different text `color` on the parent selection.
 
 ```css live-sample___highlight_inheritance
 /* Style for the parent element */

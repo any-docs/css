@@ -35,7 +35,7 @@ The `@starting-style` at rule can be used in two ways:
 
 ## Description
 
-To avoid unexpected behavior, [CSS transitions](/guides/Transitions) are by default not triggered on an element's initial style update, or when its {{CSSxRef("display")}} type changes from `none` to another value. To enable first-style transitions, `@starting-style` rules are needed. They provide starting styles for elements that do not have a previous state, defining the property values to transition from.
+To avoid unexpected behavior, [CSS transitions](/guides/Transitions) are by default not triggered on an element's initial style update, or when its `display` type changes from `none` to another value. To enable first-style transitions, `@starting-style` rules are needed. They provide starting styles for elements that do not have a previous state, defining the property values to transition from.
 
 `@starting-style` is especially useful when creating entry and exit transitions for elements displayed in the {{glossary("top layer")}} (such as [popovers](/en-US/docs/Web/API/Popover_API) and modal {{htmlelement("dialog")}}s), elements that are changing to and from `display: none`, and elements when first added to or removed from the DOM.
 
@@ -83,7 +83,7 @@ To specify the starting style for the popover using the nested method, you can n
 
 ### When exactly are starting styles used?
 
-It is important to understand that an element will transition from its `@starting-style` styles when it is first rendered in the DOM, or when it transitions from {{cssxref("display", "display: none")}} to a visible value. When it transitions back from its initial visible state, it will no longer use the `@starting-style` styles as it is now visible in the DOM. Instead, it will transition back to whatever styles exist for that element's default state.
+It is important to understand that an element will transition from its `@starting-style` styles when it is first rendered in the DOM, or when it transitions from `display: none` to a visible value. When it transitions back from its initial visible state, it will no longer use the `@starting-style` styles as it is now visible in the DOM. Instead, it will transition back to whatever styles exist for that element's default state.
 
 In effect, there are three style states to manage in these situations — starting-style state, transitioned state, and default state. It is possible for the "to" and "from" transitions to be different in such cases. You can see a proof of this in our [Demonstration of when starting styles are used](#demonstration_of_when_starting_styles_are_used) example, below.
 
@@ -94,7 +94,7 @@ In effect, there are three style states to manage in these situations — starti
 
 ### Basic @starting-style usage
 
-Transition an element's {{cssxref("background-color")}} from transparent to green when it is initially rendered:
+Transition an element's `background-color` from transparent to green when it is initially rendered:
 
 ```css
 #target {
@@ -109,7 +109,7 @@ Transition an element's {{cssxref("background-color")}} from transparent to gree
 }
 ```
 
-Transition the {{cssxref("opacity")}} of an element when it changes its {{cssxref("display")}} value to or from `none`:
+Transition the `opacity` of an element when it changes its `display` value to or from `none`:
 
 ```css
 #target {
@@ -209,7 +209,7 @@ The code renders as follows:
 
 ### Animating a popover
 
-In this example, a [popover](/en-US/docs/Web/API/Popover_API) is animated using [CSS transitions](/guides/Transitions). Basic entry and exit animations are provided using the {{CSSxRef("transition")}} property.
+In this example, a [popover](/en-US/docs/Web/API/Popover_API) is animated using [CSS transitions](/guides/Transitions). Basic entry and exit animations are provided using the `transition` property.
 
 #### HTML
 
@@ -222,7 +222,7 @@ The HTML contains a {{htmlelement("div")}} element declared as a popover using t
 
 #### CSS
 
-In this example, we want to animate two properties, {{cssxref("opacity")}} and {{cssxref("transform")}} (specifically, a horizontally scaling transform), to make the popover fade in and out as well as grow and shrink horizontally.
+In this example, we want to animate two properties, `opacity` and `transform` (specifically, a horizontally scaling transform), to make the popover fade in and out as well as grow and shrink horizontally.
 
 ```css
 html {
@@ -283,17 +283,17 @@ so specify a standalone starting-style block. */
 }
 ```
 
-To achieve this, we have set a starting state for these properties on the default hidden state of the popover element (selected via `[popover]`), and an ending state on the open state of the popover (selected via the {{cssxref(":popover-open")}} pseudo-class).
+To achieve this, we have set a starting state for these properties on the default hidden state of the popover element (selected via `[popover]`), and an ending state on the open state of the popover (selected via the `:popover-open` pseudo-class).
 
-We then set a {{cssxref("transition")}} property to animate between the two states. A starting state for the animation is included inside a `@starting-style` at-rule to enable the entry animation.
+We then set a `transition` property to animate between the two states. A starting state for the animation is included inside a `@starting-style` at-rule to enable the entry animation.
 
-Because the animated element is being promoted to the {{glossary("top layer")}} when shown and removed from the top layer when hidden (with {{cssxref("display", "display: none")}}), some extra steps are required to ensure the animation works in both directions:
+Because the animated element is being promoted to the {{glossary("top layer")}} when shown and removed from the top layer when hidden (with `display: none`), some extra steps are required to ensure the animation works in both directions:
 
-- `display` is added to the list of transitioned elements to ensure the animated element is visible (set to `display: block` or another visible `display` value) throughout both the entry and exit animations. Without this, the exit animation would not be visible; in effect, the popover would just disappear. Note that the {{cssxref("transition-behavior", "transition-behavior: allow-discrete")}} value is also set in the shorthand to activate the animation.
-- {{cssxref("overlay")}} is added to the list of transitioned elements to ensure that the removal of the element from the top layer is deferred until the animation ends. This doesn't make a huge difference for animations such as this one, but in more complex cases, not doing this can result in the element being removed from the overlay too quickly, meaning the animation is not smooth or effective. Again, `transition-behavior: allow-discrete` is required in this case for the animation to occur.
+- `display` is added to the list of transitioned elements to ensure the animated element is visible (set to `display: block` or another visible `display` value) throughout both the entry and exit animations. Without this, the exit animation would not be visible; in effect, the popover would just disappear. Note that the `transition-behavior: allow-discrete` value is also set in the shorthand to activate the animation.
+- `overlay` is added to the list of transitioned elements to ensure that the removal of the element from the top layer is deferred until the animation ends. This doesn't make a huge difference for animations such as this one, but in more complex cases, not doing this can result in the element being removed from the overlay too quickly, meaning the animation is not smooth or effective. Again, `transition-behavior: allow-discrete` is required in this case for the animation to occur.
 
 > [!NOTE]
-> We've also included a transition on the {{cssxref("::backdrop")}} that appears behind the popover when it opens, to provide a nice darkening animation. `[popover]:popover-open::backdrop` is used to select the backdrop when the popover is open.
+> We've also included a transition on the `::backdrop` that appears behind the popover when it opens, to provide a nice darkening animation. `[popover]:popover-open::backdrop` is used to select the backdrop when the popover is open.
 
 #### Result
 
@@ -359,14 +359,14 @@ function createColumn() {
 
 When the "Create new column" button is clicked, the `createColumn()` function is called. This creates a {{htmlelement("div")}} element with a randomly generated background color and a {{htmlelement("button")}} element to close the `<div>`. It then appends the `<button>` to the `<div>` and the `<div>` to the `<section>` container.
 
-We then add an event listener to the close button via {{domxref("EventTarget.addEventListener", "addEventListener()")}}. Clicking the close button does two things:
+We then add an event listener to the close button via `addEventListener()`. Clicking the close button does two things:
 
 - Adds the `fade-out` class to the `<div>`. Adding the class triggers the exit animation set on that class.
-- Removes the `<div>` after a 1000ms delay. The {{domxref("Window.setTimeout", "setTimeout()")}} delays removal of the `<div>` from the DOM (via {{domxref("Element.remove()")}}) until after the animation ends.
+- Removes the `<div>` after a 1000ms delay. The `setTimeout()` delays removal of the `<div>` from the DOM (via `Element.remove()`) until after the animation ends.
 
 #### CSS
 
-We include a {{cssxref("transition")}} that animates the {{cssxref("opacity")}} and {{cssxref("scale")}} of each column as they are added and removed:
+We include a `transition` that animates the `opacity` and `scale` of each column as they are added and removed:
 
 ```css hidden
 html * {
@@ -438,12 +438,12 @@ div > button {
 }
 ```
 
-To animate the {{cssxref("opacity")}} and {{cssxref("scale")}} of each `<div>` as it is added to the DOM and then reverse the animation as it is removed from the DOM, we:
+To animate the `opacity` and `scale` of each `<div>` as it is added to the DOM and then reverse the animation as it is removed from the DOM, we:
 
 - Specify the ending state of the properties we want to transition on the `div { ... }` rule.
 - Specify the starting state from which to transition the properties inside a `@starting-style` block.
 - Specify the exit animation inside the `.fade-out` rule — this is the class that the JavaScript assigns to the `<div>` elements when their close buttons are pressed. Besides setting the `opacity` and `scale` ending states, we also set [`display: none`](/reference/properties/display) on the `<div>`s — we want them to become immediately unavailable when removed from the UI.
-- Specify the {{cssxref("transition")}} list inside the `div { ... }` rule to animate `opacity`, `scale`, and `display`. Note that for `display`, the {{cssxref("transition-behavior", "transition-behavior: allow-discrete")}} value is also set in the shorthand so that it will animate.
+- Specify the `transition` list inside the `div { ... }` rule to animate `opacity`, `scale`, and `display`. Note that for `display`, the `transition-behavior: allow-discrete` value is also set in the shorthand so that it will animate.
 
 #### Result
 
@@ -462,7 +462,7 @@ The final result looks like this:
 ## See also
 
 - [CSS transitions](/guides/Transitions) module
-- {{cssxref("overlay")}}
-- {{cssxref("transition-behavior")}}
-- {{domxref("CSSStartingStyleRule")}}
+- `overlay`
+- `transition-behavior`
+- `CSSStartingStyleRule`
 - [Four new CSS features for smooth entry and exit animations](https://developer.chrome.com/blog/entry-exit-animations/) on developer.chrome.com (2023)

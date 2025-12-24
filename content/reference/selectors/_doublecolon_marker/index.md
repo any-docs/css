@@ -36,12 +36,12 @@ The `::marker` pseudo-element supports a limited number of CSS properties, inclu
 
 - All [animation](/guides/Animations#properties) and [transition](/guides/Transitions#properties) properties
 - All [font properties](/guides/Fonts)
-- {{CSSxRef("color")}}
-- {{CSSxRef("content")}}
-- {{cssxref("counter-increment")}}, {{cssxref("counter-reset")}}, and {{cssxref("counter-set")}}
-- {{cssxref("quotes")}}
-- {{CSSxRef("text-combine-upright")}}, {{CSSxRef("unicode-bidi")}}, and {{CSSxRef("direction")}}
-- {{CSSxRef("white-space")}}
+- `color`
+- `content`
+- `counter-increment`, `counter-reset`, and `counter-set`
+- `quotes`
+- `text-combine-upright`, `unicode-bidi`, and `direction`
+- `white-space`
 
 > [!NOTE]
 > The specification states that additional CSS properties may be supported in the future.

@@ -5,10 +5,10 @@ page-type: guide
 sidebar: cssref
 ---
 
-This shape generator tool can be used to define the coordinates and syntax for features that use {{cssxref("basic-shape")}}
+This shape generator tool can be used to define the coordinates and syntax for features that use `basic-shape`
 
 - The [`coords`](/en-US/docs/Web/HTML/Reference/Elements/area#coords) attribute of the {{HTMLElement("area")}} element
-- The CSS {{cssxref("basic-shape/inset()")}}, {{cssxref("basic-shape/xywh()")}}, {{cssxref("basic-shape/rect()")}}, {{cssxref("basic-shape/circle()")}}, {{cssxref("basic-shape/polygon()")}} functions
+- The CSS `basic-shape/inset()`, `basic-shape/xywh()`, `basic-shape/rect()`, `basic-shape/circle()`, `basic-shape/polygon()` functions
 - The SVG {{SVGElement("rect")}}, {{SVGElement("circle")}}, {{SVGElement("polygon")}} elements
 
 The shape generator helps you visualize basic shapes, outputting the coordinates of each point, superimposed over your image. Upload an image by either dragging or clicking to select a file. Then select the type of shape you want to create from the dropdown menu. Optionally, you can also adjust the scale of the canvas using the range input. Then click on points on the image to add reference points for the shape you want to create. The tool will then output the markup for the HTML `coords` attribute value, CSS basic shape function with coordinates, and SVG shape.

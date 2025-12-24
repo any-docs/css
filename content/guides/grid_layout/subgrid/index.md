@@ -6,7 +6,7 @@ browser-compat: css.properties.grid-template-columns.subgrid
 sidebar: cssref
 ---
 
-The [CSS grid layout](/guides/Grid_layout) module includes a `subgrid` value for {{cssxref("grid-template-columns")}} and {{cssxref("grid-template-rows")}}. This guide details what subgrid does and gives some use cases and design patterns that the feature solves.
+The [CSS grid layout](/guides/Grid_layout) module includes a `subgrid` value for `grid-template-columns` and `grid-template-rows`. This guide details what subgrid does and gives some use cases and design patterns that the feature solves.
 
 ## Introduction to subgrid
 
@@ -16,7 +16,7 @@ You can "nest" grids by making a grid item a grid container. These grids, howeve
 
 If you set the value `subgrid` on `grid-template-columns`, `grid-template-rows` or both, instead of creating a new track listing, the nested grid uses the tracks defined on the parent.
 
-For example, if you use `grid-template-columns: subgrid` and the nested grid spans three column tracks of the parent, the nested grid will have three column tracks of the same size as the parent grid. While [gaps](/guides/Grid_layout/Basic_concepts#gutters) are inherited, they can be overridden with a different {{cssxref("gap")}} value. [Line names](/guides/Grid_layout/Named_grid_lines) can be passed from the parent into the subgrid, and the subgrid can also declare its own line names.
+For example, if you use `grid-template-columns: subgrid` and the nested grid spans three column tracks of the parent, the nested grid will have three column tracks of the same size as the parent grid. While [gaps](/guides/Grid_layout/Basic_concepts#gutters) are inherited, they can be overridden with a different `gap` value. [Line names](/guides/Grid_layout/Named_grid_lines) can be passed from the parent into the subgrid, and the subgrid can also declare its own line names.
 
 ## Subgrid for columns
 
@@ -336,7 +336,7 @@ body {
 
 ## The gap properties and subgrid
 
-Any {{cssxref("gap")}}, {{cssxref("column-gap")}}, or {{cssxref("row-gap")}} values specified on the parent are passed into the subgrid, creating the same spacing between tracks as the parent. This default behavior can be overridden by applying `gap-*` properties on the subgrid container.
+Any `gap`, `column-gap`, or `row-gap` values specified on the parent are passed into the subgrid, creating the same spacing between tracks as the parent. This default behavior can be overridden by applying `gap-*` properties on the subgrid container.
 
 In this example, the parent grid has a gap of `20px` for rows and columns and the subgrid has `row-gap` set to `0`.
 

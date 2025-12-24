@@ -24,11 +24,11 @@ width: calc(100px * sqrt(100)); /* 1000px */
 The `sqrt(x)` function accepts only one value as its parameter.
 
 - `x`
-  - A calculation which resolves to a {{cssxref("&lt;number&gt;")}} greater than or equal to 0.
+  - A calculation which resolves to a `&lt;number&gt;` greater than or equal to 0.
 
 ### Return value
 
-Returns a {{cssxref("&lt;number&gt;")}} which is the square root of `x`.
+Returns a `&lt;number&gt;` which is the square root of `x`.
 
 - if `x` is `+∞`, the result is `+∞`.
 - If `x` is `0⁻`, the result is `0⁻`.
@@ -121,7 +121,7 @@ The sizes are then applied as the `width` and `height` values of the selectors.
 
 ## See also
 
-- {{CSSxRef("pow")}}
-- {{CSSxRef("hypot")}}
-- {{CSSxRef("log")}}
-- {{CSSxRef("exp")}}
+- `pow`
+- `hypot`
+- `log`
+- `exp`

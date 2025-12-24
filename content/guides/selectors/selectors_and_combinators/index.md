@@ -82,7 +82,7 @@ There is also a [column combinator](/en-US/docs/Web/CSS/Reference/Selectors/Colu
 
 ### Namespace separator
 
-The [namespace separator](/en-US/docs/Web/CSS/Reference/Selectors/Namespace_separator) is another combinator that is generally used in conjunction with the {{CSSXref("@namespace")}} at-rule. This combinator is denoted by a single pipe character (`|`). It enables limiting [type selectors](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors) and the [universal selector](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors) to a specific namespace. For example, by defining a namespace such as `@namespace SVG url('http://www.w3.org/2000/svg');`, you can include selectors that target elements nested in an SVG namespace only. Declaring `SVG|a` would match links within SVGs and not those in the rest of the document. Namespacing can be useful to target MathML, SVG, or other XML-based content within your HTML.
+The [namespace separator](/en-US/docs/Web/CSS/Reference/Selectors/Namespace_separator) is another combinator that is generally used in conjunction with the `@namespace` at-rule. This combinator is denoted by a single pipe character (`|`). It enables limiting [type selectors](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors) and the [universal selector](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors) to a specific namespace. For example, by defining a namespace such as `@namespace SVG url('http://www.w3.org/2000/svg');`, you can include selectors that target elements nested in an SVG namespace only. Declaring `SVG|a` would match links within SVGs and not those in the rest of the document. Namespacing can be useful to target MathML, SVG, or other XML-based content within your HTML.
 
 #### CSS
 
@@ -195,8 +195,8 @@ The case sensitivity of the attribute depends on the language. Generally, in HTM
 
 ## Pseudo-class selectors
 
-The [CSS selectors](/guides/Selectors) module defines over 60 [pseudo-classes](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes). Pseudo-classes are [simple selectors](/guides/Selectors/Selector_structure#simple_selector), prefixed with a colon (`:`), that allow the selection of elements based on state information that is not contained in the document tree. {{CSSxRef("pseudo-classes")}} can be used to style an element based on its _state_.
-For example, the {{cssxref(":target")}} simple selector targets element of a URL containing a fragment identifier, and the [`a:visited`](/en-US/docs/Web/CSS/Reference/Selectors/:visited) [compound selector](/guides/Selectors/Selector_structure#compound_selector) matches all {{HTMLElement("a")}} elements that have been visited by a user.
+The [CSS selectors](/guides/Selectors) module defines over 60 [pseudo-classes](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes). Pseudo-classes are [simple selectors](/guides/Selectors/Selector_structure#simple_selector), prefixed with a colon (`:`), that allow the selection of elements based on state information that is not contained in the document tree. `pseudo-classes` can be used to style an element based on its _state_.
+For example, the `:target` simple selector targets element of a URL containing a fragment identifier, and the [`a:visited`](/en-US/docs/Web/CSS/Reference/Selectors/:visited) [compound selector](/guides/Selectors/Selector_structure#compound_selector) matches all {{HTMLElement("a")}} elements that have been visited by a user.
 
 The pseudo-classes can be categorized as [element display state](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#element_display_state_pseudo-classes), [input](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#input_pseudo-classes), [linguistic](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#linguistic_pseudo-classes), [location](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#location_pseudo-classes), [resource state](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#resource_state_pseudo-classes), [time-dimensional](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#time-dimensional_pseudo-classes), [tree-structural](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#tree-structural_pseudo-classes), [user action](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#user_action_pseudo-classes), and [functional](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes#functional_pseudo-classes).
 
@@ -206,7 +206,7 @@ Multiple pseudo-classes can be combined to create [compound selectors](/guides/S
 
 Not all CSS selectors are defined in the [CSS selectors module](/en-US/docs/Web/CSS). CSS pseudo-element selectors are defined in the [CSS pseudo-elements](/guides/Pseudo-elements) module.
 
-CSS [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements), prefixed with two colons (`::`), represent entities that are not included in HTML. For example, the simple {{cssxref("::marker")}} selector selects list item bullets, and the compound selector [`p::first-line`](/en-US/docs/Web/CSS/Reference/Selectors/::first-line) matches the first line of all {{HTMLElement("p")}} elements.
+CSS [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements), prefixed with two colons (`::`), represent entities that are not included in HTML. For example, the simple `::marker` selector selects list item bullets, and the compound selector [`p::first-line`](/en-US/docs/Web/CSS/Reference/Selectors/::first-line) matches the first line of all {{HTMLElement("p")}} elements.
 
 ## Specifications
 

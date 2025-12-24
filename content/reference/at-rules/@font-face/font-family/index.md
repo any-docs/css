@@ -6,9 +6,9 @@ browser-compat: css.at-rules.font-face.font-family
 sidebar: cssref
 ---
 
-The **`font-family`** [CSS](/en-US/docs/Web/CSS) descriptor sets the font family for a font specified in an {{cssxref("@font-face")}} at-rule.
+The **`font-family`** [CSS](/en-US/docs/Web/CSS) descriptor sets the font family for a font specified in an `@font-face` at-rule.
 
-The value is used for name matching against a particular `@font-face` when styling elements using the {{cssxref("font-family")}} property.
+The value is used for name matching against a particular `@font-face` when styling elements using the `font-family` property.
 Any name may be used, and this overrides any name specified in the underlying font data.
 
 ## Syntax
@@ -56,11 +56,11 @@ font-family: example-font;
 
 ## See also
 
-- {{cssxref("@font-face/font-display", "font-display")}}
-- {{cssxref("@font-face/font-stretch", "font-stretch")}}
-- {{cssxref("@font-face/font-style", "font-style")}}
-- {{cssxref("@font-face/font-weight", "font-weight")}}
-- {{cssxref("font-feature-settings", "font-feature-settings")}}
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-- {{cssxref("@font-face/src", "src")}}
-- {{cssxref("@font-face/unicode-range", "unicode-range")}}
+- `font-display`
+- `font-stretch`
+- `font-style`
+- `font-weight`
+- `font-feature-settings`
+- `font-variation-settings`
+- `src`
+- `unicode-range`

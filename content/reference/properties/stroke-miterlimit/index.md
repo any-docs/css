@@ -41,7 +41,7 @@ stroke-miterlimit: unset;
 
 ### Values
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - Any real positive number equal to or greater than `1`; values below that are invalid. The initial value is `4`.
 
 ## Formal definition
@@ -117,11 +117,11 @@ path:nth-child(5) {
 
 ## See also
 
-- {{cssxref("stroke-dasharray")}}
-- {{cssxref("stroke-dashoffset")}}
-- {{cssxref("stroke-linecap")}}
-- {{cssxref("stroke-linejoin")}}
-- {{cssxref("stroke-opacity")}}
-- {{cssxref("stroke-width")}}
-- {{cssxref("stroke")}}
+- `stroke-dasharray`
+- `stroke-dashoffset`
+- `stroke-linecap`
+- `stroke-linejoin`
+- `stroke-opacity`
+- `stroke-width`
+- `stroke`
 - SVG {{SVGAttr("stroke-miterlimit")}} attribute

@@ -92,4 +92,4 @@ input:disabled {
 
 ## See also
 
-- {{Cssxref(":disabled")}}
+- `:disabled`

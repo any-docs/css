@@ -30,19 +30,19 @@ view-timeline-axis: unset;
 ### Values
 
 - `<axis>`
-  - Specifies the scroll direction used by the view progress timeline. The value can be one of the {{cssxref("axis")}} keywords: `block`, `inline`, `x`, or `y`. The default value is `block`.
+  - Specifies the scroll direction used by the view progress timeline. The value can be one of the `axis` keywords: `block`, `inline`, `x`, or `y`. The default value is `block`.
 
 ## Description
 
 The `view-timeline-axis` property specifies the direction, or `<axis>`, of [named view progress timelines](/guides/Scroll-driven_animations/Timelines#named_view_progress_timeline) that are based on the element's box.
 
-By default, CSS {{cssxref("@keyframes")}} animations progress along the time-based default timeline. When you set the animation progress via a view progress timeline instead, `view-timeline-axis` specifies the direction that controls the timeline progression.
+By default, CSS `@keyframes` animations progress along the time-based default timeline. When you set the animation progress via a view progress timeline instead, `view-timeline-axis` specifies the direction that controls the timeline progression.
 
 For view progress timelines, progression of the animation along the timelines is based on the visibility of the element, or _subject_. The `view-timeline-axis` property is set on the subject.
 
 The subject must be nested inside a scrollable element. If the scrollable element does not overflow its container in the axis dimension or if the overflow is hidden or clipped, no scroll progress timeline will be created.
 
-The `view-timeline-axis`, along with the {{cssxref("view-timeline-inset")}} and {{cssxref("view-timeline-name")}} properties, is a component of the {{cssxref("view-timeline")}} shorthand property.
+The `view-timeline-axis`, along with the `view-timeline-inset` and `view-timeline-name` properties, is a component of the `view-timeline` shorthand property.
 
 ## Formal definition
 
@@ -196,9 +196,9 @@ Scroll the horizontal bar at the bottom to see the subject element animate as yo
 
 ## See also
 
-- {{cssxref("animation-timeline")}}
-- {{cssxref("view-timeline")}}, {{cssxref("view-timeline-inset")}}, {{cssxref("view-timeline-name")}}
-- {{cssxref("view()")}}
+- `animation-timeline`
+- `view-timeline`, `view-timeline-inset`, `view-timeline-name`
+- `view()`
 - [Guide: Scroll-driven animation timelines](/guides/Scroll-driven_animations/Timelines)
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module
 - [CSS animations](/guides/Animations) module

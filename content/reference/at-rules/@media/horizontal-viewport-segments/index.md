@@ -16,7 +16,7 @@ Related to the [Viewport Segments API](/en-US/docs/Web/API/Viewport_segments_API
 
 ## Syntax
 
-The `horizontal-viewport-segments` feature is specified as an {{cssxref("integer")}} value of `1` or greater, representing the number of horizontal viewport segments the device has.
+The `horizontal-viewport-segments` feature is specified as an `integer` value of `1` or greater, representing the number of horizontal viewport segments the device has.
 
 - The value will be `1` for:
   - A non-foldable device (for example, a standard single-screen smartphone or tablet)
@@ -76,6 +76,6 @@ See our [Viewport segment API demo](https://mdn.github.io/dom-examples/viewport-
 
 ## See also
 
-- {{cssxref("@media/vertical-viewport-segments", "vertical-viewport-segments")}} `@media` feature
+- `vertical-viewport-segments` `@media` feature
 - [Viewport Segments API](/en-US/docs/Web/API/Viewport_segments_API)
 - [Origin trial for Foldable APIs](https://developer.chrome.com/blog/foldable-apis-ot) via developer.chrome.com (2024)

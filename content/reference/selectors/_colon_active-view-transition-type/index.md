@@ -25,18 +25,18 @@ html:active-view-transition-type(forwards, backwards) {
 ### Parameters
 
 - `<custom-ident>#`
-  - One or more comma-separated {{cssxref("&lt;custom-ident>")}} values representing the choice of types that can be applied to the active view transition for this selector to match.
+  - One or more comma-separated `&lt;custom-ident>` values representing the choice of types that can be applied to the active view transition for this selector to match.
 
 ## Description
 
 [View transition types](/en-US/docs/Web/API/View_Transition_API/Using_types) provide a mechanism by which different **types** can be specified for active view transitions. Types can be set on view transitions in multiple ways:
 
-- For same-document (SPA) view transitions, specify types in the [`types`](/en-US/docs/Web/API/Document/startViewTransition#types) option of the {{domxref("Document.startViewTransition", "startViewTransition()")}} method.
-- For cross-document view transitions, specify types in the [`types`](/en-US/docs/Web/CSS/Reference/At-rules/@view-transition#types) descriptor of the {{cssxref("@view-transition")}} at-rule.
-- You can also modify the active view transition's types on-the-fly via the {{domxref("ViewTransition.types", "types")}} property of the corresponding `ViewTransition` object:
+- For same-document (SPA) view transitions, specify types in the [`types`](/en-US/docs/Web/API/Document/startViewTransition#types) option of the `startViewTransition()` method.
+- For cross-document view transitions, specify types in the [`types`](/en-US/docs/Web/CSS/Reference/At-rules/@view-transition#types) descriptor of the `@view-transition` at-rule.
+- You can also modify the active view transition's types on-the-fly via the `types` property of the corresponding `ViewTransition` object:
   - For same-document view transitions, this is the `ViewTransition` object returned by the `startViewTransition()` method.
-  - For cross-document view transitions, the `ViewTransition` object is available in the {{domxref("PageSwapEvent.viewTransition", "viewTransition")}} property of the {{domxref("Window.pageswap_event", "pageswap")}} event object in the case of the outgoing page, and the {{domxref("PageRevealEvent.viewTransition", "viewTransition")}} property of the {{domxref("Window.pagereveal_event", "pagereveal")}} event object in the case of the incoming page.
-  - You can also access the active `ViewTransition` via the {{domxref("Document.activeViewTransition")}} property. This provides a consistent way to access the active view transition in any context.
+  - For cross-document view transitions, the `ViewTransition` object is available in the `viewTransition` property of the `pageswap` event object in the case of the outgoing page, and the `viewTransition` property of the `pagereveal` event object in the case of the incoming page.
+  - You can also access the active `ViewTransition` via the `Document.activeViewTransition` property. This provides a consistent way to access the active view transition in any context.
 
 Once the active view transition has one or more types set on it, the `:active-view-transition-type()` pseudo-class can be applied to the document root element to set custom styles for each type. The pseudo-class takes a comma-separated list of types as its argument to specify the types that can be set on the active view transition for the selector to be matched.
 
@@ -103,7 +103,7 @@ backBtn.addEventListener("click", changeContent);
 fwdBtn.addEventListener("click", changeContent);
 ```
 
-Finally, we define the `changeContent()` function. We start by declaring a `type` value that will hold our view transition type value. If the event target is the "Backwards" button, we set `type` to `backwards`. If not, we set `type` to `forwards`. We then invoke the {{domxref("Document.startViewTransition", "startViewTransition()")}} method to update the content and start the transition:
+Finally, we define the `changeContent()` function. We start by declaring a `type` value that will hold our view transition type value. If the event target is the "Backwards" button, we set `type` to `backwards`. If not, we set `type` to `forwards`. We then invoke the `startViewTransition()` method to update the content and start the transition:
 
 - The `update` callback checks whether the paragraph `textContent` is equal to the `first` string. If so, we set it to the `second` string. If not, we set it to the `first` string.
 - The `types` array is given one element: the `type` value we declared earlier.
@@ -124,7 +124,7 @@ function changeContent(e) {
 
 #### CSS
 
-In our styles, we start off by creating a set of nested rules using the `:active-view-transition` pseudo-class. These styles will be applied whenever a view transition is active, regardless of the their types. We apply a {{cssxref("view-transition-name")}} of `none` to the {{cssxref(":root")}}, as we don't want any elements captured and animated on transition except for the `<p>` element, which is given a `view-transition-name` of `slide`.
+In our styles, we start off by creating a set of nested rules using the `:active-view-transition` pseudo-class. These styles will be applied whenever a view transition is active, regardless of the their types. We apply a `view-transition-name` of `none` to the `:root`, as we don't want any elements captured and animated on transition except for the `<p>` element, which is given a `view-transition-name` of `slide`.
 
 ```css hidden live-sample___basic_usage
 html,
@@ -164,7 +164,7 @@ html:active-view-transition {
 }
 ```
 
-Next, we use the `:active-view-transition-type()` pseudo-class to create two blocks of nested styles, the first of which is only applied when the active view transition has a type of `forwards`, and the second of which is only applied when the active view transition has a type of `backwards`. In each block, we use the {{cssxref("::view-transition-old()")}} and {{cssxref("::view-transition-new()")}} pseudo-elements to apply custom {{cssxref("animation-name")}} values to the `slide` capture group's outgoing and incoming views.
+Next, we use the `:active-view-transition-type()` pseudo-class to create two blocks of nested styles, the first of which is only applied when the active view transition has a type of `forwards`, and the second of which is only applied when the active view transition has a type of `backwards`. In each block, we use the `::view-transition-old()` and `::view-transition-new()` pseudo-elements to apply custom `animation-name` values to the `slide` capture group's outgoing and incoming views.
 
 As a result:
 
@@ -191,7 +191,7 @@ html:active-view-transition-type(backwards) {
 }
 ```
 
-Finally, we use {{cssxref("@keyframes")}} animation blocks to define the animations referenced previously.
+Finally, we use `@keyframes` animation blocks to define the animations referenced previously.
 
 ```css live-sample___basic_usage
 @keyframes slide-in-from-left {
@@ -234,8 +234,8 @@ Try clicking the "Backwards" and "Forwards" buttons, and note how, even though t
 
 ## See also
 
-- {{domxref("Document.activeViewTransition")}}
-- {{CSSXRef(":active-view-transition")}} pseudo-class
+- `Document.activeViewTransition`
+- `:active-view-transition` pseudo-class
 - [View Transition API](/en-US/docs/Web/API/View_Transition_API)
 - [Using the View Transition API](/en-US/docs/Web/API/View_Transition_API/Using)
 - [Using view transition types](/en-US/docs/Web/API/View_Transition_API/Using_types)

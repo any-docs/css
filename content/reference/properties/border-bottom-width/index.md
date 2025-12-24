@@ -73,7 +73,7 @@ border-bottom-width: unset;
 ### Values
 
 - `<line-width>`
-  - Defines the width of the border, either as an explicit nonnegative {{cssxref("&lt;length&gt;")}} or a keyword. If it's a keyword, it must be one of the following values:
+  - Defines the width of the border, either as an explicit nonnegative `&lt;length&gt;` or a keyword. If it's a keyword, it must be one of the following values:
     - `thin`
     - `medium`
     - `thick`
@@ -130,5 +130,5 @@ div:nth-child(2) {
 
 ## See also
 
-- The other border-width-related CSS properties: {{Cssxref("border-left-width")}}, {{Cssxref("border-right-width")}}, {{Cssxref("border-top-width")}}, and {{Cssxref("border-width")}}.
-- The other border-bottom-related CSS properties: {{Cssxref("border")}}, {{Cssxref("border-bottom")}}, {{Cssxref("border-bottom-style")}}, and {{Cssxref("border-bottom-color")}}.
+- The other border-width-related CSS properties: `border-left-width`, `border-right-width`, `border-top-width`, and `border-width`.
+- The other border-bottom-related CSS properties: `border`, `border-bottom`, `border-bottom-style`, and `border-bottom-color`.

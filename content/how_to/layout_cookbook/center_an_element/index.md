@@ -47,7 +47,7 @@ Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
 ## Using flexbox
 
-To center a box within another box, first turn the containing box into a [flex container](/guides/Flexible_box_layout/Basic_concepts#the_flex_container) by setting its {{cssxref("display")}} property to `flex`. Then set {{cssxref("align-items")}} to `center` for vertical centering (on the block axis) and {{cssxref("justify-content")}} to `center` for horizontal centering (on the inline axis). And that's all it takes to center one box inside another!
+To center a box within another box, first turn the containing box into a [flex container](/guides/Flexible_box_layout/Basic_concepts#the_flex_container) by setting its `display` property to `flex`. Then set `align-items` to `center` for vertical centering (on the block axis) and `justify-content` to `center` for horizontal centering (on the inline axis). And that's all it takes to center one box inside another!
 
 ### HTML
 
@@ -91,11 +91,11 @@ We set a height for the container to demonstrate that the inner item is indeed v
 
 {{EmbedLiveSample("Using_flexbox", "", "200px")}}
 
-Instead of applying `align-items: center;` on the container, you can also vertically center the inner item by setting {{cssxref("align-self")}} to `center` on the inner item itself.
+Instead of applying `align-items: center;` on the container, you can also vertically center the inner item by setting `align-self` to `center` on the inner item itself.
 
 ## Using grid
 
-Another method you can use for centering one box inside another is to first make the containing box a [grid container](/guides/Grid_layout/Basic_concepts#grid_container) and then set its {{cssxref("place-items")}} property to `center` to center align its items on both the block and inline axes.
+Another method you can use for centering one box inside another is to first make the containing box a [grid container](/guides/Grid_layout/Basic_concepts#grid_container) and then set its `place-items` property to `center` to center align its items on both the block and inline axes.
 
 ### HTML
 
@@ -136,7 +136,7 @@ div {
 
 {{EmbedLiveSample("Using_grid", "", "200px")}}
 
-Instead of applying `place-items: center;` on the container, you can achieve the same centering by setting {{cssxref("place-content", "place-content: center;")}} on the container or by applying either {{cssxref("place-self", "place-self: center")}} or {{cssxref("margin", "margin: auto;")}} on the inner item itself.
+Instead of applying `place-items: center;` on the container, you can achieve the same centering by setting `place-content: center;` on the container or by applying either `place-self: center` or `margin: auto;` on the inner item itself.
 
 ## Resources on MDN
 

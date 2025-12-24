@@ -58,7 +58,7 @@ p {
 }
 ```
 
-When setting multiple line-decoration properties at once, it may be more convenient to use the {{cssxref("text-decoration")}} shorthand property instead.
+When setting multiple line-decoration properties at once, it may be more convenient to use the `text-decoration` shorthand property instead.
 
 ## Syntax
 
@@ -104,7 +104,7 @@ The `text-decoration-line` property is specified as `none`, or **one or more** s
   - Each line of text uses the user agents' method of highlighting grammar mistakes, which is a dotted green line in most browsers.
 
 > [!NOTE]
-> When using `spelling-error` and `grammar-error` values, the browser disregards the other properties in the {{cssxref("text-decoration")}} shorthand (such as {{cssxref("text-underline-position")}}, `color`, or `stroke`).
+> When using `spelling-error` and `grammar-error` values, the browser disregards the other properties in the `text-decoration` shorthand (such as `text-underline-position`, `color`, or `stroke`).
 
 ## Formal definition
 
@@ -166,10 +166,10 @@ In this example, the first paragraph contains a spelling mistake and uses the br
 
 ## See also
 
-- When setting multiple line-decoration properties at once, it may be more convenient to use the {{cssxref("text-decoration")}} shorthand property instead, which also includes:
-  - {{cssxref("text-decoration-style")}}
-  - {{cssxref("text-decoration-color")}}
-  - {{cssxref("text-decoration-thickness")}}
-- {{cssxref("text-underline-offset")}}
-- {{cssxref("::spelling-error")}}
-- {{cssxref("::grammar-error")}}
+- When setting multiple line-decoration properties at once, it may be more convenient to use the `text-decoration` shorthand property instead, which also includes:
+  - `text-decoration-style`
+  - `text-decoration-color`
+  - `text-decoration-thickness`
+- `text-underline-offset`
+- `::spelling-error`
+- `::grammar-error`

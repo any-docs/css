@@ -6,9 +6,9 @@ browser-compat: css.at-rules.font-face.font-style
 sidebar: cssref
 ---
 
-The **`font-style`** [CSS](/en-US/docs/Web/CSS) descriptor allows authors to specify font styles for the fonts specified in the {{cssxref("@font-face")}} at-rule.
+The **`font-style`** [CSS](/en-US/docs/Web/CSS) descriptor allows authors to specify font styles for the fonts specified in the `@font-face` at-rule.
 
-For a particular font family, authors can download various font faces that correspond to the different styles of the same font family and then use the `font-style` descriptor to explicitly specify the font face's style. The values for this CSS descriptor are the same as that of the corresponding {{cssxref("font-style")}} property.
+For a particular font family, authors can download various font faces that correspond to the different styles of the same font family and then use the `font-style` descriptor to explicitly specify the font face's style. The values for this CSS descriptor are the same as that of the corresponding `font-style` property.
 
 ## Syntax
 
@@ -82,11 +82,11 @@ On the other hand, if a true italicized version of the font family exists, we ca
 
 ## See also
 
-- {{cssxref("@font-face/font-display", "font-display")}}
-- {{cssxref("@font-face/font-family", "font-family")}}
-- {{cssxref("@font-face/font-stretch", "font-stretch")}}
-- {{cssxref("@font-face/font-weight", "font-weight")}}
-- {{cssxref("font-feature-settings", "font-feature-settings")}}
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-- {{cssxref("@font-face/src", "src")}}
-- {{cssxref("@font-face/unicode-range", "unicode-range")}}
+- `font-display`
+- `font-family`
+- `font-stretch`
+- `font-weight`
+- `font-feature-settings`
+- `font-variation-settings`
+- `src`
+- `unicode-range`

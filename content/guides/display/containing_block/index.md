@@ -22,21 +22,21 @@ Many developers believe that the containing block of an element is always the co
 
 Before learning what determines the containing block of an element, it's useful to know why it matters in the first place.
 
-The size and position of an element are often impacted by its containing block. Percentage values that are applied to the {{cssxref("width")}}, {{cssxref("height")}}, {{cssxref("padding")}}, {{cssxref("margin")}}, and offset properties of an absolutely positioned element (i.e., which has its {{cssxref("position")}} set to `absolute` or `fixed`) are computed from the element's containing block.
+The size and position of an element are often impacted by its containing block. Percentage values that are applied to the `width`, `height`, `padding`, `margin`, and offset properties of an absolutely positioned element (i.e., which has its `position` set to `absolute` or `fixed`) are computed from the element's containing block.
 
 ## Identifying the containing block
 
-The process for identifying the containing block depends entirely on the value of the element's {{cssxref("position")}} property:
+The process for identifying the containing block depends entirely on the value of the element's `position` property:
 
 1. If the `position` property is **`static`**, **`relative`**, or **`sticky`**, the containing block is formed by the edge of the _content box_ of the nearest ancestor element that is either **a block container** (such as an inline-block, block, or list-item element) or **establishes a formatting context** (such as a table container, flex container, grid container, or the block container itself).
 2. If the `position` property is **`absolute`**, the containing block is formed by the edge of the _padding box_ of the nearest ancestor element that has a `position` value other than `static` (`fixed`, `absolute`, `relative`, or `sticky`).
 3. If the `position` property is **`fixed`**, the containing block is established by the {{glossary("viewport")}} (in the case of continuous media) or the page area (in the case of paged media).
 4. If the `position` property is **`absolute`** or **`fixed`**, the containing block may also be formed by the edge of the _padding box_ of the nearest ancestor element that has any of the following:
-   - A {{cssxref("filter")}}, {{cssxref("backdrop-filter")}}, {{cssxref("transform")}}, or {{cssxref("perspective")}} value other than `none`.
-   - A {{cssxref("contain")}} value of `layout`, `paint`, `strict` or `content` (e.g., `contain: paint;`).
-   - A {{cssxref("container-type")}} value other than `normal`.
-   - A {{cssxref("will-change")}} value containing a property for which a non-initial value would form a containing block (e.g., `filter` or `transform`).
-   - A {{cssxref("content-visibility")}} value of `auto`.
+   - A `filter`, `backdrop-filter`, `transform`, or `perspective` value other than `none`.
+   - A `contain` value of `layout`, `paint`, `strict` or `content` (e.g., `contain: paint;`).
+   - A `container-type` value other than `normal`.
+   - A `will-change` value containing a property for which a non-initial value would form a containing block (e.g., `filter` or `transform`).
+   - A `content-visibility` value of `auto`.
 
 > [!NOTE]
 > The containing block in which the root element ({{HTMLElement("html")}}) resides is a rectangle called the **initial containing block**. It has the dimensions of the viewport (for continuous media) or the page area (for paged media).
@@ -48,8 +48,8 @@ The process for identifying the containing block depends entirely on the value o
 
 As noted above, when certain properties are given a percentage value, the computed value depends on the element's containing block. The properties that work this way are **box model properties** and **offset properties**:
 
-1. The {{cssxref("height")}}, {{cssxref("top")}}, and {{cssxref("bottom")}} properties compute percentage values from the `height` of the containing block.
-2. The {{cssxref("width")}}, {{cssxref("left")}}, {{cssxref("right")}}, {{cssxref("padding")}}, and {{cssxref("margin")}} properties compute percentage values from the `width` of the containing block.
+1. The `height`, `top`, and `bottom` properties compute percentage values from the `height` of the containing block.
+2. The `width`, `left`, `right`, `padding`, and `margin` properties compute percentage values from the `width` of the containing block.
 
 > [!NOTE]
 > A **block container** (such as an inline-block, block, or list-item element) either contains only inline-level boxes participating in an inline formatting context, or only block-level boxes participating in a block formatting context. An element is a block container only if it contains block-level or inline-level boxes.
@@ -136,7 +136,7 @@ p {
 
 ### Example 3
 
-In this example, the paragraph's containing block is `<section>` because the latter's `position` is `absolute`. The paragraph's percentage values are affected by the `padding` of its containing block, though if the containing block's {{cssxref("box-sizing")}} value were `border-box` this would not be the case.
+In this example, the paragraph's containing block is `<section>` because the latter's `position` is `absolute`. The paragraph's percentage values are affected by the `padding` of its containing block, though if the containing block's `box-sizing` value were `border-box` this would not be the case.
 
 ```html hidden
 <body>
@@ -212,7 +212,7 @@ p {
 
 ### Example 5
 
-In this example, the paragraph's `position` is `absolute`, so its containing block is `<section>`, which is the nearest ancestor with a {{cssxref("transform")}} property that isn't `none`.
+In this example, the paragraph's `position` is `absolute`, so its containing block is `<section>`, which is the nearest ancestor with a `transform` property that isn't `none`.
 
 ```html hidden
 <body>
@@ -250,11 +250,11 @@ p {
 
 ## See also
 
-- {{cssxref("all")}} property
-- {{cssxref("contain")}} property
-- {{cssxref("aspect-ratio")}} property
-- {{cssxref("box-sizing")}} property
-- {{cssxref("min-content")}} and {{cssxref("max-content")}} size values
+- `all` property
+- `contain` property
+- `aspect-ratio` property
+- `box-sizing` property
+- `min-content` and `max-content` size values
 - [Learn: sizing items in CSS](/en-US/docs/Learn_web_development/Core/Styling_basics/Sizing)
 - [Box model](/guides/Box_model/Introduction)
 - [CSS box model](/guides/Box_model) module

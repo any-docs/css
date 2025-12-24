@@ -9,11 +9,11 @@ As column boxes created inside multi-column (_multicol_) containers are anonymou
 
 ## Column gaps
 
-The gap between columns is controlled using the {{CSSXref("column-gap")}} or {{CSSXref("gap")}} property. The `column-gap` property is defined in the [multi-column layout](/guides/Multicol_layout) module. The `gap` property is defined in the [box alignment](/guides/Box_alignment) module. This is a unified property to define gaps between boxes in all layouts that support gaps, including [CSS grid layout](/guides/Grid_layout/Box_alignment) and [CSS flexible box layout](/guides/Flexible_box_layout/Wrapping_items).
+The gap between columns is controlled using the `column-gap` or `gap` property. The `column-gap` property is defined in the [multi-column layout](/guides/Multicol_layout) module. The `gap` property is defined in the [box alignment](/guides/Box_alignment) module. This is a unified property to define gaps between boxes in all layouts that support gaps, including [CSS grid layout](/guides/Grid_layout/Box_alignment) and [CSS flexible box layout](/guides/Flexible_box_layout/Wrapping_items).
 
 The initial value of `column-gap` is `1em`, which prevents columns from running into each other. In other layout methods, `column-gap` is supported as a synonym for `gap`, but with an initial value of `0`. The keyword value `normal` sets `column-gap` to the initial value.
 
-You can change the gap by using any {{cssxref("length")}} value. In the example below, the `column-gap` is set to `40px`.
+You can change the gap by using any `length` value. In the example below, the `column-gap` is set to `40px`.
 
 ```html live-sample___column-gap
 <div class="container">
@@ -48,11 +48,11 @@ body {
 
 {{EmbedLiveSample("column-gap", "", "300px")}}
 
-The allowed value for `column-gap` is a {{cssxref("length-percentage")}}, meaning percentages are allowed. Percentage values for `column-gap` are calculated as a percentage of the width of the multicol container.
+The allowed value for `column-gap` is a `length-percentage`, meaning percentages are allowed. Percentage values for `column-gap` are calculated as a percentage of the width of the multicol container.
 
 ## Column rules
 
-The specification defines {{CSSXref("column-rule-width")}}, {{CSSXref("column-rule-style")}} and {{CSSXref("column-rule-color")}}, providing a shorthand {{CSSXref("column-rule")}}. These properties work in exactly the same way as the {{CSSXref("border")}} properties: any {{CSSXref("line-style")}} can be used as a `column-rule-style`, just as for valid {{CSSXref("border-style")}}.
+The specification defines `column-rule-width`, `column-rule-style` and `column-rule-color`, providing a shorthand `column-rule`. These properties work in exactly the same way as the `border` properties: any `line-style` can be used as a `column-rule-style`, just as for valid `border-style`.
 
 These properties are applied to the element, which is the multicol container, and therefore, all columns will have the same rule. Rules are only drawn between columns and not on the outer edges. Rules are also only drawn between columns that have content.
 

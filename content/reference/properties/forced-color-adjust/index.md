@@ -32,7 +32,7 @@ The `forced-color-adjust` property's value must be one of the following keywords
 - `none`
   - The element's colors are not automatically adjusted by the {{Glossary("user agent")}} in forced colors mode.
 - `preserve-parent-color`
-  - In forced colors mode, if the {{cssxref("color")}} property inherits from its parent (i.e., there is no [cascaded value](/guides/Cascade/Introduction) or the cascaded value is `currentColor`, {{cssxref("inherit")}}, or another keyword that inherits from the parent), then it computes to the [used color](/guides/Cascade/Property_value_processing#used_value) of its parent's `color` property. In all other cases, it behaves the same as `none`.
+  - In forced colors mode, if the `color` property inherits from its parent (i.e., there is no [cascaded value](/guides/Cascade/Introduction) or the cascaded value is `currentColor`, `inherit`, or another keyword that inherits from the parent), then it computes to the [used color](/guides/Cascade/Property_value_processing#used_value) of its parent's `color` property. In all other cases, it behaves the same as `none`.
 
 ## Usage notes
 
@@ -52,7 +52,7 @@ This property should only be used to makes changes that will support a user's co
 
 In the example below the first box will use the color scheme that the user has set. For example in Windows High Contrast mode black scheme it will have a black background and white text. The second box will preserve the site colors set on the `.box` class.
 
-By using the {{cssxref("@media/forced-colors", "forced-colors")}} media feature, you could add any other optimizations for forced color mode alongside the `forced-color-adjust` property.
+By using the `forced-colors` media feature, you could add any other optimizations for forced color mode alongside the `forced-color-adjust` property.
 
 #### CSS
 
@@ -103,4 +103,4 @@ The following screenshot shows the image above in Windows High Contrast Mode:
 ## See also
 
 - [Styling for Windows high contrast with standards for forced colors.](https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/)
-- {{cssxref("print-color-adjust")}}
+- `print-color-adjust`

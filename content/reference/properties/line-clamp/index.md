@@ -9,9 +9,9 @@ sidebar: cssref
 The **`line-clamp`** [CSS](/en-US/docs/Web/CSS) property allows limiting of the contents of a {{Glossary("block")}} to the specified number of lines.
 
 > [!NOTE]
-> For legacy support, the vendor-prefixed `-webkit-line-clamp` property only works in combination with the {{cssxref("display")}} property set to `-webkit-box` or `-webkit-inline-box` and the {{cssxref("box-orient", "-webkit-box-orient")}} property set to `vertical`. Despite these prefixed properties being deprecated, the co-dependency of these three properties is a fully specified behavior and will continue to be supported.
+> For legacy support, the vendor-prefixed `-webkit-line-clamp` property only works in combination with the `display` property set to `-webkit-box` or `-webkit-inline-box` and the `-webkit-box-orient` property set to `vertical`. Despite these prefixed properties being deprecated, the co-dependency of these three properties is a fully specified behavior and will continue to be supported.
 
-In most cases you will also want to set {{cssxref("overflow")}} to `hidden`, otherwise the contents won't be clipped but an ellipsis will still be shown after the specified number of lines.
+In most cases you will also want to set `overflow` to `hidden`, otherwise the contents won't be clipped but an ellipsis will still be shown after the specified number of lines.
 
 When applied to anchor elements, the truncating can happen in the middle of the text, not necessarily at the end.
 
@@ -37,7 +37,7 @@ line-clamp: unset;
 
 - `none`
   - This value specifies that the content won't be clamped.
-- {{cssxref("integer")}}
+- `integer`
   - This value specifies the number of lines after which the content will be clamped. It must be greater than 0.
 
 ## Formal definition

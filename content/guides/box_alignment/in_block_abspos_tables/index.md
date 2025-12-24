@@ -10,19 +10,19 @@ The [CSS box alignment](/guides/Box_alignment) module details how alignment work
 
 ## align-content and justify-content
 
-The {{cssxref("justify-content")}} property does not apply to block containers or table cells.
+The `justify-content` property does not apply to block containers or table cells.
 
-The {{cssxref("align-content")}} property applies to the block axis in order to align the contents of the box within its container. If a content distribution method such as `space-between`, `space-around` or `space-evenly` is requested then the fallback alignment will be used, as the content is treated as a single [alignment subject](/en-US/docs/Glossary/Alignment_Subject).
+The `align-content` property applies to the block axis in order to align the contents of the box within its container. If a content distribution method such as `space-between`, `space-around` or `space-evenly` is requested then the fallback alignment will be used, as the content is treated as a single [alignment subject](/en-US/docs/Glossary/Alignment_Subject).
 
 ## justify-self
 
-The {{cssxref("justify-self")}} property is used to align an item inside its containing block on the inline axis.
+The `justify-self` property is used to align an item inside its containing block on the inline axis.
 
 This property does not apply to floated elements or table cells.
 
 ## align-self
 
-The {{cssxref("align-self")}} property does not apply to block-level boxes (including floats), because there is more than one item in the block axis. It also does not apply to table cells.
+The `align-self` property does not apply to block-level boxes (including floats), because there is more than one item in the block axis. It also does not apply to table cells.
 
 ### Absolutely positioned elements
 
@@ -32,7 +32,7 @@ The alignment container is the positioned block, accounting for the offset value
 
 As we do not currently have browser support for box alignment in block layout, your options for alignment are either to use one of the existing alignment methods or, to make even a single item inside a container a flex item in order to use the alignment properties as specified in flexbox.
 
-Alignment of blocks horizontally prior to flexbox was typically achieved by way of setting auto margins on the block. A {{cssxref("margin")}} of `auto` will absorb all available space in that dimension, therefore setting a left and right margin of auto, you can push a block into the center:
+Alignment of blocks horizontally prior to flexbox was typically achieved by way of setting auto margins on the block. A `margin` of `auto` will absorb all available space in that dimension, therefore setting a left and right margin of auto, you can push a block into the center:
 
 ```css
 .container {
@@ -42,7 +42,7 @@ Alignment of blocks horizontally prior to flexbox was typically achieved by way 
 }
 ```
 
-In table layout, you have access to the {{cssxref("vertical-align")}} property to align the contents of a cell inside that cell.
+In table layout, you have access to the `vertical-align` property to align the contents of a cell inside that cell.
 
 For many use cases, turning the block container into a flex item will give you the alignment capability that you are looking for. In the example below, a container with a single item inside has been turned into a flex container for the purpose of being able to use the alignment properties.
 

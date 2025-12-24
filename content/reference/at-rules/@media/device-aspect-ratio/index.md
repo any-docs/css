@@ -17,7 +17,7 @@ The **`device-aspect-ratio`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/
 
 ## Syntax
 
-The `device-aspect-ratio` feature is specified as a {{cssxref("&lt;ratio&gt;")}}. It is a range feature, meaning that you can also use the prefixed **`min-device-aspect-ratio`** and **`max-device-aspect-ratio`** variants to query minimum and maximum values, respectively.
+The `device-aspect-ratio` feature is specified as a `&lt;ratio&gt;`. It is a range feature, meaning that you can also use the prefixed **`min-device-aspect-ratio`** and **`max-device-aspect-ratio`** variants to query minimum and maximum values, respectively.
 
 ## Examples
 

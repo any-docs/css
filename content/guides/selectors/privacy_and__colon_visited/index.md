@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-Originally, the [CSS](/en-US/docs/Web/CSS) {{ cssxref(":visited") }} selector was a privacy and security risk. With a little bit of JavaScript, websites could uncover a user's browsing history and figure out what sites the user had visited. This was done using methods like {{domxref("window.getComputedStyle")}} and other techniques. This process was quick, enabling websites to not only determine where the user had been on the web, but also to guess a lot of information about the user's identity.
+Originally, the [CSS](/en-US/docs/Web/CSS) {{ cssxref(":visited") }} selector was a privacy and security risk. With a little bit of JavaScript, websites could uncover a user's browsing history and figure out what sites the user had visited. This was done using methods like `window.getComputedStyle` and other techniques. This process was quick, enabling websites to not only determine where the user had been on the web, but also to guess a lot of information about the user's identity.
 
 To mitigate this privacy concern, browsers limit the amount of information that can be obtained from visited links.
 
@@ -31,7 +31,7 @@ You can style visited links, but there are limits to which styles you can use. O
 - {{ cssxref("text-emphasis-color") }}
 - Color parts of the {{SVGAttr("fill")}} and {{SVGAttr("stroke")}} attributes
 
-In addition, even for the styles mentioned above, transparency differences between unvisited and visited links are not applied. This restriction prevents the use of the `alpha` parameter in various {{cssxref("color_value", "&lt;color&gt;")}} functions or the [`transparent`](/reference/values/named-color#transparent) keyword to distinguish between the two states.
+In addition, even for the styles mentioned above, transparency differences between unvisited and visited links are not applied. This restriction prevents the use of the `alpha` parameter in various `&lt;color&gt;` functions or the [`transparent`](/reference/values/named-color#transparent) keyword to distinguish between the two states.
 
 Here is an example of how to use styles with the aforementioned restrictions:
 
@@ -54,7 +54,7 @@ Here is an example of how to use styles with the aforementioned restrictions:
 
 You may want to consider the following when developing sites:
 
-- Changing {{cssxref("background-image")}} values based on a link's visited state will not work since only colors can be used to style visited links.
+- Changing `background-image` values based on a link's visited state will not work since only colors can be used to style visited links.
 - Colors that are otherwise transparent will not apply when styled via a `:visited` selector.
 
 ## See also

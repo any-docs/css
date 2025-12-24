@@ -6,7 +6,7 @@ browser-compat: css.properties.anchor-name
 sidebar: cssref
 ---
 
-The **`anchor-name`** [CSS](/en-US/docs/Web/CSS) property enables defining an element as an **anchor element** by giving it one or more identifying **anchor names**. Each name can then be set as the value of a positioned element's {{cssxref("position-anchor")}} property to associate it with the anchor.
+The **`anchor-name`** [CSS](/en-US/docs/Web/CSS) property enables defining an element as an **anchor element** by giving it one or more identifying **anchor names**. Each name can then be set as the value of a positioned element's `position-anchor` property to associate it with the anchor.
 
 ## Syntax
 
@@ -31,24 +31,24 @@ anchor-name: unset;
 - `none`
   - The default value. Setting `anchor-name: none` on an element means that it is not defined as an anchor element. If the element was previously defined as an anchor and associated with a positioned element, setting `anchor-name: none` disassociates the two.
 
-- {{cssxref("dashed-ident")}}
-  - One or more comma-separated arbitrary custom identifiers defining the name or names of the anchor, which can then be referenced in a {{cssxref("position-anchor")}} property.
+- `dashed-ident`
+  - One or more comma-separated arbitrary custom identifiers defining the name or names of the anchor, which can then be referenced in a `position-anchor` property.
 
 ## Description
 
-To position an element relative to an anchor element, the positioned element requires three features: an association, a position, and a location. The `anchor-name` and {{cssxref("position-anchor")}} properties provide an explicit association.
+To position an element relative to an anchor element, the positioned element requires three features: an association, a position, and a location. The `anchor-name` and `position-anchor` properties provide an explicit association.
 
-The anchor element accepts one or more `<dashed-ident>` anchor names set on it via the `anchor-name` property. When one of those names is then set as the value of the `position-anchor` property of an element that has its {{cssxref("position")}} set to `absolute` or `fixed`, the two elements are associated. The two elements become tethered by setting a location on the associated element relative to the anchor, making it an "anchor-positioned" element.
+The anchor element accepts one or more `<dashed-ident>` anchor names set on it via the `anchor-name` property. When one of those names is then set as the value of the `position-anchor` property of an element that has its `position` set to `absolute` or `fixed`, the two elements are associated. The two elements become tethered by setting a location on the associated element relative to the anchor, making it an "anchor-positioned" element.
 
 If multiple anchor elements have the same anchor name set on them, and that name is referenced by the `position-anchor` property value of a positioned element, that positioned element will be associated with the last anchor element with that anchor name in the source order.
 
 Anchor positioning changes the [containing block](/guides/Display/Containing_block) of anchor-positioned elements, making its `position` relative to its anchor rather than to the nearest positioned ancestor element.
 
-To tether and place a positioned element in a specific location relative to an anchor element, an anchor positioning feature is needed, such as the {{cssxref("anchor()")}} function (set within an {{glossary("inset properties", "inset property's")}} value) or the {{cssxref("position-area")}} property.
+To tether and place a positioned element in a specific location relative to an anchor element, an anchor positioning feature is needed, such as the `anchor()` function (set within an {{glossary("inset properties", "inset property's")}} value) or the `position-area` property.
 
-You cannot associate a positioned element with an anchor element if the anchor is hidden, such as with {{cssxref("display", "display: none")}} or {{cssxref("visibility", "visibility: hidden")}}, or if the anchor is part of the [skipped contents](/guides/Containment/Using#skips_its_contents) of another element due to it having {{cssxref("content-visibility", "content-visibility: hidden")}} set on it.
+You cannot associate a positioned element with an anchor element if the anchor is hidden, such as with `display: none` or `visibility: hidden`, or if the anchor is part of the [skipped contents](/guides/Containment/Using#skips_its_contents) of another element due to it having `content-visibility: hidden` set on it.
 
-The `anchor-name` property is supported on all elements that generate a principal box. This means that [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements), including generated content created using {{cssxref("::before")}} and {{cssxref("::after")}}, and UI features like the [`range` input](/en-US/docs/Web/HTML/Reference/Elements/input/range) thumb ({{cssxref("::-webkit-slider-thumb")}}) can be anchor elements. Pseudo elements are implicitly anchored to the same element as the pseudo-element's originating element, unless otherwise specified.
+The `anchor-name` property is supported on all elements that generate a principal box. This means that [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements), including generated content created using `::before` and `::after`, and UI features like the [`range` input](/en-US/docs/Web/HTML/Reference/Elements/input/range) thumb (`::-webkit-slider-thumb`) can be anchor elements. Pseudo elements are implicitly anchored to the same element as the pseudo-element's originating element, unless otherwise specified.
 
 For more information on anchor features and usage, see the [CSS anchor positioning](/guides/Anchor_positioning) module landing page and the [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide.
 
@@ -129,11 +129,11 @@ body {
 }
 ```
 
-We associate the second `<div>` with the anchor element by setting its anchor name as the value of the positioned element's {{cssxref("position-anchor")}} property. We then set the positioned element's:
+We associate the second `<div>` with the anchor element by setting its anchor name as the value of the positioned element's `position-anchor` property. We then set the positioned element's:
 
-- {{cssxref("position")}} property to `fixed`, converting it to an _anchor-positioned element_ so it can be positioned relative to the anchor's position on the page.
-- {{cssxref("left")}} and {{cssxref("top")}} properties to {{cssxref("anchor()")}} functions with values of `right` and `top` respectively. This positions the infobox's left edge flush to the right edge of its anchor, and its top edge relative to the top edge of its anchor.
-- {{cssxref("margin-left")}} to `10px`, creating space between the anchor positioned element and its anchor.
+- `position` property to `fixed`, converting it to an _anchor-positioned element_ so it can be positioned relative to the anchor's position on the page.
+- `left` and `top` properties to `anchor()` functions with values of `right` and `top` respectively. This positions the infobox's left edge flush to the right edge of its anchor, and its top edge relative to the top edge of its anchor.
+- `margin-left` to `10px`, creating space between the anchor positioned element and its anchor.
 
 ```css hidden
 .infobox {
@@ -231,7 +231,7 @@ body {
 }
 ```
 
-Each of the two positioned elements are associated with the anchor element by setting its anchor name as the positioned element's {{cssxref("position-anchor")}} property value. Both are also given `fixed` positioning, making them **anchor positioned elements**. The positioned elements are then positioned in different places relative to the anchor using a combination of inset properties as seen above and {{cssxref("align-self")}} / {{cssxref("justify-self")}} properties with a value of `anchor-center`, centrally aligning the infobox to the center of the anchor in the inline/block directions respectively.
+Each of the two positioned elements are associated with the anchor element by setting its anchor name as the positioned element's `position-anchor` property value. Both are also given `fixed` positioning, making them **anchor positioned elements**. The positioned elements are then positioned in different places relative to the anchor using a combination of inset properties as seen above and `align-self` / `justify-self` properties with a value of `anchor-center`, centrally aligning the infobox to the center of the anchor in the inline/block directions respectively.
 
 ```css hidden
 .infobox {
@@ -381,7 +381,7 @@ Scroll the page to see how both of the infoboxes are tethered to the anchor.
 
 ## See also
 
-- {{cssxref("position-anchor")}}
+- `position-anchor`
 - HTML [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) attribute
 - [CSS anchor positioning](/guides/Anchor_positioning) module
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide

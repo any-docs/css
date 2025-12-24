@@ -28,12 +28,12 @@ r: unset;
 
 ### Values
 
-The {{cssxref("length")}} and {{cssxref("percentage")}} values define the radius of the circle.
+The `length` and `percentage` values define the radius of the circle.
 
-- {{cssxref("length")}}
-  - Absolute or relative lengths can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Negative values are invalid.
+- `length`
+  - Absolute or relative lengths can be expressed in any unit allowed by the CSS `&lt;length&gt;` data type. Negative values are invalid.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - Percentages refer to the normalized diagonal of the current SVG viewport, which is calculated as <math><mfrac><msqrt><mrow><msup><mi>&lt;width&gt;</mi><mn>2</mn></msup><mo>+</mo><msup><mi>&lt;height&gt;</mi><mn>2</mn></msup></mrow></msqrt><msqrt><mn>2</mn></msqrt></mfrac></math>.
 
 ## Formal definition
@@ -57,7 +57,7 @@ In this example, we have two identical `<circle>` elements in an SVG, each with 
 </svg>
 ```
 
-With CSS, we style only the first circle, allowing the second circle to use default styles (with ({{cssxref("fill")}} defaulting to black). We use the `r` property to override the value of the SVG {{SVGAttr("r")}} attribute, giving it a `fill` and {{cssxref("stroke")}}. The default size of an SVG is `300px` wide and `150px` tall.
+With CSS, we style only the first circle, allowing the second circle to use default styles (with (`fill` defaulting to black). We use the `r` property to override the value of the SVG {{SVGAttr("r")}} attribute, giving it a `fill` and `stroke`. The default size of an SVG is `300px` wide and `150px` tall.
 
 ```css
 svg {
@@ -88,7 +88,7 @@ This example contains two SVGs, each with two `<circle>` elements. The second SV
 </svg>
 ```
 
-The CSS is similar to the previous example, with `r: 30px` set, but we set a {{cssxref("width")}} to ensure the images are both `300px` wide:
+The CSS is similar to the previous example, with `r: 30px` set, but we set a `width` to ensure the images are both `300px` wide:
 
 ```css
 svg {
@@ -151,11 +151,11 @@ While the `r` is the same, the center points differ because the second SVG is sc
 
 ## See also
 
-- Geometry properties: `r`, {{cssxref("cx")}}, {{cssxref("cy")}}, {{cssxref("rx")}}, {{cssxref("ry")}}, {{cssxref("x")}}, {{cssxref("y")}}, {{cssxref("width")}}, {{cssxref("height")}}
-- {{cssxref("fill")}}
-- {{cssxref("stroke")}}
-- {{cssxref("paint-order")}}
-- {{cssxref("border-radius")}} shorthand property
-- {{cssxref("gradient/radial-gradient", "radial-gradient")}}
-- {{cssxref("basic-shape")}} data type
+- Geometry properties: `r`, `cx`, `cy`, `rx`, `ry`, `x`, `y`, `width`, `height`
+- `fill`
+- `stroke`
+- `paint-order`
+- `border-radius` shorthand property
+- `radial-gradient`
+- `basic-shape` data type
 - SVG {{SVGAttr("r")}} attribute

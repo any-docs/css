@@ -77,13 +77,13 @@ The `box-decoration-break` property is specified as one of the keyword values li
 
 The specified value will impact the appearance of the following properties:
 
-- {{Cssxref("background")}}
-- {{Cssxref("border")}}
-- {{Cssxref("border-image")}}
-- {{Cssxref("box-shadow")}}
-- {{Cssxref("clip-path")}}
-- {{Cssxref("margin")}}
-- {{Cssxref("padding")}}
+- `background`
+- `border`
+- `border-image`
+- `box-shadow`
+- `clip-path`
+- `margin`
+- `padding`
 
 ## Formal definition
 
@@ -213,4 +213,4 @@ span {
 
 ## See also
 
-- {{cssxref("break-after")}}, {{cssxref("break-before")}}, {{cssxref("break-inside")}}
+- `break-after`, `break-before`, `break-inside`

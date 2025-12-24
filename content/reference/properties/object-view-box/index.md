@@ -89,13 +89,13 @@ object-view-box: unset;
   - The element does not have a view box. This is the default.
 
 - [`<basic-shape-rect>`](/reference/values/basic-shape#syntax_for_rectangles_basic-shape-rect)
-  - An {{cssxref("basic-shape/inset","inset()")}}, {{cssxref("basic-shape/xywh","xywh()")}}, or {{cssxref("basic-shape/rect","rect()")}} function specifying a view box for an element with natural dimensions (replaced elements). Resolves to `none` otherwise.
+  - An `inset()`, `xywh()`, or `rect()` function specifying a view box for an element with natural dimensions (replaced elements). Resolves to `none` otherwise.
 
 ## Description
 
 The `object-view-box` property can be used to crop or resize {{glossary("replaced elements")}}, including images and videos. It works by showing a section of the content of the replaced element in the available space reserved for that element. The section of the replaced element that is displayed is defined by the value of the property. The available reserved space is determined by the element's default {{glossary("extrinsic size")}}. The subsection of the content displayed can be presented zoomed-in, panned-out, or at its original size, while maintaining the content's intrinsic {{glossary("aspect ratio")}}.
 
-The property value is a `<basic-shape-rect>`, one of the {{cssxref("basic-shape")}} functions limited to defining a rectangular shape. For example, the value can be a {{cssxref("basic-shape/xywh","xywh()")}} function:
+The property value is a `<basic-shape-rect>`, one of the `basic-shape` functions limited to defining a rectangular shape. For example, the value can be a `xywh()` function:
 
 ```css
 img {
@@ -159,7 +159,7 @@ We have three almost identical {{htmlelement("img")}} elements wrapped in {{html
 
 #### CSS
 
-We style all the images to have the same width and height, then set each class, and therefore each image, to have a different `object-view-box` value. The intrinsic size of the painted hand image is `298px` by `332px`. We set the {{cssxref("height")}} and {{cssxref("width")}}, setting the extrinsic size to `200px` by `200px`.
+We style all the images to have the same width and height, then set each class, and therefore each image, to have a different `object-view-box` value. The intrinsic size of the painted hand image is `298px` by `332px`. We set the `height` and `width`, setting the extrinsic size to `200px` by `200px`.
 
 ```css
 img {
@@ -169,7 +169,7 @@ img {
 }
 ```
 
-We set three different `object-view-box` property values using three different shape functions. The `intrinsic` element's {{cssxref("basic-shape/xywh","xywh()")}} function value displays a `200px` square section of the image content, starting from the `70px` from the left and `90px` from the top. The `zoom-in` element's {{cssxref("basic-shape/rect","rect()")}} function displays a `160px` square section of the original element, going from `110px` to `270px` from the top edge and `90px` to `250px` from the left edge. The `zoom-out` replaced element's {{cssxref("basic-shape/inset","inset()")}} function displays a `298px` square section of the original element; showing the entire width of the image while cutting of a 17px from the top and bottom.
+We set three different `object-view-box` property values using three different shape functions. The `intrinsic` element's `xywh()` function value displays a `200px` square section of the image content, starting from the `70px` from the left and `90px` from the top. The `zoom-in` element's `rect()` function displays a `160px` square section of the original element, going from `110px` to `270px` from the top edge and `90px` to `250px` from the left edge. The `zoom-out` replaced element's `inset()` function displays a `298px` square section of the original element; showing the entire width of the image while cutting of a 17px from the top and bottom.
 
 ```css
 .intrinsic {
@@ -234,7 +234,7 @@ We include an {{htmlelement("img")}} element and a [`range`](/en-US/docs/Web/HTM
 
 #### CSS
 
-We define a `--box-size` custom property, which is used as the height and width in the {{cssxref("basic-shape/xywh", "xywh()")}} function, creating a square viewbox with an aspect ratio of `1:1`. The view box's offset point, the focal point in our zoom effect, is set at `500px` for the `x` coordinate and `30px` for the `y` coordinate, which corresponds to the top-left corner of the leopard's right eye.
+We define a `--box-size` custom property, which is used as the height and width in the `xywh()` function, creating a square viewbox with an aspect ratio of `1:1`. The view box's offset point, the focal point in our zoom effect, is set at `500px` for the `x` coordinate and `30px` for the `y` coordinate, which corresponds to the top-left corner of the leopard's right eye.
 
 ```css hidden
 input {
@@ -363,8 +363,8 @@ img {
 ## See also
 
 - [Using the CSS `object-view-box` property](/guides/Images/Using_object-view-box)
-- {{cssxref("object-fit")}}
-- {{cssxref("object-position")}}
-- {{cssxref("background-size")}}
+- `object-fit`
+- `object-position`
+- `background-size`
 - [Understanding aspect ratio](/guides/Box_sizing/Aspect_ratios)
 - [CSS images](/guides/Images) module

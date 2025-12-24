@@ -12,7 +12,7 @@ Line naming is incredibly useful, but some of the more confusing grid syntax com
 
 ## Naming lines when defining a grid
 
-You can assign some or all of the lines in your grid a name when you define your grid with the {{cssxref("grid-template-rows")}} and {{cssxref("grid-template-columns")}} properties. To demonstrate, we'll use the basic layout created in the guide on [line-based placement](/guides/Grid_layout/Line-based_placement). This time, we'll create the grid using named lines.
+You can assign some or all of the lines in your grid a name when you define your grid with the `grid-template-rows` and `grid-template-columns` properties. To demonstrate, we'll use the basic layout created in the guide on [line-based placement](/guides/Grid_layout/Line-based_placement). This time, we'll create the grid using named lines.
 
 ```css hidden
 * {
@@ -92,7 +92,7 @@ You may want to give a line more than one name, perhaps it denotes the sidebar-e
 
 ## Implicit grid areas from named lines
 
-When naming the lines, we mentioned that you can name these anything you like. The name is a {{cssxref("custom-ident")}}, an author-defined name. When choosing the name you need to avoid words that might appear in the specification and be confusing - such as `span`. Idents are not quoted.
+When naming the lines, we mentioned that you can name these anything you like. The name is a `custom-ident`, an author-defined name. When choosing the name you need to avoid words that might appear in the specification and be confusing - such as `span`. Idents are not quoted.
 
 While you can choose any name, if you append `-start` and `-end` to the lines around an area, as we have in the example above, grid will create a named area of the main name used. Taking the above example, we have `content-start` and `content-end` both for rows and for columns. This means we get a grid area named `content`, and could place something in that area should we wish to.
 
@@ -137,13 +137,13 @@ We use the same grid definitions as above, placing a single item into the named 
 
 {{ EmbedLiveSample('Implicit_grid_areas_from_named_lines', '500', '330') }}
 
-We don't need to define where our areas are with {{cssxref("grid-template-areas")}} as our named lines have created an area for us.
+We don't need to define where our areas are with `grid-template-areas` as our named lines have created an area for us.
 
 ## Implicit grid lines from named areas
 
 We have seen how named lines create a named area, and this also works in reverse. Named template areas create named lines that you can use to place your items. If we take the layout created in the guide to [grid template areas](/guides/Grid_layout/Grid_template_areas), we can use the lines created by our areas to see how this works.
 
-In this example, we have added an extra `<div>` with a class of `overlay`. We have named areas created using the {{cssxref("grid-area")}} property, then a layout created in `grid-template-areas`. The area names are:
+In this example, we have added an extra `<div>` with a class of `overlay`. We have named areas created using the `grid-area` property, then a layout created in `grid-template-areas`. The area names are:
 
 - `hd`
 - `ft`

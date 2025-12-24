@@ -7,7 +7,7 @@ spec-urls: https://drafts.csswg.org/css-borders-4/
 sidebar: cssref
 ---
 
-The **CSS borders and box decorations** module provides properties for adding borders, shaped corners, and box shadows to elements. This module extends borders and box decorations introduced in the [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module, adding {{cssxref("corner-shape")}} and `border-shape` properties, logical {{cssxref("border-radius")}} properties, longhand properties for the {{cssxref("box-shadow")}} property, and properties to create partial borders.
+The **CSS borders and box decorations** module provides properties for adding borders, shaped corners, and box shadows to elements. This module extends borders and box decorations introduced in the [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module, adding `corner-shape` and `border-shape` properties, logical `border-radius` properties, longhand properties for the `box-shadow` property, and properties to create partial borders.
 
 ## Borders and box decorations in action
 
@@ -130,84 +130,84 @@ setCornerShape();
 
 ### Properties
 
-- {{cssxref("border-block")}}
-- {{cssxref("border-block-color")}}
-- {{cssxref("border-block-end")}}
-- {{cssxref("border-block-end-color")}}
-- {{cssxref("border-block-end-style")}}
-- {{cssxref("border-block-end-width")}}
-- {{cssxref("border-block-start")}}
-- {{cssxref("border-block-start-color")}}
-- {{cssxref("border-block-start-style")}}
-- {{cssxref("border-block-start-width")}}
-- {{cssxref("border-block-style")}}
-- {{cssxref("border-block-width")}}
-- {{cssxref("border-bottom")}}
-- {{cssxref("border-bottom-color")}}
-- {{cssxref("border-bottom-left-radius")}}
-- {{cssxref("border-bottom-right-radius")}}
-- {{cssxref("border-bottom-style")}}
-- {{cssxref("border-bottom-width")}}
-- {{cssxref("border-color")}}
-- {{cssxref("border-end-end-radius")}}
-- {{cssxref("border-end-start-radius")}}
-- {{cssxref("border-inline")}}
-- {{cssxref("border-inline-color")}}
-- {{cssxref("border-inline-end")}}
-- {{cssxref("border-inline-end-color")}}
-- {{cssxref("border-inline-end-style")}}
-- {{cssxref("border-inline-end-width")}}
-- {{cssxref("border-inline-start")}}
-- {{cssxref("border-inline-start-color")}}
-- {{cssxref("border-inline-start-style")}}
-- {{cssxref("border-inline-start-width")}}
-- {{cssxref("border-inline-style")}}
-- {{cssxref("border-inline-width")}}
-- {{cssxref("border-left")}}
-- {{cssxref("border-left-color")}}
-- {{cssxref("border-left-style")}}
-- {{cssxref("border-left-width")}}
-- {{cssxref("border-radius")}}
-- {{cssxref("border-right")}}
-- {{cssxref("border-right-color")}}
-- {{cssxref("border-right-style")}}
-- {{cssxref("border-right-width")}}
-- {{cssxref("border-start-end-radius")}}
-- {{cssxref("border-start-start-radius")}}
-- {{cssxref("border-top")}}
-- {{cssxref("border-top-color")}}
-- {{cssxref("border-top-left-radius")}}
-- {{cssxref("border-top-right-radius")}}
-- {{cssxref("border-top-style")}}
-- {{cssxref("border-top-width")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("corner-block-end-shape")}}
-- {{cssxref("corner-block-start-shape")}}
-- {{cssxref("corner-bottom-left-shape")}}
-- {{cssxref("corner-bottom-right-shape")}}
-- {{cssxref("corner-bottom-shape")}}
-- {{cssxref("corner-end-end-shape")}}
-- {{cssxref("corner-end-start-shape")}}
-- {{cssxref("corner-inline-end-shape")}}
-- {{cssxref("corner-inline-start-shape")}}
-- {{cssxref("corner-left-shape")}}
-- {{cssxref("corner-right-shape")}}
-- {{cssxref("corner-shape")}}
-- {{cssxref("corner-start-end-shape")}}
-- {{cssxref("corner-start-start-shape")}}
-- {{cssxref("corner-top-left-shape")}}
-- {{cssxref("corner-top-right-shape")}}
-- {{cssxref("corner-top-shape")}}
+- `border-block`
+- `border-block-color`
+- `border-block-end`
+- `border-block-end-color`
+- `border-block-end-style`
+- `border-block-end-width`
+- `border-block-start`
+- `border-block-start-color`
+- `border-block-start-style`
+- `border-block-start-width`
+- `border-block-style`
+- `border-block-width`
+- `border-bottom`
+- `border-bottom-color`
+- `border-bottom-left-radius`
+- `border-bottom-right-radius`
+- `border-bottom-style`
+- `border-bottom-width`
+- `border-color`
+- `border-end-end-radius`
+- `border-end-start-radius`
+- `border-inline`
+- `border-inline-color`
+- `border-inline-end`
+- `border-inline-end-color`
+- `border-inline-end-style`
+- `border-inline-end-width`
+- `border-inline-start`
+- `border-inline-start-color`
+- `border-inline-start-style`
+- `border-inline-start-width`
+- `border-inline-style`
+- `border-inline-width`
+- `border-left`
+- `border-left-color`
+- `border-left-style`
+- `border-left-width`
+- `border-radius`
+- `border-right`
+- `border-right-color`
+- `border-right-style`
+- `border-right-width`
+- `border-start-end-radius`
+- `border-start-start-radius`
+- `border-top`
+- `border-top-color`
+- `border-top-left-radius`
+- `border-top-right-radius`
+- `border-top-style`
+- `border-top-width`
+- `box-shadow`
+- `corner-block-end-shape`
+- `corner-block-start-shape`
+- `corner-bottom-left-shape`
+- `corner-bottom-right-shape`
+- `corner-bottom-shape`
+- `corner-end-end-shape`
+- `corner-end-start-shape`
+- `corner-inline-end-shape`
+- `corner-inline-start-shape`
+- `corner-left-shape`
+- `corner-right-shape`
+- `corner-shape`
+- `corner-start-end-shape`
+- `corner-start-start-shape`
+- `corner-top-left-shape`
+- `corner-top-right-shape`
+- `corner-top-shape`
 
-The CSS borders and box decorations module level 4 also introduces the `border-shape`, `border-limit`, and `border-clip` properties, along with the `border-clip-bottom`, `border-clip-left`, `border-clip-right`, `border-clip-top` longhand properties. Currently, no browsers support these features. The module also introduces component properties for the well supported {{cssxref("border-radius")}} and {{cssxref("box-shadow")}} properties, including `border-block-end-radius`, `border-block-start-radius`, `border-bottom-radius`, `border-inline-end-radius`, `border-inline-start-radius`, `border-right-radius`, `border-top-radius`, `box-shadow-blur`, `box-shadow-color`, `box-shadow-offset`, `box-shadow-position`, and `box-shadow-spread`. These component properties are also as yet unsupported.
+The CSS borders and box decorations module level 4 also introduces the `border-shape`, `border-limit`, and `border-clip` properties, along with the `border-clip-bottom`, `border-clip-left`, `border-clip-right`, `border-clip-top` longhand properties. Currently, no browsers support these features. The module also introduces component properties for the well supported `border-radius` and `box-shadow` properties, including `border-block-end-radius`, `border-block-start-radius`, `border-bottom-radius`, `border-inline-end-radius`, `border-inline-start-radius`, `border-right-radius`, `border-top-radius`, `box-shadow-blur`, `box-shadow-color`, `box-shadow-offset`, `box-shadow-position`, and `box-shadow-spread`. These component properties are also as yet unsupported.
 
 ### Data types
 
-- {{cssxref("corner-shape-value")}}
+- `corner-shape-value`
 
 ### Functions
 
-- {{cssxref("superellipse()")}}
+- `superellipse()`
 
 ## Guides
 
@@ -216,34 +216,34 @@ The CSS borders and box decorations module level 4 also introduces the `border-s
 
 ## Related concepts
 
-- {{cssxref("box-sizing")}} property
-- {{cssxref("box-decoration-break")}} property
-- {{cssxref("text-shadow")}} property
-- {{cssxref("url_value", "&lt;url&gt;")}} data type
-- {{cssxref("&lt;color&gt;")}} data type
-- {{cssxref("image")}} data type
-- {{cssxref("&lt;position&gt;")}} data type
+- `box-sizing` property
+- `box-decoration-break` property
+- `text-shadow` property
+- `&lt;url&gt;` data type
+- `&lt;color&gt;` data type
+- `image` data type
+- `&lt;position&gt;` data type
 - [`currentColor`](/reference/values/color_value#currentcolor_keyword) keyword
 
 [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
 
-- {{cssxref("background-attachment")}}
-- {{cssxref("background-clip")}}
-- {{cssxref("background-color")}}
-- {{cssxref("background-image")}}
-- {{cssxref("background-origin")}}
-- {{cssxref("background-position")}}
-- {{cssxref("background-repeat")}}
-- {{cssxref("background-size")}}
-- {{cssxref("background")}} shorthand
-- {{cssxref("background-position-x")}}
-- {{cssxref("background-position-y")}}
-- {{cssxref("border-image-outset")}}
-- {{cssxref("border-image-repeat")}}
-- {{cssxref("border-image-slice")}}
-- {{cssxref("border-image-source")}}
-- {{cssxref("border-image-width")}}
-- {{cssxref("border-image")}} shorthand
+- `background-attachment`
+- `background-clip`
+- `background-color`
+- `background-image`
+- `background-origin`
+- `background-position`
+- `background-repeat`
+- `background-size`
+- `background` shorthand
+- `background-position-x`
+- `background-position-y`
+- `border-image-outset`
+- `border-image-repeat`
+- `border-image-slice`
+- `border-image-source`
+- `border-image-width`
+- `border-image` shorthand
 
 ## Specifications
 
@@ -251,8 +251,8 @@ The CSS borders and box decorations module level 4 also introduces the `border-s
 
 ## See also
 
-- {{cssxref("filter")}}
-- {{cssxref("backdrop-filter")}}
+- `filter`
+- `backdrop-filter`
 - [`drop-shadow()`](/reference/values/filter-function/drop-shadow) filter function
 - [Applying color to HTML elements using CSS](/guides/Colors/Applying_color)
 - Tools:

@@ -109,5 +109,5 @@ math {
 
 ## See also
 
-- {{cssxref("math-depth")}}
-- {{cssxref("font-size")}}
+- `math-depth`
+- `font-size`

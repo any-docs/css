@@ -74,7 +74,7 @@ scroll-snap-type: x proximity;
 
 If the content in the scroll port changes — for example, if content is added, moved, deleted, or resized — the scroll container will re-snap to the previously snapped content if that content is still present.
 
-If the value of a scroll snap-related property, such as `scroll-snap-type` or {{cssxref("scroll-margin")}}, is changed, the scroll container will re-snap based on the current value of `scroll-snap-type`.
+If the value of a scroll snap-related property, such as `scroll-snap-type` or `scroll-margin`, is changed, the scroll container will re-snap based on the current value of `scroll-snap-type`.
 
 Specifying any precise animations or physics used to enforce those snap points is not covered by this property but instead left up to the user agent.
 
@@ -295,8 +295,8 @@ div:nth-child(odd) {
 
 ## See also
 
-- Other scroll port properties: {{cssxref("scroll-margin")}}, {{cssxref("scroll-padding")}}
-- Scroll-child properties: {{cssxref("scroll-snap-align")}}, {{cssxref("scroll-margin")}}, {{cssxref("scroll-snap-stop")}}
+- Other scroll port properties: `scroll-margin`, `scroll-padding`
+- Scroll-child properties: `scroll-snap-align`, `scroll-margin`, `scroll-snap-stop`
 - [Basic concepts of CSS scroll snap](/guides/Scroll_snap/Basic_concepts)
 - [Using scroll snap events](/guides/Scroll_snap/Using_scroll_snap_events)
 - [CSS scroll snap](/guides/Scroll_snap)

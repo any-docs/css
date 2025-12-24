@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.inset
 sidebar: cssref
 ---
 
-The **`inset()`** [CSS](/en-US/docs/Web/CSS) function defines a rectangle at the specified inset distances from each side of the reference box. It is a basic shape function used to define one of the {{cssxref("basic-shape")}} [data types](/reference/values/Data_types).
+The **`inset()`** [CSS](/en-US/docs/Web/CSS) function defines a rectangle at the specified inset distances from each side of the reference box. It is a basic shape function used to define one of the `basic-shape` [data types](/reference/values/Data_types).
 
 {{InteractiveExample("CSS Demo: inset()")}}
 
@@ -56,7 +56,7 @@ shape-outside: inset(20px 50px 10px 0 round 50px);
   - When all of the four arguments are supplied they represent the top, right, bottom, and left offsets from the reference box inward that define the positions of the edges of the inset rectangle. These arguments follow the syntax of the margin shorthand, which let you set all
     four insets with one, two, or four values.
 
-    If a pair of insets for a dimension adds up to more than 100% of that dimension, both values are proportionally reduced so their sum equals 100%. For example, the value `inset(90% 10% 60% 10%)` has a top inset of `90%` and a bottom inset of `60%`. These values are reduced proportionally to `inset(60% 10% 40% 10%)`. Shapes such as this, that enclose no area and have no {{cssxref("shape-margin")}}, do not affect wrapping.
+    If a pair of insets for a dimension adds up to more than 100% of that dimension, both values are proportionally reduced so their sum equals 100%. For example, the value `inset(90% 10% 60% 10%)` has a top inset of `90%` and a bottom inset of `60%`. These values are reduced proportionally to `inset(60% 10% 40% 10%)`. Shapes such as this, that enclose no area and have no `shape-margin`, do not affect wrapping.
 
 - `<border-radius>`
   - The optional [`<border-radius>`](/reference/properties/border-radius) argument(s) define rounded corners for the inset rectangle using the border-radius shorthand syntax.
@@ -119,6 +119,6 @@ In the example below we have an `inset()` shape used to pull content over the fl
 
 ## See also
 
-- Properties that use this data type: {{cssxref("clip-path")}}, {{cssxref("shape-outside")}}
+- Properties that use this data type: `clip-path`, `shape-outside`
 - [CSS shapes](/guides/Shapes) module
 - [Guide to basic shapes](/guides/Shapes/Using_shape-outside)

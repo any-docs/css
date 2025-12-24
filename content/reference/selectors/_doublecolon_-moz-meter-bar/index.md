@@ -72,6 +72,6 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref("::-webkit-meter-bar")}}
-- {{cssxref("appearance")}}
-- {{cssxref("accent-color")}}
+- `::-webkit-meter-bar`
+- `appearance`
+- `accent-color`

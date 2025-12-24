@@ -10,17 +10,17 @@ The [CSS logical properties and values module](/guides/Logical_properties_and_va
 
 ## Why are logical properties useful
 
-CSS 2.1 and earlier had sized things according to the physical dimensions of the screen. Therefore we describe boxes as having a {{CSSxRef("width")}} and {{CSSxRef("height")}}, position items from the `top` and `left`, assign borders, margin, and padding to the `top`, `right`, `bottom`, `left`, etc. The Logical properties and values module defines mappings for these {{glossary("physical properties")}} and values to their logical, or flow relative, counterparts — e.g., `start` and `end` as opposed to `left` and `right`/`top` and `bottom`.
+CSS 2.1 and earlier had sized things according to the physical dimensions of the screen. Therefore we describe boxes as having a `width` and `height`, position items from the `top` and `left`, assign borders, margin, and padding to the `top`, `right`, `bottom`, `left`, etc. The Logical properties and values module defines mappings for these {{glossary("physical properties")}} and values to their logical, or flow relative, counterparts — e.g., `start` and `end` as opposed to `left` and `right`/`top` and `bottom`.
 
-These mappings are very useful for sites that get translated into languages with a different writing mode than the original layout. For example, with a CSS grid layout, if the grid container has a width applied with the {{CSSxRef("align-self")}} and {{CSSxRef("justify-self")}} properties used to align the grid items, as these properties are flow relative, the `justify-self: start` aligns the item to the start on the inline dimension, and `align-self: start` does the same on the block dimension.
+These mappings are very useful for sites that get translated into languages with a different writing mode than the original layout. For example, with a CSS grid layout, if the grid container has a width applied with the `align-self` and `justify-self` properties used to align the grid items, as these properties are flow relative, the `justify-self: start` aligns the item to the start on the inline dimension, and `align-self: start` does the same on the block dimension.
 
 ![A grid in a horizontal writing mode](grid-horizontal-width-sm.png)
 
-If the writing mode of this component is changed to `vertical-rl` using the {{CSSxRef("writing-mode")}} property, the alignment continues to work in the same way. The inline dimension will run vertically and the block dimension horizontally. The grid doesn't look the same, however, as the width assigned to the container is a horizontal measure, a measure tied to the physical and not the logical or flow relative running of the text.
+If the writing mode of this component is changed to `vertical-rl` using the `writing-mode` property, the alignment continues to work in the same way. The inline dimension will run vertically and the block dimension horizontally. The grid doesn't look the same, however, as the width assigned to the container is a horizontal measure, a measure tied to the physical and not the logical or flow relative running of the text.
 
 ![A grid in vertical writing mode.](grid-vertical-width-sm.png)
 
-If instead of the `width` property, the logical property {{CSSxRef("inline-size")}} is used, the component will work the same way no matter which writing mode it is displayed using.
+If instead of the `width` property, the logical property `inline-size` is used, the component will work the same way no matter which writing mode it is displayed using.
 
 ![A grid layout in vertical writing mode](grid-vertical-inline-size-small.png)
 

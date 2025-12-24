@@ -6,7 +6,7 @@ browser-compat: css.properties.font-size-adjust
 sidebar: cssref
 ---
 
-The **`font-size-adjust`** [CSS](/en-US/docs/Web/CSS) property provides a way to modify the size of lowercase letters relative to the size of uppercase letters, which defines the overall {{cssxref("font-size")}}. This property is useful for situations where font fallback can occur.
+The **`font-size-adjust`** [CSS](/en-US/docs/Web/CSS) property provides a way to modify the size of lowercase letters relative to the size of uppercase letters, which defines the overall `font-size`. This property is useful for situations where font fallback can occur.
 
 Legibility can become an issue when the first-choice {{ Cssxref("font-family") }} is unavailable and its replacement fallback font has a significantly different aspect value (height of lowercase letters divided by font size). Legibility of fonts, especially at small font sizes, is determined more by the size of lowercase letters than by the size of uppercase letters. The `font-size-adjust` property is useful for adjusting the font size of fallback fonts to keep the aspect value across fonts consistent, ensuring that the text appears similar regardless of the font used.
 
@@ -51,7 +51,7 @@ The `font-size-adjust` property takes as its value the keyword `none`, one (`<nu
     - `ic-height`
       - Uses the ratio of the advance height (vertical space taken up by a character in a font) of the character "水" (CJK water ideograph, U+6C34) to font size. This keyword value is used to normalize vertical wide pitch of fonts, particularly those that include CJK characters.
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - Adjusts the font size used depending on the specified `<font-metric>`. When no `<font-metric>` is specified (in which case the default value `ex-height` is used), the `<number>` value adjusts the font size of the fallback font so that its x-height is the specified multiple of the font size. This value should generally match the aspect value (ratio of x-height to font size) of the first-choice font. This means that the first-choice font, when available, will display consistently across browsers, regardless of their support for `font-size-adjust`.
 
     When a `<font-metric>` value is specified, the `<number>` value adjusts the font size as per the chosen `<font-metric>` to maintain a consistent appearance for the specified font metric across different fonts.
@@ -63,10 +63,10 @@ The `font-size-adjust` property takes as its value the keyword `none`, one (`<nu
 
 ## Description
 
-To ensure compatibility with browsers that don't support `font-size-adjust`, this property is specified as a numeric multiplier of the {{cssxref("font-size")}} property. This number should generally match the aspect value of the first-choice font.
+To ensure compatibility with browsers that don't support `font-size-adjust`, this property is specified as a numeric multiplier of the `font-size` property. This number should generally match the aspect value of the first-choice font.
 
 > [!NOTE]
-> If the specified `<font-metric>` has been overridden in {{cssxref("@font-face")}}, e.g., by using the [`size-adjust`](/en-US/docs/Web/CSS/Reference/At-rules/@font-face/size-adjust) descriptor, then the overridden metric will be used in the `font-size-adjust` calculation. This means that when `font-size-adjust` and `size-adjust` are applied together, `size-adjust` does not have any effect.
+> If the specified `<font-metric>` has been overridden in `@font-face`, e.g., by using the [`size-adjust`](/en-US/docs/Web/CSS/Reference/At-rules/@font-face/size-adjust) descriptor, then the overridden metric will be used in the `font-size-adjust` calculation. This means that when `font-size-adjust` and `size-adjust` are applied together, `size-adjust` does not have any effect.
 
 The adjusted font size is calculated using the formula `u  =  ( m / m′ ) s`, where:
 
@@ -222,8 +222,8 @@ span {
 
 ## See also
 
-- {{cssxref("font-size")}}
-- {{cssxref("font-weight")}}
-- {{cssxref("@font-face/size-adjust", "size-adjust")}} `@font-face` descriptor
+- `font-size`
+- `font-weight`
+- `size-adjust` `@font-face` descriptor
 - SVG {{SVGAttr("font-size-adjust")}} attribute
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)

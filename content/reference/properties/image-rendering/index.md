@@ -153,9 +153,9 @@ img {
 
 ## See also
 
-- {{cssxref("object-fit")}}
-- {{cssxref("object-position")}}
-- {{cssxref("image-orientation")}}
-- {{cssxref("image-resolution")}}
+- `object-fit`
+- `object-position`
+- `image-orientation`
+- `image-resolution`
 - [CSS images](/guides/Images) module
 - SVG {{SVGAttr("image-rendering")}} attribute

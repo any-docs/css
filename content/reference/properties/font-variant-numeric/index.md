@@ -195,10 +195,10 @@ Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
 ## See also
 
-- {{cssxref("font-variant")}}
-- {{cssxref("font-variant-alternates")}}
-- {{cssxref("font-variant-caps")}}
-- {{cssxref("font-variant-east-asian")}}
-- {{cssxref("font-variant-emoji")}}
-- {{cssxref("font-variant-ligatures")}}
-- {{cssxref("font-variant-position")}}
+- `font-variant`
+- `font-variant-alternates`
+- `font-variant-caps`
+- `font-variant-east-asian`
+- `font-variant-emoji`
+- `font-variant-ligatures`
+- `font-variant-position`

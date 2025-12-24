@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`translateY()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) repositions an element vertically on the 2D plane. Its result
-is a {{cssxref("&lt;transform-function&gt;")}} data type.
+is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: translateY()")}}
 
@@ -69,9 +69,9 @@ transform: translateY(50%);
 ### Values
 
 - `<length-percentage>`
-  - The value is a {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} representing the ordinate (vertical, y-coordinate) of the
+  - The value is a `&lt;length&gt;` or `&lt;percentage&gt;` representing the ordinate (vertical, y-coordinate) of the
     translating vector [0, ty]. In [Cartesian coordinate system](/reference/values/transform-function#cartesian_coordinates) it represents shift along y-axis. A percentage value refers to the height of the reference box defined by the
-    {{cssxref("transform-box")}} property.
+    `transform-box` property.
 
 <table class="standard-table">
   <thead>
@@ -154,6 +154,6 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("translate")}}
+- `transform`
+- `&lt;transform-function&gt;`
+- `translate`

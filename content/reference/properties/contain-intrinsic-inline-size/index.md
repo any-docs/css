@@ -39,14 +39,14 @@ The following values can be specified for the intrinsic inline size of an elemen
 - `none`
   - The element has no intrinsic inline-size.
 - `<length>`
-  - The element has the specified inline-size ({{cssxref("&lt;length&gt;")}}).
+  - The element has the specified inline-size (`&lt;length&gt;`).
 - `auto <length>`
   - When the element is in size containment and skipping its contents (for example, when it is offscreen and `content-visibility: auto` is set) the inline size is remembered from the actual size of the element when it was last able to render its child elements.
     If the element has never rendered its child elements and hence has no remembered value for the normally rendered element size, or if it is not skipping its contents, the inline size is the specified `<length>`.
 
 ## Description
 
-The property is commonly applied alongside elements that can trigger size containment, such as [`contain: size`](/reference/properties/contain) and {{cssxref("content-visibility")}}.
+The property is commonly applied alongside elements that can trigger size containment, such as [`contain: size`](/reference/properties/contain) and `content-visibility`.
 
 Size containment allows a user agent to lay out an element as though it had a fixed size, preventing unnecessary reflows by avoiding the re-rendering of child elements to determine the actual size (thereby improving user experience).
 By default, size containment treats elements as though they had no contents, and may collapse the layout in the same way as if the contents had no width or height.
@@ -76,7 +76,7 @@ The HTML below defines an element "contained_element" that will be subject to si
 </div>
 ```
 
-The CSS below sets the {{cssxref("content-visibility")}} of `contained_element` to `auto`, so if the element is hidden it will be size constrained.
+The CSS below sets the `content-visibility` of `contained_element` to `auto`, so if the element is hidden it will be size constrained.
 The intrinsic block size and inline size that are used when it is size constrained are set at the same time using `contain-intrinsic-block-size` and `contain-intrinsic-inline-size`, respectively.
 
 ```css
@@ -106,7 +106,7 @@ The intrinsic block size and inline size that are used when it is size constrain
 ## See also
 
 - [content-visibility: the new CSS property that boosts your rendering performance](https://web.dev/articles/content-visibility) (web.dev)
-- {{CSSxRef("contain-intrinsic-block-size")}}
-- {{CSSxRef("contain-intrinsic-size")}}
-- {{CSSxRef("contain-intrinsic-width")}}
-- {{CSSxRef("contain-intrinsic-height")}}
+- `contain-intrinsic-block-size`
+- `contain-intrinsic-size`
+- `contain-intrinsic-width`
+- `contain-intrinsic-height`

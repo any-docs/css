@@ -39,9 +39,9 @@ The **`-webkit-box-reflect`** [CSS](/en-US/docs/Web/CSS) property lets you refle
 
 - `above`_,_ `below`_,_ `right`_,_ `left`
   - Are keywords indicating in which direction the reflection is to happen.
-- {{CSSxRef("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Indicates the size of the reflection.
-- {{cssxref("image")}}
+- `image`
   - Describes the mask to be applied to the reflection.
 
 ## Formal definition
@@ -53,7 +53,7 @@ The **`-webkit-box-reflect`** [CSS](/en-US/docs/Web/CSS) property lets you refle
 
 ## Specifications
 
-Not part of any standard. The standard way to do reflection in CSS is to use the CSS {{cssxref("element()")}} function.
+Not part of any standard. The standard way to do reflection in CSS is to use the CSS `element()` function.
 
 ## Browser compatibility
 

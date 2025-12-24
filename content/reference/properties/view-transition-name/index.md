@@ -29,7 +29,7 @@ view-transition-name: unset;
 
 ### Values
 
-- {{cssxref("custom-ident")}}
+- `custom-ident`
   - An identifying name that causes the selected element to participate in a separate snapshot from the root snapshot. The `<custom-ident>` cannot be `auto`, `match-element`, `none`, or a [CSS-wide keyword](/reference/values/Data_types#css-wide_keywords) value.
 - `match-element`
   - The browser automatically assigns a unique name to the selected element. This name is used to snapshot the element separately from all other elements on the page. (This name is internal and cannot be read from the DOM.)
@@ -48,7 +48,7 @@ figcaption {
 }
 ```
 
-You can then specify which animations you want for the before and after snapshots using the relevant view transition pseudo-elements — {{cssxref("::view-transition-old()")}} and {{cssxref("::view-transition-new()")}}. For example:
+You can then specify which animations you want for the before and after snapshots using the relevant view transition pseudo-elements — `::view-transition-old()` and `::view-transition-new()`. For example:
 
 ```css
 ::view-transition-old(figure-caption) {
@@ -68,7 +68,7 @@ If you don't want an element to be snapshotted separately, you can specify a `vi
 }
 ```
 
-The `view-transition-name` `<custom-ident>` must be unique for each rendered element taking part in the view transition. If two rendered elements have the same `view-transition-name` at the same time, the {{domxref("ViewTransition.ready")}} {{JSxRef("Promise")}} will reject and the transition will be skipped.
+The `view-transition-name` `<custom-ident>` must be unique for each rendered element taking part in the view transition. If two rendered elements have the same `view-transition-name` at the same time, the `ViewTransition.ready` {{JSxRef("Promise")}} will reject and the transition will be skipped.
 
 ### Specifying `view-transition-name` values automatically
 
@@ -382,7 +382,7 @@ By default, all elements in a view transition are animated together in a single 
 
 The `match-element-applied` class is applied to the `<main>` element by default, which is why the checkbox in the Result frame is initially selected. If you uncheck it, the class is removed and the default cross-fade animation comes into effect instead. You can toggle the checkbox to compare the default animation with the one applied when `view-transition-name: match-element` is used.
 
-Next, we customize the animation by using the {{cssxref("::view-transition-group()")}} pseudo-element to apply an {{cssxref("animation-duration")}} to all the view transition groups (signified by the `*` identifier) and give all the old and new snapshots a {{cssxref("height")}} of `100%`. This works around differences in the aspect ratios of the old and new snapshots and makes the animations look smoother:
+Next, we customize the animation by using the `::view-transition-group()` pseudo-element to apply an `animation-duration` to all the view transition groups (signified by the `*` identifier) and give all the old and new snapshots a `height` of `100%`. This works around differences in the aspect ratios of the old and new snapshots and makes the animations look smoother:
 
 ```css
 ::view-transition-group(*) {
@@ -471,9 +471,9 @@ There is also a checkbox, which is selected by default, so `view-transition-name
 
 ## See also
 
-- {{cssxref("view-transition-class")}}
-- {{cssxref("::view-transition-group()")}}
-- {{cssxref("::view-transition-old()")}}
-- {{cssxref("::view-transition-new()")}}
+- `view-transition-class`
+- `::view-transition-group()`
+- `::view-transition-old()`
+- `::view-transition-new()`
 - [View Transition API](/en-US/docs/Web/API/View_Transition_API)
 - [Smooth transitions with the View Transition API](https://developer.chrome.com/docs/web-platform/view-transitions/)

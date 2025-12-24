@@ -20,7 +20,7 @@ When we have a set of items that we want to display horizontally, we may well en
 
 ### Space distributed outside the items
 
-To distribute the space between or around the items, we use the alignment properties in flexbox, and the {{cssxref("justify-content")}} property. You can read more about this property in [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items), which deals with aligning items on the main axis.
+To distribute the space between or around the items, we use the alignment properties in flexbox, and the `justify-content` property. You can read more about this property in [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items), which deals with aligning items on the main axis.
 
 In this example, we display the items at their natural size and use `justify-content: space-between` to space the items equally. You can change how the space is distributed using the `space-around` or `space-evenly` values. You could also use `start` to put the space at the end of the items, `end` to place it before them, or `center` to center the navigation items.
 
@@ -63,7 +63,7 @@ nav ul {
 
 ### Space distributed within the items
 
-A different pattern for navigation would be to distribute the available space within the items themselves, rather than create space between them. The {{cssxref("flex")}} properties allow items to grow and shrink in proportion to one another as described in [Controlling ratios of flex items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios).
+A different pattern for navigation would be to distribute the available space within the items themselves, rather than create space between them. The `flex` properties allow items to grow and shrink in proportion to one another as described in [Controlling ratios of flex items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios).
 
 If you wanted to respect the size property of your navigation items but have the available space shared out equally among them, you might use `flex: auto`, which is the shorthand for `flex: 1 1 auto` — all items grow and shrink from a flex-basis of `auto`. This would mean that the longer item would have more space because it started from a larger size, even though the same amount of available space is assigned to it as the others.
 
@@ -112,7 +112,7 @@ nav li {
 
 Another way to align items on the main axis is to use auto margins. This enables the design pattern of a navigation bar where one group of items are aligned left and another group aligned right. Here we are using the auto margins technique described in [Using auto margins for main axis alignment](/guides/Flexible_box_layout/Aligning_items#using_auto_margins_for_main_axis_alignment).
 
-The items are aligned on the main axis with `normal`, which behaves as `start`, as this is the initial behavior of flexbox. The {{cssxref("gap")}} property creates gaps between items. And we are aligning the last item to the right by giving it a `margin-left` value of `auto`. You can move the class from one item to another to change where the split happens.
+The items are aligned on the main axis with `normal`, which behaves as `start`, as this is the initial behavior of flexbox. The `gap` property creates gaps between items. And we are aligning the last item to the right by giving it a `margin-left` value of `auto`. You can move the class from one item to another to change where the split happens.
 
 ```html live-sample___split-navigation
 <nav>
@@ -195,7 +195,7 @@ Whether you use flexbox or grid to lay out a list of card components, these layo
 
 ![Two card components showing that the internals of the component do not stretch with the wrapper.](flex-cards.png)
 
-Flexbox solves this. We make the card a flex container, with {{cssxref("flex-direction", "flex-direction: column")}}. We then set the content area to `flex: 1`, which is the shorthand for `flex: 1 1 0` — the item can grow and shrink from a flex basis of `0`. As this is the only item that can grow, it takes up all available space in the flex container and pushes the footer to the bottom. If you remove the `flex` property from the live example you will see the footer moves up to sit directly under the content.
+Flexbox solves this. We make the card a flex container, with `flex-direction: column`. We then set the content area to `flex: 1`, which is the shorthand for `flex: 1 1 0` — the item can grow and shrink from a flex basis of `0`. As this is the only item that can grow, it takes up all available space in the flex container and pushes the footer to the bottom. If you remove the `flex` property from the live example you will see the footer moves up to sit directly under the content.
 
 ```html live-sample___cards
 <div class="cards">
@@ -292,7 +292,7 @@ img {
 
 Some things that you might want to try in this live example relate to the different ways you might want to constrain the media object in your design.
 
-To prevent the image from growing too large, you should add a {{cssxref("max-width")}} to the image. As that side of the media object uses the initial values of flexbox, it can shrink, but not grow, and uses a `flex-basis` of auto. Any {{cssxref("width")}} or `max-width` applied to the image will become the `flex-basis`.
+To prevent the image from growing too large, you should add a `max-width` to the image. As that side of the media object uses the initial values of flexbox, it can shrink, but not grow, and uses a `flex-basis` of auto. Any `width` or `max-width` applied to the image will become the `flex-basis`.
 
 ```css
 .image img {
@@ -300,7 +300,7 @@ To prevent the image from growing too large, you should add a {{cssxref("max-wid
 }
 ```
 
-You could also allow both sides to grow and shrink in proportion. If you set both sides to `flex: 1`, they will grow and shrink from a {{cssxref("flex-basis")}} of `0`, so you will end up with two equal-sized columns. You could either take the content as a guide and set both to `flex: auto`, in which case they would grow and shrink from the size of the content or any size applied directly to the flex items such as a `width` on the image.
+You could also allow both sides to grow and shrink in proportion. If you set both sides to `flex: 1`, they will grow and shrink from a `flex-basis` of `0`, so you will end up with two equal-sized columns. You could either take the content as a guide and set both to `flex: auto`, in which case they would grow and shrink from the size of the content or any size applied directly to the flex items such as a `width` on the image.
 
 ```css
 .media .content {
@@ -313,7 +313,7 @@ You could also allow both sides to grow and shrink in proportion. If you set bot
 }
 ```
 
-You could also give each side different {{cssxref("flex-grow")}} factors, for example setting the side with the image to `flex: 1` and the content side to `flex: 3`. This will mean they use a `flex-basis` of `0` but distribute that space at different rates according to the `flex-grow` factor you have assigned. The flex properties we use to do this are described in detail in the guide [Controlling ratios of flex items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios).
+You could also give each side different `flex-grow` factors, for example setting the side with the image to `flex: 1` and the content side to `flex: 3`. This will mean they use a `flex-basis` of `0` but distribute that space at different rates according to the `flex-grow` factor you have assigned. The flex properties we use to do this are described in detail in the guide [Controlling ratios of flex items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios).
 
 ```css
 .media .content {

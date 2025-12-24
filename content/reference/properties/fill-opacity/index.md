@@ -28,12 +28,12 @@ fill-opacity: unset;
 
 ### Values
 
-The {{cssxref("number")}} and {{cssxref("percentage")}} values denote the opacity of the `fill` of the element.
+The `number` and `percentage` values denote the opacity of the `fill` of the element.
 
-- {{cssxref("number")}}
+- `number`
   - A numeric value between `0` and `1`, inclusive.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - A percentage value between `0%` and `100%`, inclusive.
 
 With `0` or `0%`, the element is fully transparent. With `1` or `100%`, the element is fully opaque. With values in between, the element is semi-transparent, with content behind the element being visible.
@@ -74,7 +74,7 @@ We include several different SVG graphic elements and set the `fill-opacity` att
 
 With CSS, we use the `fill-opacity` property to override the value of the SVG {{SVGAttr("fill-opacity")}} attribute, giving each SVG element a different value.
 
-We add a {{cssxref("stroke")}} to the circle and ellipse, to demonstrate that the opacity of the stroke is not impacted by the `fill-opacity` property.
+We add a `stroke` to the circle and ellipse, to demonstrate that the opacity of the stroke is not impacted by the `fill-opacity` property.
 
 Other SVG styles are set, including a background image to allow the opacity of each element to be more easily seen. These are not shown for the sake of brevity.
 
@@ -137,8 +137,8 @@ Only two elements are fully opaque: the first rectangle and the line. The first 
 ## See also
 
 - SVG {{SVGAttr("fill-opacity")}} attribute
-- Presentation properties: `fill-opacity`, {{cssxref("clip-rule")}}, {{cssxref("color-interpolation-filters")}}, {{cssxref("fill-rule")}}, {{cssxref("fill")}}, {{cssxref("marker-end")}}, {{cssxref("marker-mid")}}, {{cssxref("marker-start")}}, {{cssxref("shape-rendering")}}, {{cssxref("stop-color")}}, {{cssxref("stop-opacity")}}, {{cssxref("stroke")}}, {{cssxref("stroke-dasharray")}}, {{cssxref("stroke-dashoffset")}}, {{cssxref("stroke-linecap")}}, {{cssxref("stroke-linejoin")}}, {{cssxref("stroke-miterlimit")}}, {{cssxref("stroke-opacity")}}, {{cssxref("stroke-width")}}, {{cssxref("text-anchor")}}, and {{cssxref("vector-effect")}}
-- {{cssxref("opacity")}}
-- {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
-- {{cssxref("basic-shape")}} data type
+- Presentation properties: `fill-opacity`, `clip-rule`, `color-interpolation-filters`, `fill-rule`, `fill`, `marker-end`, `marker-mid`, `marker-start`, `shape-rendering`, `stop-color`, `stop-opacity`, `stroke`, `stroke-dasharray`, `stroke-dashoffset`, `stroke-linecap`, `stroke-linejoin`, `stroke-miterlimit`, `stroke-opacity`, `stroke-width`, `text-anchor`, and `vector-effect`
+- `opacity`
+- `background-color`
+- `&lt;color>`
+- `basic-shape` data type

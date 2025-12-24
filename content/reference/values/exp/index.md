@@ -10,7 +10,7 @@ The **`exp()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Function
 
 The mathematical constant [`e`](<https://en.wikipedia.org/wiki/E_(mathematical_constant)>) is the base of natural logarithms, and is approximately `2.718281828459045`.
 
-The `exp(number)` function contains a calculation which returns the same value as {{CSSxRef("pow", "pow(e, number)")}}.
+The `exp(number)` function contains a calculation which returns the same value as `pow(e, number)`.
 
 ## Syntax
 
@@ -26,11 +26,11 @@ width: calc(100px * exp(1)); /* 100px * 2.718281828459045 = 271.8px */
 The `exp(number)` function accepts only one value as its parameter.
 
 - `number`
-  - A calculation which resolves to a {{CSSxRef("number")}}. Representing the value to be raised by a power of `e`.
+  - A calculation which resolves to a `number`. Representing the value to be raised by a power of `e`.
 
 ### Return value
 
-Returns a non-negative {{CSSxRef("number")}} representing e<sup>number</sup>, which is the result of calculating `e` raised to the power of `number`.
+Returns a non-negative `number` representing e<sup>number</sup>, which is the result of calculating `e` raised to the power of `number`.
 
 - If `number` is `-Infinity`, the result is `0`.
 - If `number` is `0`, the result is `1`.
@@ -45,7 +45,7 @@ Returns a non-negative {{CSSxRef("number")}} representing e<sup>number</sup>, wh
 
 ### Rotate elements
 
-The `exp()` function can be used to {{CSSxRef("transform-function/rotate", "rotate")}} elements as it return a {{CSSxRef("number")}}.
+The `exp()` function can be used to `rotate` elements as it return a `number`.
 
 #### HTML
 
@@ -148,7 +148,7 @@ h6 {
 
 ## See also
 
-- {{CSSxRef("pow")}}
-- {{CSSxRef("sqrt")}}
-- {{CSSxRef("hypot")}}
-- {{CSSxRef("log")}}
+- `pow`
+- `sqrt`
+- `hypot`
+- `log`

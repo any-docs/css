@@ -6,9 +6,9 @@ browser-compat: css.properties.border-block-color
 sidebar: cssref
 ---
 
-The **`border-block-color`** [CSS](/en-US/docs/Web/CSS) property defines the color of the logical block borders of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("border-top-color")}} and {{cssxref("border-bottom-color")}}, or {{cssxref("border-right-color")}} and {{cssxref("border-left-color")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The **`border-block-color`** [CSS](/en-US/docs/Web/CSS) property defines the color of the logical block borders of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color` and `border-bottom-color`, or `border-right-color` and `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
-The border color in the other dimension can be set with {{cssxref("border-inline-color")}} which sets {{cssxref("border-inline-start-color")}}, and {{cssxref("border-inline-end-color")}}.
+The border color in the other dimension can be set with `border-inline-color` which sets `border-inline-start-color`, and `border-inline-end-color`.
 
 {{InteractiveExample("CSS Demo: border-block-color")}}
 
@@ -64,7 +64,7 @@ border-block-color: unset;
 
 ### Values
 
-- {{CSSXref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the border.
 
 ## Formal definition
@@ -118,5 +118,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- This property maps to the physical border properties: {{cssxref("border-top-color")}}, {{cssxref("border-right-color")}}, {{cssxref("border-bottom-color")}}, or {{cssxref("border-left-color")}}.
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- This property maps to the physical border properties: `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color`.
+- `writing-mode`, `direction`, `text-orientation`

@@ -6,9 +6,9 @@ browser-compat: css.properties.max-block-size
 sidebar: cssref
 ---
 
-The **`max-block-size`** [CSS](/en-US/docs/Web/CSS) property specifies the maximum size of an element in the direction opposite that of the writing direction as specified by {{cssxref("writing-mode")}}. That is, if the writing direction is horizontal, then `max-block-size` is equivalent to {{cssxref("max-height")}}; if the writing direction is vertical, `max-block-size` is the same as {{cssxref("max-width")}}.
+The **`max-block-size`** [CSS](/en-US/docs/Web/CSS) property specifies the maximum size of an element in the direction opposite that of the writing direction as specified by `writing-mode`. That is, if the writing direction is horizontal, then `max-block-size` is equivalent to `max-height`; if the writing direction is vertical, `max-block-size` is the same as `max-width`.
 
-The other dimension's maximum length is specified using the {{cssxref("max-inline-size")}} property.
+The other dimension's maximum length is specified using the `max-inline-size` property.
 
 This is useful because the `max-width` is always used for horizontal sizes and `max-height` is always used for vertical sizes, and if you need to set lengths based on the size of your text content, you need to be able to do so with the writing direction in mind.
 
@@ -84,19 +84,19 @@ max-block-size: unset;
 
 ### Values
 
-The `max-block-size` property's value can be any value that's legal for the {{cssxref("max-width")}} and {{cssxref("max-height")}} properties:
+The `max-block-size` property's value can be any value that's legal for the `max-width` and `max-height` properties:
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Defines the `max-block-size` as an absolute value.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Defines the `max-block-size` as a percentage of the containing block's size in block axis.
 - `none`
   - No limit on the size of the box.
-- {{cssxref("max-content")}}
+- `max-content`
   - The intrinsic preferred `max-block-size`.
-- {{cssxref("min-content")}}
+- `min-content`
   - The intrinsic minimum `max-block-size`.
-- {{cssxref("fit-content")}}
+- `fit-content`
   - Use the available space, but not more than [max-content](/reference/values/max-content), i.e., `min(max-content, max(min-content, stretch))`.
 - [`fit-content(<length-percentage>)`](/reference/values/fit-content_function)
   - Uses the `fit-content` formula with the available space replaced by the specified argument, i.e., `min(max-content, max(min-content, argument))`.
@@ -107,8 +107,8 @@ The values of `writing-mode` affect the mapping of `max-block-size` to `max-widt
 
 | Values of `writing-mode`                                                  | `max-block-size` is equivalent to |
 | ------------------------------------------------------------------------- | --------------------------------- |
-| `horizontal-tb`, `lr`, `lr-tb`, `rl`, `rb`, `rb-rl`                       | {{cssxref("max-height")}}         |
-| `vertical-rl`, `vertical-lr`, `sideways-rl`, `sideways-lr`, `tb`, `tb-rl` | {{cssxref("max-width")}}          |
+| `horizontal-tb`, `lr`, `lr-tb`, `rl`, `rb`, `rb-rl`                       | `max-height`         |
+| `vertical-rl`, `vertical-lr`, `sideways-rl`, `sideways-lr`, `tb`, `tb-rl` | `max-width`          |
 
 > [!NOTE]
 > The `writing-mode` values `sideways-lr` and `sideways-rl` were removed from the CSS Writing Modes Level 3 specification late in its design process. They may be restored in Level 4.
@@ -134,7 +134,7 @@ Everything else about the two boxes is identical, including the values used for 
 
 #### HTML
 
-The HTML establishes the two {{HTMLElement("div")}} blocks that will be presented with their {{cssxref("writing-mode")}} set using the classes `horizontal` or `vertical`. Both boxes share the `standard-box` class, which establishes coloring, padding, and their respective values of `max-block-size`.
+The HTML establishes the two {{HTMLElement("div")}} blocks that will be presented with their `writing-mode` set using the classes `horizontal` or `vertical`. Both boxes share the `standard-box` class, which establishes coloring, padding, and their respective values of `max-block-size`.
 
 ```html
 <p>Writing mode <code>horizontal-tb</code> (the default):</p>
@@ -158,7 +158,7 @@ The HTML establishes the two {{HTMLElement("div")}} blocks that will be presente
 
 The CSS defines three classes. The first, `standard-box`, is applied to both boxes, as seen above. It provides standard styling including the minimum and maximum block sizes, font size, and so forth.
 
-After that come the classes `horizontal` and `vertical`, which add the {{cssxref("writing-mode")}} property to the box, with the value set to `horizontal-tb` or `vertical-rl` depending on which class is used.
+After that come the classes `horizontal` and `vertical`, which add the `writing-mode` property to the box, with the value set to `horizontal-tb` or `vertical-rl` depending on which class is used.
 
 ```css
 .standard-box {
@@ -197,6 +197,6 @@ After that come the classes `horizontal` and `vertical`, which add the {{cssxref
 
 ## See also
 
-- The mapped physical properties: {{cssxref("max-width")}} and {{cssxref("max-height")}}
-- Setting the other direction's maximum size: {{cssxref("max-inline-size")}}
-- {{cssxref("writing-mode")}}
+- The mapped physical properties: `max-width` and `max-height`
+- Setting the other direction's maximum size: `max-inline-size`
+- `writing-mode`

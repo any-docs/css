@@ -15,20 +15,20 @@ The **CSS display** module defines how the CSS formatting box tree is generated 
 
 ### Properties
 
-- {{CSSxRef("display")}}
-- {{CSSxRef("order")}}
-- {{CSSxRef("visibility")}}
-- {{cssxref("reading-flow")}}
-- {{cssxref("reading-order")}}
+- `display`
+- `order`
+- `visibility`
+- `reading-flow`
+- `reading-order`
 
 ### Data types
 
-- {{CSSxRef("&lt;display-outside&gt;")}}
-- {{CSSxRef("&lt;display-inside&gt;")}}
-- {{CSSxRef("&lt;display-listitem&gt;")}}
-- {{CSSxRef("&lt;display-box&gt;")}}
-- {{CSSxRef("&lt;display-internal&gt;")}}
-- {{CSSxRef("&lt;display-legacy&gt;")}}
+- `&lt;display-outside&gt;`
+- `&lt;display-inside&gt;`
+- `&lt;display-listitem&gt;`
+- `&lt;display-box&gt;`
+- `&lt;display-internal&gt;`
+- `&lt;display-legacy&gt;`
 
 ### Glossary terms and definitions
 
@@ -60,8 +60,8 @@ The **CSS display** module defines how the CSS formatting box tree is generated 
 
 ### Properties
 
-- {{cssxref("overflow")}}
-- {{cssxref("transition-behavior")}}
+- `overflow`
+- `transition-behavior`
 
 ### Glossary terms and definitions
 

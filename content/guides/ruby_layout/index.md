@@ -13,14 +13,14 @@ The **CSS ruby layout** module provides the rendering model and formatting contr
 
 ### Properties
 
-- {{cssxref("ruby-align")}}
-- {{cssxref("ruby-position")}}
+- `ruby-align`
+- `ruby-position`
 
 The CSS ruby layout module also introduces the `ruby-merge` and `ruby-overhang` properties. Currently, no browsers support these features.
 
 ### Display values
 
-The CSS ruby layout module adds the following values to the {{cssxref("display")}} property:
+The CSS ruby layout module adds the following values to the `display` property:
 
 - `ruby`
 - `ruby-base`
@@ -35,13 +35,13 @@ The CSS ruby layout module adds the following values to the {{cssxref("display")
 ## Related concepts
 
 - [CSS display](/guides/Display) module
-  - {{cssxref("display")}}
-  - {{CSSxRef("&lt;display-internal&gt;")}}
+  - `display`
+  - `&lt;display-internal&gt;`
 - [CSS text decoration](/guides/Text_decoration) module
-  - {{cssxref("text-emphasis-color")}}
-  - {{cssxref("text-emphasis-position")}}
-  - {{cssxref("text-emphasis-style")}}
-  - {{cssxref("text-emphasis")}} shorthand
+  - `text-emphasis-color`
+  - `text-emphasis-position`
+  - `text-emphasis-style`
+  - `text-emphasis` shorthand
 - [HTML elements](/en-US/docs/Web/HTML/Reference/Elements)
   - {{HTMLElement("rb")}}
   - {{HTMLElement("rp")}}
@@ -55,8 +55,8 @@ The CSS ruby layout module adds the following values to the {{cssxref("display")
 
 ## See also
 
-- {{cssxref("direction")}}
-- {{cssxref("unicode-bidi")}}
-- {{cssxref("font-variant-east-asian")}}
-- {{cssxref(":lang()")}}
+- `direction`
+- `unicode-bidi`
+- `font-variant-east-asian`
+- `:lang()`
 - HTML [`lang`](/en-US/docs/Web/HTML/Reference/Global_attributes/lang) attribute

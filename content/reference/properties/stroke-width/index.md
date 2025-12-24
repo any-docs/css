@@ -27,13 +27,13 @@ stroke-width: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Pixel units are handled the same as SVG units (see `<number>`, above) and font-based lengths such as `em` are calculated with respect to the element's SVG value for the text size; the effects of other length units may depend on the browser.
 
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Percentages refer to the normalized diagonal of the current SVG viewport, which is calculated as <math><mfrac><msqrt><mrow><msup><mi>&lt;width&gt;</mi><mn>2</mn></msup><mo>+</mo><msup><mi>&lt;height&gt;</mi><mn>2</mn></msup></mrow></msqrt><msqrt><mn>2</mn></msqrt></mfrac></math>.
 
-- {{cssxref("&lt;number&gt;")}} <Badge type="info" text="Non-standard. Check cross-browser support before using." />
+- `&lt;number&gt;` <Badge type="info" text="Non-standard. Check cross-browser support before using." />
   - A number of SVG units, the size of which defined by the current unit space.
 
 ## Formal definition
@@ -113,12 +113,12 @@ path:nth-child(5) {
 
 ## See also
 
-- {{CSSxref("stroke")}}
-- {{cssxref("stroke-dasharray")}}
-- {{cssxref("stroke-dashoffset")}}
-- {{cssxref("stroke-linecap")}}
-- {{cssxref("stroke-linejoin")}}
-- {{cssxref("stroke-miterlimit")}}
-- {{cssxref("stroke-opacity")}}
-- {{CSSxref("fill")}}
+- `stroke`
+- `stroke-dasharray`
+- `stroke-dashoffset`
+- `stroke-linecap`
+- `stroke-linejoin`
+- `stroke-miterlimit`
+- `stroke-opacity`
+- `fill`
 - SVG {{SVGAttr("stroke-width")}} attribute

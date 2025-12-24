@@ -13,12 +13,12 @@ The [CSS transforms](/guides/Transforms) module provides features that enable bo
 
 The features of the CSS motion path module provide offset transforms: transforms that align a point on an element to an offset distance along an offset path, optionally rotating the transformed element to follow the path direction. This module enables powerful transform possibilities, for example:
 
-- Positioning using polar coordinates rather than limiting transformation to the standard rectangular {{cssxref("transform")}} function coordinates.
+- Positioning using polar coordinates rather than limiting transformation to the standard rectangular `transform` function coordinates.
 - Animating an element along a defined path.
 
 CSS motion paths allow the definition of complex 2D spatial transitions by leveraging [CSS shape functions](/reference/values/Functions#shape_functions).
 
-For example, you can define a specific path of any shape you want with the {{cssxref("offset-path")}} property. You can then animate an element to move along that path by animating the {{cssxref("offset-distance")}} property, and rotate it at any point with the {{cssxref("offset-rotate")}} property.
+For example, you can define a specific path of any shape you want with the `offset-path` property. You can then animate an element to move along that path by animating the `offset-distance` property, and rotate it at any point with the `offset-rotate` property.
 
 ## Motion paths in action
 
@@ -57,22 +57,22 @@ For example, you can define a specific path of any shape you want with the {{css
 
 {{EmbedLiveSample('Motion paths in action', '100%', 220)}}
 
-In this example, we used [CSS masking](/guides/Masking) and [CSS shapes](/guides/Shapes) to clip a container with a light pink background into a heart shape. We used a {{cssxref("basic-shape/path","path()")}} function as the value of the {{cssxref("clip-path")}} property. Its child is a `10px` by `10px` red box that is made to follow the edge of its parent. We did this by using the same {{cssxref("basic-shape")}} as the path, setting the box's {{cssxref("offset-path")}} property to the same `path()` function value. We used [CSS animations](/guides/Animations) to change the {{cssxref("offset-distance")}} from `0%` to `100%` over three seconds.
+In this example, we used [CSS masking](/guides/Masking) and [CSS shapes](/guides/Shapes) to clip a container with a light pink background into a heart shape. We used a `path()` function as the value of the `clip-path` property. Its child is a `10px` by `10px` red box that is made to follow the edge of its parent. We did this by using the same `basic-shape` as the path, setting the box's `offset-path` property to the same `path()` function value. We used [CSS animations](/guides/Animations) to change the `offset-distance` from `0%` to `100%` over three seconds.
 
 ## Reference
 
 ### Properties
 
-- {{cssxref("offset")}} shorthand
-- {{cssxref("offset-anchor")}}
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-path")}}
-- {{cssxref("offset-position")}}
-- {{cssxref("offset-rotate")}}
+- `offset` shorthand
+- `offset-anchor`
+- `offset-distance`
+- `offset-path`
+- `offset-position`
+- `offset-rotate`
 
 ### Functions
 
-- {{cssxref("ray")}}
+- `ray`
 
 ## Guides
 
@@ -83,31 +83,31 @@ In this example, we used [CSS masking](/guides/Masking) and [CSS shapes](/guides
 
 [CSS transforms](/guides/Transforms) module
 
-- {{cssxref("transform")}}
-- {{cssxref("transform-origin")}}
-- {{cssxref("translate")}}
+- `transform`
+- `transform-origin`
+- `translate`
 
 [CSS masking](/guides/Masking) module
 
-- {{cssxref("clip-path")}}
-- {{cssxref("clip-rule")}}
+- `clip-path`
+- `clip-rule`
 
 [CSS shapes](/guides/Shapes) module
 
-- {{cssxref("basic-shape")}}
-- {{cssxref("basic-shape/circle","circle()")}}
-- {{cssxref("basic-shape/ellipse","ellipse()")}}
-- {{cssxref("basic-shape/inset","inset()")}}
-- {{cssxref("basic-shape/path","path()")}}
-- {{cssxref("basic-shape/polygon","polygon()")}}
-- {{cssxref("basic-shape/rect","rect()")}}
-- {{cssxref("basic-shape/shape","shape()")}}
-- {{cssxref("basic-shape/xywh","xywh()")}}
+- `basic-shape`
+- `circle()`
+- `ellipse()`
+- `inset()`
+- `path()`
+- `polygon()`
+- `rect()`
+- `shape()`
+- `xywh()`
 
 [CSS animations](/guides/Animations) module
 
-- {{cssxref("animation")}} shorthand
-- {{cssxref("@keyframes")}}
+- `animation` shorthand
+- `@keyframes`
 
 [CSS box model](/guides/Box_model) module
 
@@ -119,8 +119,8 @@ In this example, we used [CSS masking](/guides/Masking) and [CSS shapes](/guides
 
 ## See also
 
-- {{cssxref("position_value", "&lt;position&gt;")}}
-- {{cssxref("easing-function")}}
-- {{cssxref("radial-gradient")}} function
+- `&lt;position&gt;`
+- `easing-function`
+- `radial-gradient` function
 - [`prefers-reduced-motion`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion) media query
-- {{cssxref("will-change")}} CSS property
+- `will-change` CSS property

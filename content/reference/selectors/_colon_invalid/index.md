@@ -196,7 +196,7 @@ If any one of the radio buttons in a group is `required`, the `:invalid` pseudo-
 
 ### Gecko defaults
 
-By default, Gecko does not apply a style to the `:invalid` pseudo-class. However, it does apply a style (a red "glow" using the {{Cssxref("box-shadow")}} property) to the {{cssxref(":user-invalid")}} pseudo-class, which applies in a subset of cases for `:invalid`.
+By default, Gecko does not apply a style to the `:invalid` pseudo-class. However, it does apply a style (a red "glow" using the `box-shadow` property) to the `:user-invalid` pseudo-class, which applies in a subset of cases for `:invalid`.
 
 ## Specifications
 
@@ -209,6 +209,6 @@ By default, Gecko does not apply a style to the `:invalid` pseudo-class. However
 ## See also
 
 - Other validation-related pseudo-classes: {{ cssxref(":required") }}, {{ cssxref(":optional") }}, {{ cssxref(":valid") }}
-- Related Mozilla pseudo-classes: {{cssxref(":user-invalid")}}, {{cssxref(":-moz-submit-invalid")}}
+- Related Mozilla pseudo-classes: `:user-invalid`, `:-moz-submit-invalid`
 - [Form data validation](/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)
 - Accessing the [validity state](/en-US/docs/Web/API/ValidityState) from JavaScript

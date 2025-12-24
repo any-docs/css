@@ -9,7 +9,7 @@ sidebar: cssref
 The **`@media`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) can be used to apply part of a style sheet based on the result of one or more [media queries](/guides/Media_queries/Using). With it, you specify a media query and a block of CSS to apply to the document if and only if the media query matches the device on which the content is being used.
 
 > [!NOTE]
-> In JavaScript, the rules created using `@media` can be accessed with the {{domxref("CSSMediaRule")}} CSS object model interface.
+> In JavaScript, the rules created using `@media` can be accessed with the `CSSMediaRule` CSS object model interface.
 
 {{InteractiveExample("CSS Demo: @media", "tabbed-standard")}}
 
@@ -90,97 +90,97 @@ Except when using the `only` logical operator, the media type is optional and th
 A _`<media feature>`_ describes specific characteristics of the {{glossary("user agent")}}, output device, or environment.
 Media feature expressions test for their presence, value, or range of values, and are entirely optional. Each media feature expression must be surrounded by parentheses.
 
-- {{cssxref("@media/any-hover", "any-hover")}}
+- `any-hover`
   - Does any available input mechanism allow the user to hover over elements?
-- {{cssxref("@media/any-pointer", "any-pointer")}}
+- `any-pointer`
   - Is any available input mechanism a pointing device, and if so, how accurate is it?
-- {{cssxref("@media/aspect-ratio", "aspect-ratio")}}
+- `aspect-ratio`
   - Width-to-height {{glossary("aspect ratio")}} of the viewport.
-- {{cssxref("@media/color", "color")}}
+- `color`
   - Number of bits per color component of the output device, or zero if the device isn't color.
-- {{cssxref("@media/color-gamut", "color-gamut")}}
+- `color-gamut`
   - Approximate range of colors that are supported by the user agent and output device.
-- {{cssxref("@media/color-index", "color-index")}}
+- `color-index`
   - Number of entries in the output device's color lookup table, or zero if the device does not use such a table.
-- {{cssxref("@media/device-aspect-ratio", "device-aspect-ratio")}}
+- `device-aspect-ratio`
   - Width-to-height aspect ratio of the output device. Deprecated in Media Queries Level 4.
-- {{cssxref("@media/device-height", "device-height")}}
+- `device-height`
   - Height of the rendering surface of the output device. Deprecated in Media Queries Level 4.
-- {{cssxref("@media/device-posture", "device-posture")}}
+- `device-posture`
   - Detects the device's current posture, that is, whether the viewport is in a flat or folded state. Defined in the [Device Posture API](/en-US/docs/Web/API/Device_Posture_API).
-- {{cssxref("@media/device-width", "device-width")}}
+- `device-width`
   - Width of the rendering surface of the output device. Deprecated in Media Queries Level 4.
-- {{cssxref("@media/display-mode", "display-mode")}}
+- `display-mode`
   - The mode in which an application is being displayed: for example, [fullscreen](/en-US/docs/Web/CSS/Reference/At-rules/@media/display-mode#fullscreen) or [picture-in-picture](/en-US/docs/Web/CSS/Reference/At-rules/@media/display-mode#picture-in-picture) mode.
     Added in Media Queries Level 5.
-- {{cssxref("@media/dynamic-range", "dynamic-range")}}
+- `dynamic-range`
   - Combination of brightness, contrast ratio, and color depth that are supported by the user agent and the output device. Added in Media Queries Level 5.
-- {{cssxref("@media/forced-colors", "forced-colors")}}
+- `forced-colors`
   - Detect whether user agent restricts color palette.
     Added in Media Queries Level 5.
-- {{cssxref("@media/grid", "grid")}}
+- `grid`
   - Does the device use a grid or bitmap screen?
-- {{cssxref("@media/height", "height")}}
+- `height`
   - Height of the viewport.
-- {{cssxref("@media/horizontal-viewport-segments", "horizontal-viewport-segments")}}
+- `horizontal-viewport-segments`
   - Detects whether the device has a specified number of viewport segments laid out horizontally.
-- {{cssxref("@media/hover", "hover")}}
+- `hover`
   - Does the primary input mechanism allow the user to hover over elements?
-- {{cssxref("@media/inverted-colors", "inverted-colors")}}
+- `inverted-colors`
   - Is the user agent or underlying OS inverting colors?
     Added in Media Queries Level 5.
-- {{cssxref("@media/monochrome", "monochrome")}}
+- `monochrome`
   - Bits per pixel in the output device's monochrome frame buffer, or zero if the device isn't monochrome.
-- {{cssxref("@media/orientation", "orientation")}}
+- `orientation`
   - Orientation of the viewport.
-- {{cssxref("@media/overflow-block", "overflow-block")}}
+- `overflow-block`
   - How does the output device handle content that overflows the viewport along the block axis?
-- {{cssxref("@media/overflow-inline", "overflow-inline")}}
+- `overflow-inline`
   - Can content that overflows the viewport along the inline axis be scrolled?
-- {{cssxref("@media/pointer", "pointer")}}
+- `pointer`
   - Is the primary input mechanism a pointing device, and if so, how accurate is it?
-- {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}}
+- `prefers-color-scheme`
   - Detect if the user prefers a light or dark color scheme.
     Added in Media Queries Level 5.
-- {{cssxref("@media/prefers-contrast", "prefers-contrast")}}
+- `prefers-contrast`
   - Detects if the user has requested the system increase or decrease the amount of contrast between adjacent colors.
     Added in Media Queries Level 5.
-- {{cssxref("@media/prefers-reduced-data", "prefers-reduced-data")}}
+- `prefers-reduced-data`
   - Detects if the user has requested the web content that consumes less internet traffic.
-- {{cssxref("@media/prefers-reduced-motion", "prefers-reduced-motion")}}
+- `prefers-reduced-motion`
   - The user prefers less motion on the page.
     Added in Media Queries Level 5.
-- {{cssxref("@media/prefers-reduced-transparency", "prefers-reduced-transparency")}}
+- `prefers-reduced-transparency`
   - Detects if a user has enabled a setting on their device to reduce the transparent or translucent layer effects used on the device.
-- {{cssxref("@media/resolution", "resolution")}}
+- `resolution`
   - Pixel density of the output device.
-- {{cssxref("@media/scan", "scan")}}
+- `scan`
   - Whether display output is progressive or interlaced.
-- {{cssxref("@media/scripting", "scripting")}}
+- `scripting`
   - Detects whether scripting (i.e., JavaScript) is available.
     Added in Media Queries Level 5.
-- {{cssxref("@media/shape", "shape")}}
+- `shape`
   - Detects the shape of the device to distinguish rectangular and round displays.
-- {{cssxref("@media/update", "update")}}
+- `update`
   - How frequently the output device can modify the appearance of content.
-- {{cssxref("@media/vertical-viewport-segments", "vertical-viewport-segments")}}
+- `vertical-viewport-segments`
   - Detects whether the device has a specified number of viewport segments laid out vertically. Added in Media Queries Level 5.
-- {{cssxref("@media/video-dynamic-range", "video-dynamic-range")}}
+- `video-dynamic-range`
   - Combination of brightness, contrast ratio, and color depth that are supported by the video plane of user agent and the output device. Added in Media Queries Level 5.
-- {{cssxref("@media/width", "width")}}
+- `width`
   - Width of the viewport including width of scrollbar.
-- {{cssxref("@media/-moz-device-pixel-ratio", "-moz-device-pixel-ratio")}}
+- `-moz-device-pixel-ratio`
   - The number of device pixels per CSS pixel. Use the [`resolution`](/en-US/docs/Web/CSS/Reference/At-rules/@media/resolution) feature with the `dppx` unit instead.
-- {{cssxref("@media/-webkit-animation", "-webkit-animation")}}
-  - The browser supports `-webkit` prefixed CSS {{cssxref("animation")}}. Use the [`@supports (animation)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
-- {{cssxref("@media/-webkit-device-pixel-ratio", "-webkit-device-pixel-ratio")}}
+- `-webkit-animation`
+  - The browser supports `-webkit` prefixed CSS `animation`. Use the [`@supports (animation)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
+- `-webkit-device-pixel-ratio`
   - The number of device pixels per CSS pixel. Use the [`resolution`](/en-US/docs/Web/CSS/Reference/At-rules/@media/resolution) feature with the `dppx` unit instead.
-- {{cssxref("@media/-webkit-transform-2d", "-webkit-transform-2d")}}
-  - The browser supports `-webkit` prefixed 2D CSS {{cssxref("transform")}}. Use the [`@supports (transform)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
-- {{cssxref("@media/-webkit-transform-3d", "-webkit-transform-3d")}}
-  - The browser supports `-webkit` prefixed 3D CSS {{cssxref("transform")}}. Use the [`@supports (transform)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
-- {{cssxref("@media/-webkit-transition", "-webkit-transition")}}
-  - The browser supports `-webkit` prefixed CSS {{cssxref("transition")}}. Use the [`@supports (transition)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
+- `-webkit-transform-2d`
+  - The browser supports `-webkit` prefixed 2D CSS `transform`. Use the [`@supports (transform)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
+- `-webkit-transform-3d`
+  - The browser supports `-webkit` prefixed 3D CSS `transform`. Use the [`@supports (transform)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
+- `-webkit-transition`
+  - The browser supports `-webkit` prefixed CSS `transition`. Use the [`@supports (transition)`](/en-US/docs/Web/CSS/Reference/At-rules/@supports) feature query instead.
 
 ### Logical operators
 
@@ -222,7 +222,7 @@ They include {{HTTPHeader("Sec-CH-Prefers-Color-Scheme")}} and {{HTTPHeader("Sec
 
 ## Accessibility
 
-To best accommodate people who adjust a site's text size, use [`em`](/guides/Values_and_units/Numeric_data_types)s when you need a {{cssxref("&lt;length&gt;")}} for your [media queries](/guides/Media_queries/Using).
+To best accommodate people who adjust a site's text size, use [`em`](/guides/Values_and_units/Numeric_data_types)s when you need a `&lt;length&gt;` for your [media queries](/guides/Media_queries/Using).
 
 Both [`em`](/guides/Values_and_units/Numeric_data_types) and [`px`](/guides/Values_and_units/Numeric_data_types) are valid units, but [`em`](/guides/Values_and_units/Numeric_data_types) works better if the user changes the browser text size.
 
@@ -289,7 +289,7 @@ For more examples, please see [Using media queries](/guides/Media_queries/Using)
 
 - [CSS media queries](/guides/Media_queries) module
 - [Using media queries](/guides/Media_queries/Using)
-- {{domxref("CSSMediaRule")}} interface
-- CSS {{cssxref("@custom-media")}} at-rule
+- `CSSMediaRule` interface
+- CSS `@custom-media` at-rule
 - [Extended Mozilla media features](/en-US/docs/Web/CSS/Reference/Mozilla_extensions#media_features)
 - [Extended WebKit media features](/en-US/docs/Web/CSS/Reference/Webkit_extensions#media_features)

@@ -6,7 +6,7 @@ browser-compat: css.properties.text-decoration
 sidebar: cssref
 ---
 
-The **`text-decoration`** [shorthand](/guides/Cascade/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property sets the appearance of decorative lines on text. It is a shorthand for {{cssxref("text-decoration-line")}}, {{cssxref("text-decoration-color")}}, {{cssxref("text-decoration-style")}}, and the newer {{cssxref("text-decoration-thickness")}} property.
+The **`text-decoration`** [shorthand](/guides/Cascade/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property sets the appearance of decorative lines on text. It is a shorthand for `text-decoration-line`, `text-decoration-color`, `text-decoration-style`, and the newer `text-decoration-thickness` property.
 
 {{InteractiveExample("CSS Demo: text-decoration")}}
 
@@ -52,10 +52,10 @@ Text decorations are drawn across descendant text elements. This means that if a
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("text-decoration-color")}}
-- {{cssxref("text-decoration-line")}}
-- {{cssxref("text-decoration-style")}}
-- {{cssxref("text-decoration-thickness")}}
+- `text-decoration-color`
+- `text-decoration-line`
+- `text-decoration-style`
+- `text-decoration-thickness`
 
 ## Syntax
 
@@ -76,13 +76,13 @@ The `text-decoration` property is specified as one or more space-separated value
 
 ### Values
 
-- {{cssxref("text-decoration-line")}}
+- `text-decoration-line`
   - Sets the kind of decoration used, such as `underline` or `line-through`.
-- {{cssxref("text-decoration-color")}}
+- `text-decoration-color`
   - Sets the color of the decoration.
-- {{cssxref("text-decoration-style")}}
+- `text-decoration-style`
   - Sets the style of the line used for the decoration, such as `solid`, `wavy`, or `dashed`.
-- {{cssxref("text-decoration-thickness")}}
+- `text-decoration-thickness`
   - Sets the thickness of the line used for the decoration.
 
 ## Formal definition
@@ -159,7 +159,7 @@ The `text-decoration` property is specified as one or more space-separated value
 
 ## See also
 
-- The individual text-decoration properties are {{cssxref("text-decoration-line")}}, {{cssxref("text-decoration-color")}}, {{cssxref("text-decoration-style")}}, and {{cssxref("text-decoration-thickness")}}.
-- The {{cssxref("text-decoration-skip-ink")}}, {{cssxref("text-underline-offset")}}, and {{cssxref("text-underline-position")}} properties also affect text-decoration, but are not included in the shorthand.
-- The {{cssxref("list-style")}} property controls the appearance of items in HTML {{HTMLElement("ol")}} and {{HTMLElement("ul")}} lists.
+- The individual text-decoration properties are `text-decoration-line`, `text-decoration-color`, `text-decoration-style`, and `text-decoration-thickness`.
+- The `text-decoration-skip-ink`, `text-underline-offset`, and `text-underline-position` properties also affect text-decoration, but are not included in the shorthand.
+- The `list-style` property controls the appearance of items in HTML {{HTMLElement("ol")}} and {{HTMLElement("ul")}} lists.
 - SVG {{SVGAttr("text-decoration")}} attribute

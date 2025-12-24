@@ -6,7 +6,7 @@ browser-compat: css.properties.mask-mode
 sidebar: cssref
 ---
 
-The **`mask-mode`** [CSS](/en-US/docs/Web/CSS) property is set on the element being masked. It sets whether the mask reference defined by the {{cssxref("mask-image")}} is treated as a luminance or alpha mask.
+The **`mask-mode`** [CSS](/en-US/docs/Web/CSS) property is set on the element being masked. It sets whether the mask reference defined by the `mask-image` is treated as a luminance or alpha mask.
 
 ## Syntax
 
@@ -39,13 +39,13 @@ The `mask-mode` property can take multiple comma-separated `<masking-mode>` keyw
 
 - `match-source`
   - Indicates that the type of mask is determined by the source. This is the default property value.
-    - If the {{cssxref("mask-image")}} references an SVG {{svgelement("mask")}}, its {{cssxref("mask-type")}} property value is used, or it's {{SVGAttr("mask-type")}} attribute, if present. If neither is explicitly set, this value defaults to `luminance`.
-    - If the mask image source is an {{cssxref("image")}} or a {{cssxref("gradient")}}, the `alpha` values of the mask image are used.
+    - If the `mask-image` references an SVG {{svgelement("mask")}}, its `mask-type` property value is used, or it's {{SVGAttr("mask-type")}} attribute, if present. If neither is explicitly set, this value defaults to `luminance`.
+    - If the mask image source is an `image` or a `gradient`, the `alpha` values of the mask image are used.
 
 ## Description
 
 A mask transfers its transparency, and depending on the mask type, it's luminance, to the element it is masking.
-If the mask is of type {{cssxref("image")}}, by default the alpha values of the mask image determine the visibility of each part of the masked element: where the mask is opaque, the corresponding part of the masked element is visible; where the mask is translucent, the element is as well, with those areas of the element being hidden. This is the default behavior for `<image>` masks when the `mask-mode` property is set to or defaults to `match-source`, and it is always the case when the `mask-mode` is explicitly set to `alpha`.
+If the mask is of type `image`, by default the alpha values of the mask image determine the visibility of each part of the masked element: where the mask is opaque, the corresponding part of the masked element is visible; where the mask is translucent, the element is as well, with those areas of the element being hidden. This is the default behavior for `<image>` masks when the `mask-mode` property is set to or defaults to `match-source`, and it is always the case when the `mask-mode` is explicitly set to `alpha`.
 
 ### Understanding luminance
 
@@ -59,11 +59,11 @@ For example, the color `green` is `#008000` or `rgb(0% 50% 0% / 1)`. In a `lumin
 
 ### Multiple values
 
-Each `mask-mode` value is a comma-separated list of values. When multiple values are present, each value corresponds to a mask layer in the same position in the {{cssxref("mask-image")}} property. The values define whether the associated mask images are treated as a `luminance` or an `alpha` mask.
+Each `mask-mode` value is a comma-separated list of values. When multiple values are present, each value corresponds to a mask layer in the same position in the `mask-image` property. The values define whether the associated mask images are treated as a `luminance` or an `alpha` mask.
 
 ### Understanding `match-source`
 
-In the case of `match-source`, whether `luminance` or `alpha` is used depends on the mask mode of the mask source. If the `mask-image` property values is a reference to an SVG {{svgelement("mask")}} element, the `<mask>` element's {{cssxref("mask-type")}} property value is used. If there is no CSS `mask-type` property set on the `<mask>` element, the value of the `<mask>` element's {{svgattr("mask-type")}} attribute is used, if present and supported. If neither is explicitly set, this value defaults to `luminance`; but only in the case of the `<mask>` element as the mask source. Otherwise, as noted before, if the mask image source is an {{cssxref("image")}}, rather than an SVG `<mask>`, the `alpha` values of the mask layer image is used.
+In the case of `match-source`, whether `luminance` or `alpha` is used depends on the mask mode of the mask source. If the `mask-image` property values is a reference to an SVG {{svgelement("mask")}} element, the `<mask>` element's `mask-type` property value is used. If there is no CSS `mask-type` property set on the `<mask>` element, the value of the `<mask>` element's {{svgattr("mask-type")}} attribute is used, if present and supported. If neither is explicitly set, this value defaults to `luminance`; but only in the case of the `<mask>` element as the mask source. Otherwise, as noted before, if the mask image source is an `image`, rather than an SVG `<mask>`, the `alpha` values of the mask layer image is used.
 
 ## Formal definition
 
@@ -141,9 +141,9 @@ Because the mask source is an `<image>` and not an SVG `<mask>`, the `match-sour
 
 ## See also
 
-- {{cssxref("mask-type")}}
-- {{cssxref("mask-image")}}
-- {{cssxref("mask")}} shorthand
+- `mask-type`
+- `mask-image`
+- `mask` shorthand
 - [Introduction to CSS masking](/guides/Masking/Introduction)
 - [CSS `mask` properties](/guides/Masking/Mask_properties)
 - [Declaring multiple masks](/guides/Masking/Multiple_masks)

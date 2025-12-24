@@ -11,7 +11,7 @@ sidebar: cssref
 ---
 
 A [CSS](/en-US/docs/Web/CSS) **_property_** is a parameter used in a [CSS declaration](/guides/Syntax/Introduction#css_declarations) that lets you style certain aspects of selected elements.
-For example, the {{CSSxRef("opacity")}} property is used to set the opacity of a selected element, allowing you to control if content behind that element is visible:
+For example, the `opacity` property is used to set the opacity of a selected element, allowing you to control if content behind that element is visible:
 
 ```css
 /* Set 0.8 opacity on <img> elements */
@@ -22,7 +22,7 @@ img {
 
 Each property has a name (e.g., `opacity`), a value (e.g., `0.8`), and a defined behavior on the rendering of the document.
 CSS also defines shorthand properties, so you can specify multiple related properties in a single declaration.
-For example, the {{CSSxRef("margin")}} property is a shorthand for {{CSSxRef("margin-top")}}, {{CSSxRef("margin-right")}}, {{CSSxRef("margin-bottom")}}, and {{CSSxRef("margin-left")}}, setting the margin of all four sides of an element:
+For example, the `margin` property is a shorthand for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`, setting the margin of all four sides of an element:
 
 ```css
 /* Give <img> elements 1rem of margin */
@@ -49,550 +49,550 @@ Standard properties defined by CSS specifications include the following:
 
 ### A
 
-- {{CSSxRef("accent-color")}}
-- {{CSSxRef("align-content")}}
-- {{CSSxRef("align-items")}}
-- {{CSSxRef("align-self")}}
-- {{CSSxRef("alignment-baseline")}}
-- {{CSSxRef("all")}} (shorthand)
-- {{CSSxRef("anchor-name")}}
-- {{CSSxRef("animation-composition")}}
-- {{CSSxRef("animation-delay")}}
-- {{CSSxRef("animation-direction")}}
-- {{CSSxRef("animation-duration")}}
-- {{CSSxRef("animation-fill-mode")}}
-- {{CSSxRef("animation-iteration-count")}}
-- {{CSSxRef("animation-name")}}
-- {{CSSxRef("animation-play-state")}}
-- {{CSSxRef("animation-range-end")}}
-- {{CSSxRef("animation-range-start")}}
-- {{CSSxRef("animation-range")}} (shorthand)
-- {{CSSxRef("animation-timeline")}}
-- {{CSSxRef("animation-timing-function")}}
-- {{CSSxRef("animation")}} (shorthand)
-- {{CSSxRef("appearance")}}
-- {{CSSxRef("aspect-ratio")}}
+- `accent-color`
+- `align-content`
+- `align-items`
+- `align-self`
+- `alignment-baseline`
+- `all` (shorthand)
+- `anchor-name`
+- `animation-composition`
+- `animation-delay`
+- `animation-direction`
+- `animation-duration`
+- `animation-fill-mode`
+- `animation-iteration-count`
+- `animation-name`
+- `animation-play-state`
+- `animation-range-end`
+- `animation-range-start`
+- `animation-range` (shorthand)
+- `animation-timeline`
+- `animation-timing-function`
+- `animation` (shorthand)
+- `appearance`
+- `aspect-ratio`
 
 ### B
 
-- {{CSSxRef("backdrop-filter")}}
-- {{CSSxRef("backface-visibility")}}
-- {{CSSxRef("background-attachment")}}
-- {{CSSxRef("background-blend-mode")}}
-- {{CSSxRef("background-clip")}}
-- {{CSSxRef("background-color")}}
-- {{CSSxRef("background-image")}}
-- {{CSSxRef("background-origin")}}
-- {{CSSxRef("background-position-x")}}
-- {{CSSxRef("background-position-y")}}
-- {{CSSxRef("background-position")}}
-- {{CSSxRef("background-repeat")}}
-- {{CSSxRef("background-size")}}
-- {{CSSxRef("background")}} (shorthand)
-- {{CSSxRef("block-size")}}
+- `backdrop-filter`
+- `backface-visibility`
+- `background-attachment`
+- `background-blend-mode`
+- `background-clip`
+- `background-color`
+- `background-image`
+- `background-origin`
+- `background-position-x`
+- `background-position-y`
+- `background-position`
+- `background-repeat`
+- `background-size`
+- `background` (shorthand)
+- `block-size`
 
 ### Border-\*
 
-- {{CSSxRef("border-block-color")}}
-- {{CSSxRef("border-block-end-color")}}
-- {{CSSxRef("border-block-end-style")}}
-- {{CSSxRef("border-block-end-width")}}
-- {{CSSxRef("border-block-end")}} (shorthand)
-- {{CSSxRef("border-block-start-color")}}
-- {{CSSxRef("border-block-start-style")}}
-- {{CSSxRef("border-block-start-width")}}
-- {{CSSxRef("border-block-start")}} (shorthand)
-- {{CSSxRef("border-block-style")}}
-- {{CSSxRef("border-block-width")}}
-- {{CSSxRef("border-block")}} (shorthand)
-- {{CSSxRef("border-bottom-color")}}
-- {{CSSxRef("border-bottom-left-radius")}}
-- {{CSSxRef("border-bottom-right-radius")}}
-- {{CSSxRef("border-bottom-style")}}
-- {{CSSxRef("border-bottom-width")}}
-- {{CSSxRef("border-bottom")}} (shorthand)
-- {{CSSxRef("border-collapse")}}
-- {{CSSxRef("border-color")}} (shorthand)
-- {{CSSxRef("border-end-end-radius")}}
-- {{CSSxRef("border-end-start-radius")}}
-- {{CSSxRef("border-image-outset")}}
-- {{CSSxRef("border-image-repeat")}}
-- {{CSSxRef("border-image-slice")}}
-- {{CSSxRef("border-image-source")}}
-- {{CSSxRef("border-image-width")}}
-- {{CSSxRef("border-image")}} (shorthand)
-- {{CSSxRef("border-inline-color")}}
-- {{CSSxRef("border-inline-end-color")}}
-- {{CSSxRef("border-inline-end-style")}}
-- {{CSSxRef("border-inline-end-width")}}
-- {{CSSxRef("border-inline-end")}} (shorthand)
-- {{CSSxRef("border-inline-start-color")}}
-- {{CSSxRef("border-inline-start-style")}}
-- {{CSSxRef("border-inline-start-width")}}
-- {{CSSxRef("border-inline-start")}} (shorthand)
-- {{CSSxRef("border-inline-style")}}
-- {{CSSxRef("border-inline-width")}}
-- {{CSSxRef("border-inline")}} (shorthand)
-- {{CSSxRef("border-left-color")}}
-- {{CSSxRef("border-left-style")}}
-- {{CSSxRef("border-left-width")}}
-- {{CSSxRef("border-left")}} (shorthand)
-- {{CSSxRef("border-radius")}} (shorthand)
-- {{CSSxRef("border-right-color")}}
-- {{CSSxRef("border-right-style")}}
-- {{CSSxRef("border-right-width")}}
-- {{CSSxRef("border-right")}} (shorthand)
-- {{CSSxRef("border-spacing")}}
-- {{CSSxRef("border-start-end-radius")}}
-- {{CSSxRef("border-start-start-radius")}}
-- {{CSSxRef("border-style")}} (shorthand)
-- {{CSSxRef("border-top-color")}}
-- {{CSSxRef("border-top-left-radius")}}
-- {{CSSxRef("border-top-right-radius")}}
-- {{CSSxRef("border-top-style")}}
-- {{CSSxRef("border-top-width")}}
-- {{CSSxRef("border-top")}} (shorthand)
-- {{CSSxRef("border-width")}} (shorthand)
-- {{CSSxRef("border")}} (shorthand)
+- `border-block-color`
+- `border-block-end-color`
+- `border-block-end-style`
+- `border-block-end-width`
+- `border-block-end` (shorthand)
+- `border-block-start-color`
+- `border-block-start-style`
+- `border-block-start-width`
+- `border-block-start` (shorthand)
+- `border-block-style`
+- `border-block-width`
+- `border-block` (shorthand)
+- `border-bottom-color`
+- `border-bottom-left-radius`
+- `border-bottom-right-radius`
+- `border-bottom-style`
+- `border-bottom-width`
+- `border-bottom` (shorthand)
+- `border-collapse`
+- `border-color` (shorthand)
+- `border-end-end-radius`
+- `border-end-start-radius`
+- `border-image-outset`
+- `border-image-repeat`
+- `border-image-slice`
+- `border-image-source`
+- `border-image-width`
+- `border-image` (shorthand)
+- `border-inline-color`
+- `border-inline-end-color`
+- `border-inline-end-style`
+- `border-inline-end-width`
+- `border-inline-end` (shorthand)
+- `border-inline-start-color`
+- `border-inline-start-style`
+- `border-inline-start-width`
+- `border-inline-start` (shorthand)
+- `border-inline-style`
+- `border-inline-width`
+- `border-inline` (shorthand)
+- `border-left-color`
+- `border-left-style`
+- `border-left-width`
+- `border-left` (shorthand)
+- `border-radius` (shorthand)
+- `border-right-color`
+- `border-right-style`
+- `border-right-width`
+- `border-right` (shorthand)
+- `border-spacing`
+- `border-start-end-radius`
+- `border-start-start-radius`
+- `border-style` (shorthand)
+- `border-top-color`
+- `border-top-left-radius`
+- `border-top-right-radius`
+- `border-top-style`
+- `border-top-width`
+- `border-top` (shorthand)
+- `border-width` (shorthand)
+- `border` (shorthand)
 
 ### B - C
 
-- {{CSSxRef("bottom")}}
-- {{CSSxRef("box-align")}}
-- {{CSSxRef("box-decoration-break")}}
-- {{CSSxRef("box-direction")}}
-- {{CSSxRef("box-flex-group")}}
-- {{CSSxRef("box-flex")}}
-- {{CSSxRef("box-lines")}}
-- {{CSSxRef("box-ordinal-group")}}
-- {{CSSxRef("box-orient")}}
-- {{CSSxRef("box-pack")}}
-- {{CSSxRef("box-shadow")}}
-- {{CSSxRef("box-sizing")}}
-- {{CSSxRef("break-after")}}
-- {{CSSxRef("break-before")}}
-- {{CSSxRef("break-inside")}}
-- {{CSSxRef("caption-side")}}
-- {{CSSxRef("caret-animation")}}
-- {{CSSxRef("caret-color")}}
-- {{CSSxRef("caret-shape")}}
-- {{CSSxRef("caret")}} (shorthand)
-- {{CSSxRef("clear")}}
-- {{CSSxRef("clip-path")}}
-- {{CSSxRef("clip-rule")}}
-- {{CSSxRef("clip")}}
-- {{CSSxRef("color-interpolation-filters")}}
-- {{CSSxRef("color-interpolation")}}
-- {{CSSxRef("color-scheme")}}
-- {{CSSxRef("color")}}
-- {{CSSxRef("column-count")}}
-- {{CSSxRef("column-fill")}}
-- {{CSSxRef("column-gap")}}
-- {{CSSxRef("column-rule-color")}}
-- {{CSSxRef("column-rule-style")}}
-- {{CSSxRef("column-rule-width")}}
-- {{CSSxRef("column-rule")}} (shorthand)
-- {{CSSxRef("column-span")}}
-- {{CSSxRef("column-width")}}
-- {{CSSxRef("columns")}} (shorthand)
-- {{CSSxRef("contain-intrinsic-block-size")}}
-- {{CSSxRef("contain-intrinsic-height")}}
-- {{CSSxRef("contain-intrinsic-inline-size")}}
-- {{CSSxRef("contain-intrinsic-size")}} (shorthand)
-- {{CSSxRef("contain-intrinsic-width")}}
-- {{CSSxRef("contain")}}
-- {{CSSxRef("container-name")}}
-- {{CSSxRef("container-type")}}
-- {{CSSxRef("container")}} (shorthand)
-- {{CSSxRef("content-visibility")}}
-- {{CSSxRef("content")}}
-- {{CSSxRef("corner-block-end-shape")}}
-- {{CSSxRef("corner-block-start-shape")}}
-- {{CSSxRef("corner-bottom-left-shape")}}
-- {{CSSxRef("corner-bottom-right-shape")}}
-- {{CSSxRef("corner-bottom-shape")}} (shorthand)
-- {{CSSxRef("corner-end-end-shape")}}
-- {{CSSxRef("corner-end-start-shape")}}
-- {{CSSxRef("corner-inline-end-shape")}}
-- {{CSSxRef("corner-inline-start-shape")}}
-- {{CSSxRef("corner-left-shape")}} (shorthand)
-- {{CSSxRef("corner-right-shape")}} (shorthand)
-- {{CSSxRef("corner-shape")}} (shorthand)
-- {{CSSxRef("corner-start-end-shape")}}
-- {{CSSxRef("corner-start-start-shape")}}
-- {{CSSxRef("corner-top-left-shape")}}
-- {{CSSxRef("corner-top-right-shape")}}
-- {{CSSxRef("corner-top-shape")}} (shorthand)
-- {{CSSxRef("counter-increment")}}
-- {{CSSxRef("counter-reset")}}
-- {{CSSxRef("counter-set")}}
-- {{CSSxRef("cursor")}}
-- {{CSSxRef("cx")}}
-- {{CSSxRef("cy")}}
+- `bottom`
+- `box-align`
+- `box-decoration-break`
+- `box-direction`
+- `box-flex-group`
+- `box-flex`
+- `box-lines`
+- `box-ordinal-group`
+- `box-orient`
+- `box-pack`
+- `box-shadow`
+- `box-sizing`
+- `break-after`
+- `break-before`
+- `break-inside`
+- `caption-side`
+- `caret-animation`
+- `caret-color`
+- `caret-shape`
+- `caret` (shorthand)
+- `clear`
+- `clip-path`
+- `clip-rule`
+- `clip`
+- `color-interpolation-filters`
+- `color-interpolation`
+- `color-scheme`
+- `color`
+- `column-count`
+- `column-fill`
+- `column-gap`
+- `column-rule-color`
+- `column-rule-style`
+- `column-rule-width`
+- `column-rule` (shorthand)
+- `column-span`
+- `column-width`
+- `columns` (shorthand)
+- `contain-intrinsic-block-size`
+- `contain-intrinsic-height`
+- `contain-intrinsic-inline-size`
+- `contain-intrinsic-size` (shorthand)
+- `contain-intrinsic-width`
+- `contain`
+- `container-name`
+- `container-type`
+- `container` (shorthand)
+- `content-visibility`
+- `content`
+- `corner-block-end-shape`
+- `corner-block-start-shape`
+- `corner-bottom-left-shape`
+- `corner-bottom-right-shape`
+- `corner-bottom-shape` (shorthand)
+- `corner-end-end-shape`
+- `corner-end-start-shape`
+- `corner-inline-end-shape`
+- `corner-inline-start-shape`
+- `corner-left-shape` (shorthand)
+- `corner-right-shape` (shorthand)
+- `corner-shape` (shorthand)
+- `corner-start-end-shape`
+- `corner-start-start-shape`
+- `corner-top-left-shape`
+- `corner-top-right-shape`
+- `corner-top-shape` (shorthand)
+- `counter-increment`
+- `counter-reset`
+- `counter-set`
+- `cursor`
+- `cx`
+- `cy`
 
 ### D - F
 
-- {{CSSxRef("d")}}
-- {{CSSxRef("direction")}}
-- {{CSSxRef("display")}}
-- {{CSSxRef("dominant-baseline")}}
-- {{CSSxRef("dynamic-range-limit")}}
-- {{CSSxRef("empty-cells")}}
-- {{CSSxRef("field-sizing")}}
-- {{CSSxRef("fill-opacity")}}
-- {{CSSxRef("fill-rule")}}
-- {{CSSxRef("fill")}}
-- {{CSSxRef("filter")}}
-- {{CSSxRef("flex-basis")}}
-- {{CSSxRef("flex-direction")}}
-- {{CSSxRef("flex-flow")}} (shorthand)
-- {{CSSxRef("flex-grow")}}
-- {{CSSxRef("flex-shrink")}}
-- {{CSSxRef("flex-wrap")}}
-- {{CSSxRef("flex")}} (shorthand)
-- {{CSSxRef("float")}}
-- {{CSSxRef("flood-color")}}
-- {{CSSxRef("flood-opacity")}}
-- {{CSSxRef("font-family")}}
-- {{CSSxRef("font-feature-settings")}}
-- {{CSSxRef("font-kerning")}}
-- {{CSSxRef("font-language-override")}}
-- {{CSSxRef("font-optical-sizing")}}
-- {{CSSxRef("font-palette")}}
-- {{CSSxRef("font-size-adjust")}}
-- {{CSSxRef("font-size")}}
-- {{CSSxRef("font-smooth")}}
-- {{CSSxRef("font-stretch")}}
-- {{CSSxRef("font-style")}}
-- {{CSSxRef("font-synthesis-position")}}
-- {{CSSxRef("font-synthesis-small-caps")}}
-- {{CSSxRef("font-synthesis-style")}}
-- {{CSSxRef("font-synthesis-weight")}}
-- {{CSSxRef("font-synthesis")}} (shorthand)
-- {{CSSxRef("font-variant-alternates")}}
-- {{CSSxRef("font-variant-caps")}}
-- {{CSSxRef("font-variant-east-asian")}}
-- {{CSSxRef("font-variant-emoji")}}
-- {{CSSxRef("font-variant-ligatures")}}
-- {{CSSxRef("font-variant-numeric")}}
-- {{CSSxRef("font-variant-position")}}
-- {{CSSxRef("font-variant")}} (shorthand)
-- {{CSSxRef("font-variation-settings")}}
-- {{CSSxRef("font-weight")}}
-- {{CSSxRef("font")}} (shorthand)
-- {{CSSxRef("forced-color-adjust")}}
+- `d`
+- `direction`
+- `display`
+- `dominant-baseline`
+- `dynamic-range-limit`
+- `empty-cells`
+- `field-sizing`
+- `fill-opacity`
+- `fill-rule`
+- `fill`
+- `filter`
+- `flex-basis`
+- `flex-direction`
+- `flex-flow` (shorthand)
+- `flex-grow`
+- `flex-shrink`
+- `flex-wrap`
+- `flex` (shorthand)
+- `float`
+- `flood-color`
+- `flood-opacity`
+- `font-family`
+- `font-feature-settings`
+- `font-kerning`
+- `font-language-override`
+- `font-optical-sizing`
+- `font-palette`
+- `font-size-adjust`
+- `font-size`
+- `font-smooth`
+- `font-stretch`
+- `font-style`
+- `font-synthesis-position`
+- `font-synthesis-small-caps`
+- `font-synthesis-style`
+- `font-synthesis-weight`
+- `font-synthesis` (shorthand)
+- `font-variant-alternates`
+- `font-variant-caps`
+- `font-variant-east-asian`
+- `font-variant-emoji`
+- `font-variant-ligatures`
+- `font-variant-numeric`
+- `font-variant-position`
+- `font-variant` (shorthand)
+- `font-variation-settings`
+- `font-weight`
+- `font` (shorthand)
+- `forced-color-adjust`
 
 ### G - I
 
-- {{CSSxRef("gap")}} (shorthand)
-- {{CSSxRef("grid-area")}} (shorthand)
-- {{CSSxRef("grid-auto-columns")}}
-- {{CSSxRef("grid-auto-flow")}}
-- {{CSSxRef("grid-auto-rows")}}
-- {{CSSxRef("grid-column-end")}}
-- {{CSSxRef("grid-column-start")}}
-- {{CSSxRef("grid-column")}} (shorthand)
-- {{CSSxRef("grid-row-end")}}
-- {{CSSxRef("grid-row-start")}}
-- {{CSSxRef("grid-row")}} (shorthand)
-- {{CSSxRef("grid-template-areas")}}
-- {{CSSxRef("grid-template-columns")}}
-- {{CSSxRef("grid-template-rows")}}
-- {{CSSxRef("grid-template")}} (shorthand)
-- {{CSSxRef("grid")}} (shorthand)
-- {{CSSxRef("hanging-punctuation")}}
-- {{CSSxRef("height")}}
-- {{CSSxRef("hyphenate-character")}}
-- {{CSSxRef("hyphenate-limit-chars")}}
-- {{CSSxRef("hyphens")}}
-- {{CSSxRef("image-orientation")}}
-- {{CSSxRef("image-rendering")}}
-- {{CSSxRef("image-resolution")}}
-- {{CSSxRef("initial-letter")}}
-- {{CSSxRef("inline-size")}}
-- {{CSSxRef("inset-block-end")}}
-- {{CSSxRef("inset-block-start")}}
-- {{CSSxRef("inset-block")}} (shorthand)
-- {{CSSxRef("inset-block")}} (shorthand)
-- {{CSSxRef("inset-inline-end")}}
-- {{CSSxRef("inset-inline-start")}}
-- {{CSSxRef("inset-inline")}} (shorthand)
-- {{CSSxRef("inset-inline")}} (shorthand)
-- {{CSSxRef("inset")}} (shorthand)
-- {{CSSxRef("inset")}} (shorthand)
-- {{CSSxRef("interactivity")}}
-- {{CSSxRef("interpolate-size")}}
-- {{CSSxRef("isolation")}}
+- `gap` (shorthand)
+- `grid-area` (shorthand)
+- `grid-auto-columns`
+- `grid-auto-flow`
+- `grid-auto-rows`
+- `grid-column-end`
+- `grid-column-start`
+- `grid-column` (shorthand)
+- `grid-row-end`
+- `grid-row-start`
+- `grid-row` (shorthand)
+- `grid-template-areas`
+- `grid-template-columns`
+- `grid-template-rows`
+- `grid-template` (shorthand)
+- `grid` (shorthand)
+- `hanging-punctuation`
+- `height`
+- `hyphenate-character`
+- `hyphenate-limit-chars`
+- `hyphens`
+- `image-orientation`
+- `image-rendering`
+- `image-resolution`
+- `initial-letter`
+- `inline-size`
+- `inset-block-end`
+- `inset-block-start`
+- `inset-block` (shorthand)
+- `inset-block` (shorthand)
+- `inset-inline-end`
+- `inset-inline-start`
+- `inset-inline` (shorthand)
+- `inset-inline` (shorthand)
+- `inset` (shorthand)
+- `inset` (shorthand)
+- `interactivity`
+- `interpolate-size`
+- `isolation`
 
 ### J - M
 
-- {{CSSxRef("justify-content")}}
-- {{CSSxRef("justify-items")}}
-- {{CSSxRef("justify-self")}}
-- {{CSSxRef("left")}}
-- {{CSSxRef("letter-spacing")}}
-- {{CSSxRef("lighting-color")}}
-- {{CSSxRef("line-break")}}
-- {{CSSxRef("line-clamp")}}
-- {{CSSxRef("line-height-step")}}
-- {{CSSxRef("line-height")}}
-- {{CSSxRef("list-style-image")}}
-- {{CSSxRef("list-style-position")}}
-- {{CSSxRef("list-style-type")}}
-- {{CSSxRef("list-style")}} (shorthand)
-- {{CSSxRef("list-style")}} (shorthand)
-- {{CSSxRef("margin-block-end")}}
-- {{CSSxRef("margin-block-start")}}
-- {{CSSxRef("margin-block")}} (shorthand)
-- {{CSSxRef("margin-bottom")}}
-- {{CSSxRef("margin-inline-end")}}
-- {{CSSxRef("margin-inline-start")}}
-- {{CSSxRef("margin-inline")}} (shorthand)
-- {{CSSxRef("margin-left")}}
-- {{CSSxRef("margin-right")}}
-- {{CSSxRef("margin-top")}}
-- {{CSSxRef("margin-trim")}}
-- {{CSSxRef("margin")}} (shorthand)
-- {{CSSxRef("marker-end")}}
-- {{CSSxRef("marker-mid")}}
-- {{CSSxRef("marker-start")}}
-- {{CSSxRef("marker")}}
-- {{CSSxRef("mask-border-mode")}}
-- {{CSSxRef("mask-border-outset")}}
-- {{CSSxRef("mask-border-repeat")}}
-- {{CSSxRef("mask-border-slice")}}
-- {{CSSxRef("mask-border-source")}}
-- {{CSSxRef("mask-border-width")}}
-- {{CSSxRef("mask-border")}} (shorthand)
-- {{CSSxRef("mask-clip")}}
-- {{CSSxRef("mask-composite")}}
-- {{CSSxRef("mask-image")}}
-- {{CSSxRef("mask-mode")}}
-- {{CSSxRef("mask-origin")}}
-- {{CSSxRef("mask-position")}}
-- {{CSSxRef("mask-repeat")}}
-- {{CSSxRef("mask-size")}}
-- {{CSSxRef("mask-type")}}
-- {{CSSxRef("mask")}} (shorthand)
-- {{CSSxRef("math-depth")}}
-- {{CSSxRef("math-shift")}}
-- {{CSSxRef("math-style")}}
-- {{CSSxRef("max-block-size")}}
-- {{CSSxRef("max-height")}}
-- {{CSSxRef("max-inline-size")}}
-- {{CSSxRef("max-width")}}
-- {{CSSxRef("min-block-size")}}
-- {{CSSxRef("min-height")}}
-- {{CSSxRef("min-inline-size")}}
-- {{CSSxRef("min-width")}}
-- {{CSSxRef("mix-blend-mode")}}
+- `justify-content`
+- `justify-items`
+- `justify-self`
+- `left`
+- `letter-spacing`
+- `lighting-color`
+- `line-break`
+- `line-clamp`
+- `line-height-step`
+- `line-height`
+- `list-style-image`
+- `list-style-position`
+- `list-style-type`
+- `list-style` (shorthand)
+- `list-style` (shorthand)
+- `margin-block-end`
+- `margin-block-start`
+- `margin-block` (shorthand)
+- `margin-bottom`
+- `margin-inline-end`
+- `margin-inline-start`
+- `margin-inline` (shorthand)
+- `margin-left`
+- `margin-right`
+- `margin-top`
+- `margin-trim`
+- `margin` (shorthand)
+- `marker-end`
+- `marker-mid`
+- `marker-start`
+- `marker`
+- `mask-border-mode`
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-slice`
+- `mask-border-source`
+- `mask-border-width`
+- `mask-border` (shorthand)
+- `mask-clip`
+- `mask-composite`
+- `mask-image`
+- `mask-mode`
+- `mask-origin`
+- `mask-position`
+- `mask-repeat`
+- `mask-size`
+- `mask-type`
+- `mask` (shorthand)
+- `math-depth`
+- `math-shift`
+- `math-style`
+- `max-block-size`
+- `max-height`
+- `max-inline-size`
+- `max-width`
+- `min-block-size`
+- `min-height`
+- `min-inline-size`
+- `min-width`
+- `mix-blend-mode`
 
 ### O - P
 
-- {{CSSxRef("object-fit")}}
-- {{CSSxRef("object-position")}}
-- {{CSSxRef("object-view-box")}}
-- {{CSSxRef("offset-anchor")}}
-- {{CSSxRef("offset-distance")}}
-- {{CSSxRef("offset-path")}}
-- {{CSSxRef("offset-position")}}
-- {{CSSxRef("offset-rotate")}}
-- {{CSSxRef("offset")}} (shorthand)
-- {{CSSxRef("opacity")}}
-- {{CSSxRef("order")}}
-- {{CSSxRef("orphans")}}
-- {{CSSxRef("outline-color")}}
-- {{CSSxRef("outline-offset")}}
-- {{CSSxRef("outline-style")}}
-- {{CSSxRef("outline-width")}}
-- {{CSSxRef("outline")}} (shorthand)
-- {{CSSxRef("overflow-anchor")}}
-- {{CSSxRef("overflow-block")}}
-- {{CSSxRef("overflow-clip-margin")}}
-- {{CSSxRef("overflow-inline")}}
-- {{CSSxRef("overflow-wrap")}}
-- {{CSSxRef("overflow-x")}}
-- {{CSSxRef("overflow-y")}}
-- {{CSSxRef("overflow")}} (shorthand)
-- {{CSSxRef("overlay")}}
-- {{CSSxRef("overscroll-behavior-block")}}
-- {{CSSxRef("overscroll-behavior-inline")}}
-- {{CSSxRef("overscroll-behavior-x")}}
-- {{CSSxRef("overscroll-behavior-y")}}
-- {{CSSxRef("overscroll-behavior")}} (shorthand)
-- {{CSSxRef("padding-block-end")}}
-- {{CSSxRef("padding-block-start")}}
-- {{CSSxRef("padding-block")}} (shorthand)
-- {{CSSxRef("padding-bottom")}}
-- {{CSSxRef("padding-inline-end")}}
-- {{CSSxRef("padding-inline-start")}}
-- {{CSSxRef("padding-inline")}} (shorthand)
-- {{CSSxRef("padding-left")}}
-- {{CSSxRef("padding-right")}}
-- {{CSSxRef("padding-top")}}
-- {{CSSxRef("padding")}} (shorthand)
-- {{CSSxRef("page-break-after")}}
-- {{CSSxRef("page-break-before")}}
-- {{CSSxRef("page-break-inside")}}
-- {{CSSxRef("page")}}
-- {{CSSxRef("paint-order")}}
-- {{CSSxRef("perspective-origin")}}
-- {{CSSxRef("perspective")}}
-- {{CSSxRef("place-content")}} (shorthand)
-- {{CSSxRef("place-items")}} (shorthand)
-- {{CSSxRef("place-self")}} (shorthand)
-- {{CSSxRef("pointer-events")}}
-- {{CSSxRef("position-anchor")}}
-- {{CSSxRef("position-area")}}
-- {{CSSxRef("position-try-fallbacks")}}
-- {{CSSxRef("position-try-order")}}
-- {{CSSxRef("position-try")}} (shorthand)
-- {{CSSxRef("position-visibility")}}
-- {{CSSxRef("position")}}
-- {{CSSxRef("print-color-adjust")}}
+- `object-fit`
+- `object-position`
+- `object-view-box`
+- `offset-anchor`
+- `offset-distance`
+- `offset-path`
+- `offset-position`
+- `offset-rotate`
+- `offset` (shorthand)
+- `opacity`
+- `order`
+- `orphans`
+- `outline-color`
+- `outline-offset`
+- `outline-style`
+- `outline-width`
+- `outline` (shorthand)
+- `overflow-anchor`
+- `overflow-block`
+- `overflow-clip-margin`
+- `overflow-inline`
+- `overflow-wrap`
+- `overflow-x`
+- `overflow-y`
+- `overflow` (shorthand)
+- `overlay`
+- `overscroll-behavior-block`
+- `overscroll-behavior-inline`
+- `overscroll-behavior-x`
+- `overscroll-behavior-y`
+- `overscroll-behavior` (shorthand)
+- `padding-block-end`
+- `padding-block-start`
+- `padding-block` (shorthand)
+- `padding-bottom`
+- `padding-inline-end`
+- `padding-inline-start`
+- `padding-inline` (shorthand)
+- `padding-left`
+- `padding-right`
+- `padding-top`
+- `padding` (shorthand)
+- `page-break-after`
+- `page-break-before`
+- `page-break-inside`
+- `page`
+- `paint-order`
+- `perspective-origin`
+- `perspective`
+- `place-content` (shorthand)
+- `place-items` (shorthand)
+- `place-self` (shorthand)
+- `pointer-events`
+- `position-anchor`
+- `position-area`
+- `position-try-fallbacks`
+- `position-try-order`
+- `position-try` (shorthand)
+- `position-visibility`
+- `position`
+- `print-color-adjust`
 
 ### Q - S
 
-- {{CSSxRef("quotes")}}
-- {{CSSxRef("r")}}
-- {{CSSxRef("reading-flow")}}
-- {{CSSxRef("reading-order")}}
-- {{CSSxRef("resize")}}
-- {{CSSxRef("right")}}
-- {{CSSxRef("rotate")}}
-- {{CSSxRef("row-gap")}}
-- {{CSSxRef("ruby-align")}}
-- {{CSSxRef("ruby-overhang")}}
-- {{CSSxRef("ruby-position")}}
-- {{CSSxRef("rx")}}
-- {{CSSxRef("ry")}}
-- {{CSSxRef("scale")}}
-- {{CSSxRef("scroll-behavior")}}
-- {{CSSxRef("scroll-margin-block-end")}}
-- {{CSSxRef("scroll-margin-block-start")}}
-- {{CSSxRef("scroll-margin-block")}} (shorthand)
-- {{CSSxRef("scroll-margin-bottom")}}
-- {{CSSxRef("scroll-margin-inline-end")}}
-- {{CSSxRef("scroll-margin-inline-start")}}
-- {{CSSxRef("scroll-margin-inline")}} (shorthand)
-- {{CSSxRef("scroll-margin-left")}}
-- {{CSSxRef("scroll-margin-right")}}
-- {{CSSxRef("scroll-margin-top")}}
-- {{CSSxRef("scroll-margin")}} (shorthand)
-- {{CSSxRef("scroll-marker-group")}}
-- {{CSSxRef("scroll-padding-block-end")}}
-- {{CSSxRef("scroll-padding-block-start")}}
-- {{CSSxRef("scroll-padding-block")}} (shorthand)
-- {{CSSxRef("scroll-padding-bottom")}}
-- {{CSSxRef("scroll-padding-inline-end")}}
-- {{CSSxRef("scroll-padding-inline-start")}}
-- {{CSSxRef("scroll-padding-inline")}} (shorthand)
-- {{CSSxRef("scroll-padding-left")}}
-- {{CSSxRef("scroll-padding-right")}}
-- {{CSSxRef("scroll-padding-top")}}
-- {{CSSxRef("scroll-padding")}} (shorthand)
-- {{CSSxRef("scroll-snap-align")}}
-- {{CSSxRef("scroll-snap-stop")}}
-- {{CSSxRef("scroll-snap-type")}}
-- {{CSSxRef("scroll-target-group")}}
-- {{CSSxRef("scroll-timeline-axis")}}
-- {{CSSxRef("scroll-timeline-name")}}
-- {{CSSxRef("scroll-timeline")}} (shorthand)
-- {{CSSxRef("scrollbar-color")}}
-- {{CSSxRef("scrollbar-gutter")}}
-- {{CSSxRef("scrollbar-width")}}
-- {{CSSxRef("shape-image-threshold")}}
-- {{CSSxRef("shape-margin")}}
-- {{CSSxRef("shape-outside")}}
-- {{CSSxRef("shape-rendering")}}
-- {{CSSxRef("speak-as")}}
-- {{CSSxRef("stop-color")}}
-- {{CSSxRef("stop-opacity")}}
-- {{CSSxRef("stroke-dasharray")}}
-- {{CSSxRef("stroke-dashoffset")}}
-- {{CSSxRef("stroke-linecap")}}
-- {{CSSxRef("stroke-linejoin")}}
-- {{CSSxRef("stroke-miterlimit")}}
-- {{CSSxRef("stroke-opacity")}}
-- {{CSSxRef("stroke-width")}}
-- {{CSSxRef("stroke")}}
+- `quotes`
+- `r`
+- `reading-flow`
+- `reading-order`
+- `resize`
+- `right`
+- `rotate`
+- `row-gap`
+- `ruby-align`
+- `ruby-overhang`
+- `ruby-position`
+- `rx`
+- `ry`
+- `scale`
+- `scroll-behavior`
+- `scroll-margin-block-end`
+- `scroll-margin-block-start`
+- `scroll-margin-block` (shorthand)
+- `scroll-margin-bottom`
+- `scroll-margin-inline-end`
+- `scroll-margin-inline-start`
+- `scroll-margin-inline` (shorthand)
+- `scroll-margin-left`
+- `scroll-margin-right`
+- `scroll-margin-top`
+- `scroll-margin` (shorthand)
+- `scroll-marker-group`
+- `scroll-padding-block-end`
+- `scroll-padding-block-start`
+- `scroll-padding-block` (shorthand)
+- `scroll-padding-bottom`
+- `scroll-padding-inline-end`
+- `scroll-padding-inline-start`
+- `scroll-padding-inline` (shorthand)
+- `scroll-padding-left`
+- `scroll-padding-right`
+- `scroll-padding-top`
+- `scroll-padding` (shorthand)
+- `scroll-snap-align`
+- `scroll-snap-stop`
+- `scroll-snap-type`
+- `scroll-target-group`
+- `scroll-timeline-axis`
+- `scroll-timeline-name`
+- `scroll-timeline` (shorthand)
+- `scrollbar-color`
+- `scrollbar-gutter`
+- `scrollbar-width`
+- `shape-image-threshold`
+- `shape-margin`
+- `shape-outside`
+- `shape-rendering`
+- `speak-as`
+- `stop-color`
+- `stop-opacity`
+- `stroke-dasharray`
+- `stroke-dashoffset`
+- `stroke-linecap`
+- `stroke-linejoin`
+- `stroke-miterlimit`
+- `stroke-opacity`
+- `stroke-width`
+- `stroke`
 
 ### T - Z
 
-- {{CSSxRef("tab-size")}}
-- {{CSSxRef("table-layout")}}
-- {{CSSxRef("text-align-last")}}
-- {{CSSxRef("text-align")}}
-- {{CSSxRef("text-anchor")}}
-- {{CSSxRef("text-autospace")}}
-- {{CSSxRef("text-box-edge")}}
-- {{CSSxRef("text-box-trim")}}
-- {{CSSxRef("text-box")}} (shorthand)
-- {{CSSxRef("text-combine-upright")}}
-- {{CSSxRef("text-decoration-color")}}
-- {{CSSxRef("text-decoration-inset")}}
-- {{CSSxRef("text-decoration-line")}}
-- {{CSSxRef("text-decoration-skip-ink")}}
-- {{CSSxRef("text-decoration-skip")}}
-- {{CSSxRef("text-decoration-style")}}
-- {{CSSxRef("text-decoration-thickness")}}
-- {{CSSxRef("text-decoration")}} (shorthand)
-- {{CSSxRef("text-emphasis-color")}}
-- {{CSSxRef("text-emphasis-position")}}
-- {{CSSxRef("text-emphasis-style")}}
-- {{CSSxRef("text-emphasis")}} (shorthand)
-- {{CSSxRef("text-indent")}}
-- {{CSSxRef("text-justify")}}
-- {{CSSxRef("text-orientation")}}
-- {{CSSxRef("text-overflow")}}
-- {{CSSxRef("text-rendering")}}
-- {{CSSxRef("text-shadow")}}
-- {{CSSxRef("text-size-adjust")}}
-- {{CSSxRef("text-spacing-trim")}}
-- {{CSSxRef("text-transform")}}
-- {{CSSxRef("text-underline-offset")}}
-- {{CSSxRef("text-underline-position")}}
-- {{CSSxRef("text-wrap-mode")}}
-- {{CSSxRef("text-wrap-style")}}
-- {{CSSxRef("text-wrap")}} (shorthand)
-- {{CSSxRef("timeline-scope")}}
-- {{CSSxRef("top")}}
-- {{CSSxRef("touch-action")}}
-- {{CSSxRef("transform-box")}}
-- {{CSSxRef("transform-origin")}}
-- {{CSSxRef("transform-style")}}
-- {{CSSxRef("transform")}}
-- {{CSSxRef("transition-behavior")}}
-- {{CSSxRef("transition-delay")}}
-- {{CSSxRef("transition-duration")}}
-- {{CSSxRef("transition-property")}}
-- {{CSSxRef("transition-timing-function")}}
-- {{CSSxRef("transition")}} (shorthand)
-- {{CSSxRef("translate")}}
-- {{CSSxRef("unicode-bidi")}}
-- {{CSSxRef("user-modify")}}
-- {{CSSxRef("user-select")}}
-- {{CSSxRef("vector-effect")}}
-- {{CSSxRef("vertical-align")}}
-- {{CSSxRef("view-timeline-axis")}}
-- {{CSSxRef("view-timeline-inset")}}
-- {{CSSxRef("view-timeline-name")}}
-- {{CSSxRef("view-timeline")}} (shorthand)
-- {{CSSxRef("view-transition-class")}}
-- {{CSSxRef("view-transition-name")}}
-- {{CSSxRef("visibility")}}
-- {{CSSxRef("white-space-collapse")}}
-- {{CSSxRef("white-space")}}
-- {{CSSxRef("widows")}}
-- {{CSSxRef("width")}}
-- {{CSSxRef("will-change")}}
-- {{CSSxRef("word-break")}}
-- {{CSSxRef("word-spacing")}}
-- {{CSSxRef("writing-mode")}}
-- {{CSSxRef("x")}}
-- {{CSSxRef("y")}}
-- {{CSSxRef("z-index")}}
-- {{CSSxRef("zoom")}}
+- `tab-size`
+- `table-layout`
+- `text-align-last`
+- `text-align`
+- `text-anchor`
+- `text-autospace`
+- `text-box-edge`
+- `text-box-trim`
+- `text-box` (shorthand)
+- `text-combine-upright`
+- `text-decoration-color`
+- `text-decoration-inset`
+- `text-decoration-line`
+- `text-decoration-skip-ink`
+- `text-decoration-skip`
+- `text-decoration-style`
+- `text-decoration-thickness`
+- `text-decoration` (shorthand)
+- `text-emphasis-color`
+- `text-emphasis-position`
+- `text-emphasis-style`
+- `text-emphasis` (shorthand)
+- `text-indent`
+- `text-justify`
+- `text-orientation`
+- `text-overflow`
+- `text-rendering`
+- `text-shadow`
+- `text-size-adjust`
+- `text-spacing-trim`
+- `text-transform`
+- `text-underline-offset`
+- `text-underline-position`
+- `text-wrap-mode`
+- `text-wrap-style`
+- `text-wrap` (shorthand)
+- `timeline-scope`
+- `top`
+- `touch-action`
+- `transform-box`
+- `transform-origin`
+- `transform-style`
+- `transform`
+- `transition-behavior`
+- `transition-delay`
+- `transition-duration`
+- `transition-property`
+- `transition-timing-function`
+- `transition` (shorthand)
+- `translate`
+- `unicode-bidi`
+- `user-modify`
+- `user-select`
+- `vector-effect`
+- `vertical-align`
+- `view-timeline-axis`
+- `view-timeline-inset`
+- `view-timeline-name`
+- `view-timeline` (shorthand)
+- `view-transition-class`
+- `view-transition-name`
+- `visibility`
+- `white-space-collapse`
+- `white-space`
+- `widows`
+- `width`
+- `will-change`
+- `word-break`
+- `word-spacing`
+- `writing-mode`
+- `x`
+- `y`
+- `z-index`
+- `zoom`
 
 ### Non-standard properties
 
@@ -600,29 +600,29 @@ Non-standard vendor-prefixed properties include:
 
 #### `-moz-` prefix
 
-- {{CSSxRef("-moz-float-edge")}}
-- {{CSSxRef("-moz-force-broken-image-icon")}}
-- {{CSSxRef("-moz-orient")}}
-- {{CSSxRef("-moz-user-focus")}}
-- {{CSSxRef("-moz-user-input")}}
+- `-moz-float-edge`
+- `-moz-force-broken-image-icon`
+- `-moz-orient`
+- `-moz-user-focus`
+- `-moz-user-input`
 
 #### `-webkit-` prefix
 
-- {{CSSxRef("-webkit-box-reflect")}}
-- {{CSSxRef("-webkit-border-before")}} (shorthand)
-- {{CSSxRef("-webkit-mask-box-image")}} (shorthand)
-- {{CSSxRef("-webkit-mask-composite")}}
-- {{CSSxRef("-webkit-mask-position-x")}}
-- {{CSSxRef("-webkit-mask-position-y")}}
-- {{CSSxRef("-webkit-mask-repeat-x")}}
-- {{CSSxRef("-webkit-mask-repeat-y")}}
-- {{CSSxRef("-webkit-tap-highlight-color")}}
-- {{CSSxRef("-webkit-text-fill-color")}}
-- {{CSSxRef("-webkit-text-security")}}
-- {{CSSxRef("-webkit-text-stroke")}} (shorthand)
-- {{CSSxRef("-webkit-text-stroke-color")}}
-- {{CSSxRef("-webkit-text-stroke-width")}}
-- {{CSSxRef("-webkit-touch-callout")}}
+- `-webkit-box-reflect`
+- `-webkit-border-before` (shorthand)
+- `-webkit-mask-box-image` (shorthand)
+- `-webkit-mask-composite`
+- `-webkit-mask-position-x`
+- `-webkit-mask-position-y`
+- `-webkit-mask-repeat-x`
+- `-webkit-mask-repeat-y`
+- `-webkit-tap-highlight-color`
+- `-webkit-text-fill-color`
+- `-webkit-text-security`
+- `-webkit-text-stroke` (shorthand)
+- `-webkit-text-stroke-color`
+- `-webkit-text-stroke-width`
+- `-webkit-touch-callout`
 
 ## Specifications
 

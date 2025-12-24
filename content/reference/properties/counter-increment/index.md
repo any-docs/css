@@ -10,7 +10,7 @@ The **`counter-increment`** [CSS](/en-US/docs/Web/CSS) property can be used to i
 
 If a named counter in the list of space-separated counters and values doesn't exist, it will be created. If no value is provided for a counter in the list of counters, the counter will be increased by `1`.
 
-The counter's value can be reset to any integer value with the {{cssxref("counter-reset")}} CSS property.
+The counter's value can be reset to any integer value with the `counter-reset` CSS property.
 
 {{InteractiveExample("CSS Demo: counter-increment")}}
 
@@ -77,9 +77,9 @@ counter-increment: unset;
 
 The `counter-increment` property takes as its value either a list of space-separated counter names specified as `<custom-ident>` with an optional `<integer>` value or the keyword `none`. You may specify as many counters to increment as you want, with each name or name-number pair separated by a space.
 
-- {{cssxref("&lt;custom-ident&gt;")}}
+- `&lt;custom-ident&gt;`
   - Specifies the name of the counter to increase or decrease.
-- {{cssxref("&lt;integer&gt;")}}
+- `&lt;integer&gt;`
   - Specifies the value to add to the counter. If the integer is preceded by a `-` sign, the value will be subtracted from the counter. Defaults to `1` if no value is specified.
 - `none`
   - Indicates that no counter must be increased or decreased. This value can also be used to cancel all counters from being increased or decreased in more specific rules. This is the default value of the property.
@@ -113,9 +113,9 @@ In this example, we display a sequence of numbers counting backward. To do this,
 
 #### CSS
 
-We set the initial value of the counter named `sevens` to `100` by using {{cssxref("counter-reset")}}. Then, for each {{HTMLElement("i")}}, we decrease the counter by `7`.
+We set the initial value of the counter named `sevens` to `100` by using `counter-reset`. Then, for each {{HTMLElement("i")}}, we decrease the counter by `7`.
 
-To set the first count at `100`, we target the first `<i>` element by using the {{cssxref(":first-of-type")}} pseudo-class and setting `counter-increment: none;`. Additionally, the {{cssxref("content")}} property is used in the {{cssxref("::before")}} pseudo-element to display the value of the counter using the [`counter()`](/reference/values/counter) function.
+To set the first count at `100`, we target the first `<i>` element by using the `:first-of-type` pseudo-class and setting `counter-increment: none;`. Additionally, the `content` property is used in the `::before` pseudo-element to display the value of the counter using the [`counter()`](/reference/values/counter) function.
 
 ```css
 div {
@@ -149,7 +149,7 @@ i {
 
 {{EmbedLiveSample("Decreasing the counter value", 140, 300)}}
 
-Had we not used `counter-reset` (or {{cssxref("counter-set")}}) to create the counter and set the value to `100`, the `sevens` counter would still have been created, but with an initial value `0`.
+Had we not used `counter-reset` (or `counter-set`) to create the counter and set the value to `100`, the `sevens` counter would still have been created, but with an initial value `0`.
 
 ## Specifications
 
@@ -161,9 +161,9 @@ Had we not used `counter-reset` (or {{cssxref("counter-set")}}) to create the co
 
 ## See also
 
-- Counter properties: {{cssxref("counter-set")}}, {{cssxref("counter-reset")}}
-- Counter at-rule: {{cssxref("@counter-style")}}
-- Counter functions: {{cssxref("counter()")}}, {{cssxref("counters()")}}
+- Counter properties: `counter-set`, `counter-reset`
+- Counter at-rule: `@counter-style`
+- Counter functions: `counter()`, `counters()`
 - [Using CSS counters](/guides/Counter_styles/Using_counters) guide
 - [CSS lists and counters](/guides/Lists) module
 - [CSS counter styles](/guides/Counter_styles) module

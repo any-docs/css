@@ -8,10 +8,10 @@ sidebar: cssref
 
 The **`text-box-trim`** [CSS](/en-US/docs/Web/CSS) property specifies which of the over and under edges of text content to trim from a text element's block container.
 
-Vertical spacing differs between fonts, making consistent typesetting historically challenging on the web. The `text-box-trim` property — along with its counterpart property {{cssxref("text-box-edge")}}, which specifies how much space to trim — makes consistent vertical spacing of text easier to achieve.
+Vertical spacing differs between fonts, making consistent typesetting historically challenging on the web. The `text-box-trim` property — along with its counterpart property `text-box-edge`, which specifies how much space to trim — makes consistent vertical spacing of text easier to achieve.
 
 > [!NOTE]
-> The {{cssxref("text-box")}} shorthand property can be used to specify the `text-box-trim` and `text-box-edge` values in a single declaration.
+> The `text-box` shorthand property can be used to specify the `text-box-trim` and `text-box-edge` values in a single declaration.
 
 ## Syntax
 
@@ -49,7 +49,7 @@ The height of text-only content is relative to the height of the font. In digita
 
 The `text-box-trim` property allows you to trim the over and under edge of the text's block container, making it easier to control text spacing in the block direction.
 
-The actual amount of space trimmed is specified using the {{cssxref("text-box-edge")}} property. For example, you can choose to trim the over edge in line with a font's capital letters or lower-case letters, and the under edge flush with the font's baseline.
+The actual amount of space trimmed is specified using the `text-box-edge` property. For example, you can choose to trim the over edge in line with a font's capital letters or lower-case letters, and the under edge flush with the font's baseline.
 
 ## Formal definition
 
@@ -124,7 +124,7 @@ In this example we provide a user interface that allows you to choose the `text-
 
 In our HTML, we include three main items:
 
-- Three {{htmlelement("select")}} elements allowing you to set which edges of the paragraph should be trimmed (the `text-box-trim` value) and how much space to trim from the block-start and block-end edges of the paragraph (the {{cssxref("text-box-edge")}} value).
+- Three {{htmlelement("select")}} elements allowing you to set which edges of the paragraph should be trimmed (the `text-box-trim` value) and how much space to trim from the block-start and block-end edges of the paragraph (the `text-box-edge` value).
 - A {{htmlelement("p")}} element containing text, which the `text-box-*` values are applied to. This paragraph has [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) set on it so you can edit the text.
 - An {{htmlelement("output")}} element that displays the `text-box-*` declarations applied to the paragraph. This is updated when a selection is made.
 
@@ -236,7 +236,7 @@ const displayElem = document.querySelector("p");
 const codeElem = document.querySelector("output");
 ```
 
-Next, we define a function called `setEdgeTrim()`. This applies a {{cssxref("text-box")}} value to the paragraph based on the values of the `<select>` elements, and also prints the applied declarations to the output (both the longhand and shorthand equivalents):
+Next, we define a function called `setEdgeTrim()`. This applies a `text-box` value to the paragraph based on the values of the `<select>` elements, and also prints the applied declarations to the output (both the longhand and shorthand equivalents):
 
 ```js
 function setEdgeTrim() {
@@ -286,6 +286,6 @@ Try changing the `<select>` values to see the effect they have on the display te
 
 ## See also
 
-- {{cssxref("text-box")}}, {{cssxref("text-box-edge")}}
+- `text-box`, `text-box-edge`
 - [CSS inline layout](/guides/Inline_layout) module
 - [CSS text-box-trim](https://developer.chrome.com/blog/css-text-box-trim) on developer.chrome.com (2025)

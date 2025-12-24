@@ -150,4 +150,4 @@ h2 {
 
 - [Spanning and balancing columns](/guides/Multicol_layout/Spanning_balancing_columns)
 - [Inline-level elements](/en-US/docs/Glossary/Inline-level_content)
-- {{domxref("HTMLSpanElement")}}
+- `HTMLSpanElement`

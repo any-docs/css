@@ -6,9 +6,9 @@ browser-compat: css.properties.background-position-x
 sidebar: cssref
 ---
 
-The **`background-position-x`** [CSS](/en-US/docs/Web/CSS) property sets the initial horizontal position for each background image. The position is relative to the position layer set by {{cssxref("background-origin")}}.
+The **`background-position-x`** [CSS](/en-US/docs/Web/CSS) property sets the initial horizontal position for each background image. The position is relative to the position layer set by `background-origin`.
 
-The value of this property is overridden by any declaration of the {{cssxref("background")}} or {{cssxref("background-position")}} shorthand properties applied to the element after it.
+The value of this property is overridden by any declaration of the `background` or `background-position` shorthand properties applied to the element after it.
 
 {{InteractiveExample("CSS Demo: background-position-x")}}
 
@@ -88,9 +88,9 @@ The `background-position-x` property is specified as one or more values, separat
   - Aligns the center of the background image with the center of the background position layer.
 - `right`
   - Aligns the right edge of the background image with the right edge of the background position layer.
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The offset of the given background image's left vertical edge from the background position layer's left vertical edge. (Some browsers allow assigning the right edge for offset).
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - The offset of the given background image's horizontal position relative to the container. A value of 0% means that the left edge of the background image is aligned with the left edge of the container, and a value of 100% means that the _right_ edge of the background image is aligned with the _right_ edge of the container, thus a value of 50% horizontally centers the background image.
 
 ## Formal definition
@@ -169,6 +169,6 @@ div {
 
 ## See also
 
-- {{cssxref("background-position")}}
-- {{cssxref("background-position-y")}}
+- `background-position`
+- `background-position-y`
 - [Using multiple backgrounds](/guides/Backgrounds_and_borders/Using_multiple_backgrounds)

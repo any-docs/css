@@ -99,7 +99,7 @@ The `transform` property may be specified as either the keyword value `none` or 
 
 ### Values
 
-- {{cssxref("&lt;transform-function&gt;")}}
+- `&lt;transform-function&gt;`
   - One or more of the [CSS transform functions](/reference/values/transform-function) to be applied.
     The transform functions are multiplied in order from left to right, meaning that composite transforms are effectively [applied in order from right to left](#transform_order).
 - `none`
@@ -110,7 +110,7 @@ The `transform` property may be specified as either the keyword value `none` or 
 Scaling/zooming animations are problematic for accessibility, as they are a common trigger for certain types of migraine.
 If you need to include such animations on your website, you should provide a control to allow users to turn off animations, preferably site-wide.
 
-Also, consider making use of the {{cssxref("@media/prefers-reduced-motion", "prefers-reduced-motion")}} media feature — use it to write a [media query](/guides/Media_queries) that will turn off animations if the user has reduced animation specified in their system preferences.
+Also, consider making use of the `prefers-reduced-motion` media feature — use it to write a [media query](/guides/Media_queries) that will turn off animations if the user has reduced animation specified in their system preferences.
 
 Find out more:
 
@@ -216,7 +216,7 @@ When an element is rotated before being translated, the translate direction is o
 
 ### More examples
 
-Please see [Using CSS transforms](/guides/Transforms/Using) and {{cssxref("&lt;transform-function&gt;")}} for more examples.
+Please see [Using CSS transforms](/guides/Transforms/Using) and `&lt;transform-function&gt;` for more examples.
 
 ## Specifications
 
@@ -229,7 +229,7 @@ Please see [Using CSS transforms](/guides/Transforms/Using) and {{cssxref("&lt;t
 ## See also
 
 - [Using CSS transforms](/guides/Transforms/Using)
-- {{cssxref("&lt;transform-function&gt;")}} data type with all the transform functions explained.
+- `&lt;transform-function&gt;` data type with all the transform functions explained.
 - Individual CSS properties: {{cssxref('translate')}}, {{cssxref('rotate')}}, and {{cssxref('scale')}} (there is no `skew` property).
 - SVG {{SVGAttr("transform")}} attribute
 - Online tool to visualize CSS Transform functions: [CSS Transform Playground](https://css-transform.moro.es/)

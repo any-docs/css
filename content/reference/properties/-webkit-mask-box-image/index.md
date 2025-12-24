@@ -13,15 +13,15 @@ sidebar: cssref
 The non-standard prefixed **`-webkit-mask-box-image`** [shorthand](/guides/Cascade/Shorthand_properties) property sets the mask image for an element's border box.
 
 > [!NOTE]
-> This property is not standard and is not on any standards track. Consider using the {{CSSXref("mask-border")}} property instead.
+> This property is not standard and is not on any standards track. Consider using the `mask-border` property instead.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("mask-border-source", "-webkit-mask-border-source")}}
-- {{cssxref("mask-border-outset", "-webkit-mask-border-outset")}}
-- {{cssxref("mask-border-repeat", "-webkit-mask-border-repeat")}}
+- `-webkit-mask-border-source`
+- `-webkit-mask-border-outset`
+- `-webkit-mask-border-repeat`
 
 The values includes the `<image>` to be used as the mask border, and optionally four border outset values and up to two border repeat styles.
 
@@ -54,15 +54,15 @@ The values includes the `<image>` to be used as the mask border, and optionally 
 
 ### Values
 
-- {{cssxref("image")}}
-  - The location of the image resource to be used as a mask image, {{cssxref("gradient")}}, or other {{cssxref("image")}} value.
+- `image`
+  - The location of the image resource to be used as a mask image, `gradient`, or other `image` value.
 - `none`
   - Used to specify that a border box is to have no mask image.
-- {{cssxref("length")}}
-  - The size of the mask image's offset. See {{cssxref("&lt;length&gt;")}} for possible units.
-- {{cssxref("percentage")}}
+- `length`
+  - The size of the mask image's offset. See `&lt;length&gt;` for possible units.
+- `percentage`
   - The mask image's offset has a percentage value relative to the border box's corresponding dimension (width or height).
-- {{cssxref("number")}}
+- `number`
   - The size of the mask image's offset in pixels.
 - `repeat`
   - The mask image is repeated as many times as is necessary to span the border box. May include a partial image if the mask image does not divide evenly into the border box.
@@ -73,9 +73,9 @@ The values includes the `<image>` to be used as the mask border, and optionally 
 - `space`
   - The mask image is repeated as many times as possible without stretching. There is no partial mask image at the end of the border box.
 
-The outset values, or edge offsets, define the distances from the top, right, bottom, and left edges of the image, in that order. The values can be set as {{cssxref("length")}}, {{cssxref("number")}}, or {{cssxref("percentage")}}, with numbers interpreted as pixel lengths.
+The outset values, or edge offsets, define the distances from the top, right, bottom, and left edges of the image, in that order. The values can be set as `length`, `number`, or `percentage`, with numbers interpreted as pixel lengths.
 
-Border repeat styles, when included, are interpreted in the order of `<repeat-x> <repeat-y>`. If only one value is declared, the value is the same for both axes. While similar to {{cssxref("background-repeat")}}, the `cover` and `contain` values are not supported.
+Border repeat styles, when included, are interpreted in the order of `<repeat-x> <repeat-y>`. If only one value is declared, the value is the same for both axes. While similar to `background-repeat`, the `cover` and `contain` values are not supported.
 
 ## Formal definition
 

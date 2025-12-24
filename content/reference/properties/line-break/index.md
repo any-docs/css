@@ -73,7 +73,7 @@ line-break: unset;
 - `strict`
   - Break text using the most stringent line break rule.
 - `anywhere`
-  - There is a soft wrap opportunity around every typographic character unit, including around any punctuation character or preserved white spaces, or in the middle of words, disregarding any prohibition against line breaks, even those introduced by characters with the GL, WJ, or ZWJ character class or mandated by the {{cssxref("word-break")}} property. The different wrapping opportunities must not be prioritized. Hyphenation is not applied.
+  - There is a soft wrap opportunity around every typographic character unit, including around any punctuation character or preserved white spaces, or in the middle of words, disregarding any prohibition against line breaks, even those introduced by characters with the GL, WJ, or ZWJ character class or mandated by the `word-break` property. The different wrapping opportunities must not be prioritized. Hyphenation is not applied.
 
 ## Formal definition
 

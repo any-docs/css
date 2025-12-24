@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.rect
 sidebar: cssref
 ---
 
-The **`rect()`** [CSS](/en-US/docs/Web/CSS) function creates a rectangle at the specified distance from the top and left edges of the containing block. It is a basic shape function of the {{cssxref("basic-shape")}} [data type](/reference/values/Data_types). You can use the `rect()` function in CSS properties such as {{cssxref("offset-path")}} to create the rectangular path along which an element moves and in {{cssxref("clip-path")}} to define the shape of the clipping region.
+The **`rect()`** [CSS](/en-US/docs/Web/CSS) function creates a rectangle at the specified distance from the top and left edges of the containing block. It is a basic shape function of the `basic-shape` [data type](/reference/values/Data_types). You can use the `rect()` function in CSS properties such as `offset-path` to create the rectangular path along which an element moves and in `clip-path` to define the shape of the clipping region.
 
 ## Syntax
 
@@ -20,13 +20,13 @@ clip-path: rect(50px 70px 80% 20%);
 The inset rectangle is defined by specifying four offset values, starting with the top edge offset and going clockwise, and an optional `round` keyword with the `border-radius` parameter to add rounded corners to the rectangle. Each offset value can be either a `<length>`, a `<percentage>`, or the keyword `auto`.
 
 - `<length-percentage>`
-  - Specifies the {{cssxref("&lt;length-percentage&gt;")}} value of the distance of the top, right, bottom, or left edge of the rectangle from the top or left edge of the containing block. The first (top) and third (bottom) values are distances from the top edge of the containing block, and the second (right) and fourth (left) values are distances from the left edge of the containing block. The second (right) and third (bottom) values are clamped by the fourth (left) and first (top) values, respectively, to prevent the bottom edge from crossing over the top edge and right edge from crossing over the left edge. For example, `rect(10px 0 0 20px)` is clamped to `rect(10px 20px 10px 20px)`.
+  - Specifies the `&lt;length-percentage&gt;` value of the distance of the top, right, bottom, or left edge of the rectangle from the top or left edge of the containing block. The first (top) and third (bottom) values are distances from the top edge of the containing block, and the second (right) and fourth (left) values are distances from the left edge of the containing block. The second (right) and third (bottom) values are clamped by the fourth (left) and first (top) values, respectively, to prevent the bottom edge from crossing over the top edge and right edge from crossing over the left edge. For example, `rect(10px 0 0 20px)` is clamped to `rect(10px 20px 10px 20px)`.
 
 - `auto`
   - Makes the edge for which this value is used to coincide with the corresponding edge of the containing block. If `auto` is used for the first (top) or fourth (left) value, the value of `auto` is `0`, and if used for the second (right) or third (bottom) value, the value of `auto` is `100%`.
 
 - `round <'border-radius'>`
-  - Specifies the radius of the rounded corners of the rectangle using the same syntax as the CSS {{cssxref("border-radius")}} shorthand property. This parameter is optional.
+  - Specifies the radius of the rounded corners of the rectangle using the same syntax as the CSS `border-radius` shorthand property. This parameter is optional.
 
 ## Formal syntax
 
@@ -36,7 +36,7 @@ The inset rectangle is defined by specifying four offset values, starting with t
 
 ### Creating offset-path using rect()
 
-In this example, the {{cssxref("offset-path")}} property uses the `rect()` function to define the shape of the path on which the element, a red box in this case, moves. Three different scenarios are shown, each using different values for the `rect()` function. The arrow inside the boxes points to the right edge of the box.
+In this example, the `offset-path` property uses the `rect()` function to define the shape of the path on which the element, a red box in this case, moves. Three different scenarios are shown, each using different values for the `rect()` function. The arrow inside the boxes points to the right edge of the box.
 
 ```html
 <div class="container">
@@ -112,10 +112,10 @@ In this example, the {{cssxref("offset-path")}} property uses the `rect()` funct
 
 ## See also
 
-- {{cssxref("basic-shape/inset","inset()")}} function
-- {{cssxref("basic-shape/xywh","xywh()")}} function
-- {{cssxref("clip-path")}} property
-- {{cssxref("offset-path")}} property
-- {{cssxref("basic-shape")}} data type
+- `inset()` function
+- `xywh()` function
+- `clip-path` property
+- `offset-path` property
+- `basic-shape` data type
 - [CSS shapes](/guides/Shapes) module
 - [Guide to basic shapes](/guides/Shapes/Using_shape-outside)

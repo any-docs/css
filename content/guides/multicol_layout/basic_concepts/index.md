@@ -14,19 +14,19 @@ Multicol layout is unlike any of the other layout methods in CSS; it fragments t
 
 In this and subsequent guides, we will be discussing the following properties defined in the [CSS multi-column layout](/guides/Multicol_layout) module:
 
-- {{cssxref("column-width")}}
-- {{cssxref("column-count")}}
-- {{cssxref("columns")}} shorthand
-- {{cssxref("column-rule-color")}}
-- {{cssxref("column-rule-style")}}
-- {{cssxref("column-rule-width")}}
-- {{cssxref("column-rule")}} shorthand
-- {{cssxref("column-span")}}
-- {{cssxref("column-fill")}}
-- {{cssxref("column-gap")}}
-- {{cssxref("break-after")}}
-- {{cssxref("break-before")}}
-- {{cssxref("break-inside")}}
+- `column-width`
+- `column-count`
+- `columns` shorthand
+- `column-rule-color`
+- `column-rule-style`
+- `column-rule-width`
+- `column-rule` shorthand
+- `column-span`
+- `column-fill`
+- `column-gap`
+- `break-after`
+- `break-before`
+- `break-inside`
 
 ## Defining columns
 

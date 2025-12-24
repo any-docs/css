@@ -46,7 +46,7 @@ anchor-size(<anchor-name> <anchor-size>, <length-percentage>)
 The parameters are:
 
 #### `<anchor-name>` <Badge type="info" text="Optional" />
-  - The {{cssxref("anchor-name")}} property value of an anchor element you want to set the element's size, position, or margins relative to. This is a `<dashed-ident>` value. If omitted, the element's default anchor is used.
+  - The `anchor-name` property value of an anchor element you want to set the element's size, position, or margins relative to. This is a `<dashed-ident>` value. If omitted, the element's default anchor is used.
 
     > [!NOTE]
     > Specifying an `<anchor-name>` inside an `anchor-size()` function neither associates nor tethers an element to an anchor; it only defines which anchor the element's property values should be set relative to.
@@ -82,11 +82,11 @@ The parameters are:
 
 ### Return value
 
-Returns a {{cssxref("length")}} value.
+Returns a `length` value.
 
 ## Description
 
-The `anchor-size()` function enables a positioned element's sizing, position, and margin values to be expressed in terms of an anchor element's dimensions; it returns a {{cssxref("length")}} value representing the dimension of a specific anchor element the positioned element's property values are set relative to. It is a valid value for [sizing, inset, and margin properties](#properties_that_accept_anchor-size_function_values) set on anchor-positioned elements.
+The `anchor-size()` function enables a positioned element's sizing, position, and margin values to be expressed in terms of an anchor element's dimensions; it returns a `length` value representing the dimension of a specific anchor element the positioned element's property values are set relative to. It is a valid value for [sizing, inset, and margin properties](#properties_that_accept_anchor-size_function_values) set on anchor-positioned elements.
 
 The length returned is the vertical or horizontal size of an anchor element or its containing block. The dimension used is defined by the `<anchor-size>` parameter. If that parameter is omitted, the dimension used will match the axis of the sizing, position, or margin property is it set on. So for example:
 
@@ -96,11 +96,11 @@ The length returned is the vertical or horizontal size of an anchor element or i
 
 The anchor element used as the basis for the dimension length is the element with the `anchor-name` specified in the `<anchor-name>` parameter. If more than one element has the same anchor name, the last element with that anchor name in the DOM order is used.
 
-If no `<anchor-name>` parameter is included in the function call, the element's **default anchor**, referenced in its {{cssxref("position-anchor")}} property, or associated with the element via the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute, is used.
+If no `<anchor-name>` parameter is included in the function call, the element's **default anchor**, referenced in its `position-anchor` property, or associated with the element via the [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) HTML attribute, is used.
 
 If an `<anchor-name>` parameter is included and there are no elements matching that anchor name, the fallback value is used. If no fallback was included, the declaration is ignored. For example, if `width: anchor-size(--foo width, 50px); height: anchor-size(--foo width);` were specified on the positioned element but no anchor named `--foo` exists in the DOM, the `width` would be `50px` and the `height` declaration would have no effect.
 
-If an element has sizing, position, or margin properties with `anchor-size()` values set on them, but it is not an anchor-positioned element (it does not have its {{cssxref("position")}} property set to `absolute` or `fixed` or does not have an anchor associated with it via its `position-anchor` property), the fallback value will be used if one is available. If no fallback is available, the declaration is ignored.
+If an element has sizing, position, or margin properties with `anchor-size()` values set on them, but it is not an anchor-positioned element (it does not have its `position` property set to `absolute` or `fixed` or does not have an anchor associated with it via its `position-anchor` property), the fallback value will be used if one is available. If no fallback is available, the declaration is ignored.
 
 For example, if `width: anchor-size(width, 50px);` were specified on the positioned element but no anchor was associated with it, the fallback value would be used, so `width` would get a computed value of `50px`.
 
@@ -111,46 +111,46 @@ For detailed information on anchor features and usage, see the [CSS anchor posit
 The properties that accept an `anchor-size()` function as a value include:
 
 - Sizing properties:
-  - {{cssxref("width")}}
-  - {{cssxref("height")}}
-  - {{cssxref("min-width")}}
-  - {{cssxref("min-height")}}
-  - {{cssxref("max-width")}}
-  - {{cssxref("max-height")}}
-  - {{cssxref("block-size")}}
-  - {{cssxref("inline-size")}}
-  - {{cssxref("min-block-size")}}
-  - {{cssxref("min-inline-size")}}
-  - {{cssxref("max-block-size")}}
-  - {{cssxref("max-inline-size")}}
+  - `width`
+  - `height`
+  - `min-width`
+  - `min-height`
+  - `max-width`
+  - `max-height`
+  - `block-size`
+  - `inline-size`
+  - `min-block-size`
+  - `min-inline-size`
+  - `max-block-size`
+  - `max-inline-size`
 - Inset properties:
-  - {{cssxref("bottom")}}
-  - {{cssxref("left")}}
-  - {{cssxref("right")}}
-  - {{cssxref("top")}}
-  - {{cssxref("inset")}} shorthand
-  - {{cssxref("inset-block")}} shorthand
-  - {{cssxref("inset-block-end")}}
-  - {{cssxref("inset-block-start")}}
-  - {{cssxref("inset-inline")}} shorthand
-  - {{cssxref("inset-inline-end")}}
-  - {{cssxref("inset-inline-start")}}
+  - `bottom`
+  - `left`
+  - `right`
+  - `top`
+  - `inset` shorthand
+  - `inset-block` shorthand
+  - `inset-block-end`
+  - `inset-block-start`
+  - `inset-inline` shorthand
+  - `inset-inline-end`
+  - `inset-inline-start`
 - Margin properties:
-  - {{cssxref("margin")}} shorthand
-  - {{cssxref("margin-bottom")}}
-  - {{cssxref("margin-left")}}
-  - {{cssxref("margin-right")}}
-  - {{cssxref("margin-top")}}
-  - {{cssxref("margin-block")}} shorthand
-  - {{cssxref("margin-block-end")}}
-  - {{cssxref("margin-block-start")}}
-  - {{cssxref("margin-inline")}} shorthand
-  - {{cssxref("margin-inline-end")}}
-  - {{cssxref("margin-inline-start")}}
+  - `margin` shorthand
+  - `margin-bottom`
+  - `margin-left`
+  - `margin-right`
+  - `margin-top`
+  - `margin-block` shorthand
+  - `margin-block-end`
+  - `margin-block-start`
+  - `margin-inline` shorthand
+  - `margin-inline-end`
+  - `margin-inline-start`
 
 ### Using `anchor-size()` inside `calc()`
 
-The most common `anchor-size()` functions you'll use will just refer to a dimension of the default anchor. Alternative, include the `anchor-size()` function inside a {{cssxref("calc")}} function to modify the size applied to the positioned element.
+The most common `anchor-size()` functions you'll use will just refer to a dimension of the default anchor. Alternative, include the `anchor-size()` function inside a `calc` function to modify the size applied to the positioned element.
 
 For example, this rule sizes the positioned element's width equal to the default anchor element's width:
 
@@ -160,7 +160,7 @@ For example, this rule sizes the positioned element's width equal to the default
 }
 ```
 
-This rule sizes the positioned element's inline size to 4 times the anchor element's inline size, with the multiplication being done inside a {{cssxref("calc()")}} function:
+This rule sizes the positioned element's inline size to 4 times the anchor element's inline size, with the multiplication being done inside a `calc()` function:
 
 ```css
 .positionedElem {
@@ -217,7 +217,7 @@ We specify three {{htmlelement("div")}} elements, one `anchor` element and the t
 
 #### CSS
 
-We declare the `anchor` `<div>` as an anchor element by giving it an {{cssxref("anchor-name")}}. The positioned elements, with their {{cssxref("position")}} properties set to `fixed`, are associated with the anchor element via their {{cssxref("position-anchor")}} properties. We also set absolute {{cssxref("height")}} and {{cssxref("width")}} dimensions on the anchor to provide a reference point when checking the positioned element dimensions, for example, with browser developer tools:
+We declare the `anchor` `<div>` as an anchor element by giving it an `anchor-name`. The positioned elements, with their `position` properties set to `fixed`, are associated with the anchor element via their `position-anchor` properties. We also set absolute `height` and `width` dimensions on the anchor to provide a reference point when checking the positioned element dimensions, for example, with browser developer tools:
 
 ```css hidden
 .anchor {
@@ -260,9 +260,9 @@ body {
 
 We set some distinct property values on the positioned elements:
 
-- The positioned elements are tethered to the anchor with different {{cssxref("position-area")}} values that position the elements in different places around the anchor element.
-- The {{cssxref("height")}} of the first infobox is set to the same height as the anchor element: `anchor-size(height)` returns the anchor element's height. The element's {{cssxref("width")}} is set to double the anchor element's width using the `anchor-size()` function within a {{cssxref("calc()")}} function: `anchor-size(width)` retrieves the anchor element's width, which is then multiplied by two.
-- The {{cssxref("height")}} of the second infobox is set to two-thirds of the anchor element's height, using a similar technique.
+- The positioned elements are tethered to the anchor with different `position-area` values that position the elements in different places around the anchor element.
+- The `height` of the first infobox is set to the same height as the anchor element: `anchor-size(height)` returns the anchor element's height. The element's `width` is set to double the anchor element's width using the `anchor-size()` function within a `calc()` function: `anchor-size(width)` retrieves the anchor element's width, which is then multiplied by two.
+- The `height` of the second infobox is set to two-thirds of the anchor element's height, using a similar technique.
 - Margin values are included to provide some separation from the anchor element.
 
 ```css
@@ -284,7 +284,7 @@ We set some distinct property values on the positioned elements:
 
 {{EmbedLiveSample("Basic `anchor-size()` usage", "100%", "240")}}
 
-Use your browser tools to inspect the anchor-positioned elements. The first infobox will be `100px` tall and `200px` wide, while the second infobox will have a height of approximately `66.7px`, with the `width` defaulting to {{cssxref("max-content")}}.
+Use your browser tools to inspect the anchor-positioned elements. The first infobox will be `100px` tall and `200px` wide, while the second infobox will have a height of approximately `66.7px`, with the `width` defaulting to `max-content`.
 
 ### Position and margin example
 
@@ -300,8 +300,8 @@ See [`anchor-size()` position and margin example](/guides/Anchor_positioning/Usi
 
 ## See also
 
-- {{cssxref("anchor-name")}}
-- {{cssxref("position-anchor")}}
-- {{cssxref("anchor()")}} function
+- `anchor-name`
+- `position-anchor`
+- `anchor()` function
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide
 - [CSS anchor positioning](/guides/Anchor_positioning) module

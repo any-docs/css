@@ -6,7 +6,7 @@ browser-compat: css.properties.margin-inline-start
 sidebar: cssref
 ---
 
-The **`margin-inline-start`** [CSS](/en-US/docs/Web/CSS) property defines the logical inline start margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("margin-top")}}, {{cssxref("margin-right")}}, {{cssxref("margin-bottom")}}, or {{cssxref("margin-left")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The **`margin-inline-start`** [CSS](/en-US/docs/Web/CSS) property defines the logical inline start margin of an element, which maps to a physical margin depending on the element's writing mode, directionality, and text orientation. It corresponds to the `margin-top`, `margin-right`, `margin-bottom`, or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 {{InteractiveExample("CSS Demo: margin-inline-start")}}
 
@@ -81,11 +81,11 @@ margin-inline-start: revert-layer;
 margin-inline-start: unset;
 ```
 
-It relates to {{cssxref("margin-block-start")}}, {{cssxref("margin-block-end")}}, and {{cssxref("margin-inline-end")}}, which define the other margins of the element.
+It relates to `margin-block-start`, `margin-block-end`, and `margin-inline-end`, which define the other margins of the element.
 
 ### Values
 
-The `margin-inline-start` property takes the same values as the {{cssxref("margin-left")}} property.
+The `margin-inline-start` property takes the same values as the `margin-left` property.
 
 ## Formal definition
 
@@ -138,6 +138,6 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- {{cssxref("margin-inline-end")}}
-- The mapped physical properties: {{cssxref("margin-top")}}, {{cssxref("margin-right")}}, {{cssxref("margin-bottom")}}, and {{cssxref("margin-left")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- `margin-inline-end`
+- The mapped physical properties: `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`
+- `writing-mode`, `direction`, `text-orientation`

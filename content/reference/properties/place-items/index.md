@@ -6,7 +6,7 @@ browser-compat: css.properties.place-items
 sidebar: cssref
 ---
 
-The [CSS](/en-US/docs/Web/CSS) **`place-items`** [shorthand property](/guides/Cascade/Shorthand_properties) aligns items along both the block and inline directions at once. It sets the values of the {{CSSxRef("align-items")}} and {{CSSxRef("justify-items")}} properties. If the second value is not set, the first value is also used for it.
+The [CSS](/en-US/docs/Web/CSS) **`place-items`** [shorthand property](/guides/Cascade/Shorthand_properties) aligns items along both the block and inline directions at once. It sets the values of the `align-items` and `justify-items` properties. If the second value is not set, the first value is also used for it.
 
 {{InteractiveExample("CSS Demo: place-items")}}
 
@@ -58,8 +58,8 @@ place-items: end center;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("align-items")}}
-- {{cssxref("justify-items")}}
+- `align-items`
+- `justify-items`
 
 ## Syntax
 
@@ -94,8 +94,8 @@ place-items: unset;
 
 One of the following forms:
 
-- A single {{cssxref("align-items")}} value, which is used to set alignment in both block and inline directions.
-- An {{cssxref("align-items")}} value, which sets alignment in the block direction, followed by a {{cssxref("justify-items")}} value, which sets alignment in the inline direction.
+- A single `align-items` value, which is used to set alignment in both block and inline directions.
+- An `align-items` value, which sets alignment in the block direction, followed by a `justify-items` value, which sets alignment in the inline direction.
 
 ## Formal definition
 
@@ -109,7 +109,7 @@ One of the following forms:
 
 ### Placing items in a flex container
 
-In flexbox {{cssxref("justify-self")}} or {{cssxref("justify-items")}} do not apply, as on the main axis items are treated as a group. Therefore, the second value will be ignored.
+In flexbox `justify-self` or `justify-items` do not apply, as on the main axis items are treated as a group. Therefore, the second value will be ignored.
 
 ```css hidden
 div > div {
@@ -348,10 +348,10 @@ values.addEventListener("change", (evt) => {
 
 ## See also
 
-- {{CSSxRef("align-items")}}
-- {{CSSxRef("align-self")}}
-- {{CSSxRef("justify-items")}}
-- {{CSSxRef("justify-self")}}
+- `align-items`
+- `align-self`
+- `justify-items`
+- `justify-self`
 - [Basic concepts of flexbox](/guides/Flexible_box_layout/Basic_concepts)
 - [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items)
 - [Box alignment in grid layout](/guides/Box_alignment/In_grid_layout)

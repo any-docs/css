@@ -11,7 +11,7 @@ sidebar: cssref
 {{deprecated_header}}
 
 > [!WARNING]
-> This property has been replaced by the {{cssxref("break-inside")}} property.
+> This property has been replaced by the `break-inside` property.
 
 The **`page-break-inside`** [CSS](/en-US/docs/Web/CSS) property adjusts page breaks _inside_ the current element.
 
@@ -93,7 +93,7 @@ page-break-inside: unset;
 
 ## Page break aliases
 
-The `page-break-inside` property is now a legacy property, replaced by {{cssxref("break-inside")}}.
+The `page-break-inside` property is now a legacy property, replaced by `break-inside`.
 
 For compatibility reasons, `page-break-inside` should be treated by browsers as an alias of `break-inside`. This ensures that sites using `page-break-inside` continue to work as designed. A subset of values should be aliased as follows:
 
@@ -188,6 +188,6 @@ p:first-child {
 
 ## See also
 
-- {{cssxref("break-before")}}, {{cssxref("break-after")}}, {{cssxref("break-inside")}}
-- {{cssxref("page-break-after")}}, {{cssxref("page-break-before")}}
-- {{cssxref("orphans")}}, {{cssxref("widows")}}
+- `break-before`, `break-after`, `break-inside`
+- `page-break-after`, `page-break-before`
+- `orphans`, `widows`

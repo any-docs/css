@@ -11,7 +11,7 @@ The **CSS scroll-driven animations** module provides functionality that builds o
 
 ## Scroll-driven animations in action
 
-You can define the scroller that controls the animation either by naming the animation or with the {{cssxref("scroll")}} function.
+You can define the scroller that controls the animation either by naming the animation or with the `scroll` function.
 
 ```html hidden live-sample___scroll_animation
 <main>
@@ -110,32 +110,32 @@ Scroll the element in the inline direction to see its background color change. S
 
 ### Properties
 
-- {{cssxref("animation-range")}} shorthand
-  - {{cssxref("animation-range-end")}}
-  - {{cssxref("animation-range-start")}}
-- {{cssxref("scroll-timeline")}} shorthand
-  - {{cssxref("scroll-timeline-axis")}}
-  - {{cssxref("scroll-timeline-name")}}
-- {{cssxref("timeline-scope")}}
-- {{cssxref("view-timeline")}} shorthand
-  - {{cssxref("view-timeline-axis")}}
-  - {{cssxref("view-timeline-inset")}}
-  - {{cssxref("view-timeline-name")}}
+- `animation-range` shorthand
+  - `animation-range-end`
+  - `animation-range-start`
+- `scroll-timeline` shorthand
+  - `scroll-timeline-axis`
+  - `scroll-timeline-name`
+- `timeline-scope`
+- `view-timeline` shorthand
+  - `view-timeline-axis`
+  - `view-timeline-inset`
+  - `view-timeline-name`
 
 ### Data types and values
 
-- {{cssxref("axis")}}
-- {{cssxref("timeline-range-name")}}
+- `axis`
+- `timeline-range-name`
 
 ### Functions
 
-- {{cssxref("animation-timeline/scroll", "scroll()")}}
-- {{cssxref("animation-timeline/view", "view()")}}
+- `scroll()`
+- `view()`
 
 ### Interfaces
 
-- {{domxref("ScrollTimeline")}}
-- {{domxref("ViewTimeline")}}
+- `ScrollTimeline`
+- `ViewTimeline`
 
 ## Guides
 
@@ -145,17 +145,17 @@ Scroll the element in the inline direction to see its background color change. S
 ## Related concepts
 
 - [CSS animations](/guides/Animations) module
-  - {{cssxref("animation-timeline")}}
-  - {{cssxref("@keyframes")}}
+  - `animation-timeline`
+  - `@keyframes`
 - [CSS overflow](/guides/Overflow) module
   - {{glossary("Scroll container")}}
   - [Scrollport](/en-US/docs/Glossary/Scroll_container#scrollport)
 - [Web Animations](/en-US/docs/Web/API/Web_Animations_API) API
-  - {{domxref("Element.animate()")}}
-  - {{domxref("Animation")}}
-  - {{domxref("AnimationTimeline")}}
-  - {{domxref("DocumentTimeline")}}
-  - {{domxref("KeyframeEffect")}}
+  - `Element.animate()`
+  - `Animation`
+  - `AnimationTimeline`
+  - `DocumentTimeline`
+  - `KeyframeEffect`
 
 ## Specifications
 

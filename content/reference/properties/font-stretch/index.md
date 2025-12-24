@@ -96,7 +96,7 @@ font-stretch: revert-layer;
 font-stretch: unset;
 ```
 
-This property may be specified as a single `<font-stretch-css3>` keyword value or a single {{cssxref("&lt;percentage&gt;")}} value.
+This property may be specified as a single `<font-stretch-css3>` keyword value or a single `&lt;percentage&gt;` value.
 
 ### Values
 
@@ -107,7 +107,7 @@ This property may be specified as a single `<font-stretch-css3>` keyword value o
 - `semi-expanded`, `expanded`, `extra-expanded`, `ultra-expanded`
   - Specifies a more expanded font face than normal, with `ultra-expanded` as the most expanded.
 - `<percentage>`
-  - A {{cssxref("&lt;percentage&gt;")}} value between 50% and 200% (inclusive). Negative values are not allowed for this property.
+  - A `&lt;percentage&gt;` value between 50% and 200% (inclusive). Negative values are not allowed for this property.
 
 ### Keyword to numeric mapping
 
@@ -312,8 +312,8 @@ p {
 
 ## See also
 
-- {{cssxref("font-style")}}
-- {{cssxref("font-weight")}}
+- `font-style`
+- `font-weight`
 - SVG {{SVGAttr("font-stretch")}} attribute
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
 - [CSS fonts](/guides/Fonts) module

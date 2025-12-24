@@ -57,7 +57,7 @@ user-select: unset;
 ### Values
 
 - `none`
-  - The text of the element and its sub-elements is not selectable. Note that the {{domxref("Selection")}} object can contain these elements.
+  - The text of the element and its sub-elements is not selectable. Note that the `Selection` object can contain these elements.
 - `auto`
   - The used value of `auto` is determined as follows:
     - On the `::before` and `::after` pseudo elements, the used value is `none`
@@ -119,5 +119,5 @@ user-select: unset;
 
 ## See also
 
-- {{Cssxref("::selection")}} pseudo-element
-- The JavaScript {{domxref("Selection")}} object
+- `::selection` pseudo-element
+- The JavaScript `Selection` object

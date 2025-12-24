@@ -12,7 +12,7 @@ An element is considered as buffering when that element cannot continue playing 
 For more information, see the [Media buffering, seeking, and time ranges](/en-US/docs/Web/Media/Guides/Audio_and_video_delivery/buffering_seeking_time_ranges#seekable) guide.
 
 > [!NOTE]
-> An element is still considered to be {{cssxref(":playing")}} when it is "buffering".
+> An element is still considered to be `:playing` when it is "buffering".
 > If `:buffering` matches an element, `:playing` will also match that element.
 
 ## Syntax
@@ -47,10 +47,10 @@ video:buffering {
 
 ## See also
 
-- {{cssxref(":muted")}}
-- {{cssxref(":paused")}}
-- {{cssxref(":playing")}}
-- {{cssxref(":seeking")}}
-- {{cssxref(":stalled")}}
-- {{cssxref(":volume-locked")}}
+- `:muted`
+- `:paused`
+- `:playing`
+- `:seeking`
+- `:stalled`
+- `:volume-locked`
 - [CSS selectors](/guides/Selectors)

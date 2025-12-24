@@ -21,38 +21,38 @@ Some at-rule functions can take multiple arguments, which are formatted similar 
 
 ## @import functions
 
-The {{CSSxRef("@import")}} at-rule is used to import styles from other stylesheets.
+The `@import` at-rule is used to import styles from other stylesheets.
 
-- {{CSSxRef("@import", "@import url()")}}
+- `@import url()`
   - Imports a stylesheet file from the specified URL.
-- {{CSSxRef("@import", "@import supports()")}}
+- `@import supports()`
   - Imports a stylesheet file based on browser support.
 - [`@import layer()`](/en-US/docs/Web/CSS/Reference/At-rules/@import/layer_function)
   - Imports a stylesheet file into the specified cascade layer.
 
 ## @supports functions
 
-The {{CSSxRef("@supports")}} at-rule checks for a browser's support for the specified CSS feature and then applies the CSS styling.
+The `@supports` at-rule checks for a browser's support for the specified CSS feature and then applies the CSS styling.
 
-- {{CSSxRef("@supports", "@supports selector()")}}
+- `@supports selector()`
   - Applies CSS rules after checking browser's support for the specified selector syntax.
-- {{CSSxRef("@supports", "@supports font-tech()")}}
+- `@supports font-tech()`
   - Applies CSS rules after checking browser's support for the specified font technology.
-- {{CSSxRef("@supports", "@supports font-format()")}}
+- `@supports font-format()`
   - Applies CSS rules after checking browser's support for the specified font format.
 
 ## @namespace functions
 
-The {{CSSxRef("@namespace")}} at-rule is used to specify XML namespaces to be used in a CSS stylesheet.
+The `@namespace` at-rule is used to specify XML namespaces to be used in a CSS stylesheet.
 
-- {{CSSxRef("@namespace", "@namespace url()")}}
+- `@namespace url()`
   - Defines XML namespace from the specified URL.
 
 ## @container functions
 
-The {{CSSxRef("@container")}} at-rule is used to specify styles for a containment context.
+The `@container` at-rule is used to specify styles for a containment context.
 
-- {{CSSxRef("@container", "@container style()")}}
+- `@container style()`
   - Defines the containment context style.
 
 ## See also

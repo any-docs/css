@@ -11,103 +11,103 @@ sidebar: cssref
 
 ## Index of at-rules and at-rule descriptors
 
-- {{cssxref("@charset")}}
-- {{cssxref("@color-profile")}}
-- {{cssxref("@container")}}
-- {{cssxref("@counter-style")}}
-  - {{cssxref("@counter-style/additive-symbols")}}
-  - {{cssxref("@counter-style/fallback")}}
-  - {{cssxref("@counter-style/negative")}}
-  - {{cssxref("@counter-style/pad")}}
-  - {{cssxref("@counter-style/prefix")}}
-  - {{cssxref("@counter-style/range")}}
-  - {{cssxref("@counter-style/speak-as")}}
-  - {{cssxref("@counter-style/suffix")}}
-  - {{cssxref("@counter-style/symbols")}}
-  - {{cssxref("@counter-style/system")}}
-- {{cssxref("@custom-media")}}
-- {{cssxref("@document")}} <Badge type="info" text="Non-standard. Check cross-browser support before using." /> {{deprecated_inline}}
-- {{cssxref("@font-face")}}
-  - {{cssxref("@font-face/ascent-override")}}
-  - {{cssxref("@font-face/descent-override")}}
-  - {{cssxref("@font-face/font-display")}}
-  - {{cssxref("@font-face/font-family")}}
-  - {{cssxref("@font-face/font-feature-settings")}}
-  - {{cssxref("@font-face/font-stretch")}}
-  - {{cssxref("@font-face/font-style")}}
-  - {{cssxref("@font-face/font-variation-settings")}}
-  - {{cssxref("@font-face/font-weight")}}
-  - {{cssxref("@font-face/line-gap-override")}}
-  - {{cssxref("@font-face/size-adjust")}}
-  - {{cssxref("@font-face/src")}}
-  - {{cssxref("@font-face/unicode-range")}}
-- {{cssxref("@font-feature-values")}}
-  - {{cssxref("@font-feature-values/font-display")}}
-- {{cssxref("@font-palette-values")}}
-  - {{cssxref("@font-palette-values/base-palette")}}
-  - {{cssxref("@font-palette-values/font-family")}}
-  - {{cssxref("@font-palette-values/override-colors")}}
-- {{cssxref("@function")}} {{experimental_inline}}
-- {{cssxref("@import")}}
-- {{cssxref("@keyframes")}}
-- {{cssxref("@layer")}}
-- {{cssxref("@media")}} (see [list of media features](#index_of_media_features) in the next section)
-- {{cssxref("@namespace")}}
-- {{cssxref("@page")}}
-  - {{cssxref("@page/page-orientation")}}
-  - {{cssxref("@page/size")}}
-- {{cssxref("@position-try")}}
-- {{cssxref("@property")}}
-  - {{cssxref("@property/inherits")}}
-  - {{cssxref("@property/initial-value")}}
-  - {{cssxref("@property/syntax")}}
-- {{cssxref("@scope")}}
-- {{cssxref("@starting-style")}}
-- {{cssxref("@supports")}}
-- {{cssxref("@view-transition")}}
+- `@charset`
+- `@color-profile`
+- `@container`
+- `@counter-style`
+  - `@counter-style/additive-symbols`
+  - `@counter-style/fallback`
+  - `@counter-style/negative`
+  - `@counter-style/pad`
+  - `@counter-style/prefix`
+  - `@counter-style/range`
+  - `@counter-style/speak-as`
+  - `@counter-style/suffix`
+  - `@counter-style/symbols`
+  - `@counter-style/system`
+- `@custom-media`
+- `@document` <Badge type="info" text="Non-standard. Check cross-browser support before using." /> {{deprecated_inline}}
+- `@font-face`
+  - `@font-face/ascent-override`
+  - `@font-face/descent-override`
+  - `@font-face/font-display`
+  - `@font-face/font-family`
+  - `@font-face/font-feature-settings`
+  - `@font-face/font-stretch`
+  - `@font-face/font-style`
+  - `@font-face/font-variation-settings`
+  - `@font-face/font-weight`
+  - `@font-face/line-gap-override`
+  - `@font-face/size-adjust`
+  - `@font-face/src`
+  - `@font-face/unicode-range`
+- `@font-feature-values`
+  - `@font-feature-values/font-display`
+- `@font-palette-values`
+  - `@font-palette-values/base-palette`
+  - `@font-palette-values/font-family`
+  - `@font-palette-values/override-colors`
+- `@function` {{experimental_inline}}
+- `@import`
+- `@keyframes`
+- `@layer`
+- `@media` (see [list of media features](#index_of_media_features) in the next section)
+- `@namespace`
+- `@page`
+  - `@page/page-orientation`
+  - `@page/size`
+- `@position-try`
+- `@property`
+  - `@property/inherits`
+  - `@property/initial-value`
+  - `@property/syntax`
+- `@scope`
+- `@starting-style`
+- `@supports`
+- `@view-transition`
 
 ## Index of media features
 
-- {{cssxref("@media/-moz-device-pixel-ratio")}}
-- {{cssxref("@media/-webkit-animation")}}
-- {{cssxref("@media/-webkit-device-pixel-ratio")}}
-- {{cssxref("@media/-webkit-transform-2d")}}
-- {{cssxref("@media/-webkit-transform-3d")}}
-- {{cssxref("@media/-webkit-transition")}}
-- {{cssxref("@media/any-hover")}}
-- {{cssxref("@media/any-pointer")}}
-- {{cssxref("@media/aspect-ratio")}}
-- {{cssxref("@media/color")}}
-- {{cssxref("@media/color-gamut")}}
-- {{cssxref("@media/color-index")}}
-- {{cssxref("@media/device-aspect-ratio")}}
-- {{cssxref("@media/device-height")}}
-- {{cssxref("@media/display-mode")}}
-- {{cssxref("@media/dynamic-range")}}
-- {{cssxref("@media/forced-colors")}}
-- {{cssxref("@media/grid")}}
-- {{cssxref("@media/height")}}
-- {{cssxref("@media/horizontal-viewport-segments")}}
-- {{cssxref("@media/hover")}}
-- {{cssxref("@media/inverted-colors")}}
-- {{cssxref("@media/monochrome")}}
-- {{cssxref("@media/orientation")}}
-- {{cssxref("@media/overflow-block")}}
-- {{cssxref("@media/overflow-inline")}}
-- {{cssxref("@media/pointer")}}
-- {{cssxref("@media/prefers-color-scheme")}}
-- {{cssxref("@media/prefers-contrast")}}
-- {{cssxref("@media/prefers-reduced-data")}}
-- {{cssxref("@media/prefers-reduced-motion")}}
-- {{cssxref("@media/prefers-reduced-transparency")}}
-- {{cssxref("@media/resolution")}}
-- {{cssxref("@media/scan")}}
-- {{cssxref("@media/scripting")}}
-- {{cssxref("@media/shape")}}
-- {{cssxref("@media/update")}}
-- {{cssxref("@media/vertical-viewport-segments")}}
-- {{cssxref("@media/video-dynamic-range")}}
-- {{cssxref("@media/width")}}
+- `@media/-moz-device-pixel-ratio`
+- `@media/-webkit-animation`
+- `@media/-webkit-device-pixel-ratio`
+- `@media/-webkit-transform-2d`
+- `@media/-webkit-transform-3d`
+- `@media/-webkit-transition`
+- `@media/any-hover`
+- `@media/any-pointer`
+- `@media/aspect-ratio`
+- `@media/color`
+- `@media/color-gamut`
+- `@media/color-index`
+- `@media/device-aspect-ratio`
+- `@media/device-height`
+- `@media/display-mode`
+- `@media/dynamic-range`
+- `@media/forced-colors`
+- `@media/grid`
+- `@media/height`
+- `@media/horizontal-viewport-segments`
+- `@media/hover`
+- `@media/inverted-colors`
+- `@media/monochrome`
+- `@media/orientation`
+- `@media/overflow-block`
+- `@media/overflow-inline`
+- `@media/pointer`
+- `@media/prefers-color-scheme`
+- `@media/prefers-contrast`
+- `@media/prefers-reduced-data`
+- `@media/prefers-reduced-motion`
+- `@media/prefers-reduced-transparency`
+- `@media/resolution`
+- `@media/scan`
+- `@media/scripting`
+- `@media/shape`
+- `@media/update`
+- `@media/vertical-viewport-segments`
+- `@media/video-dynamic-range`
+- `@media/width`
 
 ## Specifications
 

@@ -59,5 +59,5 @@ Currently, no browsers support this feature.
 
 ## See also
 
-- {{CSSxRef(":empty")}}
+- `:empty`
 - [CSS selectors](/guides/Selectors) module

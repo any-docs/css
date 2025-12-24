@@ -39,10 +39,10 @@ This is different from `:buffering` or `:stalled`, which are states that occur w
 
 ## See also
 
-- {{cssxref(":buffering")}}
-- {{cssxref(":muted")}}
-- {{cssxref(":playing")}}
-- {{cssxref(":seeking")}}
-- {{cssxref(":stalled")}}
-- {{cssxref(":volume-locked")}}
+- `:buffering`
+- `:muted`
+- `:playing`
+- `:seeking`
+- `:stalled`
+- `:volume-locked`
 - [CSS selectors](/guides/Selectors)

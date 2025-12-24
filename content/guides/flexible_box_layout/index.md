@@ -46,17 +46,17 @@ body {
 
 ### Properties
 
-- {{cssxref("align-content")}}
-- {{cssxref("align-items")}}
-- {{cssxref("align-self")}}
-- {{cssxref("flex")}}
-- {{cssxref("flex-basis")}}
-- {{cssxref("flex-direction")}}
-- {{cssxref("flex-flow")}}
-- {{cssxref("flex-grow")}}
-- {{cssxref("flex-shrink")}}
-- {{cssxref("flex-wrap")}}
-- {{cssxref("justify-content")}}
+- `align-content`
+- `align-items`
+- `align-self`
+- `flex`
+- `flex-basis`
+- `flex-direction`
+- `flex-flow`
+- `flex-grow`
+- `flex-shrink`
+- `flex-wrap`
+- `justify-content`
 
 ### Glossary terms
 
@@ -92,27 +92,27 @@ body {
 
 [CSS display module](/guides/Display)
 
-- {{cssxref("display")}}
-- {{cssxref("order")}}
+- `display`
+- `order`
 
 [CSS box alignment](/guides/Box_alignment) module
 
-- {{cssxref("align-content")}}
-- {{cssxref("align-items")}}
-- {{cssxref("align-self")}}
-- {{cssxref("column-gap")}}
-- {{cssxref("gap")}}
-- {{cssxref("justify-items")}}
-- {{cssxref("place-content")}}
-- {{cssxref("place-items")}}
-- {{cssxref("row-gap")}}
+- `align-content`
+- `align-items`
+- `align-self`
+- `column-gap`
+- `gap`
+- `justify-items`
+- `place-content`
+- `place-items`
+- `row-gap`
 
 [CSS box sizing](/guides/Box_sizing) module
 
-- {{cssxref("aspect-ratio")}}
-- {{cssxref("max-content")}} value
-- {{cssxref("min-content")}} value
-- {{cssxref("fit-content")}} value
+- `aspect-ratio`
+- `max-content` value
+- `min-content` value
+- `fit-content` value
 - {{glossary("intrinsic size")}} glossary term
 
 ## Specifications

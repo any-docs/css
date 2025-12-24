@@ -11,7 +11,7 @@ sidebar: cssref
 {{Non-standard_header}}
 
 > [!NOTE]
-> In [Selectors Level 4](https://drafts.csswg.org/selectors-4/#the-empty-pseudo), the {{CSSxRef(":empty")}} selector was changed to act like `:-moz-only-whitespace`, but no browser currently supports this yet.
+> In [Selectors Level 4](https://drafts.csswg.org/selectors-4/#the-empty-pseudo), the `:empty` selector was changed to act like `:-moz-only-whitespace`, but no browser currently supports this yet.
 
 The **`:-moz-only-whitespace`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) matches elements that only contain text nodes that only contain {{Glossary("whitespace")}}. (This includes elements with empty text nodes and elements with no child nodes.)
 
@@ -51,7 +51,7 @@ div {
 
 ## Specifications
 
-Briefly defined as `:blank` in [Selectors Level 4](https://drafts.csswg.org/selectors-4/#changes-2018-02), but then the functionality was merged into {{CSSxRef(":empty")}} and {{CSSxRef(":blank")}} redefined to mean empty {{HTMLElement("input")}}.
+Briefly defined as `:blank` in [Selectors Level 4](https://drafts.csswg.org/selectors-4/#changes-2018-02), but then the functionality was merged into `:empty` and `:blank` redefined to mean empty {{HTMLElement("input")}}.
 
 ## Browser compatibility
 
@@ -59,5 +59,5 @@ Briefly defined as `:blank` in [Selectors Level 4](https://drafts.csswg.org/sele
 
 ## See also
 
-- {{CSSxRef(":blank")}}
-- {{CSSxRef(":empty")}}
+- `:blank`
+- `:empty`

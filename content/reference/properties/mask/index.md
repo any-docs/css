@@ -12,14 +12,14 @@ The **`mask`** [CSS](/en-US/docs/Web/CSS) [shorthand property](/guides/Cascade/S
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("mask-clip")}}
-- {{cssxref("mask-composite")}}
-- {{cssxref("mask-image")}}
-- {{cssxref("mask-mode")}}
-- {{cssxref("mask-origin")}}
-- {{cssxref("mask-position")}}
-- {{cssxref("mask-repeat")}}
-- {{cssxref("mask-size")}}
+- `mask-clip`
+- `mask-composite`
+- `mask-image`
+- `mask-mode`
+- `mask-origin`
+- `mask-position`
+- `mask-repeat`
+- `mask-size`
 
 ## Syntax
 
@@ -58,21 +58,21 @@ mask: unset;
 - `<mask-layer>`
   - One or more comma-separated mask layers, consisting of the following components:
     - `<mask-reference>`
-      - Sets the mask image source. See {{cssxref("mask-image")}}.
+      - Sets the mask image source. See `mask-image`.
     - `<masking-mode>`
-      - Sets the masking mode of the mask image. See {{cssxref("mask-mode")}}.
+      - Sets the masking mode of the mask image. See `mask-mode`.
     - `<position>`
-      - Sets the position of the mask image. See {{cssxref("mask-position")}}.
+      - Sets the position of the mask image. See `mask-position`.
     - `<bg-size>`
-      - Sets the size of the mask image. See {{cssxref("mask-size")}}.
+      - Sets the size of the mask image. See `mask-size`.
     - `<repeat-style>`
-      - Sets the repetition of the mask image. See {{cssxref("mask-repeat")}}.
+      - Sets the repetition of the mask image. See `mask-repeat`.
     - `<geometry-box>`
-      - If only one `<geometry-box>` value is given, it sets both the {{cssxref("mask-origin")}} and {{cssxref("mask-clip")}} property values. If two `<geometry-box>` values are present, the first defines the `mask-origin` and the second defines the `mask-clip`.
+      - If only one `<geometry-box>` value is given, it sets both the `mask-origin` and `mask-clip` property values. If two `<geometry-box>` values are present, the first defines the `mask-origin` and the second defines the `mask-clip`.
     - `<geometry-box> | no-clip`
-      - Sets the area affected by the mask image. See {{cssxref("mask-clip")}}.
+      - Sets the area affected by the mask image. See `mask-clip`.
     - `<compositing-operator>`
-      - Sets the compositing operation used on the current mask layer. See {{cssxref("mask-composite")}}.
+      - Sets the compositing operation used on the current mask layer. See `mask-composite`.
 
 ## Description
 
@@ -95,7 +95,7 @@ Within each `<mask-layer>`, the `mask-size` component must go after the `mask-po
 
 If there are two `<geometry-box>` values present, the first is the `mask-origin` value, while the second is the `mask-clip` value. If one `<geometry-box>` value and the `no-clip` keyword are present, the `<geometry-box>` is the value of the `mask-origin` property, as the `no-clip` is only valid for the `mask-clip` property. In this case, the order of the two values doesn't matter. If only one `<geometry-box>` value is present (with no `no-clip` keyterm specified), this value is used for both the `mask-origin` and `mask-clip` properties.
 
-As the `mask` shorthand resets all the `mask-border-*` properties to their `initial` value, you should declare these properties — or the {{cssxref("mask-border")}} shorthand — after any `mask` declarations. When setting `mask` in your declaration block, you also implicitly set the following:
+As the `mask` shorthand resets all the `mask-border-*` properties to their `initial` value, you should declare these properties — or the `mask-border` shorthand — after any `mask` declarations. When setting `mask` in your declaration block, you also implicitly set the following:
 
 ```css
 mask-border-source: none;
@@ -135,7 +135,7 @@ We include an {{htmlelement("img")}} and an empty {{htmlelement("div")}} element
 
 #### CSS
 
-We set the same {{cssxref("border")}}, {{cssxref("padding")}}, and sizing on both the `<img>` and `<div>`.
+We set the same `border`, `padding`, and sizing on both the `<img>` and `<div>`.
 
 ```css
 img,
@@ -148,7 +148,7 @@ div {
 }
 ```
 
-We then apply a mask to the `<img>`. The `mask-image` is generated using a {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}} function. We define it to be a `100px` by `100px` gradient, which repeats starting at the top and left corner of the image's `content-box`. We include two `<geometry-box>` values; the first sets the `mask-origin` and the second defines the `mask-clip` property value. The gradient goes from transparent to solid `lightgreen`. We used `lightgreen` to demonstrate that it isn't the color of the mask that is important, but rather its transparency.
+We then apply a mask to the `<img>`. The `mask-image` is generated using a `repeating-conic-gradient()` function. We define it to be a `100px` by `100px` gradient, which repeats starting at the top and left corner of the image's `content-box`. We include two `<geometry-box>` values; the first sets the `mask-origin` and the second defines the `mask-clip` property value. The gradient goes from transparent to solid `lightgreen`. We used `lightgreen` to demonstrate that it isn't the color of the mask that is important, but rather its transparency.
 
 ```css
 img {
@@ -161,7 +161,7 @@ img {
 }
 ```
 
-Finally, we use the same value for the `<div>`'s {{cssxref("background")}} shorthand property as we used for the `mask`.
+Finally, we use the same value for the `<div>`'s `background` shorthand property as we used for the `mask`.
 
 ```css
 div {
@@ -188,8 +188,8 @@ div {
 
 ## See also
 
-- {{CSSxRef("clip-path")}}
-- {{CSSxRef("filter")}}
+- `clip-path`
+- `filter`
 - [Introduction to CSS masking](/guides/Masking/Introduction)
 - [CSS `mask` properties](/guides/Masking/Mask_properties)
 - [Declaring multiple masks](/guides/Masking/Multiple_masks)

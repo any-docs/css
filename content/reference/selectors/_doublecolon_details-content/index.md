@@ -54,7 +54,7 @@ Our `<details>` element includes a {{HTMLElement("summary")}} element, whose con
 
 #### CSS
 
-We set a {{cssxref("background-color")}} on the `::details-content` pseudo-element:
+We set a `background-color` on the `::details-content` pseudo-element:
 
 ```css
 details::details-content {
@@ -85,10 +85,10 @@ The HTML is the same as in the previous example.
 
 #### CSS
 
-To achieve our transition, we specify two separate transitions inside the {{cssxref("transition")}} shorthand property:
+To achieve our transition, we specify two separate transitions inside the `transition` shorthand property:
 
-- The {{cssxref("opacity")}} property is given a basic transition over `600ms` to create the fade-in/fade-out effect.
-- The {{cssxref("content-visibility")}} property (which is toggled between `hidden` and `visible` when the `<details>` content is expanded/collapsed) is given a `600ms` transition with the {{cssxref("transition-behavior")}} value `allow-discrete` specified. This opts the browser into having a transition started on `content-visibility`, the animation behavior of which is [discrete](/guides/Animations/Animatable_properties#discrete). The effect is that the content is visible for the entire duration of the transition, allowing other transitions to be seen. If this transition was not included, the content would immediately disappear when the `<details>` content was collapsed — you wouldn't see the smooth fade-out.
+- The `opacity` property is given a basic transition over `600ms` to create the fade-in/fade-out effect.
+- The `content-visibility` property (which is toggled between `hidden` and `visible` when the `<details>` content is expanded/collapsed) is given a `600ms` transition with the `transition-behavior` value `allow-discrete` specified. This opts the browser into having a transition started on `content-visibility`, the animation behavior of which is [discrete](/guides/Animations/Animatable_properties#discrete). The effect is that the content is visible for the entire duration of the transition, allowing other transitions to be seen. If this transition was not included, the content would immediately disappear when the `<details>` content was collapsed — you wouldn't see the smooth fade-out.
 
 ```css
 details::details-content {

@@ -19,7 +19,7 @@ No properties are defined in this module
 
 ### Functions
 
-- {{cssxref("symbols()")}}
+- `symbols()`
 
 ### Data types
 
@@ -29,21 +29,21 @@ No properties are defined in this module
 
 ### At-rules and descriptors
 
-- {{cssxref("@counter-style")}}
-  - {{cssxref("@counter-style/system","system")}}
-  - {{cssxref("@counter-style/symbols", "symbols")}}
-  - {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}
-  - {{cssxref("@counter-style/negative", "negative")}}
-  - {{cssxref("@counter-style/prefix", "prefix")}}
-  - {{cssxref("@counter-style/suffix", "suffix")}}
-  - {{cssxref("@counter-style/range", "range")}}
-  - {{cssxref("@counter-style/pad", "pad")}}
-  - {{cssxref("@counter-style/speak-as", "speak-as")}}
-  - {{cssxref("@counter-style/fallback", "fallback")}}
+- `@counter-style`
+  - `system`
+  - `symbols`
+  - `additive-symbols`
+  - `negative`
+  - `prefix`
+  - `suffix`
+  - `range`
+  - `pad`
+  - `speak-as`
+  - `fallback`
 
 ### Interfaces
 
-- {{domxref("CSSCounterStyleRule")}} interface
+- `CSSCounterStyleRule` interface
 
 ## Guides
 
@@ -54,23 +54,23 @@ No properties are defined in this module
 
 [CSS lists and counters](/guides/Lists) module:
 
-- {{cssxref("counter-increment")}} property
-- {{cssxref("counter-reset")}} property
-- {{cssxref("counter-set")}} property
-- {{cssxref("list-style-type")}} property
-- {{cssxref("list-style")}} shorthand property
-- {{cssxref("counter()")}} function
-- {{cssxref("counters()")}} function
+- `counter-increment` property
+- `counter-reset` property
+- `counter-set` property
+- `list-style-type` property
+- `list-style` shorthand property
+- `counter()` function
+- `counters()` function
 
 [CSS pseudo-elements](/guides/Pseudo-elements) module:
 
-- {{cssxref("::after")}} pseudo-element
-- {{cssxref("::before")}} pseudo-element
-- {{cssxref("::marker")}} pseudo-element
+- `::after` pseudo-element
+- `::before` pseudo-element
+- `::marker` pseudo-element
 
 [CSS generated content](/guides/Generated_content) module:
 
-- {{cssxref("content")}} property
+- `content` property
 
 ## Specifications
 

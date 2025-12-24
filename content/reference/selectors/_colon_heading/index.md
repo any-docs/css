@@ -67,7 +67,7 @@ We set the heading elements to be italic and tomato red.
 
 {{EmbedLiveSample("styling_all_headings", "", "170")}}
 
-The `:heading` pseudo-class applies the {{cssxref("color")}} and {{cssxref("font-style")}} to all the headings in the document, but not the paragraphs:
+The `:heading` pseudo-class applies the `color` and `font-style` to all the headings in the document, but not the paragraphs:
 
 ## Specifications
 

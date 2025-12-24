@@ -6,7 +6,7 @@ browser-compat: css.properties.animation-timeline.scroll
 sidebar: cssref
 ---
 
-The **`scroll()`** [CSS function](/reference/values/Functions) can be used with the {{cssxref("animation-timeline")}} property to create an [anonymous scroll progress timeline](/guides/Scroll-driven_animations/Timelines#anonymous_scroll_progress_timelines), defining the scroller and axis of the timeline.
+The **`scroll()`** [CSS function](/reference/values/Functions) can be used with the `animation-timeline` property to create an [anonymous scroll progress timeline](/guides/Scroll-driven_animations/Timelines#anonymous_scroll_progress_timelines), defining the scroller and axis of the timeline.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ animation-timeline: scroll(x self);
 
 ## Description
 
-The `scroll()` CSS function can be used as a single value within the comma-separated {{cssxref("animation-timeline")}} property to specify a scroll progress timeline for a {{cssxref("@keyframes")}} animation. It defines the scrollable element (_scroller_) and scrollbar axis that will provide the animation timeline.
+The `scroll()` CSS function can be used as a single value within the comma-separated `animation-timeline` property to specify a scroll progress timeline for a `@keyframes` animation. It defines the scrollable element (_scroller_) and scrollbar axis that will provide the animation timeline.
 
 By default, `scroll()` references the `block` axis of the `nearest` ancestor scroll container. The scroller and axis values can be specified in any order.
 
@@ -167,5 +167,5 @@ Scroll to see the square element being animated.
 - [Using CSS animations](/guides/Animations/Using)
 - [CSS animations](/guides/Animations) module
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module
-- {{domxref("ScrollTimeline")}}
+- `ScrollTimeline`
 - [Web Animations API](/en-US/docs/Web/API/Web_Animations_API)

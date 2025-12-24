@@ -45,7 +45,7 @@ Hyphenation rules are language-specific. In HTML, the language is determined by 
 > [!NOTE]
 > The rules defining how hyphenation is performed are not explicitly defined by the specification, so the exact hyphenation may vary from browser to browser.
 
-If supported, {{cssxref("hyphenate-character")}} may be used to specify an alternative hyphenation character to use at the end of the line being broken.
+If supported, `hyphenate-character` may be used to specify an alternative hyphenation character to use at the end of the line being broken.
 
 ## Syntax
 
@@ -153,7 +153,7 @@ dd.auto {
 
 ## See also
 
-- {{cssxref("content")}}
-- {{cssxref("overflow-wrap")}} (formerly `word-wrap`)
-- {{cssxref("word-break")}}
+- `content`
+- `overflow-wrap` (formerly `word-wrap`)
+- `word-break`
 - [Guide to wrapping and breaking text](/guides/Text/Wrapping_breaking_text)

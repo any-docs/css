@@ -66,7 +66,7 @@ The `:nth-last-child()` pseudo-class is specified with a single argument, which 
     - `B` is an integer offset,
     - `n` is all nonnegative integers, starting from 0.
 
-    It can be read as the `An+B`-th element of a list. The index of the first element, counting from the end, is `1`. The `A` and `B` must both have {{cssxref("&lt;integer&gt;")}} values.
+    It can be read as the `An+B`-th element of a list. The index of the first element, counting from the end, is `1`. The `A` and `B` must both have `&lt;integer&gt;` values.
 
 #### The `of <selector>` syntax
 
@@ -106,7 +106,7 @@ This selector applies a style to list items if they are also within the last thr
 - `p:nth-last-child(n)` or `p:nth-last-child(n+1)`
   - Represents every `<p>` element among a group of siblings. This is the same as a simple `p` selector. (Since `n` starts at zero, while the last element begins at one, `n` and `n+1` will both select the same elements.)
 - `p:nth-last-child(1)` or `p:nth-last-child(0n+1)`
-  - Represents every `<p>` that is the first element among a group of siblings, counting from the end. This is the same as the {{cssxref(":last-child")}} selector.
+  - Represents every `<p>` that is the first element among a group of siblings, counting from the end. This is the same as the `:last-child` selector.
 
 ### Table example
 
@@ -280,6 +280,6 @@ Items with `class="noted"` have a thick bottom border and items 1, 7, 14, and 20
 
 ## See also
 
-- {{Cssxref(":nth-child")}}
-- {{Cssxref(":nth-last-of-type")}}
+- `:nth-child`
+- `:nth-last-of-type`
 - [Quantity Queries for CSS](https://alistapart.com/article/quantity-queries-for-css/)

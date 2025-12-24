@@ -21,7 +21,7 @@ abs(var(--gradientAngle))
 The `abs()` function accepts one parameter.
 
 - `<calc-sum>`
-  - An expression or calculation that resolves to a {{cssxref("number")}}, a {{cssxref("dimension")}}, a {{cssxref("percentage")}} or a {{cssxref("calc-keyword")}}.
+  - An expression or calculation that resolves to a `number`, a `dimension`, a `percentage` or a `calc-keyword`.
 
 ### Return value
 
@@ -38,7 +38,7 @@ The absolute value of `<calc-sum>`.
 
 ### Positive variables
 
-The `abs()` function can be used to ensure that a value is always positive. In the following example a CSS custom property `--font-size` is used as the value of {{CSSxRef("font-size")}}. Wrapping this custom property in `abs()` will convert a negative value to a positive one.
+The `abs()` function can be used to ensure that a value is always positive. In the following example a CSS custom property `--font-size` is used as the value of `font-size`. Wrapping this custom property in `abs()` will convert a negative value to a positive one.
 
 ```css
 h1 {
@@ -59,7 +59,7 @@ div {
 
 ### Backwards compatible fallback
 
-In browsers that lack support for CSS `abs()` function, you can use the CSS {{CSSxRef("max")}} function to achieve the same result:
+In browsers that lack support for CSS `abs()` function, you can use the CSS `max` function to achieve the same result:
 
 ```css
 p {
@@ -67,7 +67,7 @@ p {
 }
 ```
 
-We use the {{CSSxRef("max")}} function to return the largest (most positive) value from a list of two values: `var(--lh)` or `-1 * var(--lh)`. Irrespective of whether `--lh` is positive or negative, the calculated return value will always be positive, that is, an absolute number.
+We use the `max` function to return the largest (most positive) value from a list of two values: `var(--lh)` or `-1 * var(--lh)`. Irrespective of whether `--lh` is positive or negative, the calculated return value will always be positive, that is, an absolute number.
 
 ## Specifications
 
@@ -79,4 +79,4 @@ We use the {{CSSxRef("max")}} function to return the largest (most positive) val
 
 ## See also
 
-- {{CSSxRef("sign")}}
+- `sign`

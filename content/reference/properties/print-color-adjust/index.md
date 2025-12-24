@@ -61,7 +61,7 @@ Not only can the user override the behavior, but each user agent is allowed to d
 
 ### Preserving low contrast
 
-In this example, a box is shown which uses a {{cssxref("background-image")}} and a translucent {{cssxref("gradient/linear-gradient", "linear-gradient()")}} function atop a black background color to have a dark blue gradient behind medium red text.
+In this example, a box is shown which uses a `background-image` and a translucent `linear-gradient()` function atop a black background color to have a dark blue gradient behind medium red text.
 For whatever reason, this is the desired appearance in any rendering environment, including on paper, so we also use `print-color-adjust: exact` to tell the browser not to make color or style adjustments to the box when rendering it.
 
 #### CSS
@@ -106,5 +106,5 @@ For whatever reason, this is the desired appearance in any rendering environment
 
 ## See also
 
-- Other color-related properties: {{cssxref("color")}}, {{cssxref("background-color")}}, {{cssxref("border-color")}}, {{cssxref("outline-color")}}, {{cssxref("text-decoration-color")}}, {{cssxref("text-emphasis-color")}}, {{cssxref("text-shadow")}}, {{cssxref("caret-color")}}, and {{cssxref("column-rule-color")}}
-- {{cssxref("background-image")}}
+- Other color-related properties: `color`, `background-color`, `border-color`, `outline-color`, `text-decoration-color`, `text-emphasis-color`, `text-shadow`, `caret-color`, and `column-rule-color`
+- `background-image`

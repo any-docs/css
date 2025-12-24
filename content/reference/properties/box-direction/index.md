@@ -81,7 +81,7 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef("box-orient")}}
-- {{CSSxRef("box-pack")}}
-- {{CSSxRef("box-align")}}
-- {{CSSxRef("flex-direction")}}
+- `box-orient`
+- `box-pack`
+- `box-align`
+- `flex-direction`

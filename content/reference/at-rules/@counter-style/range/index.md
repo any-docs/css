@@ -6,7 +6,7 @@ browser-compat: css.at-rules.counter-style.range
 sidebar: cssref
 ---
 
-The **`range`** descriptor lets the author specify one or more ranges of counter values for which the style is applied when defining custom counter styles with the {{cssxref("@counter-style")}} at-rule. When the `range` descriptor is included, the defined counter will only be used for values in the set ranges. If the counter value is outside the specified range, the fallback style will be used to construct the representation of that marker.
+The **`range`** descriptor lets the author specify one or more ranges of counter values for which the style is applied when defining custom counter styles with the `@counter-style` at-rule. When the `range` descriptor is included, the defined counter will only be used for values in the set ranges. If the counter value is outside the specified range, the fallback style will be used to construct the representation of that marker.
 
 ## Syntax
 
@@ -34,14 +34,14 @@ range:
 The value is a comma-separated list of ranges each including a lower and upper limit or the keyword `auto`.
 
 - `auto`
-  - The entire set of numbers representable by the counter {{cssxref("@counter-style/system","system")}}. Those range values depends on the counter system:
+  - The entire set of numbers representable by the counter `system`. Those range values depends on the counter system:
     - For `cyclic`, `numeric`, and `fixed` systems, the range is negative `infinity` to positive `infinity`.
     - For `alphabetic` and `symbolic` systems, the range is `1` to positive `infinity`.
     - For `additive` systems, the range is `0` to `positive` infinity.
     - When using `extend` to extend a system, the range is whatever `auto` would produce for the system being extended, including extensions of complex predefined styles, such as some Japanese, Korean, Chinese, and Ethiopian counter styles.
 
 - `[ [ <integer> | infinite ]{2} ]#`
-  - Each range within the comma separated list of ranges includes two values, each being either an {{cssxref("integer")}} or the keyword `infinite`. If `infinite` is used as the first value in a range, it represents negative infinity; if it is used as the second value, it represents positive infinity. The first value of each range is the lower bound for the range and the second value is the upper bound, inclusive. If the lower bound of any range in the list is higher than the upper bound, the entire `range` descriptor is invalid and will be ignored.
+  - Each range within the comma separated list of ranges includes two values, each being either an `integer` or the keyword `infinite`. If `infinite` is used as the first value in a range, it represents negative infinity; if it is used as the second value, it represents positive infinity. The first value of each range is the lower bound for the range and the second value is the upper bound, inclusive. If the lower bound of any range in the list is higher than the upper bound, the entire `range` descriptor is invalid and will be ignored.
 
 ## Description
 
@@ -61,7 +61,7 @@ When range is specified as integers (versus `auto`), the value `infinite` can be
 
 The value of `range` is either `auto`, discussed above, or a comma separated list of one or more ranges. The range of the counter style is the union of all the ranges defined in the list.
 
-Each range in the list of ranges takes two values. Those values are either an {{cssxref("integer")}} or the keyword `infinite`. The first value is the _lower bound_, inclusive. The second value is the _upper bound_, inclusive. For two integer values, the lower value must come first. If the lower bound of any range in the list is higher than the upper bound, the entire `range` descriptor is invalid and will be ignored. The `infinite` keyword will not invalidate the range, because the position of `infinite` determines its value; either negative or positive infinity based on whether it's the lower bound or upper bound, respectively.
+Each range in the list of ranges takes two values. Those values are either an `integer` or the keyword `infinite`. The first value is the _lower bound_, inclusive. The second value is the _upper bound_, inclusive. For two integer values, the lower value must come first. If the lower bound of any range in the list is higher than the upper bound, the entire `range` descriptor is invalid and will be ignored. The `infinite` keyword will not invalidate the range, because the position of `infinite` determines its value; either negative or positive infinity based on whether it's the lower bound or upper bound, respectively.
 
 ## Formal definition
 
@@ -124,8 +124,8 @@ The first range is the list of ranges includes 2, 3, and 4. The second includes 
 
 ## See also
 
-- Other {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, and {{cssxref("@counter-style/fallback", "fallback")}}
-- {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}}: the functional notation for creating anonymous counter styles.
+- Other `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `negative`, `prefix`, `suffix`, `pad`, `speak-as`, and `fallback`
+- `list-style`, `list-style-image`, `list-style-position`
+- `symbols()`: the functional notation for creating anonymous counter styles.
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists and counters](/guides/Lists) module

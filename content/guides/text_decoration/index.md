@@ -15,9 +15,9 @@ By varying the color, style, and thickness of text decoration using pseudo-class
 
 Several features can help improve text readability:
 
-- {{cssxref("text-decoration-skip-ink")}} can increase legibility by skipping descenders.
-- {{cssxref("text-underline-offset")}} enables you to fine-tune the underline placement to better match font metrics or design aesthetics, which can be especially useful for unique [typefaces](/guides/Fonts).
-- {{cssxref("text-shadow")}} colors that contrast with text {{cssxref("color")}} can make the text visually pop when placed on a background with insufficient contrast.
+- `text-decoration-skip-ink` can increase legibility by skipping descenders.
+- `text-underline-offset` enables you to fine-tune the underline placement to better match font metrics or design aesthetics, which can be especially useful for unique [typefaces](/guides/Fonts).
+- `text-shadow` colors that contrast with text `color` can make the text visually pop when placed on a background with insufficient contrast.
 
 These features all help improve legibility, and therefore, accessibility. Reducing visual noise and improving text clarity is especially helpful for users with [dyslexia](https://en.wikipedia.org/wiki/Dyslexia) or low vision.
 
@@ -75,45 +75,45 @@ p {
 
 ### Properties
 
-- {{cssxref("text-decoration")}}
-- {{cssxref("text-decoration-color")}}
-- {{cssxref("text-decoration-inset")}}
-- {{cssxref("text-decoration-line")}}
-- {{cssxref("text-decoration-skip")}}
-- {{cssxref("text-decoration-skip-ink")}}
-- {{cssxref("text-decoration-style")}}
-- {{cssxref("text-decoration-thickness")}}
-- {{cssxref("text-emphasis")}}
-- {{cssxref("text-emphasis-color")}}
-- {{cssxref("text-emphasis-position")}}
-- {{cssxref("text-emphasis-style")}}
-- {{cssxref("text-shadow")}}
-- {{cssxref("text-underline-offset")}}
-- {{cssxref("text-underline-position")}}
+- `text-decoration`
+- `text-decoration-color`
+- `text-decoration-inset`
+- `text-decoration-line`
+- `text-decoration-skip`
+- `text-decoration-skip-ink`
+- `text-decoration-style`
+- `text-decoration-thickness`
+- `text-emphasis`
+- `text-emphasis-color`
+- `text-emphasis-position`
+- `text-emphasis-style`
+- `text-shadow`
+- `text-underline-offset`
+- `text-underline-position`
 
 The specification also defines the `text-decoration-skip-box`, `text-decoration-skip-self`, `text-decoration-skip-spaces`, and `text-emphasis-skip` properties, which are not yet supported by any browser.
 
 ## Guides
 
 - [Introduction to text shadows](/guides/Text_decoration/Text_shadows)
-  - Overview of the components of the {{cssxref("text-shadow")}} property and creating multiple text shadows
+  - Overview of the components of the `text-shadow` property and creating multiple text shadows
 
 ## Related concepts
 
-- {{cssxref("::spelling-error")}}
-- {{cssxref("::grammar-error")}}
-- {{cssxref("::first-letter")}}
-- {{cssxref("::first-line")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-- {{cssxref("box-decoration-break")}}
-- {{cssxref("line-style")}}
-- {{cssxref("letter-spacing")}}
-- {{cssxref("word-spacing")}}
-- {{cssxref("font-size")}}
-- {{cssxref("font-variant-position")}}
-- {{cssxref("font-kerning")}}
-- {{cssxref("ruby-overhang")}}
+- `::spelling-error`
+- `::grammar-error`
+- `::first-letter`
+- `::first-line`
+- `box-shadow`
+- `drop-shadow()`
+- `box-decoration-break`
+- `line-style`
+- `letter-spacing`
+- `word-spacing`
+- `font-size`
+- `font-variant-position`
+- `font-kerning`
+- `ruby-overhang`
 - {{HTMLElement("ruby")}}
 - {{HTMLElement("rt")}}
 - {{HTMLElement("rp")}}

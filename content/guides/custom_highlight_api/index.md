@@ -13,7 +13,7 @@ The CSS Custom Highlight API extends the concept of other highlight pseudo-eleme
 
 ## Custom highlight API in action
 
-To enable styling text ranges on a webpage using the CSS Custom Highlight API, you create a {{domxref("Range")}} object, then a {{domxref("Highlight")}} object for the range. After registering the highlight using the {{domxref("HighlightRegistry.set()")}} method, you can then select the range using the {{cssxref("::highlight()")}} pseudo-element. The name defined in the `set()` method is used as the parameter of the `::highlight()` pseudo-element selector to select that range.The range selected by the `::highlight()` pseudo-element can be styled using a [limited number of properties](/en-US/docs/Web/CSS/Reference/Selectors/::highlight#allowable_properties).
+To enable styling text ranges on a webpage using the CSS Custom Highlight API, you create a `Range` object, then a `Highlight` object for the range. After registering the highlight using the `HighlightRegistry.set()` method, you can then select the range using the `::highlight()` pseudo-element. The name defined in the `set()` method is used as the parameter of the `::highlight()` pseudo-element selector to select that range.The range selected by the `::highlight()` pseudo-element can be styled using a [limited number of properties](/en-US/docs/Web/CSS/Reference/Selectors/::highlight#allowable_properties).
 
 ```html hidden
 <h1>Directions</h1>
@@ -31,7 +31,7 @@ To enable styling text ranges on a webpage using the CSS Custom Highlight API, y
 </label>
 ```
 
-This example uses the {{cssxref("text-decoration")}} property to strike through the `steps` highlight range defined by our JavaScript:
+This example uses the `text-decoration` property to strike through the `steps` highlight range defined by our JavaScript:
 
 ```css
 ::highlight(steps) {
@@ -66,19 +66,19 @@ currentPositionSlider.addEventListener("change", (e) => {
 
 ### Pseudo-elements
 
-- {{CSSXref("::highlight()")}}
+- `::highlight()`
 
 ### Interfaces
 
-- {{domxref("Highlight")}}
-- {{domxref("HighlightRegistry")}}
+- `Highlight`
+- `HighlightRegistry`
 
 ### Interface extensions
 
 This module adds properties and methods to interfaces defined in other specifications.
 
-- {{domxref("CSS")}}
-  - {{domxref("CSS.highlights")}}
+- `CSS`
+  - `CSS.highlights`
 
 ## Guides
 
@@ -87,13 +87,13 @@ This module adds properties and methods to interfaces defined in other specifica
 
 ## Related concepts
 
-- {{CSSXref("::grammar-error")}}
-- {{CSSXref("::selection")}}
-- {{CSSXref("::spelling-error")}}
-- {{CSSXref("::target-text")}}
-- {{domxref("Range")}} Interface and {{domxref("Range.range", "Range()")}} constructor
+- `::grammar-error`
+- `::selection`
+- `::spelling-error`
+- `::target-text`
+- `Range` Interface and `Range()` constructor
 - [Text fragments](/en-US/docs/Web/URI/Reference/Fragment/Text_fragments)
-- {{domxref("FragmentDirective")}} Interface
+- `FragmentDirective` Interface
 
 ## Specifications
 

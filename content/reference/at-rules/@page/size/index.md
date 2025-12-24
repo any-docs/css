@@ -6,7 +6,7 @@ browser-compat: css.at-rules.page.size
 sidebar: cssref
 ---
 
-The **`size`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) descriptor, used with the {{cssxref("@page")}} at-rule, defines the size and orientation of the box which is used to represent a page. Most of the time, this size corresponds to the target size of the printed page if applicable.
+The **`size`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) descriptor, used with the `@page` at-rule, defines the size and orientation of the box which is used to represent a page. Most of the time, this size corresponds to the target size of the printed page if applicable.
 
 Size may either be defined with a "scalable" keyword (in this case the page will fill the available dimensions) or with absolute dimensions.
 
@@ -44,7 +44,7 @@ size: A4 portrait;
 - `portrait`
   - The content of the page is displayed in portrait mode (i.e., the longest side of the box is vertical). This is the default orientation.
 - `<length>`
-  - Any length value (see {{cssxref("&lt;length&gt;")}}). The first value corresponds to the width of the page box and the second one corresponds to its height. If only one value is provided, it is used for both width and height.
+  - Any length value (see `&lt;length&gt;`). The first value corresponds to the width of the page box and the second one corresponds to its height. If only one value is provided, it is used for both width and height.
 - `<page-size>`
   - A keyword which may be any of the following values:
     - A5

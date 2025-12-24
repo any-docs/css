@@ -6,7 +6,7 @@ browser-compat: css.at-rules.counter-style.system
 sidebar: cssref
 ---
 
-The **`system`** descriptor specifies the algorithm to be used for converting the integer value of a counter to a string representation. It is used in a {{cssxref("@counter-style")}} to define the behavior of the defined style.
+The **`system`** descriptor specifies the algorithm to be used for converting the integer value of a counter to a string representation. It is used in a `@counter-style` to define the behavior of the defined style.
 
 If the algorithm specified in the `system` descriptor is unable to construct the representation for a particular counter value, then that value's representation will be constructed using the fallback system provided.
 
@@ -59,7 +59,7 @@ The values include:
     An additional descriptor called `additive-symbols` must be specified with at least one _additive tuple_, or else the counter style rule will not be valid. An additive tuple is similar to a composite counter symbol, which is made up of two parts: a normal counter symbol and a non-negative integer weight. The additive tuples must be specified in the descending order of their weights or the system is invalid.
 
 - `fixed` or `fixed <integer>`
-  - Defines a finite set of symbols, iterating once through the list of symbols provided in the `symbols` descriptor. Once the specified symbols have been iterated through, the fallback counter style is used. This keyword value is useful in cases where the counter style values are finite. At least one symbol must be specified in the `symbols` descriptor, otherwise the counter style is not valid. The `fixed` keyword can be followed by an optional {{cssxref("&lt;integer&gt;")}} value. If specified, the `<integer>` value indicates the item in the list that will get the first symbol from the list of symbols. If omitted, the default value of `integer` is `1`, which gives the first item in the list the first symbol.
+  - Defines a finite set of symbols, iterating once through the list of symbols provided in the `symbols` descriptor. Once the specified symbols have been iterated through, the fallback counter style is used. This keyword value is useful in cases where the counter style values are finite. At least one symbol must be specified in the `symbols` descriptor, otherwise the counter style is not valid. The `fixed` keyword can be followed by an optional `&lt;integer&gt;` value. If specified, the `<integer>` value indicates the item in the list that will get the first symbol from the list of symbols. If omitted, the default value of `integer` is `1`, which gives the first item in the list the first symbol.
 
 - `extends`
   - Extends the algorithm of another browser- or author-defined counter style by allowing the alteration of some aspects of the extended counter style. Any unspecified descriptors and their values are inherited from the extended counter style specified. If the counter style name specified with `extends` is not yet defined, the `decimal` counter style will be extended by default.
@@ -338,7 +338,7 @@ ol {
 
 ### Extending a counter
 
-This example uses the algorithm, symbols, and other properties of [`lower-alpha`](/reference/properties/list-style-type#lower-alpha), one of the several native {{CSSXref("list-style-type")}} counter values, but extends it by removing the period (`'.'`) after the counter representation and enclosing the characters in parentheses, as in `(a)` and `(b)`.
+This example uses the algorithm, symbols, and other properties of [`lower-alpha`](/reference/properties/list-style-type#lower-alpha), one of the several native `list-style-type` counter values, but extends it by removing the period (`'.'`) after the counter representation and enclosing the characters in parentheses, as in `(a)` and `(b)`.
 
 #### HTML
 
@@ -380,6 +380,6 @@ ul {
 
 ## See also
 
-- Other {{cssxref("@counter-style")}} descriptors, including {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, and {{cssxref("@counter-style/fallback", "fallback")}}
-- {{cssxref("list-style")}}, {{cssxref("list-style-image")}}, {{cssxref("list-style-position")}}
-- {{cssxref("symbols()")}}, the functional notation creating anonymous counter styles.
+- Other `@counter-style` descriptors, including `symbols`, `additive-symbols`, `negative`, `prefix`, `suffix`, `range`, `pad`, `speak-as`, and `fallback`
+- `list-style`, `list-style-image`, `list-style-position`
+- `symbols()`, the functional notation creating anonymous counter styles.

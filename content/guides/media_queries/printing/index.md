@@ -24,7 +24,7 @@ Add the following to your {{HTMLElement("head")}} tag.
 
 ## Using media queries and @page to control printed content
 
-You can use the CSS {{cssxref("@media")}} at-rule to set different styles for your webpage when it is printed on paper or as a PDF versus when it is displayed on the screen. The `print` [media type](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_types) sets the styles for printed media; these styles will only be used for printed content.
+You can use the CSS `@media` at-rule to set different styles for your webpage when it is printed on paper or as a PDF versus when it is displayed on the screen. The `print` [media type](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_types) sets the styles for printed media; these styles will only be used for printed content.
 
 Add this at the end of your stylesheet. Note that [specificity](/guides/Cascade/Specificity) and precedence rules still apply:
 
@@ -39,11 +39,11 @@ Add this at the end of your stylesheet. Note that [specificity](/guides/Cascade/
 }
 ```
 
-You can also use the {{cssxref("@page")}} at-rule to modify different aspects of printed pages including the page's dimensions, orientation, and margins. The `@page` at-rule can be used to target all pages in a print-out or just a specific subset of pages
+You can also use the `@page` at-rule to modify different aspects of printed pages including the page's dimensions, orientation, and margins. The `@page` at-rule can be used to target all pages in a print-out or just a specific subset of pages
 
 ## Detecting print requests
 
-Browsers send {{domxref("Window/beforeprint_event", "beforeprint")}} and {{domxref("Window/afterprint_event", "afterprint")}} events to determine when printing may have occurred. You can use this to adjust the user interface presented during printing (for example displaying or hiding user interface elements during the print process).
+Browsers send `beforeprint` and `afterprint` events to determine when printing may have occurred. You can use this to adjust the user interface presented during printing (for example displaying or hiding user interface elements during the print process).
 
 ## Examples
 
@@ -94,5 +94,5 @@ document.getElementById("print_external").addEventListener("click", () => {
 - {{ domxref("window.beforeprint_event", "beforeprint") }} event
 - {{ domxref("window.afterprint_event", "afterprint") }} event
 - [Media queries](/guides/Media_queries/Using)
-- {{cssxref("@media")}}
+- `@media`
 - [CSS paged media](/guides/Paged_media) module

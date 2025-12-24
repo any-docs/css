@@ -52,7 +52,7 @@ p {
 }
 ```
 
-CSS does not provide a direct mechanism for specifying a unique color for each line type. This effect can nevertheless be achieved by nesting elements, applying a different line type to each element (with the {{cssxref("text-decoration-line")}} property), and specifying the line color (with `text-decoration-color`) on a per-element basis.
+CSS does not provide a direct mechanism for specifying a unique color for each line type. This effect can nevertheless be achieved by nesting elements, applying a different line type to each element (with the `text-decoration-line` property), and specifying the line color (with `text-decoration-color`) on a per-element basis.
 
 ## Syntax
 
@@ -74,7 +74,7 @@ text-decoration-color: unset;
 
 ### Values
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the line decoration.
 
 ## Accessibility
@@ -131,6 +131,6 @@ s {
 
 ## See also
 
-- When setting multiple line-decoration properties at once, it may be more convenient to use the {{cssxref("text-decoration")}} shorthand property instead.
-- The {{cssxref("&lt;color&gt;")}} data type
-- Other color-related properties: {{cssxref("background-color")}}, {{cssxref("border-color")}}, {{cssxref("outline-color")}}, {{cssxref("text-emphasis-color")}}, {{cssxref("text-shadow")}}, {{cssxref("caret-color")}}, and {{cssxref("column-rule-color")}}
+- When setting multiple line-decoration properties at once, it may be more convenient to use the `text-decoration` shorthand property instead.
+- The `&lt;color&gt;` data type
+- Other color-related properties: `background-color`, `border-color`, `outline-color`, `text-emphasis-color`, `text-shadow`, `caret-color`, and `column-rule-color`

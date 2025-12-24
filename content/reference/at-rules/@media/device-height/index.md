@@ -17,7 +17,7 @@ The **`device-height`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/W
 
 ## Syntax
 
-The `device-height` feature is specified as a {{cssxref("&lt;length&gt;")}} value. It is a range feature, meaning that you can also use the prefixed **`min-device-height`** and **`max-device-height`** variants to query minimum and maximum values, respectively.
+The `device-height` feature is specified as a `&lt;length&gt;` value. It is a range feature, meaning that you can also use the prefixed **`min-device-height`** and **`max-device-height`** variants to query minimum and maximum values, respectively.
 
 ## Examples
 

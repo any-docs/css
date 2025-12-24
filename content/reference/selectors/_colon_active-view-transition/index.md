@@ -103,9 +103,9 @@ changeColorButton.addEventListener("keypress", changeColor);
 
 ## See also
 
-- {{cssxref(":active-view-transition-type()")}} pseudo-class
+- `:active-view-transition-type()` pseudo-class
 - [`startViewTransition()`](/en-US/docs/Web/API/Document/startViewTransition) method
-- {{domxref("Document.activeViewTransition")}}
+- `Document.activeViewTransition`
 - [View Transition API](/en-US/docs/Web/API/View_Transition_API)
 - [Using the View Transition API](/en-US/docs/Web/API/View_Transition_API/Using)
 - [Using view transition types](/en-US/docs/Web/API/View_Transition_API/Using_types)

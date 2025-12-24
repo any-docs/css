@@ -59,33 +59,33 @@ opacity: unset;
 ### Values
 
 - `<alpha-value>`
-  - A {{cssxref("number")}} in the range `0.0` to `1.0`, inclusive, or a {{cssxref("percentage")}} in the range `0%` to `100%`, inclusive, representing the opacity of the channel (that is, the value of its alpha channel). Any value outside the interval, though valid, is clamped to the nearest limit in the range.
+  - A `number` in the range `0.0` to `1.0`, inclusive, or a `percentage` in the range `0%` to `100%`, inclusive, representing the opacity of the channel (that is, the value of its alpha channel). Any value outside the interval, though valid, is clamped to the nearest limit in the range.
 
     | Value                                                  | Meaning                                                                       |
     | ------------------------------------------------------ | ----------------------------------------------------------------------------- |
     | `0`                                                    | The element is fully transparent (that is, invisible).                        |
-    | Any {{cssxref("number")}} strictly between `0` and `1` | The element is translucent (that is, content behind the element can be seen). |
+    | Any `number` strictly between `0` and `1` | The element is translucent (that is, content behind the element can be seen). |
     | `1` (default value)                                    | The element is fully opaque (visually solid).                                 |
 
 ## Description
 
 `opacity` applies to the element as a whole, including its contents, even though the value is not inherited by child elements. Thus, the element and its children all have the same opacity relative to the element's background, even if they have different opacities relative to one another.
 
-To change the opacity of a background only, use the {{cssxref("background")}} property with a [color value](/reference/values/color_value) that allows for an alpha channel. For example:
+To change the opacity of a background only, use the `background` property with a [color value](/reference/values/color_value) that allows for an alpha channel. For example:
 
 ```css
 background: rgb(0 0 0 / 40%);
 ```
 
-When `opacity` value is set to `0`, the element and all of its children appear invisible, but they are still part of the DOM. That means they still register [pointer events](/en-US/docs/Web/API/Pointer_events) and, if the elements are in a tabbing order, they do get focus. For good usability, make sure to make such elements visible when they receive user interactions or use the CSS {{cssxref("pointer-events")}} property to disable pointer events and take the element out of the tab order by disabling with the `disabled` attribute or setting [`tab-index="-1"`](/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex) for non-form-related interactive elements.
+When `opacity` value is set to `0`, the element and all of its children appear invisible, but they are still part of the DOM. That means they still register [pointer events](/en-US/docs/Web/API/Pointer_events) and, if the elements are in a tabbing order, they do get focus. For good usability, make sure to make such elements visible when they receive user interactions or use the CSS `pointer-events` property to disable pointer events and take the element out of the tab order by disabling with the `disabled` attribute or setting [`tab-index="-1"`](/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex) for non-form-related interactive elements.
 
 Using `opacity` with a value other than `1` places the element in a new [stacking context](/guides/Positioned_layout/Stacking_context).
 
-Opacity alone should not be used to provide information to screen readers. Use the HTML [`hidden`](/en-US/docs/Web/HTML/Reference/Global_attributes/hidden) attribute, CSS {{cssxref("visibility")}}, or CSS {{cssxref("display")}} style properties. It's best to avoid using [`aria-hidden`](/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden) attribute, but if the element is hidden with opacity, then hide it from screen readers as well.
+Opacity alone should not be used to provide information to screen readers. Use the HTML [`hidden`](/en-US/docs/Web/HTML/Reference/Global_attributes/hidden) attribute, CSS `visibility`, or CSS `display` style properties. It's best to avoid using [`aria-hidden`](/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden) attribute, but if the element is hidden with opacity, then hide it from screen readers as well.
 
 ### Transitioning opacity
 
-When [transitioning](/guides/Transitions) the opacity of elements as you add them to the page when content was formerly hidden with [`visibility: hidden`](/reference/properties/visibility#hidden), [`display: none`](/reference/properties/display#none), or [`content-visibility: hidden`](/reference/properties/content-visibility#hidden), you need to include both a {{cssxref("@starting-style")}} and [`transition-behavior: allow-discrete`](/reference/properties/transition-behavior#allow-discrete):
+When [transitioning](/guides/Transitions) the opacity of elements as you add them to the page when content was formerly hidden with [`visibility: hidden`](/reference/properties/visibility#hidden), [`display: none`](/reference/properties/display#none), or [`content-visibility: hidden`](/reference/properties/content-visibility#hidden), you need to include both a `@starting-style` and [`transition-behavior: allow-discrete`](/reference/properties/transition-behavior#allow-discrete):
 
 ```css
 .card {
@@ -106,9 +106,9 @@ When [transitioning](/guides/Transitions) the opacity of elements as you add the
 }
 ```
 
-To enable first-style transitions, `@starting-style` rules are needed. In the above code, setting `opacity: 0` in `@starting-style` provides a starting point for the transition when the element receives its initial style update. For more details, see {{cssxref("@starting-style")}}.
+To enable first-style transitions, `@starting-style` rules are needed. In the above code, setting `opacity: 0` in `@starting-style` provides a starting point for the transition when the element receives its initial style update. For more details, see `@starting-style`.
 
-Setting `transition-behavior: allow-discrete` is required to transition to `display: none`. See the {{cssxref("transition-behavior")}} property for more details.
+Setting `transition-behavior: allow-discrete` is required to transition to `display: none`. See the `transition-behavior` property for more details.
 
 ## Accessibility
 

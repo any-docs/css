@@ -54,26 +54,26 @@ img {
 
 ### Properties
 
-- {{cssxref("shape-image-threshold")}}
-- {{cssxref("shape-margin")}}
-- {{cssxref("shape-outside")}}
+- `shape-image-threshold`
+- `shape-margin`
+- `shape-outside`
 
 The CSS shapes module also introduces the `shape-inside` and `shape-padding` properties. Currently, no browsers support these features.
 
 ### Data types
 
-- {{cssxref("basic-shape")}}
+- `basic-shape`
 
 ### Functions
 
-- {{cssxref("basic-shape/circle","circle()")}}
-- {{cssxref("basic-shape/ellipse","ellipse()")}}
-- {{cssxref("basic-shape/inset","inset()")}}
-- {{cssxref("basic-shape/path","path()")}}
-- {{cssxref("basic-shape/polygon","polygon()")}}
-- {{cssxref("basic-shape/rect","rect()")}}
-- {{cssxref("basic-shape/shape","shape()")}}
-- {{cssxref("basic-shape/xywh","xywh()")}}
+- `circle()`
+- `ellipse()`
+- `inset()`
+- `path()`
+- `polygon()`
+- `rect()`
+- `shape()`
+- `xywh()`
 
 ### Terms
 
@@ -98,30 +98,30 @@ The CSS shapes module also introduces the `shape-inside` and `shape-padding` pro
 
 [CSS motion path](/guides/Motion_path) module
 
-- {{cssxref("offset")}}
-- {{cssxref("offset-anchor")}}
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-path")}}
-- {{cssxref("offset-position")}}
-- {{cssxref("offset-rotate")}}
-- {{cssxref("ray")}} function
+- `offset`
+- `offset-anchor`
+- `offset-distance`
+- `offset-path`
+- `offset-position`
+- `offset-rotate`
+- `ray` function
 
 [CSS masking](/guides/Masking) module
 
-- {{cssxref("clip")}}
-- {{cssxref("clip-path")}}
+- `clip`
+- `clip-path`
 - {{SVGAttr("clip-rule")}}
-- {{cssxref("mask")}}
-- {{cssxref("mask-origin")}}
-- {{cssxref("mask-position")}}
+- `mask`
+- `mask-origin`
+- `mask-position`
 
 [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
 
-- {{cssxref("border-radius")}} shorthand
+- `border-radius` shorthand
 
 [CSS box model](/guides/Box_model) module
 
-- {{cssxref("box-edge")}} data type
+- `box-edge` data type
 
 ## Specifications
 

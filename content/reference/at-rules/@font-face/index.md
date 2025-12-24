@@ -23,31 +23,31 @@ The **`@font-face`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rule
 
 ### Descriptors
 
-- {{cssxref("@font-face/ascent-override", "ascent-override")}}
+- `ascent-override`
   - Defines the ascent metric for the font.
-- {{cssxref("@font-face/descent-override", "descent-override")}}
+- `descent-override`
   - Defines the descent metric for the font.
-- {{cssxref("@font-face/font-display", "font-display")}}
+- `font-display`
   - Determines how a font face is displayed based on whether and when it is downloaded and ready to use.
-- {{cssxref("@font-face/font-family", "font-family")}}
+- `font-family`
   - Specifies a name that will be used as the font face value for font properties. A `font-family` name is required for the `@font-face` rule to be valid.
-- {{cssxref("@font-face/font-stretch", "font-stretch")}}
-  - A {{cssxref("font-stretch")}} value. Accepts two values to specify a range that is supported by a font face, for example `font-stretch: 50% 200%;`
-- {{cssxref("@font-face/font-style", "font-style")}}
-  - A {{cssxref("font-style")}} value. Accepts two values to specify a range that is supported by a font face, for example `font-style: oblique 20deg 50deg;`
-- {{cssxref("@font-face/font-weight", "font-weight")}}
-  - A {{cssxref("font-weight")}} value. Accepts two values to specify a range that is supported by a font face, for example `font-weight: 100 400;`
-- {{cssxref("@font-face/font-feature-settings", "font-feature-settings")}}
+- `font-stretch`
+  - A `font-stretch` value. Accepts two values to specify a range that is supported by a font face, for example `font-stretch: 50% 200%;`
+- `font-style`
+  - A `font-style` value. Accepts two values to specify a range that is supported by a font face, for example `font-style: oblique 20deg 50deg;`
+- `font-weight`
+  - A `font-weight` value. Accepts two values to specify a range that is supported by a font face, for example `font-weight: 100 400;`
+- `font-feature-settings`
   - Allows control over advanced typographic features in OpenType fonts.
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
+- `font-variation-settings`
   - Allows low-level control over OpenType or TrueType font variations, by specifying the four-letter axis names of the features to vary, along with their variation values.
-- {{cssxref("@font-face/line-gap-override", "line-gap-override")}}
+- `line-gap-override`
   - Defines the line gap metric for the font.
-- {{cssxref("@font-face/size-adjust", "size-adjust")}}
+- `size-adjust`
   - Defines a multiplier for glyph outlines and metrics associated with this font. This makes it easier to harmonize the designs of various fonts when rendered at the same font size.
-- {{cssxref("@font-face/src", "src")}}
+- `src`
   - Specifies references to font resources including hints about the font format and technology. A `src` is required for the `@font-face` rule to be valid.
-- {{cssxref("@font-face/unicode-range", "unicode-range")}}
+- `unicode-range`
   - The range of Unicode code points to be used from the font.
 
 ## Description

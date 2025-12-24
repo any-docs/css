@@ -52,9 +52,9 @@ border-right: 4mm ridge rgb(211 220 50 / 0.6);
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-right-color")}}
-- {{cssxref("border-right-style")}}
-- {{cssxref("border-right-width")}}
+- `border-right-color`
+- `border-right-style`
+- `border-right-width`
 
 ## Syntax
 
@@ -76,11 +76,11 @@ The three values of the shorthand property can be specified in any order, and on
 ### Values
 
 - `<br-width>`
-  - See {{cssxref("border-right-width")}}.
+  - See `border-right-width`.
 - `<br-style>`
-  - See {{cssxref("border-right-style")}}.
-- {{cssxref("&lt;color&gt;")}}
-  - See {{cssxref("border-right-color")}}.
+  - See `border-right-style`.
+- `&lt;color&gt;`
+  - See `border-right-color`.
 
 ## Description
 
@@ -98,7 +98,7 @@ border-right-style: dotted;
 border-right: none thick green;
 ```
 
-The value of {{cssxref("border-right-style")}} given before `border-right` is ignored. Since the default value of {{cssxref("border-right-style")}} is `none`, not specifying the `border-style` part results in no border.
+The value of `border-right-style` given before `border-right` is ignored. Since the default value of `border-right-style` is `none`, not specifying the `border-style` part results in no border.
 
 ## Formal definition
 
@@ -145,6 +145,6 @@ div {
 
 ## See also
 
-- {{cssxref("border")}}
-- {{cssxref("border-block")}}
-- {{cssxref("outline")}}
+- `border`
+- `border-block`
+- `outline`

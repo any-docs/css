@@ -9,45 +9,45 @@ sidebar: cssref
 
 The **CSS color adjustment** module provides a model and controls automatic color adjustment by the user agent to handle user preferences, such as "Dark Mode", contrast adjustment, and other color scheme preferences.
 
-Together with the {{CSSxRef("@media")}} features {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}}, {{cssxref("@media/prefers-contrast", "prefers-contrast")}} and {{cssxref("@media/forced-colors", "forced-colors")}}, this module defines how and when colors are automatically adjusted by the browser.
+Together with the `@media` features `prefers-color-scheme`, `prefers-contrast` and `forced-colors`, this module defines how and when colors are automatically adjusted by the browser.
 
 ## Reference
 
 ### Properties
 
-- {{cssxref("color-scheme")}}
-- {{cssxref("forced-color-adjust")}}
-- {{cssxref("print-color-adjust")}}
+- `color-scheme`
+- `forced-color-adjust`
+- `print-color-adjust`
 
 ## Related concepts
 
-- {{cssxref("&lt;color&gt;")}} CSS data type
-- Related {{CSSxRef("@media")}} features:
-  - {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}}
-  - {{cssxref("@media/prefers-contrast", "prefers-contrast")}}
-  - {{cssxref("@media/forced-colors", "forced-colors")}}
+- `&lt;color&gt;` CSS data type
+- Related `@media` features:
+  - `prefers-color-scheme`
+  - `prefers-contrast`
+  - `forced-colors`
 - Properties affected by forced colors mode
-  - {{cssxref("accent-color")}}
-  - {{cssxref("background-color")}}
-  - {{cssxref("background-image")}}
-  - {{cssxref("border-color")}}
-  - {{cssxref("box-shadow")}}
-  - {{cssxref("caret-color")}}
-  - {{cssxref("color")}}
-  - {{cssxref("color-scheme")}}
-  - {{cssxref("column-rule-color")}}
-  - {{cssxref("fill")}}
-  - {{cssxref("flood-color")}}
-  - {{cssxref("flood-opacity")}}
-  - {{cssxref("lighting-color")}}
-  - {{cssxref("outline-color")}}
-  - {{cssxref("scrollbar-color")}}
-  - {{cssxref("stop-color")}}
-  - {{cssxref("stroke")}}
-  - {{cssxref("text-decoration-color")}}
-  - {{cssxref("text-emphasis-color")}}
-  - {{cssxref("text-shadow")}}
-  - {{cssxref("-webkit-tap-highlight-color")}}
+  - `accent-color`
+  - `background-color`
+  - `background-image`
+  - `border-color`
+  - `box-shadow`
+  - `caret-color`
+  - `color`
+  - `color-scheme`
+  - `column-rule-color`
+  - `fill`
+  - `flood-color`
+  - `flood-opacity`
+  - `lighting-color`
+  - `outline-color`
+  - `scrollbar-color`
+  - `stop-color`
+  - `stroke`
+  - `text-decoration-color`
+  - `text-emphasis-color`
+  - `text-shadow`
+  - `-webkit-tap-highlight-color`
 
 ## Specifications
 

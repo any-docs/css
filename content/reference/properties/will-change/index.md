@@ -49,7 +49,7 @@ The `<animatable-feature>` can be one of the following values:
   - Indicates that the author expects to animate or change the scroll position of the element in the near future.
 - `contents`
   - Indicates that the author expects to animate or change something about the element's contents in the near future.
-- {{cssxref("custom-ident", "&lt;custom-ident&gt;")}}
+- `&lt;custom-ident&gt;`
   - Indicates that the author expects to animate or change the property with the given name on the element in the near future. If the property given is a shorthand, it indicates the expectation for all the longhands the shorthand expands to. It cannot be one of the following values: `unset`, `initial`, `inherit`, `will-change`, `auto`, `scroll-position`, or `contents`. The spec doesn't define the behavior of particular value, but it is common for `transform` to be a compositing layer hint. [Chrome currently takes two actions](https://github.com/operasoftware/devopera/pull/330), given particular CSS property idents: establish a new compositing layer or a new {{Glossary("stacking context")}}.
 
 ### Via stylesheet
@@ -104,9 +104,9 @@ function removeHint() {
 
 ## See also
 
-- {{cssxref("transform")}}
+- `transform`
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`
   - Note: there is no individual `skew` property

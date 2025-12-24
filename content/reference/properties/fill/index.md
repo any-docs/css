@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`fill`** [CSS](/en-US/docs/Web/CSS) property defines how SVG text content and the interior canvas of SVG shapes are filled or painted. If present, it overrides the element's {{SVGAttr("fill")}} attribute.
 
-The areas inside the outline of the SVG shape or text are painted. What is "inside" a shape may not always be clear. The paths defining a shape may overlap. The areas considered "inside" these complex shapes are clarified by the {{cssxref("fill-rule")}} property or attribute.
+The areas inside the outline of the SVG shape or text are painted. What is "inside" a shape may not always be clear. The paths defining a shape may overlap. The areas considered "inside" these complex shapes are clarified by the `fill-rule` property or attribute.
 
 If subpaths are open, `fill` closes the path before painting, as if a "closepath" command were included connecting the last point of the subpath with the first point of the subpath. In other words, `fill` applies to open subpaths within `path` elements (i.e., subpaths without a closepath command) and `polyline` elements.
 
@@ -54,8 +54,8 @@ fill: unset;
 - `context-stroke`
   - Uses the paint value of `stroke` from a context element.
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - The color of the fill as any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- `&lt;color>`
+  - The color of the fill as any valid CSS `&lt;color>` value.
 
 - `<url>`
   - A URL reference to an SVG paint server element, such as a {{SVGElement("linearGradient")}}, {{SVGElement("radialGradient")}}, or {{SVGElement("pattern")}}. The resource reference can optionally be followed by a `<color>` or `none`, which will be used as a fallback if the referenced paint server doesn't resolve.
@@ -76,7 +76,7 @@ This example demonstrates how a `fill` is declared, the effect of the property, 
 
 #### HTML
 
-We have an SVG with two complex shapes defined using the SVG {{SVGElement('polygon')}} and {{SVGElement('path')}} elements. Both have the `fill` attribute set to the default `black`. We add a dark grey stroke of `#666666` using the SVG {{SVGAttr("stroke")}} attribute but could have used the {{CSSXRef("stroke")}} property.
+We have an SVG with two complex shapes defined using the SVG {{SVGElement('polygon')}} and {{SVGElement('path')}} elements. Both have the `fill` attribute set to the default `black`. We add a dark grey stroke of `#666666` using the SVG {{SVGAttr("stroke")}} attribute but could have used the `stroke` property.
 
 ```html
 <svg viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
@@ -245,8 +245,8 @@ The first star has a gradient as a background. The second star uses the fallback
 ## See also
 
 - SVG {{SVGAttr("fill")}} attribute
-- Presentation properties: `fill`, {{cssxref("clip-rule")}}, {{cssxref("color-interpolation-filters")}}, {{cssxref("fill-opacity")}}, {{cssxref("fill-rule")}}, {{cssxref("marker-end")}}, {{cssxref("marker-mid")}}, {{cssxref("marker-start")}}, {{cssxref("shape-rendering")}}, {{cssxref("stop-color")}}, {{cssxref("stop-opacity")}}, {{cssxref("stroke")}}, {{cssxref("stroke-dasharray")}}, {{cssxref("stroke-dashoffset")}}, {{cssxref("stroke-linecap")}}, {{cssxref("stroke-linejoin")}}, {{cssxref("stroke-miterlimit")}}, {{cssxref("stroke-opacity")}}, {{cssxref("stroke-width")}}, {{cssxref("text-anchor")}}, and {{cssxref("vector-effect")}}
-- {{cssxref("opacity")}}
-- {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
-- {{cssxref("basic-shape")}} data type
+- Presentation properties: `fill`, `clip-rule`, `color-interpolation-filters`, `fill-opacity`, `fill-rule`, `marker-end`, `marker-mid`, `marker-start`, `shape-rendering`, `stop-color`, `stop-opacity`, `stroke`, `stroke-dasharray`, `stroke-dashoffset`, `stroke-linecap`, `stroke-linejoin`, `stroke-miterlimit`, `stroke-opacity`, `stroke-width`, `text-anchor`, and `vector-effect`
+- `opacity`
+- `background-color`
+- `&lt;color>`
+- `basic-shape` data type

@@ -10,7 +10,7 @@ The **`color-index`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web
 
 ## Syntax
 
-The `color-index` feature is specified as an {{cssxref("&lt;integer&gt;")}} value representing the number of entries in the output device's color lookup table. (This value is zero if the device does not use such a table.) It is a range feature, meaning that you can also use the prefixed **`min-color-index`** and **`max-color-index`** variants to query minimum and maximum values, respectively.
+The `color-index` feature is specified as an `&lt;integer&gt;` value representing the number of entries in the output device's color lookup table. (This value is zero if the device does not use such a table.) It is a range feature, meaning that you can also use the prefixed **`min-color-index`** and **`max-color-index`** variants to query minimum and maximum values, respectively.
 
 ## Examples
 

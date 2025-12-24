@@ -6,7 +6,7 @@ browser-compat: css.types.filter-function.sepia
 sidebar: cssref
 ---
 
-The **`sepia()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) converts the input image to sepia, giving it a warmer, more yellow/brown appearance. Its result is a {{cssxref("filter-function")}}.
+The **`sepia()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) converts the input image to sepia, giving it a warmer, more yellow/brown appearance. Its result is a `filter-function`.
 
 {{InteractiveExample("CSS Demo: sepia()")}}
 
@@ -45,7 +45,7 @@ sepia(amount)
 ### Parameters
 
 - `amount` <Badge type="info" text="Optional" />
-  - The amount of the conversion, specified as a {{cssxref("&lt;number&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}. A value of `100%` is completely sepia, while a value of `0%` leaves the input unchanged. Values between `0%` and `100%` are linear multipliers on the effect. The initial value for {{Glossary("interpolation")}} is `0`. The default value is `1`.
+  - The amount of the conversion, specified as a `&lt;number&gt;` or a `&lt;percentage&gt;`. A value of `100%` is completely sepia, while a value of `0%` leaves the input unchanged. Values between `0%` and `100%` are linear multipliers on the effect. The initial value for {{Glossary("interpolation")}} is `0`. The default value is `1`.
 
 ## Formal syntax
 
@@ -73,14 +73,14 @@ sepia(100%)
 
 ## See also
 
-The other {{cssxref("filter-function")}} functions available to be used in values of the {{cssxref("filter")}} and {{cssxref("backdrop-filter")}} properties include:
+The other `filter-function` functions available to be used in values of the `filter` and `backdrop-filter` properties include:
 
-- {{cssxref("filter-function/blur", "blur()")}}
-- {{cssxref("filter-function/brightness", "brightness()")}}
-- {{cssxref("filter-function/contrast", "contrast()")}}
-- {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-- {{cssxref("filter-function/grayscale", "grayscale()")}}
-- {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-- {{cssxref("filter-function/invert", "invert()")}}
-- {{cssxref("filter-function/opacity", "opacity()")}}
-- {{cssxref("filter-function/saturate", "saturate()")}}
+- `blur()`
+- `brightness()`
+- `contrast()`
+- `drop-shadow()`
+- `grayscale()`
+- `hue-rotate()`
+- `invert()`
+- `opacity()`
+- `saturate()`

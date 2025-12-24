@@ -84,11 +84,11 @@ order: unset;
 
 Since `order` is only meant to affect the _visual order_ of elements and not their logical or tab order, it must not be used on non-visual media such as [speech](https://drafts.csswg.org/css-speech/).
 
-Defined in the [CSS display](/guides/Display) module, this property impacts only grid and flex items. When `order` is set on an element whose parent's {{cssxref("display")}} property is not creating a flex or grid container, it has no effect.
+Defined in the [CSS display](/guides/Display) module, this property impacts only grid and flex items. When `order` is set on an element whose parent's `display` property is not creating a flex or grid container, it has no effect.
 
 ### Values
 
-- {{cssxref("&lt;integer&gt;")}}
+- `&lt;integer&gt;`
   - Represents the ordinal group to be used by the item.
 
 ## Accessibility
@@ -130,7 +130,7 @@ We include a header, a footer, and a main content area. The main content include
 
 #### CSS
 
-We style the main area using [flexible box layout](/guides/Flexible_box_layout) module features; by setting {{cssxref("display")}} to `flex`, the {{htmlelement("main")}} element becomes a flex container. By default, this creates flex items of equal vertical size. The sidebars are both given an absolute {{cssxref("width")}}, while the {{htmlelement("article")}} will consume all the [positive free space](/guides/Flexible_box_layout/Controlling_flex_item_ratios#positive_and_negative_free_space) with a {{cssxref("flex-grow")}} factor set via the {{cssxref("flex")}} shorthand.
+We style the main area using [flexible box layout](/guides/Flexible_box_layout) module features; by setting `display` to `flex`, the {{htmlelement("main")}} element becomes a flex container. By default, this creates flex items of equal vertical size. The sidebars are both given an absolute `width`, while the {{htmlelement("article")}} will consume all the [positive free space](/guides/Flexible_box_layout/Controlling_flex_item_ratios#positive_and_negative_free_space) with a `flex-grow` factor set via the `flex` shorthand.
 
 We then set different `order` property values on each of the flex container's three children; this means the CSS is defining that component's visual order rather than it appearing in the order declared in the HTML.
 

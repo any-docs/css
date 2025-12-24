@@ -50,7 +50,7 @@ transition-property: none;
 }
 ```
 
-If you specify a shorthand property (e.g., {{cssxref("background")}}), all of its longhand sub-properties that can be animated will be.
+If you specify a shorthand property (e.g., `background`), all of its longhand sub-properties that can be animated will be.
 
 ## Syntax
 
@@ -86,7 +86,7 @@ transition-property: unset;
   - No properties will transition.
 - `all`
   - All properties that can transition will.
-- {{cssxref("&lt;custom-ident&gt;")}}
+- `&lt;custom-ident&gt;`
   - A string identifying the property to which a transition effect should be applied when its value changes.
 
 ## Formal definition
@@ -101,7 +101,7 @@ transition-property: unset;
 
 ### Basic example
 
-When the button is hovered or focused, it undergoes a one-second color transition; the `transition-property` is {{cssxref("background-color")}}.
+When the button is hovered or focused, it undergoes a one-second color transition; the `transition-property` is `background-color`.
 
 #### HTML
 
@@ -157,4 +157,4 @@ See our [Using CSS transitions](/guides/Transitions/Using) guide for more `trans
 - {{cssxref('transition-duration')}}
 - {{cssxref('transition-timing-function')}}
 - {{cssxref('transition-delay')}}
-- {{domxref("TransitionEvent")}}
+- `TransitionEvent`

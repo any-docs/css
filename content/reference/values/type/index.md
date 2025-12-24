@@ -12,11 +12,11 @@ sidebar: cssref
 
 The **`type()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) allows you to specify a particular data type, and is used by the following CSS features:
 
-- The {{cssxref("attr()")}} function, to specify the data type that an attribute value should be parsed into.
-- The {{cssxref("@function")}} at-rule, to specify the permitted data types for [CSS custom function](/guides/Custom_functions_and_mixins/Using_custom_functions) parameters and results.
+- The `attr()` function, to specify the data type that an attribute value should be parsed into.
+- The `@function` at-rule, to specify the permitted data types for [CSS custom function](/guides/Custom_functions_and_mixins/Using_custom_functions) parameters and results.
 
 > [!NOTE]
-> The {{cssxref("@property")}} at-rule {{cssxref("@property/syntax", "syntax")}} descriptor value uses the same `<syntax>` to define the permitted data types for registered [custom properties](/reference/properties/--*), however, this always takes the form of a string.
+> The `@property` at-rule `syntax` descriptor value uses the same `<syntax>` to define the permitted data types for registered [custom properties](/reference/properties/--*), however, this always takes the form of a string.
 
 ## Syntax
 
@@ -60,35 +60,35 @@ The `<syntax>` parameter is an expression defining the data type. This can take 
 - `<syntax-type>`
   - A type name, written in angle brackets, representing a CSS data type. The following data types are supported:
     - `<angle>`
-      - Accepts any valid {{cssxref("angle")}} value.
+      - Accepts any valid `angle` value.
     - `<color>`
-      - Accepts any valid {{cssxref("&lt;color&gt;")}} value.
+      - Accepts any valid `&lt;color&gt;` value.
     - `<custom-ident>`
-      - Accepts any valid {{cssxref("&lt;custom-ident&gt;")}} value.
+      - Accepts any valid `&lt;custom-ident&gt;` value.
     - `<image>`
-      - Accepts any valid {{cssxref("image")}} value.
+      - Accepts any valid `image` value.
     - `<integer>`
-      - Accepts any valid {{cssxref("&lt;integer&gt;")}} value.
+      - Accepts any valid `&lt;integer&gt;` value.
     - `<length>`
-      - Accepts any valid {{cssxref("&lt;length&gt;")}} value.
+      - Accepts any valid `&lt;length&gt;` value.
     - `<length-percentage>`
-      - Accepts any valid {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} value and any valid {{cssxref("calc()")}} expression combining `<length>` and `<percentage>` values.
+      - Accepts any valid `&lt;length&gt;` or `&lt;percentage&gt;` value and any valid `calc()` expression combining `<length>` and `<percentage>` values.
     - `<number>`
-      - Accepts any valid {{cssxref("&lt;number&gt;")}} value.
+      - Accepts any valid `&lt;number&gt;` value.
     - `<percentage>`
-      - Accepts any valid {{cssxref("&lt;percentage&gt;")}} value.
+      - Accepts any valid `&lt;percentage&gt;` value.
     - `<resolution>`
-      - Accepts any valid {{cssxref("resolution")}} value.
+      - Accepts any valid `resolution` value.
     - `<string>`
-      - Accepts any valid {{cssxref("&lt;string&gt;")}} value.
+      - Accepts any valid `&lt;string&gt;` value.
     - `<time>`
-      - Accepts any valid {{cssxref("&lt;time&gt;")}} value.
+      - Accepts any valid `&lt;time&gt;` value.
     - `<transform-function>`
-      - Accepts any valid {{cssxref("&lt;transform-function&gt;")}} value.
+      - Accepts any valid `&lt;transform-function&gt;` value.
     - `<transform-list>`
-      - Accepts a list of valid {{cssxref("&lt;transform-function&gt;")}} values. It is equivalent to `"<transform-function>+"`, and may not be followed by a `+` or `#` token.
+      - Accepts a list of valid `&lt;transform-function&gt;` values. It is equivalent to `"<transform-function>+"`, and may not be followed by a `+` or `#` token.
     - `<url>`
-      - Accepts any valid {{cssxref("url_value", "&lt;url&gt;")}} value.
+      - Accepts any valid `&lt;url&gt;` value.
 
 - `*`
   - The universal syntax.
@@ -110,7 +110,7 @@ A data type definition.
 
 The `type()` function is used when you need to define a data type. It can be considered as a subset of the overall value definition syntax used to define the set of valid values for every CSS property and function.
 
-Most commonly, you'll see `type()` used to specify a single data type. The next example uses the {{cssxref("attr()")}} function to set the {{cssxref("background-color")}} property equal to the value of a user-defined `data-background` function. The required data type for the value has been specified as a {{cssxref("&lt;color>")}}.
+Most commonly, you'll see `type()` used to specify a single data type. The next example uses the `attr()` function to set the `background-color` property equal to the value of a user-defined `data-background` function. The required data type for the value has been specified as a `&lt;color>`.
 
 ```css
 background-color: attr(data-background type(<color>), red);
@@ -128,7 +128,7 @@ You can use the `|` token as a separator when specifying a range of permitted da
 - `type(red | green)`
 - `type(<length> | auto)`
 
-The following example shows how a {{cssxref("@function")}} at-rule can be used to define a [custom function](/guides/Custom_functions_and_mixins/Using_custom_functions) that takes two color parameters, and returns the first one unless the viewport width is less than `700px`, in which case it returns the second one. The first one is allowed to be `red` or `green`, while the second one has to be `blue`.
+The following example shows how a `@function` at-rule can be used to define a [custom function](/guides/Custom_functions_and_mixins/Using_custom_functions) that takes two color parameters, and returns the first one unless the viewport width is less than `700px`, in which case it returns the second one. The first one is allowed to be `red` or `green`, while the second one has to be `blue`.
 
 ```css
 @function --color-choice(--color1 type(red | green), --color2 blue) {
@@ -157,7 +157,7 @@ You can combine multiple tokens using `|` as a separator. For example, `<color>#
 
 ## Examples
 
-You can find several other examples in the {{cssxref("attr()")}} and {{cssxref("@function")}} documentation.
+You can find several other examples in the `attr()` and `@function` documentation.
 
 ### Basic `@function` data type definition
 
@@ -181,7 +181,7 @@ In the CSS, we start by specifying a `@function` called `--combine-strings`. Thi
 }
 ```
 
-We then specify some basic styles for the `<section>` element and use the `--combine-strings()` function to specify the value of its {{cssxref("content")}} property, including two space-separated strings as the argument.
+We then specify some basic styles for the `<section>` element and use the `--combine-strings()` function to specify the value of its `content` property, including two space-separated strings as the argument.
 
 ```css live-sample___basic-data-type
 section {
@@ -209,6 +209,6 @@ section::after {
 
 ## See also
 
-- {{cssxref("@function")}} at-rule
-- {{cssxref("attr()")}} function
+- `@function` at-rule
+- `attr()` function
 - [Using CSS custom functions](/guides/Custom_functions_and_mixins/Using_custom_functions)

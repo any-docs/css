@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`pow()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is an exponential function that returns the value of a base raised to the power of a number.
 
-The {{CSSxRef("exp")}} function is a special case of `pow()` where the value of the base is the mathematical constant [e](<https://en.wikipedia.org/wiki/E_(mathematical_constant)>).
+The `exp` function is a special case of `pow()` where the value of the base is the mathematical constant [e](<https://en.wikipedia.org/wiki/E_(mathematical_constant)>).
 
 ## Syntax
 
@@ -24,13 +24,13 @@ width: calc(10px * pow(2, 10)); /* 10px * 1024 = 10240px */
 The `pow(base, number)` function accepts two comma-separated values as its parameters.
 
 - `base`
-  - A calculation that resolves to a {{CSSxRef("&lt;number&gt;")}}, representing the base.
+  - A calculation that resolves to a `&lt;number&gt;`, representing the base.
 - `number`
-  - A calculation that resolves to a {{CSSxRef("&lt;number&gt;")}}, representing the exponent.
+  - A calculation that resolves to a `&lt;number&gt;`, representing the exponent.
 
 ### Return value
 
-Returns a {{CSSxRef("&lt;number&gt;")}} representing base<sup>number</sup>, that is, `base` raised to the power of `number`.
+Returns a `&lt;number&gt;` representing base<sup>number</sup>, that is, `base` raised to the power of `number`.
 
 ## Formal syntax
 
@@ -90,7 +90,7 @@ h6 {
 
 ## See also
 
-- {{CSSxRef("sqrt")}}
-- {{CSSxRef("hypot")}}
-- {{CSSxRef("exp")}}
-- {{CSSxRef("log")}}
+- `sqrt`
+- `hypot`
+- `exp`
+- `log`

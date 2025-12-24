@@ -6,14 +6,14 @@ browser-compat: css.at-rules.media.-webkit-transform-3d
 sidebar: cssref
 ---
 
-The **`-webkit-transform-3d`** Boolean [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features) is a [WebKit extension](/en-US/docs/Web/CSS/Reference/Webkit_extensions) whose value is `true` if vendor-prefixed CSS 3D {{cssxref("transform")}}s are supported.
+The **`-webkit-transform-3d`** Boolean [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features) is a [WebKit extension](/en-US/docs/Web/CSS/Reference/Webkit_extensions) whose value is `true` if vendor-prefixed CSS 3D `transform`s are supported.
 
 > [!NOTE]
-> While this media feature is currently [supported by most browsers](#browser_compatibility). If possible, use an {{cssxref("@supports")}} feature query instead.
+> While this media feature is currently [supported by most browsers](#browser_compatibility). If possible, use an `@supports` feature query instead.
 
 ## Syntax
 
-`-webkit-transform-3d` is a Boolean [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features) whose value is `true` if the browser supports `-webkit` prefixed CSS 3D {{cssxref("transform")}}s.
+`-webkit-transform-3d` is a Boolean [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features) whose value is `true` if the browser supports `-webkit` prefixed CSS 3D `transform`s.
 
 ### Values
 
@@ -54,10 +54,10 @@ A better method for checking for browser support is using a feature query:
 
 ## See also
 
-- {{cssxref("@media/-webkit-transform-2d", "-webkit-transform-2d")}}
-- {{cssxref("@media/-webkit-transition", "-webkit-transition")}}
-- {{cssxref("@media/-webkit-animation", "-webkit-animation")}}
+- `-webkit-transform-2d`
+- `-webkit-transition`
+- `-webkit-animation`
 - [Test page at quirksmode.org](https://www.quirksmode.org/css/tests/mediaqueries/animation.html)
-- {{cssxref("transform")}} and [using CSS transforms](/guides/Transforms/Using)
-- {{cssxref("@media")}} and [Using media queries](/guides/Media_queries/Using)
-- {{cssxref("@supports")}} and [using feature queries](/guides/Conditional_rules/Using_feature_queries)
+- `transform` and [using CSS transforms](/guides/Transforms/Using)
+- `@media` and [Using media queries](/guides/Media_queries/Using)
+- `@supports` and [using feature queries](/guides/Conditional_rules/Using_feature_queries)

@@ -7,14 +7,14 @@ sidebar: cssref
 ---
 
 The **`zoom`** [CSS](/en-US/docs/Web/CSS) property can be used to control the magnification level of an element.
-{{cssxref("transform-function/scale", "transform: scale()")}} can be used as an alternative to this property.
+`transform: scale()` can be used as an alternative to this property.
 
 The `zoom` CSS property scales the targeted element, which can affect the page layout.
-When scaling, the zoomed element scales from `top` and `center` when using the default {{CSSXRef("writing-mode")}}.
+When scaling, the zoomed element scales from `top` and `center` when using the default `writing-mode`.
 
-In contrast, an element scaled using {{cssxref("transform-function/scale", "scale()")}} will not cause layout recalculation or move other elements on the page.
-If using `scale()` makes the contents larger than the containing element, then {{CSSXRef("overflow")}} comes into effect.
-Additionally, elements adjusted using `scale()` transform from the `center` by default; this can be changed with the {{CSSXRef("transform-origin")}} CSS property.
+In contrast, an element scaled using `scale()` will not cause layout recalculation or move other elements on the page.
+If using `scale()` makes the contents larger than the containing element, then `overflow` comes into effect.
+Additionally, elements adjusted using `scale()` transform from the `center` by default; this can be changed with the `transform-origin` CSS property.
 
 ## Syntax
 
@@ -41,15 +41,15 @@ zoom: unset;
 
 ### Values
 
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Zoom factor. `100%` is equivalent to `normal`. Values larger than `100%` zoom in. Values smaller than `100%` zoom out.
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - Zoom factor. Equivalent to the corresponding percentage (`1.0` = `100%` = `normal`). Values larger than `1.0` zoom in. Values smaller than `1.0` zoom out.
 
 Two non-standard keyword values are not recommended. Check [browser compatibility](#browser_compatibility) data:
 
 - `normal`
-  - Render the element at its normal size; equal to `zoom: 1`. Use the global {{cssxref("unset")}} keyword value instead.
+  - Render the element at its normal size; equal to `zoom: 1`. Use the global `unset` keyword value instead.
 - `reset`
   - Resets the value to `zoom: 1` and prevents the element from being (de)magnified if the user applies non-pinch-based zooming (e.g., by pressing <kbd>Ctrl</kbd> \- <kbd>-</kbd> or <kbd>Ctrl</kbd> \+ <kbd>+</kbd> keyboard shortcuts) to the document.
 
@@ -258,7 +258,7 @@ zoomControl.addEventListener("change", updateZoom);
 ## See also
 
 - [`zoom` entry in CSS-Tricks' CSS Almanac](https://css-tricks.com/almanac/properties/z/zoom/)
-- {{cssxref("transform")}}
-- {{cssxref("scale")}}
-- {{cssxref("unset")}} keyword
+- `transform`
+- `scale`
+- `unset` keyword
 - [Legacy `zoom` property](https://css-tricks.com/almanac/properties/z/zoom/) via CSS-Tricks (2013)

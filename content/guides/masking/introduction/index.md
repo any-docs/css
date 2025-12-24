@@ -12,10 +12,10 @@ This guide introduces the concept of masking, the various mask image types, and 
 
 ## What is masking in CSS?
 
-In CSS, masks can be used to define areas of an element that are visible and other areas that are hidden. Mask layers, defined by one or more {{cssxref("mask-image")}} sources, determine the areas of an element that should be visible and at what opacity.
+In CSS, masks can be used to define areas of an element that are visible and other areas that are hidden. Mask layers, defined by one or more `mask-image` sources, determine the areas of an element that should be visible and at what opacity.
 
 > [!NOTE]
-> Multiple CSS masking property values can be set using the {{cssxref("mask")}} shorthand property.
+> Multiple CSS masking property values can be set using the `mask` shorthand property.
 
 With `alpha` masks, the opacity of the masked element matches the opacity of the mask applied. In CSS, masking is the opposite of a masquerade mask, where the face is hidden wherever the mask is opaque. In CSS, the areas of the element where its mask is fully opaque will be fully opaque and visible. Wherever the mask is fully transparent, the element will be fully hidden. Areas of the element that are masked by partially opaque mask areas will be partially opaque, matching the mask's opacity.
 
@@ -23,7 +23,7 @@ With alpha masks, the color of the mask is irrelevant. Only the opacity of the m
 
 Masks can be defined using CSS gradients, raster images (such as PNGs), and SVG {{svgelement("mask")}} elements. In this guide, we introduce the various mask image types as we discuss [opaqueness and transparency](#opaqueness_versus_transparency), [luminance](#alpha_transparency_versus_luminance), and [masking versus CSS clipping](#svg_mask_as_mask_source).
 
-Each mask layer consists of a {{cssxref("mask-image")}}, which is [positioned](/reference/properties/mask-position) relative to an origin box. The mask images can be [sized](/reference/properties/mask-size), [repeated](/reference/properties/mask-repeat), and [clipped](/reference/properties/mask-clip). In cases where multiple mask images are declared, the way the [mask layers are composited](/reference/properties/mask-composite), or combined, can be set. These are discussed in the [masking properties guide](/guides/Masking/Mask_properties).
+Each mask layer consists of a `mask-image`, which is [positioned](/reference/properties/mask-position) relative to an origin box. The mask images can be [sized](/reference/properties/mask-size), [repeated](/reference/properties/mask-repeat), and [clipped](/reference/properties/mask-clip). In cases where multiple mask images are declared, the way the [mask layers are composited](/reference/properties/mask-composite), or combined, can be set. These are discussed in the [masking properties guide](/guides/Masking/Mask_properties).
 
 > [!NOTE]
 > All examples will be using the following image as the underlying element upon which masks will be applied:
@@ -62,7 +62,7 @@ With alpha masks, the visible areas of an element are defined by the alpha-trans
 
 ### With gradients
 
-To demonstrate this, let's look at an example using a {{cssxref("conic-gradient")}} as the `mask-image`. CSS gradients, including conic gradients, can be used to create smooth transitions between visible and hidden areas.
+To demonstrate this, let's look at an example using a `conic-gradient` as the `mask-image`. CSS gradients, including conic gradients, can be used to create smooth transitions between visible and hidden areas.
 
 In this case, the top-right corner of the mask is fully opaque, the top-left quadrant is fully transparent, and the bottom half has a smooth transition between opaque and transparent.
 
@@ -127,7 +127,7 @@ Note how the transparent mask areas crop the element; the only parts of the elem
 
 ## Alpha transparency versus luminance
 
-The `mask-mode` property's default value — `match-source` — sets the mode to either `alpha` or `luminance`, depending on the value. The `match-source` value resolves to `alpha` for all mask sources other than SVG {{svgelement("mask")}} elements. If the mask source is a `<mask>` element, `match-source` resolves to the `<mask>`'s {{cssxref("mask-type")}} property value, if set. Otherwise, it resolves to the value of the SVG {{svgattr("mask-type")}} attribute set on the `<mask>` element. If that is not explicitly set either, `match-source` will resolve to `luminance`.
+The `mask-mode` property's default value — `match-source` — sets the mode to either `alpha` or `luminance`, depending on the value. The `match-source` value resolves to `alpha` for all mask sources other than SVG {{svgelement("mask")}} elements. If the mask source is a `<mask>` element, `match-source` resolves to the `<mask>`'s `mask-type` property value, if set. Otherwise, it resolves to the value of the SVG {{svgattr("mask-type")}} attribute set on the `<mask>` element. If that is not explicitly set either, `match-source` will resolve to `luminance`.
 
 If `mask-mode` resolves to `luminance`, or we explicitly set it to `luminance`, the colors of the mask will affect the mask opacity. In the previous demo, the `mask-mode` was not set, so the value defaulted to `match-source`. As the colorful heart image is a transparent PNG, `match-source` resolves to `alpha`. By explicitly setting this property, we can control the mode. In this demo, we change the `mask-mode` to `luminance`.
 
@@ -145,7 +145,7 @@ The opacity of a luminance mask is determined by the `R`, `G`, `B`, and `A` valu
 
 `((0.2125 * R) + (0.7154 * G) + (0.0721 * B)) * A`
 
-For example, the newest {{cssxref("named-color")}} is `rebeccapurple`, which is `#663399`. While one might assume the lightness might be equivalent to the L of the `hsl()` color function, it's not that simple. The value `#663399` is equivalent to `rgb(40% 20% 60% / 1)` and `hsl(270 50% 40% / 1)`, but the brightness value is `27.134%`, not `40%`.
+For example, the newest `named-color` is `rebeccapurple`, which is `#663399`. While one might assume the lightness might be equivalent to the L of the `hsl()` color function, it's not that simple. The value `#663399` is equivalent to `rgb(40% 20% 60% / 1)` and `hsl(270 50% 40% / 1)`, but the brightness value is `27.134%`, not `40%`.
 
 `((0.2125 * 0.4) + (0.7154 * 0.2) + (0.0721 * 0.6)) * 1 = 0.27134`
 
@@ -223,7 +223,7 @@ In this case, if you toggle the `mask-mode` to `alpha`, the entire element will 
 
 ## SVG `<mask>` as mask source
 
-A mask can be any type of CSS {{cssxref("image")}} or a `<mask-source>`. A `<mask-source>` is a {{cssxref("url_value", "&lt;url&gt;")}} reference to an SVG {{SVGElement("mask")}} element. This is similar to clipping with the CSS {{cssxref("clip-path")}} property, in which case the "mask" is an SVG {{SVGElement("clipPath")}} element instead (with `clip-path`, the luminance of the path doesn't matter).
+A mask can be any type of CSS `image` or a `<mask-source>`. A `<mask-source>` is a `&lt;url&gt;` reference to an SVG {{SVGElement("mask")}} element. This is similar to clipping with the CSS `clip-path` property, in which case the "mask" is an SVG {{SVGElement("clipPath")}} element instead (with `clip-path`, the luminance of the path doesn't matter).
 
 In this example, we define an SVG with a `<mask>` element, an identical {{SVGElement("clipPath")}} element, and an identical {{SVGElement("path")}} element so you can view the mask and clip path source.
 

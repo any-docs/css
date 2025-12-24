@@ -6,7 +6,7 @@ browser-compat: css.properties.text-wrap-style
 sidebar: cssref
 ---
 
-The **`text-wrap-style`** [CSS](/en-US/docs/Web/CSS) property controls how text inside an element is wrapped. The different values provide alternate ways of wrapping the content of a block element. It can also be set, and reset, using the {{CSSXRef("text-wrap")}} shorthand.
+The **`text-wrap-style`** [CSS](/en-US/docs/Web/CSS) property controls how text inside an element is wrapped. The different values provide alternate ways of wrapping the content of a block element. It can also be set, and reset, using the `text-wrap` shorthand.
 
 {{InteractiveExample("CSS Demo: text-wrap-style")}}
 
@@ -71,7 +71,7 @@ text-wrap-style: revert-layer;
 text-wrap-style: unset;
 ```
 
-When wrapping is allowed (see {{CSSXRef("text-wrap-mode")}}), the `text-wrap-style` property is specified as a single keyword chosen from the list of values below.
+When wrapping is allowed (see `text-wrap-mode`), the `text-wrap-style` property is specified as a single keyword chosen from the list of values below.
 
 ### Values
 
@@ -157,5 +157,5 @@ p {
 
 ## See also
 
-- {{CSSxRef("text-wrap")}}
-- {{CSSxRef("text-wrap-mode")}}
+- `text-wrap`
+- `text-wrap-mode`

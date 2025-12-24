@@ -10,9 +10,9 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`interest-delay-start`** [CSS](/en-US/docs/Web/CSS) property specifies the delay between the user showing interest in an [interest invoker](/en-US/docs/Web/API/Popover_API/Using_interest_invokers) element and the {{domxref("HTMLElement.interest_event", "interest")}} event firing.
+The **`interest-delay-start`** [CSS](/en-US/docs/Web/CSS) property specifies the delay between the user showing interest in an [interest invoker](/en-US/docs/Web/API/Popover_API/Using_interest_invokers) element and the `interest` event firing.
 
-The `interest-delay-start` and {{cssxref("interest-delay-end")}} properties can both be set using the {{cssxref("interest-delay")}} shorthand.
+The `interest-delay-start` and `interest-delay-end` properties can both be set using the `interest-delay` shorthand.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ interest-delay-start: unset;
 
 - `normal`
   - Sets the delay to the browser's default delay. This is the initial value.
-- {{cssxref("&lt;time>")}}
+- `&lt;time>`
   - Sets the delay to a specific duration. The value must be positive, otherwise the property becomes invalid.
 
 ## Formal definition
@@ -119,7 +119,7 @@ The markup includes three `<button>` elements wrapped in a paragraph with a `con
 
 #### CSS
 
-In the CSS, we apply an `interest-delay-start` value of `1s` to the buttons, then position the popover below whatever button is having interest shown on it by giving it a {{cssxref("position-area")}} value of `bottom` (see [Popover anchoring positioning](/en-US/docs/Web/API/Popover_API/Using#popover_anchor_positioning) for more information).
+In the CSS, we apply an `interest-delay-start` value of `1s` to the buttons, then position the popover below whatever button is having interest shown on it by giving it a `position-area` value of `bottom` (see [Popover anchoring positioning](/en-US/docs/Web/API/Popover_API/Using#popover_anchor_positioning) for more information).
 
 ```css live-sample___interest-delay-remove-on-interest
 button {
@@ -131,7 +131,7 @@ button {
 }
 ```
 
-Finally, we combine the {{cssxref(":interest-source")}} pseudo-class with the {{cssxref(":has()")}} pseudo-class to apply `interest-delay-start: 0s` to all buttons inside the paragraph, but only when the paragraph contains a button on which interest has been shown (that is, matched by `button:interest-source`).
+Finally, we combine the `:interest-source` pseudo-class with the `:has()` pseudo-class to apply `interest-delay-start: 0s` to all buttons inside the paragraph, but only when the paragraph contains a button on which interest has been shown (that is, matched by `button:interest-source`).
 
 ```css live-sample___interest-delay-remove-on-interest
 .container:has(button:interest-source) button {
@@ -157,7 +157,7 @@ Try showing interest in any button and notice how, when you then immediately sho
 
 ## See also
 
-- {{cssxref("interest-delay-end")}}, {{cssxref("interest-delay")}}
+- `interest-delay-end`, `interest-delay`
 - [Popover API](/en-US/docs/Web/API/Popover_API)
 - [Using interest invokers](/en-US/docs/Web/API/Popover_API/Using_interest_invokers)
 - [CSS basic user interface](/guides/Basic_user_interface) module

@@ -72,7 +72,7 @@ body {
 {{EmbedLiveSample("sticky-footer-example", "", "400px")}}
 
 > [!NOTE]
-> In this example and the following one we are using a wrapper set to `min-height: 100%`. You can also achieve this for a full page by setting a {{cssxref("min-height")}} of `100vh` on the {{htmlelement("body")}} and then using it as your grid container.
+> In this example and the following one we are using a wrapper set to `min-height: 100%`. You can also achieve this for a full page by setting a `min-height` of `100vh` on the {{htmlelement("body")}} and then using it as your grid container.
 
 ## Choices made
 
@@ -143,11 +143,11 @@ body {
 
 {{EmbedLiveSample("sticky-footer-flexbox-example", "", "400px")}}
 
-The flexbox example starts out in the same way, but we use `display:flex` rather than `display:grid` on the `.wrapper`; we also set {{cssxref("flex-direction")}} to `column`. Then we set our main content to [`flex-grow: 1`](/reference/properties/flex-grow) and the other two elements to [`flex-shrink: 0`](/reference/properties/flex-shrink) — this prevents them from shrinking smaller when content fills the main area.
+The flexbox example starts out in the same way, but we use `display:flex` rather than `display:grid` on the `.wrapper`; we also set `flex-direction` to `column`. Then we set our main content to [`flex-grow: 1`](/reference/properties/flex-grow) and the other two elements to [`flex-shrink: 0`](/reference/properties/flex-shrink) — this prevents them from shrinking smaller when content fills the main area.
 
 ## Resources on MDN
 
-- CSS properties: {{cssxref("display")}}, {{cssxref("min-height")}}, {{cssxref("grid-template-rows")}}, {{cssxref("flex-direction")}}, {{cssxref("flex-grow")}}, {{cssxref("flex-shrink")}}
+- CSS properties: `display`, `min-height`, `grid-template-rows`, `flex-direction`, `flex-grow`, `flex-shrink`
 - [Basic concepts of grid layout](/guides/Grid_layout/Basic_concepts)
 - [CSS grid layout](/guides/Grid_layout) module
 - [Basic concepts of flexbox](/guides/Flexible_box_layout/Basic_concepts)

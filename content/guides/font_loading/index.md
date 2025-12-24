@@ -13,23 +13,23 @@ The **CSS font loading** module describes events and interfaces used for dynamic
 
 ### Interfaces
 
-- {{domxref("fontFace")}} interface
+- `fontFace` interface
   - [`FontFace()`](/en-US/docs/Web/API/FontFace/FontFace) constructor
-  - {{domxref("fontFace.family")}} property
-  - {{domxref("fontFace.style")}} property
-  - {{domxref("fontFace.weight")}} property
-  - {{domxref("fontFace.stretch")}} property
-  - {{domxref("fontFace.unicodeRange")}} property
-  - {{domxref("fontFace.variant")}} property
-  - {{domxref("fontFace.featureSettings")}} property
-  - {{domxref("fontFace.variationSettings")}} property
-  - {{domxref("fontFace.display")}} property
-  - {{domxref("fontFace.ascentOverride")}} property
-  - {{domxref("fontFace.descentOverride")}} property
-  - {{domxref("fontFace.lineGapOverride")}} property
-  - {{domxref("fontFace.load()")}} method (returns a promise)
-- {{domxref("fontFaceSet")}} interface
-- {{domxref("fontFaceSetLoadEvent")}} event
+  - `fontFace.family` property
+  - `fontFace.style` property
+  - `fontFace.weight` property
+  - `fontFace.stretch` property
+  - `fontFace.unicodeRange` property
+  - `fontFace.variant` property
+  - `fontFace.featureSettings` property
+  - `fontFace.variationSettings` property
+  - `fontFace.display` property
+  - `fontFace.ascentOverride` property
+  - `fontFace.descentOverride` property
+  - `fontFace.lineGapOverride` property
+  - `fontFace.load()` method (returns a promise)
+- `fontFaceSet` interface
+- `fontFaceSetLoadEvent` event
 
 ## Guides
 
@@ -38,11 +38,11 @@ The **CSS font loading** module describes events and interfaces used for dynamic
 
 ## Related concepts
 
-- CSS {{cssxref("@font-face")}} at-rule
-- CSS {{cssxref("@font-feature-values")}} at-rule
-- {{domxref("CSSFontFaceRule")}} interface
-- Document {{domxref("document.fonts", "fonts")}} property (returns the {{domxref("FontFaceSet")}} object instance)
-- WorkerGlobalScope {{domxref("WorkerGlobalScope.fonts", "fonts")}} property (returns the {{domxref("FontFaceSet")}} object instance)
+- CSS `@font-face` at-rule
+- CSS `@font-feature-values` at-rule
+- `CSSFontFaceRule` interface
+- Document `fonts` property (returns the `FontFaceSet` object instance)
+- WorkerGlobalScope `fonts` property (returns the `FontFaceSet` object instance)
 - JavaScript {{jsxref("Promise")}} object
 
 ## Specifications

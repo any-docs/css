@@ -66,9 +66,9 @@ column-count: unset;
 ### Values
 
 - `auto`
-  - The number of columns is determined by other CSS properties, such as {{cssxref("column-width")}}.
-- {{cssxref("&lt;integer&gt;")}}
-  - Is a strictly positive {{cssxref("&lt;integer&gt;")}} describing the ideal number of columns into which the content of the element will be flowed. If the {{cssxref("column-width")}} is also set to a non-`auto` value, it merely indicates the maximum allowed number of columns.
+  - The number of columns is determined by other CSS properties, such as `column-width`.
+- `&lt;integer&gt;`
+  - Is a strictly positive `&lt;integer&gt;` describing the ideal number of columns into which the content of the element will be flowed. If the `column-width` is also set to a non-`auto` value, it merely indicates the maximum allowed number of columns.
 
 ## Formal definition
 
@@ -114,7 +114,7 @@ column-count: unset;
 
 ## See also
 
-- {{CSSXref("column-width")}}, {{CSSXref("columns")}} shorthand
-- {{CSSXref("column-rule-color")}}, {{CSSXref("column-rule-style")}}, {{CSSXref("column-rule-width")}}, {{CSSXref("column-rule")}} shorthand
+- `column-width`, `columns` shorthand
+- `column-rule-color`, `column-rule-style`, `column-rule-width`, `column-rule` shorthand
 - [Learn: Multiple-column Layout](/en-US/docs/Learn_web_development/Core/CSS_layout/Multiple-column_Layout) (Learn Layout)
 - [Basic Concepts of Multicol](/guides/Multicol_layout/Basic_concepts)

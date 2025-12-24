@@ -37,7 +37,7 @@ The markup includes a {{htmlelement("button")}} and a {{htmlelement("p")}}. We s
 
 #### CSS
 
-In the CSS, we specify a rule with an `:interest-source` selector to apply a specific combination of {{cssxref("background-color")}} and {{cssxref("color")}} to the `<button>` when interest is shown on it. We also apply some other styles to the `<button>`, which are hidden for brevity.
+In the CSS, we specify a rule with an `:interest-source` selector to apply a specific combination of `background-color` and `color` to the `<button>` when interest is shown on it. We also apply some other styles to the `<button>`, which are hidden for brevity.
 
 ```css hidden live-sample___interest-source
 button {
@@ -77,7 +77,7 @@ Try showing interest in the button (for example, by hovering or focusing it), an
 
 ## See also
 
-- {{cssxref(":interest-target")}}
+- `:interest-target`
 - [Popover API](/en-US/docs/Web/API/Popover_API)
 - [Using interest invokers](/en-US/docs/Web/API/Popover_API/Using_interest_invokers)
 - [CSS selectors](/guides/Selectors) module

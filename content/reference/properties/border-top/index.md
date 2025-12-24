@@ -52,9 +52,9 @@ border-top: 4mm ridge rgb(211 220 50 / 0.6);
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-top-color")}}
-- {{cssxref("border-top-style")}}
-- {{cssxref("border-top-width")}}
+- `border-top-color`
+- `border-top-style`
+- `border-top-width`
 
 ## Syntax
 
@@ -76,11 +76,11 @@ The three values of the shorthand property can be specified in any order, and on
 ### Values
 
 - `<br-width>`
-  - See {{cssxref("border-top-width")}}.
+  - See `border-top-width`.
 - `<br-style>`
-  - See {{cssxref("border-top-style")}}.
-- {{cssxref("&lt;color&gt;")}}
-  - See {{cssxref("border-top-color")}}.
+  - See `border-top-style`.
+- `&lt;color&gt;`
+  - See `border-top-color`.
 
 ## Description
 
@@ -98,7 +98,7 @@ border-top-style: dotted;
 border-top: none thick green;
 ```
 
-The value of {{cssxref("border-top-style")}} given before `border-top` is ignored. Since the default value of {{cssxref("border-top-style")}} is `none`, not specifying the `border-style` part results in no border.
+The value of `border-top-style` given before `border-top` is ignored. Since the default value of `border-top-style` is `none`, not specifying the `border-style` part results in no border.
 
 ## Formal definition
 
@@ -145,6 +145,6 @@ div {
 
 ## See also
 
-- {{cssxref("border")}}
-- {{cssxref("border-block")}}
-- {{cssxref("outline")}}
+- `border`
+- `border-block`
+- `outline`

@@ -10,10 +10,10 @@ sidebar: cssref
 
 {{Non-standard_header}}
 
-The **`-webkit-mask-composite`** property specifies the manner in which multiple mask images applied to the same element are composited with one another. Mask images are composited in the opposite order that they are declared with the {{CSSxRef("mask-image", "-webkit-mask-image")}} property.
+The **`-webkit-mask-composite`** property specifies the manner in which multiple mask images applied to the same element are composited with one another. Mask images are composited in the opposite order that they are declared with the `-webkit-mask-image` property.
 
 > [!NOTE]
-> There is a standardized {{CSSxRef("mask-composite")}} property covering parts of this non-standard property using different keywords.
+> There is a standardized `mask-composite` property covering parts of this non-standard property using different keywords.
 
 ## Syntax
 
@@ -84,7 +84,7 @@ The **`-webkit-mask-composite`** property specifies the manner in which multiple
 
 ## Specifications
 
-Not part of any standard. This property is specified as {{CSSxRef("mask-composite")}} using different values.
+Not part of any standard. This property is specified as `mask-composite` using different values.
 
 ## Browser compatibility
 
@@ -92,4 +92,4 @@ Not part of any standard. This property is specified as {{CSSxRef("mask-composit
 
 ## See also
 
-- {{CSSxRef("mask-composite")}}
+- `mask-composite`

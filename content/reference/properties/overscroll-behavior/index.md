@@ -85,8 +85,8 @@ overscroll-behavior: none;
 
 This property is a shorthand for the following CSS properties:
 
-- {{Cssxref("overscroll-behavior-x")}}
-- {{Cssxref("overscroll-behavior-y")}}
+- `overscroll-behavior-x`
+- `overscroll-behavior-y`
 
 ## Syntax
 

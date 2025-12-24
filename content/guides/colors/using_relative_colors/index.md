@@ -5,7 +5,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-The [CSS colors module](/guides/Colors) defines **relative color syntax**, which allows a CSS {{cssxref("&lt;color&gt;")}} value to be defined relative to another color. This is a powerful feature that enables the programmatic creation of complements to existing colors — such as lighter, darker, saturated, semi-transparent, or inverted variants — enabling more effective color palette creation.
+The [CSS colors module](/guides/Colors) defines **relative color syntax**, which allows a CSS `&lt;color&gt;` value to be defined relative to another color. This is a powerful feature that enables the programmatic creation of complements to existing colors — such as lighter, darker, saturated, semi-transparent, or inverted variants — enabling more effective color palette creation.
 
 This article explains relative color syntax, shows what the different options are, and looks at some illustrative examples.
 
@@ -25,10 +25,10 @@ color(from origin-color colorspace channel1 channel2 channel3 / alpha)
 Relative colors are created using the same [color functions](/guides/Colors#functions) as absolute colors, but with different parameters:
 
 1. Include a basic color function (represented by _`color-function()`_ above) such as [`rgb()`](/reference/values/color_value/rgb), [`hsl()`](/reference/values/color_value/hsl), etc. Which one you pick depends on the color model you want to use for the relative color you are creating (the **output color**).
-2. Pass in the **origin color** (represented above by _`origin-color`_) your relative color will be based on, preceded by the `from` keyword. This can be any valid {{cssxref("&lt;color&gt;")}} value using any available color model including a color value contained in a [CSS custom property](/guides/Cascading_variables/Using_custom_properties), system colors, `currentColor`, or even another relative color.
+2. Pass in the **origin color** (represented above by _`origin-color`_) your relative color will be based on, preceded by the `from` keyword. This can be any valid `&lt;color&gt;` value using any available color model including a color value contained in a [CSS custom property](/guides/Cascading_variables/Using_custom_properties), system colors, `currentColor`, or even another relative color.
 3. In the case of the [`color()`](/reference/values/color_value/color) function, include the _[`colorspace`](/reference/values/color_value/color#colorspace)_ of the output color.
 4. Provide an output value for each individual channel. The output color is defined after the origin color — represented above by the _`channel1`_, _`channel2`_, and _`channel3`_ placeholders. The channels defined here depend on the [color function](/guides/Colors#functions) you are using for your relative color. For example, if you are using [`hsl()`](/reference/values/color_value/hsl), you would need to define the values for hue, saturation, and lightness. Each channel value can be a new value, the same as the original value, or a value relative to the channel value of the origin color.
-5. Optionally, an `alpha` channel value of type {{CSSXref("&lt;alpha-value&gt;")}} for the output color can be defined, preceded by a slash (`/`). If the `alpha` channel value is not explicitly specified, it defaults to the alpha channel value of the _`origin-color`_ (not 100%, which is the case for absolute color values).
+5. Optionally, an `alpha` channel value of type `&lt;alpha-value&gt;` for the output color can be defined, preceded by a slash (`/`). If the `alpha` channel value is not explicitly specified, it defaults to the alpha channel value of the _`origin-color`_ (not 100%, which is the case for absolute color values).
 
 The browser converts the origin color to a syntax compatible with the color function then destructures it into component color channels (plus the `alpha` channel if the origin color has one). These are made available as appropriately-named values inside the color function — `r`, `g`, `b`, and `alpha` in the case of the `rgb()` function, `l`, `a`, `b`, and `alpha` in the case of the `lab()` function, `h`, `w`, `b`, and `alpha` in the case of `hwb()`, etc. — that can be used to calculate new output channel values.
 
@@ -76,7 +76,7 @@ This results in an output of `rgb(200 0 0)` — a slightly darker red. If we had
 > [!NOTE]
 > As mentioned above, when calculating a relative color the first thing the browser does is to convert the provided origin color (`red` in the above example) into a value compatible with the color function being used (in this case, `rgb()`). This is done so that the browser is able to calculate the output color from the origin color. While the calculations are performed relative to the color function used, the actual output color value depends on the color's color space:
 >
-> - Older sRGB color functions cannot express the full spectrum of visible colors. The output colors of ([`hsl()`](/reference/values/color_value/hsl), [`hwb()`](/reference/values/color_value/hwb), and [`rgb()`](/reference/values/color_value/rgb)) are serialized to `color(srgb)` to avoid these limitations. That means that querying the output color value via the {{domxref("HTMLElement.style")}} property or the {{domxref("CSSStyleDeclaration.getPropertyValue()")}} method returns the output color as a [`color(srgb ...)`](/reference/values/color_value/color) value.
+> - Older sRGB color functions cannot express the full spectrum of visible colors. The output colors of ([`hsl()`](/reference/values/color_value/hsl), [`hwb()`](/reference/values/color_value/hwb), and [`rgb()`](/reference/values/color_value/rgb)) are serialized to `color(srgb)` to avoid these limitations. That means that querying the output color value via the `HTMLElement.style` property or the `CSSStyleDeclaration.getPropertyValue()` method returns the output color as a [`color(srgb ...)`](/reference/values/color_value/color) value.
 > - For more recent color functions (`lab()`, `oklab()`, `lch()`, and `oklch()`), relative color output values are expressed in the same syntax as the color function used. For example, if a [`lab()`](/reference/values/color_value/lab) color function is being used, the output color will be a `lab()` value.
 
 All the following lines produce an equivalent output color:
@@ -244,7 +244,7 @@ The output is as follows:
 
 ## Using math functions
 
-You can use CSS [math functions](/reference/values/Functions#math_functions) such as {{cssxref("calc")}} to calculate values for the output color channels. Let's look at an example.
+You can use CSS [math functions](/reference/values/Functions#math_functions) such as `calc` to calculate values for the output color channels. Let's look at an example.
 
 The below CSS is used to style three {{htmlelement("div")}} elements with different background colors. The middle one is given an unmodified `--base-color`, while the left and right ones are given lightened and darkened variants of that `--base-color`. These variants are defined using relative colors — the `--base-color` is passed into an `lch()` function, and the output color has its lightness channel modified to achieve the desired effect via a `calc()` function. The lightened color has 20% added to the lightness channel, and the darkened color has 20% subtracted from it.
 
@@ -336,16 +336,16 @@ The output is as follows:
 
 ## Channel values resolve to `<number>` values
 
-To make channel value calculations work in relative colors, all origin color channel values resolve to appropriate {{cssxref("&lt;number&gt;")}} values. For example, in the `lch()` examples above, we are calculating new lightness values by adding or subtracting numbers from the origin color's `l` channel value. If we tried to do `calc(l + 20%)`, that would result in an invalid color — `l` is a `<number>` and cannot have a {{cssxref("&lt;percentage&gt;")}} added to it.
+To make channel value calculations work in relative colors, all origin color channel values resolve to appropriate `&lt;number&gt;` values. For example, in the `lch()` examples above, we are calculating new lightness values by adding or subtracting numbers from the origin color's `l` channel value. If we tried to do `calc(l + 20%)`, that would result in an invalid color — `l` is a `<number>` and cannot have a `&lt;percentage&gt;` added to it.
 
 - Channel values originally specified as a `<percentage>` resolve to a `<number>` appropriate for the output color function.
-- Channel values originally specified as a {{cssxref("hue")}} angle resolve to a number of degrees in a range of `0` to `360`, inclusive.
+- Channel values originally specified as a `hue` angle resolve to a number of degrees in a range of `0` to `360`, inclusive.
 
 Check the different [color function pages](/guides/Colors#functions) for the specifics of what their origin channel values resolve to.
 
 ## Checking for browser support
 
-You can check that a browser supports relative color syntax by running it through a {{cssxref("@supports")}} at-rule.
+You can check that a browser supports relative color syntax by running it through a `@supports` at-rule.
 
 For example:
 
@@ -364,7 +364,7 @@ For example:
 
 This example allows you to choose a base color and a color palette type. The browser will then show an appropriate palette of colors based on the chosen base color. The color palette choices are as follows:
 
-- **Complementary**: Includes two colors that are at opposite sides of a color wheel, or to put it another way, _opposite hues_ (see the {{cssxref("hue")}} data type for more information on hues and color wheels). The two colors are defined as a base color, and the base color with hue channel +180 degrees.
+- **Complementary**: Includes two colors that are at opposite sides of a color wheel, or to put it another way, _opposite hues_ (see the `hue` data type for more information on hues and color wheels). The two colors are defined as a base color, and the base color with hue channel +180 degrees.
 - **Triadic**: Includes three colors equal distances apart around the color wheel. The three colors are defined as a base color, base color with hue channel -120 degrees, and base color with hue channel +120 degrees.
 - **Tetradic**: Includes four colors equal distances apart around the color wheel. The four colors are defined as a base color, and base color with hue channel +90, +180, and +270 degrees.
 - **Monochrome**: Includes multiple colors with the same hue but varying lightness values. In our example we've defined five colors in a monochrome palette — base color, and base color with lightness channel -20, -10, +10, and +20.
@@ -441,7 +441,7 @@ The full HTML is included below for reference. The most interesting parts are as
 
 #### CSS
 
-Below we are only showing the CSS that sets the palette colors. Note how, in each case, descendant selectors are used to apply the correct {{cssxref("background-color")}} to each child `<div>` for the chosen palette. We care more about the position of the `<div>`s in the source order than the type of element, so we have used {{cssxref(":nth-child")}} to target them.
+Below we are only showing the CSS that sets the palette colors. Note how, in each case, descendant selectors are used to apply the correct `background-color` to each child `<div>` for the chosen palette. We care more about the position of the `<div>`s in the source order than the type of element, so we have used `:nth-child` to target them.
 
 In the last rule we've used the [general sibling selector (`~`)](/en-US/docs/Web/CSS/Reference/Selectors/Subsequent-sibling_combinator) to target the unused `<div>` elements in each palette type, setting [`display: none`](/en-US/docs/Web/CSS/Reference/Selectors/Subsequent-sibling_combinator) to stop them being rendered.
 
@@ -618,7 +618,7 @@ fieldset {
 
 ##### An aside on `@supports` testing
 
-In the example CSS you'll notice {{cssxref("@supports")}} blocks being used to provide different {{cssxref("background-color")}} values to browsers that support a previous draft specification of the relative color syntax. These are required because Safari's initial implementation was based on an older version of the spec in which origin color channel values resolved to {{cssxref("&lt;number&gt;")}}s or other unit types depending on the context. This meant that values sometimes required units when performing additions and subtractions, which created confusion. In newer implementations, origin color channel values always resolve to an equivalent {{cssxref("&lt;number&gt;")}} value, which means calculations are always done with unitless values.
+In the example CSS you'll notice `@supports` blocks being used to provide different `background-color` values to browsers that support a previous draft specification of the relative color syntax. These are required because Safari's initial implementation was based on an older version of the spec in which origin color channel values resolved to `&lt;number&gt;`s or other unit types depending on the context. This meant that values sometimes required units when performing additions and subtractions, which created confusion. In newer implementations, origin color channel values always resolve to an equivalent `&lt;number&gt;` value, which means calculations are always done with unitless values.
 
 Note how the support test in each case is done using any color declaration — `color: lch(from red l c calc(h + 90deg))` for example — not necessarily the actual value that we need to vary for other browsers. When testing complex values like these, you should use the simplest possible declaration that still contains the syntactic difference you want to test for.
 
@@ -714,7 +714,7 @@ The relative colors are as follows:
 - `--bg-color`: A much lighter variant of `--base-color`, intended to be used as a background. This is created by taking an origin color of `--base-color` and adding 40 to its lightness value.
 - `--complementary-color`: A complementary color 180 degrees around the color wheel from `--base-color`. This is created by taking an origin color of `--base-color` and adding 180 to its hue value.
 
-Now have a look at the rest of the CSS and take note of all the places where these colors are used. This includes [backgrounds](/reference/properties/background), [borders](/reference/properties/border), {{cssxref("text-shadow")}}, and even the {{cssxref("accent-color")}} of the slider.
+Now have a look at the rest of the CSS and take note of all the places where these colors are used. This includes [backgrounds](/reference/properties/background), [borders](/reference/properties/border), `text-shadow`, and even the `accent-color` of the slider.
 
 > [!NOTE]
 > For brevity, only the parts of the CSS relevant to relative color usage are shown.
@@ -826,7 +826,7 @@ The output is shown below. Relative CSS colors are being used here to control th
 
 ## See also
 
-- The {{CSSXref("&lt;color&gt;")}} data type
+- The `&lt;color&gt;` data type
 - [CSS colors](/guides/Colors) module
 - [sRGB](https://en.wikipedia.org/wiki/SRGB) on Wikipedia
 - [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space) on Wikipedia

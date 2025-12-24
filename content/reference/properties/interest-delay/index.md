@@ -10,14 +10,14 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`interest-delay`** [CSS](/en-US/docs/Web/CSS) property specifies the delay between the user showing interest in an [interest invoker](/en-US/docs/Web/API/Popover_API/Using_interest_invokers) element and the {{domxref("HTMLElement.interest_event", "interest")}} event firing, and the delay between the user losing interest and the {{domxref("HTMLElement.loseinterest_event", "loseinterest")}} event firing.
+The **`interest-delay`** [CSS](/en-US/docs/Web/CSS) property specifies the delay between the user showing interest in an [interest invoker](/en-US/docs/Web/API/Popover_API/Using_interest_invokers) element and the `interest` event firing, and the delay between the user losing interest and the `loseinterest` event firing.
 
 ## Constituent properties
 
 The `interest-delay` property is a shorthand for the following properties:
 
-- {{cssxref("interest-delay-start")}}
-- {{cssxref("interest-delay-end")}}
+- `interest-delay-start`
+- `interest-delay-end`
 
 ## Syntax
 
@@ -41,11 +41,11 @@ interest-delay: unset;
 
 ### Values
 
-The `interest-delay` property accepts one or two values. The first value sets the delay before interest is shown (`interest-delay-start`); the second value, if provided, sets the delay before interest is lost (`interest-delay-end`). Each value can be either the keyword `normal` or a {{cssxref("&lt;time&gt;")}} value:
+The `interest-delay` property accepts one or two values. The first value sets the delay before interest is shown (`interest-delay-start`); the second value, if provided, sets the delay before interest is lost (`interest-delay-end`). Each value can be either the keyword `normal` or a `&lt;time&gt;` value:
 
 - `normal`
   - Sets the delay to the browser's default delay. This is the initial value.
-- {{cssxref("&lt;time&gt;")}}
+- `&lt;time&gt;`
   - Sets the delay to a specific duration. The value must be positive, otherwise the property becomes invalid.
 
 ## Description
@@ -54,10 +54,10 @@ A control element such as an {{htmlelement("a")}} or {{htmlelement("button")}} c
 
 When the user shows or loses interest, the associated effect doesn't start or stop immediately — the browser adds a short delay (which may vary by browser). This prevents [preview popovers](/en-US/docs/Web/API/Popover_API/Using_interest_invokers#using_interest_invokers_for_creating_preview_popovers), for example, from appearing immediately when the user hovers a link, which could be annoying and distracting on a link-heavy page.
 
-The `interest-delay` property allows you to customize these delays. You can use `interest-delay` to specify the delay before the interest effect starts (specified by the {{cssxref("interest-delay-start")}} property) and the delay before the interest effect ends (specified by the {{cssxref("interest-delay-end")}} property) in a single declaration.
+The `interest-delay` property allows you to customize these delays. You can use `interest-delay` to specify the delay before the interest effect starts (specified by the `interest-delay-start` property) and the delay before the interest effect ends (specified by the `interest-delay-end` property) in a single declaration.
 
-The `interest-delay` property can take one or two values. These values can be the keyword `normal`, which sets the default browser delay, or a {{cssxref("&lt;time&gt;")}} value, which sets a custom delay.
-If a single value is specified, it applies to both {{cssxref("interest-delay-start")}} and {{cssxref("interest-delay-end")}}. If two values are specified, the first value sets {{cssxref("interest-delay-start")}}, and the second value sets {{cssxref("interest-delay-end")}}.
+The `interest-delay` property can take one or two values. These values can be the keyword `normal`, which sets the default browser delay, or a `&lt;time&gt;` value, which sets a custom delay.
+If a single value is specified, it applies to both `interest-delay-start` and `interest-delay-end`. If two values are specified, the first value sets `interest-delay-start`, and the second value sets `interest-delay-end`.
 
 ## Formal definition
 
@@ -130,7 +130,7 @@ Now check the checkbox and try the same actions again. This time, the popover sh
 
 ## See also
 
-- {{cssxref("interest-delay-start")}}, {{cssxref("interest-delay-end")}}
+- `interest-delay-start`, `interest-delay-end`
 - [Popover API](/en-US/docs/Web/API/Popover_API)
 - [Using interest invokers](/en-US/docs/Web/API/Popover_API/Using_interest_invokers)
 - [CSS basic user interface](/guides/Basic_user_interface) module

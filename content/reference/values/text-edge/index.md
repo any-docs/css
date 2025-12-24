@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`<text-edge>`** {{glossary("enumerated")}} [data type](/reference/values/Data_types) defines keywords that specify font metrics representing specific regions on a font's block-start edge and block-end edge. Each keyword specifies a position of a font's over and/or under edge.
 
-The `<text-edge>` values are used in the {{cssxref("text-box-edge")}} property to specify an amount of space to trim from the block-start and block-end edge of a text element's block container.
+The `<text-edge>` values are used in the `text-box-edge` property to specify an amount of space to trim from the block-start and block-end edge of a text element's block container.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ The `<text-edge>` data type is composed of one or two keywords representing spec
   - The font's over and under edges are its text-over baseline/text-under baseline: this includes the font's ascenders and descenders but excludes the [half-leading](/en-US/docs/Glossary/Leading) set on the text.
 
     > [!NOTE]
-    > The amount of half-leading included on a text element can be controlled using the {{cssxref("line-height")}} property.
+    > The amount of half-leading included on a text element can be controlled using the `line-height` property.
 
 > [!NOTE]
 > The `ideographic` and `ideographic-ink` keywords are intended to specify over and under edge positions specific to [CJK language characters](https://en.wikipedia.org/wiki/CJK_characters). Currently their exact behavior is being debated and they are not supported by any browser.
@@ -58,5 +58,5 @@ See [`text-box-edge` examples](/reference/properties/text-box-edge#examples)
 
 ## See also
 
-- {{cssxref("text-box")}}, {{cssxref("text-box-edge")}}, {{cssxref("text-box-trim")}}
+- `text-box`, `text-box-edge`, `text-box-trim`
 - [CSS inline layout](/guides/Inline_layout) module

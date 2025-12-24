@@ -86,7 +86,7 @@ animation-play-state: unset;
   - The **animation** is currently **paused**.
 
 > [!NOTE]
-> When you specify multiple comma-separated values on an `animation-*` property, they are applied to the animations in the order in which the {{cssxref("animation-name")}}s appear. For situations where the number of animations and `animation-*` property values do not match, see [Setting multiple animation property values](/guides/Animations/Using#setting_multiple_animation_property_values).
+> When you specify multiple comma-separated values on an `animation-*` property, they are applied to the animations in the order in which the `animation-name`s appear. For situations where the number of animations and `animation-*` property values do not match, see [Setting multiple animation property values](/guides/Animations/Using#setting_multiple_animation_property_values).
 
 ## Formal definition
 
@@ -155,5 +155,5 @@ See [CSS animations](/guides/Animations/Using) for examples.
 ## See also
 
 - [Using CSS animations](/guides/Animations/Using)
-- JavaScript {{domxref("AnimationEvent")}} API
-- Other related animation properties: {{cssxref("animation")}}, {{cssxref("animation-composition")}}, {{cssxref("animation-delay")}}, {{cssxref("animation-direction")}}, {{cssxref("animation-duration")}}, {{cssxref("animation-fill-mode")}}, {{cssxref("animation-iteration-count")}}, {{cssxref("animation-name")}}, {{cssxref("animation-timeline")}}, {{cssxref("animation-timing-function")}}
+- JavaScript `AnimationEvent` API
+- Other related animation properties: `animation`, `animation-composition`, `animation-delay`, `animation-direction`, `animation-duration`, `animation-fill-mode`, `animation-iteration-count`, `animation-name`, `animation-timeline`, `animation-timing-function`

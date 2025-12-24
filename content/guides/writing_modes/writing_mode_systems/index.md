@@ -22,15 +22,15 @@ In an English document, with the text running horizontally left-to-right, or an 
 
 The _outer display_ type of boxes in a [normal flowing layout](/guides/Display/Visual_formatting_model#normal_flow) determines how the box behaves alongside other elements on the page. _Inline boxes_ wrap each line of text and are laid out along the inline dimension.
 
-_Block boxes_ represent containers on the page that can contain other block and inline elements. They are laid out along the block dimension and will extend in the inline dimension to fill all the space available in their container (provided a specific size is not set in the inline dimension using a property such as {{cssxref("inline-size")}}). Block boxes are only displayed from the top to the bottom of the page if you are using a writing mode that displays text horizontally, such as English.
+_Block boxes_ represent containers on the page that can contain other block and inline elements. They are laid out along the block dimension and will extend in the inline dimension to fill all the space available in their container (provided a specific size is not set in the inline dimension using a property such as `inline-size`). Block boxes are only displayed from the top to the bottom of the page if you are using a writing mode that displays text horizontally, such as English.
 
 The [CSS logical properties and values module](/guides/Logical_properties_and_values#properties) defines {{glossary("flow relative values", "flow-relative mappings")}} for many of the {{glossary("physical properties")}} and values in CSS, which is helpful in understanding the [basic concepts of logical properties and values](/guides/Logical_properties_and_values/Basic_concepts).
 
 ### Inline base and block flow directions
 
-The _inline base direction_ is the primary direction in which content is ordered on a line and defines the "start" and "end" of a line. The {{cssxref("direction")}} property specifies the inline base direction of a box and, together with the {{cssxref("unicode-bidi")}} property and the inherent directionality of any text content, determines the ordering of inline-level content within a line.
+The _inline base direction_ is the primary direction in which content is ordered on a line and defines the "start" and "end" of a line. The `direction` property specifies the inline base direction of a box and, together with the `unicode-bidi` property and the inherent directionality of any text content, determines the ordering of inline-level content within a line.
 
-The _block flow direction_ is the direction in which block-level and line boxes stack within a block container. The {{cssxref("writing-mode")}} property determines the block flow direction.
+The _block flow direction_ is the direction in which block-level and line boxes stack within a block container. The `writing-mode` property determines the block flow direction.
 
 ## Writing system modes
 
@@ -63,9 +63,9 @@ Mongolian-based systems are typically written vertically, top to bottom, in colu
 <p lang="mn-MONG" dir="auto">Үүнийг монгол хэлээр бичжээ</p>
 ```
 
-To render the writing modes correctly, we use the global HTML [`dir`](/en-US/docs/Web/HTML/Reference/Global_attributes/dir) attribute. Because browsers can turn off CSS styling, it is recommended to use the `dir` attribute and {{htmlelement("bdo")}} element to ensure correct bidirectional layout in the absence of a style sheet, rather than the CSS {{cssxref("direction")}} property.
+To render the writing modes correctly, we use the global HTML [`dir`](/en-US/docs/Web/HTML/Reference/Global_attributes/dir) attribute. Because browsers can turn off CSS styling, it is recommended to use the `dir` attribute and {{htmlelement("bdo")}} element to ensure correct bidirectional layout in the absence of a style sheet, rather than the CSS `direction` property.
 
-For vertical languages, we use the {{cssxref("writing-mode")}} and {{cssxref("text-orientation")}} properties:
+For vertical languages, we use the `writing-mode` and `text-orientation` properties:
 
 ```css
 [lang|="ja"] {

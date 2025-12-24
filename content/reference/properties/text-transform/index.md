@@ -570,4 +570,4 @@ However, you are encouraged to use [MathML](/en-US/docs/Web/MathML) for mathemat
 
 ## See also
 
-- {{cssxref("font-variant")}}
+- `font-variant`

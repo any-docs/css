@@ -222,7 +222,7 @@ Since `--main-bg-color` isn't set, the body's `background-color` will fall back 
 - The custom property is not defined and no fallback value is provided.
 - The custom property is defined but its value is an invalid value for the property it is used in.
 
-When this happens, the property is treated as if it has value {{cssxref("unset")}}. This is because variables can't "fail early" like other syntax errors can, so by the time the user agent realizes a property value is invalid, it has already thrown away the other cascaded values.
+When this happens, the property is treated as if it has value `unset`. This is because variables can't "fail early" like other syntax errors can, so by the time the user agent realizes a property value is invalid, it has already thrown away the other cascaded values.
 
 For example:
 
@@ -271,7 +271,7 @@ Note how the paragraphs using `var()` are reset to the default black, but the pa
 
 ## See also
 
-- {{cssxref("env","env(…)")}} – read‑only environment variables controlled by the user‑agent.
+- `env(…)` – read‑only environment variables controlled by the user‑agent.
 - [Using CSS custom properties (variables)](/guides/Cascading_variables/Using_custom_properties)
-- {{cssxref("@property")}} at-rule
+- `@property` at-rule
 - [CSS custom properties for cascading variables](/guides/Cascading_variables) module

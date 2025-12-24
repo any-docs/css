@@ -6,7 +6,7 @@ browser-compat: css.properties.align-items
 sidebar: cssref
 ---
 
-The [CSS](/en-US/docs/Web/CSS) **`align-items`** property sets the {{cssxref("align-self")}} value on all direct children as a group. In flexbox, it controls the alignment of items on the {{glossary("cross axis")}}. In grid layout, it controls the alignment of items on the block axis within their {{glossary("grid areas")}}.
+The [CSS](/en-US/docs/Web/CSS) **`align-items`** property sets the `align-self` value on all direct children as a group. In flexbox, it controls the alignment of items on the {{glossary("cross axis")}}. In grid layout, it controls the alignment of items on the block axis within their {{glossary("grid areas")}}.
 
 The interactive example below uses grid layout to demonstrate some of the values of this property.
 
@@ -120,7 +120,7 @@ align-items: unset;
   - All flex items are aligned such that their [flex container baselines](https://drafts.csswg.org/css-flexbox-1/#flex-baselines) align. The item with the largest distance between its cross-start margin edge and its baseline is flushed with the cross-start edge of the line.
 
 - `stretch`
-  - If the item's cross-size is `auto`, the used size is set to the length necessary to be as close to filling the container as possible, respecting the item's width and height limits. If the item is not auto-sized, this value falls back to `flex-start`, and to `self-start` or `self-end` if the container's {{cssxref("align-content")}} is `first baseline` (or `baseline`) or `last baseline`.
+  - If the item's cross-size is `auto`, the used size is set to the length necessary to be as close to filling the container as possible, respecting the item's width and height limits. If the item is not auto-sized, this value falls back to `flex-start`, and to `self-start` or `self-end` if the container's `align-content` is `first baseline` (or `baseline`) or `last baseline`.
 
 - `anchor-center`
   - In the case of [anchor-positioned](/guides/Anchor_positioning) elements, aligns the items to the center of the associated anchor element in the block direction. See [Centering on the anchor using `anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center).
@@ -149,11 +149,11 @@ There are also two values that were defined for flexbox, as they are base on [fl
 
 ## Examples
 
-In this example we have a container with six children. A {{htmlelement("select")}} dropdown menu enables toggling the {{cssxref("display")}} of the container between `grid` and `flex`. A second menu enables changing the value of the container's `align-items` property.
+In this example we have a container with six children. A {{htmlelement("select")}} dropdown menu enables toggling the `display` of the container between `grid` and `flex`. A second menu enables changing the value of the container's `align-items` property.
 
 ### CSS
 
-We style a the container and items in a manner that ensures we have two lines or rows or items. We defined `.flex` and `.grid` classes, which will be applied to the container with JavaScript. They set the {{cssxref("display")}} value of the container, and change its background and border colors providing an additional indicator that the layout has changed. The six flex items each have a different background color, with the 4th item being two lines long and the 6th item having an enlarged font.
+We style a the container and items in a manner that ensures we have two lines or rows or items. We defined `.flex` and `.grid` classes, which will be applied to the container with JavaScript. They set the `display` value of the container, and change its background and border colors providing an additional indicator that the layout has changed. The six flex items each have a different background color, with the 4th item being two lines long and the 6th item having an enlarged font.
 
 ```css
 .flex,
@@ -314,10 +314,10 @@ display.addEventListener("change", (evt) => {
 
 ## See also
 
-- {{cssxref("align-self")}}
-- {{cssxref("align-content")}}
-- {{cssxref("justify-items")}}
-- {{cssxref("place-items")}} shorthand
+- `align-self`
+- `align-content`
+- `justify-items`
+- `place-items` shorthand
 - [Basic concepts of flexbox](/guides/Flexible_box_layout/Basic_concepts)
 - [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items)
 - [Box alignment in grid layout](/guides/Box_alignment/In_grid_layout)

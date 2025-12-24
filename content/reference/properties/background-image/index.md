@@ -66,7 +66,7 @@ background-image: revert-layer;
 background-image: unset;
 ```
 
-Each background image is specified either as the keyword `none` or as an {{cssxref("image")}} value.
+Each background image is specified either as the keyword `none` or as an `image` value.
 
 To specify multiple background images, supply multiple values, separated by a comma.
 
@@ -75,18 +75,18 @@ To specify multiple background images, supply multiple values, separated by a co
 - `none`
   - Is a keyword denoting the absence of images.
 - `<image>`
-  - Is an {{cssxref("image")}} denoting the image to display. There can be several of them, separated by commas, as [multiple backgrounds](/guides/Backgrounds_and_borders/Using_multiple_backgrounds) are supported.
+  - Is an `image` denoting the image to display. There can be several of them, separated by commas, as [multiple backgrounds](/guides/Backgrounds_and_borders/Using_multiple_backgrounds) are supported.
 
 ## Description
 
 The background images are drawn on stacking context layers on top of each other. The first layer specified is drawn as if it is closest to the user.
 
-The [borders](/reference/properties/border) of the element are then drawn on top of them, and the {{cssxref("background-color")}} is drawn beneath them. How the images are drawn relative to the box and its borders is defined by the {{cssxref("background-clip")}} and {{cssxref("background-origin")}} CSS properties.
+The [borders](/reference/properties/border) of the element are then drawn on top of them, and the `background-color` is drawn beneath them. How the images are drawn relative to the box and its borders is defined by the `background-clip` and `background-origin` CSS properties.
 
 If a specified image cannot be drawn (for example, when the file denoted by the specified URI cannot be loaded), browsers handle it as they would a `none` value.
 
 > [!NOTE]
-> Even if the images are opaque and the color won't be displayed in normal circumstances, web developers should always specify a {{cssxref("background-color")}}. If the images cannot be loaded—for instance, when the network is down—the background color will be used as a fallback.
+> Even if the images are opaque and the color won't be displayed in normal circumstances, web developers should always specify a `background-color`. If the images cannot be loaded—for instance, when the network is down—the background color will be used as a fallback.
 
 ## Accessibility
 
@@ -166,26 +166,26 @@ div {
 
 - {{HTMLElement("img")}}
 - Image-related functions:
-  - {{cssxref("gradient/linear-gradient", "linear-gradient()")}}
-  - {{cssxref("gradient/radial-gradient", "radial-gradient()")}}
-  - {{cssxref("gradient/conic-gradient", "conic-gradient()")}}
-  - {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}
-  - {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}
-  - {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
-  - {{cssxref("url_value", "&lt;url&gt;")}}
+  - `linear-gradient()`
+  - `radial-gradient()`
+  - `conic-gradient()`
+  - `repeating-linear-gradient()`
+  - `repeating-radial-gradient()`
+  - `repeating-conic-gradient()`
+  - `&lt;url&gt;`
 - [Using CSS gradients](/guides/Images/Using_gradients)
 - [Implementing image sprites in CSS](/guides/Images/Implementing_image_sprites)
 - [CSS images](/guides/Images) module
 
 - Background-related properties
-  - {{cssxref("background-attachment")}}
-  - {{cssxref("background-clip")}}
-  - {{cssxref("background-color")}}
-  - {{cssxref("background-origin")}}
-  - {{cssxref("background-position")}}
-  - {{cssxref("background-repeat")}}
-  - {{cssxref("background-size")}}
-  - {{cssxref("background")}} shorthand
+  - `background-attachment`
+  - `background-clip`
+  - `background-color`
+  - `background-origin`
+  - `background-position`
+  - `background-repeat`
+  - `background-size`
+  - `background` shorthand
 - [Learn: Backgrounds and borders](/en-US/docs/Learn_web_development/Core/Styling_basics/Backgrounds_and_borders)
 - [Using multiple backgrounds](/guides/Backgrounds_and_borders/Using_multiple_backgrounds)
 - [Resizing background images](/guides/Backgrounds_and_borders/Resizing_background_images)

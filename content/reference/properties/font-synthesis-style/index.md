@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`font-synthesis-style`** [CSS](/en-US/docs/Web/CSS) property lets you specify whether or not the browser may synthesize the oblique typeface when it is missing in a font family.
 
-It is often convenient to use the shorthand property {{cssxref("font-synthesis")}} to control all typeface synthesis values.
+It is often convenient to use the shorthand property `font-synthesis` to control all typeface synthesis values.
 
 ## Syntax
 
@@ -180,4 +180,4 @@ p {
 ## See also
 
 - [font-synthesis](/reference/properties/font-synthesis) shorthand, [font-synthesis-small-caps](/reference/properties/font-synthesis-small-caps), [font-synthesis-weight](/reference/properties/font-synthesis-weight)
-- {{cssxref("font-style")}}, {{cssxref("font-variant")}}, {{cssxref("font-weight")}}
+- `font-style`, `font-variant`, `font-weight`

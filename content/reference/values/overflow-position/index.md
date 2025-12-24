@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`<overflow-position>`** {{glossary("enumerated")}} value type defines how an alignment subject that is larger than its alignment container will overflow that container. For example, if centered items are wider than their container, the overflow may be displayed beyond the viewport's start edge, which can't be scrolled to. The `<overflow-position>` value defines whether the alignment mode should be overridden to ensure the content is visible (`safe`) or if the alignment mode must be adhered to (`unsafe`).
 
-This data type is valid for the {{cssxref("align-content")}}, {{cssxref("align-items")}}, {{cssxref("align-self")}}, {{cssxref("justify-items")}} and {{cssxref("justify-self")}} properties as well as the {{cssxref("place-content")}}, {{cssxref("place-items")}}, and {{cssxref("place-self")}} shorthand properties.
+This data type is valid for the `align-content`, `align-items`, `align-self`, `justify-items` and `justify-self` properties as well as the `place-content`, `place-items`, and `place-self` shorthand properties.
 If omitted, the default overflow alignment is a blend of `safe` and `unsafe`.
 
 ## Syntax
@@ -33,8 +33,8 @@ The following keyword values are represented by the `<overflow-position>` gramma
 
 ## See also
 
-- Properties that use this data type: {{cssxref("align-content")}}, {{cssxref("align-items")}}, {{cssxref("align-self")}}, {{cssxref("justify-content")}} {{cssxref("justify-items")}}, {{cssxref("justify-self")}}, {{cssxref("place-content")}}, {{cssxref("place-items")}}, and {{cssxref("place-self")}}
-- Other box alignment data types: {{cssxref("content-distribution")}}, {{cssxref("content-position")}}, {{cssxref("baseline-position")}}, and {{cssxref("self-position")}}
+- Properties that use this data type: `align-content`, `align-items`, `align-self`, `justify-content` `justify-items`, `justify-self`, `place-content`, `place-items`, and `place-self`
+- Other box alignment data types: `content-distribution`, `content-position`, `baseline-position`, and `self-position`
 - [CSS box alignment](/guides/Box_alignment) module
 - [CSS flexible box layout](/guides/Flexible_box_layout) module
 - [CSS grid layout](/guides/Grid_layout) module

@@ -6,10 +6,10 @@ browser-compat: css.properties.flex-basis
 sidebar: cssref
 ---
 
-The **`flex-basis`** [CSS](/en-US/docs/Web/CSS) property sets the initial main size of a {{glossary("flex item")}}. It sets the size of the content box unless otherwise set with {{Cssxref("box-sizing")}}.
+The **`flex-basis`** [CSS](/en-US/docs/Web/CSS) property sets the initial main size of a {{glossary("flex item")}}. It sets the size of the content box unless otherwise set with `box-sizing`.
 
 > [!NOTE]
-> It is recommended to use the {{cssxref("flex")}} shorthand with a keyword value like `auto` or `initial` instead of setting `flex-basis` on its own. The [keyword values](/reference/properties/flex#values) expand to reliable combinations of {{cssxref("flex-grow")}}, {{cssxref("flex-shrink")}}, and `flex-basis`, which help to achieve the commonly desired flex behaviors.
+> It is recommended to use the `flex` shorthand with a keyword value like `auto` or `initial` instead of setting `flex-basis` on its own. The [keyword values](/reference/properties/flex#values) expand to reliable combinations of `flex-grow`, `flex-shrink`, and `flex-basis`, which help to achieve the commonly desired flex behaviors.
 
 {{InteractiveExample("CSS Demo: flex-basis")}}
 
@@ -51,7 +51,7 @@ flex-basis: 200px;
 }
 ```
 
-In this example, the {{cssxref("flex-grow")}} and {{cssxref("flex-shrink")}} properties are both set to `1` on all three items, indicating that the flex item can grow and shrink from the initial `flex-basis`.
+In this example, the `flex-grow` and `flex-shrink` properties are both set to `1` on all three items, indicating that the flex item can grow and shrink from the initial `flex-basis`.
 
 The demo changes the `flex-basis` value set on the first flex item, causing it to grow or shrink to fill the available space. The other flex items will also change size; they will be at least `min-content`-sized. For example, when the `flex-basis` of the first item is set to `200px`, it will start at `200px` but then shrink to fit the space available.
 
@@ -91,12 +91,12 @@ The `flex-basis` property is specified as either the keyword `content` or a `<'w
 
 - `<'width'>`
   - Any of the following units:
-    - {{cssxref("&lt;length&gt;")}} sets an absolute value.
-    - {{cssxref("&lt;percentage&gt;")}} sets a percentage of the width or height of the containing block's content area. Percentage values of `flex-basis` are resolved against the flex container. If the flex container's size is indefinite, the used value for `flex-basis` is `content`.
-    - `auto` uses the value of the {{cssxref("width")}} in horizontal writing mode, and the value of the {{cssxref("height")}} in vertical writing mode; when the corresponding value is also `auto`, the `content` value is used instead.
-    - {{cssxref("max-content")}} sets the intrinsic preferred width.
-    - {{cssxref("min-content")}} sets the intrinsic minimum width.
-    - {{cssxref("fit-content")}} sets the maximum possible size of a containing block's content area, bounded by the `min-content` and `max-content` values, and calculated based on the content of the current element.
+    - `&lt;length&gt;` sets an absolute value.
+    - `&lt;percentage&gt;` sets a percentage of the width or height of the containing block's content area. Percentage values of `flex-basis` are resolved against the flex container. If the flex container's size is indefinite, the used value for `flex-basis` is `content`.
+    - `auto` uses the value of the `width` in horizontal writing mode, and the value of the `height` in vertical writing mode; when the corresponding value is also `auto`, the `content` value is used instead.
+    - `max-content` sets the intrinsic preferred width.
+    - `min-content` sets the intrinsic minimum width.
+    - `fit-content` sets the maximum possible size of a containing block's content area, bounded by the `min-content` and `max-content` values, and calculated based on the content of the current element.
 
 ## Formal definition
 
@@ -280,8 +280,8 @@ In the first container, with `flex-basis: 0`, the `<section>` element has an ini
 
 ## See also
 
-- {{cssxref("flex")}} shorthand
-- {{cssxref("inline-size")}}
+- `flex` shorthand
+- `inline-size`
 - [Basic concepts of flexbox](/guides/Flexible_box_layout/Basic_concepts)
 - [Controlling ratios of flex items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios)
 - [CSS flexible box layout](/guides/Flexible_box_layout) module

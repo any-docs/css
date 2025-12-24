@@ -9,11 +9,11 @@ sidebar: cssref
 
 The **CSS masking** module defines masking and clipping, two different graphical operations that are used to partially or fully hide portions of visual elements.
 
-**Clipping** involves defining a closed vector path, shape, or polygon as a **clipping path**. Everything inside the clipping path region remains visible while everything outside is hidden, or "clipped out". The {{cssxref("clip-path")}} property specifies a {{cssxref("basic-shape")}} or references an SVG {{SVGElement("clipPath")}} element to be used as a clipping path.
+**Clipping** involves defining a closed vector path, shape, or polygon as a **clipping path**. Everything inside the clipping path region remains visible while everything outside is hidden, or "clipped out". The `clip-path` property specifies a `basic-shape` or references an SVG {{SVGElement("clipPath")}} element to be used as a clipping path.
 
 CSS **masking** properties are used to apply a mask to an element or its border. A graphical object is then painted onto the background or border, completely or partially masking out parts of the element or its border, depending on the opacity or luminance of the mask.
 
-The image used as the mask is specified by the {{cssxref("mask-image")}} or {{cssxref("mask-border-source")}} properties. The specified mask can be an {{cssxref("image")}}, a {{cssxref("gradient")}}, or an SVG {{SVGElement("mask")}} element. The mask can be sized and positioned similarly to [background and border images](/guides/Backgrounds_and_borders).
+The image used as the mask is specified by the `mask-image` or `mask-border-source` properties. The specified mask can be an `image`, a `gradient`, or an SVG {{SVGElement("mask")}} element. The mask can be sized and positioned similarly to [background and border images](/guides/Backgrounds_and_borders).
 
 Clipping and masking in CSS behaves the same way as it does with SVG: First, the element is styled without filter effects, masking, clipping, and opacity. Then, any effects are applied to the element in the following order: [filter effects](/guides/Filter_effects), clipping, masking, and opacity.
 
@@ -23,26 +23,26 @@ While masking provides more control and options, clipping can perform better if 
 
 ### Properties
 
-- {{cssxref("clip")}} {{deprecated_inline}}
-- {{cssxref("clip-path")}}
-- {{cssxref("clip-rule")}}
-- {{cssxref("mask")}} shorthand
-- {{cssxref("mask-clip")}}
-- {{cssxref("mask-composite")}}
-- {{cssxref("mask-image")}}
-- {{cssxref("mask-mode")}}
-- {{cssxref("mask-origin")}}
-- {{cssxref("mask-position")}}
-- {{cssxref("mask-repeat")}}
-- {{cssxref("mask-size")}}
-- {{cssxref("mask-type")}}
-- {{cssxref("mask-border")}} shorthand
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-slice")}}
-- {{cssxref("mask-border-source")}}
-- {{cssxref("mask-border-width")}}
-- {{cssxref("mask-border-mode")}}
+- `clip` {{deprecated_inline}}
+- `clip-path`
+- `clip-rule`
+- `mask` shorthand
+- `mask-clip`
+- `mask-composite`
+- `mask-image`
+- `mask-mode`
+- `mask-origin`
+- `mask-position`
+- `mask-repeat`
+- `mask-size`
+- `mask-type`
+- `mask-border` shorthand
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-slice`
+- `mask-border-source`
+- `mask-border-width`
+- `mask-border-mode`
 
 ### Data types
 
@@ -50,13 +50,13 @@ While masking provides more control and options, clipping can perform better if 
 
 ### Functions
 
-- {{cssxref("basic-shape/rect","rect()")}} function
+- `rect()` function
 
 ### Interfaces
 
-- {{domxref("SVGClipPathElement")}}
-- {{domxref("SVGMaskElement")}}
-  - {{domxref("SVGMaskElement.maskContentUnits")}}
+- `SVGClipPathElement`
+- `SVGMaskElement`
+  - `SVGMaskElement.maskContentUnits`
 
 ## Guides
 
@@ -75,26 +75,26 @@ While masking provides more control and options, clipping can perform better if 
 ## Related concepts
 
 - [`<coord-box>`](/reference/values/box-edge#values)
-- {{cssxref("image")}}
-- {{cssxref("&lt;position&gt;")}}
-- {{cssxref("&lt;url&gt;")}}
+- `image`
+- `&lt;position&gt;`
+- `&lt;url&gt;`
 
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
-  - {{cssxref("background")}} shorthand
-  - {{cssxref("background-origin")}}
-  - {{cssxref("background-position")}}
-  - {{cssxref("background-repeat")}}
-  - {{cssxref("background-size")}}
-  - {{cssxref("border-image")}} shorthand
-  - {{cssxref("border-image-repeat")}}
-  - {{cssxref("border-image-slice")}}
-  - {{cssxref("border-image-source")}}
-  - {{cssxref("border-image-width")}}
+  - `background` shorthand
+  - `background-origin`
+  - `background-position`
+  - `background-repeat`
+  - `background-size`
+  - `border-image` shorthand
+  - `border-image-repeat`
+  - `border-image-slice`
+  - `border-image-source`
+  - `border-image-width`
   - [`<repeat-style>`](/reference/properties/background-repeat#values) data type
 
 - [CSS shapes](/guides/Shapes) module
-  - {{cssxref("basic-shape")}} data type
-  - {{cssxref("basic-shape/polygon","polygon()")}} function
+  - `basic-shape` data type
+  - `polygon()` function
   - [`<shape-box>`](/reference/properties/shape-outside#shape-box) data type
 
 ## Specifications
@@ -103,9 +103,9 @@ While masking provides more control and options, clipping can perform better if 
 
 ## See also
 
-- {{cssxref("background-clip")}}
+- `background-clip`
 - [CSS filter effects](/guides/Filter_effects) module
 - [SVG tutorial: clipping and masking](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Clipping_and_masking)
-- {{domxref("CanvasRenderingContext2D.clip()")}}
-- {{domxref("WebGLRenderingContext.colorMask()")}}
+- `CanvasRenderingContext2D.clip()`
+- `WebGLRenderingContext.colorMask()`
 - [PWA icon masking](/en-US/docs/Web/Progressive_web_apps/How_to/Define_app_icons#support_masking)

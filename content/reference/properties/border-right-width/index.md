@@ -73,7 +73,7 @@ border-right-width: unset;
 ### Values
 
 - `<line-width>`
-  - Defines the width of the border, either as an explicit nonnegative {{cssxref("&lt;length&gt;")}} or a keyword. If it's a keyword, it must be one of the following values:
+  - Defines the width of the border, either as an explicit nonnegative `&lt;length&gt;` or a keyword. If it's a keyword, it must be one of the following values:
     - `thin`
     - `medium`
     - `thick`
@@ -130,5 +130,5 @@ div:nth-child(2) {
 
 ## See also
 
-- The other border-width-related CSS properties: {{Cssxref("border-bottom-width")}}, {{Cssxref("border-left-width")}}, {{Cssxref("border-top-width")}}, and {{Cssxref("border-width")}}.
-- The other border-right-related CSS properties: {{Cssxref("border")}}, {{Cssxref("border-right")}}, {{Cssxref("border-right-style")}}, and {{Cssxref("border-right-color")}}.
+- The other border-width-related CSS properties: `border-bottom-width`, `border-left-width`, `border-top-width`, and `border-width`.
+- The other border-right-related CSS properties: `border`, `border-right`, `border-right-style`, and `border-right-color`.

@@ -6,7 +6,7 @@ browser-compat: css.types.overflow
 sidebar: cssref
 ---
 
-The **`<overflow>`** {{glossary("enumerated")}} value type represents the keyword values for the {{cssxref("overflow-block")}}, {{cssxref("overflow-inline")}}, {{cssxref("overflow-x")}}, and {{cssxref("overflow-y")}} longhand properties and the {{cssxref("overflow")}} shorthand property. These properties apply to block containers, flex containers, and grid containers.
+The **`<overflow>`** {{glossary("enumerated")}} value type represents the keyword values for the `overflow-block`, `overflow-inline`, `overflow-x`, and `overflow-y` longhand properties and the `overflow` shorthand property. These properties apply to block containers, flex containers, and grid containers.
 
 ## Syntax
 
@@ -21,9 +21,9 @@ The `<overflow>` enumerated value type is specified using one of the values list
 - `visible`
   - Overflow content is not clipped and may be visible outside the element's padding box. The element box is not a {{glossary("scroll container")}}. This is the default value for all the properties that have the `<overflow>` enumerated value type.
 - `hidden`
-  - Overflow content is clipped at the element's padding box. There are no scroll bars, and the clipped content is not visible (i.e., clipped content is hidden), but the content still exists. User agents do not add scrollbars and also do not allow users to view the content outside the clipped region by actions such as dragging on a touch screen or using the scroll wheel on a mouse. The content _can_ be scrolled programmatically (for example, by setting the value of the {{domxref("Element.scrollLeft", "scrollLeft")}} property or the {{domxref("Element.scrollTo", "scrollTo()")}} method). The content can also be scrolled via keyboard interaction; arrows enable scrolling through the content and tabbing to a focusable element within the hidden content enables scrolling the focused element into view. The element box on which this value is set is a scroll container.
+  - Overflow content is clipped at the element's padding box. There are no scroll bars, and the clipped content is not visible (i.e., clipped content is hidden), but the content still exists. User agents do not add scrollbars and also do not allow users to view the content outside the clipped region by actions such as dragging on a touch screen or using the scroll wheel on a mouse. The content _can_ be scrolled programmatically (for example, by setting the value of the `scrollLeft` property or the `scrollTo()` method). The content can also be scrolled via keyboard interaction; arrows enable scrolling through the content and tabbing to a focusable element within the hidden content enables scrolling the focused element into view. The element box on which this value is set is a scroll container.
 - `clip`
-  - Overflow content is clipped at the element's _overflow clip edge_ that is defined using the {{cssxref("overflow-clip-margin")}} property. As a result, content overflows the element's padding box by the {{cssxref("&lt;length&gt;")}} value of `overflow-clip-margin` or by `0px` if not set. Overflow content outside the clipped region is not visible, user agents do not add a scrollbar, and programmatic scrolling is also not supported. No new [formatting context](/guides/Display/Block_formatting_context) is created.
+  - Overflow content is clipped at the element's _overflow clip edge_ that is defined using the `overflow-clip-margin` property. As a result, content overflows the element's padding box by the `&lt;length&gt;` value of `overflow-clip-margin` or by `0px` if not set. Overflow content outside the clipped region is not visible, user agents do not add a scrollbar, and programmatic scrolling is also not supported. No new [formatting context](/guides/Display/Block_formatting_context) is created.
 - `scroll`
   - Overflow content is clipped at the element's padding box, and overflow content can be scrolled into view using scrollbars. User agents display scrollbars in both horizontal and vertical directions if only one value is set, whether or not any content is overflowing or clipped. The use of this keyword value, therefore, can prevent scrollbars from appearing and disappearing as content changes. Printers may still print overflowing content. The element box on which this value is set is a scroll container.
 - `auto`
@@ -34,7 +34,7 @@ The `<overflow>` enumerated value type is specified using one of the values list
 
 ## Examples
 
-This example demos all the `<overflow>` enumerated values for the {{cssxref("overflow")}} property.
+This example demos all the `<overflow>` enumerated values for the `overflow` property.
 
 ### HTML
 
@@ -154,7 +154,7 @@ Rubber Duckie, I'm awfully fond of you
 
 ### CSS
 
-For the purpose of demonstration, the size of the `<pre>` element box has been defined to ensure that the content overflows its container in both the inline and block directions. A different `<overflow>` value is set for each of the repeating `<pre>` elements. For the `clip` value demonstration, an {{CSSXref("overflow-clip-margin")}} has been added.
+For the purpose of demonstration, the size of the `<pre>` element box has been defined to ensure that the content overflows its container in both the inline and block directions. A different `<overflow>` value is set for each of the repeating `<pre>` elements. For the `clip` value demonstration, an `overflow-clip-margin` has been added.
 
 ```css hidden
 pre {
@@ -241,5 +241,5 @@ To see the effect of keyboard focus on overflow and scroll behaviors, try tabbin
 
 ## See also
 
-- Properties that use this data type: {{cssxref("overflow-x")}}, {{cssxref("overflow-y")}}, {{cssxref("overflow-inline")}}, {{cssxref("overflow-block")}} and {{cssxref("overflow")}}
+- Properties that use this data type: `overflow-x`, `overflow-y`, `overflow-inline`, `overflow-block` and `overflow`
 - [CSS overflow module](/guides/Overflow)

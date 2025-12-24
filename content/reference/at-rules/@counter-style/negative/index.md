@@ -6,7 +6,7 @@ browser-compat: css.at-rules.counter-style.negative
 sidebar: cssref
 ---
 
-The **`negative`** descriptor of the {{cssxref("@counter-style")}} at-rule lets you define how negative counter values are represented when defining custom counter styles. The value of the `negative` descriptor defines the symbols to be added before and after the counter representation when the counter's value is negative.
+The **`negative`** descriptor of the `@counter-style` at-rule lets you define how negative counter values are represented when defining custom counter styles. The value of the `negative` descriptor defines the symbols to be added before and after the counter representation when the counter's value is negative.
 
 ## Syntax
 
@@ -87,8 +87,8 @@ The prefix and suffix listed as the value of the `negative` descriptor are only 
 
 ## See also
 
-- {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, {{cssxref("@counter-style/fallback", "fallback")}}
-- List style properties: {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}} function to create anonymous counter styles
+- `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `prefix`, `suffix`, `range`, `pad`, `speak-as`, `fallback`
+- List style properties: `list-style`, `list-style-image`, `list-style-position`
+- `symbols()` function to create anonymous counter styles
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists and counters](/guides/Lists) module

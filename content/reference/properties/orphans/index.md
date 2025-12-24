@@ -27,7 +27,7 @@ orphans: unset;
 
 ### Values
 
-- {{cssxref("&lt;integer&gt;")}}
+- `&lt;integer&gt;`
   - The minimum number of lines that can stay by themselves at the bottom of a fragment before a fragmentation break. The value must be positive.
 
 ## Formal definition
@@ -91,5 +91,5 @@ p:first-child {
 
 ## See also
 
-- {{cssxref("widows")}}
+- `widows`
 - [Paged media](/guides/Paged_media)

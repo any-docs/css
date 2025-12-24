@@ -42,11 +42,11 @@ image-set(
 ### Values
 
 - `<image>`
-  - The {{cssxref("image")}} can be any image type except for an image set. The `image-set()` function may not be nested inside another `image-set()` function.
+  - The `image` can be any image type except for an image set. The `image-set()` function may not be nested inside another `image-set()` function.
 - `<string>`
   - A URL to an image.
 - `<resolution>` <Badge type="info" text="Optional" />
-  - {{cssxref("resolution")}} units include `x` or `dppx`, for dots per pixel unit, `dpi`, for dots per inch, and `dpcm` for dots per centimeter. Every image within an `image-set()` must have a unique resolution.
+  - `resolution` units include `x` or `dppx`, for dots per pixel unit, `dpi`, for dots per inch, and `dpcm` for dots per centimeter. Every image within an `image-set()` must have a unique resolution.
 - `type(<string>)` <Badge type="info" text="Optional" />
   - A valid MIME type string, for example "image/jpeg".
 
@@ -65,7 +65,7 @@ Browsers do not provide any special information on background images to assistiv
 
 ### Using image-set() to provide alternative background-image options
 
-This example shows how to use [`image-set()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set) to provide two alternative {{cssxref("background-image")}} options, chosen depending on the resolution needed: a normal version and a high-resolution version.
+This example shows how to use [`image-set()`](https://drafts.csswg.org/css-images-4/#funcdef-image-set) to provide two alternative `background-image` options, chosen depending on the resolution needed: a normal version and a high-resolution version.
 
 ```html live-sample___image-set-example
 <div class="box"></div>
@@ -125,9 +125,9 @@ In the next example the `type()` function is used to serve the image in AVIF and
 
 ## See also
 
-- {{cssxref("image")}}
-- {{cssxref("image/image", "image()")}}
-- {{cssxref("element()")}}
-- {{cssxref("url_value", "&lt;url&gt;")}}
-- {{cssxref("gradient")}}
-- {{cssxref("cross-fade()")}}
+- `image`
+- `image()`
+- `element()`
+- `&lt;url&gt;`
+- `gradient`
+- `cross-fade()`

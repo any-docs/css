@@ -6,7 +6,7 @@ browser-compat: css.properties.border-inline-end-style
 sidebar: cssref
 ---
 
-The **`border-inline-end-style`** [CSS](/en-US/docs/Web/CSS) property defines the style of the logical inline end border of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("border-top-style")}}, {{cssxref("border-right-style")}}, {{cssxref("border-bottom-style")}}, or {{cssxref("border-left-style")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The **`border-inline-end-style`** [CSS](/en-US/docs/Web/CSS) property defines the style of the logical inline end border of an element, which maps to a physical border style depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-style`, `border-right-style`, `border-bottom-style`, or `border-left-style` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 {{InteractiveExample("CSS Demo: border-inline-end-style")}}
 
@@ -62,7 +62,7 @@ border-inline-end-style: revert-layer;
 border-inline-end-style: unset;
 ```
 
-Related properties are {{cssxref("border-block-start-style")}}, {{cssxref("border-block-end-style")}}, and {{cssxref("border-inline-start-style")}}, which define the other border styles of the element.
+Related properties are `border-block-start-style`, `border-block-end-style`, and `border-inline-start-style`, which define the other border styles of the element.
 
 ### Values
 
@@ -120,5 +120,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- This property maps to one of the physical border properties: {{cssxref("border-top-style")}}, {{cssxref("border-right-style")}}, {{cssxref("border-bottom-style")}}, or {{cssxref("border-left-style")}}.
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- This property maps to one of the physical border properties: `border-top-style`, `border-right-style`, `border-bottom-style`, or `border-left-style`.
+- `writing-mode`, `direction`, `text-orientation`

@@ -146,20 +146,20 @@ Combinators are selectors that establish a relationship between two or more simp
 
 ### Major object types
 
-- {{DOMxRef("Document.styleSheets")}}
-- {{DOMxRef("HTMLElement.style")}}
-- {{DOMxRef("Element.className")}}
-- {{DOMxRef("Element.classList")}}
-- {{DOMxRef("StyleSheetList")}}
-- {{DOMxRef("CSSRuleList")}}
-- {{DOMxRef("CSSRule")}}
-- {{DOMxRef("CSSStyleRule")}}
-- {{DOMxRef("CSSStyleDeclaration")}}
+- `Document.styleSheets`
+- `HTMLElement.style`
+- `Element.className`
+- `Element.classList`
+- `StyleSheetList`
+- `CSSRuleList`
+- `CSSRule`
+- `CSSStyleRule`
+- `CSSStyleDeclaration`
 
 ### Important methods
 
-- {{DOMxRef("CSSStyleSheet.insertRule()")}}
-- {{DOMxRef("CSSStyleSheet.deleteRule()")}}
+- `CSSStyleSheet.insertRule()`
+- `CSSStyleSheet.deleteRule()`
 
 ## See also
 

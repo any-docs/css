@@ -10,7 +10,7 @@ The **`height`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/
 
 ## Syntax
 
-The `height` feature is specified as a {{cssxref("&lt;length&gt;")}} value representing the viewport height. It is a range feature, meaning that you can also use the prefixed **`min-height`** and **`max-height`** variants to query minimum and maximum values, respectively.
+The `height` feature is specified as a `&lt;length&gt;` value representing the viewport height. It is a range feature, meaning that you can also use the prefixed **`min-height`** and **`max-height`** variants to query minimum and maximum values, respectively.
 
 ## Examples
 

@@ -17,12 +17,12 @@ When content is physically printed or displayed as a print preview, there are pa
 
 ### Properties
 
-- {{cssxref("box-decoration-break")}}
-- {{cssxref("break-after")}}
-- {{cssxref("break-before")}}
-- {{cssxref("break-inside")}}
-- {{cssxref("orphans")}}
-- {{cssxref("widows")}}
+- `box-decoration-break`
+- `break-after`
+- `break-before`
+- `break-inside`
+- `orphans`
+- `widows`
 
 ### Glossary terms
 
@@ -35,15 +35,15 @@ When content is physically printed or displayed as a print preview, there are pa
 
 ## Related concepts
 
-- {{cssxref("overflow")}}
-- {{cssxref("height")}}, {{cssxref("max-height")}}, and {{cssxref("block-size")}} CSS properties
-- {{cssxref("width")}}, {{cssxref("max-width")}}, and {{cssxref("inline-size")}} CSS properties
+- `overflow`
+- `height`, `max-height`, and `block-size` CSS properties
+- `width`, `max-width`, and `inline-size` CSS properties
 - [Block formatting context](/guides/Display/Block_formatting_context)
 
 [CSS paged media](/guides/Paged_media) module
 
-- {{cssxref("page")}}
-- {{cssxref("@page")}}
+- `page`
+- `@page`
 
 [CSS display](/guides/Display) module
 

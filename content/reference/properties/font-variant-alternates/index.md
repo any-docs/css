@@ -6,9 +6,9 @@ browser-compat: css.properties.font-variant-alternates
 sidebar: cssref
 ---
 
-The **`font-variant-alternates`** [CSS](/en-US/docs/Web/CSS) property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in {{cssxref("@font-feature-values")}}.
+The **`font-variant-alternates`** [CSS](/en-US/docs/Web/CSS) property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in `@font-feature-values`.
 
-The {{cssxref("@font-feature-values")}} at-rule can be used to associate, for a given font face, a human-readable name with a numeric index that controls a particular OpenType font feature. For features that select alternative glyphs (`stylistic`, `styleset`, `character-variant`, `swash`, `ornament` or `annotation`), the `font-variant-alternates` property can then reference the human-readable name in order to apply the associated feature.
+The `@font-feature-values` at-rule can be used to associate, for a given font face, a human-readable name with a numeric index that controls a particular OpenType font feature. For features that select alternative glyphs (`stylistic`, `styleset`, `character-variant`, `swash`, `ornament` or `annotation`), the `font-variant-alternates` property can then reference the human-readable name in order to apply the associated feature.
 
 This allows CSS rules to enable alternative glyphs without needing to know the specific index values that a particular font uses to control them.
 
@@ -126,12 +126,12 @@ p {
 
 ## See also
 
-- {{cssxref("font-variant")}}
-- {{cssxref("font-variant-caps")}}
-- {{cssxref("font-variant-east-asian")}}
-- {{cssxref("font-variant-emoji")}}
-- {{cssxref("font-variant-ligatures")}}
-- {{cssxref("font-variant-numeric")}}
-- {{cssxref("font-variant-position")}}
-- {{cssxref("@font-feature-values")}}
-- {{cssxref("font-feature-settings")}}
+- `font-variant`
+- `font-variant-caps`
+- `font-variant-east-asian`
+- `font-variant-emoji`
+- `font-variant-ligatures`
+- `font-variant-numeric`
+- `font-variant-position`
+- `@font-feature-values`
+- `font-feature-settings`

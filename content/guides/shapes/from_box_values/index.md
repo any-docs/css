@@ -8,14 +8,14 @@ sidebar: cssref
 
 A straightforward way to create a shape is to use a value from the [CSS box model](/guides/Box_model) module. This article explains how to do this.
 
-The {{cssxref("box-edge")}} box values allowable as a shape value are:
+The `box-edge` box values allowable as a shape value are:
 
 - `content-box`
 - `padding-box`
 - `border-box`
 - `margin-box`
 
-The {{cssxref("border-radius")}} values are also supported. This means you can give an element a curved border, and flow your content around the created shape.
+The `border-radius` values are also supported. This means you can give an element a curved border, and flow your content around the created shape.
 
 ## CSS box model
 
@@ -27,7 +27,7 @@ By using box values for shapes, we can wrap our content around the edges defined
 
 ### margin-box
 
-The `margin-box` is the shape defined by the outside margin edge and includes the corner radius of the shape, should {{cssxref("border-radius")}} have been used in defining the element.
+The `margin-box` is the shape defined by the outside margin edge and includes the corner radius of the shape, should `border-radius` have been used in defining the element.
 
 In the example below, we have a circular purple item which is a {{htmlelement("div")}} with a height, width, and background color. The `border-radius` property has been used to create a circle by setting `border-radius: 50%`. As the element has a margin, you can see that the content is flowing around the circular shape and the margin applied to it.
 
@@ -67,7 +67,7 @@ body {
 
 ### border-box
 
-The `border-box` value is the shape defined by the outside border edge. This shape follows all of the normal border radius shaping rules for the outside of the border. You still have a border, even if you have not used the CSS {{cssxref("border")}} property. In this case, it will be the same as `padding-box`, the shape defined by the outside padding edge.
+The `border-box` value is the shape defined by the outside border edge. This shape follows all of the normal border radius shaping rules for the outside of the border. You still have a border, even if you have not used the CSS `border` property. In this case, it will be the same as `padding-box`, the shape defined by the outside padding edge.
 
 In the example below, you can see how the text now follows the line created by the border. Change the border size, and the content will follow it.
 

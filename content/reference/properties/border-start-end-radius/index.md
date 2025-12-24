@@ -6,9 +6,9 @@ browser-compat: css.properties.border-start-end-radius
 sidebar: cssref
 ---
 
-The **`border-start-end-radius`** [CSS](/en-US/docs/Web/CSS) property defines a logical border radius on an element, which maps to a physical border radius depending on the element's {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}. This is useful when building styles to work regardless of the [text orientation](/reference/properties/text-orientation) and [writing mode](/guides/Writing_modes).
+The **`border-start-end-radius`** [CSS](/en-US/docs/Web/CSS) property defines a logical border radius on an element, which maps to a physical border radius depending on the element's `writing-mode`, `direction`, and `text-orientation`. This is useful when building styles to work regardless of the [text orientation](/reference/properties/text-orientation) and [writing mode](/guides/Writing_modes).
 
-This property affects the corner between the block-start and the inline-end sides of the element. For instance, in a `horizontal-tb` writing mode with `ltr` direction, it corresponds to the {{CSSxRef("border-top-right-radius")}} property.
+This property affects the corner between the block-start and the inline-end sides of the element. For instance, in a `horizontal-tb` writing mode with `ltr` direction, it corresponds to the `border-top-right-radius` property.
 
 {{InteractiveExample("CSS Demo: border-start-end-radius")}}
 
@@ -74,7 +74,7 @@ border-start-end-radius: unset;
 ### Values
 
 - `<length-percentage>`
-  - Denotes the size of the circle radius or the semi-major and semi-minor axes of the ellipse. As absolute length it can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Percentages for the horizontal axis refer to the width of the box, percentages for the vertical axis refer to the height of the box. Negative values are invalid.
+  - Denotes the size of the circle radius or the semi-major and semi-minor axes of the ellipse. As absolute length it can be expressed in any unit allowed by the CSS `&lt;length&gt;` data type. Percentages for the horizontal axis refer to the width of the box, percentages for the vertical axis refer to the height of the box. Negative values are invalid.
 
 ## Formal definition
 
@@ -129,5 +129,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- The mapped physical property: {{CSSxRef("border-bottom-left-radius")}}
-- {{CSSxRef("writing-mode")}}, {{CSSxRef("direction")}}, {{CSSxRef("text-orientation")}}
+- The mapped physical property: `border-bottom-left-radius`
+- `writing-mode`, `direction`, `text-orientation`

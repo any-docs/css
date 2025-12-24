@@ -10,7 +10,7 @@ The **`color`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/R
 
 ## Syntax
 
-The `color` feature is specified as an {{cssxref("&lt;integer&gt;")}} value that represents the number of bits per color component (red, green, blue) of the output device. If the device is not a color device, the value is zero. It is a range feature, meaning that you can also use the prefixed **`min-color`** and **`max-color`** variants to query minimum and maximum values, respectively.
+The `color` feature is specified as an `&lt;integer&gt;` value that represents the number of bits per color component (red, green, blue) of the output device. If the device is not a color device, the value is zero. It is a range feature, meaning that you can also use the prefixed **`min-color`** and **`max-color`** variants to query minimum and maximum values, respectively.
 
 > [!NOTE]
 > If the various color components are represented by different numbers of bits, the smallest number is used. For example, if a display uses 5 bits for blue and red and 6 bits for green, then the device is considered to use 5 bits per color component. If the device uses indexed colors, the minimum number of bits per color component in the color table is used.
@@ -64,5 +64,5 @@ p {
 
 ## See also
 
-- The CSS {{cssxref("color")}} property
-- The CSS {{cssxref("&lt;color&gt;")}} data unit
+- The CSS `color` property
+- The CSS `&lt;color&gt;` data unit

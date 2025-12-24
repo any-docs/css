@@ -86,13 +86,13 @@ margin-block-start: revert-layer;
 margin-block-start: unset;
 ```
 
-It corresponds to the {{cssxref("margin-top")}}, {{cssxref("margin-right")}}, {{cssxref("margin-bottom")}}, or {{cssxref("margin-left")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+It corresponds to the `margin-top`, `margin-right`, `margin-bottom`, or `margin-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
-It relates to {{cssxref("margin-block-end")}}, {{cssxref("margin-inline-start")}}, and {{cssxref("margin-inline-end")}}, which define the other margins of the element.
+It relates to `margin-block-end`, `margin-inline-start`, and `margin-inline-end`, which define the other margins of the element.
 
 ### Values
 
-The `margin-block-start` property takes the same values as the {{cssxref("margin-left")}} property.
+The `margin-block-start` property takes the same values as the `margin-left` property.
 
 ## Formal definition
 
@@ -145,5 +145,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- The mapped physical properties: {{cssxref("margin-top")}}, {{cssxref("margin-right")}}, {{cssxref("margin-bottom")}}, and {{cssxref("margin-left")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- The mapped physical properties: `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`
+- `writing-mode`, `direction`, `text-orientation`

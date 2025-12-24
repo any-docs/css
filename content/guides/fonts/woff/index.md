@@ -17,11 +17,11 @@ There are three main benefits to using WOFF:
 2. Many font vendors that are unwilling to license their TrueType or OpenType format fonts for use on the web will license WOFF format fonts. This improves availability of fonts to site designers.
 3. Both proprietary and free software browser vendors like the WOFF format, so it has the potential of becoming a truly universal, interoperable font format for the web, unlike other current font formats.
 
-There are two versions of WOFF: WOFF and WOFF2. They mostly differ in regard to the compression algorithm used. In {{cssxref("@font-face")}} they are identified by the `'woff'` and `'woff2'` format descriptor respectively.
+There are two versions of WOFF: WOFF and WOFF2. They mostly differ in regard to the compression algorithm used. In `@font-face` they are identified by the `'woff'` and `'woff2'` format descriptor respectively.
 
 ## Using WOFF
 
-You can use the {{cssxref("@font-face")}} CSS property to use WOFF fonts for text in web content. It works exactly like OpenType and TrueType format fonts do, except it will likely let your content download more efficiently due to the addition of compression.
+You can use the `@font-face` CSS property to use WOFF fonts for text in web content. It works exactly like OpenType and TrueType format fonts do, except it will likely let your content download more efficiently due to the addition of compression.
 
 ## Tools for working with WOFF fonts
 
@@ -37,4 +37,4 @@ You can use the {{cssxref("@font-face")}} CSS property to use WOFF fonts for tex
 
 ## See also
 
-- {{cssxref("@font-face")}}
+- `@font-face`

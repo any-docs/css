@@ -6,11 +6,11 @@ spec-urls: https://drafts.csswg.org/css-values/#typedef-time-percentage
 sidebar: cssref
 ---
 
-The **`<time-percentage>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a value that can be either a {{Cssxref("time")}} or a {{Cssxref("percentage")}}.
+The **`<time-percentage>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a value that can be either a `time` or a `percentage`.
 
 ## Syntax
 
-Refer to the documentation for {{Cssxref("time")}} and {{Cssxref("percentage")}} for details of the individual syntaxes allowed by this type.
+Refer to the documentation for `time` and `percentage` for details of the individual syntaxes allowed by this type.
 
 ## Formal syntax
 
@@ -20,7 +20,7 @@ Refer to the documentation for {{Cssxref("time")}} and {{Cssxref("percentage")}}
 
 ### Use in calc()
 
-Where a `<time-percentage>` is specified as an allowable type, this means that the percentage resolves to a time and therefore can be used in a {{cssxref("calc()")}} expression.
+Where a `<time-percentage>` is specified as an allowable type, this means that the percentage resolves to a time and therefore can be used in a `calc()` expression.
 
 ### Valid percentages
 
@@ -61,6 +61,6 @@ Where a `<time-percentage>` is specified as an allowable type, this means that t
 
 ## See also
 
-- {{cssxref("&lt;percentage&gt;")}}
-- {{cssxref("&lt;time&gt;")}}
+- `&lt;percentage&gt;`
+- `&lt;time&gt;`
 - [CSS values and units](/guides/Values_and_units) module

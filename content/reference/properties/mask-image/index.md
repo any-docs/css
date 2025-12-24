@@ -6,7 +6,7 @@ browser-compat: css.properties.mask-image
 sidebar: cssref
 ---
 
-The **`mask-image`** [CSS](/en-US/docs/Web/CSS) property sets the image that is used as the mask layer for an element, hiding sections of the element on which the masking image is set based on the alpha channel of the mask image and, depending on the {{cssxref("mask-mode")}} property value, the luminance of the mask image's colors.
+The **`mask-image`** [CSS](/en-US/docs/Web/CSS) property sets the image that is used as the mask layer for an element, hiding sections of the element on which the masking image is set based on the alpha channel of the mask image and, depending on the `mask-mode` property value, the luminance of the mask image's colors.
 
 ## Syntax
 
@@ -38,9 +38,9 @@ mask-image: unset;
   - This keyword is interpreted as a transparent black image layer.
 
 - `<mask-source>`
-  - A {{cssxref("url_value", "&lt;url&gt;")}} reference to a {{SVGElement("mask")}} or to a CSS image.
+  - A `&lt;url&gt;` reference to a {{SVGElement("mask")}} or to a CSS image.
 
-- {{cssxref("image")}}
+- `image`
   - An image value used as a mask image layer.
 
 ## Description
@@ -61,13 +61,13 @@ A mask will be counted as a transparent black image layer, not revealing anythin
 - The mask image doesn't exist.
 - The mask value doesn't point to a mask image.
 
-The default value of the {{cssxref("mask-mode")}} property is `match-source`, which means the mode is defined by the mode of the mask image itself. The mask image's mode is generally `alpha` except when the mask source is an SVG {{svgelement("mask")}} element, in which case the mode is `luminance` unless the mode is changed to `alpha` via the CSS {{cssxref("mask-type")}} property or SVG {{svgattr("mask-type")}} attribute.
+The default value of the `mask-mode` property is `match-source`, which means the mode is defined by the mode of the mask image itself. The mask image's mode is generally `alpha` except when the mask source is an SVG {{svgelement("mask")}} element, in which case the mode is `luminance` unless the mode is changed to `alpha` via the CSS `mask-type` property or SVG {{svgattr("mask-type")}} attribute.
 
 The `mask-mode` value is significant, because it determines whether the masking effect depends on the image source's alpha channel values alone or a combination of those and the mask's luminance (the lightness/darkness of the colors that make up the `mask-image`):
 
 - In all cases, the alpha transparency of the mask matters; element areas masked by opaque sections of the `mask-image` will be rendered, while areas masked by transparent image sections are hidden.
 - When the `mask-mode` value is set or resolves to `alpha`, only the alpha-channel of the colors matter; the hue, lightness, etc., don't matter.
-- If the `mask-mode` property is set or defaults to `luminance`, the masking value is the luminance value of each color multiplied by its alpha value. The `mask-mode` will resolve to `luminance` if explicitly set to that value, or if the property is set to `match-source` and the `mask-image` source is an SVG {{svgelement("mask")}} that does not have its {{cssxref("mask-type")}} property or {{svgattr("mask-type")}} attribute explicitly set to `alpha`.
+- If the `mask-mode` property is set or defaults to `luminance`, the masking value is the luminance value of each color multiplied by its alpha value. The `mask-mode` will resolve to `luminance` if explicitly set to that value, or if the property is set to `match-source` and the `mask-image` source is an SVG {{svgelement("mask")}} that does not have its `mask-type` property or {{svgattr("mask-type")}} attribute explicitly set to `alpha`.
 
 ## Formal definition
 
@@ -97,7 +97,7 @@ We include an HTML {{htmlelement("img")}} element, which will also be used in al
 
 #### CSS
 
-We use the CSS {{CSSxRef("gradient/radial-gradient")}} function to create a mask that has a black circle with a radius that is half the width of the mask, before transitioning to being transparent over 10%.
+We use the CSS `gradient/radial-gradient` function to create a mask that has a black circle with a radius that is half the width of the mask, before transitioning to being transparent over 10%.
 
 ```css live-sample___first-example
 img {
@@ -117,7 +117,7 @@ In this example, the `<mask-source>` used as our mask image is an external SVG.
 
 #### HTML
 
-We include the same image as the previous example. We've also included the image we will be using as the mask; a star whose {{cssxref("fill-opacity")}} is `0.5`, or 50% opaque.
+We include the same image as the previous example. We've also included the image we will be using as the mask; a star whose `fill-opacity` is `0.5`, or 50% opaque.
 
 ```html
 <img
@@ -144,7 +144,7 @@ img:first-of-type {
 {{EmbedLiveSample("Image resource as a mask image", "100%", 250)}}
 
 The mask is semi-opaque, which is why the colors are not as vibrant as the previous example. The part of the image that is visible is 50% opaque; the opacity of the mask applied.
-The mask is smaller than the image, so repeats by default. We could have used {{cssxref("mask-repeat")}} to control the repeating or {{cssxref("mask-size")}} to change the size of the mask, which we do in the next example.
+The mask is smaller than the image, so repeats by default. We could have used `mask-repeat` to control the repeating or `mask-size` to change the size of the mask, which we do in the next example.
 
 ### Multiple masks
 
@@ -158,7 +158,7 @@ This example demonstrates applying multiple masks.
 
 #### CSS
 
-We apply two masks — the same semi-transparent SVG as in the previous example, and a {{CSSxRef("gradient/repeating-radial-gradient")}}. We control the size of the masks using the {{cssxref("mask-size")}} property. Because our first mask is not sized at 100%, we make sure our masks are centered and don't repeat with the {{cssxref("mask-position")}} and {{cssxref("mask-repeat")}} properties, respectively.
+We apply two masks — the same semi-transparent SVG as in the previous example, and a `gradient/repeating-radial-gradient`. We control the size of the masks using the `mask-size` property. Because our first mask is not sized at 100%, we make sure our masks are centered and don't repeat with the `mask-position` and `mask-repeat` properties, respectively.
 
 ```css
 img {
@@ -177,7 +177,7 @@ img {
 
 ### Masking with SVG `<mask>`
 
-This example demonstrates using SVG {{svgelement("mask")}} elements as masks. In this case, the color of the mask matters as the {{cssxref("mask-type")}} value for SVG masks defaults to `luminance`, which means white opaque areas (100% luminance) will be masked and visible, transparent and black areas (0% luminance) will be clipped, and anything in between will be partially masked.
+This example demonstrates using SVG {{svgelement("mask")}} elements as masks. In this case, the color of the mask matters as the `mask-type` value for SVG masks defaults to `luminance`, which means white opaque areas (100% luminance) will be masked and visible, transparent and black areas (0% luminance) will be clipped, and anything in between will be partially masked.
 
 #### HTML
 
@@ -279,14 +279,14 @@ Toggle the checkbox to toggle the value of the `mask-mode` between `alpha` (chec
 
 ## See also
 
-- {{cssxref("mask")}} shorthand
-- {{cssxref("mask-origin")}}
-- {{cssxref("mask-position")}}
-- {{cssxref("mask-repeat")}}
-- {{cssxref("mask-size")}}
-- {{cssxref("mask-border")}}
-- {{cssxref("clip-path")}}
-- {{cssxref("background-image")}}
+- `mask` shorthand
+- `mask-origin`
+- `mask-position`
+- `mask-repeat`
+- `mask-size`
+- `mask-border`
+- `clip-path`
+- `background-image`
 - [Introduction to CSS masking](/guides/Masking/Introduction)
 - [CSS `mask` properties](/guides/Masking/Mask_properties)
 - [Declaring multiple masks](/guides/Masking/Multiple_masks)

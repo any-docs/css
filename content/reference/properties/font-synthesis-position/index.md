@@ -10,11 +10,11 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`font-synthesis-position`** [CSS](/en-US/docs/Web/CSS) property lets you specify whether or not a browser may synthesize the subscript and superscript "position" typefaces when they are missing in a font family, while using {{cssxref("font-variant-position")}} to set the positions.
+The **`font-synthesis-position`** [CSS](/en-US/docs/Web/CSS) property lets you specify whether or not a browser may synthesize the subscript and superscript "position" typefaces when they are missing in a font family, while using `font-variant-position` to set the positions.
 
 The **`font-synthesis-position`** property has no effect when using the {{htmlelement("sup")}} and {{htmlelement("sub")}} elements.
 
-It is often convenient to use the shorthand property {{cssxref("font-synthesis")}} to control all typeface synthesis values.
+It is often convenient to use the shorthand property `font-synthesis` to control all typeface synthesis values.
 
 ## Syntax
 
@@ -102,5 +102,5 @@ This example shows turning off synthesis of the superscript and subscript typefa
 
 ## See also
 
-- {{cssxref("font-synthesis")}} shorthand, {{cssxref("font-synthesis-style")}}, {{cssxref("font-synthesis-weight")}}
-- {{cssxref("font-style")}}, {{cssxref("font-variant")}}, {{cssxref("font-variant-position")}}, {{cssxref("font-weight")}}
+- `font-synthesis` shorthand, `font-synthesis-style`, `font-synthesis-weight`
+- `font-style`, `font-variant`, `font-variant-position`, `font-weight`

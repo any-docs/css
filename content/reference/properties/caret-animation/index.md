@@ -69,7 +69,7 @@ The markup features two {{htmlelement("p")}} elements with [`contenteditable`](/
 
 #### CSS
 
-The CSS sets the {{cssxref("caret-color")}} value to `red`. It then gives the first paragraph a `caret-animation` value of `auto` and the second paragraph a `caret-animation` value of `manual`.
+The CSS sets the `caret-color` value to `red`. It then gives the first paragraph a `caret-animation` value of `auto` and the second paragraph a `caret-animation` value of `manual`.
 
 ```css live-sample___caret-animation-basic
 p {
@@ -118,7 +118,7 @@ The markup features a {{htmlelement("p")}} element and two text {{htmlelement("i
 
 #### CSS
 
-We first define a set of {{cssxref("@keyframes")}} that change the {{cssxref("caret-color")}} from `transparent` to `darkblue`.
+We first define a set of `@keyframes` that change the `caret-color` from `transparent` to `darkblue`.
 
 ```css live-sample___caret-animation-custom
 @keyframes custom-caret-animation {
@@ -132,7 +132,7 @@ We first define a set of {{cssxref("@keyframes")}} that change the {{cssxref("ca
 }
 ```
 
-We then style the `<p>` and the first `<input>` with the custom `@keyframes` animation, a {{cssxref("caret-color")}}, and a `caret-animation` value of `manual` to turn the default caret blinking behavior off.
+We then style the `<p>` and the first `<input>` with the custom `@keyframes` animation, a `caret-color`, and a `caret-animation` value of `manual` to turn the default caret blinking behavior off.
 
 ```css hidden live-sample___caret-animation-custom
 body {
@@ -176,6 +176,6 @@ Try focusing the first two elements to see what the custom caret animation looks
 
 ## See also
 
-- {{cssxref("caret-color")}}, {{cssxref("caret-shape")}}
-- {{cssxref("caret")}} shorthand
+- `caret-color`, `caret-shape`
+- `caret` shorthand
 - [CSS basic user interface](/guides/Basic_user_interface) module

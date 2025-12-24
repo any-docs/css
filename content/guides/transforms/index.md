@@ -655,9 +655,9 @@ updateTransform();
 
 {{EmbedLiveSample("transforms", "", "850px")}}
 
-You can also use the `perspective` slider to modify the {{cssxref("perspective")}} property of the cube's container, which determines the distance between you and the `z=0` plane.
+You can also use the `perspective` slider to modify the `perspective` property of the cube's container, which determines the distance between you and the `z=0` plane.
 
-The {{cssxref("perspective-origin")}} sliders determine where you, the viewer, are looking into the 3D space for purposes of determining the view's _vanishing point_. This vanishing point is indicated by a small red dot. You can imagine modifying these sliders as physically moving your head up, down, left, and right to see different parts of the cube without moving the cube itself.
+The `perspective-origin` sliders determine where you, the viewer, are looking into the 3D space for purposes of determining the view's _vanishing point_. This vanishing point is indicated by a small red dot. You can imagine modifying these sliders as physically moving your head up, down, left, and right to see different parts of the cube without moving the cube itself.
 
 The `backface-visibility` checkbox determines whether the cube's back faces are set to `visible` or `hidden`.
 
@@ -670,44 +670,44 @@ The cube in the above example is comprised of six `<div>` elements, all of which
 
 ### Properties
 
-- {{cssxref("backface-visibility")}}
-- {{cssxref("perspective")}}
-- {{cssxref("perspective-origin")}}
-- {{cssxref("rotate")}}
-- {{cssxref("scale")}}
-- {{cssxref("transform")}}
-- {{cssxref("transform-box")}}
-- {{cssxref("transform-origin")}}
-- {{cssxref("transform-style")}}
-- {{cssxref("translate")}}
+- `backface-visibility`
+- `perspective`
+- `perspective-origin`
+- `rotate`
+- `scale`
+- `transform`
+- `transform-box`
+- `transform-origin`
+- `transform-style`
+- `translate`
 
 ### Functions
 
-- {{cssxref("transform-function/matrix", "matrix()")}}
-- {{cssxref("transform-function/matrix3d", "matrix3d()")}}
-- {{cssxref("transform-function/perspective", "perspective()")}}
-- {{cssxref("transform-function/rotate", "rotate()")}}
-- {{cssxref("transform-function/rotate3d", "rotate3d()")}}
-- {{cssxref("transform-function/rotateX", "rotateX()")}}
-- {{cssxref("transform-function/rotateY", "rotateY()")}}
-- {{cssxref("transform-function/rotateZ", "rotateZ()")}}
-- {{cssxref("transform-function/scale", "scale()")}}
-- {{cssxref("transform-function/scale3d", "scale3d()")}}
-- {{cssxref("transform-function/scaleX", "scaleX()")}}
-- {{cssxref("transform-function/scaleY", "scaleY()")}}
-- {{cssxref("transform-function/scaleZ", "scaleZ()")}}
-- {{cssxref("transform-function/skew", "skew()")}}
-- {{cssxref("transform-function/skewX", "skewX()")}}
-- {{cssxref("transform-function/skewY", "skewY()")}}
-- {{cssxref("transform-function/translate", "translate()")}}
-- {{cssxref("transform-function/translate3d", "translate3d()")}}
-- {{cssxref("transform-function/translateX", "translateX()")}}
-- {{cssxref("transform-function/translateY", "translateY()")}}
-- {{cssxref("transform-function/translateZ", "translateZ()")}}
+- `matrix()`
+- `matrix3d()`
+- `perspective()`
+- `rotate()`
+- `rotate3d()`
+- `rotateX()`
+- `rotateY()`
+- `rotateZ()`
+- `scale()`
+- `scale3d()`
+- `scaleX()`
+- `scaleY()`
+- `scaleZ()`
+- `skew()`
+- `skewX()`
+- `skewY()`
+- `translate()`
+- `translate3d()`
+- `translateX()`
+- `translateY()`
+- `translateZ()`
 
 ### Data types
 
-- {{cssxref("&lt;transform-function&gt;")}}
+- `&lt;transform-function&gt;`
 
 ## Guides
 
@@ -723,28 +723,28 @@ The cube in the above example is comprised of six `<div>` elements, all of which
 ## Related concepts
 
 - CSS Properties:
-  - {{cssxref("animation")}}
-  - {{cssxref("background-position")}}
-  - {{cssxref("clip")}}
-  - {{cssxref("clip-path")}}
-  - {{cssxref("contain")}}
-  - {{cssxref("content-visibility")}}
-  - {{cssxref("isolation")}}
-  - {{cssxref("mask")}}
-  - {{cssxref("mask-border-source")}}
-  - {{cssxref("mask-image")}}
-  - {{cssxref("mix-blend-mode")}}
-  - {{cssxref("opacity")}}
-  - {{cssxref("overflow")}}
-  - {{cssxref("transition")}}
-  - {{cssxref("visibility")}}
+  - `animation`
+  - `background-position`
+  - `clip`
+  - `clip-path`
+  - `contain`
+  - `content-visibility`
+  - `isolation`
+  - `mask`
+  - `mask-border-source`
+  - `mask-image`
+  - `mix-blend-mode`
+  - `opacity`
+  - `overflow`
+  - `transition`
+  - `visibility`
 - Data types:
-  - {{cssxref("angle")}}
-  - {{cssxref("length-percentage")}}
-  - {{cssxref("length")}}
-  - {{cssxref("number")}}
-  - {{cssxref("percentage")}}
-  - {{cssxref("position")}}
+  - `angle`
+  - `length-percentage`
+  - `length`
+  - `number`
+  - `percentage`
+  - `position`
 - Glossary terms:
   - {{glossary("Interpolation")}}
   - {{glossary("Stacking context")}}

@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`stop-opacity`** [CSS](/en-US/docs/Web/CSS) property defines the opacity of a given color gradient stop in the SVG {{SVGElement("stop")}} element within an SVG gradient. If present, it overrides the element's {{SVGAttr("stop-opacity")}} attribute.
 
-The property value impacts the {{cssxref("stop-color")}}'s alpha channel; it can increase the transparency of a `<stop>`'s color but can not make the color defined by the `stop-color` property more opaque.
+The property value impacts the `stop-color`'s alpha channel; it can increase the transparency of a `<stop>`'s color but can not make the color defined by the `stop-color` property more opaque.
 
 > [!NOTE]
 > The `stop-opacity` property only applies to {{SVGElement('stop')}} elements nested in an {{SVGElement("svg")}}. It doesn't apply to other SVG, HTML, or pseudo-elements.
@@ -30,12 +30,12 @@ stop-opacity: unset;
 
 ### Values
 
-The `<opacity-value>` is a {{cssxref("number")}} or {{cssxref("percentage")}} denoting the opacity of the SVG gradient `<stop>` element.
+The `<opacity-value>` is a `number` or `percentage` denoting the opacity of the SVG gradient `<stop>` element.
 
-- {{cssxref("number")}}
+- `number`
   - A numeric value between `0` and `1`, inclusive.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - A percentage value between `0%` and `100%`, inclusive.
 
 With `0` or `0%` set, the stop is fully transparent. With `1` or `100%` set, the element is the full opacity of the `stop-color` value, which may or may not be partially opaque.
@@ -84,9 +84,9 @@ We have an SVG with a few {{SVGElement("polygon")}} stars and three {{SVGElement
 
 #### CSS
 
-We include a {{cssxref("stroke")}} and {{cssxref("stroke-width")}} making the polygon path line visible.
+We include a `stroke` and `stroke-width` making the polygon path line visible.
 
-Each `polygon` has a gradient background set using the {{cssxref("fill")}} property; the gradient's `id` is the `url()` parameter. We set `magenta` as the fallback color.
+Each `polygon` has a gradient background set using the `fill` property; the gradient's `id` is the `url()` parameter. We set `magenta` as the fallback color.
 
 We define the opacity of the stops of each gradient using the `stop-opacity` property.
 
@@ -138,7 +138,7 @@ polygon:nth-of-type(3) {
 The first star is fully opaque. The fill of the second star is 80% opaque because the color stops are slightly translucent; the `stop-opacity: 0.8;` overrode the `stop-opacity="1"` element attribute value. The fill of the last star is barely noticeable with color stops that are 25% opaque. Note the stroke is the same opaque dark grey in all cases.
 
 > [!NOTE]
-> Because we used the same `stop-opacity` value for all the sibling `<stop>` elements in the linear gradient, we could have instead used a single `<linearGradient>` with fully opaque stops, and set a value for each `<polygon>`s {{cssxref("fill-opacity")}} property instead.
+> Because we used the same `stop-opacity` value for all the sibling `<stop>` elements in the linear gradient, we could have instead used a single `<linearGradient>` with fully opaque stops, and set a value for each `<polygon>`s `fill-opacity` property instead.
 
 ## Specifications
 
@@ -151,8 +151,8 @@ The first star is fully opaque. The fill of the second star is 80% opaque becaus
 ## See also
 
 - SVG {{SVGAttr("stop-opacity")}} attribute
-- Presentation properties: `stop-opacity`, {{cssxref("clip-rule")}}, {{cssxref("color-interpolation-filters")}}, {{cssxref("fill-opacity")}}, {{cssxref("fill-rule")}}, {{cssxref("fill")}}, {{cssxref("marker-end")}}, {{cssxref("marker-mid")}}, {{cssxref("marker-start")}}, {{cssxref("shape-rendering")}}, {{cssxref("stop-color")}}, {{cssxref("stroke")}}, {{cssxref("stroke-dasharray")}}, {{cssxref("stroke-dashoffset")}}, {{cssxref("stroke-linecap")}}, {{cssxref("stroke-linejoin")}}, {{cssxref("stroke-miterlimit")}}, {{cssxref("stroke-opacity")}}, {{cssxref("stroke-width")}}, {{cssxref("text-anchor")}}, and {{cssxref("vector-effect")}}
-- {{cssxref("opacity")}}
-- {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
-- {{cssxref("basic-shape")}} data type
+- Presentation properties: `stop-opacity`, `clip-rule`, `color-interpolation-filters`, `fill-opacity`, `fill-rule`, `fill`, `marker-end`, `marker-mid`, `marker-start`, `shape-rendering`, `stop-color`, `stroke`, `stroke-dasharray`, `stroke-dashoffset`, `stroke-linecap`, `stroke-linejoin`, `stroke-miterlimit`, `stroke-opacity`, `stroke-width`, `text-anchor`, and `vector-effect`
+- `opacity`
+- `background-color`
+- `&lt;color>`
+- `basic-shape` data type

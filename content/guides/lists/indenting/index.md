@@ -14,7 +14,7 @@ To understand why this is the case, and more importantly how to avoid the proble
 
 ### Stand-alone list item
 
-First, we consider the pure list item, not nested in a list of items. When using the HTML {{htmlelement("li")}} element, the browser sets the {{cssxref("display")}} value to `list-item`. Whether list items not nested in a list are provided a marker (otherwise known as a "bullet") depends on the browser. We can remove that bullet with {{cssxref("list-style-type", "list-style-type: none")}}.
+First, we consider the pure list item, not nested in a list of items. When using the HTML {{htmlelement("li")}} element, the browser sets the `display` value to `list-item`. Whether list items not nested in a list are provided a marker (otherwise known as a "bullet") depends on the browser. We can remove that bullet with `list-style-type: none`.
 
 ```css
 li {
@@ -130,7 +130,7 @@ ul {
 
 Visually, the markers are _outside_ the content area of the `<ul>`, but that's not the important part here. What's key is that the markers are placed outside the "principal box" of the `<li>` elements, not the `<ul>`. They're sort of like appendages to the list items, hanging outside the content-area of the `<li>` but still attached to the `<li>`.
 
-This is why, in every modern browser, markers are placed outside any border set for an `<li>` element when the value of {{cssxref("list-style-position")}} defaults to or is explicitly set to `outside`. When we changed it to `inside`, the markers were brought inside the `<li>`'s content, as though they're an inline box placed at the very beginning of the `<li>`.
+This is why, in every modern browser, markers are placed outside any border set for an `<li>` element when the value of `list-style-position` defaults to or is explicitly set to `outside`. When we changed it to `inside`, the markers were brought inside the `<li>`'s content, as though they're an inline box placed at the very beginning of the `<li>`.
 
 ## Default indentation
 
@@ -160,7 +160,7 @@ li {
 }
 ```
 
-All browsers set {{cssxref("padding-inline-start")}} to 40 pixels for the `<ul>` element by default. In left-to-right languages, like English, this is the left _padding_. Any padding set in the author style sheets (that's your stylesheet) takes precedence.
+All browsers set `padding-inline-start` to 40 pixels for the `<ul>` element by default. In left-to-right languages, like English, this is the left _padding_. Any padding set in the author style sheets (that's your stylesheet) takes precedence.
 
 If you want to be explicit, set the following in your style sheets to ensure, unless otherwise overridden, the list items in the main content area of your document, contained in the {{htmlelement("main")}} section, are properly indented:
 

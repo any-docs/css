@@ -94,11 +94,11 @@ counter-reset: unset;
 
 ### Values
 
-The `counter-reset` property accepts a list of one or more space-separated counter names or the keyword `none`. For counter names, regular counters use the format `<counter-name>`, and reversed counters use `reversed(<counter-name>)`, where `<counter-name>` is a {{cssxref("custom-ident", "&lt;custom-ident&gt;")}} or `list-item` for the built-in {{HTMLElement("ol")}} counter. Optionally, each counter name can be followed by an `<integer>` to set its initial value.
+The `counter-reset` property accepts a list of one or more space-separated counter names or the keyword `none`. For counter names, regular counters use the format `<counter-name>`, and reversed counters use `reversed(<counter-name>)`, where `<counter-name>` is a `&lt;custom-ident&gt;` or `list-item` for the built-in {{HTMLElement("ol")}} counter. Optionally, each counter name can be followed by an `<integer>` to set its initial value.
 
-- {{cssxref("custom-ident", "&lt;custom-ident&gt;")}}
-  - Specifies the counter name to create and initialize using the {{cssxref("custom-ident", "&lt;custom-ident&gt;")}} format. The `reversed()` functional notation can be used to mark the counter reversed.
-- {{cssxref("&lt;integer&gt;")}}
+- `&lt;custom-ident&gt;`
+  - Specifies the counter name to create and initialize using the `&lt;custom-ident&gt;` format. The `reversed()` functional notation can be used to mark the counter reversed.
+- `&lt;integer&gt;`
   - The initial value to set on the newly created counter.
     Defaults to `0` if not specified.
 - `none`
@@ -110,7 +110,7 @@ The `counter-reset` property accepts a list of one or more space-separated count
 The `counter-reset` property can create both regular and, in browsers that support it, reversed counters. You can create multiple regular and reversed counters, each separated by a space. Counters can be a standalone name or a space-separated name-value pair.
 
 > [!WARNING]
-> There is [a difference between `counter-reset` and `counter-set` properties](/guides/Counter_styles/Using_counters#difference_between_counter-set_and_counter-reset). After creating a counter using `counter-reset`, you can adjust its value by using the {{cssxref("counter-set")}} property. This is counterintuitive because, despite its name, the `counter-reset` property is used for creating and initializing counters, while the `counter-set` property is used for resetting the value of an existing counter.
+> There is [a difference between `counter-reset` and `counter-set` properties](/guides/Counter_styles/Using_counters#difference_between_counter-set_and_counter-reset). After creating a counter using `counter-reset`, you can adjust its value by using the `counter-set` property. This is counterintuitive because, despite its name, the `counter-reset` property is used for creating and initializing counters, while the `counter-set` property is used for resetting the value of an existing counter.
 
 Setting `counter-increment: none` on a selector with greater specificity overrides the creation of the named counter set on selectors with lower specificity.
 
@@ -118,7 +118,7 @@ Setting `counter-increment: none` on a selector with greater specificity overrid
 
 The default initial values of both regular and reversed counters enable implementing the two most common numbering patterns: counting up from one to the number of elements and counting down from the number of elements to one, respectively. By including a counter value for a named counter, your counter can count up or down, starting at an integer value.
 
-Regular counters default to `0` if no reset value is provided. By default, regular counters increment by one, which can be adjusted with the {{cssxref("counter-increment")}} property.
+Regular counters default to `0` if no reset value is provided. By default, regular counters increment by one, which can be adjusted with the `counter-increment` property.
 
 ```css
 h1 {
@@ -143,7 +143,7 @@ h1 {
 
 ### Built-in `list-item` counter
 
-Ordered lists ({{HTMLElement("ol")}}) come with built-in `list-item` counters that control their numbering. These counters automatically increase or decrease by one with each list item. The `counter-reset` property can be used to reset the `list-item` counters. Like with other counters, you can override the default increment value for `list-item` counters by using the {{cssxref("counter-increment")}} property.
+Ordered lists ({{HTMLElement("ol")}}) come with built-in `list-item` counters that control their numbering. These counters automatically increase or decrease by one with each list item. The `counter-reset` property can be used to reset the `list-item` counters. Like with other counters, you can override the default increment value for `list-item` counters by using the `counter-increment` property.
 
 ## Formal definition
 
@@ -239,11 +239,11 @@ In the output, the items are numbered in reversed order from 5 to 1. Notice in t
 ## See also
 
 - [Using CSS Counters](/guides/Counter_styles/Using_counters) guide
-- {{cssxref("counter-increment")}} property
-- {{cssxref("counter-set")}} property
-- {{cssxref("@counter-style")}} at-rule
-- {{cssxref("counter()")}} and {{cssxref("counters()")}} functions
-- {{cssxref("content")}} property
-- {{cssxref("::marker")}} pseudo-class
+- `counter-increment` property
+- `counter-set` property
+- `@counter-style` at-rule
+- `counter()` and `counters()` functions
+- `content` property
+- `::marker` pseudo-class
 - [CSS lists and counters](/guides/Lists) module
 - [CSS counter styles](/guides/Counter_styles) module

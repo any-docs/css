@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`scale()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that resizes an element on the 2D
 plane. Because the amount of scaling is defined by a vector [sx, sy], it can resize the horizontal and vertical dimensions at
-different scales. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+different scales. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: scale()")}}
 
@@ -61,9 +61,9 @@ scale(sx, sy)
 ### Values
 
 - `sx`
-  - A {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} representing the abscissa (horizontal, x-component) of the scaling vector.
+  - A `&lt;number&gt;` or `&lt;percentage&gt;` representing the abscissa (horizontal, x-component) of the scaling vector.
 - `sy` <Badge type="info" text="Optional" />
-  - A {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} representing the ordinate (vertical, y-component) of the scaling vector.
+  - A `&lt;number&gt;` or `&lt;percentage&gt;` representing the ordinate (vertical, y-component) of the scaling vector.
     If not defined, its default value is `sx`, resulting in a uniform scaling that preserves the element's {{glossary("aspect ratio")}}.
 
 <table class="standard-table">
@@ -114,7 +114,7 @@ Scaling/zooming animations are problematic for accessibility, as they are a comm
 migraine. If you need to include such animations on your website, you should provide a control to allow users to turn
 off animations, preferably site-wide.
 
-Also, consider making use of the {{cssxref("@media/prefers-reduced-motion", "prefers-reduced-motion")}} media feature
+Also, consider making use of the `prefers-reduced-motion` media feature
 — use it to write a [media query](/guides/Media_queries) that will turn off animations if the
 user has reduced animation specified in their system preferences.
 
@@ -192,9 +192,9 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("scale")}}
-- {{cssxref("zoom")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("transform-function/scale3d", "scale3d()")}}
-- Other individual transform properties {{cssxref("translate")}} and {{cssxref("rotate")}}
+- `transform`
+- `scale`
+- `zoom`
+- `&lt;transform-function&gt;`
+- `scale3d()`
+- Other individual transform properties `translate` and `rotate`

@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`translateZ()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) repositions an element along the z-axis in 3D space, i.e.,
-closer to or farther away from the viewer. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+closer to or farther away from the viewer. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: translateZ()")}}
 
@@ -97,7 +97,7 @@ transform: translateZ(-3ch);
 }
 ```
 
-This transformation is defined by a {{cssxref("&lt;length&gt;")}} which specifies how far inward or outward the
+This transformation is defined by a `&lt;length&gt;` which specifies how far inward or outward the
 element or elements move.
 
 In the above interactive examples, [`perspective: 550px;`](/reference/properties/perspective) (to
@@ -117,7 +117,7 @@ translateZ(tz)
 ### Values
 
 - `tz`
-  - A {{cssxref("&lt;length&gt;")}} representing the z-component of the translating vector [0, 0, tz]. In [Cartesian coordinate system](/reference/values/transform-function#cartesian_coordinates) it represents shift along z-axis. A positive value moves the
+  - A `&lt;length&gt;` representing the z-component of the translating vector [0, 0, tz]. In [Cartesian coordinate system](/reference/values/transform-function#cartesian_coordinates) it represents shift along z-axis. A positive value moves the
     element towards the viewer, and a negative value farther away.
 
 <table class="standard-table">
@@ -210,6 +210,6 @@ the user is to the element and the larger the translated element will seem.
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("translate")}}
+- `transform`
+- `&lt;transform-function&gt;`
+- `translate`

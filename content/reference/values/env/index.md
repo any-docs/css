@@ -27,7 +27,7 @@ env(viewport-segment-width 0 0, 40%);
 The `env( <environment-variable>, <fallback> )` function accepts the following parameters:
 
 - [`<environment-variable>`](/guides/Environment_variables/Using#browser-defined_environment_variables)
-  - A {{cssxref("&lt;custom-ident>")}} specifying the name of the environment variable to be inserted. If the name provided represents an array-like environment variable, the name is followed by {{cssxref("&lt;integer>")}} values identifying the specific instance the name is referencing. The case-sensitive environment variable name can be one of the following:
+  - A `&lt;custom-ident>` specifying the name of the environment variable to be inserted. If the name provided represents an array-like environment variable, the name is followed by `&lt;integer>` values identifying the specific instance the name is referencing. The case-sensitive environment variable name can be one of the following:
     - `safe-area-inset-top`, `safe-area-inset-right`, `safe-area-inset-bottom`, `safe-area-inset-left`
       - The safe distance from the top, right, bottom, or left inset edge of the viewport, defining where it is safe to place content into without risking it being cut off by the shape of a non‑rectangular display. The four values form a rectangle, inside which all content is visible. The values are `0` if the viewport is a rectangle and no features — such as toolbars or dynamic keyboards — are occupying viewport space; otherwise, it is a `px` value greater than `0`.
     - `safe-area-max-inset-top`, `safe-area-max-inset-right`, `safe-area-max-inset-bottom`, `safe-area-max-inset-left`
@@ -35,9 +35,9 @@ The `env( <environment-variable>, <fallback> )` function accepts the following p
     - `titlebar-area-x`, `titlebar-area-y`, `titlebar-area-width`, `titlebar-area-height`
       - The dimensions of a visible `titlebar-area-*` area. These variables are available when using the `window-controls-overlay` [`display_override`](/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display_override) manifest field. The variables' values can be used to ensure content doesn't overlap window control buttons (that is, minimize, maximize, and close) with progressive web apps (PWA) installed on desktop devices.
     - `keyboard-inset-top`, `keyboard-inset-right`, `keyboard-inset-bottom`, `keyboard-inset-left`, `keyboard-inset-width`, `keyboard-inset-height`
-      - The insets from the edge of the viewport and dimensions of the device's on-screen virtual keyboard. Defined in the {{domxref("VirtualKeyboard API", "VirtualKeyboard API", "", "nocode")}}.
+      - The insets from the edge of the viewport and dimensions of the device's on-screen virtual keyboard. Defined in the `VirtualKeyboard API", "VirtualKeyboard API", "", "nocode")}}.
     - `viewport-segment-width`, `viewport-segment-height`, `viewport-segment-top`, `viewport-segment-right`, `viewport-segment-bottom`, `viewport-segment-left`
-      - The dimensions and offset positions of specific viewport segments. The `viewport-segment-*` keyword is followed by two space-separated {{cssxref("&lt;integer>")}} values that indicate the segment's horizontal and vertical position, or indices. The viewport-segment keywords are only defined when the viewport is made up of two or more segments, as with foldable or hinged devices.
+      - The dimensions and offset positions of specific viewport segments. The `viewport-segment-*` keyword is followed by two space-separated `&lt;integer>` values that indicate the segment's horizontal and vertical position, or indices. The viewport-segment keywords are only defined when the viewport is made up of two or more segments, as with foldable or hinged devices.
 
 - `<fallback>` <Badge type="info" text="Optional" />
   - A fallback value to be inserted if the environment variable referenced in the first argument does not exist. Everything after the first comma is deemed to be the fallback value. This can be a single value, another `env()` function, or a comma-separated list of values.
@@ -46,11 +46,11 @@ The `env( <environment-variable>, <fallback> )` function accepts the following p
 
 The `env()` function is used to insert the value of a globally-scoped, [user-agent-defined environment variable](/guides/Environment_variables/Using#browser-defined_environment_variables) into your CSS. The `env()` function can be used as a property value or in place of any part of a property value or descriptor (for example, in [Media query rules](/en-US/docs/Web/CSS/Reference/At-rules/@media)).
 
-The function accepts an `<environment-variable>` as its first argument. This is a case-sensitive {{cssxref("&lt;custom-ident>")}} equal to the [name of the environment variable](/guides/Environment_variables/Using#browser-defined_environment_variables) to be substituted, but it can also include additional space-separated values if required. For example, `env(viewport-segment-width 0 0)` would return the width of the top or left segment in the case of a device with multiple viewport segments.
+The function accepts an `<environment-variable>` as its first argument. This is a case-sensitive `&lt;custom-ident>` equal to the [name of the environment variable](/guides/Environment_variables/Using#browser-defined_environment_variables) to be substituted, but it can also include additional space-separated values if required. For example, `env(viewport-segment-width 0 0)` would return the width of the top or left segment in the case of a device with multiple viewport segments.
 
 The second argument, if provided, is the fallback value, which is used if the environment variable referenced in the first argument is not supported or doesn't exist. The fallback can be another environment variable, even with its own fallback.
 
-The syntax of the fallback is similar to the fallback syntax of the {{cssxref("var()")}} function used to insert [CSS custom properties](/reference/properties/--*) in that it allows for multiple commas. Anything between the first comma and the end of the function is considered the fallback value. However, if the `env()` function is used within a property value or descriptor that doesn't include commas, a fallback value that includes commas will not be valid.
+The syntax of the fallback is similar to the fallback syntax of the `var()` function used to insert [CSS custom properties](/reference/properties/--*) in that it allows for multiple commas. Anything between the first comma and the end of the function is considered the fallback value. However, if the `env()` function is used within a property value or descriptor that doesn't include commas, a fallback value that includes commas will not be valid.
 
 A property or descriptor containing a syntactically valid `env()` function is assumed to be valid at parse time, when the browser first reads and interprets the downloaded CSS text. It is only syntax-checked at compute time, after each `env()` function has been substituted with its browser-provided value (or the fallback value if the environment variable passed as the first parameter is not a recognized environment variable name). If the value is invalid and no fallback is provided, the property or descriptor containing the `env()` function is [invalid at computed-value time](/guides/Syntax/Error_handling#invalid_custom_properties).
 
@@ -90,7 +90,7 @@ See the [Viewport segment API demo](https://mdn.github.io/dom-examples/viewport-
 
 ### Using env() to ensure buttons are not obscured by device UI
 
-In the following example, `env()` is used to ensure that fixed app toolbar buttons are not obscured by device notifications appearing at the bottom of the screen. On the desktop `safe-area-inset-bottom` is `0`. However, in devices that display notifications at the bottom of the screen, such as iOS, it contains a value that leaves space for the notification to display. This can then be used in the value for {{cssxref("padding-bottom")}} to create a gap that appears natural on that device.
+In the following example, `env()` is used to ensure that fixed app toolbar buttons are not obscured by device notifications appearing at the bottom of the screen. On the desktop `safe-area-inset-bottom` is `0`. However, in devices that display notifications at the bottom of the screen, such as iOS, it contains a value that leaves space for the notification to display. This can then be used in the value for `padding-bottom` to create a gap that appears natural on that device.
 
 #### HTML
 
@@ -141,7 +141,7 @@ button {
 }
 ```
 
-We set [`position: sticky`](/reference/properties/position#sticky) to stick the footer to the bottom of the viewport. We then use the {{cssxref("padding")}} shorthand to add padding to the footer. We include the value of the `safe-area-inset-bottom` environment value to an initial `1em` of bottom padding. A larger black area will display on devices that have a positive value for this variable, ensuring the buttons in the footer are never obscured.
+We set [`position: sticky`](/reference/properties/position#sticky) to stick the footer to the bottom of the viewport. We then use the `padding` shorthand to add padding to the footer. We include the value of the `safe-area-inset-bottom` environment value to an initial `1em` of bottom padding. A larger black area will display on devices that have a positive value for this variable, ensuring the buttons in the footer are never obscured.
 
 ```css
 footer {
@@ -176,7 +176,7 @@ We include a paragraph of text:
 
 #### CSS
 
-We set a {{cssxref("width")}} of `300px` and a {{cssxref("border")}}. We then add {{cssxref("padding")}}, using the `env()` function with a fallback for the size of the padding on each side. We intentionally set an invalid value for the left padding (remember, environment variable names are case-sensitive), to demonstrate the use of the fallback value.
+We set a `width` of `300px` and a `border`. We then add `padding`, using the `env()` function with a fallback for the size of the padding on each side. We intentionally set an invalid value for the left padding (remember, environment variable names are case-sensitive), to demonstrate the use of the fallback value.
 
 ```css
 p {
@@ -241,7 +241,7 @@ The [Viewport segment API demo](https://mdn.github.io/dom-examples/viewport-segm
 
 - [Using environment variables](/guides/Environment_variables/Using)
 - [CSS environment variables](/guides/Environment_variables) module
-- {{CSSxRef("var")}}
+- `var`
 - [CSS custom properties for cascading variables](/guides/Cascading_variables) module
 - [Custom properties (`--*`): CSS variables](/reference/properties/--*)
 - [Using CSS custom properties (variables)](/guides/Cascading_variables/Using_custom_properties)

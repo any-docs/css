@@ -11,7 +11,7 @@ The **`object-fit`** [CSS](/en-US/docs/Web/CSS) property sets how the content of
 > [!NOTE]
 > The `object-fit` property has no effect on {{HTMLElement("iframe")}}, {{HTMLElement("embed")}}, and {{HTMLElement("fencedframe")}} elements.
 
-You can alter the alignment of the replaced element's content object within the element's box using the {{cssxref("object-position")}} property.
+You can alter the alignment of the replaced element's content object within the element's box using the `object-position` property.
 
 {{InteractiveExample("CSS Demo: object-fit")}}
 
@@ -183,6 +183,6 @@ img {
 
 ## See also
 
-- Other image-related CSS properties: {{cssxref("object-position")}}, {{cssxref("image-orientation")}}, {{cssxref("image-rendering")}}, {{cssxref("image-resolution")}}.
-- {{cssxref("background-size")}}
+- Other image-related CSS properties: `object-position`, `image-orientation`, `image-rendering`, `image-resolution`.
+- `background-size`
 - [Understanding aspect ratios](/guides/Box_sizing/Aspect_ratios)

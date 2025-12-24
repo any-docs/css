@@ -79,7 +79,7 @@ background-repeat: unset;
 The property accepts a comma-separated list of two [`<repeat-style>`](#values) keyterms, or one keyterm as a shorthand for the two values. When two values are provided, the first value defines the horizontal repetition behavior and the second value defines the vertical behavior.
 Property values can be used to repeat only horizontally, vertically, or not at all.
 
-The default value is `repeat repeat`. With this value, the background image maintains its intrinsic {{glossary("aspect ratio")}}, repeating both horizontally and vertically to cover the entire background paint area, with edge images being clipped to the size of the element. Which edges clipped depends on the value of the corresponding {{cssxref("background-position")}} value. How many times they are repeated and how much the images on the edges are clipped depends on the size of the background painting area and the corresponding {{cssxref("background-size")}} value.
+The default value is `repeat repeat`. With this value, the background image maintains its intrinsic {{glossary("aspect ratio")}}, repeating both horizontally and vertically to cover the entire background paint area, with edge images being clipped to the size of the element. Which edges clipped depends on the value of the corresponding `background-position` value. How many times they are repeated and how much the images on the edges are clipped depends on the size of the background painting area and the corresponding `background-size` value.
 
 The repeating images can be evenly spaced apart, ensuring the repeated image maintains its aspect ratio without being clipped. With the `space` value, if the background paint area has a different aspect ratio than the image or does not otherwise have a size that is a multiple of the background size in either direction, there will be areas not covered by the background image.
 
@@ -93,10 +93,10 @@ The property accepts a comma-separated list of two `<repeat-style>` keyterms or 
   - The default value. The image is repeated as many times as needed to cover the entire background image painting area, with the edge image being clipped if the dimension of the painting area is not a multiple of the dimension of your background image.
 
 - `no-repeat`
-  - The image is not repeated (and hence the background image painting area will not necessarily be entirely covered). The position of the non-repeated background image is defined by the {{cssxref("background-position")}} CSS property.
+  - The image is not repeated (and hence the background image painting area will not necessarily be entirely covered). The position of the non-repeated background image is defined by the `background-position` CSS property.
 
 - `space`
-  - The image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images. The {{cssxref("background-position")}} property is ignored unless only one image can be displayed without clipping. The only case where clipping happens using `space` is when there isn't enough room to display one image.
+  - The image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images. The `background-position` property is ignored unless only one image can be displayed without clipping. The only case where clipping happens using `space` is when there isn't enough room to display one image.
 
 - `round`
   - As the allowed space increases in size, the repeated images will stretch (leaving no gaps) until there is room for another one to be added. This is the only `<repeat-style>` value that can lead to the distortion of the background image's {{glossary("aspect ratio")}}, which will occur if the aspect ratio of the background image differs from the aspect ratio of the background paint area.
@@ -228,7 +228,7 @@ In this example, each list item is matched with a different value of `background
 
 ## See also
 
-- The other {{cssxref("background")}} shorthand components: {{cssxref("background-attachment")}}, {{cssxref("background-clip")}}, {{cssxref("background-color")}}, {{cssxref("background-image")}}, {{cssxref("background-origin")}}, {{cssxref("background-position")}} ({{cssxref("background-position-x")}} and {{cssxref("background-position-y")}}), and {{cssxref("background-size")}}
+- The other `background` shorthand components: `background-attachment`, `background-clip`, `background-color`, `background-image`, `background-origin`, `background-position` (`background-position-x` and `background-position-y`), and `background-size`
 - [Using multiple backgrounds](/guides/Backgrounds_and_borders/Using_multiple_backgrounds)
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
 - [Understanding aspect ratios](/guides/Box_sizing/Aspect_ratios)

@@ -14,13 +14,13 @@ Margin collapsing occurs in three basic cases:
   - The margins of adjacent siblings are collapsed (except when the latter sibling needs to be [cleared](/reference/properties/clear) past floats).
 - No content separating parent and descendants
   - The vertical margins between a parent block and its descendants can collapse. This happens when there is no separating content between them. Specifically, this occurs in two main cases:
-    - The {{cssxref("margin-top")}} of a parent collapses with the {{cssxref("margin-top")}} of its first in-flow descendant unless the parent has a {{cssxref("border-top")}} , {{cssxref("padding-top")}} , contains any inline content (such as text), or has _[clearance](/reference/properties/clear)_ applied.
-    - The {{cssxref("margin-bottom")}} of a parent collapses with the {{cssxref("margin-bottom")}} of its last in-flow descendant unless the parent has a defined {{cssxref("height")}} or {{cssxref("min-height")}}, a {{cssxref("border-bottom")}}, or {{cssxref("padding-bottom")}}.
+    - The `margin-top` of a parent collapses with the `margin-top` of its first in-flow descendant unless the parent has a `border-top` , `padding-top` , contains any inline content (such as text), or has _[clearance](/reference/properties/clear)_ applied.
+    - The `margin-bottom` of a parent collapses with the `margin-bottom` of its last in-flow descendant unless the parent has a defined `height` or `min-height`, a `border-bottom`, or `padding-bottom`.
 
     In both cases, creating a new [block formatting context](/guides/Display/Block_formatting_context) on the parent will also prevent its margins from collapsing with its children.
 
 - Empty blocks
-  - If there is no border, padding, inline content, {{cssxref("height")}}, or {{cssxref("min-height")}} to separate a block's {{cssxref("margin-top")}} from its {{cssxref("margin-bottom")}}, then its top and bottom margins collapse.
+  - If there is no border, padding, inline content, `height`, or `min-height` to separate a block's `margin-top` from its `margin-bottom`, then its top and bottom margins collapse.
 
 Some things to note:
 

@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`matrix3d()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a 3D transformation as a 4x4 homogeneous matrix.
-Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: matrix3d()")}}
 
@@ -75,9 +75,9 @@ The `matrix3d()` function is specified with 16 values. They are described in the
 
 - _a1_ _b1_ _c1_ _d1_ _a2_ _b2_ _c2_ _d2_
   _a3_ _b3_ _c3_ _d3_
-  - Are {{cssxref("&lt;number&gt;")}}s describing the linear transformation.
+  - Are `&lt;number&gt;`s describing the linear transformation.
 - _a4_ _b4_ _c4 d4_
-  - Are {{cssxref("&lt;number&gt;")}}s describing the translation to apply.
+  - Are `&lt;number&gt;`s describing the translation to apply.
 
 <table class="standard-table">
   <thead>
@@ -289,9 +289,9 @@ body {
 
 ## See also
 
-- {{cssxref("transform")}}
+- `transform`
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
-- {{cssxref("&lt;transform-function&gt;")}}
+  - `translate`
+  - `scale`
+  - `rotate`
+- `&lt;transform-function&gt;`

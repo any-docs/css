@@ -6,7 +6,7 @@ browser-compat: css.properties.border-block-start-width
 sidebar: cssref
 ---
 
-The **`border-block-start-width`** [CSS](/en-US/docs/Web/CSS) property defines the width of the logical block-start border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("border-top-width")}}, {{cssxref("border-right-width")}}, {{cssxref("border-bottom-width")}}, or {{cssxref("border-left-width")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The **`border-block-start-width`** [CSS](/en-US/docs/Web/CSS) property defines the width of the logical block-start border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 {{InteractiveExample("CSS Demo: border-block-start-width")}}
 
@@ -65,7 +65,7 @@ border-block-start-width: revert-layer;
 border-block-start-width: unset;
 ```
 
-Related properties are {{cssxref("border-block-end-width")}}, {{cssxref("border-inline-start-width")}}, and {{cssxref("border-inline-end-width")}}, which define the other border widths of the element.
+Related properties are `border-block-end-width`, `border-inline-start-width`, and `border-inline-end-width`, which define the other border widths of the element.
 
 ### Values
 
@@ -123,5 +123,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- This property maps to one of the physical border properties: {{cssxref("border-top-width")}}, {{cssxref("border-right-width")}}, {{cssxref("border-bottom-width")}}, and {{cssxref("border-left-width")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- This property maps to one of the physical border properties: `border-top-width`, `border-right-width`, `border-bottom-width`, and `border-left-width`
+- `writing-mode`, `direction`, `text-orientation`

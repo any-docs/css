@@ -7,7 +7,7 @@ browser-compat: css.types.progress
 
 {{CSSRef}}
 
-The **`progress()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) returns a {{cssxref("&lt;number>")}} value representing the position of one value (the progress value) relative to two other values (the progress start and end values).
+The **`progress()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) returns a `&lt;number>` value representing the position of one value (the progress value) relative to two other values (the progress start and end values).
 
 ## Syntax
 
@@ -35,7 +35,7 @@ progress(calc(20 + 30), 0, 100)
 
 ### Parameters
 
-The `progress()` function takes three comma-separated {{cssxref("&lt;calc-sum>")}} expressions as parameters:
+The `progress()` function takes three comma-separated `&lt;calc-sum>` expressions as parameters:
 
 ```plain
 progress(<calc-sum>, <calc-sum>, <calc-sum>)
@@ -52,7 +52,7 @@ Respectively, these are:
 
 ### Return value
 
-A {{cssxref("&lt;number>")}} representing the position of the progress value relative to the other two values. This is calculated as follows:
+A `&lt;number>` representing the position of the progress value relative to the other two values. This is calculated as follows:
 
 ```plain
 (progress - progress start) / (progress end - progress start)
@@ -70,11 +70,11 @@ The simplest possible use might look like this:
 opacity: progress(5, 0, 10);
 ```
 
-In this case, the computed value of {{cssxref("opacity")}} would be `0.5`, as 5 is mid-way between `0` and `10`.
+In this case, the computed value of `opacity` would be `0.5`, as 5 is mid-way between `0` and `10`.
 
 ### Permitted unit types
 
-The parameters of a `progress()` function can be mathematical expressions or simple values. The values (or expression results) can be any {{cssxref("&lt;number>")}}, {{cssxref("&lt;dimension>")}}, or {{cssxref("&lt;percentage>")}} value. They can have different units, but they must all be of the same type, or else the function is invalid.
+The parameters of a `progress()` function can be mathematical expressions or simple values. The values (or expression results) can be any `&lt;number>`, `&lt;dimension>`, or `&lt;percentage>` value. They can have different units, but they must all be of the same type, or else the function is invalid.
 
 The example we saw previously is valid — all of its parameters are unitless `<number>` values:
 
@@ -82,7 +82,7 @@ The example we saw previously is valid — all of its parameters are unitless `<
 progress(5, 0, 10)
 ```
 
-The next example is also valid — all of its parameters have {{cssxref("&lt;length>")}} units. Behind the scenes, the computed values are used for the calculation. Provided the {{cssxref("font-size")}} is `16px` at the point of calculation, `3em` will resolve to `48px`, which is `48%` of the way between `0px` and `100px`, so the return value will be `0.48`.
+The next example is also valid — all of its parameters have `&lt;length>` units. Behind the scenes, the computed values are used for the calculation. Provided the `font-size` is `16px` at the point of calculation, `3em` will resolve to `48px`, which is `48%` of the way between `0px` and `100px`, so the return value will be `0.48`.
 
 ```css example-good
 progress(3em, 0px, 100px)
@@ -101,7 +101,7 @@ The `progress()` function outputs unitless values, therefore it can be used for 
 
 ### Combining `progress()` with other functions and custom properties
 
-Because `progress()` only ever returns a unitless value between `0` and `1`, it is common to combine it with another math function such as {{cssxref("calc()")}} to output the value and units you want. You can also use [CSS custom properties](/reference/properties/--*) inside `progress()` functions — this makes sense, as you'll often want to set the same values in multiple places, and/or base them on custom properties set via JavaScript.
+Because `progress()` only ever returns a unitless value between `0` and `1`, it is common to combine it with another math function such as `calc()` to output the value and units you want. You can also use [CSS custom properties](/reference/properties/--*) inside `progress()` functions — this makes sense, as you'll often want to set the same values in multiple places, and/or base them on custom properties set via JavaScript.
 
 The following example calculates what percentage the viewport width is between a minimum width of `320px` and a maximum width of `1200px`. The `calc()` function is used to multiply the `progress()` return value by `600px` to convert it into a pixel value that will half of the viewport width's progress value between `320px` and `1200px`.
 
@@ -172,7 +172,7 @@ Our HTML features a {{htmlelement("section")}} element representing our content,
 
 #### CSS
 
-In our CSS, we first set some custom properties on our `<section>` element to represent its `min-width`, `max-width`, and `width`. We then set those properties to the appropriate custom property values, then give our `<section>` a solid {{cssxref("background-color")}} so it is visible.
+In our CSS, we first set some custom properties on our `<section>` element to represent its `min-width`, `max-width`, and `width`. We then set those properties to the appropriate custom property values, then give our `<section>` a solid `background-color` so it is visible.
 
 ```css hidden live-sample___basic
 html {
@@ -250,9 +250,9 @@ Our HTML features an {{htmlelement("article")}} element that contains the rest o
 
 #### JavaScript
 
-In our script, we first grab a reference to our `<article>` element. We then define a function called `setContainerWidth()`, which grabs the `<article>`'s client width via {{domxref("Element.getBoundingClientRect()")}}, and sets a custom property on it called `--container-width`, which is equal to the client width rounded down, with `px` appended to it.
+In our script, we first grab a reference to our `<article>` element. We then define a function called `setContainerWidth()`, which grabs the `<article>`'s client width via `Element.getBoundingClientRect()`, and sets a custom property on it called `--container-width`, which is equal to the client width rounded down, with `px` appended to it.
 
-We then set a {{domxref("Window.resize_event", "resize")}} event listener on the `Window` object, which runs `setContainerWidth()` when the browser window is resized. We also run it once to set the `--container-width` custom property on the `<article>` element once the page loads.
+We then set a `resize` event listener on the `Window` object, which runs `setContainerWidth()` when the browser window is resized. We also run it once to set the `--container-width` custom property on the `<article>` element once the page loads.
 
 ```js
 const articleElem = document.querySelector("article");
@@ -276,7 +276,7 @@ With this set up, we can now set some property values based on the `--container-
 
 The following section explains just the CSS relevant to how we've used the `progress()` function in the demo. For the full CSS, see the [CSS source](https://github.com/mdn/dom-examples/blob/main/css-progress/index.css).
 
-We first center the `<article>` inside the `<body>` using [flexbox](/guides/Flexible_box_layout), then set some custom properties on it to represent the `min-width` and `max-width` values we will use elsewhere. We then target the `<article>` element, giving it {{cssxref("min-width")}} and {{cssxref("max-width")}} values equal to the custom properties we set earlier. We set its {{cssxref("position")}} to `relative` so we can position its content relative to it, then give it a percentage {{cssxref("width")}}, fixed {{cssxref("height")}}, and {{cssxref("border")}}.
+We first center the `<article>` inside the `<body>` using [flexbox](/guides/Flexible_box_layout), then set some custom properties on it to represent the `min-width` and `max-width` values we will use elsewhere. We then target the `<article>` element, giving it `min-width` and `max-width` values equal to the custom properties we set earlier. We set its `position` to `relative` so we can position its content relative to it, then give it a percentage `width`, fixed `height`, and `border`.
 
 ```css
 body {
@@ -300,7 +300,7 @@ article {
 
 Now on to our `progress` `<div>`. We set its `width` equal to a percentage based on the progress ratio of the `--container-width` custom property set on the `<article>` element via JavaScript between its `min-width` and `max-width` (we use the same custom properties here for the second and third `progress()` parameters as we did for the `<article>` `min-width` and `max-width`).
 
-We also give it a `height` and {{cssxref("background-color")}}, then absolutely position it at the top and left corner of the `<article>`.
+We also give it a `height` and `background-color`, then absolutely position it at the top and left corner of the `<article>`.
 
 ```css
 .progress {
@@ -320,7 +320,7 @@ We also give it a `height` and {{cssxref("background-color")}}, then absolutely 
 }
 ```
 
-Next, we'll look at our `background` `<section>`. We absolutely position it relative to our `<article>`, setting {{cssxref("inset", "inset: 0")}} on it so that it adopts the same size and sits over the top of it. We then set a rather wide {{cssxref("background-image")}} on it, and position the background image by giving the {{cssxref("background-position-x")}} property the same value as we gave the progress bar's `width` property. This has the effect that, when you increase the browser window width, the background image is moved over to the left, creating a nice image scrolling effect.
+Next, we'll look at our `background` `<section>`. We absolutely position it relative to our `<article>`, setting `inset: 0` on it so that it adopts the same size and sits over the top of it. We then set a rather wide `background-image` on it, and position the background image by giving the `background-position-x` property the same value as we gave the progress bar's `width` property. This has the effect that, when you increase the browser window width, the background image is moved over to the left, creating a nice image scrolling effect.
 
 ```css
 .background {
@@ -338,10 +338,10 @@ Next, we'll look at our `background` `<section>`. We absolutely position it rela
 }
 ```
 
-We position the `content` `<section>` absolutely so it sits over the top of the `background` `<section>`, then give it some {{cssxref("padding")}}. We then vary two property values as the browser window is resized, using the same progress ratio as before:
+We position the `content` `<section>` absolutely so it sits over the top of the `background` `<section>`, then give it some `padding`. We then vary two property values as the browser window is resized, using the same progress ratio as before:
 
 - We vary the R and G components of the `background-color`, multiplying the progress ratio by 255 in each case to get a proportionate channel value. As the window gets wider, the background color gets less blue and more white, making the scene look as it is going from night to day (the color value has an opacity of `0.5`, so it acts like a tint for the underlying image).
-- We vary the {{cssxref("opacity")}} so that the content fades in a bit when the window gets wider.
+- We vary the `opacity` so that the content fades in a bit when the window gets wider.
 
 ```css
 .content {

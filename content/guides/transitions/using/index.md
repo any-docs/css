@@ -24,17 +24,17 @@ The Web author can define which property has to be animated and in which way. Th
 
 ## Defining transitions
 
-CSS Transitions are controlled using the shorthand {{cssxref("transition")}} property. This is the best way to configure transitions, as it makes it easier to avoid out of sync parameters, which can be very frustrating to have to spend lots of time debugging in CSS.
+CSS Transitions are controlled using the shorthand `transition` property. This is the best way to configure transitions, as it makes it easier to avoid out of sync parameters, which can be very frustrating to have to spend lots of time debugging in CSS.
 
 You can control the individual components of the transition with the following sub-properties:
 
-- {{cssxref("transition-property")}}
+- `transition-property`
   - Specifies the name or names of the CSS properties to which transitions should be applied. Only properties listed here are animated during transitions; changes to all other properties occur instantaneously as usual.
-- {{cssxref("transition-duration")}}
+- `transition-duration`
   - Specifies the duration over which transitions should occur. You can specify a single duration that applies to all properties during the transition, or multiple values to allow each property to transition over a different period of time.
-- {{cssxref("transition-timing-function")}}
+- `transition-timing-function`
   - Specifies a function to define how intermediate values for properties are computed. _Easing functions_ determine how intermediate values of the transition are calculated. Most [easing functions](/reference/values/easing-function) can be specified by providing the graph of the corresponding function, as defined by four points defining a cubic bezier. You can also choose easing from [Easing functions cheat sheet](https://easings.net/).
-- {{cssxref("transition-delay")}}
+- `transition-delay`
   - Defines how long to wait between the time a property is changed and the transition actually begins.
 
 The `transition` shorthand CSS syntax is written as follows:
@@ -121,7 +121,7 @@ div {
 }
 ```
 
-Similarly, if any property's value list is longer than that for {{cssxref("transition-property")}}, it's truncated, so if you have the following CSS:
+Similarly, if any property's value list is longer than that for `transition-property`, it's truncated, so if you have the following CSS:
 
 ```css
 div {
@@ -180,13 +180,13 @@ a:focus {
 }
 ```
 
-This CSS establishes the look of the menu, with the background and text colors both changing when the element is in its {{cssxref(":hover")}} and {{cssxref(":focus")}} states:
+This CSS establishes the look of the menu, with the background and text colors both changing when the element is in its `:hover` and `:focus` states:
 
 {{EmbedLiveSample("Using transitions when highlighting menus")}}
 
 ### Transitioning display and content-visibility
 
-This example demonstrates how {{cssxref("display")}} and {{cssxref("content-visibility")}} can be transitioned. This behavior is useful for creating entry/exit animations where you want to for example remove a container from the DOM with `display: none`, but have it fade out with {{cssxref("opacity")}} rather than disappearing immediately.
+This example demonstrates how `display` and `content-visibility` can be transitioned. This behavior is useful for creating entry/exit animations where you want to for example remove a container from the DOM with `display: none`, but have it fade out with `opacity` rather than disappearing immediately.
 
 Supporting browsers transition `display` and `content-visibility` with a variation on the [discrete animation type](/guides/Animations/Animatable_properties#discrete). This generally means that properties will flip between two values 50% through animating between the two.
 
@@ -199,7 +199,7 @@ So for example:
 
 When transitioning these properties [`transition-behavior: allow-discrete`](/reference/properties/transition-behavior) needs to be set on the transitions. This effectively enables `display`/`content-visibility` transitions.
 
-When transitioning `display`, {{cssxref("@starting-style")}} is needed to provide a set of starting values for properties set on an element that you want to transition from when the element receives its first style update. This is needed to avoid unexpected behavior. By default, CSS transitions are not triggered on elements' first style updates when they first appear in the DOM, which includes when `display` changes from `none` to another state. `content-visibility` animations do not need starting values specified in a `@starting-style` block. This is because `content-visibility` doesn't hide an element from the DOM like `display` does: it just skips rendering the element's content.
+When transitioning `display`, `@starting-style` is needed to provide a set of starting values for properties set on an element that you want to transition from when the element receives its first style update. This is needed to avoid unexpected behavior. By default, CSS transitions are not triggered on elements' first style updates when they first appear in the DOM, which includes when `display` changes from `none` to another state. `content-visibility` animations do not need starting values specified in a `@starting-style` block. This is because `content-visibility` doesn't hide an element from the DOM like `display` does: it just skips rendering the element's content.
 
 #### HTML
 
@@ -360,20 +360,20 @@ main {
 
 ### Detecting the start and completion of a transition
 
-You can use the {{domxref("Element/transitionend_event", "transitionend")}} event to detect that an animation has finished running. This is a {{domxref("TransitionEvent")}} object, which has two added properties beyond a typical {{domxref("Event")}} object:
+You can use the `transitionend` event to detect that an animation has finished running. This is a `TransitionEvent` object, which has two added properties beyond a typical `Event` object:
 
 - `propertyName`
   - A string indicating the name of the CSS property whose transition completed.
 - `elapsedTime`
-  - A float indicating the number of seconds the transition had been running at the time the event fired. This value isn't affected by the value of {{cssxref("transition-delay")}}.
+  - A float indicating the number of seconds the transition had been running at the time the event fired. This value isn't affected by the value of `transition-delay`.
 
-As usual, you can use the {{domxref("EventTarget.addEventListener", "addEventListener()")}} method to monitor for this event:
+As usual, you can use the `addEventListener()` method to monitor for this event:
 
 ```js
 el.addEventListener("transitionend", updateTransition);
 ```
 
-You detect the beginning of a transition using {{domxref("Element/transitionrun_event", "transitionrun")}} (fires before any delay) and {{domxref("Element/transitionstart_event", "transitionstart")}} (fires after any delay), in the same kind of fashion:
+You detect the beginning of a transition using `transitionrun` (fires before any delay) and `transitionstart` (fires after any delay), in the same kind of fashion:
 
 ```js
 el.addEventListener("transitionrun", signalStart);
@@ -381,7 +381,7 @@ el.addEventListener("transitionstart", signalStart);
 ```
 
 > [!NOTE]
-> The `transitionend` event doesn't fire if the transition is aborted before the transition is completed because either the element is made {{cssxref("display", "display: none")}} or the animating property's value is changed.
+> The `transitionend` event doesn't fire if the transition is aborted before the transition is completed because either the element is made `display: none` or the animating property's value is changed.
 
 ## Specifications
 
@@ -389,5 +389,5 @@ el.addEventListener("transitionstart", signalStart);
 
 ## See also
 
-- The {{domxref("TransitionEvent")}} interface and the {{domxref("Element/transitionend_event", "transitionend")}} event
+- The `TransitionEvent` interface and the `transitionend` event
 - [Using CSS animations](/guides/Animations/Using)

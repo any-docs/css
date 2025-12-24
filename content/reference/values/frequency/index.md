@@ -10,7 +10,7 @@ The **`<frequency>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/D
 
 ## Syntax
 
-The `<frequency>` data type consists of a {{cssxref("&lt;number&gt;")}} followed by one of the units listed below. As with all CSS dimensions, there is no space between the unit literal and the number.
+The `<frequency>` data type consists of a `&lt;number&gt;` followed by one of the units listed below. As with all CSS dimensions, there is no space between the unit literal and the number.
 
 ### Units
 
@@ -52,5 +52,5 @@ Currently, no browsers support this feature.
 
 ## See also
 
-- {{cssxref("&lt;frequency-percentage&gt;")}}
+- `&lt;frequency-percentage&gt;`
 - [CSS values and units](/guides/Values_and_units) module

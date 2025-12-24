@@ -42,10 +42,10 @@ a:link {
 </ul>
 ```
 
-Styles defined by the `:link` and {{cssxref(":visited")}} pseudo-classes can be overridden by any subsequent user-action pseudo-classes ({{cssxref(":hover")}} or {{cssxref(":active")}}) that have at least equal specificity. To style links appropriately, put the `:link` rule before all other link-related rules, as defined by the _LVHA-order_: `:link` — `:visited` — `:hover` — `:active`. The `:visited` pseudo-class and `:link` pseudo-class are mutually exclusive.
+Styles defined by the `:link` and `:visited` pseudo-classes can be overridden by any subsequent user-action pseudo-classes (`:hover` or `:active`) that have at least equal specificity. To style links appropriately, put the `:link` rule before all other link-related rules, as defined by the _LVHA-order_: `:link` — `:visited` — `:hover` — `:active`. The `:visited` pseudo-class and `:link` pseudo-class are mutually exclusive.
 
 > [!NOTE]
-> Use {{cssxref(":any-link")}} to select an element independent of whether it has been visited or not.
+> Use `:any-link` to select an element independent of whether it has been visited or not.
 
 ## Syntax
 
@@ -57,7 +57,7 @@ Styles defined by the `:link` and {{cssxref(":visited")}} pseudo-classes can be 
 
 ## Examples
 
-By default, most browsers apply a special {{cssxref("color")}} value to visited links. Thus, the links in this example will probably have special font colors only before you visit them. (After that, you'll need to clear your browser history to see them again.) However, the {{cssxref("background-color")}} values are likely to remain, as most browsers do not set that property on visited links by default.
+By default, most browsers apply a special `color` value to visited links. Thus, the links in this example will probably have special font colors only before you visit them. (After that, you'll need to clear your browser history to see them again.) However, the `background-color` values are likely to remain, as most browsers do not set that property on visited links by default.
 
 ### HTML
 

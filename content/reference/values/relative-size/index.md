@@ -6,7 +6,7 @@ spec-urls: https://drafts.csswg.org/css-fonts/#valdef-font-size-relative-size
 sidebar: cssref
 ---
 
-The **`<relative-size>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) describes relative size keywords. The `<relative-size>` keywords define a size relative to the computed size of the parent element. This data type is used in the {{cssxref("font")}} shorthand and {{cssxref("font-size")}} properties.
+The **`<relative-size>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) describes relative size keywords. The `<relative-size>` keywords define a size relative to the computed size of the parent element. This data type is used in the `font` shorthand and `font-size` properties.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ The `<relative-size>` data type is defined using a keyword value chosen from the
 
 ## Description
 
-The `<relative-size>` keywords are relative to the current size of the element. If the inherited size is defined using an {{cssxref("absolute-size")}} keyword, the `<relative-size>` value equates to the adjacent size in the [`<absolute-size>` table](/reference/values/absolute-size#description). Otherwise, the relative increase or decrease in size is between 120% and 150%.
+The `<relative-size>` keywords are relative to the current size of the element. If the inherited size is defined using an `absolute-size` keyword, the `<relative-size>` value equates to the adjacent size in the [`<absolute-size>` table](/reference/values/absolute-size#description). Otherwise, the relative increase or decrease in size is between 120% and 150%.
 
 ## Examples
 
@@ -62,6 +62,6 @@ li {
 
 ## See also
 
-- CSS {{cssxref("absolute-size")}} data type
-- CSS {{cssxref("font")}} and {{cssxref("font-size")}} properties
+- CSS `absolute-size` data type
+- CSS `font` and `font-size` properties
 - [CSS fonts](/guides/Fonts) module

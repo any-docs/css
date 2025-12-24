@@ -9,7 +9,7 @@ In this guide, we look at how to make elements span across columns inside the mu
 
 ## Spanning the columns
 
-To cause an item to span across columns, use the {{cssxref("column-span")}} property with a value of `all`. This will cause the element to become a _spanner_, spanning all the columns.
+To cause an item to span across columns, use the `column-span` property with a value of `all`. This will cause the element to become a _spanner_, spanning all the columns.
 
 Any descendant element of the multicol container may be turned into a spanner, including both direct and indirect children. For example, a heading nested directly inside the container could become a spanner, as could a heading nested inside a {{HTMLElement("section")}} nested inside the multicol container.
 
@@ -159,9 +159,9 @@ Additionally, if a spanning element appears later in the content, it can cause u
 
 ## Filling and balancing columns
 
-A balanced set of columns is where all columns have approximately the same amount of content. Filling and balancing are relevant when the amount of content does not match the amount of space provided, such as when a {{CSSXref("height")}} is declared on the container.
+A balanced set of columns is where all columns have approximately the same amount of content. Filling and balancing are relevant when the amount of content does not match the amount of space provided, such as when a `height` is declared on the container.
 
-The initial value for {{cssxref("column-fill")}} is `balance`. The value of `balance` means all columns are as balanced as possible. In fragmented contexts, such as [paged media](/guides/Paged_media), only the last fragment is balanced. This means that on the last page, the final set of column boxes is balanced.
+The initial value for `column-fill` is `balance`. The value of `balance` means all columns are as balanced as possible. In fragmented contexts, such as [paged media](/guides/Paged_media), only the last fragment is balanced. This means that on the last page, the final set of column boxes is balanced.
 
 The other balancing value, `balance-all`, balances all columns in fragmented contexts.
 

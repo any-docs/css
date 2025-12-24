@@ -25,7 +25,7 @@ speak-as: <counter-style-name>;
 ### Values
 
 - `auto`
-  - If the value of `speak-as` is specified as `auto`, then the effective value of `speak-as` will be determined based on the value of the {{cssxref("@counter-style/system", "system")}} descriptor:
+  - If the value of `speak-as` is specified as `auto`, then the effective value of `speak-as` will be determined based on the value of the `system` descriptor:
     - If the value of `system` is `alphabetic`, the effective value of `speak-as` will be `spell-out`.
     - If `system` is `cyclic`, the effective value of `speak-as` will be `bullets`.
     - If `system` is `extends`, the value of `speak-as` will be the same as if `speak-as: auto` is specified on the extended style.
@@ -40,7 +40,7 @@ speak-as: <counter-style-name>;
 - `spell-out`
   - The user agent will generate a counter representation as normal and would read it out letter by letter. If the user agent doesn't know how to read out a particular counter symbol, the user agent might read it out as if the value of `speak-as` was `numbers`.
 - `<counter-style-name>`
-  - The name of another counter style, specified as a {{cssxref("&lt;custom-ident&gt;")}}. If included, the counter will be spoken out in the form specified in that counter style, kind of like specifying the {{cssxref("@counter-style/fallback", "fallback")}} descriptor. If the specified style does not exist, `speak-as` defaults to `auto`.
+  - The name of another counter style, specified as a `&lt;custom-ident&gt;`. If included, the counter will be spoken out in the form specified in that counter style, kind of like specifying the `fallback` descriptor. If the specified style does not exist, `speak-as` defaults to `auto`.
 
 ## Accessibility
 
@@ -105,8 +105,8 @@ To experience the result of the `speak-as` descriptor, use assistive technology 
 
 ## See also
 
-- Other {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, and {{cssxref("@counter-style/fallback", "fallback")}}
-- {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}}: the functional notation for creating anonymous counter styles.
+- Other `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `negative`, `prefix`, `suffix`, `range`, `pad`, and `fallback`
+- `list-style`, `list-style-image`, `list-style-position`
+- `symbols()`: the functional notation for creating anonymous counter styles.
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists and counters](/guides/Lists) module

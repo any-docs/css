@@ -8,9 +8,9 @@ sidebar: cssref
 
 The **`::view-transition-new()`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) represents the "new" view state of a view transition — a snapshot live representation of the state after the transition.
 
-During a view transition, `::view-transition-new()` is included in the associated pseudo-element tree as explained in [The view transition pseudo-element tree](/en-US/docs/Web/API/View_Transition_API/Using#the_view_transition_pseudo-element_tree). It is only ever a child of a {{cssxref("::view-transition-image-pair()")}}, and never has any children.
+During a view transition, `::view-transition-new()` is included in the associated pseudo-element tree as explained in [The view transition pseudo-element tree](/en-US/docs/Web/API/View_Transition_API/Using#the_view_transition_pseudo-element_tree). It is only ever a child of a `::view-transition-image-pair()`, and never has any children.
 
-It is a replaced element and therefore can be manipulated with properties such as {{cssxref("object-fit")}} and {{cssxref("object-position")}}. It has natural dimensions equal to the content's size.
+It is a replaced element and therefore can be manipulated with properties such as `object-fit` and `object-position`. It has natural dimensions equal to the content's size.
 
 The following default styling is included in the UA stylesheet:
 
@@ -60,11 +60,11 @@ The following default styling is included in the UA stylesheet:
 - `*`
   - The [universal selector (`*`)](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors); selects all view transition groups on a page.
 - `root`
-  - Causes the pseudo-element to match the default `root` view transition snapshot group created by the user agent to contain the view transition for the overall page. This group includes any element not assigned to its own specific view transition snapshot group via the {{cssxref("view-transition-name")}} property.
+  - Causes the pseudo-element to match the default `root` view transition snapshot group created by the user agent to contain the view transition for the overall page. This group includes any element not assigned to its own specific view transition snapshot group via the `view-transition-name` property.
 - `<pt-name-selector>`
-  - The {{cssxref("custom-ident")}} set as the value of the {{cssxref("view-transition-name")}} property.
+  - The `custom-ident` set as the value of the `view-transition-name` property.
 - `<pt-class-selector>`
-  - The {{cssxref("custom-ident")}} set as the value of the {{cssxref("view-transition-class")}} property preceded by a period (`.`).
+  - The `custom-ident` set as the value of the `view-transition-class` property preceded by a period (`.`).
 
 ## Examples
 

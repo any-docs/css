@@ -22,7 +22,7 @@ There are mainly four animation types as defined in the [Web Animations](https:/
   - The property is not animatable. It is not processed when listed in an animation keyframe and is unaffected by transitions.
 
     > [!NOTE]
-    > An animation effect targeting only properties that are not animatable will still exhibit the usual behavior for an animation effect (E.g., firing the {{DOMXref("Element/animationstart_event", "animationstart")}} event).
+    > An animation effect targeting only properties that are not animatable will still exhibit the usual behavior for an animation effect (E.g., firing the `animationstart` event).
 
 - Discrete
   - The property's values are not additive, and interpolation swaps from the start value to the end value at `50%`. Specifically, denoting by `p` the progress value:
@@ -39,14 +39,14 @@ Some properties have specific interpolation behavior not covered by these four t
 
 ## Animating custom properties
 
-For custom properties registered using the {{DOMXref("CSS/registerProperty_static", "registerProperty()")}} method, the animation type is by computed value, with the computed value type [determined](https://drafts.css-houdini.org/css-properties-values-api/#calculation-of-computed-values) by the property's syntax definition.
+For custom properties registered using the `registerProperty()` method, the animation type is by computed value, with the computed value type [determined](https://drafts.css-houdini.org/css-properties-values-api/#calculation-of-computed-values) by the property's syntax definition.
 
 For unregistered custom properties, the animation type is discrete.
 
 ## See also
 
-- {{cssxref("transition-behavior")}}
-- {{cssxref("@starting-style")}}
+- `transition-behavior`
+- `@starting-style`
 - [CSS animations](/guides/Animations) module
 - [Using CSS Animations](/guides/Animations/Using)
 - [Using CSS Transitions](/guides/Transitions/Using)

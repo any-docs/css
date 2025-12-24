@@ -71,7 +71,7 @@ The `column-rule-width` property is specified as a single `<'border-width'>` val
 ### Values
 
 - `<'border-width'>`
-  - Is a keyword defined by {{ cssxref("border-width") }} describing the width of the rule. It may be either a {{cssxref("&lt;length&gt;")}} or one of the `thin`, `medium`, or `thick` keywords.
+  - Is a keyword defined by {{ cssxref("border-width") }} describing the width of the rule. It may be either a `&lt;length&gt;` or one of the `thin`, `medium`, or `thick` keywords.
 
 ## Formal definition
 
@@ -120,6 +120,6 @@ p {
 ## See also
 
 - [Learn: Multiple-column Layout](/en-US/docs/Learn_web_development/Core/CSS_layout/Multiple-column_Layout)
-- {{CSSXref("column-rule-style")}}
-- {{CSSXref("column-rule-color")}}
-- {{CSSXref("column-rule")}}
+- `column-rule-style`
+- `column-rule-color`
+- `column-rule`

@@ -93,10 +93,10 @@ text-indent: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
-  - Indentation is specified as an absolute {{cssxref("&lt;length&gt;")}}. Negative values are allowed. See {{cssxref("&lt;length&gt;")}} values for possible units.
-- {{cssxref("&lt;percentage&gt;")}}
-  - Indentation is a {{cssxref("&lt;percentage&gt;")}} of the containing block's width.
+- `&lt;length&gt;`
+  - Indentation is specified as an absolute `&lt;length&gt;`. Negative values are allowed. See `&lt;length&gt;` values for possible units.
+- `&lt;percentage&gt;`
+  - Indentation is a `&lt;percentage&gt;` of the containing block's width.
 - `each-line`
   - Indentation affects the first line of the block container as well as each line after a _forced line break_, but does not affect lines after a _soft wrap break_.
 - `hanging`
@@ -247,11 +247,11 @@ p {
 
 - [Learn to style HTML using CSS](/en-US/docs/Learn_web_development/Core/Styling_basics)
 - Related CSS properties:
-  - {{cssxref("text-justify")}}
-  - {{cssxref("text-orientation")}}
-  - {{cssxref("text-overflow")}}
-  - {{cssxref("text-rendering")}}
-  - {{cssxref("text-transform")}}
+  - `text-justify`
+  - `text-orientation`
+  - `text-overflow`
+  - `text-rendering`
+  - `text-transform`
   - {{cssxref('hanging-punctuation')}}
 
 - [CSS Text Decoration](/guides/Text_decoration) CSS module

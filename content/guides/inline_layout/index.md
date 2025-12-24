@@ -13,22 +13,22 @@ The **CSS inline layout** module defines the block-axis alignment and sizing of 
 
 ### Properties
 
-- {{cssxref("alignment-baseline")}}
-- {{cssxref("baseline-shift")}}
-- {{cssxref("baseline-source")}}
-- {{cssxref("dominant-baseline")}}
-- {{cssxref("initial-letter")}}
-- {{cssxref("line-height")}}
-- {{cssxref("text-box-edge")}}
-- {{cssxref("text-box-trim")}}
-- {{cssxref("text-box")}} shorthand
-- {{cssxref("vertical-align")}}
+- `alignment-baseline`
+- `baseline-shift`
+- `baseline-source`
+- `dominant-baseline`
+- `initial-letter`
+- `line-height`
+- `text-box-edge`
+- `text-box-trim`
+- `text-box` shorthand
+- `vertical-align`
 
 The specification also defines the `initial-letter-align`, `initial-letter-wrap`, `inline-sizing`, and `line-fit-edge` properties, which are not yet supported by any browser.
 
 ### Data types
 
-- {{cssxref("&lt;text-edge&gt;")}}
+- `&lt;text-edge&gt;`
 
 ### Glossary terms
 
@@ -42,12 +42,12 @@ The specification also defines the `initial-letter-align`, `initial-letter-wrap`
 
 ## Related concepts
 
-- {{cssxref("font-size")}} property
-- {{cssxref("font-feature-settings")}} property
-- {{cssxref("letter-spacing")}} property
-- {{cssxref("text-anchor")}} property
-- {{cssxref("::first-letter")}} pseudo-element
-- {{cssxref(":first-child")}} pseudo-class
+- `font-size` property
+- `font-feature-settings` property
+- `letter-spacing` property
+- `text-anchor` property
+- `::first-letter` pseudo-element
+- `:first-child` pseudo-class
 
 ## Specifications
 

@@ -49,7 +49,7 @@ overflow-wrap: break-word;
 ```
 
 > [!NOTE]
-> In contrast to {{cssxref("word-break")}}, `overflow-wrap` will only create a break if an entire word cannot be placed on its own line without overflowing.
+> In contrast to `word-break`, `overflow-wrap` will only create a break if an entire word cannot be placed on its own line without overflowing.
 
 ## Syntax
 
@@ -173,8 +173,8 @@ p {
 
 ## See also
 
-- {{cssxref("word-break")}}
-- {{cssxref("white-space")}}
-- {{cssxref("hyphens")}}
-- {{cssxref("text-overflow")}}
+- `word-break`
+- `white-space`
+- `hyphens`
+- `text-overflow`
 - [Guide to wrapping and breaking text](/guides/Text/Wrapping_breaking_text)

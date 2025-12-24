@@ -36,7 +36,7 @@ The `font-language-override` property is specified as the keyword `normal` or a 
 
 - `normal`
   - Tells the browser to use font glyphs that are appropriate for the language specified by the `lang` attribute. This is the default value.
-- {{cssxref("string")}}
+- `string`
   - Tells the browser to use font glyphs that are appropriate for the language specified by the string. The string must match a language tag found in the [OpenType language system](https://learn.microsoft.com/en-us/typography/opentype/spec/languagetags). For example, "ENG" is English, and "KOR" is Korean.
 
 ## Formal definition
@@ -86,4 +86,4 @@ p.para2 {
 
 ## See also
 
-- {{cssxref("font-variant")}}, {{cssxref("font-variant-position")}}, {{cssxref("font-variant-east-asian")}}, {{cssxref("font-variant-caps")}}, {{cssxref("font-variant-ligatures")}}, {{cssxref("font-variant-numeric")}}, {{cssxref("font-variant-alternates")}}, {{cssxref("font-synthesis")}}, {{cssxref("font-kerning")}}.
+- `font-variant`, `font-variant-position`, `font-variant-east-asian`, `font-variant-caps`, `font-variant-ligatures`, `font-variant-numeric`, `font-variant-alternates`, `font-synthesis`, `font-kerning`.

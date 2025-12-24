@@ -6,7 +6,7 @@ browser-compat: css.properties.text-align
 sidebar: cssref
 ---
 
-The **`text-align`** [CSS](/en-US/docs/Web/CSS) property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like {{cssxref("vertical-align")}} but in the horizontal direction.
+The **`text-align`** [CSS](/en-US/docs/Web/CSS) property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
 
 {{InteractiveExample("CSS Demo: text-align")}}
 
@@ -93,7 +93,7 @@ The `text-align` property is specified as a single keyword from the list below.
 - `justify`
   - The inline contents are justified. Spaces out the content to line up its left and right edges to the left and right edges of the line box, except for the last line.
 - `match-parent`
-  - Similar to `inherit`, but the values `start` and `end` are calculated according to the parent's {{cssxref("direction")}} and are replaced by the appropriate `left` or `right` value.
+  - Similar to `inherit`, but the values `start` and `end` are calculated according to the parent's `direction` and are replaced by the appropriate `left` or `right` value.
 
 ## Accessibility
 
@@ -273,4 +273,4 @@ caption {
 
 ## See also
 
-- {{Cssxref("margin","margin: auto")}}, {{Cssxref("margin-left","margin-left: auto")}}, {{Cssxref("vertical-align")}}
+- `margin: auto`, `margin-left: auto`, `vertical-align`

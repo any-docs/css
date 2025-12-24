@@ -61,9 +61,9 @@ flex: 1 1 100px;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("flex-grow")}}
-- {{cssxref("flex-shrink")}}
-- {{cssxref("flex-basis")}}
+- `flex-grow`
+- `flex-shrink`
+- `flex-basis`
 
 ## Syntax
 
@@ -101,30 +101,30 @@ flex: unset;
 The `flex` property may be specified using one, two, or three values.
 
 - **One-value syntax:** the value must be one of:
-  - a valid value for {{cssxref("&lt;flex-grow&gt;")}}: then, in all the browsers, the shorthand expands to `flex: <flex-grow> 1 0%`. However the specification says it should expand to `flex: <flex-grow> 1 0`.
-  - a valid value for {{cssxref("&lt;flex-basis&gt;")}}: then the shorthand expands to `flex: 1 1 <flex-basis>`.
+  - a valid value for `&lt;flex-grow&gt;`: then, in all the browsers, the shorthand expands to `flex: <flex-grow> 1 0%`. However the specification says it should expand to `flex: <flex-grow> 1 0`.
+  - a valid value for `&lt;flex-basis&gt;`: then the shorthand expands to `flex: 1 1 <flex-basis>`.
   - the keyword `none` or one of the global keywords.
 
 - **Two-value syntax:**
-  - The first value must be a valid value for {{cssxref("flex-grow")}}.
+  - The first value must be a valid value for `flex-grow`.
 
   - The second value must be one of:
-    - a valid value for {{cssxref("flex-shrink")}}: then, in all the browsers, the shorthand expands to `flex: <flex-grow> <flex-shrink> 0%`.
-    - a valid value for {{cssxref("flex-basis")}}: then the shorthand expands to `flex: <flex-grow> 1 <flex-basis>`.
+    - a valid value for `flex-shrink`: then, in all the browsers, the shorthand expands to `flex: <flex-grow> <flex-shrink> 0%`.
+    - a valid value for `flex-basis`: then the shorthand expands to `flex: <flex-grow> 1 <flex-basis>`.
 
 - **Three-value syntax:** the values must be in the following order:
-  1. a valid value for {{cssxref("flex-grow")}}.
-  2. a valid value for {{cssxref("flex-shrink")}}.
-  3. a valid value for {{cssxref("flex-basis")}}.
+  1. a valid value for `flex-grow`.
+  2. a valid value for `flex-shrink`.
+  3. a valid value for `flex-basis`.
 
 ### Values
 
 - `<'flex-grow'>`
-  - Defines the {{cssxref("flex-grow")}} of the flex item. Negative values are considered invalid. Defaults to `1` when omitted. (initial is `0`)
+  - Defines the `flex-grow` of the flex item. Negative values are considered invalid. Defaults to `1` when omitted. (initial is `0`)
 - `<'flex-shrink'>`
-  - Defines the {{cssxref("flex-shrink")}} of the flex item. Negative values are considered invalid. Defaults to `1` when omitted. (initial is `1`)
+  - Defines the `flex-shrink` of the flex item. Negative values are considered invalid. Defaults to `1` when omitted. (initial is `1`)
 - `<'flex-basis'>`
-  - Defines the {{cssxref("flex-basis")}} of the flex item. Defaults to `0%` when omitted. The initial value is `auto`.
+  - Defines the `flex-basis` of the flex item. Defaults to `0%` when omitted. The initial value is `auto`.
 - `none`
   - The item is sized according to its `width` and `height` properties. It is fully inflexible: it neither shrinks nor grows in relation to the flex container. This is equivalent to setting `flex: 0 0 auto`.
 
@@ -225,7 +225,7 @@ For most purposes, authors should set `flex` to one of the following values: `au
 
 {{EmbedLiveSample("Description", 1200, 400)}}
 
-By default flex items don't shrink below their {{cssxref("min-content")}} size. To change this, set the item's {{cssxref("min-width")}} or {{cssxref("min-height")}}.
+By default flex items don't shrink below their `min-content` size. To change this, set the item's `min-width` or `min-height`.
 
 ## Formal definition
 
@@ -301,7 +301,7 @@ The flex container contains two flex items:
 
 The `#default` item takes up as much space as its width requires, but does not expand to take up any more space. All the remaining space is taken up by the `#flex-auto` item.
 
-When you click the `#flex-auto` item, we set the `#default` item's {{cssxref("display")}} property to `none`, removing it from the layout. The `#flex-auto` item then expands to occupy all the available space in the container. Clicking the `#flex-auto` item again adds the `#default` item back to the container.
+When you click the `#flex-auto` item, we set the `#default` item's `display` property to `none`, removing it from the layout. The `#flex-auto` item then expands to occupy all the available space in the container. Clicking the `#flex-auto` item again adds the `#default` item back to the container.
 
 {{EmbedLiveSample('Setting_flex_auto','100%','150')}}
 

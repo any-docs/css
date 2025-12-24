@@ -62,8 +62,8 @@ The magic happens in the CSS.
 ## See also
 
 - [Picture-in-picture API](/en-US/docs/Web/API/Picture-in-Picture_API)
-- {{DOMxRef("HTMLVideoElement.requestPictureInPicture()")}}
-- {{DOMxRef("HTMLVideoElement.disablePictureInPicture")}}
-- {{DOMxRef("Document.pictureInPictureEnabled")}}
-- {{DOMxRef("Document.exitPictureInPicture()")}}
-- {{DOMxRef("Document.pictureInPictureElement")}}
+- `HTMLVideoElement.requestPictureInPicture()`
+- `HTMLVideoElement.disablePictureInPicture`
+- `Document.pictureInPictureEnabled`
+- `Document.exitPictureInPicture()`
+- `Document.pictureInPictureElement`

@@ -34,7 +34,7 @@ mask-border-outset: revert-layer;
 mask-border-outset: unset;
 ```
 
-The `mask-border-outset` property may be specified as one, two, three, or four values. Each value is a {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;number&gt;")}}. Negative values are invalid.
+The `mask-border-outset` property may be specified as one, two, three, or four values. Each value is a `&lt;length&gt;` or `&lt;number&gt;`. Negative values are invalid.
 
 - When **one** value is specified, it applies the same outset to **all four sides**.
 - When **two** values are specified, the first outset applies to the **top and bottom**, the second to the **left and right**.
@@ -43,10 +43,10 @@ The `mask-border-outset` property may be specified as one, two, three, or four v
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the mask border outset as a dimension.
-- {{cssxref("&lt;number&gt;")}}
-  - The size of the mask border outset as a multiple of the corresponding {{cssxref("border-width")}}.
+- `&lt;number&gt;`
+  - The size of the mask border outset as a multiple of the corresponding `border-width`.
 
 ## Formal definition
 
@@ -73,7 +73,7 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 ```
 
 > [!NOTE]
-> The {{cssxref("mask-border")}} page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
+> The `mask-border` page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
 
 ## Specifications
 
@@ -85,8 +85,8 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 
 ## See also
 
-- {{cssxref("mask-border")}}
-- {{cssxref("mask-border-mode")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-source")}}
-- {{cssxref("mask-border-width")}}
+- `mask-border`
+- `mask-border-mode`
+- `mask-border-repeat`
+- `mask-border-source`
+- `mask-border-width`

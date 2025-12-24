@@ -100,9 +100,9 @@ The `shape-outside` property is specified using the values from the list below, 
 - `none`
   - The float area is unaffected. Inline content wraps around the element's margin box, like usual.
 - `<shape-box>`
-  - The float area is computed according to the shape of a float element's edges (as defined by the [CSS box model](/guides/Box_model/Introduction)). This can be `margin-box`, `border-box`, `padding-box`, or `content-box`. The shape includes any curvature created by the {{cssxref("border-radius")}} property (behavior which is similar to {{cssxref("background-clip")}}).
+  - The float area is computed according to the shape of a float element's edges (as defined by the [CSS box model](/guides/Box_model/Introduction)). This can be `margin-box`, `border-box`, `padding-box`, or `content-box`. The shape includes any curvature created by the `border-radius` property (behavior which is similar to `background-clip`).
     - `margin-box`
-      - Defines the shape enclosed by the outside margin edge. The corner radii of this shape are determined by the corresponding {{cssxref("border-radius")}} and {{cssxref("margin")}} values. If the `border-radius / margin` ratio is `1` or more, then the margin box corner radius is `border-radius + margin`. If the ratio is less than `1`, then the margin box corner radius is `border-radius + (margin * (1 + (ratio - 1) ^ 3))`.
+      - Defines the shape enclosed by the outside margin edge. The corner radii of this shape are determined by the corresponding `border-radius` and `margin` values. If the `border-radius / margin` ratio is `1` or more, then the margin box corner radius is `border-radius + margin`. If the ratio is less than `1`, then the margin box corner radius is `border-radius + (margin * (1 + (ratio - 1) ^ 3))`.
     - `border-box`
       - Defines the shape enclosed by the outside border edge. The shape follows the normal border radius shaping rules for the outside of the border.
     - `padding-box`
@@ -110,10 +110,10 @@ The `shape-outside` property is specified using the values from the list below, 
     - `content-box`
       - Defines the shape enclosed by the outside content edge. Each corner radius of this box is the larger of `0` or `border-radius - border-width - padding`.
 
-- {{cssxref("basic-shape")}}
-  - The float area is computed based on the shape created by an {{cssxref("basic-shape/inset","inset()")}}, {{cssxref("basic-shape/circle","circle()")}}, {{cssxref("basic-shape/ellipse","ellipse()")}}, or {{cssxref("basic-shape/polygon","polygon()")}} function; other `<basic-shape>` functions are invalid. If a `<shape-box>` is also supplied, it defines the reference box for the `<basic-shape>` function. Otherwise, the reference box defaults to `margin-box`.
-- {{cssxref("image")}}
-  - The float area is extracted and computed based on the alpha channel of the specified {{cssxref("image")}} as defined by {{cssxref("shape-image-threshold")}}.
+- `basic-shape`
+  - The float area is computed based on the shape created by an `inset()`, `circle()`, `ellipse()`, or `polygon()` function; other `<basic-shape>` functions are invalid. If a `<shape-box>` is also supplied, it defines the reference box for the `<basic-shape>` function. Otherwise, the reference box defaults to `margin-box`.
+- `image`
+  - The float area is extracted and computed based on the alpha channel of the specified `image` as defined by `shape-image-threshold`.
 
 > [!NOTE]
 > If the image is invalid, the effect is as if the keyword `none` had been specified. Additionally, the image must be served with {{Glossary("CORS")}} headers allowing its use.
@@ -191,6 +191,6 @@ p {
 
 - [CSS shapes](/guides/Shapes)
 - [Overview of shapes](/guides/Shapes/Overview)
-- {{cssxref("basic-shape")}}
-- {{cssxref("shape-margin")}}
-- {{cssxref("shape-image-threshold")}}
+- `basic-shape`
+- `shape-margin`
+- `shape-image-threshold`

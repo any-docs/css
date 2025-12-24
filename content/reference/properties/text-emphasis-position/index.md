@@ -166,7 +166,7 @@ The preferred position of emphasis marks depends on the language. In Japanese fo
 </table>
 
 > [!NOTE]
-> The `text-emphasis-position` cannot be set, and therefore are not reset either, using the {{cssxref("text-emphasis")}} shorthand property.
+> The `text-emphasis-position` cannot be set, and therefore are not reset either, using the `text-emphasis` shorthand property.
 
 ## Formal definition
 
@@ -304,8 +304,8 @@ em rt {
 
 ## See also
 
-- {{cssxref("text-underline-position")}}
-- {{cssxref("text-emphasis-style")}}
-- {{cssxref("text-emphasis-color")}}
-- {{cssxref("text-emphasis")}} shorthand property
-- {{cssxref("writing-mode")}}
+- `text-underline-position`
+- `text-emphasis-style`
+- `text-emphasis-color`
+- `text-emphasis` shorthand property
+- `writing-mode`

@@ -41,7 +41,7 @@ The `-webkit-mask-repeat-y` property sets whether and how a mask image is repeat
 - repeat
   - The mask image is repeated vertically.
 - space
-  - The image is repeated as much as possible without clipping. The first and last images are pinned to the top and bottom edge of the element, and whitespace is distributed evenly between the images. The {{cssxref("mask-position")}} property is ignored unless only one image can be displayed without clipping. The only case where clipping happens using space is when there isn't enough room to display one image.
+  - The image is repeated as much as possible without clipping. The first and last images are pinned to the top and bottom edge of the element, and whitespace is distributed evenly between the images. The `mask-position` property is ignored unless only one image can be displayed without clipping. The only case where clipping happens using space is when there isn't enough room to display one image.
 - round
   - As the allowed vertical space increases in size, the repeated images will stretch (leaving no gaps) until there is room for another one to be added. When the next image is added, all of the current ones compress to allow room. Example: An image with an original height of 260px, repeated three times, might stretch until each repetition is 300px high, and then another image will be added. They will then compress to a height of 225px.
 
@@ -91,4 +91,4 @@ Not part of any standard.
 
 ## See also
 
-{{cssxref("mask-repeat", "-webkit-mask-repeat")}}, {{cssxref("-webkit-mask-repeat-x")}}
+`-webkit-mask-repeat`, `-webkit-mask-repeat-x`

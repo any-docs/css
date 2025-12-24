@@ -72,13 +72,13 @@ This property's value can take one of two forms:
 - `normal`
   - Text is laid out using default settings.
 - `<string> <number>`
-  - When rendering text, the list of variable font axis names is passed to the text layout engine to enable or disable font features. Each setting is always one or more pairs consisting of a {{cssxref("&lt;string&gt;")}} of 4 ASCII characters followed by a {{cssxref("number")}} indicating the axis value to set. If the `<string>` has more or fewer characters or contains characters outside the U+20 - U+7E code point range, the whole property is invalid. The `<number>` can be fractional or negative, depending on the value range available in your font, as defined by the font designer.
+  - When rendering text, the list of variable font axis names is passed to the text layout engine to enable or disable font features. Each setting is always one or more pairs consisting of a `&lt;string&gt;` of 4 ASCII characters followed by a `number` indicating the axis value to set. If the `<string>` has more or fewer characters or contains characters outside the U+20 - U+7E code point range, the whole property is invalid. The `<number>` can be fractional or negative, depending on the value range available in your font, as defined by the font designer.
 
 ## Description
 
-This property is a low-level mechanism designed to set variable font features where no other way to enable or access those features exist. You should only use it when no basic properties exist to set those features (e.g., {{cssxref("font-weight")}}, {{cssxref("font-style")}}).
+This property is a low-level mechanism designed to set variable font features where no other way to enable or access those features exist. You should only use it when no basic properties exist to set those features (e.g., `font-weight`, `font-style`).
 
-Font characteristics set using `font-variation-settings` will always override those set using the corresponding basic font properties, e.g., `font-weight`, no matter where they appear in the cascade. In some browsers, this is currently only true when the {{cssxref("@font-face")}} declaration includes a {{cssxref("@font-face/font-weight", "font-weight")}} range.
+Font characteristics set using `font-variation-settings` will always override those set using the corresponding basic font properties, e.g., `font-weight`, no matter where they appear in the cascade. In some browsers, this is currently only true when the `@font-face` declaration includes a `font-weight` range.
 
 ### Registered and custom axes
 
@@ -98,23 +98,23 @@ Here are the registered axes along with their corresponding CSS properties:
   <tbody>
     <tr>
       <td>"wght"</td>
-      <td>{{cssxref("font-weight")}}</td>
+      <td>`font-weight`</td>
     </tr>
     <tr>
       <td>"wdth"</td>
-      <td>{{cssxref("font-stretch")}}</td>
+      <td>`font-stretch`</td>
     </tr>
     <tr>
       <td>"slnt" (slant)</td>
-      <td>{{cssxref("font-style")}}: <code>oblique + angle</code></td>
+      <td>`font-style`: <code>oblique + angle</code></td>
     </tr>
     <tr>
       <td>"ital"</td>
-      <td>{{cssxref("font-style")}}: <code>italic</code></td>
+      <td>`font-style`: <code>italic</code></td>
     </tr>
     <tr>
       <td>"opsz"</td>
-      <td><p>{{cssxref("font-optical-sizing")}}</p></td>
+      <td><p>`font-optical-sizing`</p></td>
     </tr>
   </tbody>
 </table>

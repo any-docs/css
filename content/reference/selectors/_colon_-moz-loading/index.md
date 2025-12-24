@@ -38,4 +38,4 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref(":-moz-broken")}}, {{cssxref(":-moz-suppressed")}}, {{cssxref(":-moz-user-disabled")}}
+- `:-moz-broken`, `:-moz-suppressed`, `:-moz-user-disabled`

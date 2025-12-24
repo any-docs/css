@@ -6,7 +6,7 @@ browser-compat: css.properties.inset
 sidebar: cssref
 ---
 
-The **`inset`** [CSS](/en-US/docs/Web/CSS) property is a shorthand that corresponds to the {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, and/or {{cssxref("left")}} properties. It has the same multi-value syntax of the {{cssxref("margin")}} shorthand.
+The **`inset`** [CSS](/en-US/docs/Web/CSS) property is a shorthand that corresponds to the `top`, `right`, `bottom`, and/or `left` properties. It has the same multi-value syntax of the `margin` shorthand.
 
 This {{glossary("inset properties")}}, including `inset`, have no effect on non-positioned elements.
 
@@ -71,10 +71,10 @@ While part of the [CSS logical properties and values](/guides/Logical_properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{Cssxref("top")}}
-- {{Cssxref("right")}}
-- {{Cssxref("bottom")}}
-- {{Cssxref("left")}}
+- `top`
+- `right`
+- `bottom`
+- `left`
 
 ## Syntax
 
@@ -104,7 +104,7 @@ inset: unset;
 
 ### Values
 
-The `inset` property takes the same values as the {{cssxref("left")}} property.
+The `inset` property takes the same values as the `left` property.
 
 ## Formal definition
 
@@ -158,8 +158,8 @@ div {
 
 ## See also
 
-- {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, and {{cssxref("left")}}
-- {{cssxref("inset-block")}} and {{cssxref("inset-inline")}}
-- {{cssxref("position")}}
+- `top`, `right`, `bottom`, and `left`
+- `inset-block` and `inset-inline`
+- `position`
 - [CSS positioned layout](/guides/Positioned_layout) module
 - [CSS logical properties and values](/guides/Logical_properties_and_values)

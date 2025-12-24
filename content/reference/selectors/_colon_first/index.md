@@ -6,7 +6,7 @@ browser-compat: css.selectors.first
 sidebar: cssref
 ---
 
-The **`:first`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes), used with the {{cssxref("@page")}} [at-rule](/guides/Syntax/At-rules), represents the first page of a printed document. (See {{cssxref(":first-child")}} for general first element of a node.)
+The **`:first`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes), used with the `@page` [at-rule](/guides/Syntax/At-rules), represents the first page of a printed document. (See `:first-child` for general first element of a node.)
 
 ```css
 /* Selects the first page when printing */
@@ -17,7 +17,7 @@ The **`:first`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/R
 ```
 
 > [!NOTE]
-> You can't change all CSS properties with this pseudo-class. You can only change the margins, {{cssxref("orphans")}}, {{cssxref("widows")}}, and page breaks of the document. Furthermore, you may only use [absolute-length](/reference/values/length#absolute_length_units) units when defining the margins. All other properties will be ignored.
+> You can't change all CSS properties with this pseudo-class. You can only change the margins, `orphans`, `widows`, and page breaks of the document. Furthermore, you may only use [absolute-length](/reference/values/length#absolute_length_units) units when defining the margins. All other properties will be ignored.
 
 ## Syntax
 
@@ -68,5 +68,5 @@ document.querySelector("button").addEventListener("click", () => {
 
 ## See also
 
-- {{Cssxref("@page")}}
-- Other page-related pseudo-classes: {{Cssxref(":left")}}, {{Cssxref(":right")}}
+- `@page`
+- Other page-related pseudo-classes: `:left`, `:right`

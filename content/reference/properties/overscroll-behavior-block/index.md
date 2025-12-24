@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`overscroll-behavior-block`** [CSS](/en-US/docs/Web/CSS) property sets the browser's behavior when the block direction boundary of a scrolling area is reached.
 
-See {{cssxref("overscroll-behavior")}} for a full explanation.
+See `overscroll-behavior` for a full explanation.
 
 ## Syntax
 
@@ -49,7 +49,7 @@ The `overscroll-behavior-block` property is specified as a keyword chosen from t
 
 ### Preventing block overscrolling
 
-In this demo we have two block-level boxes, one inside the other. The outer box has a large {{cssxref("height")}} set on it so the page will scroll vertically. The inner box has a small {{cssxref("width")}} (and `height`) set on it so it sits comfortably inside the viewport, but its content is given a large `height` so it will also scroll vertically.
+In this demo we have two block-level boxes, one inside the other. The outer box has a large `height` set on it so the page will scroll vertically. The inner box has a small `width` (and `height`) set on it so it sits comfortably inside the viewport, but its content is given a large `height` so it will also scroll vertically.
 
 By default, when the inner box is scrolled and a scroll boundary is reached, the whole page will begin to scroll, which is probably not what we want. To avoid this happening in the block direction, we've set `overscroll-behavior-block: contain` on the inner box.
 
@@ -131,8 +131,8 @@ p {
 
 ## See also
 
-- {{cssxref("overscroll-behavior")}}
-- {{cssxref("overscroll-behavior-x")}}
-- {{cssxref("overscroll-behavior-y")}}
-- {{cssxref("overscroll-behavior-inline")}}
+- `overscroll-behavior`
+- `overscroll-behavior-x`
+- `overscroll-behavior-y`
+- `overscroll-behavior-inline`
 - [CSS overscroll behavior](/guides/Overscroll_behavior) module

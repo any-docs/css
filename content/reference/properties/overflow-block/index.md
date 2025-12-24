@@ -9,7 +9,7 @@ sidebar: cssref
 The **`overflow-block`** [CSS](/en-US/docs/Web/CSS) property sets what shows when content overflows the block start and block end edges of a box. This may be nothing, a scroll bar, or the overflow content.
 
 > [!NOTE]
-> The `overflow-block` property maps to {{Cssxref("overflow-y")}} or {{Cssxref("overflow-x")}} depending on the writing mode of the document.
+> The `overflow-block` property maps to `overflow-y` or `overflow-x` depending on the writing mode of the document.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ overflow-block: revert-layer;
 overflow-block: unset;
 ```
 
-The `overflow-block` property is specified as a single {{CSSXref("overflow_value", "&lt;overflow&gt;")}} keyword value:
+The `overflow-block` property is specified as a single `&lt;overflow&gt;` keyword value:
 
 ### Values
 
@@ -38,7 +38,7 @@ The `overflow-block` property is specified as a single {{CSSXref("overflow_value
 - `hidden`
   - Content is clipped if necessary to fit the block dimension in the padding box. No scrollbars are provided.
 - `clip`
-  - Overflow content is clipped at the element's overflow clip edge that is defined using the {{CSSXref("overflow-clip-margin")}} property.
+  - Overflow content is clipped at the element's overflow clip edge that is defined using the `overflow-clip-margin` property.
 - `scroll`
   - Content is clipped if necessary to fit in the block dimension in the padding box. Browsers display scrollbars whether or not any content is actually clipped. (This prevents scrollbars from appearing or disappearing when the content changes.) Printers may still print overflowing content.
 - `auto`
@@ -159,7 +159,7 @@ div {
 
 ## See also
 
-- {{cssxref("text-overflow")}}, {{cssxref("white-space")}}, {{Cssxref("overflow")}}, {{Cssxref("overflow-inline")}}, {{Cssxref("overflow-x")}}, {{Cssxref("overflow-y")}}, {{Cssxref("clip")}}, {{Cssxref("display")}}
+- `text-overflow`, `white-space`, `overflow`, `overflow-inline`, `overflow-x`, `overflow-y`, `clip`, `display`
 - [CSS logical properties](/guides/Logical_properties_and_values)
 - [CSS overflow](/guides/Overflow) module
 - [CSS scrollbars style](/guides/Scrollbars_styling) module

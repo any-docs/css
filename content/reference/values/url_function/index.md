@@ -6,7 +6,7 @@ browser-compat: css.types.url
 sidebar: cssref
 ---
 
-The **`url()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is used to include a file. The parameter is an absolute URL, a relative URL, a blob URL, or a data URL. The **`url()`** function can be passed as a parameter of another CSS function, like the {{cssxref("attr")}} function. Depending on the property for which it is a value, the resource sought can be an image, font, or a stylesheet. The `url()` functional notation is the value for the `<url>` data type.
+The **`url()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is used to include a file. The parameter is an absolute URL, a relative URL, a blob URL, or a data URL. The **`url()`** function can be passed as a parameter of another CSS function, like the `attr` function. Depending on the property for which it is a value, the resource sought can be an image, font, or a stylesheet. The `url()` functional notation is the value for the `<url>` data type.
 
 > [!NOTE]
 > There is a difference between a {{Glossary("URI")}} and a {{Glossary("URL")}}. A URI identifies a resource. A URL is a type of URI, and describes the _location_ of a resource. A URI can be either a URL or a name ({{Glossary("URN")}}) of a resource.
@@ -17,7 +17,7 @@ Relative URLs, if used, are relative to the URL of the stylesheet (not to the UR
 
 The **`url()`** function can be included as a value for
 {{cssxref('background')}}, {{cssxref('background-image')}}, {{cssxref('border')}}, {{cssxref('border-image')}}, {{cssxref('border-image-source')}}, {{cssxref('content')}}, {{cssxref('cursor')}}, {{cssxref('filter')}}, {{cssxref('list-style')}}, {{cssxref('list-style-image')}}, {{cssxref('mask')}}, {{cssxref('mask-image')}}, {{cssxref('offset-path')}}, {{cssxref('clip-path')}},
-[src](/en-US/docs/Web/CSS/Reference/At-rules/@font-face/src) as part of a {{cssxref("@font-face")}} block, and [@counter-style/`symbol`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols)
+[src](/en-US/docs/Web/CSS/Reference/At-rules/@font-face/src) as part of a `@font-face` block, and [@counter-style/`symbol`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols)
 
 ## Syntax
 
@@ -177,8 +177,8 @@ When a URL is used as a path for a filter, the URL must be one of the following:
 
 ## See also
 
-- {{cssxref("gradient")}}
-- {{cssxref("element()")}}
-- {{cssxref("image/image", "image()")}}
-- {{cssxref("image/image-set", "image-set()")}}
-- {{cssxref("cross-fade()")}}
+- `gradient`
+- `element()`
+- `image()`
+- `image-set()`
+- `cross-fade()`

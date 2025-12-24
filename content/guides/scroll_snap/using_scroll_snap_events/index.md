@@ -5,7 +5,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-The [CSS scroll snap](/guides/Scroll_snap) module defines two **scroll snap events**: {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} and {{domxref("Element/scrollsnapchange_event", "scrollsnapchange")}}. These enable running JavaScript in response to the browser determining that new [scroll snap targets](/guides/Scroll_snap/Basic_concepts) are pending and selected, respectively.
+The [CSS scroll snap](/guides/Scroll_snap) module defines two **scroll snap events**: `scrollsnapchanging` and `scrollsnapchange`. These enable running JavaScript in response to the browser determining that new [scroll snap targets](/guides/Scroll_snap/Basic_concepts) are pending and selected, respectively.
 
 This guide provides an overview of these events, along with complete examples.
 
@@ -13,9 +13,9 @@ This guide provides an overview of these events, along with complete examples.
 
 Scroll snap events are set on a [scrolling container](/en-US/docs/Glossary/Scroll_container) that contains potential scroll snap targets:
 
-- The {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} event is fired when the browser determines that a new scroll snap target will be selected when the current scroll gesture ends. This is the _pending_ scroll snap target. Specifically, this event fires during a scrolling gesture, each time the user moves over potential new snap targets. While the `scrollsnapchanging` event may fire multiple times for each scrolling gesture, it does not fire on all potential snap targets for a scrolling gesture that moves over multiple snap targets. Rather, it fires just for the last target that the snapping will potentially rest on.
+- The `scrollsnapchanging` event is fired when the browser determines that a new scroll snap target will be selected when the current scroll gesture ends. This is the _pending_ scroll snap target. Specifically, this event fires during a scrolling gesture, each time the user moves over potential new snap targets. While the `scrollsnapchanging` event may fire multiple times for each scrolling gesture, it does not fire on all potential snap targets for a scrolling gesture that moves over multiple snap targets. Rather, it fires just for the last target that the snapping will potentially rest on.
 
-- The {{domxref("Element/scrollsnapchange_event", "scrollsnapchange")}} event is fired at the end of a scrolling operation when a new scroll snap target is selected. Specifically, this event fires when a scrolling gesture is completed, but only if a new snap target is selected. This event fires just before the {{domxref("Element/scrollend_event", "scrollend")}} event fires.
+- The `scrollsnapchange` event is fired at the end of a scrolling operation when a new scroll snap target is selected. Specifically, this event fires when a scrolling gesture is completed, but only if a new snap target is selected. This event fires just before the `scrollend` event fires.
 
 Let's look at an example that shows the two events in action (you'll see how this is built later on in the article):
 
@@ -29,16 +29,16 @@ Have a go at scrolling up and down the list of boxes:
 
 ## The `SnapEvent` event object
 
-Both of the above events share the {{domxref("SnapEvent")}} event object. This has two properties that are key to how scroll snap events work:
+Both of the above events share the `SnapEvent` event object. This has two properties that are key to how scroll snap events work:
 
-- {{domxref("SnapEvent.snapTargetBlock", "snapTargetBlock")}} returns a reference to the element snapped to in the [block direction](/en-US/docs/Glossary/Flow_relative_values#block_direction) when the event fired, or `null` if scroll snapping only occurs in the inline direction so no element is snapped to in the block direction.
-- {{domxref("SnapEvent.snapTargetInline", "snapTargetInline")}} returns a reference to the element snapped to in the [inline direction](/en-US/docs/Glossary/Flow_relative_values#inline_direction) when the event fired, or `null` if scroll snapping only occurs in the block direction so no element is snapped to in the inline direction.
+- `snapTargetBlock` returns a reference to the element snapped to in the [block direction](/en-US/docs/Glossary/Flow_relative_values#block_direction) when the event fired, or `null` if scroll snapping only occurs in the inline direction so no element is snapped to in the block direction.
+- `snapTargetInline` returns a reference to the element snapped to in the [inline direction](/en-US/docs/Glossary/Flow_relative_values#inline_direction) when the event fired, or `null` if scroll snapping only occurs in the block direction so no element is snapped to in the inline direction.
 
-These properties enable event handler functions to report the element that has been snapped to (in the case of `scrollsnapchange`) or the element that _would be snapped to_ if the scrolling gesture were to be finished now (in the case of `scrollsnapchanging`) — in one- and two-dimensions. You can then manipulate these elements in any way you want, for example by directly setting styles on them via their {{domxref("HTMLElement.style", "style")}} properties, setting classes on them that have styles defined for them in a stylesheet, etc.
+These properties enable event handler functions to report the element that has been snapped to (in the case of `scrollsnapchange`) or the element that _would be snapped to_ if the scrolling gesture were to be finished now (in the case of `scrollsnapchanging`) — in one- and two-dimensions. You can then manipulate these elements in any way you want, for example by directly setting styles on them via their `style` properties, setting classes on them that have styles defined for them in a stylesheet, etc.
 
 ### Relationship with CSS `scroll-snap-type`
 
-The property values available on `SnapEvent` correspond directly to the value of the {{cssxref("scroll-snap-type")}} CSS property set on the scroll container:
+The property values available on `SnapEvent` correspond directly to the value of the `scroll-snap-type` CSS property set on the scroll container:
 
 - If the snap axis is specified as `block` (or a physical axis value that equates to `block` in the current writing mode), only `snapTargetBlock` returns an element reference.
 - If the snap axis is specified as `inline` (or a physical axis value that equates to `inline` in the current writing mode), only `snapTargetInline` returns an element reference.
@@ -46,7 +46,7 @@ The property values available on `SnapEvent` correspond directly to the value of
 
 ### Handling one-dimensional scrollers
 
-If you are dealing with a horizontal scroller, only the event object's `snapTargetInline` property will change as the snapped element changes if the content has a horizontal {{cssxref("writing-mode")}}, or the `snapTargetBlock` property if the content has a vertical `writing-mode`.
+If you are dealing with a horizontal scroller, only the event object's `snapTargetInline` property will change as the snapped element changes if the content has a horizontal `writing-mode`, or the `snapTargetBlock` property if the content has a vertical `writing-mode`.
 
 Conversely, if you are dealing with a vertical scroller, only the `snapTargetBlock` property will change as the snapped element changes if the content has a horizontal `writing-mode`, or the `snapTargetInline` property if the content has a vertical `writing-mode`.
 
@@ -66,7 +66,7 @@ In this snippet, a `scrollsnapchange` handler function is set on a block-directi
 
 If you are dealing with a horizontal _and_ vertical scroller, the code gets more complex. This is because the `snapTargetBlock` property _and_ the `snapTargetInline` property values both return an element reference (neither returns `null`), and one or the other will change value depending on which direction you scroll in and the `writing-mode` of the content:
 
-- If the scroller is scrolled horizontally, the `snapTargetInline` property will change as the snapped element changes if the content has a horizontal {{cssxref("writing-mode")}}, or the `snapTargetBlock` property if the content has a vertical `writing-mode`.
+- If the scroller is scrolled horizontally, the `snapTargetInline` property will change as the snapped element changes if the content has a horizontal `writing-mode`, or the `snapTargetBlock` property if the content has a vertical `writing-mode`.
 - If the scroller is scrolled vertically, the `snapTargetBlock` property will change as the snapped element changes if the content has a horizontal `writing-mode`, or the `snapTargetInline` property if the content has a vertical `writing-mode`.
 
 To handle this, you will likely need to keep track of whether it was the `snapTargetBlock` or the `snapTargetInline` element that changed. Let's look at an example:
@@ -159,7 +159,7 @@ section {
 }
 ```
 
-In the CSS, we start off by giving the `<main>` element a chunky black {{cssxref("border")}} and a fixed {{cssxref("width")}} and {{cssxref("height")}}. We set its {{cssxref("overflow")}} value to `scroll` so overflowing content will be hidden and can be scrolled to, and set {{cssxref("scroll-snap-type")}} to `block mandatory` so that snap targets in the block direction only will always be snapped to.
+In the CSS, we start off by giving the `<main>` element a chunky black `border` and a fixed `width` and `height`. We set its `overflow` value to `scroll` so overflowing content will be hidden and can be scrolled to, and set `scroll-snap-type` to `block mandatory` so that snap targets in the block direction only will always be snapped to.
 
 ```css
 main {
@@ -171,7 +171,7 @@ main {
 }
 ```
 
-Each `<section>` element is given a {{cssxref("margin")}} of `50px` to separate out the `<section>` elements and make the scroll snapping behavior more apparent. We then set {{cssxref("scroll-snap-align")}} to `center`, to specify that we want to snap to the center of each snap target. Finally, we apply a {{cssxref("transition")}} to smoothly animate to and from the style changes applied when a snap target selection has been made or is pending.
+Each `<section>` element is given a `margin` of `50px` to separate out the `<section>` elements and make the scroll snapping behavior more apparent. We then set `scroll-snap-align` to `center`, to specify that we want to snap to the center of each snap target. Finally, we apply a `transition` to smoothly animate to and from the style changes applied when a snap target selection has been made or is pending.
 
 ```css
 section {
@@ -213,10 +213,10 @@ while (n <= sectionCount) {
 }
 ```
 
-Now on to the {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} event handler function. When a child of the `<main>` element (i.e., any `<section>` element) becomes a pending snap target selection, we:
+Now on to the `scrollsnapchanging` event handler function. When a child of the `<main>` element (i.e., any `<section>` element) becomes a pending snap target selection, we:
 
 1. Check to see if an element previously had the `pending` class applied and, if so, remove it. This is so that only the current pending target is given the `pending` class and colored darker gray. We don't want previously-pending targets that are no longer pending to keep the styling.
-2. Give the element referenced by the {{domxref("SnapEvent.snapTargetBlock", "snapTargetBlock")}} property (which will be one of the `<section>` elements) the `pending` class so it turns a darker gray.
+2. Give the element referenced by the `snapTargetBlock` property (which will be one of the `<section>` elements) the `pending` class so it turns a darker gray.
 
 ```js
 mainElem.addEventListener("scrollsnapchanging", (event) => {
@@ -232,7 +232,7 @@ mainElem.addEventListener("scrollsnapchanging", (event) => {
 > [!NOTE]
 > We don't need to worry about the `snapTargetInline` event object property for this demo — we are only scrolling vertically and the demo is using a horizontal writing mode, therefore only the `snapTargetBlock` value will change. In this case, `snapTargetInline` will always return `null`.
 
-When a scrolling gesture ends, and a `<section>` element is actually selected as a snap target, the {{domxref("Element/scrollsnapchange_event", "scrollsnapchange")}} event handler function fires. This:
+When a scrolling gesture ends, and a `<section>` element is actually selected as a snap target, the `scrollsnapchange` event handler function fires. This:
 
 1. Checks to see if a snap target was previously selected — i.e., if a `select-section` class was previously applied to an element. If so, we remove it.
 2. Applies the `select-section` class to the `<section>` element referenced in the `snapTargetBlock` property so that the snap target that was just selected will have the selection animation applied to it.
@@ -307,9 +307,9 @@ h2 {
 
 The CSS for this example is similar to the CSS in the previous example. The most significant differences are as follows.
 
-First let's look at the `<main>` element styling. We want the `<section>` elements to be laid out as a grid, so we use [CSS grid layout](/guides/Grid_layout) to specify that we want them displayed in seven columns, using a {{cssxref("grid-template-columns")}} value of `repeat(7, 1fr)`. We also specify the space around the `<section>` elements by setting `padding` and {{cssxref("gap")}} on the `<main>` element rather than `margin` on the `<section>` elements.
+First let's look at the `<main>` element styling. We want the `<section>` elements to be laid out as a grid, so we use [CSS grid layout](/guides/Grid_layout) to specify that we want them displayed in seven columns, using a `grid-template-columns` value of `repeat(7, 1fr)`. We also specify the space around the `<section>` elements by setting `padding` and `gap` on the `<main>` element rather than `margin` on the `<section>` elements.
 
-Finally, since we are scrolling in both directions in this example, we set {{cssxref("scroll-snap-type")}} to `both mandatory` so that snap targets in the block direction _and_ inline direction will always be snapped to.
+Finally, since we are scrolling in both directions in this example, we set `scroll-snap-type` to `both mandatory` so that snap targets in the block direction _and_ inline direction will always be snapped to.
 
 ```css
 main {
@@ -330,7 +330,7 @@ Next, we are going to use CSS animations in this example instead of transitions.
 
 We first define the classes that will be applied to signal that a snap target selection has been made or is pending. The `select-section` and `deselect-section` classes will apply keyframe animations to signify a selection or deselection. The `pending` class will be applied to signify a pending snap target selection (it applies a darker gray background to the selection, as in the previous example).
 
-The {{cssxref("@keyframes")}} animate from a gray background and black (default) text color to a purple background and white text color, and back again, respectively. The latter animation is somewhat different from the first one — it also uses {{cssxref("opacity")}} to create a fade out/fade in effect.
+The `@keyframes` animate from a gray background and black (default) text color to a purple background and white text color, and back again, respectively. The latter animation is somewhat different from the first one — it also uses `opacity` to create a fade out/fade in effect.
 
 ```css
 .select-section {
@@ -406,9 +406,9 @@ const prevState = {
 };
 ```
 
-For example, let's say the scroll container is scrolled so that the ID of the new {{domxref("SnapEvent.snapTargetBlock")}} element has changed (it doesn't equal the ID stored in `prevState.snapTargetBlock`), but the ID of the new {{domxref("SnapEvent.snapTargetInline")}} element is still the same as the ID stored in `prevState.snapTargetInline`. This means that we've moved to a new snap target in the block direction, so we should style `SnapEvent.snapTargetBlock`, but we've not moved to a new snap target in the inline direction, so we shouldn't style `SnapEvent.snapTargetInline`.
+For example, let's say the scroll container is scrolled so that the ID of the new `SnapEvent.snapTargetBlock` element has changed (it doesn't equal the ID stored in `prevState.snapTargetBlock`), but the ID of the new `SnapEvent.snapTargetInline` element is still the same as the ID stored in `prevState.snapTargetInline`. This means that we've moved to a new snap target in the block direction, so we should style `SnapEvent.snapTargetBlock`, but we've not moved to a new snap target in the inline direction, so we shouldn't style `SnapEvent.snapTargetInline`.
 
-This time around, we'll explain the {{domxref("Element/scrollsnapchange_event", "scrollsnapchange")}} event handler function first. In this function, we:
+This time around, we'll explain the `scrollsnapchange` event handler function first. In this function, we:
 
 1. Start by making sure that a previously-selected `<section>` element snap target (as signified by the presence of the `select-section` class) has the `deselect-section` class applied so it shows the deselection animation. If no snap target was previously selected, we apply the `select-section` class to the first `<section>` in the DOM so it shows up as selected when the page first loads.
 2. Compare the previously-selected snap target ID to the newly-selected snap target ID, for both the block _and_ inline selections. If they are different, it indicates that the selection has changed, so we apply the `select-section` class to the appropriate snap target to visually indicate this.
@@ -435,7 +435,7 @@ mainElem.addEventListener("scrollsnapchange", (event) => {
 });
 ```
 
-When the {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} event handler function fires, we:
+When the `scrollsnapchanging` event handler function fires, we:
 
 1. Remove the `pending` class from the element that previously had it applied so that only the current pending target is given the `pending` class and colored darker gray.
 2. Give the current pending element the `pending` class so it turns a darker gray, but only if it has not already got the `select-section` class applied — we want a previously selected target to keep the purple selection styling until a new target is actually selected. We also include an extra check in the `if` statements to make sure we style only the inline or block pending snap target, depending on which one has changed. Again, we compare the previous snap target to the current snap target in each case.
@@ -471,12 +471,12 @@ Try scrolling horizontally and vertically around the scroll container and observ
 
 ## Scroll snap events on `Document` and `Window`
 
-In this article, we've covered the scroll snap events that fire on the {{domxref("Element")}} interface, but the same events also fire on the {{domxref("Document")}} and {{domxref("Window")}} objects. See:
+In this article, we've covered the scroll snap events that fire on the `Element` interface, but the same events also fire on the `Document` and `Window` objects. See:
 
-- `Document` {{domxref("Document/scrollsnapchange_event", "scrollsnapchange")}} and {{domxref("Document/scrollsnapchanging_event", "scrollsnapchanging")}} event references.
-- `Window` {{domxref("Window/scrollsnapchange_event", "scrollsnapchange")}} and {{domxref("Window/scrollsnapchanging_event", "scrollsnapchanging")}} event references.
+- `Document` `scrollsnapchange` and `scrollsnapchanging` event references.
+- `Window` `scrollsnapchange` and `scrollsnapchanging` event references.
 
-These work in much the same way as the `Element` versions, except that the overall HTML document has to be set as the scroll snap container (i.e., {{cssxref("scroll-snap-type")}} is set on the {{htmlelement("html")}} element).
+These work in much the same way as the `Element` versions, except that the overall HTML document has to be set as the scroll snap container (i.e., `scroll-snap-type` is set on the {{htmlelement("html")}} element).
 
 For example, if we took a similar example to the ones we've looked at above, where we've got a `<main>` element containing significant content:
 
@@ -496,7 +496,7 @@ main {
 }
 ```
 
-You could then implement scroll snapping behavior on the scrolling content by specifying the {{cssxref("scroll-snap-type")}} property on the {{htmlelement("html")}} element:
+You could then implement scroll snapping behavior on the scrolling content by specifying the `scroll-snap-type` property on the {{htmlelement("html")}} element:
 
 ```css
 html {
@@ -504,7 +504,7 @@ html {
 }
 ```
 
-The following JavaScript snippet would cause the `scrollsnapchange` event to fire on the HTML document when a child of the `<main>` element becomes a newly-selected snap target. In the handler function, we set a `selected` class on the child referenced by the {{domxref("SnapEvent.snapTargetBlock")}}, which could be used to style it to look like it has been selected (for example, with an animation) when the event fires.
+The following JavaScript snippet would cause the `scrollsnapchange` event to fire on the HTML document when a child of the `<main>` element becomes a newly-selected snap target. In the handler function, we set a `selected` class on the child referenced by the `SnapEvent.snapTargetBlock`, which could be used to style it to look like it has been selected (for example, with an animation) when the event fires.
 
 ```js
 document.addEventListener("scrollsnapchange", (event) => {
@@ -522,8 +522,8 @@ window.addEventListener("scrollsnapchange", (event) => {
 
 ## See also
 
-- {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} event
-- {{domxref("Element/scrollsnapchange_event", "scrollsnapchange")}} event
-- {{domxref("SnapEvent")}}
+- `scrollsnapchanging` event
+- `scrollsnapchange` event
+- `SnapEvent`
 - [CSS scroll snap](/guides/Scroll_snap) module
 - [Scroll Snap Events](https://developer.chrome.com/blog/scroll-snap-events) on developer.chrome.com (2024)

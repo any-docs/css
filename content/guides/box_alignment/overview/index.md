@@ -26,17 +26,17 @@ When using the box alignment properties you will align content on one of two axe
 
 When aligning items on the inline axis you will use the properties that begin with `justify-`:
 
-- {{cssxref("justify-items")}}
-- {{cssxref("justify-self")}}
-- {{cssxref("justify-content")}}
+- `justify-items`
+- `justify-self`
+- `justify-content`
 
 When aligning items on the block axis you will use the properties that begin with `align-`:
 
-- {{cssxref("align-items")}}
-- {{cssxref("align-self")}}
-- {{cssxref("align-content")}}
+- `align-items`
+- `align-self`
+- `align-content`
 
-Flexbox adds an additional complication in that the above is true when {{cssxref("flex-direction")}} is set to `row`. The properties are swapped when flexbox is set to `column`. Therefore, when working with flexbox it is generally easier to think about the main and cross axis rather than inline and block. The `justify-` properties are always used to align on the main axis, the `align-` properties on the cross axis.
+Flexbox adds an additional complication in that the above is true when `flex-direction` is set to `row`. The properties are swapped when flexbox is set to `column`. Therefore, when working with flexbox it is generally easier to think about the main and cross axis rather than inline and block. The `justify-` properties are always used to align on the main axis, the `align-` properties on the cross axis.
 
 ### The alignment subject
 
@@ -72,7 +72,7 @@ There are three different types of alignment that the specification details; the
 - `left`
 - `right`
 
-Other than the physical values of `left` and `right`, which relate to physical attributes of the screen, all of the other values, the {{cssxref("self-position")}} and {{cssxref("content-position")}} values, are logical values and relate to the writing mode of the content.
+Other than the physical values of `left` and `right`, which relate to physical attributes of the screen, all of the other values, the `self-position` and `content-position` values, are logical values and relate to the writing mode of the content.
 
 For example, when working in CSS grid layout, if you are working in English and set `justify-content` to `start` this will move the items in the inline dimension to the start, which will be the left as sentences in English start on the left-hand side of the page. If you were using Arabic, a right-to-left language, then the same value of `start` would result in the items moving to the right, as sentences in Arabic start on the right-hand side of the page.
 
@@ -82,7 +82,7 @@ Both have `justify-content: start`, but the location of the two starts is differ
 
 ### Baseline alignment
 
-**Baseline alignment** is the relationship among the baselines of multiple alignment subjects within an alignment context. The Baseline alignment {{cssxref("baseline-position")}} keywords are used to align the baselines of boxes across a group of alignment subjects. They can be used as values for content alignment with `justify-content` and `align-content` and self-alignment with `justify-self` and `align-self`.
+**Baseline alignment** is the relationship among the baselines of multiple alignment subjects within an alignment context. The Baseline alignment `baseline-position` keywords are used to align the baselines of boxes across a group of alignment subjects. They can be used as values for content alignment with `justify-content` and `align-content` and self-alignment with `justify-self` and `align-self`.
 
 - `baseline`
 - `first baseline`
@@ -94,7 +94,7 @@ Baseline self-alignment shifts the boxes to align by baseline by adding a margin
 
 ### Distributed alignment
 
-**Distributed alignment** defines alignment as a distribution of space among alignment subjects. The distributed alignment {{cssxref("content-distribution")}} keywords are used with the `align-content` and `justify-content` properties. These keywords define what happens to any additional space after alignment subjects have been displayed. The values are as follows:
+**Distributed alignment** defines alignment as a distribution of space among alignment subjects. The distributed alignment `content-distribution` keywords are used with the `align-content` and `justify-content` properties. These keywords define what happens to any additional space after alignment subjects have been displayed. The values are as follows:
 
 - `stretch`
 - `space-between`
@@ -117,7 +117,7 @@ The following examples demonstrate how some of the box alignment properties are 
 
 #### CSS grid layout alignment example
 
-In this grid layout example, there is extra space in the grid container after laying out the fixed-width tracks on the inline (main) axis. This space is distributed using {{cssxref("justify-content")}}. On the block (cross) axis, the alignment of the items inside their grid areas is controlled with {{cssxref("align-items")}}. The first item overrides the `align-items` value set on the group by setting {{cssxref("align-self")}} to `center`.
+In this grid layout example, there is extra space in the grid container after laying out the fixed-width tracks on the inline (main) axis. This space is distributed using `justify-content`. On the block (cross) axis, the alignment of the items inside their grid areas is controlled with `align-items`. The first item overrides the `align-items` value set on the group by setting `align-self` to `center`.
 
 ```html live-sample___grid-align-items
 <div class="box">
@@ -207,7 +207,7 @@ body {
 
 ## Overflow alignment
 
-The {{cssxref("overflow-position")}} keywords `safe` and `unsafe` help define behavior when an alignment subject is larger than the alignment container. The `safe` keyword will align to `start` in the case of a specified alignment causing an overflow, the aim being to avoid "data loss" where part of the item is outside the boundaries of the alignment container and can't be scrolled to.
+The `overflow-position` keywords `safe` and `unsafe` help define behavior when an alignment subject is larger than the alignment container. The `safe` keyword will align to `start` in the case of a specified alignment causing an overflow, the aim being to avoid "data loss" where part of the item is outside the boundaries of the alignment container and can't be scrolled to.
 
 If you specify `unsafe` then the alignment will be honoured even if it would cause such data loss.
 
@@ -217,9 +217,9 @@ The box alignment specification also includes the `gap`, `row-gap`, and `column-
 
 The `gap` property is a shorthand for `row-gap` and `column-gap`, which allows us to set these properties at once:
 
-- {{cssxref("row-gap")}}
-- {{cssxref("column-gap")}}
-- {{cssxref("gap")}}
+- `row-gap`
+- `column-gap`
+- `gap`
 
 In the below example, a grid layout uses the `gap` shorthand to set a `10px` gap between row tracks, and a `2em` gap between column tracks.
 
@@ -265,7 +265,7 @@ body {
 
 {{EmbedLiveSample("grid-gap")}}
 
-Early grid implementations included `gap` properties prefixed with `grid-`. All browsers support the unprefixed properties, though you may see the following properties in a code-base: {{cssxref("row-gap", "grid-row-gap")}}, {{cssxref("column-gap", "grid-column-gap")}}, and {{cssxref("gap", "grid-gap")}}. The prefixed versions are aliases of the unprefixed ones.
+Early grid implementations included `gap` properties prefixed with `grid-`. All browsers support the unprefixed properties, though you may see the following properties in a code-base: `grid-row-gap`, `grid-column-gap`, and `grid-gap`. The prefixed versions are aliases of the unprefixed ones.
 
 Be aware that other things may increase the visual gap displayed, for example using the space distribution keywords or adding margins to items.
 

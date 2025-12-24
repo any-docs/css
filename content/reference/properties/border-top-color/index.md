@@ -6,7 +6,7 @@ browser-compat: css.properties.border-top-color
 sidebar: cssref
 ---
 
-The **`border-top-color`** [CSS](/en-US/docs/Web/CSS) property sets the color of an element's top [border](/reference/properties/border). It can also be set with the shorthand CSS properties {{cssxref("border-color")}} or {{cssxref("border-top")}}.
+The **`border-top-color`** [CSS](/en-US/docs/Web/CSS) property sets the color of an element's top [border](/reference/properties/border). It can also be set with the shorthand CSS properties `border-color` or `border-top`.
 
 {{InteractiveExample("CSS Demo: border-top-color")}}
 
@@ -72,7 +72,7 @@ The `border-top-color` property is specified as a single value.
 
 ### Values
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the top border.
 
 ## Formal definition
@@ -126,7 +126,7 @@ The `border-top-color` property is specified as a single value.
 
 ## See also
 
-- The border-related CSS shorthand properties: {{cssxref("border")}}, {{cssxref("border-top")}}, and {{cssxref("border-color")}}.
-- The color-related CSS properties for the other borders: {{cssxref("border-right-color")}}, {{cssxref("border-bottom-color")}}, and {{cssxref("border-left-color")}}.
-- The other border-related CSS properties applying to the same border: {{cssxref("border-top-style")}} and {{cssxref("border-top-width")}}.
+- The border-related CSS shorthand properties: `border`, `border-top`, and `border-color`.
+- The color-related CSS properties for the other borders: `border-right-color`, `border-bottom-color`, and `border-left-color`.
+- The other border-related CSS properties applying to the same border: `border-top-style` and `border-top-width`.
 - The default [`currentColor`](/reference/values/color_value#currentcolor_keyword) color value.

@@ -86,4 +86,4 @@ Not part of any standard.
 
 ## See also
 
-{{cssxref("mask-position", "-webkit-mask-position")}}, {{cssxref("-webkit-mask-position-y")}}, {{cssxref("mask-origin", "-webkit-mask-origin")}}
+`-webkit-mask-position`, `-webkit-mask-position-y`, `-webkit-mask-origin`

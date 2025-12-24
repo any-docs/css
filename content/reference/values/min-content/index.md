@@ -10,7 +10,7 @@ The `min-content` sizing keyword represents the [minimum intrinsic size](/en-US/
 The keyword shrinks the element to the smallest possible size without causing avoidable overflow of its content.
 For text content, this keyword causes the content to wrap at every opportunity (such as spaces between words), and the element will be only as wide as the longest word.
 
-The {{cssxref("interpolate-size")}} property and {{cssxref("calc-size()")}} function can be used to enable animations to and from `min-content`.
+The `interpolate-size` property and `calc-size()` function can be used to enable animations to and from `min-content`.
 
 ## Syntax
 
@@ -97,5 +97,5 @@ grid-template-columns: 200px 1fr min-content;
 
 ## See also
 
-- Related sizing keywords: {{cssxref("max-content")}}, {{cssxref("fit-content")}}
+- Related sizing keywords: `max-content`, `fit-content`
 - [CSS box sizing](/guides/Box_sizing) module

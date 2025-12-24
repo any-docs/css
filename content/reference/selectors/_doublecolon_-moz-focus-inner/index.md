@@ -64,9 +64,9 @@ Not part of any standard.
 
 - [Mozilla CSS extensions](/en-US/docs/Web/CSS/Reference/Mozilla_extensions)
 - Related CSS properties:
-  - {{cssxref("-moz-user-focus")}}
+  - `-moz-user-focus`
 
 - Related CSS selectors:
-  - {{cssxref(":focus")}}
-  - {{cssxref(":focus-visible")}}
-  - {{cssxref(":focus-within")}}
+  - `:focus`
+  - `:focus-visible`
+  - `:focus-within`

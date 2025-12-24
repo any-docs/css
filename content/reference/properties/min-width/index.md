@@ -6,7 +6,7 @@ browser-compat: css.properties.min-width
 sidebar: cssref
 ---
 
-The **`min-width`** [CSS](/en-US/docs/Web/CSS) property sets the minimum width of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the {{cssxref("width")}} property from becoming smaller than the value specified for `min-width`.
+The **`min-width`** [CSS](/en-US/docs/Web/CSS) property sets the minimum width of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the `width` property from becoming smaller than the value specified for `min-width`.
 
 {{InteractiveExample("CSS Demo: min-width")}}
 
@@ -45,7 +45,7 @@ min-width: 40ch;
 }
 ```
 
-The element's width is set to the value of `min-width` whenever `min-width` is larger than {{Cssxref("max-width")}} or {{Cssxref("width")}}.
+The element's width is set to the value of `min-width` whenever `min-width` is larger than `max-width` or `width`.
 
 ## Syntax
 
@@ -75,21 +75,21 @@ min-width: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Defines the `min-width` as an absolute value.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Defines the `min-width` as a percentage of the containing block's width.
 - `auto`
   - The default value. The source of the automatic value for the specified element depends on its display value. For block boxes, inline boxes, inline blocks, and all table layout boxes `auto` resolves to `0`.
 
     For [flex items](/en-US/docs/Glossary/Flex_Item) and grid items, the minimum width value is either the specified suggested size, such as the value of the `width` property, the transferred size, calculated if the element has an `aspect-ratio` set and the height is a definite size, otherwise, the `min-content` size is used. If the flex or grid item is a {{glossary("scroll container")}}, or if a grid item spans more than one flexible column track, the automatic minimum size is `0`.
 
-- {{cssxref("max-content")}}
+- `max-content`
   - The intrinsic preferred `min-width`.
-- {{cssxref("min-content")}}
+- `min-content`
   - The intrinsic minimum `min-width`.
-- {{cssxref("fit-content")}}
-  - Use the available space, but not more than {{cssxref("max-content")}}, i.e., `min(max-content, max(min-content, stretch))`.
+- `fit-content`
+  - Use the available space, but not more than `max-content`, i.e., `min(max-content, max(min-content, stretch))`.
 - [`fit-content(<length-percentage>)`](/reference/values/fit-content_function)
   - Uses the `fit-content` formula with the available space replaced by the specified argument, i.e., `min(max-content, max(min-content, argument))`.
 - `stretch`
@@ -130,10 +130,10 @@ form {
 
 ## See also
 
-- {{Cssxref("max-width")}}
-- {{Cssxref("width")}}
-- {{cssxref("min-inline-size")}}
-- {{cssxref("min-block-size")}}
-- {{cssxref("box-sizing")}}
+- `max-width`
+- `width`
+- `min-inline-size`
+- `min-block-size`
+- `box-sizing`
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

@@ -6,7 +6,7 @@ browser-compat: css.properties.overflow-y
 sidebar: cssref
 ---
 
-The **`overflow-y`** [CSS](/en-US/docs/Web/CSS) property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content. This property may also be set by using the {{cssxref("overflow")}} shorthand property.
+The **`overflow-y`** [CSS](/en-US/docs/Web/CSS) property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content. This property may also be set by using the `overflow` shorthand property.
 
 {{InteractiveExample("CSS Demo: overflow-y")}}
 
@@ -68,9 +68,9 @@ overflow-y: revert-layer;
 overflow-y: unset;
 ```
 
-The `overflow-y` property is specified as a single {{CSSXref("overflow_value", "&lt;overflow&gt;")}} keyword value.
+The `overflow-y` property is specified as a single `&lt;overflow&gt;` keyword value.
 
-If {{cssxref("overflow-x")}} is `hidden`, `scroll`, or `auto` and the `overflow-y` property is `visible` (default), the value will be implicitly computed as `auto`.
+If `overflow-x` is `hidden`, `scroll`, or `auto` and the `overflow-y` property is `visible` (default), the value will be implicitly computed as `auto`.
 
 ### Values
 
@@ -79,7 +79,7 @@ If {{cssxref("overflow-x")}} is `hidden`, `scroll`, or `auto` and the `overflow-
 - `hidden`
   - Overflow content is clipped if necessary to fit vertically in the elements' padding box. No scroll bars are provided.
 - `clip`
-  - Overflow content is clipped at the element's _overflow clip edge_ that is defined using the {{cssxref("overflow-clip-margin")}} property. As a result, content overflows the element's padding box by the {{cssxref("&lt;length&gt;")}} value of `overflow-clip-margin` or by `0px` if not set. The difference between `clip` and `hidden` is that the `clip` keyword also forbids all scrolling, including programmatic scrolling. No new formatting context is created. To establish a formatting context, use `overflow: clip` along with {{cssxref("display", "display: flow-root", "#flow-root")}}. The element box is not a scroll container.
+  - Overflow content is clipped at the element's _overflow clip edge_ that is defined using the `overflow-clip-margin` property. As a result, content overflows the element's padding box by the `&lt;length&gt;` value of `overflow-clip-margin` or by `0px` if not set. The difference between `clip` and `hidden` is that the `clip` keyword also forbids all scrolling, including programmatic scrolling. No new formatting context is created. To establish a formatting context, use `overflow: clip` along with {{cssxref("display", "display: flow-root", "#flow-root")}}. The element box is not a scroll container.
 - `scroll`
   - Overflow content is clipped if necessary to fit vertically inside the element's padding box. Browsers display scroll bars in the vertical direction whether or not any content is actually clipped. (This prevents scroll bars from appearing or disappearing when the content changes.) Printers may still print overflowing content.
 - `auto`
@@ -193,6 +193,6 @@ div {
 
 ## See also
 
-- {{Cssxref("clip")}}, {{Cssxref("display")}}, {{cssxref("text-overflow")}}, {{cssxref("white-space")}}
+- `clip`, `display`, `text-overflow`, `white-space`
 - [CSS overflow](/guides/Overflow) module
 - [Learn: Overflowing content](/en-US/docs/Learn_web_development/Core/Styling_basics/Overflow)

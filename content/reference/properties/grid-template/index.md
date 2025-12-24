@@ -74,9 +74,9 @@ grid-template:
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("grid-template-areas")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-rows")}}
+- `grid-template-areas`
+- `grid-template-columns`
+- `grid-template-rows`
 
 ## Syntax
 
@@ -113,17 +113,17 @@ grid-template: unset;
 ### Values
 
 - `none`
-  - Sets all three longhand properties to `none`, meaning there is no explicit grid. There are no named grid areas. Rows and columns will be implicitly generated; their size will be determined by the {{cssxref("grid-auto-rows")}} and {{cssxref("grid-auto-columns")}} properties. This is the default value.
+  - Sets all three longhand properties to `none`, meaning there is no explicit grid. There are no named grid areas. Rows and columns will be implicitly generated; their size will be determined by the `grid-auto-rows` and `grid-auto-columns` properties. This is the default value.
 - `<'grid-template-rows'> / <'grid-template-columns'>`
-  - Sets {{cssxref("grid-template-rows")}} and {{cssxref("grid-template-columns")}} to the specified values, and sets {{cssxref("grid-template-areas")}} to `none`.
+  - Sets `grid-template-rows` and `grid-template-columns` to the specified values, and sets `grid-template-areas` to `none`.
 - `[ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
-  - Sets {{cssxref("grid-template-areas")}} to the strings listed, {{cssxref("grid-template-rows")}} to the track sizes following each string (filling in `auto` for any missing sizes), and splicing in the named lines defined before/after each size, and {{cssxref("grid-template-columns")}} to the track listing specified after the slash (or `none`, if not specified).
+  - Sets `grid-template-areas` to the strings listed, `grid-template-rows` to the track sizes following each string (filling in `auto` for any missing sizes), and splicing in the named lines defined before/after each size, and `grid-template-columns` to the track listing specified after the slash (or `none`, if not specified).
 
     > [!NOTE]
-    > The {{cssxref("repeat()")}} function isn't allowed in these track listings, as the tracks are intended to visually line up one-to-one with the rows/columns in the "ASCII art".
+    > The `repeat()` function isn't allowed in these track listings, as the tracks are intended to visually line up one-to-one with the rows/columns in the "ASCII art".
 
 > [!NOTE]
-> The {{cssxref("grid")}} shorthand accepts the same syntax, but also resets the implicit grid properties to their initial values. Use `grid` (as opposed to `grid-template`) to prevent these values from cascading in separately.
+> The `grid` shorthand accepts the same syntax, but also resets the implicit grid properties to their initial values. Use `grid` (as opposed to `grid-template`) to prevent these values from cascading in separately.
 
 ## Formal definition
 
@@ -197,9 +197,9 @@ footer {
 
 ## See also
 
-- {{cssxref("grid-template-rows")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-areas")}}
+- `grid-template-rows`
+- `grid-template-columns`
+- `grid-template-areas`
 - [Line-based placement with CSS grid](/guides/Grid_layout/Line-based_placement)
 - [Grid template areas: grid definition shorthands](/guides/Grid_layout/Grid_template_areas#grid_definition_shorthands)
 - Video: [Grid template shorthand](https://gridbyexample.com/video/grid-template-shorthand/)

@@ -6,11 +6,11 @@ browser-compat: css.types.flex
 sidebar: cssref
 ---
 
-The **`<flex>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) denotes a flexible length within a grid container. It is used in {{cssxref("grid-template-columns")}}, {{cssxref("grid-template-rows")}} and other related properties.
+The **`<flex>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) denotes a flexible length within a grid container. It is used in `grid-template-columns`, `grid-template-rows` and other related properties.
 
 ## Syntax
 
-The `<flex>` data type is specified as a {{cssxref("&lt;number&gt;")}} followed by the unit `fr`. The `fr` unit represents a fraction of the leftover space in the grid container. As with all CSS dimensions, there is no space between the unit and the number.
+The `<flex>` data type is specified as a `&lt;number&gt;` followed by the unit `fr`. The `fr` unit represents a fraction of the leftover space in the grid container. As with all CSS dimensions, there is no space between the unit and the number.
 
 ## Examples
 

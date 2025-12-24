@@ -7,11 +7,11 @@ browser-compat: api.MediaQueryList
 sidebar: cssref
 ---
 
-The {{Glossary("DOM")}} provides features that can test the results of a {{Glossary("media query")}} programmatically, via the {{domxref("MediaQueryList")}} interface and its methods and properties. Once you've created a `MediaQueryList` object, you can check the result of the [query](/guides/Media_queries/Using) or receive notifications when the result changes.
+The {{Glossary("DOM")}} provides features that can test the results of a {{Glossary("media query")}} programmatically, via the `MediaQueryList` interface and its methods and properties. Once you've created a `MediaQueryList` object, you can check the result of the [query](/guides/Media_queries/Using) or receive notifications when the result changes.
 
 ## Creating a media query list
 
-Before you can evaluate the results of a media query, you need to create the {{domxref("MediaQueryList")}} object representing the query. To do this, use the {{domxref("window.matchMedia")}} method.
+Before you can evaluate the results of a media query, you need to create the `MediaQueryList` object representing the query. To do this, use the `window.matchMedia` method.
 
 For example, to set up a query list that determines if the device is in landscape or portrait [orientation](/en-US/docs/Web/CSS/Reference/At-rules/@media/orientation):
 
@@ -33,7 +33,7 @@ if (mediaQueryList.matches) {
 
 ## Receiving query notifications
 
-If you need to be aware of changes to the evaluated result of the query on an ongoing basis, it's more efficient to register a [listener](/en-US/docs/Web/API/EventTarget/addEventListener) than to poll the query's result. To do this, call the {{domxref("EventTarget.addEventListener", "addEventListener()")}} method on the {{domxref("MediaQueryList")}} object, with a callback function to invoke when the media query status changes (e.g., the media query test goes from `true` to `false`):
+If you need to be aware of changes to the evaluated result of the query on an ongoing basis, it's more efficient to register a [listener](/en-US/docs/Web/API/EventTarget/addEventListener) than to poll the query's result. To do this, call the `addEventListener()` method on the `MediaQueryList` object, with a callback function to invoke when the media query status changes (e.g., the media query test goes from `true` to `false`):
 
 ```js
 // Create the query list.
@@ -65,11 +65,11 @@ function handleOrientationChange(evt) {
 }
 ```
 
-Above, we define the parameter as `evt` — an event object of type {{domxref("MediaQueryListEvent")}} that also includes the {{domxref("MediaQueryListEvent.media","media")}} and {{domxref("MediaQueryListEvent.matches","matches")}} properties, so you can query these features of the `MediaQueryList` by directly accessing it, or accessing the event object.
+Above, we define the parameter as `evt` — an event object of type `MediaQueryListEvent` that also includes the `MediaQueryListEvent.media","media")}} and `MediaQueryListEvent.matches","matches")}} properties, so you can query these features of the `MediaQueryList` by directly accessing it, or accessing the event object.
 
 ## Ending query notifications
 
-To stop receiving notifications about changes to the value of your media query, call {{domxref("EventTarget.removeEventListener", "removeEventListener()")}} on the `MediaQueryList`, passing it the name of the previously-defined callback function:
+To stop receiving notifications about changes to the value of your media query, call `removeEventListener()` on the `MediaQueryList`, passing it the name of the previously-defined callback function:
 
 ```js
 mediaQueryList.removeEventListener("change", handleOrientationChange);
@@ -88,6 +88,6 @@ mediaQueryList.removeEventListener("change", handleOrientationChange);
 - [Media queries](/guides/Media_queries/Using)
 - [CSS media queries](/guides/Media_queries) module
 - [CSS object model](/en-US/docs/Web/API/CSS_Object_Model) module
-- {{domxref("window.matchMedia()")}}
-- {{domxref("MediaQueryList")}}
-- {{domxref("MediaQueryListEvent")}}
+- `window.matchMedia()`
+- `MediaQueryList`
+- `MediaQueryListEvent`

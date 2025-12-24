@@ -225,7 +225,7 @@ input:checked + label::before {
 
 {{EmbedLiveSample("animation", "", "610px")}}
 
-This sample animation uses {{cssxref("animation-iteration-count")}} to make the flakes fall repeatedly, {{cssxref("animation-direction")}} to make the cloud move back and forth, {{cssxref("animation-fill-mode")}} to raise the snow level in response to the cloud movement, and {{cssxref("animation-play-state")}} to pause the animation.
+This sample animation uses `animation-iteration-count` to make the flakes fall repeatedly, `animation-direction` to make the cloud move back and forth, `animation-fill-mode` to raise the snow level in response to the cloud movement, and `animation-play-state` to pause the animation.
 
 Click "Play" in the example above to see or edit the code for the animation in the MDN Playground.
 
@@ -233,40 +233,40 @@ Click "Play" in the example above to see or edit the code for the animation in t
 
 ### Properties
 
-- {{cssxref("animation")}} shorthand
-- {{cssxref("animation-composition")}}
-- {{cssxref("animation-delay")}}
-- {{cssxref("animation-direction")}}
-- {{cssxref("animation-duration")}}
-- {{cssxref("animation-fill-mode")}}
-- {{cssxref("animation-iteration-count")}}
-- {{cssxref("animation-name")}}
-- {{cssxref("animation-play-state")}}
-- {{cssxref("animation-timeline")}}
-- {{cssxref("animation-timing-function")}}
+- `animation` shorthand
+- `animation-composition`
+- `animation-delay`
+- `animation-direction`
+- `animation-duration`
+- `animation-fill-mode`
+- `animation-iteration-count`
+- `animation-name`
+- `animation-play-state`
+- `animation-timeline`
+- `animation-timing-function`
 
 The CSS animations module level 2 also introduces the `animation-trigger`, `animation-trigger-exit-range`, `animation-trigger-exit-range-end`, `animation-trigger-exit-range-start`, `animation-trigger-range`, `animation-trigger-range-end`, `animation-trigger-range-start`, `animation-trigger-timeline`, and `animation-trigger-type` properties. Currently, no browsers support these features.
 
 ### At-rules and descriptors
 
-- {{cssxref("@keyframes")}}
+- `@keyframes`
 
 ### Events
 
 All animations, even those with 0 seconds duration, throw animation events.
 
-- {{domxref("Element/animationstart_event", "animationstart")}}
-- {{domxref("Element/animationend_event", "animationend")}}
-- {{domxref("Element/animationcancel_event", "animationcancel")}}
-- {{domxref("Element/animationiteration_event", "animationiteration")}}
+- `animationstart`
+- `animationend`
+- `animationcancel`
+- `animationiteration`
 
 ### Interfaces
 
 - [Web Animations API](/en-US/docs/Web/API/Web_Animations_API)
-- {{domxref("AnimationEvent")}}
-- {{domxref("CSSAnimation")}}
-- {{domxref("CSSKeyframeRule")}}
-- {{domxref("CSSKeyframesRule")}}
+- `AnimationEvent`
+- `CSSAnimation`
+- `CSSKeyframeRule`
+- `CSSKeyframesRule`
 
 ## Guides
 
@@ -279,8 +279,8 @@ All animations, even those with 0 seconds duration, throw animation events.
 
 ## Related concepts
 
-- {{cssxref("will-change")}} CSS property
-- {{cssxref("easing-function")}} data type
+- `will-change` CSS property
+- `easing-function` data type
 - [`prefers-reduced-motion`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion) media query
 - {{glossary("Bezier curve")}} glossary term
 
@@ -292,6 +292,6 @@ All animations, even those with 0 seconds duration, throw animation events.
 
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module.
 - Properties in the [transitions](/guides/Transitions) CSS module to trigger animations based on user actions.
-- The {{cssxref("interpolate-size")}} property and {{cssxref("calc-size()")}} function for enabling animations to and from [intrinsic size values](/en-US/docs/Glossary/Intrinsic_Size).
+- The `interpolate-size` property and `calc-size()` function for enabling animations to and from [intrinsic size values](/en-US/docs/Glossary/Intrinsic_Size).
 - The {{htmlelement("canvas")}} HTML element along with [canvas API](/en-US/docs/Web/API/Canvas_API) and [WebGL API](/en-US/docs/Web/API/WebGL_API) to draw graphics and animations.
-- The {{domxref("SVGAnimationElement")}} interface for all the animation-related element interfaces, including {{domxref("SVGAnimateElement")}}, {{domxref("SVGSetElement")}}, {{domxref("SVGAnimateColorElement")}}, {{domxref("SVGAnimateMotionElement")}}, and {{domxref("SVGAnimateTransformElement")}}.
+- The `SVGAnimationElement` interface for all the animation-related element interfaces, including `SVGAnimateElement`, `SVGSetElement`, `SVGAnimateColorElement`, `SVGAnimateMotionElement`, and `SVGAnimateTransformElement`.

@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`border-image-source`** [CSS](/en-US/docs/Web/CSS) property sets the source image used to create an element's [border image](/reference/properties/border-image).
 
-The {{cssxref("border-image-slice")}} property is used to divide the source image into regions, which are then dynamically applied to the final border image.
+The `border-image-slice` property is used to divide the source image into regions, which are then dynamically applied to the final border image.
 
 {{InteractiveExample("CSS Demo: border-image-source")}}
 
@@ -76,8 +76,8 @@ border-image-source: unset;
 ### Values
 
 - `none`
-  - No border image is used. The appearance defined by {{cssxref("border-style")}} is displayed instead.
-- {{cssxref("image")}}
+  - No border image is used. The appearance defined by `border-style` is displayed instead.
+- `image`
   - Image reference to use for the border.
 
 ## Formal definition
@@ -108,9 +108,9 @@ border-image-source: unset;
 
 ## See also
 
-- {{cssxref("border")}}
-- {{cssxref("outline")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("background-image")}}
-- {{cssxref("url_value", "&lt;url&gt;")}} type
+- `border`
+- `outline`
+- `box-shadow`
+- `background-image`
+- `&lt;url&gt;` type
 - [Border images in CSS: A key focus area for Interop 2023](/en-US/blog/border-images-interop-2023/) on MDN blog (2023)

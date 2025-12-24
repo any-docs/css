@@ -153,7 +153,7 @@ The `z-index` property is specified as either the keyword `auto` or an `<integer
 - `auto`
   - The box does not establish a new local stacking context. The stack level of the generated box in the current stacking context is `0`.
 - `<integer>`
-  - This {{cssxref("&lt;integer&gt;")}} is the stack level of the generated box in the current stacking context. The box also establishes a local stacking context. This means that the z-indexes of descendants are not compared to the z-indexes of elements outside this element.
+  - This `&lt;integer&gt;` is the stack level of the generated box in the current stacking context. The box also establishes a local stacking context. This means that the z-indexes of descendants are not compared to the z-indexes of elements outside this element.
 
 ## Formal definition
 
@@ -226,5 +226,5 @@ The `z-index` property is specified as either the keyword `auto` or an `<integer
 
 ## See also
 
-- CSS {{Cssxref("position")}} property
+- CSS `position` property
 - [Understanding CSS z-indexes](/guides/Positioned_layout/Understanding_z-index)

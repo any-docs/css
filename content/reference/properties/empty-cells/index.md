@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`empty-cells`** [CSS](/en-US/docs/Web/CSS) property sets whether borders and backgrounds appear around {{htmlelement("table")}} cells that have no visible content.
 
-This property has an effect only when the {{cssxref("border-collapse")}} property is `separate`.
+This property has an effect only when the `border-collapse` property is `separate`.
 
 {{InteractiveExample("CSS Demo: empty-cells")}}
 
@@ -155,6 +155,6 @@ th {
 
 ## See also
 
-- {{cssxref("border-collapse")}}
+- `border-collapse`
 - [Learn: Styling tables](/en-US/docs/Learn_web_development/Core/Styling_basics/Tables)
 - [CSS table](/guides/Table) module

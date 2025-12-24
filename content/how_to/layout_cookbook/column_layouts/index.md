@@ -25,7 +25,7 @@ You need to choose different layout methods in order to achieve your requirement
 
 If you create columns using multi-column layout your text will remain as a continuous stream filling each column in turn. The columns must all be the same size, and you are unable to target an individual column or the content of an individual column.
 
-You can control the gaps between columns with the {{cssxref("column-gap")}} or {{cssxref("gap")}} properties, and add a rule between columns using {{cssxref("column-rule")}}.
+You can control the gaps between columns with the `column-gap` or `gap` properties, and add a rule between columns using `column-rule`.
 
 Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
@@ -62,7 +62,7 @@ Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
 {{EmbedLiveSample("multi-column-layout-example", "", "350px")}}
 
-In this example, we used the {{cssxref("column-width")}} property to set a minimum width that the columns need to be before the browser adds an additional column. The {{cssxref("columns")}} shorthand property can be used to set the `column-width` and {{cssxref("column-count")}} properties, either of which can define the maximum number of columns allowed.
+In this example, we used the `column-width` property to set a minimum width that the columns need to be before the browser adds an additional column. The `columns` shorthand property can be used to set the `column-width` and `column-count` properties, either of which can define the maximum number of columns allowed.
 
 Use multicol when:
 
@@ -72,7 +72,7 @@ Use multicol when:
 
 ### A single row of items with equal heights — flexbox
 
-Flexbox can be used to break content into columns by setting {{cssxref("display", "display: flex;")}} to make a parent element a flex-container. Just adding this one property turns all the children (child elements, pseudo-elements, and text nodes) into flex items along a single line. Setting the same {{cssxref("flex")}} shorthand property with a single numeric value distributes all the available space equally, generally making all the flex items the same size as long as none have non-wrapping content forcing the item to be larger.
+Flexbox can be used to break content into columns by setting `display: flex;` to make a parent element a flex-container. Just adding this one property turns all the children (child elements, pseudo-elements, and text nodes) into flex items along a single line. Setting the same `flex` shorthand property with a single numeric value distributes all the available space equally, generally making all the flex items the same size as long as none have non-wrapping content forcing the item to be larger.
 
 Margins or the `gap` property can be used to create gaps between items, but there is currently no CSS property that adds rules between flex items.
 
@@ -120,7 +120,7 @@ Margins or the `gap` property can be used to create gaps between items, but ther
 
 {{EmbedLiveSample("columns-flexbox-example", "", "400px")}}
 
-To create a layout with flex items that wrap onto new rows, set the {{cssxref("flex-wrap")}} property on the container to `wrap`. Note that each flex line distributes space for that line only. Items in one line will not necessarily line up with items on other lines, as you'll see in the example below. This is why flexbox is described as one-dimensional. It is designed for controlling layout as a row or a column, but not both at the same time.
+To create a layout with flex items that wrap onto new rows, set the `flex-wrap` property on the container to `wrap`. Note that each flex line distributes space for that line only. Items in one line will not necessarily line up with items on other lines, as you'll see in the example below. This is why flexbox is described as one-dimensional. It is designed for controlling layout as a row or a column, but not both at the same time.
 
 ```html live-sample___columns-flexbox-wrapping-example
 <div class="container">
@@ -176,7 +176,7 @@ Use flexbox:
 
 ### Lining items up in rows and columns — grid layout
 
-If you want a two-dimensional grid where items line up in rows _and_ columns, then you should choose CSS grid layout. Similar to how flexbox works on the direct children of the flex container, grid layout works on the direct children of the grid container. Just set {{cssxref("display", "display: grid;")}} on the container. Properties set on this container — like {{cssxref("grid-template-columns")}} and {{cssxref("grid-template-rows")}} — define how the items are distributed along rows and columns.
+If you want a two-dimensional grid where items line up in rows _and_ columns, then you should choose CSS grid layout. Similar to how flexbox works on the direct children of the flex container, grid layout works on the direct children of the grid container. Just set `display: grid;` on the container. Properties set on this container — like `grid-template-columns` and `grid-template-rows` — define how the items are distributed along rows and columns.
 
 Click "Play" in the code blocks below to edit the example in the MDN Playground:
 

@@ -6,7 +6,7 @@ browser-compat: css.at-rules.font-feature-values
 sidebar: cssref
 ---
 
-The **`@font-feature-values`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) lets you use a common name in the {{cssxref("font-variant-alternates")}} property for features activated differently in OpenType. This can help simplify your CSS when using multiple fonts.
+The **`@font-feature-values`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) lets you use a common name in the `font-variant-alternates` property for features activated differently in OpenType. This can help simplify your CSS when using multiple fonts.
 
 The `@font-feature-values` at-rule may be used either at the top level of your CSS or inside any CSS conditional-group at-rule.
 
@@ -24,22 +24,22 @@ The `@font-feature-values` at-rule may be used either at the top level of your C
 }
 ```
 
-Each `@font-feature-values` block can contain a list of feature value blocks (listed below), as well as the {{cssxref("@font-feature-values/font-display", "font-display")}} descriptor.
+Each `@font-feature-values` block can contain a list of feature value blocks (listed below), as well as the `font-display` descriptor.
 
 ### Feature value blocks
 
 - `@swash`
-  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "swash()", "#swash")}} functional notation of {{cssxref("font-variant-alternates")}}. A swash feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
+  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "swash()", "#swash")}} functional notation of `font-variant-alternates`. A swash feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
 - `@annotation`
-  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "annotation()", "#annotation")}} functional notation of {{cssxref("font-variant-alternates")}}. An annotation feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
+  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "annotation()", "#annotation")}} functional notation of `font-variant-alternates`. An annotation feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
 - `@ornaments`
-  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "ornaments()", "#ornaments")}} functional notation of {{cssxref("font-variant-alternates")}}. An ornaments feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
+  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "ornaments()", "#ornaments")}} functional notation of `font-variant-alternates`. An ornaments feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
 - `@stylistic`
-  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "stylistic()", "#stylistic")}} functional notation of {{cssxref("font-variant-alternates")}}. A stylistic feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
+  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "stylistic()", "#stylistic")}} functional notation of `font-variant-alternates`. A stylistic feature value definition allows only one value: `ident1: 2` is valid, but `ident2: 2 4` isn't.
 - `@styleset`
-  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "styleset()", "#styleset")}} functional notation of {{cssxref("font-variant-alternates")}}. A styleset feature value definition allows an unlimited number of values: `ident1: 2 4 12 1` maps to the OpenType values `ss02`, `ss04`, `ss12`, and `ss01`. Note that values higher than `99` are valid, but don't map to any OpenType values and are ignored.
+  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "styleset()", "#styleset")}} functional notation of `font-variant-alternates`. A styleset feature value definition allows an unlimited number of values: `ident1: 2 4 12 1` maps to the OpenType values `ss02`, `ss04`, `ss12`, and `ss01`. Note that values higher than `99` are valid, but don't map to any OpenType values and are ignored.
 - `@character-variant`
-  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "character-variant()", "#character-variant")}} functional notation of {{cssxref("font-variant-alternates")}}. A character-variant feature value definition allows either one or two values: `ident1: 3` maps to `cv03=1`, and `ident2: 2 4` maps to `cv02=4`, but `ident2: 2 4 5` is invalid.
+  - Specifies a feature name that will work with the {{cssxref("font-variant-alternates", "character-variant()", "#character-variant")}} functional notation of `font-variant-alternates`. A character-variant feature value definition allows either one or two values: `ident1: 3` maps to `cv03=1`, and `ident2: 2 4` maps to `cv02=4`, but `ident2: 2 4 5` is invalid.
 
 ## Formal syntax
 
@@ -80,4 +80,4 @@ Each `@font-feature-values` block can contain a list of feature value blocks (li
 
 ## See also
 
-- The {{cssxref("font-variant-alternates")}} property that uses values that this at-rule defines.
+- The `font-variant-alternates` property that uses values that this at-rule defines.

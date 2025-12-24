@@ -10,7 +10,7 @@ sidebar: cssref
 
 The **`@scope`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) enables you to select elements in specific DOM subtrees, targeting elements precisely without writing overly-specific selectors that are hard to override, and without coupling your selectors too tightly to the DOM structure.
 
-In JavaScript, `@scope` can be accessed via the CSS object model interface {{DOMxRef("CSSScopeRule")}}.
+In JavaScript, `@scope` can be accessed via the CSS object model interface `CSSScopeRule`.
 
 ## Syntax
 
@@ -115,11 +115,11 @@ Or you could include your `@scope` block inline inside a `<style>` element, whic
 ```
 
 > [!NOTE]
-> It is important to understand that, while `@scope` allows you to isolate the application of selectors to specific DOM subtrees, it does not completely isolate the applied styles to within those subtrees. This is most noticeable with inheritance — properties that are inherited by children (for example {{cssxref("color")}} or {{cssxref("font-family")}}) will still be inherited, beyond any set scope limit.
+> It is important to understand that, while `@scope` allows you to isolate the application of selectors to specific DOM subtrees, it does not completely isolate the applied styles to within those subtrees. This is most noticeable with inheritance — properties that are inherited by children (for example `color` or `font-family`) will still be inherited, beyond any set scope limit.
 
 ### `:scope` pseudo-class within `@scope` blocks
 
-In the context of an `@scope` block, the {{cssxref(":scope")}} pseudo-class provides a convenient way to directly apply styles to the scope root, like so:
+In the context of an `@scope` block, the `:scope` pseudo-class provides a convenient way to directly apply styles to the scope root, like so:
 
 ```css
 @scope (.feature) {
@@ -169,7 +169,7 @@ Here's some considerations for `:scope` within `@scope` blocks:
 ### Specificity in `@scope`
 
 Inside an `@scope` rule, both bare selectors and the [`&`](/en-US/docs/Web/CSS/Reference/Selectors/Nesting_selector) nesting selector behave as if `:where(:scope)` were prepended to the selector.
-Because {{cssxref(":where()")}} has zero [specificity](/guides/Cascade/Specificity), bare selectors and `&` add zero weight. The specificity weight is determined by the rest of the selector.
+Because `:where()` has zero [specificity](/guides/Cascade/Specificity), bare selectors and `&` add zero weight. The specificity weight is determined by the rest of the selector.
 For example, the specificity of the `& img` selector is equivalent to the specificity of `:where(:scope) img` (0-0-1).
 
 > [!WARNING]
@@ -461,8 +461,8 @@ In the rendered code, note how all of the `<img>` elements are styled with the t
 
 ## See also
 
-- {{CSSxRef(":scope")}}
-- {{DOMxRef("CSSScopeRule")}}
+- `:scope`
+- `CSSScopeRule`
 - [Specificity](/guides/Cascade/Specificity)
 - [Defining the `&` selector in a `@scope` rule](https://css.oddbird.net/scope/parent-selector/) on css.oddbird.net (2025)
 - [Limit the reach of your selectors with the CSS `@scope` at-rule](https://developer.chrome.com/docs/css-ui/at-scope) on developer.chrome.com (2023)

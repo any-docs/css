@@ -56,7 +56,7 @@ padding-right: 0;
 An element's padding area is the space between its content and its border.
 
 > [!NOTE]
-> The {{cssxref("padding")}} property can be used to set paddings on all four sides of an element with a single declaration.
+> The `padding` property can be used to set paddings on all four sides of an element with a single declaration.
 
 ## Syntax
 
@@ -81,10 +81,10 @@ The `padding-right` property is specified as a single value chosen from the list
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the padding as a fixed value. Must be nonnegative.
-- {{cssxref("&lt;percentage&gt;")}}
-  - The size of the padding as a percentage, relative to the inline size (_width_ in a horizontal language, defined by {{cssxref("writing-mode")}}) of the [containing block](/guides/Display/Containing_block). Must be nonnegative.
+- `&lt;percentage&gt;`
+  - The size of the padding as a percentage, relative to the inline size (_width_ in a horizontal language, defined by `writing-mode`) of the [containing block](/guides/Display/Containing_block). Must be nonnegative.
 
 ## Formal definition
 
@@ -117,9 +117,9 @@ The `padding-right` property is specified as a single value chosen from the list
 
 ## See also
 
-- {{cssxref("padding-top")}}, {{cssxref("padding-bottom")}}, and {{cssxref("padding-left")}}
-- {{cssxref("padding")}} shorthand
-- {{cssxref("padding-block-start")}}, {{cssxref("padding-block-end")}}, {{cssxref("padding-inline-start")}}, and {{cssxref("padding-inline-end")}}
-- {{cssxref("padding-block")}} and {{cssxref("padding-inline")}} shorthands
+- `padding-top`, `padding-bottom`, and `padding-left`
+- `padding` shorthand
+- `padding-block-start`, `padding-block-end`, `padding-inline-start`, and `padding-inline-end`
+- `padding-block` and `padding-inline` shorthands
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

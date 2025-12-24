@@ -6,7 +6,7 @@ spec-urls: https://drafts.csswg.org/css-fonts/#generic-font-families
 sidebar: cssref
 ---
 
-The **`<generic-family>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents the keyword values for generic font families used in the {{cssxref("font")}} shorthand and {{cssxref("font-family")}} longhand properties. The `<generic-family>` represents one or more locally-installed fonts belonging to that category of fonts.
+The **`<generic-family>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents the keyword values for generic font families used in the `font` shorthand and `font-family` longhand properties. The `<generic-family>` represents one or more locally-installed fonts belonging to that category of fonts.
 
 ## Syntax
 
@@ -56,7 +56,7 @@ The `<generic-family>` {{glossary("enumerated")}} type is specified using one of
 
 ## Examples
 
-This example demos several of the `<generic-family>` enumerated values for the {{cssxref("font-family")}} property.
+This example demos several of the `<generic-family>` enumerated values for the `font-family` property.
 
 ### HTML
 
@@ -108,5 +108,5 @@ ul {
 
 ## See also
 
-- Properties that use this data type: {{cssxref("font-family")}} and {{cssxref("font")}}
+- Properties that use this data type: `font-family` and `font`
 - [CSS fonts module](/guides/Fonts)

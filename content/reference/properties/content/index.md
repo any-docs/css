@@ -100,25 +100,25 @@ The keywords and data types mentioned above are described in more detail below:
     When applied to an element, the value has no effect.
 
 - `normal`
-  - For the {{cssxref("::before")}} and {{cssxref("::after")}} pseudo-elements, this value computes to `none` . For other pseudo-elements such as {{cssxref("::marker")}}, {{cssxref("::placeholder")}}, or {{cssxref("::file-selector-button")}}, it produces the element's initial (or normal) content. For regular elements or page margin boxes, it computes to the element's descendants. This is the default value.
+  - For the `::before` and `::after` pseudo-elements, this value computes to `none` . For other pseudo-elements such as `::marker`, `::placeholder`, or `::file-selector-button`, it produces the element's initial (or normal) content. For regular elements or page margin boxes, it computes to the element's descendants. This is the default value.
 
-- {{cssxref("&lt;string&gt;")}}
+- `&lt;string&gt;`
   - A sequence of characters enclosed in matching single or double quotes. Multiple string values will be concatenated (there is no concatenation operator in CSS).
 
-- {{cssxref("image")}}
-  - An {{cssxref("image")}}, representing an image to display. This can be equal to a {{cssxref("url_value", "&lt;url&gt;")}}, {{cssxref("image/image-set", "image-set()")}}, or {{cssxref("gradient")}} data type, or a part of the webpage itself, defined by the {{cssxref("element()")}} function.
+- `image`
+  - An `image`, representing an image to display. This can be equal to a `&lt;url&gt;`, `image-set()`, or `gradient` data type, or a part of the webpage itself, defined by the `element()` function.
 
 - `<counter>`
-  - The `<counter>` value is a [CSS counter](/guides/Counter_styles/Using_counters), generally a number produced by computations defined by {{cssxref("&lt;counter-reset&gt;")}} and {{cssxref("&lt;counter-increment&gt;")}} properties. It can be displayed using either the {{cssxref("counter()")}} or {{cssxref("counters()")}} function.
-    - {{cssxref("counter()")}}
-      - The {{cssxref("counter()")}} function has two forms: 'counter(_name_)' or 'counter(_name_, style)'. The generated text is the value of the innermost counter of the given name in scope at the given pseudo-element. It is formatted in the specified {{cssxref("&lt;list-style-type&gt;")}} (`decimal` by default).
-    - {{cssxref("counters()")}}
-      - The {{cssxref("counters()")}} function also has two forms: 'counters(_name_, _string_)' or 'counters(_name_, _string_, _style_)'. The generated text is the value of all counters with the given name in scope at the given pseudo-element, from outermost to innermost, separated by the specified string. The counters are rendered in the indicated {{cssxref("&lt;list-style-type&gt;")}} (`decimal` by default).
+  - The `<counter>` value is a [CSS counter](/guides/Counter_styles/Using_counters), generally a number produced by computations defined by `&lt;counter-reset&gt;` and `&lt;counter-increment&gt;` properties. It can be displayed using either the `counter()` or `counters()` function.
+    - `counter()`
+      - The `counter()` function has two forms: 'counter(_name_)' or 'counter(_name_, style)'. The generated text is the value of the innermost counter of the given name in scope at the given pseudo-element. It is formatted in the specified `&lt;list-style-type&gt;` (`decimal` by default).
+    - `counters()`
+      - The `counters()` function also has two forms: 'counters(_name_, _string_)' or 'counters(_name_, _string_, _style_)'. The generated text is the value of all counters with the given name in scope at the given pseudo-element, from outermost to innermost, separated by the specified string. The counters are rendered in the indicated `&lt;list-style-type&gt;` (`decimal` by default).
 
 - `<quote>`
   - The `<quote>` data type includes language- and position-dependent keywords:
     - `open-quote` and `close-quote`
-      - These values are replaced by the appropriate string from the {{cssxref("quotes")}} property.
+      - These values are replaced by the appropriate string from the `quotes` property.
     - `no-open-quote` and `no-close-quote`
       - Introduces no content, but increments (decrements) the level of nesting for quotes.
 
@@ -132,7 +132,7 @@ The keywords and data types mentioned above are described in more detail below:
   - The `attr(x)` CSS function retrieves the value of an attribute of the selected element, or the pseudo-element's originating element. The value of the element's attribute `x` is an unparsed string representing the attribute name. If there is no attribute `x`, an empty string is returned. The case sensitivity of the attribute name parameter depends on the document language.
 
 - alternative text: `/ <string> | <counter>`
-  - Alternative text may be specified for an image or any `<content-list>` items, by appending a forward slash and then a string of text or a counter. The alternative text is intended for speech output by screen-readers, but may also be displayed in some browsers. The {{cssxref("string", "/ &lt;string>")}} or {{cssxref("counter", "/ &lt;counter>")}} data types specify the "alt text" for the element.
+  - Alternative text may be specified for an image or any `<content-list>` items, by appending a forward slash and then a string of text or a counter. The alternative text is intended for speech output by screen-readers, but may also be displayed in some browsers. The `/ &lt;string>` or `/ &lt;counter>` data types specify the "alt text" for the element.
 
 ## Formal definition
 
@@ -237,7 +237,7 @@ q::after {
 
 {{EmbedLiveSample('Quotes', '100%', 200)}}
 
-Note the [type of quotes generated](/reference/properties/quotes#auto_quotes) is based on the language. Browsers add open- and close-quotes before and after {{HTMLElement("q")}} elements by default, so the quotes in this example would appear without them being explicitly set. They could have been turned off by setting the respective `content` property values to `no-open-quote` and `no-close-quote`, or by setting them both to `none`. They can also be turned off by setting the {{cssxref("quotes")}} property to `none` instead.
+Note the [type of quotes generated](/reference/properties/quotes#auto_quotes) is based on the language. Browsers add open- and close-quotes before and after {{HTMLElement("q")}} elements by default, so the quotes in this example would appear without them being explicitly set. They could have been turned off by setting the respective `content` property values to `no-open-quote` and `no-close-quote`, or by setting them both to `none`. They can also be turned off by setting the `quotes` property to `none` instead.
 
 ### Adding text to list item counters
 
@@ -280,11 +280,11 @@ li::marker {
 
 {{EmbedLiveSample('Adding_text_to_list_item_counters', '100%', 200)}}
 
-The generated content on each list item's marker adds the text "item " as a prefix, including a space to separate the prefix from the counter, which is followed by ": ", a colon and an additional space. The {{cssxref("counters()")}} function defines a numeric `items` counter, in which the numbers of nested ordered lists have their numbers separated with a period (`.`) in most browsers.
+The generated content on each list item's marker adds the text "item " as a prefix, including a space to separate the prefix from the counter, which is followed by ": ", a colon and an additional space. The `counters()` function defines a numeric `items` counter, in which the numbers of nested ordered lists have their numbers separated with a period (`.`) in most browsers.
 
 ### Strings with attribute values
 
-This example is useful for print stylesheets. It uses an [attribute selector](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) to select every fully qualified secure link, adding the value of the `href` attribute after the link text as the content of the {{cssxref("::after")}} pseudo-element.
+This example is useful for print stylesheets. It uses an [attribute selector](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) to select every fully qualified secure link, adding the value of the `href` attribute after the link text as the content of the `::after` pseudo-element.
 
 #### HTML
 
@@ -344,7 +344,7 @@ If using a screen reader, it should speak the word "MOZILLA" when it reaches the
 
 ### Element replacement with URL
 
-This example replaces a regular element! The element's contents are replaced with an SVG using the {{cssxref("url_value", "&lt;url&gt;")}} type.
+This example replaces a regular element! The element's contents are replaced with an SVG using the `&lt;url&gt;` type.
 
 Pseudo-elements aren't rendered on replaced elements. As this element is replaced, any matching `::after` or `::before` are not generated or applied. To demonstrate this, we include an `::after` declaration block, attempting to add the `id` as generated content. This pseudo-element will not be generated as the element is replaced.
 
@@ -375,7 +375,7 @@ When generating content on regular elements (rather than just on pseudo-elements
 
 ### Element replacement with `<gradient>`
 
-This example demonstrates how an element's contents can be replaced by any type of `<image>`, in this case, a CSS gradient. The element's contents are replaced with a {{cssxref("gradient/linear-gradient", "linear-gradient()")}}. We provide alt text because all images should be described for accessibility.
+This example demonstrates how an element's contents can be replaced by any type of `<image>`, in this case, a CSS gradient. The element's contents are replaced with a `linear-gradient()`. We provide alt text because all images should be described for accessibility.
 
 #### HTML
 
@@ -407,7 +407,7 @@ Check the [browser compatibility chart](#browser_compatibility). All browsers su
 
 ### Element replacement with `image-set()`
 
-This example replaces an element's content with an {{cssxref("image/image-set", "image-set()")}}. If the users display has normal resolution the `1x.png` will be displayed. Screens with a higher resolution will display the `2x.png` image.
+This example replaces an element's content with an `image-set()`. If the users display has normal resolution the `1x.png` will be displayed. Screens with a higher resolution will display the `2x.png` image.
 
 #### HTML
 
@@ -447,17 +447,17 @@ div {
 
 ## See also
 
-- {{Cssxref("::after")}}
-- {{Cssxref("::before")}}
-- {{Cssxref("::marker")}}
-- {{cssxref("::scroll-button()")}}
-- {{cssxref("::scroll-marker")}}
-- {{cssxref(":target-current")}}
-- {{Cssxref("contain")}}
-- {{Cssxref("quotes")}}
-- {{cssxref("gradient", "&lt;gradient&gt;")}}
-- {{cssxref("image/image-set", "image-set()")}}
-- {{cssxref("url_value", "&lt;url&gt;")}}
+- `::after`
+- `::before`
+- `::marker`
+- `::scroll-button()`
+- `::scroll-marker`
+- `:target-current`
+- `contain`
+- `quotes`
+- `&lt;gradient&gt;`
+- `image-set()`
+- `&lt;url&gt;`
 - {{glossary("Replaced elements")}}
 - [CSS generated content](/guides/Generated_content) module
 - [CSS lists and counters](/guides/Lists) module

@@ -68,10 +68,10 @@ margin: 0;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("margin-top")}}
-- {{cssxref("margin-right")}}
-- {{cssxref("margin-bottom")}}
-- {{cssxref("margin-left")}}
+- `margin-top`
+- `margin-right`
+- `margin-bottom`
+- `margin-left`
 
 ## Syntax
 
@@ -105,7 +105,7 @@ margin: revert-layer;
 margin: unset;
 ```
 
-The `margin` property may be specified using one, two, three, or four values. Each value is a {{cssxref("&lt;length&gt;")}}, a {{cssxref("&lt;percentage&gt;")}}, or the keyword `auto`. Negative values draw the element closer to its neighbors than it would be by default.
+The `margin` property may be specified using one, two, three, or four values. Each value is a `&lt;length&gt;`, a `&lt;percentage&gt;`, or the keyword `auto`. Negative values draw the element closer to its neighbors than it would be by default.
 
 - When **one** value is specified, it applies the same margin to **all four sides**.
 - When **two** values are specified, the first margin applies to the **top and bottom**, the second to the **left and right**.
@@ -114,18 +114,18 @@ The `margin` property may be specified using one, two, three, or four values. Ea
 
 ### Values
 
-- {{cssxref("length")}}
+- `length`
   - The size of the margin as a fixed value.
-    - For _anchor-positioned elements_, the {{cssxref("anchor-size()")}} function resolves to a {{cssxref("&lt;length&gt;")}} value relative to the associated _anchor element_'s width or height (see [Setting element margin based on anchor size](/guides/Anchor_positioning/Using#setting_element_margin_based_on_anchor_size)).
+    - For _anchor-positioned elements_, the `anchor-size()` function resolves to a `&lt;length&gt;` value relative to the associated _anchor element_'s width or height (see [Setting element margin based on anchor size](/guides/Anchor_positioning/Using#setting_element_margin_based_on_anchor_size)).
 
-- {{cssxref("percentage")}}
-  - The size of the margin as a percentage, relative to the inline size (_width_ in a horizontal language, defined by {{cssxref("writing-mode")}}) of the [containing block](/guides/Display/Containing_block).
+- `percentage`
+  - The size of the margin as a percentage, relative to the inline size (_width_ in a horizontal language, defined by `writing-mode`) of the [containing block](/guides/Display/Containing_block).
 - `auto`
   - The browser selects a suitable margin to use. For example, in certain cases this value can be used to center an element.
 
 ## Description
 
-This property can be used to set a margin on all four sides of an element. Margins create extra space _around_ an element, unlike {{cssxref("padding")}}, which creates extra space _within_ an element.
+This property can be used to set a margin on all four sides of an element. Margins create extra space _around_ an element, unlike `padding`, which creates extra space _within_ an element.
 
 The top and bottom margins have no effect on _non-[replaced](/en-US/docs/Glossary/Replaced_elements)_ inline elements, such as {{HTMLElement("span")}} or {{HTMLElement("code")}}.
 
@@ -213,9 +213,9 @@ margin: auto; /* top and bottom: 0 margin     */
 
 ## See also
 
-- {{cssxref("margin-top")}}, {{cssxref("margin-right")}}, {{cssxref("margin-bottom")}}, and {{cssxref("margin-left")}}
-- {{cssxref("margin-block-start")}}, {{cssxref("margin-block-end")}}, {{cssxref("margin-inline-start")}}, and {{cssxref("margin-inline-end")}}
-- {{cssxref("margin-block")}} and {{cssxref("margin-inline")}} shorthands
+- `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`
+- `margin-block-start`, `margin-block-end`, `margin-inline-start`, and `margin-inline-end`
+- `margin-block` and `margin-inline` shorthands
 - [Mastering margin collapsing](/guides/Box_model/Margin_collapsing)
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

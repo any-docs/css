@@ -90,7 +90,7 @@ main :only-of-type {
 
 ## See also
 
-- {{Cssxref(":only-child")}}
-- {{Cssxref(":first-of-type")}}
-- {{Cssxref(":last-of-type")}}
-- {{Cssxref(":nth-of-type")}}
+- `:only-child`
+- `:first-of-type`
+- `:last-of-type`
+- `:nth-of-type`

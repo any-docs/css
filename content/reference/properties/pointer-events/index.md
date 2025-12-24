@@ -189,7 +189,7 @@ a[href="http://example.com"] {
 
 ## See also
 
-- {{cssxref("user-select")}}
+- `user-select`
 - SVG {{SVGAttr("pointer-events")}} attribute
 - SVG {{SVGAttr("visibility")}} attribute
-- {{domxref("PointerEvent")}}
+- `PointerEvent`

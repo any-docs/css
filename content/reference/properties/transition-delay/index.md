@@ -60,7 +60,7 @@ The delay may be zero, positive, or negative:
 - A positive value will delay the start of the transition effect for the given length of time.
 - A negative value will begin the transition effect immediately, and partway through the effect. In other words, the effect will be animated as if it had already been running for the given length of time.
 
-You may specify multiple delays, which is useful when transitioning multiple properties. Each delay will be applied to the corresponding property as specified by the {{cssxref("transition-property")}} property, which acts as a master list. If there are fewer delays specified than in the master list, the list of delay values will be repeated until there are enough. If there are more delays, the list of delay values will be truncated to match the number of properties. In both cases, the CSS declaration remains valid.
+You may specify multiple delays, which is useful when transitioning multiple properties. Each delay will be applied to the corresponding property as specified by the `transition-property` property, which acts as a master list. If there are fewer delays specified than in the master list, the list of delay values will be repeated until there are enough. If there are more delays, the list of delay values will be truncated to match the number of properties. In both cases, the CSS declaration remains valid.
 
 ## Syntax
 
@@ -79,7 +79,7 @@ transition-delay: unset;
 
 ### Values
 
-- {{cssxref("&lt;time&gt;")}}
+- `&lt;time&gt;`
   - Denotes the amount of time to wait between a property's value changing and the start of the transition effect.
 
 ## Formal definition
@@ -174,4 +174,4 @@ changeButton.addEventListener("click", change);
 ## See also
 
 - [Using CSS transitions](/guides/Transitions/Using)
-- {{domxref("TransitionEvent")}} API
+- `TransitionEvent` API

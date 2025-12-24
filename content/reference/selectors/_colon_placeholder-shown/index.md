@@ -82,7 +82,7 @@ input:placeholder-shown {
 
 ### Overflowing text
 
-When form fields are too small, placeholder text can get cropped in an undesirable way. You can use the {{cssxref("text-overflow")}} property to alter the way overflowing text is displayed.
+When form fields are too small, placeholder text can get cropped in an undesirable way. You can use the `text-overflow` property to alter the way overflowing text is displayed.
 
 #### HTML
 
@@ -161,6 +161,6 @@ input.student-id:placeholder-shown {
 
 ## See also
 
-- The {{CSSxRef("::placeholder")}} pseudo-element styles the placeholder _itself_.
+- The `::placeholder` pseudo-element styles the placeholder _itself_.
 - Related HTML elements: {{HTMLElement("input")}}, {{HTMLElement("textarea")}}
 - [HTML forms](/en-US/docs/Learn_web_development/Extensions/Forms)

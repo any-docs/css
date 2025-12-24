@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-You can apply shadows to your text by using the {{cssxref("text-shadow")}} property. This property accepts a comma-separated list of shadow values. Each shadow requires at least two {{cssxref("length")}} values but can include up to three `<length>` values and one {{cssxref("color")}} value.
+You can apply shadows to your text by using the `text-shadow` property. This property accepts a comma-separated list of shadow values. Each shadow requires at least two `length` values but can include up to three `<length>` values and one `color` value.
 
 ```css
 text-shadow: 1px 3px;
@@ -31,7 +31,7 @@ Each shadow includes a horizontal offset, a vertical offset, and an optional blu
 
 ### Horizontal offset
 
-The first {{cssxref("length")}} in the value of `text-shadow` represents the horizontal offset of the shadow relative to the original text. Positive values move the shadow to the right, while negative values move it to the left. A value of `0` is a common valid value.
+The first `length` in the value of `text-shadow` represents the horizontal offset of the shadow relative to the original text. Positive values move the shadow to the right, while negative values move it to the left. A value of `0` is a common valid value.
 
 In this example, the different `text-shadow` declarations differ only in their horizontal offsets. The first `<length>` value moves the shadow to the left (`-30px`) or to the right (`30px`).
 
@@ -66,11 +66,11 @@ p {
 
 {{EmbedLiveSample('horizontal','auto','320')}}
 
-You may have noticed that the `text-shadow` property has no effect on the [CSS box model](/guides/Box_model/Introduction), similar to the {{cssxref("outline")}} property. Just like {{cssxref("box-shadow")}}, text shadows do not affect layout, do not trigger scrolling, and do not impact the size of the scrollable overflow area. While text shadows can make an element's text appear bigger, they have no actual impact on the width (or height) of content.
+You may have noticed that the `text-shadow` property has no effect on the [CSS box model](/guides/Box_model/Introduction), similar to the `outline` property. Just like `box-shadow`, text shadows do not affect layout, do not trigger scrolling, and do not impact the size of the scrollable overflow area. While text shadows can make an element's text appear bigger, they have no actual impact on the width (or height) of content.
 
 ### Vertical offset
 
-The second {{cssxref("length")}} in the value of `text-shadow` represents the vertical offset of the shadow relative to the original text. This required value behaves similarly to the horizontal offset, except that it moves the shadow up or down rather than left or right.
+The second `length` in the value of `text-shadow` represents the vertical offset of the shadow relative to the original text. This required value behaves similarly to the horizontal offset, except that it moves the shadow up or down rather than left or right.
 
 In this example, the `text-shadow` declarations differ only in their vertical offsets. The second `<length>` value moves the shadow up (`-30px`) or down (`30px`).
 
@@ -92,7 +92,7 @@ In this example, the `text-shadow` declarations differ only in their vertical of
 
 ### Blur radius
 
-The blur radius is defined by the third {{cssxref("length")}} value and is optional. If omitted, the blur radius is `0`, creating a copy of the text positioned by the first two length values. The value must be `0` or greater; the greater the value, the more widely dispersed the shadow effect will be.
+The blur radius is defined by the third `length` value and is optional. If omitted, the blur radius is `0`, creating a copy of the text positioned by the first two length values. The value must be `0` or greater; the greater the value, the more widely dispersed the shadow effect will be.
 
 In this example, the `text-shadow` declarations differ only in their blur radii. This third `<length>` value is either invalid (`-5px`), blurs the shadow (`5px`), or creates a copy of the text (`0`).
 
@@ -115,7 +115,7 @@ In this example, the `text-shadow` declarations differ only in their blur radii.
 
 ### Shadow color
 
-While you can apply [multiple shadows](#multiple_shadows) to text, each shadow consists of a single base color. That color can be any valid CSS {{cssxref("color")}} value, defaulting to [`currentcolor`](/reference/values/color_value#currentcolor_keyword) if omitted.
+While you can apply [multiple shadows](#multiple_shadows) to text, each shadow consists of a single base color. That color can be any valid CSS `color` value, defaulting to [`currentcolor`](/reference/values/color_value#currentcolor_keyword) if omitted.
 
 The following three shadows are equivalent in terms of their shadow colors:
 
@@ -167,9 +167,9 @@ p {
 
 ## Multiple shadows with transparent text
 
-Shadows are painted above any background colors or images and below any borders. While shadows overlay each other, they don't overlay the text. There is no equivalent of the {{cssxref("box-shadow")}} property's `inset` keyword in the text shadow world. Unlike a box shadow, text shadows are not clipped to the shadowed shape and may show through if the text is partially-transparent.
+Shadows are painted above any background colors or images and below any borders. While shadows overlay each other, they don't overlay the text. There is no equivalent of the `box-shadow` property's `inset` keyword in the text shadow world. Unlike a box shadow, text shadows are not clipped to the shadowed shape and may show through if the text is partially-transparent.
 
-The following examples apply the same shadows to the text but with different {{cssxref("color")}} property values. The semi-transparent examples are difficult to read but are included to demonstrate how shadows render:
+The following examples apply the same shadows to the text but with different `color` property values. The semi-transparent examples are difficult to read but are included to demonstrate how shadows render:
 
 ```css live-sample___opaque
 p {

@@ -39,4 +39,4 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref(":-moz-broken")}}, {{cssxref(":-moz-loading")}}, {{cssxref(":-moz-suppressed")}}
+- `:-moz-broken`, `:-moz-loading`, `:-moz-suppressed`

@@ -59,10 +59,10 @@ border-radius: 50% 20% / 10% 40%;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-top-left-radius")}}
-- {{cssxref("border-top-right-radius")}}
-- {{cssxref("border-bottom-right-radius")}}
-- {{cssxref("border-bottom-left-radius")}}
+- `border-top-left-radius`
+- `border-top-right-radius`
+- `border-bottom-right-radius`
+- `border-bottom-left-radius`
 
 ## Syntax
 
@@ -103,7 +103,7 @@ border-radius: unset;
 
 The `border-radius` property is specified as:
 
-- one, two, three, or four {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} values. This is used to set a single radius for the corners.
+- one, two, three, or four `&lt;length&gt;` or `&lt;percentage&gt;` values. This is used to set a single radius for the corners.
 - followed optionally by "/" and one, two, three, or four `<length>` or `<percentage>` values. This is used to set an additional radius, so you can have elliptical corners.
 
 ### Values
@@ -114,8 +114,8 @@ The `border-radius` property is specified as:
       <td><em>radius</em></td>
       <td><img alt="A light blue rectangle with a light gray border. All 4 corners are rounded." src="/images/all-corner.png" /></td>
       <td>
-        Is a {{cssxref("&lt;length&gt;")}} or a
-        {{cssxref("&lt;percentage&gt;")}} denoting a radius to use
+        Is a `&lt;length&gt;` or a
+        `&lt;percentage&gt;` denoting a radius to use
         for the border in each corner of the border. It is used only in the
         one-value syntax.
       </td>
@@ -126,8 +126,8 @@ The `border-radius` property is specified as:
         <img alt="A light blue rectangle with a light gray border. The 2 corners on the top left and the bottom right have are rounded." src="/images/top-left-bottom-right.png" />
       </td>
       <td>
-        Is a {{cssxref("&lt;length&gt;")}} or a
-        {{cssxref("&lt;percentage&gt;")}} denoting a radius to use
+        Is a `&lt;length&gt;` or a
+        `&lt;percentage&gt;` denoting a radius to use
         for the border in the top-left and bottom-right corners of the element's
         box. It is used only in the two-value syntax.
       </td>
@@ -138,8 +138,8 @@ The `border-radius` property is specified as:
         <img alt="A light blue rectangle with a light gray border. The 2 corners on the top right and the bottom left are rounded." src="/images/top-right-bottom-left.png" />
       </td>
       <td>
-        Is a {{cssxref("&lt;length&gt;")}} or a
-        {{cssxref("&lt;percentage&gt;")}} denoting a radius to use
+        Is a `&lt;length&gt;` or a
+        `&lt;percentage&gt;` denoting a radius to use
         for the border in the top-right and bottom-left corners of the element's
         box. It is used only in the two- and three-value syntaxes.
       </td>
@@ -148,8 +148,8 @@ The `border-radius` property is specified as:
       <td><em>top-left</em></td>
       <td><img alt="A light blue rectangle with a light gray border. The corner on the top left is rounded." src="/images/top-left.png" /></td>
       <td>
-        Is a {{cssxref("&lt;length&gt;")}} or a
-        {{cssxref("&lt;percentage&gt;")}} denoting a radius to use
+        Is a `&lt;length&gt;` or a
+        `&lt;percentage&gt;` denoting a radius to use
         for the border in the top-left corner of the element's box. It is used
         only in the three- and four-value syntaxes.
       </td>
@@ -158,8 +158,8 @@ The `border-radius` property is specified as:
       <td><em>top-right</em></td>
       <td><img alt="A light blue rectangle with a light gray border. The corner on the top right is rounded." src="/images/top-right.png" /></td>
       <td>
-        Is a {{cssxref("&lt;length&gt;")}} or a
-        {{cssxref("&lt;percentage&gt;")}} denoting a radius to use
+        Is a `&lt;length&gt;` or a
+        `&lt;percentage&gt;` denoting a radius to use
         for the border in the top-right corner of the element's box. It is used
         only in the four-value syntax.
       </td>
@@ -168,8 +168,8 @@ The `border-radius` property is specified as:
       <td><em>bottom-right</em></td>
       <td><img alt="A light blue rectangle with a light gray border. The bottom right corner is rounded." src="/images/bottom-right.png" /></td>
       <td>
-        Is a {{cssxref("&lt;length&gt;")}} or a
-        {{cssxref("&lt;percentage&gt;")}} denoting a radius to use
+        Is a `&lt;length&gt;` or a
+        `&lt;percentage&gt;` denoting a radius to use
         for the border in the bottom-right corner of the element's box. It is
         used only in the three- and four-value syntaxes.
       </td>
@@ -178,8 +178,8 @@ The `border-radius` property is specified as:
       <td><em>bottom-left</em></td>
       <td><img alt="A light blue rectangle with a light gray border. The bottom left corner is rounded." src="/images/bottom-left.png" /></td>
       <td>
-        Is a {{cssxref("&lt;length&gt;")}} or a
-        {{cssxref("&lt;percentage&gt;")}} denoting a radius to use
+        Is a `&lt;length&gt;` or a
+        `&lt;percentage&gt;` denoting a radius to use
         for the border in the bottom-left corner of the element's box. It is
         used only in the four-value syntax.
       </td>
@@ -187,9 +187,9 @@ The `border-radius` property is specified as:
   </tbody>
 </table>
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Denotes the size of the circle radius, or the semi-major and semi-minor axes of the ellipse, using length values. Negative values are invalid.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Denotes the size of the circle radius, or the semi-major and semi-minor axes of the ellipse, using percentage values. Percentages for the horizontal axis refer to the width of the box; percentages for the vertical axis refer to the height of the box. Negative values are invalid.
 
 For example:
@@ -216,9 +216,9 @@ border-bottom-left-radius: 3px 4px;
 
 ## Description
 
-The radius applies to the whole {{cssxref("background")}}, even if the element has no border; the exact position of the clipping is defined by the {{cssxref("background-clip")}} property.
+The radius applies to the whole `background`, even if the element has no border; the exact position of the clipping is defined by the `background-clip` property.
 
-The `border-radius` property does not apply to table elements when {{cssxref("border-collapse")}} is `collapse`.
+The `border-radius` property does not apply to table elements when `border-collapse` is `collapse`.
 
 > [!NOTE]
 > As with any shorthand property, individual sub-properties cannot inherit, such as in `border-radius:0 0 inherit inherit`, which would partially override existing definitions. Instead, the individual longhand properties have to be used.
@@ -333,7 +333,7 @@ pre#example-7 {
 
 ### Using `corner-shape` with `border-radius`
 
-When a non-`0` `border-radius` value is applied to a box corner, you can use the {{cssxref("corner-shape")}} property (or one of its [longhands and shorthands](/reference/properties/corner-shape#corner--shape_shorthands_and_longhands)) to apply custom shapes to that corner, such as a bevel, notch, or squircle. This example demonstrates `corner-shape` usage.
+When a non-`0` `border-radius` value is applied to a box corner, you can use the `corner-shape` property (or one of its [longhands and shorthands](/reference/properties/corner-shape#corner--shape_shorthands_and_longhands)) to apply custom shapes to that corner, such as a bevel, notch, or squircle. This example demonstrates `corner-shape` usage.
 
 #### HTML
 
@@ -345,7 +345,7 @@ The markup for this example contains a single {{htmlelement("div")}} element.
 
 #### CSS
 
-We give the box some basic styles, which we've hidden for brevity. We also apply a {{cssxref("box-shadow")}}, a `border-radius` of `0 20% 50px 30%`, and a `corner-shape` of `superellipse(0.5) bevel notch squircle`.
+We give the box some basic styles, which we've hidden for brevity. We also apply a `box-shadow`, a `border-radius` of `0 20% 50px 30%`, and a `corner-shape` of `superellipse(0.5) bevel notch squircle`.
 
 ```css hidden live-sample___basic-usage
 body {
@@ -395,4 +395,4 @@ Note how no corner shape is applied to the top-left corner, because it has a `bo
 
 ## See also
 
-- Border-radius-related CSS properties: {{cssxref("border-top-left-radius")}}, {{cssxref("border-top-right-radius")}}, {{cssxref("border-bottom-right-radius")}}, {{cssxref("border-bottom-left-radius")}}, {{cssxref("border-start-start-radius")}}, {{cssxref("border-start-end-radius")}}, {{cssxref("border-end-start-radius")}}, {{cssxref("border-end-end-radius")}}
+- Border-radius-related CSS properties: `border-top-left-radius`, `border-top-right-radius`, `border-bottom-right-radius`, `border-bottom-left-radius`, `border-start-start-radius`, `border-start-end-radius`, `border-end-start-radius`, `border-end-end-radius`

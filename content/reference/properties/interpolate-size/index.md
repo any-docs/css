@@ -10,9 +10,9 @@ sidebar: cssref
 
 {{seecompattable}}
 
-The **`interpolate-size`** [CSS](/en-US/docs/Web/CSS) property allows you to enable [animations](/guides/Animations) and [transitions](/guides/Transitions) between a {{cssxref("&lt;length-percentage&gt;")}} value and an {{glossary("intrinsic size")}}, {{cssxref("fit-content")}}, or {{cssxref("max-content")}}.
+The **`interpolate-size`** [CSS](/en-US/docs/Web/CSS) property allows you to enable [animations](/guides/Animations) and [transitions](/guides/Transitions) between a `&lt;length-percentage&gt;` value and an {{glossary("intrinsic size")}}, `fit-content`, or `max-content`.
 
-This property is typically used to animate the {{cssxref("width")}} and/or {{cssxref("height")}} of a container between a `<length-percentage>` and the full size of its content (i.e., between "closed" and "open" or "hide" and "reveal" states) when animating a non-box-model CSS property, such as {{cssxref("transform")}}, is not a viable solution.
+This property is typically used to animate the `width` and/or `height` of a container between a `<length-percentage>` and the full size of its content (i.e., between "closed" and "open" or "hide" and "reveal" states) when animating a non-box-model CSS property, such as `transform`, is not a viable solution.
 
 > [!NOTE]
 > The behavior opted-into by `interpolate-size` cannot be enabled by default across the web because many sites in the wild use stylesheets that assume intrinsic size values cannot be animated. Enabling it by default would cause several backwards-compatibility issues (see relevant [CSS WG discussion](https://github.com/w3c/csswg-drafts/issues/626#issuecomment-2071016522)).
@@ -35,13 +35,13 @@ interpolate-size: unset;
 ### Values
 
 - `allow-keywords`
-  - Enables [interpolation](/en-US/docs/Glossary/Interpolation) between a {{cssxref("length-percentage")}} value and an intrinsic size value, to allow animation between the two.
+  - Enables [interpolation](/en-US/docs/Glossary/Interpolation) between a `length-percentage` value and an intrinsic size value, to allow animation between the two.
 - `numeric-only`
   - The default behavior — intrinsic size values cannot be interpolated.
 
 ## Description
 
-Setting `interpolate-size: allow-keywords` enables interpolation between a {{cssxref("length-percentage")}} value and an intrinsic size value. Note that it does not enable animating between two intrinsic size values. One end of the animation must be a `<length-percentage>`.
+Setting `interpolate-size: allow-keywords` enables interpolation between a `length-percentage` value and an intrinsic size value. Note that it does not enable animating between two intrinsic size values. One end of the animation must be a `<length-percentage>`.
 
 The `interpolate-size` value is inherited, so animating to (or from) an intrinsic size value can be enabled for an entire document by setting it on the document root:
 
@@ -60,17 +60,17 @@ main {
 ```
 
 > [!NOTE]
-> The {{cssxref("calc-size()")}} function's return values can also be interpolated. In effect, including `calc-size()` in a property value automatically applies `interpolate-size: allow-keywords` to the selection. However, because `interpolate-size` is inherited as explained above, it is the preferred solution for enabling intrinsic size animations in most cases. You should only use `calc-size()` to enable intrinsic size animations if they also require calculations.
+> The `calc-size()` function's return values can also be interpolated. In effect, including `calc-size()` in a property value automatically applies `interpolate-size: allow-keywords` to the selection. However, because `interpolate-size` is inherited as explained above, it is the preferred solution for enabling intrinsic size animations in most cases. You should only use `calc-size()` to enable intrinsic size animations if they also require calculations.
 
 ### Values that can be interpolated
 
 The following intrinsic values can currently be opted-in to animations:
 
 - `auto`
-- {{cssxref("min-content")}}
-- {{cssxref("max-content")}}
-- {{cssxref("fit-content")}}
-- `content` (for containers sized using {{cssxref("flex-basis")}}).
+- `min-content`
+- `max-content`
+- `fit-content`
+- `content` (for containers sized using `flex-basis`).
 
 ## Formal definition
 
@@ -84,7 +84,7 @@ The following intrinsic values can currently be opted-in to animations:
 
 ### Basic `interpolate-size` usage
 
-This example demonstrates how to set `interpolate-size: allow-keywords` on a document to enable animations involving an intrinsic size. The demo features a character badge/"name tag", which can be hovered or focused to reveal information about the character. The reveal is handled by a {{cssxref("height")}} transition between a set length and `max-content`.
+This example demonstrates how to set `interpolate-size: allow-keywords` on a document to enable animations involving an intrinsic size. The demo features a character badge/"name tag", which can be hovered or focused to reveal information about the character. The reveal is handled by a `height` transition between a set length and `max-content`.
 
 #### HTML
 
@@ -152,7 +152,7 @@ p {
 }
 ```
 
-In the CSS, we first set `interpolate-size: allow-keywords` on the {{cssxref(":root")}}, to enable it for the whole document.
+In the CSS, we first set `interpolate-size: allow-keywords` on the `:root`, to enable it for the whole document.
 
 ```css
 :root {
@@ -160,7 +160,7 @@ In the CSS, we first set `interpolate-size: allow-keywords` on the {{cssxref(":r
 }
 ```
 
-We then set the `<section>`'s {{cssxref("height")}} to `2.5rem` and {{cssxref("overflow")}} to `hidden` so only the `<header>` is shown by default, then specify a `transition` that animates the `<section>` `height` over 1 second during state change. Finally, we set the `<section>` `height` on {{cssxref(":hover")}} and {{cssxref(":focus")}} to `max-content`.
+We then set the `<section>`'s `height` to `2.5rem` and `overflow` to `hidden` so only the `<header>` is shown by default, then specify a `transition` that animates the `<section>` `height` over 1 second during state change. Finally, we set the `<section>` `height` on `:hover` and `:focus` to `max-content`.
 
 ```css
 section {
@@ -193,5 +193,5 @@ Try hovering over the `<section>` or focusing it via the keyboard — it will an
 
 ## See also
 
-- {{cssxref("calc-size()")}}
+- `calc-size()`
 - [Animate to height: auto; (and other intrinsic sizing keywords) in CSS](https://developer.chrome.com/docs/css-ui/animate-to-height-auto) on developer.chrome.com (2024)

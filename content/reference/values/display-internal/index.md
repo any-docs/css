@@ -106,9 +106,9 @@ input {
 
 ## See also
 
-- {{CSSxRef("display")}}
-  - {{CSSxRef("&lt;display-outside&gt;")}}
-  - {{CSSxRef("&lt;display-inside&gt;")}}
-  - {{CSSxRef("&lt;display-listitem&gt;")}}
-  - {{CSSxRef("&lt;display-box&gt;")}}
-  - {{CSSxRef("&lt;display-legacy&gt;")}}
+- `display`
+  - `&lt;display-outside&gt;`
+  - `&lt;display-inside&gt;`
+  - `&lt;display-listitem&gt;`
+  - `&lt;display-box&gt;`
+  - `&lt;display-legacy&gt;`

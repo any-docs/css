@@ -34,9 +34,9 @@ animation-range-end: unset;
 
 - `normal`
   - Represents the end of the timeline. This is the default value.
-- {{cssxref("length-percentage")}}
+- `length-percentage`
   - Specifies a length or percentage value measured from the beginning of the timeline.
-- {{cssxref("timeline-range-name")}}
+- `timeline-range-name`
   - Specifies a named timeline range within the overall timeline. The range starts at `0%`.
 - `<timeline-range-name> <length-percentage>`
   - Specifies a length or percentage value measured from the beginning of the specified named timeline range.
@@ -45,11 +45,11 @@ animation-range-end: unset;
 
 The `animation-range-end` property specifies the end of the animation's attachment range. Changing the end of the attachment range can potentially shift the end of the animation, that is, the point where keyframes mapped to `100%` progress land when the iteration count is `1`, and can also reduce the effective duration of the animation.
 
-The property value can be `normal`, a `<length-percentage>`, or a {{cssxref("timeline-range-name")}} with an optional `<length-percentage>`. If the `<timeline-range-name>` value does not include a `<length-percentage>`, the percentage defaults to `100%`.
+The property value can be `normal`, a `<length-percentage>`, or a `timeline-range-name` with an optional `<length-percentage>`. If the `<timeline-range-name>` value does not include a `<length-percentage>`, the percentage defaults to `100%`.
 
-The `animation-range-end` property is included in the {{cssxref("animation")}} shorthand as a reset-only value. This means that using the `animation` shorthand resets any previously declared `animation-range-end` value to `normal`; the shorthand cannot be used to set a new `animation-range-end` value. When creating [CSS scroll-driven animations](/guides/Scroll-driven_animations), you should declare `animation-range-end` _after_ declaring any `animation` shorthand to avoid resetting the value to `normal`.
+The `animation-range-end` property is included in the `animation` shorthand as a reset-only value. This means that using the `animation` shorthand resets any previously declared `animation-range-end` value to `normal`; the shorthand cannot be used to set a new `animation-range-end` value. When creating [CSS scroll-driven animations](/guides/Scroll-driven_animations), you should declare `animation-range-end` _after_ declaring any `animation` shorthand to avoid resetting the value to `normal`.
 
-The `animation-range-end` property, along with the {{cssxref("animation-range-start")}} property, can also be set by using the {{cssxref("animation-range")}} shorthand.
+The `animation-range-end` property, along with the `animation-range-start` property, can also be set by using the `animation-range` shorthand.
 
 ## Formal definition
 
@@ -109,7 +109,7 @@ In the middle of a long block of text, we've included an element that we'll anim
 <p>
 ```
 
-We've also included a checkbox that will toggle the {{cssxref("animation-fill-mode")}} property, so you can see how this property affects animations with shortened timelines.
+We've also included a checkbox that will toggle the `animation-fill-mode` property, so you can see how this property affects animations with shortened timelines.
 
 ```html
 <label>
@@ -124,7 +124,7 @@ We've also included a checkbox that will toggle the {{cssxref("animation-fill-mo
 
 #### CSS
 
-We've defined a view progress timeline by setting a {{cssxref("animation-timeline/view", "view()")}} function as the value of the {{cssxref("animation-timeline")}} property. This is declared **after** the {{cssxref("animation")}} shorthand to avoid resetting the longhand property value.
+We've defined a view progress timeline by setting a `view()` function as the value of the `animation-timeline` property. This is declared **after** the `animation` shorthand to avoid resetting the longhand property value.
 
 We've also set `animation-range-end` to make the animation end earlier than expected.
 
@@ -220,11 +220,11 @@ Scroll to see the element animate. Then toggle the checkbox at the end of the bl
 
 ## See also
 
-- {{cssxref("animation-timeline")}}
-- {{cssxref("animation-range")}}
-- {{cssxref("animation-range-start")}}
-- {{cssxref("view-timeline-inset")}}
-- {{domxref("Element.animate()")}} `rangeStart` property
+- `animation-timeline`
+- `animation-range`
+- `animation-range-start`
+- `view-timeline-inset`
+- `Element.animate()` `rangeStart` property
 - [Scroll-driven animation timelines](/guides/Scroll-driven_animations/Timelines)
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module
 - [View progress timeline: Ranges and animation progress visualizer](https://scroll-driven-animations.style/tools/view-timeline/ranges/)

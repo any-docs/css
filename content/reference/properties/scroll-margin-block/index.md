@@ -74,8 +74,8 @@ scroll-margin-block: 2em;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("scroll-margin-block-end")}}
-- {{cssxref("scroll-margin-block-start")}}
+- `scroll-margin-block-end`
+- `scroll-margin-block-start`
 
 ## Syntax
 
@@ -94,7 +94,7 @@ scroll-margin-block: unset;
 
 ### Values
 
-- {{CSSXref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - An outset from the corresponding edge of the scroll container.
 
 ## Description

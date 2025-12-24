@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`palette-mix()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) can be used to create a new {{cssxref("font-palette")}} value by blending together two `font-palette` values by specified percentages and color interpolation methods.
+The **`palette-mix()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) can be used to create a new `font-palette` value by blending together two `font-palette` values by specified percentages and color interpolation methods.
 
 ## Syntax
 
@@ -41,11 +41,11 @@ palette-mix(method, palette1 [p1], palette2 [p2])
 ```
 
 - `method`
-  - A {{cssxref("&lt;color-interpolation-method&gt;")}} specifying the interpolation color space.
+  - A `&lt;color-interpolation-method&gt;` specifying the interpolation color space.
 - `palette1`, `palette2`
-  - The {{cssxref("font-palette")}} values to blend together. These can be _any_ `font-palette` values, including `palette-mix()` functions, `normal`, `dark`, and `light`.
+  - The `font-palette` values to blend together. These can be _any_ `font-palette` values, including `palette-mix()` functions, `normal`, `dark`, and `light`.
 - `p1`, `p2` <Badge type="info" text="Optional" />
-  - {{cssxref("&lt;percentage&gt;")}} values between `0%` and `100%` specifying the amount of each palette to mix. They are normalized as follows:
+  - `&lt;percentage&gt;` values between `0%` and `100%` specifying the amount of each palette to mix. They are normalized as follows:
     - If both `p1` and `p2` are omitted, then `p1 = p2 = 50%`.
     - If `p1` is omitted, then `p1 = 100% - p2`.
     - If `p2` is omitted, then `p2 = 100% - p1`.
@@ -74,7 +74,7 @@ The HTML contains three paragraphs to apply our font information to:
 
 #### CSS
 
-In the CSS, we import a color font from Google Fonts, and define two custom `font-palette` values using the {{cssxref("@font-palette-values")}} at-rule. We then apply three different `font-palette` values to the paragraphs — `--yellow`, `--blue`, and a new green palette, created using `palette-mix()` to blend the blue and yellow palettes together.
+In the CSS, we import a color font from Google Fonts, and define two custom `font-palette` values using the `@font-palette-values` at-rule. We then apply three different `font-palette` values to the paragraphs — `--yellow`, `--blue`, and a new green palette, created using `palette-mix()` to blend the blue and yellow palettes together.
 
 ```css
 @import "https://fonts.googleapis.com/css2?family=Nabla&display=swap";
@@ -125,8 +125,8 @@ The output looks like this:
 
 ## See also
 
-- {{cssxref("font-palette")}}
-- {{cssxref("@font-palette-values", "@font-palette-values")}}
-- {{cssxref("color_value/color-mix", "color-mix()")}}
+- `font-palette`
+- `@font-palette-values`
+- `color-mix()`
 - [CSS color values](/guides/Colors/Color_values) guide
 - {{glossary("Color space")}}

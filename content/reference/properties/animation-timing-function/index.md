@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`animation-timing-function`** [CSS](/en-US/docs/Web/CSS) property sets how an animation progresses through the duration of each cycle.
 
-It is often convenient to use the shorthand property {{cssxref("animation")}} to set all animation properties at once.
+It is often convenient to use the shorthand property `animation` to set all animation properties at once.
 
 {{InteractiveExample("CSS Demo: animation-timing-function")}}
 
@@ -132,8 +132,8 @@ animation-timing-function: unset;
 
 ### Values
 
-- {{cssxref("easing-function")}}
-  - The easing function that corresponds to a given animation, as determined by {{cssxref("animation-name")}}.
+- `easing-function`
+  - The easing function that corresponds to a given animation, as determined by `animation-name`.
 
     The non-step keyword values (`ease`, `linear`, `ease-in-out`, etc.) each represent cubic Bézier curves with fixed four-point values, while the `cubic-bezier()` function value allows non-predefined values to be specified. The `steps()` easing function divides the input time into a specified number of equal-length intervals. Its parameters include a number of steps and a step position.
     - `linear`
@@ -174,14 +174,14 @@ animation-timing-function: unset;
       - Equal to `steps(1, jump-end)`
 
 > [!NOTE]
-> When you specify multiple comma-separated values on an `animation-*` property, they are applied to the animations in the order in which the {{cssxref("animation-name")}}s appear. For situations where the number of animations and `animation-*` property values do not match, see [Setting multiple animation property values](/guides/Animations/Using#setting_multiple_animation_property_values).
+> When you specify multiple comma-separated values on an `animation-*` property, they are applied to the animations in the order in which the `animation-name`s appear. For situations where the number of animations and `animation-*` property values do not match, see [Setting multiple animation property values](/guides/Animations/Using#setting_multiple_animation_property_values).
 
 > [!NOTE]
 > `animation-timing-function` has the same effect when creating [CSS scroll-driven animations](/guides/Scroll-driven_animations) as it does for regular time-based animations.
 
 ## Description
 
-Easing functions may be specified on individual keyframes in a {{cssxref("@keyframes")}} rule. If no **`animation-timing-function`** is specified on a keyframe, the corresponding value of **`animation-timing-function`** from the element to which the animation is applied is used for that keyframe.
+Easing functions may be specified on individual keyframes in a `@keyframes` rule. If no **`animation-timing-function`** is specified on a keyframe, the corresponding value of **`animation-timing-function`** from the element to which the animation is applied is used for that keyframe.
 
 Within a keyframe, `animation-timing-function` is an at-rule-specific descriptor, not the property of the same name. The timing is not being animated. Rather, a keyframe's easing function is applied on a property-by-property basis from the keyframe on which it is specified until the next keyframe specifying that property, or until the end of the animation if there is no subsequent keyframe specifying that property. As a result, an **`animation-timing-function`** specified on the **`100%`** or **`to`** keyframe will never be used.
 
@@ -575,6 +575,6 @@ The following image shows graphs of all the `step()` function values used in thi
 - [Using CSS animations](/guides/Animations/Using)
 - {{cssxref('easing-function')}}
 - [CSS easing functions](/guides/Easing_functions) module
-- JavaScript {{domxref("AnimationEvent")}} API
+- JavaScript `AnimationEvent` API
 - [Cubic bézier generation tool](https://cubic-bezier.com/)
-- Other related animation properties: {{cssxref("animation")}}, {{cssxref("animation-composition")}}, {{cssxref("animation-delay")}}, {{cssxref("animation-direction")}}, {{cssxref("animation-duration")}}, {{cssxref("animation-fill-mode")}}, {{cssxref("animation-iteration-count")}}, {{cssxref("animation-name")}}, {{cssxref("animation-play-state")}}, {{cssxref("animation-timeline")}}
+- Other related animation properties: `animation`, `animation-composition`, `animation-delay`, `animation-direction`, `animation-duration`, `animation-fill-mode`, `animation-iteration-count`, `animation-name`, `animation-play-state`, `animation-timeline`

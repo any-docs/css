@@ -56,5 +56,5 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref("::-moz-list-bullet")}}
-- {{cssxref("::marker")}}
+- `::-moz-list-bullet`
+- `::marker`

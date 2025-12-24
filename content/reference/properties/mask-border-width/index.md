@@ -50,11 +50,11 @@ The `mask-border-width` property may be specified using one, two, three, or four
 ### Values
 
 - `<length-percentage>`
-  - The width of the mask border, specified as a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}. Percentages are relative to the _width_ of the border area for horizontal offsets and the _height_ of the border area for vertical offsets. Must not be negative.
+  - The width of the mask border, specified as a `&lt;length&gt;` or a `&lt;percentage&gt;`. Percentages are relative to the _width_ of the border area for horizontal offsets and the _height_ of the border area for vertical offsets. Must not be negative.
 - `<number>`
-  - The width of the mask border, specified as a multiple of the corresponding {{cssxref("border-width")}}. Must not be negative.
+  - The width of the mask border, specified as a multiple of the corresponding `border-width`. Must not be negative.
 - `auto`
-  - The width of the mask border is made equal to the intrinsic width or height (whichever is applicable) of the corresponding {{cssxref("mask-border-slice")}}. If the image does not have the required intrinsic dimension, the corresponding `border-width` is used instead.
+  - The width of the mask border is made equal to the intrinsic width or height (whichever is applicable) of the corresponding `mask-border-slice`. If the image does not have the required intrinsic dimension, the corresponding `border-width` is used instead.
 
 ## Formal definition
 
@@ -68,7 +68,7 @@ The `mask-border-width` property may be specified using one, two, three, or four
 
 ### Basic usage
 
-`mask-border-width` defines the width of the border mask — setting this to a different value to {{cssxref("mask-border-slice")}} will cause the slices to be scaled to fit the border mask.
+`mask-border-width` defines the width of the border mask — setting this to a different value to `mask-border-slice` will cause the slices to be scaled to fit the border mask.
 
 ```css
 /* Final mask scaled down to 20px wide */
@@ -83,7 +83,7 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 ```
 
 > [!NOTE]
-> The {{cssxref("mask-border")}} page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
+> The `mask-border` page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
 
 ## Specifications
 
@@ -95,8 +95,8 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 
 ## See also
 
-- {{cssxref("mask-border")}}
-- {{cssxref("mask-border-mode")}}
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-source")}}
+- `mask-border`
+- `mask-border-mode`
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-source`

@@ -72,16 +72,16 @@ text-decoration-inset: unset;
 
 ### Values
 
-One or two {{cssxref("&lt;length>")}} values, or the keyword `auto`.
+One or two `&lt;length>` values, or the keyword `auto`.
 
-- {{cssxref("&lt;length>")}}
+- `&lt;length>`
   - Specifies the amount to adjust the text decoration position by. Positive values inset the text decoration (make it shorter) while negative values outset the text decoration (make it longer). If one value is specified, it applies to both the text decoration start and end points. If two values are specified, the first one applies to the text decoration start point and the second one applies to the text decoration end point.
 - `auto`
   - The browser chooses a start and end inset amount to ensure that, if two decorated text boxes appear side-by-side, the appearance of a gap is created between their text decorations so they do not appear to have a single text decoration.
 
 ## Description
 
-By default, an element's text decoration, as set by the {{cssxref("text-decoration")}} shorthand and associated longhand properties, is the same size as the rendered text.
+By default, an element's text decoration, as set by the `text-decoration` shorthand and associated longhand properties, is the same size as the rendered text.
 
 The `text-decoration-inset` property allows you to adjust the start and/or end points of a text container's text decoration. This is useful for creating effects where you want the text decoration to be inset or outset from the text itself, or shifted in position. See [Basic use cases](#basic_use_cases) for an example of each.
 
@@ -91,7 +91,7 @@ The `text-decoration-inset` property can also take the `auto` keyword. This caus
 
 The `auto` value does not have the same effect as the initial value `0`. Setting `text-decoration-inset` to `0` causes there to be no space between decorations.
 
-The `text-decoration-inset` property is not inherited, and it is not a constituent property of the {{cssxref("text-decoration")}} shorthand.
+The `text-decoration-inset` property is not inherited, and it is not a constituent property of the `text-decoration` shorthand.
 
 ## Formal definition
 
@@ -121,7 +121,7 @@ We define an unordered list with three list items, each with a separate `id`.
 
 #### CSS
 
-We give each list item a different {{cssxref("text-decoration")}} and `text-decoration-inset`:
+We give each list item a different `text-decoration` and `text-decoration-inset`:
 
 - The first one has a thick lime green underline, which is outset equally by `10px` on both sides.
 - The second one has a medium thickness white strike-through, which is inset equally by `0.5em` on both sides.
@@ -238,5 +238,5 @@ Note how the `auto` value insets the text decoration subtly on both sides, creat
 
 ## See also
 
-- {{cssxref("text-decoration")}}
+- `text-decoration`
 - The [CSS text decoration](/guides/Text_decoration) module

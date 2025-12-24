@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`rotate()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that rotates an element around a
-fixed point on the 2D plane, without deforming it. Its result is a {{cssxref("&lt;transform-function&gt;")}} data
+fixed point on the 2D plane, without deforming it. Its result is a `&lt;transform-function&gt;` data
 type.
 
 {{InteractiveExample("CSS Demo: rotate()")}}
@@ -185,7 +185,7 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}} property
-- {{cssxref("rotate")}} property
-- {{cssxref("&lt;transform-function&gt;")}}
+- `transform` property
+- `rotate` property
+- `&lt;transform-function&gt;`
 - [`rotate3d()`](/reference/values/transform-function/rotate3d)

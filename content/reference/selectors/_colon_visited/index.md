@@ -42,7 +42,7 @@ a:visited {
 </ul>
 ```
 
-Styles defined by the `:visited` and unvisited {{cssxref(":link")}} pseudo-classes can be overridden by any subsequent user-action pseudo-classes ({{cssxref(":hover")}} or {{cssxref(":active")}}) that have at least equal specificity. To style links appropriately, put the `:visited` rule after the `:link` rule but before the `:hover` and `:active` rules, as defined by the _LVHA-order_: `:link` — `:visited` — `:hover` — `:active`. The `:visited` pseudo-class and `:link` pseudo-class are mutually exclusive.
+Styles defined by the `:visited` and unvisited `:link` pseudo-classes can be overridden by any subsequent user-action pseudo-classes (`:hover` or `:active`) that have at least equal specificity. To style links appropriately, put the `:visited` rule after the `:link` rule but before the `:hover` and `:active` rules, as defined by the _LVHA-order_: `:link` — `:visited` — `:hover` — `:active`. The `:visited` pseudo-class and `:link` pseudo-class are mutually exclusive.
 
 ## Privacy restrictions
 
@@ -51,7 +51,7 @@ For privacy reasons, browsers strictly limit which styles you can apply using th
 - Allowable CSS properties are {{ cssxref("color") }}, {{ cssxref("background-color") }}, {{ cssxref("border-color") }}, {{ cssxref("border-bottom-color") }}, {{ cssxref("border-left-color") }}, {{ cssxref("border-right-color") }}, {{ cssxref("border-top-color") }}, {{ cssxref("column-rule-color") }}, {{ cssxref("outline-color") }}, {{ cssxref("text-decoration-color") }}, and {{ cssxref("text-emphasis-color") }}.
 - Allowable SVG attributes are {{SVGAttr("fill")}} and {{SVGAttr("stroke")}}.
 - The alpha component of the allowed styles will be ignored. The alpha component of the element's non-`:visited` state will be used instead. In Firefox when the alpha component is `0`, the style set in `:visited` will be ignored entirely.
-- Although these styles can change the appearance of colors to the end user, the {{domxref("window.getComputedStyle")}} method will lie and always return the value of the non-`:visited` color.
+- Although these styles can change the appearance of colors to the end user, the `window.getComputedStyle` method will lie and always return the value of the non-`:visited` color.
 - The [`<link>`](/en-US/docs/Web/HTML/Reference/Elements/link) element is never matched by `:visited`.
 - DOM methods that match elements via CSS selectors — such as [`querySelector()`](/en-US/docs/Web/API/Document/querySelector) and [`querySelectorAll()`](/en-US/docs/Web/API/Document/querySelectorAll) — will always return an "empty" result even if there are visited links in a document. For the aforementioned methods, this will be `null` or an empty [`NodeList`](/en-US/docs/Web/API/NodeList), respectively.
 
@@ -109,4 +109,4 @@ a:visited {
 ## See also
 
 - [Privacy and the :visited selector](/guides/Selectors/Privacy_and_:visited)
-- Link-related pseudo-classes: {{cssxref(":link")}}, {{cssxref(":active")}}, {{cssxref(":hover")}}
+- Link-related pseudo-classes: `:link`, `:active`, `:hover`

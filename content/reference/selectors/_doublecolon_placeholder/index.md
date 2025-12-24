@@ -34,7 +34,7 @@ input::placeholder {
   placeholder="It must be 9 digits" />
 ```
 
-Only the subset of CSS properties that apply to the {{cssxref("::first-line")}} pseudo-element can be used in a rule using `::placeholder` in its selector.
+Only the subset of CSS properties that apply to the `::first-line` pseudo-element can be used in a rule using `::placeholder` in its selector.
 
 > [!NOTE]
 > In most browsers, the appearance of placeholder text is a translucent or light gray color by default.
@@ -122,7 +122,7 @@ input::placeholder {
 
 ### Opaque text
 
-Some browsers make placeholder text less opaque. If you want fully opaque text, then set the {{CSSXref("color")}} property value explicitly. The [`currentColor`](/reference/values/color_value#currentcolor_keyword) value can be used to have the same color as the corresponding input element.
+Some browsers make placeholder text less opaque. If you want fully opaque text, then set the `color` property value explicitly. The [`currentColor`](/reference/values/color_value#currentcolor_keyword) value can be used to have the same color as the corresponding input element.
 
 #### HTML
 
@@ -168,6 +168,6 @@ input {
 
 ## See also
 
-- The {{cssxref(":placeholder-shown")}} pseudo-class styles an element that _has_ an active placeholder.
+- The `:placeholder-shown` pseudo-class styles an element that _has_ an active placeholder.
 - Related HTML elements: {{HTMLElement("input")}}, {{HTMLElement("textarea")}}
 - [HTML forms](/en-US/docs/Learn_web_development/Extensions/Forms)

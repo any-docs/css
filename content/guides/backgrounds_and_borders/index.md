@@ -21,57 +21,57 @@ The properties in this module also let you define whether cells inside a {{HTMLE
 
 ### Properties
 
-- {{cssxref("background-attachment")}}
-- {{cssxref("background-clip")}}
-- {{cssxref("background-color")}}
-- {{cssxref("background-image")}}
-- {{cssxref("background-origin")}}
-- {{cssxref("background-position")}}
-- {{cssxref("background-repeat-x")}}
-- {{cssxref("background-repeat-y")}}
-- {{cssxref("background-repeat")}} shorthand
-- {{cssxref("background-size")}}
-- {{cssxref("background")}} shorthand
-- {{cssxref("background-position-x")}}
-- {{cssxref("background-position-y")}}
-- {{cssxref("border-bottom-color")}}
-- {{cssxref("border-bottom-style")}}
-- {{cssxref("border-bottom-width")}}
-- {{cssxref("border-bottom")}} shorthand
-- {{cssxref("border-left-color")}}
-- {{cssxref("border-left-style")}}
-- {{cssxref("border-left-width")}}
-- {{cssxref("border-left")}} shorthand
-- {{cssxref("border-right-color")}}
-- {{cssxref("border-right-style")}}
-- {{cssxref("border-right-width")}}
-- {{cssxref("border-right")}} shorthand
-- {{cssxref("border-top-color")}}
-- {{cssxref("border-top-style")}}
-- {{cssxref("border-top-width")}}
-- {{cssxref("border-top")}} shorthand
-- {{cssxref("border-color")}} shorthand
-- {{cssxref("border-style")}} shorthand
-- {{cssxref("border-width")}} shorthand
-- {{cssxref("border")}} shorthand
-- {{cssxref("border-bottom-left-radius")}}
-- {{cssxref("border-bottom-right-radius")}}
-- {{cssxref("border-top-left-radius")}}
-- {{cssxref("border-top-right-radius")}}
-- {{cssxref("border-radius")}} shorthand
-- {{cssxref("border-image-outset")}}
-- {{cssxref("border-image-repeat")}}
-- {{cssxref("border-image-slice")}}
-- {{cssxref("border-image-source")}}
-- {{cssxref("border-image-width")}}
-- {{cssxref("border-image")}} shorthand
-- {{cssxref("box-shadow")}}
+- `background-attachment`
+- `background-clip`
+- `background-color`
+- `background-image`
+- `background-origin`
+- `background-position`
+- `background-repeat-x`
+- `background-repeat-y`
+- `background-repeat` shorthand
+- `background-size`
+- `background` shorthand
+- `background-position-x`
+- `background-position-y`
+- `border-bottom-color`
+- `border-bottom-style`
+- `border-bottom-width`
+- `border-bottom` shorthand
+- `border-left-color`
+- `border-left-style`
+- `border-left-width`
+- `border-left` shorthand
+- `border-right-color`
+- `border-right-style`
+- `border-right-width`
+- `border-right` shorthand
+- `border-top-color`
+- `border-top-style`
+- `border-top-width`
+- `border-top` shorthand
+- `border-color` shorthand
+- `border-style` shorthand
+- `border-width` shorthand
+- `border` shorthand
+- `border-bottom-left-radius`
+- `border-bottom-right-radius`
+- `border-top-left-radius`
+- `border-top-right-radius`
+- `border-radius` shorthand
+- `border-image-outset`
+- `border-image-repeat`
+- `border-image-slice`
+- `border-image-source`
+- `border-image-width`
+- `border-image` shorthand
+- `box-shadow`
 
 The CSS backgrounds module level 4 also introduces the `background-position-block`, `background-position-inline`, `background-repeat-block`, `background-repeat-inline`, and `background-tbd` properties. Currently, no browsers support these features.
 
 ### Data types
 
-- {{cssxref("line-style")}} enumerated type
+- `line-style` enumerated type
 
 ## Guides
 
@@ -90,29 +90,29 @@ The CSS backgrounds module level 4 also introduces the `background-position-bloc
 
 ## Related concepts
 
-- {{cssxref("border-block-end-color")}}
-- {{cssxref("border-block-start-color")}}
-- {{cssxref("border-inline-end-color")}}
-- {{cssxref("border-inline-start-color")}}
-- {{cssxref("border-block-end-style")}}
-- {{cssxref("border-block-start-style")}}
-- {{cssxref("border-inline-end-style")}}
-- {{cssxref("border-inline-start-style")}}
-- {{cssxref("border-block-end-width")}}
-- {{cssxref("border-block-start-width")}}
-- {{cssxref("border-inline-end-width")}}
-- {{cssxref("border-inline-start-width")}}
-- {{cssxref("border-start-start-radius")}}
-- {{cssxref("border-start-end-radius")}}
-- {{cssxref("border-end-start-radius")}}
-- {{cssxref("border-end-end-radius")}}
-- {{cssxref("box-sizing")}}
-- {{cssxref("box-decoration-break")}}
-- {{cssxref("text-shadow")}}
-- {{cssxref("url_value", "&lt;url&gt;")}} data type
-- {{cssxref("url")}} data type
-- {{cssxref("image")}} data type
-- {{cssxref("position")}} data type
+- `border-block-end-color`
+- `border-block-start-color`
+- `border-inline-end-color`
+- `border-inline-start-color`
+- `border-block-end-style`
+- `border-block-start-style`
+- `border-inline-end-style`
+- `border-inline-start-style`
+- `border-block-end-width`
+- `border-block-start-width`
+- `border-inline-end-width`
+- `border-inline-start-width`
+- `border-start-start-radius`
+- `border-start-end-radius`
+- `border-end-start-radius`
+- `border-end-end-radius`
+- `box-sizing`
+- `box-decoration-break`
+- `text-shadow`
+- `&lt;url&gt;` data type
+- `url` data type
+- `image` data type
+- `position` data type
 - [`currentColor`](/reference/values/color_value#currentcolor_keyword) keyword
 
 ## Examples
@@ -176,7 +176,7 @@ div:first-of-type {
 
 {{EmbedLiveSample("backgrounds", "", "450px")}}
 
-The background images are defined with {{cssxref("background-image")}}. The images are centered with {{cssxref("background-position")}}. Different values of the {{cssxref("background-clip")}} property for the multiple background images are used to make the background images stay within the content box. The background color gets clipped to the padding box preventing the background from appearing through the transparent sections for the {{cssxref("border-image")}} and the {{cssxref("border-style", "dotted")}} {{cssxref("border")}}. The rounded corners in the element on the right are created using the {{cssxref("border-radius")}} property. A single {{cssxref("box-shadow")}} declaration is used to set all the shadows, both inset and outset.
+The background images are defined with `background-image`. The images are centered with `background-position`. Different values of the `background-clip` property for the multiple background images are used to make the background images stay within the content box. The background color gets clipped to the padding box preventing the background from appearing through the transparent sections for the `border-image` and the `dotted` `border`. The rounded corners in the element on the right are created using the `border-radius` property. A single `box-shadow` declaration is used to set all the shadows, both inset and outset.
 
 Click "Play" in the example above to see or edit the code for the animation in the MDN Playground.
 
@@ -186,8 +186,8 @@ Click "Play" in the example above to see or edit the code for the animation in t
 
 ## See also
 
-- {{cssxref("filter")}}
-- {{cssxref("backdrop-filter")}}
+- `filter`
+- `backdrop-filter`
 - [`drop-shadow()`](/reference/values/filter-function/drop-shadow) filter function
 - [Applying color to HTML elements using CSS](/guides/Colors/Applying_color)
 - Tools:

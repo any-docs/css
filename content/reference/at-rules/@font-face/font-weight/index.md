@@ -6,11 +6,11 @@ browser-compat: css.at-rules.font-face.font-weight
 sidebar: cssref
 ---
 
-The **`font-weight`** [CSS](/en-US/docs/Web/CSS) {{cssxref("@font-face")}} descriptor enables authors to specify a single font weight, or a range of font weights, for the font specified in a {{cssxref("@font-face")}} at-rule. This is then used by the browser to select the appropriate font when a CSS rule sets a desired [font weight](/reference/properties/font-weight).
+The **`font-weight`** [CSS](/en-US/docs/Web/CSS) `@font-face` descriptor enables authors to specify a single font weight, or a range of font weights, for the font specified in a `@font-face` at-rule. This is then used by the browser to select the appropriate font when a CSS rule sets a desired [font weight](/reference/properties/font-weight).
 
-Typically, a developer will want to use fonts from a single font family in a range of different weights. With traditional, or _static_ fonts, a single font file contains characters from a font family in a specific weight and style: for example, "Helvetica bold italic". To enable displaying light, regular, bold, or extra-bold fonts when the `font-weight` property calls a specific weight, you can define multiple {{cssxref("@font-face")}} at-rules for the same family (all with the same {{cssxref("@font-face/font-family", "font-family")}} descriptor value), one for each weight or range of weights.
+Typically, a developer will want to use fonts from a single font family in a range of different weights. With traditional, or _static_ fonts, a single font file contains characters from a font family in a specific weight and style: for example, "Helvetica bold italic". To enable displaying light, regular, bold, or extra-bold fonts when the `font-weight` property calls a specific weight, you can define multiple `@font-face` at-rules for the same family (all with the same `font-family` descriptor value), one for each weight or range of weights.
 
-To declare the font to be used for a range of font weights, declare a space-separated pair of font-weight values as the value for the `font-weight` descriptor. When CSS rules set a font weight by setting the {{cssxref("font-weight")}} property or the {{cssxref("font")}} shorthand property, the appropriate font will then be used.
+To declare the font to be used for a range of font weights, declare a space-separated pair of font-weight values as the value for the `font-weight` descriptor. When CSS rules set a font weight by setting the `font-weight` property or the `font` shorthand property, the appropriate font will then be used.
 
 For example, if the descriptor is `font-weight: 400 600;`, when the property is `font-weight: 450` or `font-weight: 550`, that font will be use for that font-family.
 Whether the font is a static or a [variable font](/guides/Fonts/Variable_fonts), the font matching the range will be used. In this case, if the font is a static font, `450` and `550` will appear the same. If the font is a variable font, the latter will be bolder.
@@ -45,7 +45,7 @@ Each `<font-weight-absolute>` may be any one of the following:
 - `bold`
   - Bold font weight. Same as `700`.
 - `<number>`
-  - A {{cssxref("&lt;number&gt;")}} value between 1 and 1000, inclusive. Higher numbers represent weights that are bolder than (or as bold as) lower numbers. Certain commonly used values correspond to common weight names, as described in the [Common weight name mapping](#common_weight_name_mapping) section below.
+  - A `&lt;number&gt;` value between 1 and 1000, inclusive. Higher numbers represent weights that are bolder than (or as bold as) lower numbers. Certain commonly used values correspond to common weight names, as described in the [Common weight name mapping](#common_weight_name_mapping) section below.
 
 ### Common weight name mapping
 
@@ -90,7 +90,7 @@ People experiencing low vision conditions may have difficulty reading text set w
 
 In this example we include two fonts, one normal weight, one bold weight, from the ["Fira Sans"](https://fonts.google.com/specimen/Fira+Sans) font family using two `@font-face` at rules. We set `font-weight` descriptors to match the weight of the fonts.
 
-After this, CSS rules can select the normal or the bold font for the "Fira Sans" family just by setting the {{cssxref("font-weight")}} property. Note that the {{htmlelement("strong")}} HTML element also selects the bold font, because by default `<strong>` elements have a CSS `font-weight` property value of `bold`.
+After this, CSS rules can select the normal or the bold font for the "Fira Sans" family just by setting the `font-weight` property. Note that the {{htmlelement("strong")}} HTML element also selects the bold font, because by default `<strong>` elements have a CSS `font-weight` property value of `bold`.
 
 #### HTML
 
@@ -304,11 +304,11 @@ Note that the example paragraph does not get lighter than the `300` paragraph ab
 
 ## See also
 
-- {{cssxref("@font-face/font-display", "font-display")}}
-- {{cssxref("@font-face/font-family", "font-family")}}
-- {{cssxref("@font-face/font-stretch", "font-stretch")}}
-- {{cssxref("@font-face/font-style", "font-style")}}
-- {{cssxref("font-feature-settings", "font-feature-settings")}}
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-- {{cssxref("@font-face/src", "src")}}
-- {{cssxref("@font-face/unicode-range", "unicode-range")}} descriptor
+- `font-display`
+- `font-family`
+- `font-stretch`
+- `font-style`
+- `font-feature-settings`
+- `font-variation-settings`
+- `src`
+- `unicode-range` descriptor

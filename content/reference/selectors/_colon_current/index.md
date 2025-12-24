@@ -84,6 +84,6 @@ Currently, no browsers support this feature.
 ## See also
 
 - [Web Video Text Tracks Format (WebVTT)](/en-US/docs/Web/API/WebVTT_API)
-- {{cssxref(":past")}}
-- {{cssxref(":future")}}
+- `:past`
+- `:future`
 - [CSS selectors](/guides/Selectors) module

@@ -6,14 +6,14 @@ browser-compat: css.types.percentage
 sidebar: cssref
 ---
 
-The **`<percentage>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a percentage value. It is often used to define a size as relative to an element's parent object. Numerous properties can use percentages, such as {{CSSxRef("width")}}, {{CSSxRef("height")}}, {{CSSxRef("margin")}}, {{CSSxRef("padding")}}, and {{CSSxRef("font-size")}}.
+The **`<percentage>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a percentage value. It is often used to define a size as relative to an element's parent object. Numerous properties can use percentages, such as `width`, `height`, `margin`, `padding`, and `font-size`.
 
 > [!NOTE]
-> Only calculated values can be inherited. Thus, even if a percentage value is used on the parent property, a real value (such as a width in pixels for a {{CSSxRef("&lt;length&gt;")}} value) will be accessible on the inherited property, not the percentage value.
+> Only calculated values can be inherited. Thus, even if a percentage value is used on the parent property, a real value (such as a width in pixels for a `&lt;length&gt;` value) will be accessible on the inherited property, not the percentage value.
 
 ## Syntax
 
-The `<percentage>` data type consists of a {{CSSxRef("&lt;number&gt;")}} followed by the percentage sign (`%`). Optionally, it may be preceded by a single `+` or `-` sign, although negative values are not valid for all properties. As with all CSS dimensions, there is no space between the symbol and the number.
+The `<percentage>` data type consists of a `&lt;number&gt;` followed by the percentage sign (`%`). Optionally, it may be preceded by a single `+` or `-` sign, although negative values are not valid for all properties. As with all CSS dimensions, there is no space between the symbol and the number.
 
 ## Interpolation
 
@@ -86,5 +86,5 @@ When animated, values of the `<percentage>` data type are {{Glossary("interpolat
 
 ## See also
 
-- {{cssxref("&lt;length-percentage&gt;")}}
+- `&lt;length-percentage&gt;`
 - [CSS values and units](/guides/Values_and_units) module

@@ -19,10 +19,10 @@ sidebar: cssref
 
 The `::-webkit-scrollbar` CSS pseudo-element affects the style of an element's scrollbar when it has scrollable overflow.
 
-The {{cssxref("scrollbar-color")}} and {{cssxref("scrollbar-width")}} standard properties may be used as alternatives for browsers that do not support this pseudo-element and the related `::-webkit-scrollbar-*` pseudo-elements (see [Browser compatibility](#browser_compatibility)).
+The `scrollbar-color` and `scrollbar-width` standard properties may be used as alternatives for browsers that do not support this pseudo-element and the related `::-webkit-scrollbar-*` pseudo-elements (see [Browser compatibility](#browser_compatibility)).
 
 > [!NOTE]
-> If {{cssxref("scrollbar-color")}} and {{cssxref("scrollbar-width")}} are supported and have any value other than `auto` set, they will override `::-webkit-scrollbar-*` styling.
+> If `scrollbar-color` and `scrollbar-width` are supported and have any value other than `auto` set, they will override `::-webkit-scrollbar-*` styling.
 > See [Adding a fallback for scrollbar styles](#adding_a_fallback_for_scrollbar_styles) for more details.
 
 ## CSS Scrollbar Selectors
@@ -123,8 +123,8 @@ Authors should avoid styling scrollbars, as changing the appearance of scrollbar
 
 ### Adding a fallback for scrollbar styles
 
-You can use a {{cssxref("@supports")}} at-rule to detect if a browser supports the standard {{cssxref("scrollbar-color")}} and {{cssxref("scrollbar-width")}} properties, and otherwise use a fallback with `::-webkit-scrollbar-*` pseudo-elements.
-The following example shows how to apply colors to scrollbars using {{cssxref("scrollbar-color")}} if supported and `::-webkit-scrollbar-*` pseudo-elements if not.
+You can use a `@supports` at-rule to detect if a browser supports the standard `scrollbar-color` and `scrollbar-width` properties, and otherwise use a fallback with `::-webkit-scrollbar-*` pseudo-elements.
+The following example shows how to apply colors to scrollbars using `scrollbar-color` if supported and `::-webkit-scrollbar-*` pseudo-elements if not.
 
 #### HTML
 
@@ -195,8 +195,8 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef("scrollbar-width")}}
-- {{CSSxRef("scrollbar-color")}}
+- `scrollbar-width`
+- `scrollbar-color`
 - [Don't use custom scrollbars](https://ericwbailey.website/published/dont-use-custom-css-scrollbars/) (2023)
 - [Scrollbar styling](https://developer.chrome.com/docs/css-ui/scrollbar-styling) on developer.chrome.com (2024)
 - [Styling Scrollbars](https://webkit.org/blog/363/styling-scrollbars/) on WebKit.org (2009)

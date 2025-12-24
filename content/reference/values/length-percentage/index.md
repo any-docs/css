@@ -6,11 +6,11 @@ browser-compat: css.types.length-percentage
 sidebar: cssref
 ---
 
-The **`<length-percentage>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a value that can be either a {{Cssxref("length")}} or a {{Cssxref("percentage")}}.
+The **`<length-percentage>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a value that can be either a `length` or a `percentage`.
 
 ## Syntax
 
-Refer to the documentation for {{Cssxref("length")}} and {{Cssxref("percentage")}} for details of the individual syntaxes allowed by this type.
+Refer to the documentation for `length` and `percentage` for details of the individual syntaxes allowed by this type.
 
 ## Formal syntax
 
@@ -57,7 +57,7 @@ p {
 
 ### Use in calc()
 
-Where a `<length-percentage>` is specified as an allowable type, this means that the percentage resolves to a length and therefore can be used in a {{cssxref("calc()")}} expression. Therefore, all of the following values are acceptable for {{cssxref("width")}}:
+Where a `<length-percentage>` is specified as an allowable type, this means that the percentage resolves to a length and therefore can be used in a `calc()` expression. Therefore, all of the following values are acceptable for `width`:
 
 ```css example-good
 width: 200px;
@@ -75,6 +75,6 @@ width: calc(100% - 200px);
 
 ## See also
 
-- {{cssxref("&lt;percentage&gt;")}}
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;percentage&gt;`
+- `&lt;length&gt;`
 - [CSS values and units](/guides/Values_and_units) module

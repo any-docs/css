@@ -6,7 +6,7 @@ spec-urls: https://drafts.csswg.org/css-fonts/#descdef-font-feature-values-font-
 sidebar: cssref
 ---
 
-The **`font-display`** descriptor for the {{cssxref("@font-feature-values")}} at-rule sets the default value of how a font face is displayed based on whether and when it is downloaded. Setting a value for the `font-display` descriptor within a `@font-feature-values` block sets the default value of the `font-display` descriptor for the {{cssxref("@font-face")}} at-rule for all the fonts with the same {{cssxref("@font-face/font-family", "font-family")}} value.
+The **`font-display`** descriptor for the `@font-feature-values` at-rule sets the default value of how a font face is displayed based on whether and when it is downloaded. Setting a value for the `font-display` descriptor within a `@font-feature-values` block sets the default value of the `font-display` descriptor for the `@font-face` at-rule for all the fonts with the same `font-family` value.
 
 ## Syntax
 
@@ -69,5 +69,5 @@ Currently, no browsers support this feature.
 
 ## See also
 
-- {{cssxref("@font-face/font-display", "font-display")}} descriptor for {{cssxref("@font-face")}} at-rule
+- `font-display` descriptor for `@font-face` at-rule
 - [CSS fonts](/guides/Fonts) module

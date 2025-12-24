@@ -9,7 +9,7 @@ sidebar: cssref
 The **`light-dark()`** [CSS](/en-US/docs/Web/CSS) [`<color>` function](/reference/values/Functions#color_functions) enables setting two colors for a property - returning one of the two colors options by detecting if the developer has set a light or dark color scheme or the user has requested light or dark color theme - without needing to encase the theme colors within a [`prefers-color-scheme`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme) [media feature](/guides/Media_queries/Using#targeting_media_features) query.
 Users are able to indicate their color-scheme preference through their operating system settings (e.g., light or dark mode) or their user agent settings. The `light-dark()` function enables providing two color values where any `<color>` value is accepted. The `light-dark()` CSS color function returns the first value if the user's preference is set to `light` or if no preference is set and the second value if the user's preference is set to `dark`.
 
-To enable support for the `light-dark()` color function, the {{CSSXref("color-scheme")}} must have a value of `light dark`, usually set on the {{CSSXref(":root")}} [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes).
+To enable support for the `light-dark()` color function, the `color-scheme` must have a value of `light dark`, usually set on the `:root` [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes).
 
 ```css
 :root {
@@ -39,10 +39,10 @@ color: light-dark(var(--light), var(--dark));
 Functional notation: `light-dark(light-color, dark-color)`
 
 - `light-color`
-  - {{CSSXref("&lt;color&gt;")}} value to be set for light {{CSSXref("color-scheme")}}.
+  - `&lt;color&gt;` value to be set for light `color-scheme`.
 
 - `dark-color`
-  - {{CSSXref("&lt;color&gt;")}} value to be set for dark {{CSSXref("color-scheme")}}.
+  - `&lt;color&gt;` value to be set for dark `color-scheme`.
 
 ## Formal syntax
 
@@ -138,10 +138,10 @@ section {
 
 ## See also
 
-- {{CSSXref("color-scheme")}}
-- {{CSSXref("&lt;color&gt;")}}
+- `color-scheme`
+- `&lt;color&gt;`
 - [CSS colors](/guides/Colors) module
-- [`prefers-contrast`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast) {{cssxref("@media")}} feature
+- [`prefers-contrast`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast) `@media` feature
 - [`contrast()`](/reference/values/filter-function/contrast)
 - [WCAG: color contrast](/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast)
-- [CSS custom properties](/reference/properties/--*) and {{cssxref("var")}}
+- [CSS custom properties](/reference/properties/--*) and `var`

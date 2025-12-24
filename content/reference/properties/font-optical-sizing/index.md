@@ -77,7 +77,7 @@ font-optical-sizing: unset;
 
 ## Description
 
-Optical sizing is enabled by default for fonts that have an optical size variation axis. The optical size variation axis is represented by `opsz` in {{cssxref("font-variation-settings")}}.
+Optical sizing is enabled by default for fonts that have an optical size variation axis. The optical size variation axis is represented by `opsz` in `font-variation-settings`.
 
 When optical sizing is used, small text sizes are often rendered with thicker strokes and larger serifs, whereas larger text is often rendered more delicately with more contrast between thicker and thinner strokes.
 
@@ -134,6 +134,6 @@ p {
 
 ## See also
 
-- {{cssxref("font-size")}}
-- {{cssxref("font-size-adjust")}}
+- `font-size`
+- `font-size-adjust`
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)

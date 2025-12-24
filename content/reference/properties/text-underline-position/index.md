@@ -6,7 +6,7 @@ browser-compat: css.properties.text-underline-position
 sidebar: cssref
 ---
 
-The **`text-underline-position`** [CSS](/en-US/docs/Web/CSS) property specifies the position of the underline which is set using the {{cssxref("text-decoration")}} property's `underline` value.
+The **`text-underline-position`** [CSS](/en-US/docs/Web/CSS) property specifies the position of the underline which is set using the `text-decoration` property's `underline` value.
 
 {{InteractiveExample("CSS Demo: text-underline-position")}}
 
@@ -123,7 +123,7 @@ p {
 
 In this example we set both the paragraphs to have a thick underline. In the horizontal text we use `text-underline-position: under;` to put the underline below all the descenders.
 
-In the text with a vertical {{cssxref("writing-mode")}} set, we can then use values of `left` or `right` to make the underline appear on the left or right of the text as required.
+In the text with a vertical `writing-mode` set, we can then use values of `left` or `right` to make the underline appear on the left or right of the text as required.
 
 The live example looks like this:
 
@@ -131,7 +131,7 @@ The live example looks like this:
 
 ### Setting text-underline-position globally
 
-Because the `text-underline-position` property inherits and is not reset by the {{cssxref("text-decoration")}} shorthand property, it may be appropriate to set its value at a global level. For example, the `under` value may be appropriate for a document with lots of chemical and mathematical formulas, which make a large use of subscripts.
+Because the `text-underline-position` property inherits and is not reset by the `text-decoration` shorthand property, it may be appropriate to set its value at a global level. For example, the `under` value may be appropriate for a document with lots of chemical and mathematical formulas, which make a large use of subscripts.
 
 ```css
 :root {
@@ -149,4 +149,4 @@ Because the `text-underline-position` property inherits and is not reset by the 
 
 ## See also
 
-- The {{cssxref("text-decoration")}} property is a shorthand for setting most text-decoration properties, including {{cssxref("text-decoration-line")}}, {{cssxref("text-decoration-color")}}, and {{cssxref("text-decoration-style")}}. However, it does not set `text-underline-position`.
+- The `text-decoration` property is a shorthand for setting most text-decoration properties, including `text-decoration-line`, `text-decoration-color`, and `text-decoration-style`. However, it does not set `text-underline-position`.

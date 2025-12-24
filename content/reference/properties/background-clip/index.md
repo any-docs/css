@@ -75,7 +75,7 @@ background-clip: unset;
 - `text`
   - The background is painted within (clipped to) the foreground text.
 - `border-area`
-  - The background is painted within (clipped to) the area painted by the border, taking {{Cssxref("border-width")}} and {{Cssxref("border-style")}} into account but ignoring any transparency introduced by {{Cssxref("border-color")}}.
+  - The background is painted within (clipped to) the area painted by the border, taking `border-width` and `border-style` into account but ignoring any transparency introduced by `border-color`.
 
 ## Description
 
@@ -85,15 +85,15 @@ The background is always drawn behind the border, so `background-clip: border-bo
 > Because the [root element](/en-US/docs/Web/HTML/Reference/Elements/html) has a different background painting area, the `background-clip` property has no effect when specified on it. See "[The backgrounds of special elements.](https://drafts.csswg.org/css-backgrounds-3/#special-backgrounds)"
 
 > [!NOTE]
-> For documents whose [root element](/en-US/docs/Web/HTML/Reference/Elements/html) is an HTML element: if the computed value of {{cssxref("background-image")}} on the root element is `none` and its {{cssxref("background-color")}} is `transparent`, user agents must instead propagate the computed values of the `background` properties from that element's first HTML {{HTMLElement("body")}} child element. The used values of that `<body>` element's `background` properties are their initial values, and the propagated values are treated as if they were specified on the root element. It is recommended that authors of HTML documents specify the canvas background for the `<body>` element rather than the HTML element.
+> For documents whose [root element](/en-US/docs/Web/HTML/Reference/Elements/html) is an HTML element: if the computed value of `background-image` on the root element is `none` and its `background-color` is `transparent`, user agents must instead propagate the computed values of the `background` properties from that element's first HTML {{HTMLElement("body")}} child element. The used values of that `<body>` element's `background` properties are their initial values, and the propagated values are treated as if they were specified on the root element. It is recommended that authors of HTML documents specify the canvas background for the `<body>` element rather than the HTML element.
 
 ## Accessibility
 
 When using `background-clip: text`, check that the contrast ratio between the background color and the color of the text placed over it is high enough that people experiencing low vision conditions will be able to read the content of the page.
 
-If the background image does not load, this could also lead to the text becoming unreadable. Add a fallback {{cssxref("background-color")}} to prevent this from happening, and test without the image.
+If the background image does not load, this could also lead to the text becoming unreadable. Add a fallback `background-color` to prevent this from happening, and test without the image.
 
-Consider using feature queries with {{cssxref("@supports")}} to test for support of `background-clip: text` and provide an accessible alternative where it is not supported.
+Consider using feature queries with `@supports` to test for support of `background-clip: text` and provide an accessible alternative where it is not supported.
 
 ## Formal definition
 
@@ -169,6 +169,6 @@ p {
 
 ## See also
 
-- The {{cssxref("clip-path")}} property creates a clipping region that defines what part of an _entire element_ should be displayed.
-- Background properties: {{cssxref("background")}}, {{cssxref("background-color")}}, {{cssxref("background-image")}}, {{cssxref("background-origin")}}
+- The `clip-path` property creates a clipping region that defines what part of an _entire element_ should be displayed.
+- Background properties: `background`, `background-color`, `background-image`, `background-origin`
 - [Introduction to the CSS box model](/guides/Box_model/Introduction)

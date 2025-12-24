@@ -6,7 +6,7 @@ browser-compat: css.properties.border-right-style
 sidebar: cssref
 ---
 
-The **`border-right-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's right {{cssxref("border")}}.
+The **`border-right-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's right `border`.
 
 > [!NOTE]
 > The specification doesn't define how borders of different styles connect in the corners.
@@ -83,7 +83,7 @@ border-right-style: revert-layer;
 border-right-style: unset;
 ```
 
-The `border-right-style` property is specified as a single {{cssxref("line-style")}} keyword value.
+The `border-right-style` property is specified as a single `line-style` keyword value.
 
 ## Formal definition
 
@@ -182,5 +182,5 @@ td {
 
 ## See also
 
-- The other style-related border properties: {{Cssxref("border-bottom-style")}}, {{Cssxref("border-left-style")}}, {{Cssxref("border-top-style")}}, and {{Cssxref("border-style")}}.
-- The other right-border-related properties: {{Cssxref("border-right")}}, {{Cssxref("border-right-color")}}, and {{Cssxref("border-right-width")}}.
+- The other style-related border properties: `border-bottom-style`, `border-left-style`, `border-top-style`, and `border-style`.
+- The other right-border-related properties: `border-right`, `border-right-color`, and `border-right-width`.

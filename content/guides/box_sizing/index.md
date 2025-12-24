@@ -23,28 +23,28 @@ The [logical properties and values module](/guides/Logical_properties_and_values
 
 ### Properties
 
-- {{cssxref("aspect-ratio")}}
-- {{cssxref("box-sizing")}}
-- {{cssxref("contain-intrinsic-block-size")}}
-- {{cssxref("contain-intrinsic-height")}}
-- {{cssxref("contain-intrinsic-inline-size")}}
-- {{cssxref("contain-intrinsic-size")}}
-- {{cssxref("contain-intrinsic-width")}}
-- {{cssxref("height")}}
-- {{cssxref("max-height")}}
-- {{cssxref("max-width")}}
-- {{cssxref("min-height")}}
-- {{cssxref("min-width")}}
-- {{cssxref("width")}}
+- `aspect-ratio`
+- `box-sizing`
+- `contain-intrinsic-block-size`
+- `contain-intrinsic-height`
+- `contain-intrinsic-inline-size`
+- `contain-intrinsic-size`
+- `contain-intrinsic-width`
+- `height`
+- `max-height`
+- `max-width`
+- `min-height`
+- `min-width`
+- `width`
 
 The CSS box sizing module also introduces the `min-intrinsic-sizing` property. Currently, no browsers support this feature.
 
 ### Data types and values
 
-- {{cssxref("ratio")}} data type
-- {{cssxref("min-content")}} value
-- {{cssxref("max-content")}} value
-- {{cssxref("fit-content")}} value
+- `ratio` data type
+- `min-content` value
+- `max-content` value
+- `fit-content` value
 
 ### Functions
 
@@ -70,68 +70,68 @@ The CSS box sizing module also introduces the `min-intrinsic-sizing` property. C
   - Explains the visual formatting model.
 
 - [Controlling ratios of flex items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios)
-  - Explains intrinsic sizing as a precursor to understanding how to control the size and flexibility of flex items along the main axis using {{CSSxRef("flex-grow")}}, {{CSSxRef("flex-shrink")}}, and {{CSSxRef("flex-basis")}}.
+  - Explains intrinsic sizing as a precursor to understanding how to control the size and flexibility of flex items along the main axis using `flex-grow`, `flex-shrink`, and `flex-basis`.
 
 ## Related concepts
 
 - [CSS logical properties](/guides/Logical_properties_and_values) module
-  - {{CSSxRef("min-inline-size")}}
-  - {{CSSxRef("block-size")}}
-  - {{CSSxRef("inline-size")}}
-  - {{CSSxRef("max-block-size")}}
-  - {{CSSxRef("max-inline-size")}}
-  - {{CSSxRef("min-block-size")}}
-  - {{CSSxRef("min-inline-size")}}
-  - {{CSSxRef("margin-block")}}
-  - {{CSSxRef("margin-inline")}}
-  - {{CSSxRef("padding-block")}}
-  - {{CSSxRef("padding-inline")}}
-  - {{CSSxRef("border-block")}}
-  - {{CSSxRef("border-inline")}}
-  - {{CSSxRef("contain-intrinsic-block-size")}}
-  - {{CSSxRef("contain-intrinsic-inline-size")}}
-  - {{CSSxRef("overflow-block")}}
-  - {{CSSxRef("overflow-inline")}}
-  - {{CSSxRef("overscroll-behavior-block")}}
-  - {{CSSxRef("overscroll-behavior-inline")}}
+  - `min-inline-size`
+  - `block-size`
+  - `inline-size`
+  - `max-block-size`
+  - `max-inline-size`
+  - `min-block-size`
+  - `min-inline-size`
+  - `margin-block`
+  - `margin-inline`
+  - `padding-block`
+  - `padding-inline`
+  - `border-block`
+  - `border-inline`
+  - `contain-intrinsic-block-size`
+  - `contain-intrinsic-inline-size`
+  - `overflow-block`
+  - `overflow-inline`
+  - `overscroll-behavior-block`
+  - `overscroll-behavior-inline`
 - [CSS box model](/guides/Box_model) module
-  - {{cssxref("margin")}} shorthand
-  - {{cssxref("margin-bottom")}}
-  - {{cssxref("margin-left")}}
-  - {{cssxref("margin-right")}}
-  - {{cssxref("margin-top")}}
-  - {{cssxref("margin-trim")}}
-  - {{cssxref("padding")}} shorthand
-  - {{cssxref("padding-bottom")}}
-  - {{cssxref("padding-left")}}
-  - {{cssxref("padding-right")}}
-  - {{cssxref("padding-top")}}
+  - `margin` shorthand
+  - `margin-bottom`
+  - `margin-left`
+  - `margin-right`
+  - `margin-top`
+  - `margin-trim`
+  - `padding` shorthand
+  - `padding-bottom`
+  - `padding-left`
+  - `padding-right`
+  - `padding-top`
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
-  - {{cssxref("border")}} shorthand
-  - {{cssxref("border-width")}} shorthand
-  - {{cssxref("border-bottom-width")}}
-  - {{cssxref("border-left-width")}}
-  - {{cssxref("border-right-width")}}
-  - {{cssxref("border-top-width")}}
+  - `border` shorthand
+  - `border-width` shorthand
+  - `border-bottom-width`
+  - `border-left-width`
+  - `border-right-width`
+  - `border-top-width`
 - [CSS overflow](/guides/Overflow) module
-  - {{CSSxRef("overflow")}} shorthand
-  - {{CSSxRef("overflow-block")}}
-  - {{CSSxRef("overflow-clip-margin")}}
-  - {{CSSxRef("overflow-inline")}}
-  - {{CSSxRef("overflow-x")}}
-  - {{CSSxRef("overflow-y")}}
-  - {{CSSxRef("text-overflow")}}
+  - `overflow` shorthand
+  - `overflow-block`
+  - `overflow-clip-margin`
+  - `overflow-inline`
+  - `overflow-x`
+  - `overflow-y`
+  - `text-overflow`
 - [CSS grid layout](/guides/Grid_layout) module
-  - {{CSSxRef("grid")}}
-  - {{CSSxRef("grid-auto-columns")}}
-  - {{CSSxRef("grid-auto-rows")}}
-  - {{CSSxRef("grid-template-columns")}}
-  - {{CSSxRef("grid-template-rows")}}
-  - {{CSSxRef("repeat")}}
-  - {{CSSxRef("minmax")}} function
+  - `grid`
+  - `grid-auto-columns`
+  - `grid-auto-rows`
+  - `grid-template-columns`
+  - `grid-template-rows`
+  - `repeat`
+  - `minmax` function
 - [CSS flexible box layout](/guides/Flexible_box_layout) module
-  - {{CSSxRef("flex-basis")}}
-  - {{CSSxRef("flex")}}
+  - `flex-basis`
+  - `flex`
 
 ## Specifications
 

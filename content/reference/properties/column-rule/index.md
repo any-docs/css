@@ -50,9 +50,9 @@ column-rule: thick inset blue;
 
 This property is a shorthand for the following CSS properties:
 
-- {{Cssxref("column-rule-color")}}
-- {{Cssxref("column-rule-style")}}
-- {{Cssxref("column-rule-width")}}
+- `column-rule-color`
+- `column-rule-style`
+- `column-rule-width`
 
 ## Syntax
 
@@ -75,11 +75,11 @@ column-rule: unset;
 The `column-rule` property is specified as one, two, or three of the values listed below, in any order.
 
 - `<'column-rule-width'>`
-  - Is a {{cssxref("&lt;length&gt;")}} or one of the three keywords, `thin`, `medium`, or `thick`. See {{cssxref("border-width")}} for details.
+  - Is a `&lt;length&gt;` or one of the three keywords, `thin`, `medium`, or `thick`. See `border-width` for details.
 - `<'column-rule-style'>`
-  - See {{cssxref("border-style")}} for possible values and details.
+  - See `border-style` for possible values and details.
 - `<'column-rule-color'>`
-  - Is a {{cssxref("&lt;color&gt;")}} value.
+  - Is a `&lt;color&gt;` value.
 
 ## Formal definition
 
@@ -152,6 +152,6 @@ p.abc {
 ## See also
 
 - [Learn: Multiple-column Layout](/en-US/docs/Learn_web_development/Core/CSS_layout/Multiple-column_Layout)
-- {{CSSXref("column-rule-style")}}
-- {{CSSXref("column-rule-width")}}
-- {{CSSXref("column-rule-color")}}
+- `column-rule-style`
+- `column-rule-width`
+- `column-rule-color`

@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`translateX()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) repositions an element horizontally on the 2D plane. Its
-result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: translateX()")}}
 
@@ -69,9 +69,9 @@ transform: translateX(50%);
 ### Values
 
 - `<length-percentage>`
-  - Is a {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} representing the abscissa (horizontal, x-component) of the
+  - Is a `&lt;length&gt;` or `&lt;percentage&gt;` representing the abscissa (horizontal, x-component) of the
     translating vector [tx, 0]. In [Cartesian coordinate system](/reference/values/transform-function#cartesian_coordinates) it represents shift along x-axis. A percentage value refers to the width of the reference box defined by the
-    {{cssxref("transform-box")}} property.
+    `transform-box` property.
 
 <table class="standard-table">
   <thead>
@@ -156,6 +156,6 @@ div {
 
 - [`translate()`](/reference/values/transform-function/translate)
 - [`translateY()`](/reference/values/transform-function/translateY)
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("translate")}}
+- `transform`
+- `&lt;transform-function&gt;`
+- `translate`

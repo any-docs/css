@@ -6,7 +6,7 @@ browser-compat: css.properties.text-emphasis-style
 sidebar: cssref
 ---
 
-The **`text-emphasis-style`** [CSS](/en-US/docs/Web/CSS) property sets the appearance of emphasis marks. It can also be set, and reset, using the {{cssxref("text-emphasis")}} shorthand.
+The **`text-emphasis-style`** [CSS](/en-US/docs/Web/CSS) property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
 
 {{InteractiveExample("CSS Demo: text-emphasis-style")}}
 

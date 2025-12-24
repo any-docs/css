@@ -45,8 +45,8 @@ The **`@page`** at-rule is a CSS at-rule used to modify different aspects of pri
 
 The `@page` at-rule can contain only page descriptors and [margin at-rules](#margin_at-rules). The following descriptors have been implemented by at least one browser:
 
-- {{cssxref("margin")}}
-  - Specifies the page margins. Individual margin properties {{cssxref("margin-top")}}, {{cssxref("margin-right")}}, {{cssxref("margin-bottom")}}, and {{cssxref("margin-left")}} can also be used.
+- `margin`
+  - Specifies the page margins. Individual margin properties `margin-top`, `margin-right`, `margin-bottom`, and `margin-left` can also be used.
 - [`page-orientation`](/en-US/docs/Web/CSS/Reference/At-rules/@page/page-orientation)
   - Specifies the orientation of the page. This does not affect the layout of the page; the rotation is applied after the layout in the output medium.
 - [`size`](/en-US/docs/Web/CSS/Reference/At-rules/@page/size)
@@ -130,16 +130,16 @@ The specification mentions following CSS properties to be applicable to page box
 
 ## Description
 
-The @page rule defines properties of the page box. The `@page` at-rule can be accessed via the CSS object model interface {{domxref("CSSPageRule")}}.
+The @page rule defines properties of the page box. The `@page` at-rule can be accessed via the CSS object model interface `CSSPageRule`.
 
 > [!NOTE]
-> The W3C is discussing how to handle viewport-related {{cssxref("&lt;length&gt;")}} units, `vh`, `vw`, `vmin`, and `vmax`. Meanwhile do not use them within a `@page` at-rule.
+> The W3C is discussing how to handle viewport-related `&lt;length&gt;` units, `vh`, `vw`, `vmin`, and `vmax`. Meanwhile do not use them within a `@page` at-rule.
 
 ### Related properties
 
 The `@page` at-rule, allows the user to assign a name to the rule, which is then called in a declaration using the `page` property.
 
-- {{Cssxref("page")}}
+- `page`
   - Allows a selector to use a user defined **named page**
 
 ## Formal syntax
@@ -153,10 +153,10 @@ Where the `<page-body>` includes:
 
 and `<pseudo-page>` represents these pseudo-classes:
 
-- {{Cssxref(":blank")}}
-- {{Cssxref(":first")}}
-- {{Cssxref(":left")}}
-- {{Cssxref(":right")}}
+- `:blank`
+- `:first`
+- `:left`
+- `:right`
 
 ## Margin at-rules
 
@@ -278,7 +278,7 @@ The page-margin properties are the set of CSS properties can be set in any indiv
 
 Named pages enable performing per-page layout and adding [page-breaks](/guides/Fragmentation) in a declarative manner when printing.
 
-Named pages can be applied using the {{Cssxref("page")}} property. This allows the user to create different page configurations for use in print layouts.
+Named pages can be applied using the `page` property. This allows the user to create different page configurations for use in print layouts.
 
 An example of this can be found on the [`page`](/reference/properties/page#examples) examples.
 
@@ -362,10 +362,10 @@ section {
 
 See the various [pseudo-classes](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) of `@page` for examples.
 
-- {{Cssxref(":blank")}}
-- {{Cssxref(":first")}}
-- {{Cssxref(":left")}}
-- {{Cssxref(":right")}}
+- `:blank`
+- `:first`
+- `:left`
+- `:right`
 
 ## Specifications
 
@@ -377,7 +377,7 @@ See the various [pseudo-classes](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-
 
 ## See also
 
-- The {{cssxref("page")}} property
+- The `page` property
 - The `@page` [`size`](/en-US/docs/Web/CSS/Reference/At-rules/@page/size) descriptor
 - [CSS paged media](/guides/Paged_media) module
 - [\[META\] CSS Paged Media Module Level 3](https://bugzil.la/286443) Bugzilla for tracking progress on the subject (page-based counters, etc.)

@@ -6,7 +6,7 @@ browser-compat: css.properties.perspective-origin
 sidebar: cssref
 ---
 
-The **`perspective-origin`** [CSS](/en-US/docs/Web/CSS) property determines the position at which the viewer is looking. It is used as the _vanishing point_ by the {{cssxref("perspective")}} property.
+The **`perspective-origin`** [CSS](/en-US/docs/Web/CSS) property determines the position at which the viewer is looking. It is used as the _vanishing point_ by the `perspective` property.
 
 {{InteractiveExample("CSS Demo: perspective-origin")}}
 
@@ -126,14 +126,14 @@ perspective-origin: unset;
 
 - _x-position_
   - Indicates the position of the abscissa of the _vanishing point_. It can have one of the following values:
-    - {{cssxref("&lt;length-percentage&gt;")}} indicating the position as an absolute length value or relative to the width of the element. The value may be negative.
+    - `&lt;length-percentage&gt;` indicating the position as an absolute length value or relative to the width of the element. The value may be negative.
     - `left`, a keyword being a shortcut for the `0` length value.
     - `center`, a keyword being a shortcut for the `50%` percentage value.
     - `right`, a keyword being a shortcut for the `100%` percentage value.
 
 - _y-position_
   - Indicates the position of the ordinate of the _vanishing point_. It can have one of the following values:
-    - {{cssxref("&lt;length-percentage&gt;")}} indicating the position as an absolute length value or relative to the height of the element. The value may be negative.
+    - `&lt;length-percentage&gt;` indicating the position as an absolute length value or relative to the height of the element. The value may be negative.
     - `top`, a keyword being a shortcut for the `0` length value.
     - `center`, a keyword being a shortcut for the `50%` percentage value.
     - `bottom`, a keyword being a shortcut for the `100%` percentage value.

@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`clip-rule`** [CSS](/en-US/docs/Web/CSS) property determines, when parts of the path overlap other parts, which pixels in a mask's box are inside the clipping shape defined by a [clip path](/reference/properties/clip-path) and which are outside.
 
-The `clip-rule` property only applies to SVG elements that are contained within a {{SVGElement("clipPath")}} element, overriding the element's {{SVGAttr("clip-rule")}} attribute value if present. The `clip-rule` property basically works as the {{cssxref("fill-rule")}} property, except that it applies to `<clipPath>` definitions. It does not have any effect on CSS {{cssxref("basic-shape")}}s.
+The `clip-rule` property only applies to SVG elements that are contained within a {{SVGElement("clipPath")}} element, overriding the element's {{SVGAttr("clip-rule")}} attribute value if present. The `clip-rule` property basically works as the `fill-rule` property, except that it applies to `<clipPath>` definitions. It does not have any effect on CSS `basic-shape`s.
 
 ## Syntax
 
@@ -69,7 +69,7 @@ The markup has multiple `<svg>` containers, each containing a `<clipPath>` eleme
 
 #### CSS
 
-The `clip-rule` for the `<path>` in the first SVG is set to `evenodd`; `nonzero` in the second SVG. For the path-only SVG, we removed the default {{cssxref("fill")}} and defined both a {{cssxref("stroke")}} color and {{cssxref("stroke-width")}} to make the overlapping path lines visible:
+The `clip-rule` for the `<path>` in the first SVG is set to `evenodd`; `nonzero` in the second SVG. For the path-only SVG, we removed the default `fill` and defined both a `stroke` color and `stroke-width` to make the overlapping path lines visible:
 
 ```css hidden
 body {
@@ -104,7 +104,7 @@ svg {
 
 ### Within basic shape definitions
 
-This example demonstrates that, while the `clip-rule` does not have any effect on CSS {{cssxref("basic-shape")}}s, it can affect a `<clipPath>` used as the source of a shape.
+This example demonstrates that, while the `clip-rule` does not have any effect on CSS `basic-shape`s, it can affect a `<clipPath>` used as the source of a shape.
 
 #### HTML
 
@@ -128,7 +128,7 @@ We include an SVG with two `<clipPath>` elements that define star shapes, which 
 
 #### CSS
 
-We provide the `<div>` elements with a set {{cssxref("width")}} and {{cssxref("height")}}, adding a [`conic-gradient()`](/reference/values/gradient/conic-gradient) for their {{cssxref("background-image")}} value:
+We provide the `<div>` elements with a set `width` and `height`, adding a [`conic-gradient()`](/reference/values/gradient/conic-gradient) for their `background-image` value:
 
 ```css hidden
 body {
@@ -151,7 +151,7 @@ div {
 }
 ```
 
-We use the {{cssxref("clip-path")}} property to set the different `<clipPath>` elements as the clipping path for each `<div>`:
+We use the `clip-path` property to set the different `<clipPath>` elements as the clipping path for each `<div>`:
 
 ```css
 div:first-of-type {
@@ -277,8 +277,8 @@ In this case, because the outer part of the path moves in a clockwise (left-to-r
 
 ## See also
 
-- {{cssxref("fill-rule")}}
-- {{cssxref("clip-path")}}
+- `fill-rule`
+- `clip-path`
 - [Introduction to CSS clipping](/guides/Masking/Clipping)
 - [CSS masking](/guides/Masking) module
 - SVG {{SVGAttr("clip-rule")}} attribute

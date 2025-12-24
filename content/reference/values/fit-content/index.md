@@ -7,10 +7,10 @@ sidebar: cssref
 ---
 
 The `fit-content` sizing keyword represents an element size that adapts to its content while staying within the limits of its container.
-The keyword ensures that the element is never smaller than its minimum intrinsic size ({{cssxref("min-content")}}) or larger than its maximum intrinsic size ({{cssxref("max-content")}}).
+The keyword ensures that the element is never smaller than its minimum intrinsic size (`min-content`) or larger than its maximum intrinsic size (`max-content`).
 
 > [!NOTE]
-> This keyword is different from the {{cssxref("fit-content()")}} function. The function is used for grid track sizing (for example in {{cssxref("grid-template-columns")}} and {{cssxref("grid-auto-rows")}}) and for laid-out box sizing for properties such as {{cssxref("width")}}, {{cssxref("height")}}, {{cssxref("min-width")}}, and {{cssxref("max-height")}}.
+> This keyword is different from the `fit-content()` function. The function is used for grid track sizing (for example in `grid-template-columns` and `grid-auto-rows`) and for laid-out box sizing for properties such as `width`, `height`, `min-width`, and `max-height`.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ block-size: fit-content;
 
 ## Description
 
-This keyword is used with sizing properties such as {{cssxref("width")}}, {{cssxref("height")}}, {{cssxref("block-size")}}, {{cssxref("inline-size")}}, {{cssxref("min-width")}}, and {{cssxref("max-width")}}. When used on these properties, the calculated size refers to the element's [content box](/reference/values/box-edge#content-box).
+This keyword is used with sizing properties such as `width`, `height`, `block-size`, `inline-size`, `min-width`, and `max-width`. When used on these properties, the calculated size refers to the element's [content box](/reference/values/box-edge#content-box).
 
 When `fit-content` is set, the element grows or shrinks to fit its content, but stops expanding after the relevant dimension reaches the size limit of its container.
 
@@ -36,7 +36,7 @@ min(max-content, max(min-content, stretch))
 
 where, [`stretch`](/reference/properties/width#stretch) matches the element's [margin box](/reference/values/box-edge#margin-box) to the width of its [containing block](/guides/Display/Containing_block#identifying_the_containing_block). The keyword is essentially equivalent to `fit-content(stretch)`.
 
-You can enable animations to and from `fit-content` using the {{cssxref("interpolate-size")}} property and the {{cssxref("calc-size()")}} function.
+You can enable animations to and from `fit-content` using the `interpolate-size` property and the `calc-size()` function.
 
 ## Examples
 
@@ -86,5 +86,5 @@ You can enable animations to and from `fit-content` using the {{cssxref("interpo
 
 ## See also
 
-- Related sizing keywords: {{cssxref("min-content")}}, {{cssxref("max-content")}}
+- Related sizing keywords: `min-content`, `max-content`
 - [CSS box sizing](/guides/Box_sizing) module

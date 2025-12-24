@@ -6,7 +6,7 @@ browser-compat: css.properties.position-anchor
 sidebar: cssref
 ---
 
-The **`position-anchor`** [CSS](/en-US/docs/Web/CSS) property specifies the anchor name of the **anchor element** (i.e., an element that has an **anchor name** set on it via the {{cssxref("anchor-name")}} property) a positioned element is associated with.
+The **`position-anchor`** [CSS](/en-US/docs/Web/CSS) property specifies the anchor name of the **anchor element** (i.e., an element that has an **anchor name** set on it via the `anchor-name` property) a positioned element is associated with.
 
 ## Syntax
 
@@ -32,14 +32,14 @@ position-anchor: unset;
 - `none`
   - The initial (default) value. The positioned element is not associated with an anchor element.
 
-- {{cssxref("dashed-ident")}}
-  - The name of the anchor element to associate the positioned element with, as listed in the anchor element's {{cssxref("anchor-name")}} property. This is known as the **default anchor specifier**.
+- `dashed-ident`
+  - The name of the anchor element to associate the positioned element with, as listed in the anchor element's `anchor-name` property. This is known as the **default anchor specifier**.
 
 ## Description
 
-This property is only relevant to "positioned" elements — elements and pseudo-elements that have a {{cssxref("position")}} of `absolute` or `fixed` set.
+This property is only relevant to "positioned" elements — elements and pseudo-elements that have a `position` of `absolute` or `fixed` set.
 
-To position an element relative to an anchor element, the positioned element requires three features: an association, a position, and a location. The `position-anchor` and {{cssxref("anchor-name")}} properties provide an explicit association.
+To position an element relative to an anchor element, the positioned element requires three features: an association, a position, and a location. The `position-anchor` and `anchor-name` properties provide an explicit association.
 
 The anchor element accepts one or more `<dashed-ident>` anchor names set on it via the `anchor-name` property. When one of those names is then set as the value of the positioned element's `position-anchor` property, the two elements are associated.
 
@@ -47,11 +47,11 @@ If there are multiple anchor elements with the anchor name listed in the `positi
 
 To cancel a previously-made association between an anchor-positioned element and an anchor, you can set the anchor-positioned element's `position-anchor` value to `none`.
 
-To tether a positioned element to its anchor, it must be placed relative to an anchor element using an anchor positioning feature, such as the {{cssxref("anchor()")}} function (set as a value on {{glossary("inset properties")}}) or the {{cssxref("position-area")}} property.
+To tether a positioned element to its anchor, it must be placed relative to an anchor element using an anchor positioning feature, such as the `anchor()` function (set as a value on {{glossary("inset properties")}}) or the `position-area` property.
 
-If the associated anchor is hidden, for example with {{cssxref("display", "display: none")}} or {{cssxref("visibility", "visibility: hidden")}}, or if it is part of the [skipped contents](/guides/Containment/Using#skips_its_contents) of another element due to it having {{cssxref("content-visibility", "content-visibility: hidden")}} set on it, the anchor positioned element will not be displayed.
+If the associated anchor is hidden, for example with `display: none` or `visibility: hidden`, or if it is part of the [skipped contents](/guides/Containment/Using#skips_its_contents) of another element due to it having `content-visibility: hidden` set on it, the anchor positioned element will not be displayed.
 
-The `position-anchor` property is supported on all elements that are positioned, including [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) like {{cssxref("::before")}} and {{cssxref("::after")}}. Pseudo elements are implicitly anchored to the same element as the pseudo-element's originating element, unless otherwise specified.
+The `position-anchor` property is supported on all elements that are positioned, including [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) like `::before` and `::after`. Pseudo elements are implicitly anchored to the same element as the pseudo-element's originating element, unless otherwise specified.
 
 For more information on anchor features and usage, see the [CSS anchor positioning](/guides/Anchor_positioning) module landing page and the [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide.
 
@@ -83,9 +83,9 @@ We include an [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/i
 
 #### CSS
 
-We give the thumb, represented by the {{cssxref("::-webkit-slider-thumb")}} pseudo-element, an anchor name of `--thumb`. We then set that name as the value of the `<output>` element's `position-anchor` property, and give it a {{cssxref("position")}} value of `fixed`. These steps associated the `<output>` with the thumb.
+We give the thumb, represented by the `::-webkit-slider-thumb` pseudo-element, an anchor name of `--thumb`. We then set that name as the value of the `<output>` element's `position-anchor` property, and give it a `position` value of `fixed`. These steps associated the `<output>` with the thumb.
 
-Finally, we use {{cssxref("left")}} and {{cssxref("top")}} properties with {{cssxref("anchor()")}} values to position the `<output>` relative to the thumb.
+Finally, we use `left` and `top` properties with `anchor()` values to position the `<output>` relative to the thumb.
 
 ```css hidden
 body {
@@ -303,7 +303,7 @@ Select different values from the drop-down menus to change the anchors that the 
 
 ## See also
 
-- {{cssxref("anchor-name")}}
+- `anchor-name`
 - HTML [`anchor`](/en-US/docs/Web/HTML/Reference/Global_attributes/anchor) attribute
 - [CSS anchor positioning](/guides/Anchor_positioning) module
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide

@@ -6,9 +6,9 @@ browser-compat: css.properties.max-inline-size
 sidebar: cssref
 ---
 
-The **`max-inline-size`** [CSS](/en-US/docs/Web/CSS) property defines the horizontal or vertical maximum size of an element's block, depending on its writing mode. It corresponds to either the {{cssxref("max-width")}} or the {{cssxref("max-height")}} property, depending on the value of {{cssxref("writing-mode")}}.
+The **`max-inline-size`** [CSS](/en-US/docs/Web/CSS) property defines the horizontal or vertical maximum size of an element's block, depending on its writing mode. It corresponds to either the `max-width` or the `max-height` property, depending on the value of `writing-mode`.
 
-If the writing mode is vertically oriented, the value of `max-inline-size` relates to the maximal height of the element; otherwise, it relates to the maximal width of the element. A related property is {{cssxref("max-block-size")}}, which defines the other dimension of the element.
+If the writing mode is vertically oriented, the value of `max-inline-size` relates to the maximal height of the element; otherwise, it relates to the maximal width of the element. A related property is `max-block-size`, which defines the other dimension of the element.
 
 {{InteractiveExample("CSS Demo: max-inline-size")}}
 
@@ -80,7 +80,7 @@ max-inline-size: unset;
 
 ### Values
 
-The `max-inline-size` property takes the same values as the {{cssxref("max-width")}} and {{cssxref("max-height")}} properties.
+The `max-inline-size` property takes the same values as the `max-width` and `max-height` properties.
 
 ## Formal definition
 
@@ -125,5 +125,5 @@ The `max-inline-size` property takes the same values as the {{cssxref("max-width
 
 ## See also
 
-- The mapped physical properties: {{cssxref("max-width")}} and {{cssxref("max-height")}}
-- {{cssxref("writing-mode")}}
+- The mapped physical properties: `max-width` and `max-height`
+- `writing-mode`

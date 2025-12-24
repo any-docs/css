@@ -35,7 +35,7 @@ The `user-input` property is currently not on a standards track.
 - `auto`
   - The element will respond to user input if it normally takes user input, such as a {{HTMLElement("textarea")}}.
 - `none`
-  - The element does not respond to user input, and it does not become {{CSSxRef(":active")}}.
+  - The element does not respond to user input, and it does not become `:active`.
 
 ## Formal definition
 
@@ -65,6 +65,6 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef("-moz-user-focus")}}
-- {{CSSxRef("user-modify", "-moz-user-modify")}}
-- {{CSSxRef("user-select", "-moz-user-select")}}
+- `-moz-user-focus`
+- `-moz-user-modify`
+- `-moz-user-select`

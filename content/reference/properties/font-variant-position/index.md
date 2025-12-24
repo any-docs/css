@@ -95,10 +95,10 @@ p {
 
 ## See also
 
-- {{cssxref("font-variant")}}
-- {{cssxref("font-variant-alternates")}}
-- {{cssxref("font-variant-caps")}}
-- {{cssxref("font-variant-east-asian")}}
-- {{cssxref("font-variant-emoji")}}
-- {{cssxref("font-variant-ligatures")}}
-- {{cssxref("font-variant-numeric")}}
+- `font-variant`
+- `font-variant-alternates`
+- `font-variant-caps`
+- `font-variant-east-asian`
+- `font-variant-emoji`
+- `font-variant-ligatures`
+- `font-variant-numeric`

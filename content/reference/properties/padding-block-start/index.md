@@ -74,16 +74,16 @@ padding-block-start: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the padding as a fixed value. Must be nonnegative.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - The size of the padding as a percentage, relative to the [inline-size](/guides/Display/Block_and_inline_layout) (_width_ in a horizontal language) of the [containing block](/guides/Display/Containing_block). Must be nonnegative.
 
 ## Description
 
-The `padding-block-start` property takes the same values as physical padding properties such as {{cssxref("padding-top")}}. However, it can be equivalent to `padding-top`, {{cssxref("padding-bottom")}}, {{cssxref("padding-left")}}, or {{cssxref("padding-right")}} depending on the values set for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The `padding-block-start` property takes the same values as physical padding properties such as `padding-top`. However, it can be equivalent to `padding-top`, `padding-bottom`, `padding-left`, or `padding-right` depending on the values set for `writing-mode`, `direction`, and `text-orientation`.
 
-It relates to {{cssxref("padding-block-end")}}, {{cssxref("padding-inline-start")}}, and {{cssxref("padding-inline-end")}}, which define the other padding values of the element.
+It relates to `padding-block-end`, `padding-inline-start`, and `padding-inline-end`, which define the other padding values of the element.
 
 ## Formal definition
 
@@ -136,5 +136,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- The mapped physical properties: {{cssxref("padding-top")}}, {{cssxref("padding-right")}}, {{cssxref("padding-bottom")}}, and {{cssxref("padding-left")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- The mapped physical properties: `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`
+- `writing-mode`, `direction`, `text-orientation`

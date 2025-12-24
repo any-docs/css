@@ -73,15 +73,15 @@ direction: unset;
 - `rtl`
   - Text and other elements go from right to left.
 
-For the `direction` property to have any effect on inline-level elements, the {{Cssxref("unicode-bidi")}} property's value must be `embed` or `override`.
+For the `direction` property to have any effect on inline-level elements, the `unicode-bidi` property's value must be `embed` or `override`.
 
 ## Description
 
-The property sets the base text direction of block-level elements and the direction of embeddings created by the {{Cssxref("unicode-bidi")}} property. It also sets the default alignment of text, block-level elements, and the direction that cells flow within a table or grid row.
+The property sets the base text direction of block-level elements and the direction of embeddings created by the `unicode-bidi` property. It also sets the default alignment of text, block-level elements, and the direction that cells flow within a table or grid row.
 
 Unlike the `dir` attribute in HTML, the `direction` property is not inherited from table columns into table cells, since CSS inheritance follows the document tree, and table cells are inside of rows but not inside of columns.
 
-The `direction` and {{cssxref("unicode-bidi")}} properties are the only two properties which are not affected by the {{cssxref("all")}} shorthand property.
+The `direction` and `unicode-bidi` properties are the only two properties which are not affected by the `all` shorthand property.
 
 ## Formal definition
 
@@ -128,8 +128,8 @@ blockquote {
 
 ## See also
 
-- {{CSSxRef("unicode-bidi")}}
-- {{CSSxRef("writing-mode")}}
+- `unicode-bidi`
+- `writing-mode`
 - SVG {{SVGAttr("direction")}} attribute
 - The HTML [`dir`](/en-US/docs/Web/HTML/Reference/Global_attributes/dir) global attribute
 - [Creating vertical form controls](/guides/Writing_modes/Vertical_controls)

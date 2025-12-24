@@ -6,7 +6,7 @@ browser-compat: css.selectors.empty
 sidebar: cssref
 ---
 
-The **`:empty`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) represents any element that has no children. Children can be either element nodes or text (including whitespace). Comments, processing instructions, and CSS {{cssxref("content")}} do not affect whether an element is considered empty.
+The **`:empty`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) represents any element that has no children. Children can be either element nodes or text (including whitespace). Comments, processing instructions, and CSS `content` do not affect whether an element is considered empty.
 
 {{InteractiveExample("CSS Demo: :empty", "tabbed-shorter")}}
 
@@ -29,7 +29,7 @@ div:empty {
 ```
 
 > [!NOTE]
-> In [Selectors Level 4](https://drafts.csswg.org/selectors-4/#the-empty-pseudo), the `:empty` pseudo-class was changed to act like {{CSSxRef(":-moz-only-whitespace")}}, but no browser currently supports this yet.
+> In [Selectors Level 4](https://drafts.csswg.org/selectors-4/#the-empty-pseudo), the `:empty` pseudo-class was changed to act like `:-moz-only-whitespace`, but no browser currently supports this yet.
 
 ## Syntax
 
@@ -102,5 +102,5 @@ body {
 
 ## See also
 
-- {{CSSxRef(":-moz-only-whitespace")}} – The {{glossary("Vendor_Prefix", "prefixed")}} implementation of the changes in [Selectors Level 4](https://drafts.csswg.org/selectors-4/#the-empty-pseudo)
-- {{CSSxRef(":blank")}}
+- `:-moz-only-whitespace` – The {{glossary("Vendor_Prefix", "prefixed")}} implementation of the changes in [Selectors Level 4](https://drafts.csswg.org/selectors-4/#the-empty-pseudo)
+- `:blank`

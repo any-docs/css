@@ -7,7 +7,7 @@ spec-urls: https://drafts.csswg.org/css-env-1
 sidebar: cssref
 ---
 
-The **CSS environment variables** module defines the concept of environment variables and the {{cssxref("env")}} function. Environment variables work similarly to [custom properties](/reference/properties/--*) and the {{cssxref("var")}} function, except that they are globally defined; they are global variables scoped to the entire document. They are user agent values, provided by the browser or operating system, you can access using the {{cssxref("env")}} function enabling you to adapt your styles to the user's device or context.
+The **CSS environment variables** module defines the concept of environment variables and the `env` function. Environment variables work similarly to [custom properties](/reference/properties/--*) and the `var` function, except that they are globally defined; they are global variables scoped to the entire document. They are user agent values, provided by the browser or operating system, you can access using the `env` function enabling you to adapt your styles to the user's device or context.
 
 Environment variables provide values that can be used on the page based on information the user agent has access to, such as the size of the titlebar, dynamic keyboard, and safe area insets. Safe area insets define a rectangle that is guaranteed to be visible on non-rectangular displays, based on its distance from the edges of the viewport. You can include the user-agent sizes in your styles, enabling you to modify the layout of essential content based on the available space inside the safe area rectangle, next to a visible dynamic keyboard, or adjacent to a visible title bar.
 
@@ -15,7 +15,7 @@ Environment variables provide values that can be used on the page based on infor
 
 ### Functions
 
-- {{cssxref("env")}}
+- `env`
 
 ### Data types
 
@@ -30,10 +30,10 @@ Environment variables provide values that can be used on the page based on infor
 
 - [CSS media queries](/guides/Media_queries) module
 - [custom properties](/reference/properties/--*)
-- {{cssxref("var")}}
-- {{domxref("VirtualKeyboard")}} interface
+- `var`
+- `VirtualKeyboard` interface
 - [`display_override`](/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display_override) manifest field
-  [Window Controls Overlay API](/en-US/docs/Web/API/Window_Controls_Overlay_API) and {{domxref("WindowControlsOverlay")}} interface
+  [Window Controls Overlay API](/en-US/docs/Web/API/Window_Controls_Overlay_API) and `WindowControlsOverlay` interface
 
 ## Specifications
 

@@ -98,7 +98,7 @@ Not part of any standard.
 
 The pseudo-elements used by WebKit/Blink to style other parts of a {{htmlelement("meter")}} element are as follows:
 
-- {{cssxref("::-webkit-meter-inner-element")}}
-- {{cssxref("::-webkit-meter-bar")}}
-- {{cssxref("::-webkit-meter-even-less-good-value")}}
-- {{cssxref("::-webkit-meter-optimum-value")}}
+- `::-webkit-meter-inner-element`
+- `::-webkit-meter-bar`
+- `::-webkit-meter-even-less-good-value`
+- `::-webkit-meter-optimum-value`

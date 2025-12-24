@@ -6,9 +6,9 @@ browser-compat: css.properties.list-style-type.symbols
 sidebar: cssref
 ---
 
-The **`symbols()`** [CSS](/en-US/docs/Web/CSS) function enables defining counter styles inline, directly as a value of properties such as {{cssxref("list-style")}}, providing a less powerful but simpler alternative to the {{cssxref("@counter-style")}} method of defining a counter style.
+The **`symbols()`** [CSS](/en-US/docs/Web/CSS) function enables defining counter styles inline, directly as a value of properties such as `list-style`, providing a less powerful but simpler alternative to the `@counter-style` method of defining a counter style.
 
-Unlike {{cssxref("@counter-style")}}, which defines a reusable counter style, `symbols()` is _anonymous_ (i.e., it can only be used once). This function accepts strings and images as values. In comparison, the {{cssxref("@counter-style")}}'s [`symbols`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols) descriptor also accepts identifiers.
+Unlike `@counter-style`, which defines a reusable counter style, `symbols()` is _anonymous_ (i.e., it can only be used once). This function accepts strings and images as values. In comparison, the `@counter-style`'s [`symbols`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols) descriptor also accepts identifiers.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ ol {
 
 ## See also
 
-- {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, {{cssxref("@counter-style/fallback", "fallback")}}
-- List style properties: {{cssxref("list-style")}}, {{cssxref("list-style-type")}}
+- `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `prefix`, `suffix`, `range`, `pad`, `speak-as`, `fallback`
+- List style properties: `list-style`, `list-style-type`
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists and counters](/guides/Lists) module

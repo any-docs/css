@@ -131,5 +131,5 @@ We set the `.first` box to use the first baseline, the `.auto` box uses the defa
 
 ## See also
 
-- {{cssxref("vertical-align")}} property
+- `vertical-align` property
 - [CSS box alignment overview](/guides/Box_alignment/Overview)

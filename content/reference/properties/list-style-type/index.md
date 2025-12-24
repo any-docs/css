@@ -89,7 +89,7 @@ hr {
 
 The marker will be [`currentColor`](/reference/values/color_value#currentcolor_keyword), the same as the computed [color](/reference/values/color_value) of the element it applies to.
 
-Only a few elements ({{HTMLElement("li")}} and {{HTMLElement("summary")}}) have a default value of `display: list-item`. However, the `list-style-type` property may be applied to any element whose {{cssxref("display")}} value is set to `list-item`. Moreover, because this property is inherited, it can be set on a parent element (commonly {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to make it apply to all list items.
+Only a few elements ({{HTMLElement("li")}} and {{HTMLElement("summary")}}) have a default value of `display: list-item`. However, the `list-style-type` property may be applied to any element whose `display` value is set to `list-item`. Moreover, because this property is inherited, it can be set on a parent element (commonly {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to make it apply to all list items.
 
 ## Syntax
 
@@ -134,11 +134,11 @@ Note that:
 
 ### Values
 
-- {{cssxref("custom-ident", "&lt;custom-ident&gt;")}}
-  - An identifier matching the value of a {{cssxref("@counter-style")}} or one of the predefined styles:
-- {{cssxref("symbols()")}}
+- `&lt;custom-ident&gt;`
+  - An identifier matching the value of a `@counter-style` or one of the predefined styles:
+- `symbols()`
   - Defines an anonymous style of the list.
-- {{cssxref("&lt;string&gt;")}}
+- `&lt;string&gt;`
   - The specified string will be used as the item's marker.
 - `none`
   - No item marker is shown.
@@ -777,7 +777,7 @@ container.addEventListener("change", (event) => {
 
 {{EmbedLiveSample("All_list_style_types", "600", "800")}}
 
-We're not limited to the list style types defined on this page or the specification. The {{cssxref("@counter-style")}} at-rule enables creating [counters using any alphabet](https://r12a.github.io/app-counters/).
+We're not limited to the list style types defined on this page or the specification. The `@counter-style` at-rule enables creating [counters using any alphabet](https://r12a.github.io/app-counters/).
 
 ## Specifications
 
@@ -789,9 +789,9 @@ We're not limited to the list style types defined on this page or the specificat
 
 ## See also
 
-- {{Cssxref("list-style")}} shorthand property
-- {{Cssxref("list-style-image")}} property
-- {{Cssxref("list-style-position")}} property
-- {{Cssxref("::marker")}} pseudo-element
+- `list-style` shorthand property
+- `list-style-image` property
+- `list-style-position` property
+- `::marker` pseudo-element
 - [CSS lists and counters](/guides/Lists) module
 - [CSS counter styles](/guides/Counter_styles) module

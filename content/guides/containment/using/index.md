@@ -8,7 +8,7 @@ sidebar: cssref
 
 CSS containment improves the performance of web pages by allowing the browser to isolate a subtree of the page from the rest of the page. If the browser knows that a part of the page is independent from the rest of the content, rendering can be optimized and performance improved.
 
-The {{cssxref("contain")}} and {{cssxref("content-visibility")}} properties enable developers to inform user agents whether or not an element should render its contents at all, and whether it should render its contents when it is offscreen. The user agent then applies containment to elements when appropriate, potentially deferring layout and rendering until needed.
+The `contain` and `content-visibility` properties enable developers to inform user agents whether or not an element should render its contents at all, and whether it should render its contents when it is offscreen. The user agent then applies containment to elements when appropriate, potentially deferring layout and rendering until needed.
 
 This guide describes the basic aims of CSS containment and how to leverage `contain` and `content-visibility` for a better user experience.
 
@@ -30,7 +30,7 @@ For example, blogs usually contain several articles, each containing a headline 
 </article>
 ```
 
-With CSS, we apply the {{cssxref("contain")}} property with a value of `content` to each article. The `content` value is shorthand for `contain: layout paint style`:
+With CSS, we apply the `contain` property with a value of `content` to each article. The `content` value is shorthand for `contain: layout paint style`:
 
 ```css
 article {
@@ -52,7 +52,7 @@ When additional articles are appended at the end of the page, the browser does n
 
 ### `contain` values
 
-There are four types of containment: layout, paint, size, and style. Use the {{cssxref("contain")}} property to specify the type or types you want to apply to an element by including any combination of these types.
+There are four types of containment: layout, paint, size, and style. Use the `contain` property to specify the type or types you want to apply to an element by including any combination of these types.
 
 #### Layout containment
 
@@ -66,13 +66,13 @@ Layout is normally scoped to the entire document, which means that if you move o
 
 In addition:
 
-- {{cssxref("float")}} layout will be performed independently inside the specified element.
+- `float` layout will be performed independently inside the specified element.
 - Margins won't collapse across a layout containment boundary.
 - The layout container is a [containing block](/guides/Display/Containing_block) for `absolute`- and `fixed`-positioned descendants.
-- The containing box creates a [stacking context](/guides/Positioned_layout/Stacking_context), therefore {{cssxref("z-index")}} can be used.
+- The containing box creates a [stacking context](/guides/Positioned_layout/Stacking_context), therefore `z-index` can be used.
 
 > [!NOTE]
-> The `style` and `layout` values of `contain` are automatically applied when using the {{cssxref("container-type")}} and {{cssxref("container-name")}} properties.
+> The `style` and `layout` values of `contain` are automatically applied when using the `container-type` and `container-name` properties.
 
 #### Paint containment
 
@@ -96,7 +96,7 @@ article {
 
 Size containment does not offer much in the way of performance optimizations when used on its own. However, size containment means that the size of the size-contained element's children cannot affect the size of the element itself — its size is computed as if it had no children.
 
-If you set `contain: size` on an element, you need to specify the size of the element using {{cssxref("contain-intrinsic-size")}}, or the longhand properties {{cssxref("contain-intrinsic-width")}} and {{cssxref("contain-intrinsic-height")}}, in that order. If no size is set, the element risks being zero-sized in most cases.
+If you set `contain: size` on an element, you need to specify the size of the element using `contain-intrinsic-size`, or the longhand properties `contain-intrinsic-width` and `contain-intrinsic-height`, in that order. If no size is set, the element risks being zero-sized in most cases.
 
 ```css
 article {
@@ -113,10 +113,10 @@ article {
 }
 ```
 
-Despite the name, style containment does not provide scoped styles such as you would get with the [Shadow DOM](/en-US/docs/Web/API/Web_components/Using_shadow_DOM) or {{cssxref("@scope")}}.
+Despite the name, style containment does not provide scoped styles such as you would get with the [Shadow DOM](/en-US/docs/Web/API/Web_components/Using_shadow_DOM) or `@scope`.
 The main use case for the `style` value is to prevent situations where a [CSS counter](/guides/Counter_styles/Using_counters) could be changed in an element, which could then affect the rest of the tree.
 
-Using `contain: style` ensures the {{cssxref("counter-increment")}} and {{cssxref("counter-set")}} properties create new counters scoped to that subtree only.
+Using `contain: style` ensures the `counter-increment` and `counter-set` properties create new counters scoped to that subtree only.
 
 You can include more than one containment type by including multiple space-separated values, such as `contain: layout paint` or by using one of the two [special values](#special_values).
 
@@ -153,7 +153,7 @@ article {
 
 When you have a lot of content that would benefit from heavy containment that will often be offscreen — for example if all your blog posts are viewable on the blog home pages as an infinitely scrollable blog — `content-visibility: auto` can be used to apply all of the containments at once.
 
-The {{cssxref("content-visibility")}} property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. It enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
+The `content-visibility` property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. It enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
 
 Its possible values are:
 
@@ -181,13 +181,13 @@ The browser will also skip an element's contents when `content-visibility: auto`
 When an element skips its contents:
 
 - It has layout, style, paint, and size containment turned on.
-- Its contents are not painted, as if {{cssxref("visibility", "visibility: hidden")}} was set on it.
-- Its contents do not receive pointer events, as if {{cssxref("pointer-events", "pointer-events: none")}} was set on it.
+- Its contents are not painted, as if `visibility: hidden` was set on it.
+- Its contents do not receive pointer events, as if `pointer-events: none` was set on it.
 
 This happens in both the cases mentioned above, but with `content-visibility: auto` the content can be searched, receive focus, and otherwise move from not relevant to relevant. This is not the case for `content-visibility: hidden`.
 
 > [!NOTE]
-> To animate the transition from `content-visibility: hidden` to a visible value, you will need to set {{cssxref("transition-behavior", "transition-behavior:&nbsp;allow-discrete")}} and {{cssxref("@starting-style")}} styles. See [transitioning `display` and `content-visibility`](/guides/Transitions/Using#transitioning_display_and_content-visibility) to learn more.
+> To animate the transition from `content-visibility: hidden` to a visible value, you will need to set `transition-behavior:&nbsp;allow-discrete` and `@starting-style` styles. See [transitioning `display` and `content-visibility`](/guides/Transitions/Using#transitioning_display_and_content-visibility) to learn more.
 
 ## See also
 
@@ -195,4 +195,4 @@ This happens in both the cases mentioned above, but with `content-visibility: au
 - [Learn: CSS performance optimization](/en-US/docs/Learn_web_development/Extensions/Performance/CSS)
 - [CSS container queries](/guides/Containment/Container_queries)
 - [An Introduction to CSS Containment](https://blogs.igalia.com/mrego/2019/01/11/an-introduction-to-css-containment/) via Igalia.com (2019)
-- The {{domxref("element/contentvisibilityautostatechange_event", "contentvisibilityautostatechange")}} event
+- The `contentvisibilityautostatechange` event

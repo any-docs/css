@@ -6,7 +6,7 @@ browser-compat: css.selectors.focus-visible
 sidebar: cssref
 ---
 
-The **`:focus-visible`** pseudo-class applies while an element matches the {{CSSxRef(":focus")}} pseudo-class and the UA ({{glossary("User Agent")}}) determines via heuristics that the focus should be made evident on the element. (Many browsers show a "focus ring" by default in this case.)
+The **`:focus-visible`** pseudo-class applies while an element matches the `:focus` pseudo-class and the UA ({{glossary("User Agent")}}) determines via heuristics that the focus should be made evident on the element. (Many browsers show a "focus ring" by default in this case.)
 
 {{InteractiveExample("CSS Demo: :focus-visible", "tabbed-shorter")}}
 
@@ -62,7 +62,7 @@ Browsers no longer visibly indicate focus (such as by drawing a "focus ring"), a
 
 The `:focus` pseudo-class always matches the currently-focused element. The `:focus-visible` pseudo-class also matches the focused element, but only if the user needs to be informed where the focus currently is. Because the `:focus-visible` pseudo-class matches the focused element when needed, using the `:focus-visible` (instead of the `:focus` pseudo-class) allows authors to change the appearance of the focus indicator without changing when the focus indicator appears.
 
-When the {{cssxref(":focus")}} pseudo-class is used, it always targets the currently focused element. This means that when a user employs a pointing device, a visible focus ring appears around the focused element, which some consider obtrusive. The `:focus-visible` pseudo-class respects user agents' selective focus indication behavior while still allowing focus indicator customization.
+When the `:focus` pseudo-class is used, it always targets the currently focused element. This means that when a user employs a pointing device, a visible focus ring appears around the focused element, which some consider obtrusive. The `:focus-visible` pseudo-class respects user agents' selective focus indication behavior while still allowing focus indicator customization.
 
 ## Accessibility
 
@@ -122,7 +122,7 @@ This shows how `:focus-visible` enables a designer to follow the browser's logic
 
 ### Providing a :focus fallback
 
-If your code has to work in old browser versions that do not support `:focus-visible`, check supports of `:focus-visible` with {{cssxref("@supports")}} and repeat the same focus styling in it, but inside a `:focus` rule. Note that even if you do not specify anything at all for `:focus`, old browsers will simply display the native outline, which can be enough.
+If your code has to work in old browser versions that do not support `:focus-visible`, check supports of `:focus-visible` with `@supports` and repeat the same focus styling in it, but inside a `:focus` rule. Note that even if you do not specify anything at all for `:focus`, old browsers will simply display the native outline, which can be enough.
 
 ```html
 <button class="button with-fallback" type="button">Button with fallback</button>
@@ -165,5 +165,5 @@ If your code has to work in old browser versions that do not support `:focus-vis
 
 ## See also
 
-- {{CSSxRef(":focus")}}
-- {{CSSxRef(":focus-within")}}
+- `:focus`
+- `:focus-within`

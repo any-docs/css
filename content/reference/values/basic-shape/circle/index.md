@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.circle
 sidebar: cssref
 ---
 
-The **`circle()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a circle using a radius and a position. It is one of the {{cssxref("basic-shape")}} data types.
+The **`circle()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a circle using a radius and a position. It is one of the `basic-shape` data types.
 
 {{InteractiveExample("CSS Demo: circle()")}}
 
@@ -58,14 +58,14 @@ clip-path: circle(6rem at 12rem 8rem);
 ### Values
 
 - `<shape-radius>`
-  - This may be a {{cssxref("length")}}, or a {{cssxref("percentage")}} or values `closest-side` and `farthest-side`.
+  - This may be a `length`, or a `percentage` or values `closest-side` and `farthest-side`.
     - `closest-side`
       - Uses the length from the center of the shape to the closest side of the reference box. For circles, this is the closest side in any dimension.
     - `farthest-side`
       - Uses the length from the center of the shape to the farthest side of the reference box. For circles, this is the farthest side in any dimension.
 
 - `<position>`
-  - Moves the center of the circle. May be a {{cssxref("length")}}, or a {{cssxref("percentage")}}, or a values such as `left`. The `<position>` value defaults to center if omitted.
+  - Moves the center of the circle. May be a `length`, or a `percentage`, or a values such as `left`. The `<position>` value defaults to center if omitted.
 
 ## Formal syntax
 
@@ -75,7 +75,7 @@ clip-path: circle(6rem at 12rem 8rem);
 
 ### Basic circle
 
-In the example below, the {{cssxref("shape-outside")}} property has a value of `circle(50%)`, which defines a circle on a floated element for the text to flow round.
+In the example below, the `shape-outside` property has a value of `circle(50%)`, which defines a circle on a floated element for the text to flow round.
 
 ```html live-sample___circle
 <div class="box">
@@ -118,5 +118,5 @@ img {
 
 ## See also
 
-- Properties that use this data type: {{cssxref("clip-path")}}, {{cssxref("shape-outside")}}
+- Properties that use this data type: `clip-path`, `shape-outside`
 - [Guide to Basic Shapes](/guides/Shapes/Using_shape-outside)

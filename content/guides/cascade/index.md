@@ -23,28 +23,28 @@ The opposite also occurs. Sometimes there are no declarations defining the value
 
 ### Properties
 
-- {{cssxref("all")}}
+- `all`
 
 ### At-rules and descriptors
 
-- {{cssxref("@import")}}
-- {{cssxref("@layer")}}
+- `@import`
+- `@layer`
 
 ### Keywords
 
-- {{cssxref("initial")}}
-- {{cssxref("inherit")}}
-- {{cssxref("revert")}}
-- {{cssxref("revert-layer")}}
-- {{cssxref("unset")}}
-- {{cssxref("important", "!important")}} flag
+- `initial`
+- `inherit`
+- `revert`
+- `revert-layer`
+- `unset`
+- `!important` flag
 
 ### Interfaces
 
-- {{DOMXRef("CSSLayerBlockRule")}}
-- {{DOMXRef("CSSGroupingRule")}}
-- {{DOMXRef("CSSLayerStatementRule")}}
-- {{DOMXRef("CSSRule")}}
+- `CSSLayerBlockRule`
+- `CSSGroupingRule`
+- `CSSLayerStatementRule`
+- `CSSRule`
 
 ### Glossary terms and definitions
 

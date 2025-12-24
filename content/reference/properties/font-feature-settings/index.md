@@ -95,7 +95,7 @@ font-feature-settings: revert-layer;
 font-feature-settings: unset;
 ```
 
-Whenever possible, Web authors should instead use the {{cssxref("font-variant")}} shorthand property or an associated longhand property such as {{cssxref("font-variant-ligatures")}}, {{cssxref("font-variant-caps")}}, {{cssxref("font-variant-east-asian")}}, {{cssxref("font-variant-alternates")}}, {{cssxref("font-variant-numeric")}} or {{cssxref("font-variant-position")}}.
+Whenever possible, Web authors should instead use the `font-variant` shorthand property or an associated longhand property such as `font-variant-ligatures`, `font-variant-caps`, `font-variant-east-asian`, `font-variant-alternates`, `font-variant-numeric` or `font-variant-position`.
 
 These lead to more effective, predictable, understandable results than `font-feature-settings`, which is a low-level feature designed to handle special cases where no other way exists to enable or access an OpenType font feature. In particular, `font-feature-settings` shouldn't be used to enable small caps.
 
@@ -108,7 +108,7 @@ This property is specified as either the keyword `normal` or as a comma-separate
 - `<feature-tag-value>`
   - Represents a space-separated tuple consisting of a tag name and an optional value.
 
-    The tag name is always a {{cssxref("&lt;string&gt;")}} of four {{Glossary("ASCII")}} characters. If the tag name has more or fewer characters or if it contains characters outside the `U+20` – `U+7E` code point range, the descriptor is invalid.
+    The tag name is always a `&lt;string&gt;` of four {{Glossary("ASCII")}} characters. If the tag name has more or fewer characters or if it contains characters outside the `U+20` – `U+7E` code point range, the descriptor is invalid.
 
     The optional value can be a positive integer or the keyword `on` or `off`. The keywords `on` and `off` are synonyms for the values `1` and `0`, respectively. If no value is set, the default is `1`. For non-boolean OpenType features (e.g., [stylistic alternates](https://learn.microsoft.com/en-ca/typography/opentype/spec/features_pt#tag-salt)), the value implies a particular glyph to be selected; for boolean features, the value turns the feature on or off.
 
@@ -182,13 +182,13 @@ td.tabular {
 
 ## See also
 
-- {{cssxref("@font-face/font-display", "font-display")}}
-- {{cssxref("@font-face/font-family", "font-family")}}
-- {{cssxref("@font-face/font-stretch", "font-stretch")}}
-- {{cssxref("@font-face/font-style", "font-style")}}
-- {{cssxref("@font-face/font-weight", "font-weight")}}
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-- {{cssxref("@font-face/src", "src")}}
-- {{cssxref("@font-face/unicode-range", "unicode-range")}}
+- `font-display`
+- `font-family`
+- `font-stretch`
+- `font-style`
+- `font-weight`
+- `font-variation-settings`
+- `src`
+- `unicode-range`
 - [OpenType feature tags](https://learn.microsoft.com/en-us/typography/opentype/spec/featurelist) list
 - [OpenType features in CSS](https://sparanoid.com/lab/opentype-features/)

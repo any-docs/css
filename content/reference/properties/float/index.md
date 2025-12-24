@@ -61,7 +61,7 @@ float: inline-end;
 
 A _floating element_ is one where the computed value of `float` is not `none`.
 
-As `float` implies the use of the block layout, it modifies the computed value of the {{cssxref("display")}} values, in some cases:
+As `float` implies the use of the block layout, it modifies the computed value of the `display` values, in some cases:
 
 | Specified value      | Computed value |
 | -------------------- | -------------- |
@@ -81,7 +81,7 @@ As `float` implies the use of the block layout, it modifies the computed value o
 | _other_              | _unchanged_    |
 
 > [!NOTE]
-> When accessing a CSS property in JavaScript through the {{domxref("HTMLElement.style")}} object, single-word property names are used as is. Although `float` is a reserved keyword in JavaScript, the CSS `float` property is accessed as `float` in modern browsers. In older browsers, you must use `cssFloat` to access the `float` property. (This is similar to how the "class" attribute is accessed as "className" and the "for" attribute of a `<label>` element is accessed as "htmlFor".)
+> When accessing a CSS property in JavaScript through the `HTMLElement.style` object, single-word property names are used as is. Although `float` is a reserved keyword in JavaScript, the CSS `float` property is accessed as `float` in modern browsers. In older browsers, you must use `cssFloat` to access the `float` property. (This is similar to how the "class" attribute is accessed as "className" and the "for" attribute of a `<label>` element is accessed as "htmlFor".)
 
 ## Syntax
 
@@ -184,7 +184,7 @@ div {
 
 ### Clearing floats
 
-Sometimes you may want to force an item to move below any floated elements. For instance, you may want paragraphs to remain adjacent to floats, but force headings to be on their own line. See {{cssxref("clear")}} for examples.
+Sometimes you may want to force an item to move below any floated elements. For instance, you may want paragraphs to remain adjacent to floats, but force headings to be on their own line. See `clear` for examples.
 
 ## Specifications
 
@@ -197,4 +197,4 @@ Sometimes you may want to force an item to move below any floated elements. For 
 ## See also
 
 - [Block formatting context](/guides/Display/Block_formatting_context)
-- Use {{cssxref("clear")}} to force an item to move below a floated element.
+- Use `clear` to force an item to move below a floated element.

@@ -6,7 +6,7 @@ browser-compat: css.properties.outline-width
 sidebar: cssref
 ---
 
-The [CSS](/en-US/docs/Web/CSS) **`outline-width`** property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the {{cssxref("border")}}.
+The [CSS](/en-US/docs/Web/CSS) **`outline-width`** property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
 
 {{InteractiveExample("CSS Demo: outline-width")}}
 
@@ -43,7 +43,7 @@ outline-width: thick;
 }
 ```
 
-It is often more convenient to use the shorthand property {{cssxref("outline")}} when defining the appearance of an outline.
+It is often more convenient to use the shorthand property `outline` when defining the appearance of an outline.
 
 ## Syntax
 
@@ -69,7 +69,7 @@ The `outline-width` property is specified as any one of the values listed below.
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The width of the outline specified as a `<length>`.
 - `thin`
   - Depends on the user agent. Typically equivalent to `1px` in desktop browsers (including Firefox).
@@ -149,6 +149,6 @@ span {
 
 ## See also
 
-- {{cssxref("outline")}}
-- {{cssxref("outline-style")}}
-- {{cssxref("outline-color")}}
+- `outline`
+- `outline-style`
+- `outline-color`

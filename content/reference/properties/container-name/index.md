@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **container-name** [CSS](/en-US/docs/Web/CSS) property specifies a list of query container names used by the [@container](/en-US/docs/Web/CSS/Reference/At-rules/@container) at-rule in a [container query](/guides/Containment/Container_queries).
 A container query will apply styles to elements based on the [size](/guides/Containment/Container_size_and_style_queries#container_size_queries) or [scroll-state](/guides/Conditional_rules/Container_scroll-state_queries) of the nearest ancestor with a containment context.
-When a containment context is given a name, it can be specifically targeted using the {{Cssxref("@container")}} at-rule instead of the nearest ancestor with containment.
+When a containment context is given a name, it can be specifically targeted using the `@container` at-rule instead of the nearest ancestor with containment.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ container-name: unset;
 - `none`
   - Default value. The query container has no name.
 
-- {{cssxref("custom-ident")}}
+- `custom-ident`
   - A case-sensitive string that is used to identify the container.
     The following conditions apply:
     - The name must not equal `or`, `and`, `not`, or `default`.
@@ -74,7 +74,7 @@ To create a containment context, add the `container-type` property to an element
 The following example creates two containment contexts, one for the card meta information and one for the post excerpt:
 
 > [!NOTE]
-> A shorthand syntax for these declarations are described in the {{cssxref("container")}} page.
+> A shorthand syntax for these declarations are described in the `container` page.
 
 ```css
 .post-meta {
@@ -87,7 +87,7 @@ The following example creates two containment contexts, one for the card meta in
 }
 ```
 
-Writing a container query via the {{Cssxref("@container")}} at-rule will apply styles to the elements of the container when the query evaluates to true.
+Writing a container query via the `@container` at-rule will apply styles to the elements of the container when the query evaluates to true.
 The following example has two container queries, one that will apply only to the contents of the `.post-excerpt` element and one that will apply to both the `.post-meta` and `.post-excerpt` contents:
 
 ```css
@@ -117,7 +117,7 @@ You can also provide multiple names to a container context separated by a space:
 }
 ```
 
-This will allow you to target the container using either name in the {{cssxref("@container")}} at-rule.
+This will allow you to target the container using either name in the `@container` at-rule.
 This is useful if you want to target the same container with multiple container queries where either condition could be true:
 
 ```css
@@ -147,7 +147,7 @@ This is useful if you want to target the same container with multiple container 
 - [CSS container queries](/guides/Containment/Container_queries)
 - [Using container size and style queries](/guides/Containment/Container_size_and_style_queries)
 - [Using container scroll-state queries](/guides/Conditional_rules/Container_scroll-state_queries)
-- {{Cssxref("@container")}} at-rule
-- CSS {{Cssxref("container")}} shorthand property
-- CSS {{Cssxref("container-type")}} property
-- CSS {{cssxref("content-visibility")}} property
+- `@container` at-rule
+- CSS `container` shorthand property
+- CSS `container-type` property
+- CSS `content-visibility` property

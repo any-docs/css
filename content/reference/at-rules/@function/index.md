@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`@function`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) enables defining [CSS custom functions](/guides/Custom_functions_and_mixins/Using_custom_functions). Once defined, a custom function can be called using the {{cssxref("&lt;dashed-function>")}} syntax (for example, `--my-function(30px, 3)`) within any property value.
+The **`@function`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) enables defining [CSS custom functions](/guides/Custom_functions_and_mixins/Using_custom_functions). Once defined, a custom function can be called using the `&lt;dashed-function>` syntax (for example, `--my-function(30px, 3)`) within any property value.
 
 ## Syntax
 
@@ -25,17 +25,17 @@ The **`@function`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules
 The different parts of the `@function` syntax are as follows:
 
 - `--function-name`
-  - The identifying name of the function, a {{cssxref("dashed-ident")}} that starts with `--` and is followed by a valid, user-defined identifier. It is case-sensitive.
+  - The identifying name of the function, a `dashed-ident` that starts with `--` and is followed by a valid, user-defined identifier. It is case-sensitive.
 - `<function-parameter>#?` <Badge type="info" text="Optional" />
   - Zero or more function parameter definitions. Multiple parameter definitions are separated by commas. Each parameter consists of:
     - `--param-name`
-      - A [CSS custom property](/reference/properties/--*) name to identify the parameter, a {{cssxref("dashed-ident")}} that starts with `--` and is followed by a valid, user-defined identifier. It is case-sensitive. Function parameters can be considered custom properties that are locally scoped to the function body.
+      - A [CSS custom property](/reference/properties/--*) name to identify the parameter, a `dashed-ident` that starts with `--` and is followed by a valid, user-defined identifier. It is case-sensitive. Function parameters can be considered custom properties that are locally scoped to the function body.
     - `<css-type>` <Badge type="info" text="Optional" />
-      - A CSS data type or a {{cssxref("type()")}} function that defines the accepted data type(s) for the parameter. If this is not specified, any data type will be valid for the parameter (the same as specifying `type(*)`).
+      - A CSS data type or a `type()` function that defines the accepted data type(s) for the parameter. If this is not specified, any data type will be valid for the parameter (the same as specifying `type(*)`).
     - `<default-value>` <Badge type="info" text="Optional" />
       - A CSS value specifying the default value to assign to the parameter if it is not specified when the function is called. This value must be valid according to the `<css-type>` if specified. The default value is separated from the other parts of the parameter definition with a colon (`:`).
 - `[returns <css-type>]?` <Badge type="info" text="Optional" />
-  - A CSS data type or a {{cssxref("type()")}} function, preceded by the keyword `returns`, which defines the accepted return type(s) for the parameter. If this is not specified, any data type will be valid for the parameter (the same as specifying `returns type(*)`), although bear in mind that the function will be invalid if the return type does not match the type produced by the `result` descriptor.
+  - A CSS data type or a `type()` function, preceded by the keyword `returns`, which defines the accepted return type(s) for the parameter. If this is not specified, any data type will be valid for the parameter (the same as specifying `returns type(*)`), although bear in mind that the function will be invalid if the return type does not match the type produced by the `result` descriptor.
 - `<declaration-rule-list>`
   - One or more CSS declarations or at-rules that define the body of the function, which contains its logic. Included declarations can include:
     - CSS custom properties, which are locally scoped to the function body.
@@ -69,10 +69,10 @@ section {
 }
 ```
 
-The function is called by using {{cssxref("&lt;dashed-function>")}} syntax, which is the function name with parentheses on the end. The desired argument values are specified inside the parentheses.
+The function is called by using `&lt;dashed-function>` syntax, which is the function name with parentheses on the end. The desired argument values are specified inside the parentheses.
 
 > [!NOTE]
-> If multiple CSS functions are given the same name, the function in the stronger cascade {{cssxref("@layer")}} wins. If all of them are in the same layer, the function defined last in the source order wins.
+> If multiple CSS functions are given the same name, the function in the stronger cascade `@layer` wins. If all of them are in the same layer, the function defined last in the source order wins.
 
 ### Specifying data types
 
@@ -84,7 +84,7 @@ It is possible to specify data types for the function parameters and return type
 }
 ```
 
-Now the function will only produce a valid value if the input arguments are a {{cssxref("&lt;color>")}} and a {{cssxref("&lt;number>")}}, respectively, and the `result` is a {{cssxref("&lt;color>")}}. If not, for example:
+Now the function will only produce a valid value if the input arguments are a `&lt;color>` and a `&lt;number>`, respectively, and the `result` is a `&lt;color>`. If not, for example:
 
 ```css
 section {
@@ -95,7 +95,7 @@ section {
 
 then the value will become invalid at computed-value time (because the specified `--alpha` argument is a `<percentage>` and not a `<number>` as expected) and the `background-color` will end up being set to `transparent`.
 
-You can specify multiple accepted data types using a {{cssxref("type()")}} function with the `|` symbol as a separator, for example:
+You can specify multiple accepted data types using a `type()` function with the `|` symbol as a separator, for example:
 
 ```css
 @function --transparent(--color <color>, --alpha type(<number> | <percentage>))
@@ -130,7 +130,7 @@ section {
 
 ### Passing comma-containing values as arguments
 
-In the next example, the `--max-plus-x()` function expects to be passed a comma-separated list of lengths and a single length as arguments. It uses the CSS {{cssxref("max()")}} function to determine which of the list of lengths is the largest, adds it to the single length, then returns the result.
+In the next example, the `--max-plus-x()` function expects to be passed a comma-separated list of lengths and a single length as arguments. It uses the CSS `max()` function to determine which of the list of lengths is the largest, adds it to the single length, then returns the result.
 
 ```css
 @function --max-plus-x(--list <length>#, --x <length>) {
@@ -150,7 +150,7 @@ div {
 
 As we've already seen, function parameters are defined as custom properties, which are then available inside the function body.
 
-You can also specify custom properties inside the function body that will act as locally-scoped constants. In the following example, we define a function called `--anim-1s()`, which returns an {{cssxref("animation")}} shorthand value where the duration and easing values are always the same, and only the animation name and count are varied.
+You can also specify custom properties inside the function body that will act as locally-scoped constants. In the following example, we define a function called `--anim-1s()`, which returns an `animation` shorthand value where the duration and easing values are always the same, and only the animation name and count are varied.
 
 ```css
 @function --anim-1s(--animation, --count) {
@@ -214,7 +214,7 @@ div {
 
 ### Including complex logic
 
-You can include more complex logic in functions using constructs such as {{cssxref("@media")}} at-rules and {{cssxref("if()")}} functions. For example, the next function takes two arguments, one for a narrow-screen layout and one for a wide-screen layout. It returns the latter by default, but returns the former when the viewport width is less than `700px` wide, as detected using a media query.
+You can include more complex logic in functions using constructs such as `@media` at-rules and `if()` functions. For example, the next function takes two arguments, one for a narrow-screen layout and one for a wide-screen layout. It returns the latter by default, but returns the former when the viewport width is less than `700px` wide, as detected using a media query.
 
 ```css
 @function --narrow-wide(--narrow, --wide) {
@@ -262,7 +262,7 @@ The markup features a {{htmlelement("p")}} element containing some text content:
 
 #### CSS
 
-In our styles, we first define the CSS custom function. The function is called `--double`, and accepts a single parameter of any type, which we've called `--value`. Inside the function body, we include a `result` descriptor that uses the {{cssxref("calc()")}} function to double the passed argument:
+In our styles, we first define the CSS custom function. The function is called `--double`, and accepts a single parameter of any type, which we've called `--value`. Inside the function body, we include a `result` descriptor that uses the `calc()` function to double the passed argument:
 
 ```css live-sample___basic-example
 @function --double(--value) {
@@ -270,7 +270,7 @@ In our styles, we first define the CSS custom function. The function is called `
 }
 ```
 
-Next, we define a `--base-spacing` custom property with a value of `10px`. We assign that property to the {{cssxref("border-radius")}} value, but then double it for the {{cssxref("padding")}} value using the `--double()` custom function.
+Next, we define a `--base-spacing` custom property with a value of `10px`. We assign that property to the `border-radius` value, but then double it for the `padding` value using the `--double()` custom function.
 
 ```css hidden live-sample___basic-example
 html,
@@ -311,7 +311,7 @@ p {
 ## See also
 
 - [CSS custom properties](/reference/properties/--*)
-- {{cssxref("&lt;dashed-function>")}} data type
+- `&lt;dashed-function>` data type
 - [`type()`](/reference/values/type) function
 - [Using CSS custom functions](/guides/Custom_functions_and_mixins/Using_custom_functions)
 - [CSS custom functions and mixins](/guides/Custom_functions_and_mixins) module

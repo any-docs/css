@@ -6,7 +6,7 @@ browser-compat: css.properties.border-spacing
 sidebar: cssref
 ---
 
-The **`border-spacing`** [CSS](/en-US/docs/Web/CSS) property sets the distance between the borders of adjacent cells in a {{htmlelement("table")}}. This property applies only when {{cssxref("border-collapse")}} is `separate`.
+The **`border-spacing`** [CSS](/en-US/docs/Web/CSS) property sets the distance between the borders of adjacent cells in a {{htmlelement("table")}}. This property applies only when `border-collapse` is `separate`.
 
 {{InteractiveExample("CSS Demo: border-spacing")}}
 
@@ -80,12 +80,12 @@ The `border-spacing` property may be specified as either one or two values.
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the spacing as a fixed value.
 
 ## Description
 
-The `border-spacing` value is also used along the outside edge of the table, where the distance between the table's border and the cells in the first/last column or row is the sum of the relevant (horizontal or vertical) `border-spacing` and the relevant (top, right, bottom, or left) {{cssxref("padding")}} on the table.
+The `border-spacing` value is also used along the outside edge of the table, where the distance between the table's border and the cells in the first/last column or row is the sum of the relevant (horizontal or vertical) `border-spacing` and the relevant (top, right, bottom, or left) `padding` on the table.
 
 > [!NOTE]
 > The `border-spacing` property is equivalent to the deprecated `cellspacing` attribute of the `<table>` element, except that `border-spacing` has an optional second value that can be used to set different horizontal and vertical spacing.
@@ -160,6 +160,6 @@ td {
 
 ## See also
 
-- {{cssxref("border-collapse")}}, {{cssxref("border-style")}}
+- `border-collapse`, `border-style`
 - The `border-spacing` property alters the appearance of the {{htmlelement("table")}} HTML element.
 - [CSS table](/guides/Table) module

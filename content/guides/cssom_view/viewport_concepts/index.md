@@ -27,7 +27,7 @@ Documents, like this article, may be very long. Your viewport is everything that
 - On most mobile devices and when the browser is in fullscreen mode, the viewport is the entire screen.
 - In fullscreen mode, the viewport is the device screen, the window is the browser window, which can be as big as the viewport or smaller, and the document is the website, which can be much taller or wider than the viewport.
 
-For [paged media](/guides/Paged_media), the initial containing block is based on the page area. The page area can be set through {{cssxref("@page")}} rules.
+For [paged media](/guides/Paged_media), the initial containing block is based on the page area. The page area can be set through `@page` rules.
 
 To recap, the viewport is basically the part of the document that is currently visible.
 
@@ -49,9 +49,9 @@ window.outerHeight; /* 900 */
 
 There are several DOM properties that can help you query viewport size, and other similar lengths:
 
-- The document element's {{DOMxRef("Element.clientWidth")}} is the inner width of a document in [CSS pixels](/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport#screen_density), including padding (but not borders, margins, or vertical scrollbars, if present). **This is the viewport width**.
-- The {{DOMxRef("Window.innerWidth")}} is the width, in CSS pixels, of the browser window viewport including, if rendered, the vertical scrollbar.
-- The {{DOMxRef("Window.outerWidth")}} is the width of the outside of the browser window including all the window {{glossary("chrome")}}.
+- The document element's `Element.clientWidth` is the inner width of a document in [CSS pixels](/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport#screen_density), including padding (but not borders, margins, or vertical scrollbars, if present). **This is the viewport width**.
+- The `Window.innerWidth` is the width, in CSS pixels, of the browser window viewport including, if rendered, the vertical scrollbar.
+- The `Window.outerWidth` is the width of the outside of the browser window including all the window {{glossary("chrome")}}.
 
 In an experiment with these, the `innerWidth` and `outerWidth` was seen to be the same, but the `outerHeight` was 100px taller than the `innerHeight`. This is because the `outerHeight` includes the browser chrome: measurements were taken on a browser with an address bar and bookmarks bar totalling 100px in height, but no chrome on the left or right of the window.
 
@@ -140,7 +140,7 @@ In this example, the viewport has an {{glossary("aspect ratio")}} of 3:4 and is,
 
 SVG also has an internal [coordinate system](/en-US/docs/Web/API/CSSOM_view_API/Coordinate_systems) defined via the [viewBox](/en-US/docs/Web/SVG/Reference/Attribute/viewBox) attribute, which is not related to this viewport discussion.
 
-If you include an SVG file in your HTML, the viewport of the SVG is the initial containing block, or the width and height of the SVG container. Using the {{CSSxRef("@media")}} query in your SVG's CSS is relative to that container, not the browser.
+If you include an SVG file in your HTML, the viewport of the SVG is the initial containing block, or the width and height of the SVG container. Using the `@media` query in your SVG's CSS is relative to that container, not the browser.
 
 ```css
 @media screen and (400px <= width <= 500px) {

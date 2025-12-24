@@ -114,6 +114,6 @@ When using `scrollbar-color` property with specific color values, authors should
 
 - [CSS overflow](/guides/Overflow) module
 - [CSS scrollbars styling](/guides/Scrollbars_styling) module
-- {{CSSxRef("overflow")}}
-- {{CSSxRef("scrollbar-gutter")}}
-- {{CSSxRef("scrollbar-width")}}
+- `overflow`
+- `scrollbar-gutter`
+- `scrollbar-width`

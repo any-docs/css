@@ -25,11 +25,11 @@ If your page is not behaving well with scroll anchoring enabled, it is probably 
 
 You can check whether disabling scroll anchoring fixes the issue in Firefox by changing `layout.css.scroll-anchoring.enabled` to `false` in `about:config`. You can also check what node Firefox is using as the anchor using the `layout.css.scroll-anchoring.highlight` switch. That will show a purple overlay on top of the anchor node.
 
-If a node doesn't seem to be an appropriate anchor, you can exclude it using {{cssxref("overflow-anchor")}}, as described below.
+If a node doesn't seem to be an appropriate anchor, you can exclude it using `overflow-anchor`, as described below.
 
 ## What if I need to disable it?
 
-The [CSS scroll anchoring module](/guides/Scroll_anchoring) provides the {{cssxref("overflow-anchor")}} property, which can be used to disable scroll anchoring on all or part of the document. It's essentially a way to opt out of the behavior.
+The [CSS scroll anchoring module](/guides/Scroll_anchoring) provides the `overflow-anchor` property, which can be used to disable scroll anchoring on all or part of the document. It's essentially a way to opt out of the behavior.
 
 The only possible values are `auto` or `none`:
 
@@ -60,12 +60,12 @@ There are some _suppression triggers_, which disable scroll anchoring in places 
 
 These suppression triggers are changes to the computed value of any of the following properties:
 
-- {{cssxref("top")}}, {{cssxref("left")}}, {{cssxref("right")}}, or {{cssxref("bottom")}}
-- {{cssxref("margin")}} or {{cssxref("padding")}}
-- Any {{cssxref("width")}} or {{cssxref("height")}}-related properties
-- {{cssxref("transform")}} and the individual transform properties {{cssxref("translate")}}, {{cssxref("scale")}}, and {{cssxref("rotate")}}
+- `top`, `left`, `right`, or `bottom`
+- `margin` or `padding`
+- Any `width` or `height`-related properties
+- `transform` and the individual transform properties `translate`, `scale`, and `rotate`
 
-Additionally, {{cssxref("position")}} changes anywhere inside the {{glossary("scroll container")}} also disable scroll anchoring.
+Additionally, `position` changes anywhere inside the {{glossary("scroll container")}} also disable scroll anchoring.
 
 ## Specifications
 

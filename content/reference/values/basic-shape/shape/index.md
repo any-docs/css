@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.shape
 sidebar: cssref
 ---
 
-The **`shape()`** [CSS function](/reference/values/Functions) is used to define a shape for the {{cssxref("clip-path")}} and {{cssxref("offset-path")}} properties. It combines an initial starting point with a series of shape commands that define the path of the shape. The `shape()` function is a member of the {{cssxref("basic-shape")}} data type.
+The **`shape()`** [CSS function](/reference/values/Functions) is used to define a shape for the `clip-path` and `offset-path` properties. It combines an initial starting point with a series of shape commands that define the path of the shape. The `shape()` function is a member of the `basic-shape` data type.
 
 ## Syntax
 
@@ -64,10 +64,10 @@ clip-path: shape(
     - `evenodd`: A point is considered to be inside the shape if a ray drawn from the point crosses an odd number of path segments. This means that for each time the ray enters the shape, it has not exited an equal number of times, indicating an odd count of entries without corresponding exits.
 
     > [!WARNING]
-    > `<fill-rule>` is not supported in {{cssxref("offset-path")}} and using it invalidates the property.
+    > `<fill-rule>` is not supported in `offset-path` and using it invalidates the property.
 
 - `from <coordinate-pair>`
-  - Defines the starting point of the first `<shape-command>` as a pair of coordinates that are measured from the top-left corner of the [reference box](/guides/Shapes/Using_shape-outside#the_reference_box). The coordinates are specified as space-separated `<x> <y>` {{cssxref("&lt;length-percentage&gt;")}} values representing the left offset and top offset, respectively. Percentage values are relative to the width and height of the element's reference box, respectively. Add a comma after this parameter.
+  - Defines the starting point of the first `<shape-command>` as a pair of coordinates that are measured from the top-left corner of the [reference box](/guides/Shapes/Using_shape-outside#the_reference_box). The coordinates are specified as space-separated `<x> <y>` `&lt;length-percentage&gt;` values representing the left offset and top offset, respectively. Percentage values are relative to the width and height of the element's reference box, respectively. Add a comma after this parameter.
 
 - `<shape-command>`
   - Specifies a list of one or more comma-separated commands that define the shape, using syntax similar to [SVG path commands](/en-US/docs/Web/SVG/Reference/Attribute/d#path_commands). Commands include `<move-command>`, `<line-command>`, `<hv-line-command>`, `<curve-command>`, `<smooth-command>`, `<arc-command>`, and `close`. Each command's starting point is the previous command's ending point, with the first point of the shape defined by the [`from <coordinate-pair>`](#from_coordinate-pair) parameter.
@@ -101,16 +101,16 @@ The following `<shape-command>`s can be specified:
     - If two `<control-point>` values are provided, the command draws a cubic Bézier curve, which is defined by four points (the start point, two control points, and the end point).
 
     Valid values for `<end-point>` include:
-    - {{cssxref("&lt;position>")}} keywords or a `<coordinate-value-pair>`
+    - `&lt;position>` keywords or a `<coordinate-value-pair>`
       - Can be used if the curve end point is absolute (specified using `to`).
     - `<coordinate-value-pair>`
       - Can be used if the curve end point is relative (specified using `by`).
 
     Valid values for `<control-point>` include:
-    - {{cssxref("&lt;position>")}}
+    - `&lt;position>`
       - Specifies a position keyword. This value is valid only when the curve end point is absolute (specified using `to`).
     - `<coordinate-value-pair>`
-      - Specifies a pair of {{cssxref("&lt;length-percentage>")}} values that define coordinates.
+      - Specifies a pair of `&lt;length-percentage>` values that define coordinates.
     - `<relative-control-point>`
       - Defines a `<coordinate-value-pair>` followed by the `from` keyword and one of the following keywords:
         - `start`
@@ -155,7 +155,7 @@ The following `<shape-command>`s can be specified:
 
 ## Description
 
-The `shape()` function allows you to define complex shapes. It is similar to the {{cssxref("basic-shape/path","path()")}} shape function in several ways:
+The `shape()` function allows you to define complex shapes. It is similar to the `path()` shape function in several ways:
 
 - The `<fill-rule>` parameter in the `shape()` function works exactly like the same parameter in the `path()` function.
 - The `shape()` function requires specifying one or more `<shape-command>`s, where each command uses an underlying [path command](/en-US/docs/Web/SVG/Reference/Attribute/d#path_commands), such as [MoveTo](/en-US/docs/Web/SVG/Reference/Attribute/d#moveto_path_commands), [LineTo](/en-US/docs/Web/SVG/Reference/Attribute/d#lineto_path_commands), and [ClosePath](/en-US/docs/Web/SVG/Reference/Attribute/d#closepath).
@@ -164,7 +164,7 @@ However, `shape()` offers several advantages over using `path()`:
 
 - `shape()` uses standard CSS syntax, making it easier to create and modify shapes directly in your stylesheet. In comparison, `path()` uses the [SVG path](/en-US/docs/Web/SVG/Reference/Element/path) syntax, which is less intuitive for those not familiar with SVG.
 - `shape()` supports a variety of CSS units, including percentages, `rem`, and `em`. `path()`, on the other hand, defines shapes as a single string and limits units to `px`.
-- `shape()` also allows the use of CSS math functions, like {{cssxref("calc")}}, {{cssxref("max")}}, and {{cssxref("abs")}}, providing more versatility when defining shapes.
+- `shape()` also allows the use of CSS math functions, like `calc`, `max`, and `abs`, providing more versatility when defining shapes.
 
 ## Formal syntax
 
@@ -174,7 +174,7 @@ However, `shape()` offers several advantages over using `path()`:
 
 ### Using `shape()` to define a path
 
-This example demonstrates how the `shape()` function can be used in the {{cssxref("offset-path")}} property to define the shape of the path an element can follow.
+This example demonstrates how the `shape()` function can be used in the `offset-path` property to define the shape of the path an element can follow.
 
 The first shape, `shape1`, follows a cubic Bézier curved path defined by the `curve to` command. Next, the `close` command draws a straight line from the curve's end point back to the initial point defined in the `from` command. Finally, `shape1` moves to its new position at `0px 150px` and then proceeds along a horizontal line.
 
@@ -269,7 +269,7 @@ body {
 
 ### Using `shape()` to define the visible part of an element
 
-This example demonstrates how the `shape()` function can be used in the {{cssxref("clip-path")}} property to create different shapes for the clipping region. The first shape (`shape1`) uses a triangle defined by straight lines. The second shape (`shape2`) includes curves and smooth transitions; it also illustrates the use of the `<move-command>` after the `close` command, which adds a rectangular shape to the clipping region.
+This example demonstrates how the `shape()` function can be used in the `clip-path` property to create different shapes for the clipping region. The first shape (`shape1`) uses a triangle defined by straight lines. The second shape (`shape2`) includes curves and smooth transitions; it also illustrates the use of the `<move-command>` after the `close` command, which adds a rectangular shape to the clipping region.
 
 ```html hidden
 <div class="container">
@@ -347,7 +347,7 @@ body {
 
 ### Using `shape()` to draw curves with relative control points
 
-Like previous examples, this example also uses {{cssxref("clip-path")}} to create different shapes for the clipping regions of the elements. The shapes are specified using a combination of [`<curve-command>`](#curve-command) and [`<smooth-command>`](#smooth-command), and the control points are specified using [`<relative-control-point>`](#relative-control-point) values.
+Like previous examples, this example also uses `clip-path` to create different shapes for the clipping regions of the elements. The shapes are specified using a combination of [`<curve-command>`](#curve-command) and [`<smooth-command>`](#smooth-command), and the control points are specified using [`<relative-control-point>`](#relative-control-point) values.
 
 The first shape (`shape1`) draws two cubic Bézier curves.
 
@@ -452,8 +452,8 @@ The third shape (`shape3`) draws one quadratic Bézier curve and one cubic Bézi
 
 ## See also
 
-- {{cssxref("clip-path")}}
-- {{cssxref("offset-path")}}
+- `clip-path`
+- `offset-path`
 - [CSS shapes](/guides/Shapes) module
 - [Overview of shapes](/guides/Shapes/Overview) guide
 - [Basic shapes](/guides/Shapes/Using_shape-outside) guide

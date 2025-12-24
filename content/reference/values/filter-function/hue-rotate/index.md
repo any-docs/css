@@ -6,7 +6,7 @@ browser-compat: css.types.filter-function.hue-rotate
 sidebar: cssref
 ---
 
-The **`hue-rotate()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) rotates the [hue](https://en.wikipedia.org/wiki/Hue) of an element and its contents. Its result is a {{cssxref("filter-function")}}.
+The **`hue-rotate()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) rotates the [hue](https://en.wikipedia.org/wiki/Hue) of an element and its contents. Its result is a `filter-function`.
 
 > [!NOTE]
 > `hue-rotate()` is specified as a matrix operation on the RGB color. It does not actually convert the color to the HSL model, which is a non-linear operation. Therefore, it may not preserve the saturation or lightness of the original color, especially for saturated colors.
@@ -48,7 +48,7 @@ hue-rotate(angle)
 ### Values
 
 - `angle` <Badge type="info" text="Optional" />
-  - The relative change in hue of the input sample, specified as an {{cssxref("angle")}}. A value of `0deg` leaves the input unchanged. A positive hue rotation increases the hue value, while a negative rotation decreases the hue value. The initial value for {{Glossary("interpolation")}} is `0`. There is no minimum or maximum value. The effect of values above `360deg` are, given `hue-rotate(Ndeg)`, evaluates to `N` modulo 360. The default value is `0deg`.
+  - The relative change in hue of the input sample, specified as an `angle`. A value of `0deg` leaves the input unchanged. A positive hue rotation increases the hue value, while a negative rotation decreases the hue value. The initial value for {{Glossary("interpolation")}} is `0`. There is no minimum or maximum value. The effect of values above `360deg` are, given `hue-rotate(Ndeg)`, evaluates to `N` modulo 360. The default value is `0deg`.
 
 The `<angle>` CSS data type represents an angle value expressed in degrees, gradians, radians, or turns. The following are equivalent:
 
@@ -273,13 +273,13 @@ for (let i = 0; i < 360; i++) {
 ## See also
 
 - [CSS filter effects](/guides/Filter_effects) module
-- The other {{cssxref("filter-function")}} functions available to be used in values of the {{cssxref("filter")}} and {{cssxref("backdrop-filter")}} properties include:
-  - {{cssxref("filter-function/blur", "blur()")}}
-  - {{cssxref("filter-function/brightness", "brightness()")}}
-  - {{cssxref("filter-function/contrast", "contrast()")}}
-  - {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-  - {{cssxref("filter-function/grayscale", "grayscale()")}}
-  - {{cssxref("filter-function/invert", "invert()")}}
-  - {{cssxref("filter-function/opacity", "opacity()")}}
-  - {{cssxref("filter-function/saturate", "saturate()")}}
-  - {{cssxref("filter-function/sepia", "sepia()")}}
+- The other `filter-function` functions available to be used in values of the `filter` and `backdrop-filter` properties include:
+  - `blur()`
+  - `brightness()`
+  - `contrast()`
+  - `drop-shadow()`
+  - `grayscale()`
+  - `invert()`
+  - `opacity()`
+  - `saturate()`
+  - `sepia()`

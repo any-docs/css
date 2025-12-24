@@ -114,4 +114,4 @@ html {
 
 ## See also
 
-- {{cssxref("writing-mode")}}, {{cssxref("text-orientation")}}
+- `writing-mode`, `text-orientation`

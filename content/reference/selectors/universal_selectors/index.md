@@ -15,7 +15,7 @@ The CSS **universal selector** (`*`) matches elements of any type.
 }
 ```
 
-The universal selector is a special [type selector](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors) and can therefore be namespaced when using {{CSSXref("@namespace")}}. This is useful when dealing with documents containing multiple namespaces such as HTML with inline SVG or MathML, or XML that mixes multiple vocabularies.
+The universal selector is a special [type selector](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors) and can therefore be namespaced when using `@namespace`. This is useful when dealing with documents containing multiple namespaces such as HTML with inline SVG or MathML, or XML that mixes multiple vocabularies.
 
 - `ns|*` - matches all elements in namespace _ns_
 - `*|*` - matches all elements
@@ -25,7 +25,7 @@ The universal selector is a special [type selector](/en-US/docs/Web/CSS/Referenc
 > The universal selector (`*`) matches **elements only**.
 > It does **not** directly match pseudo-elements by itself.
 >
-> To match all {{cssxref("::before")}} pseudo-elements on a page, for example, you would have to use a selector like `*::before`. This works because the `*` matches all elements, and the `::before` pseudo-element is available on all elements.
+> To match all `::before` pseudo-elements on a page, for example, you would have to use a selector like `*::before`. This works because the `*` matches all elements, and the `::before` pseudo-element is available on all elements.
 
 ## Syntax
 

@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`scaleY()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that resizes an element along the
-y-axis (vertically). Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+y-axis (vertically). Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: scaleY()")}}
 
@@ -39,7 +39,7 @@ transform: scaleY(-0.5);
 
 It modifies the ordinate (vertical, y-coordinate) of each element point by a constant factor, except when the scale factor is 1, in which case
 the function is the identity transform. The scaling is not isotropic, and the angles of the element are not conserved.
-`scaleY(-1)` defines an [axial symmetry](https://en.wikipedia.org/wiki/Axial_symmetry), with a horizontal axis passing through the origin (as specified by the {{cssxref("transform-origin")}}
+`scaleY(-1)` defines an [axial symmetry](https://en.wikipedia.org/wiki/Axial_symmetry), with a horizontal axis passing through the origin (as specified by the `transform-origin`
 property).
 
 > [!NOTE]
@@ -58,7 +58,7 @@ scaleY(s)
 ### Values
 
 - `s`
-  - Is a {{cssxref("&lt;number&gt;")}} representing the scaling factor to apply on the ordinate (vertical, y-coordinate) of each point of the
+  - Is a `&lt;number&gt;` representing the scaling factor to apply on the ordinate (vertical, y-coordinate) of each point of the
     element.
 
 <table class="standard-table">
@@ -143,11 +143,11 @@ div {
 
 - [`scaleX()`](/reference/values/transform-function/scaleX)
 - [`scaleZ()`](/reference/values/transform-function/scaleZ)
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("transform-origin")}}
+- `transform`
+- `&lt;transform-function&gt;`
+- `transform-origin`
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`
   - Note: there is no `skew` property

@@ -6,7 +6,7 @@ browser-compat: css.types.ray
 sidebar: cssref
 ---
 
-The **`ray()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines the {{cssxref("offset-path")}} line segment that an animated element can follow. The line segment is referred to as "ray". The ray begins from an {{cssxref("offset-position")}} and extends in the direction of the specified angle. The length of a ray can be constrained by specifying a size and using the `contain` keyword.
+The **`ray()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines the `offset-path` line segment that an animated element can follow. The line segment is referred to as "ray". The ray begins from an `offset-position` and extends in the direction of the specified angle. The length of a ray can be constrained by specifying a size and using the `contain` keyword.
 
 ## Syntax
 
@@ -25,11 +25,11 @@ offset-path: ray(45deg);
 
 The parameters can be specified in any order.
 
-- {{cssxref("angle")}}
+- `angle`
   - Specifies the direction in which the line segment extends from the offset starting position. The angle `0deg` lies on the y-axis pointing up, and positive angles increase in the clockwise direction.
 
 - `<size>`
-  - Specifies the length of the line segment, which is the distance between {{cssxref("offset-distance")}} `0%` and `100%`, relative to the containing box. This is an optional parameter (`closest-side` is used if no `<size>` is specified). It accepts one of the following keyword values:
+  - Specifies the length of the line segment, which is the distance between `offset-distance` `0%` and `100%`, relative to the containing box. This is an optional parameter (`closest-side` is used if no `<size>` is specified). It accepts one of the following keyword values:
 
     `closest-side`: Distance between the ray's starting point and the closest side of the [containing block](/guides/Display/Containing_block) of the element. If the ray's starting point lies on an edge of the containing block, the length of the line segment is zero. If the ray's starting point is outside the containing block, the edge of the containing block is considered to extend to infinity. This is the default value.
 
@@ -49,12 +49,12 @@ The parameters can be specified in any order.
 
 ## Description
 
-The `ray()` function positions an element along a path by specifying its location in a two-dimensional space through an angle and a distance from a reference point (polar coordinates). This feature makes the `ray()` function useful for creating 2D spatial transitions. For comparison, this approach differs from the method of specifying a point by its horizontal and vertical distances from a fixed origin (rectangular coordinates), which is used by the {{cssxref("translate","translate()")}} function, and from moving an element along a defined path through animation.
+The `ray()` function positions an element along a path by specifying its location in a two-dimensional space through an angle and a distance from a reference point (polar coordinates). This feature makes the `ray()` function useful for creating 2D spatial transitions. For comparison, this approach differs from the method of specifying a point by its horizontal and vertical distances from a fixed origin (rectangular coordinates), which is used by the `translate()` function, and from moving an element along a defined path through animation.
 
 As `ray()` works in 2D space, it's important to consider both the initial position and orientation of the element. When the `ray()` function is applied as the `offset-path` value on an element, here's how you can control these aspects:
 
-- The element is initially positioned by moving the element's {{cssxref("offset-anchor")}} point to the element's offset starting position. By default, the ray's starting position is determined by the {{cssxref("offset-position")}} value. If `offset-position` is explicitly specified as `normal` (or omitted and allowed to default to `normal`), the element is positioned at the `center` (or `50% 50%`) of its containing block. Specifying `offset-position: auto` sets the starting position at the `top left` corner (or `0 0`) of the element's position.
-- The element is initially rotated such that its [inline axis](/guides/Grid_layout/Box_alignment#the_two_axes_of_a_grid_layout) — its direction of text flow — aligns with the angle specified by `ray()`. For example, with the `ray()` angle of `0deg`, which lies on the y-axis pointing up, the element's inline axis is rotated to be vertical to match the ray's angle. The element maintains this rotation throughout its path. To customize this behavior, use the {{cssxref("offset-rotate")}} property, which allows you to specify a different rotation angle or direction for the element, enabling more precise control over its appearance as it follows the path. For example, setting `offset-rotate: 0deg` will remove any rotation applied by `ray()`, aligning back the element's inline axis with the direction of text flow.
+- The element is initially positioned by moving the element's `offset-anchor` point to the element's offset starting position. By default, the ray's starting position is determined by the `offset-position` value. If `offset-position` is explicitly specified as `normal` (or omitted and allowed to default to `normal`), the element is positioned at the `center` (or `50% 50%`) of its containing block. Specifying `offset-position: auto` sets the starting position at the `top left` corner (or `0 0`) of the element's position.
+- The element is initially rotated such that its [inline axis](/guides/Grid_layout/Box_alignment#the_two_axes_of_a_grid_layout) — its direction of text flow — aligns with the angle specified by `ray()`. For example, with the `ray()` angle of `0deg`, which lies on the y-axis pointing up, the element's inline axis is rotated to be vertical to match the ray's angle. The element maintains this rotation throughout its path. To customize this behavior, use the `offset-rotate` property, which allows you to specify a different rotation angle or direction for the element, enabling more precise control over its appearance as it follows the path. For example, setting `offset-rotate: 0deg` will remove any rotation applied by `ray()`, aligning back the element's inline axis with the direction of text flow.
 
 ## Formal syntax
 
@@ -189,9 +189,9 @@ pre {
 </div>
 ```
 
-Similar to {{cssxref("transform-origin")}}, the default anchor point is at the center of an element. This anchor point can be modified using the {{cssxref("offset-anchor")}} property.
+Similar to `transform-origin`, the default anchor point is at the center of an element. This anchor point can be modified using the `offset-anchor` property.
 
-In this example, various `offset-path: ray()` values are applied to the boxes numbered `1` to `5`. The "containing block" of each box is depicted with a dashed border. A faded box in the upper left corner shows each box's default position without any `offset-position` or `offset-path` applied, allowing for a side-by-side comparison. The top of each box is highlighted with a `solid` border to illustrate variations in ray starting points and orientations. After positioning at the ray's starting point, a box aligns with the direction of the specified ray angle. If {{cssxref("offset-position")}} is not specified, the default offset starting position of the ray is the center (or `50% 50%`) of the box's containing block.
+In this example, various `offset-path: ray()` values are applied to the boxes numbered `1` to `5`. The "containing block" of each box is depicted with a dashed border. A faded box in the upper left corner shows each box's default position without any `offset-position` or `offset-path` applied, allowing for a side-by-side comparison. The top of each box is highlighted with a `solid` border to illustrate variations in ray starting points and orientations. After positioning at the ray's starting point, a box aligns with the direction of the specified ray angle. If `offset-position` is not specified, the default offset starting position of the ray is the center (or `50% 50%`) of the box's containing block.
 
 #### Result
 
@@ -201,7 +201,7 @@ In this example, various `offset-path: ray()` values are applied to the boxes nu
 
 - In `box2`, a greater positive angle of `150deg` is applied to the ray to show how the ray angle works. Starting from the top-left corner, the box is rotated in a clockwise direction to reach the specified angle of `150deg`.
 
-- `box2` and `box3` have the same `offset-path` values. In `box3`, an {{cssxref("offset-rotate")}} of `0deg` is also applied to the element. As a result, the element will remain rotated at this specific angle all along the ray's path, and the element will not rotate in the direction of the path. Notice in `box3` that the ray path is at `150deg`, but the box orientation will not change along the path because of `offset-rotate`. Also note that the `offset-path` property of `box3` does not specify a starting `<position>`, so the ray's starting position is derived from the element's `offset-position`, which in this case is `top 20% left 40%`.
+- `box2` and `box3` have the same `offset-path` values. In `box3`, an `offset-rotate` of `0deg` is also applied to the element. As a result, the element will remain rotated at this specific angle all along the ray's path, and the element will not rotate in the direction of the path. Notice in `box3` that the ray path is at `150deg`, but the box orientation will not change along the path because of `offset-rotate`. Also note that the `offset-path` property of `box3` does not specify a starting `<position>`, so the ray's starting position is derived from the element's `offset-position`, which in this case is `top 20% left 40%`.
 
 - The `offset-position` of `box4` is set to top-left corner (`0 0`) of the containing block, and as a result, the element's anchor point and the offset starting position coincide. The ray angle of `0deg` is applied to the element at this starting point.
 
@@ -325,7 +325,7 @@ offset-rotate: 0deg;
 
 {{EmbedLiveSample('Animating an element along the ray', '100%', 750)}}
 
-In the first two samples where `offset-path` is applied, notice the orientation of the shape without {{cssxref("offset-rotate")}} and with `offset-rotate`. Both these samples use the default {{cssxref("offset-position")}} value `normal`, and therefore, the path motion starts from `50% 50%`. The last two `offset-path` samples show the impact of corner `<size>` values: `closest-corner` and `farthest-corner`. The `closest-corner` value creates a very short offset-path because the shape is already at the corner (`offset-position: auto`). The `farthest-corner` value creates the longest offset-path, going from the top-left corner of the containing block to the bottom-right corner.
+In the first two samples where `offset-path` is applied, notice the orientation of the shape without `offset-rotate` and with `offset-rotate`. Both these samples use the default `offset-position` value `normal`, and therefore, the path motion starts from `50% 50%`. The last two `offset-path` samples show the impact of corner `<size>` values: `closest-corner` and `farthest-corner`. The `closest-corner` value creates a very short offset-path because the shape is already at the corner (`offset-position: auto`). The `farthest-corner` value creates the longest offset-path, going from the top-left corner of the containing block to the bottom-right corner.
 
 ## Specifications
 
@@ -337,6 +337,6 @@ In the first two samples where `offset-path` is applied, notice the orientation 
 
 ## See also
 
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-path")}}
-- {{cssxref("offset-rotate")}}
+- `offset-distance`
+- `offset-path`
+- `offset-rotate`

@@ -25,7 +25,7 @@ A regular [CSS custom property](/reference/properties/--*) consists of a propert
 
 In the above example however, there is nothing to stop someone using some other value for this property, perhaps setting it to a length. Having done so, anywhere that the property is used would have no background color as `background-color: 12px` is not valid. When browsers come across CSS they don't recognize as valid they throw that line away.
 
-Using {{cssxref("@property")}} however, we can declare the custom property with a {{CSSxRef("@property/syntax","syntax")}} of `<color>`. This shows that we need this property to have a value which is a valid color.
+Using `@property` however, we can declare the custom property with a `syntax` of `<color>`. This shows that we need this property to have a value which is a valid color.
 
 ```css
 @property --background-color {
@@ -37,25 +37,25 @@ Using {{cssxref("@property")}} however, we can declare the custom property with 
 
 ## Houdini worklets
 
-A feature of Houdini is the {{domxref("Worklet")}}. A worklet is a module, written in JavaScript, that extends CSS using one of the Houdini APIs. You can see an example worklet on the {{domxref("PaintWorkletGlobalScope.registerPaint()")}} page. Once a worklet has been registered you can use it in CSS just like any other value. This means that even if you are not a JavaScript developer, you can access Houdini APIs by using worklets other people have created.
+A feature of Houdini is the `Worklet`. A worklet is a module, written in JavaScript, that extends CSS using one of the Houdini APIs. You can see an example worklet on the `PaintWorkletGlobalScope.registerPaint()` page. Once a worklet has been registered you can use it in CSS just like any other value. This means that even if you are not a JavaScript developer, you can access Houdini APIs by using worklets other people have created.
 
 ## Reference
 
 ### CSS at-rule and descriptors
 
-The {{CSSxRef("@property")}} at-rule allows you to register an advanced custom property.
+The `@property` at-rule allows you to register an advanced custom property.
 
-- {{CSSxRef("@property")}}
-- {{CSSxRef("@property/inherits","inherits")}}
-- {{CSSxRef("@property/initial-value","initial-value")}}
-- {{CSSxRef("@property/syntax","syntax")}}
+- `@property`
+- `inherits`
+- `initial-value`
+- `syntax`
 
 ### Houdini API references
 
 - [CSS Properties and Values API](/en-US/docs/Web/API/CSS_Properties_and_Values_API)
 - [CSS Typed Object Model API](/en-US/docs/Web/API/CSS_Typed_OM_API)
 - [CSS Painting API](/en-US/docs/Web/API/CSS_Painting_API)
-- {{domxref("Worklet")}} reference
+- `Worklet` reference
 
 ### Houdini guides
 

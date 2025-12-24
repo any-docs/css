@@ -6,7 +6,7 @@ browser-compat: css.types.tan
 sidebar: cssref
 ---
 
-The **`tan()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the tangent of a number, which is a value between `−infinity` and `infinity`. The function contains a single calculation that must resolve to either a {{cssxref("&lt;number&gt;")}} or an {{cssxref("angle")}} by interpreting the result of the argument as radians.
+The **`tan()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the tangent of a number, which is a value between `−infinity` and `infinity`. The function contains a single calculation that must resolve to either a `&lt;number&gt;` or an `angle` by interpreting the result of the argument as radians.
 
 ## Syntax
 
@@ -30,7 +30,7 @@ width: calc(100px * tan(e));
 The `tan(angle)` function accepts only one value as its parameter.
 
 - `angle`
-  - A calculation which resolves to a {{cssxref("&lt;number&gt;")}} or an {{cssxref("angle")}}. When specifying unitless numbers they are interpreted as a number of radians, representing an {{cssxref("angle")}}.
+  - A calculation which resolves to a `&lt;number&gt;` or an `angle`. When specifying unitless numbers they are interpreted as a number of radians, representing an `angle`.
 
 ### Return value
 
@@ -101,10 +101,10 @@ body {
 
 ## See also
 
-- {{CSSxRef("sin")}}
-- {{CSSxRef("cos")}}
-- {{CSSxRef("asin")}}
-- {{CSSxRef("acos")}}
-- {{CSSxRef("atan")}}
-- {{CSSxRef("atan2")}}
+- `sin`
+- `cos`
+- `asin`
+- `acos`
+- `atan`
+- `atan2`
 - [Using CSS typed arithmetic](/guides/Values_and_units/Using_typed_arithmetic)

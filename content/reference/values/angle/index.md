@@ -6,7 +6,7 @@ browser-compat: css.types.angle
 sidebar: cssref
 ---
 
-The **`<angle>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents an angle value expressed in degrees, gradians, radians, or turns. It is used, for example, in {{cssxref("gradient")}}s and in some {{cssxref("transform")}} functions.
+The **`<angle>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents an angle value expressed in degrees, gradians, radians, or turns. It is used, for example, in `gradient`s and in some `transform` functions.
 
 {{InteractiveExample("CSS Demo: &lt;angle&gt;")}}
 
@@ -46,9 +46,9 @@ transform: rotate(1.75turn);
 
 ## Syntax
 
-The `<angle>` data type consists of a {{cssxref("&lt;number&gt;")}} followed by one of the units listed below. As with all dimensions, there is no space between the unit literal and the number. The angle unit is optional after the number `0`.
+The `<angle>` data type consists of a `&lt;number&gt;` followed by one of the units listed below. As with all dimensions, there is no space between the unit literal and the number. The angle unit is optional after the number `0`.
 
-Optionally, it may be preceded by a single `+` or `-` sign. Positive numbers represent clockwise angles, while negative numbers represent counterclockwise angles. For static properties of a given unit, any angle can be represented by various equivalent values. For example, `90deg` equals `-270deg`, and `1turn` equals `4turn`. For dynamic properties, like when applying an {{cssxref("animation")}} or {{cssxref("transition")}}, the effect will nevertheless be different.
+Optionally, it may be preceded by a single `+` or `-` sign. Positive numbers represent clockwise angles, while negative numbers represent counterclockwise angles. For static properties of a given unit, any angle can be represented by various equivalent values. For example, `90deg` equals `-270deg`, and `1turn` equals `4turn`. For dynamic properties, like when applying an `animation` or `transition`, the effect will nevertheless be different.
 
 ### Units
 
@@ -118,7 +118,7 @@ Optionally, it may be preceded by a single `+` or `-` sign. Positive numbers rep
 ## See also
 
 - [CSS data types](/reference/values/Data_types)
-- The {{cssxref("gradient")}} type
+- The `gradient` type
 - CSS rotation transforms: [`rotate()`](/reference/values/transform-function/rotate), [`rotate3d()`](/reference/values/transform-function/rotate3d), [`rotateX()`](/reference/values/transform-function/rotateX), [`rotateY()`](/reference/values/transform-function/rotateY), and [`rotateZ()`](/reference/values/transform-function/rotateZ)
 - [CSS transforms](/guides/Transforms)
 - [Using CSS transforms](/guides/Transforms/Using)

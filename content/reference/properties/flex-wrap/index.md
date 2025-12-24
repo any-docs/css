@@ -50,7 +50,7 @@ flex-wrap: wrap-reverse;
 }
 ```
 
-The {{cssxref("flex-flow")}} property shorthand can be used to set both the {{CSSXRef("flex-direction")}} and `flex-wrap` properties, which define the flex container's main and cross axes, respectively.
+The `flex-flow` property shorthand can be used to set both the `flex-direction` and `flex-wrap` properties, which define the flex container's main and cross axes, respectively.
 
 ## Syntax
 
@@ -72,9 +72,9 @@ flex-wrap: unset;
 The `flex-wrap` property is specified as a single keyword chosen from the following values below:
 
 - `nowrap`
-  - The flex items are laid out in a single line which may cause the flex container to overflow. The cross-start is the equivalent of [inline-start or block-start](/en-US/docs/Glossary/Flow_relative_values), depending on the {{cssxref("flex-direction")}} value. This is the default value.
+  - The flex items are laid out in a single line which may cause the flex container to overflow. The cross-start is the equivalent of [inline-start or block-start](/en-US/docs/Glossary/Flow_relative_values), depending on the `flex-direction` value. This is the default value.
 - `wrap`
-  - The flex items break into multiple lines. The cross-start is the equivalent of [inline-start or block-start](/en-US/docs/Glossary/Flow_relative_values), depending on the current [writing mode](/guides/Writing_modes), and the {{cssxref("flex-direction")}} value.
+  - The flex items break into multiple lines. The cross-start is the equivalent of [inline-start or block-start](/en-US/docs/Glossary/Flow_relative_values), depending on the current [writing mode](/guides/Writing_modes), and the `flex-direction` value.
 - `wrap-reverse`
   - Behaves the same as `wrap`, but cross-start and cross-end are inverted.
 
@@ -172,8 +172,8 @@ The `flex-wrap` property is specified as a single keyword chosen from the follow
 
 ## See also
 
-- {{CSSXRef("flex-direction")}}
-- {{CSSXRef("flex-flow")}} shorthand
+- `flex-direction`
+- `flex-flow` shorthand
 - [Basic concepts of flexbox](/guides/Flexible_box_layout/Basic_concepts)
 - [Mastering wrapping of flex items](/guides/Flexible_box_layout/Wrapping_items)
 - [CSS flexible box layout](/guides/Flexible_box_layout) module

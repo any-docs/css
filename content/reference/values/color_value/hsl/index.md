@@ -86,23 +86,23 @@ hsl(H S L[ / A])
 The parameters are as follows:
 
 - `H`
-  - A {{CSSXref("&lt;number&gt;")}}, an {{cssxref("angle")}}, or the keyword `none` (equivalent to `0deg` in this case) representing the color's {{cssxref("hue")}} angle.
+  - A `&lt;number&gt;`, an `angle`, or the keyword `none` (equivalent to `0deg` in this case) representing the color's `hue` angle.
 
     > [!NOTE]
-    > The angles corresponding to particular hues differ across the sRGB (used by `hsl()` and {{CSSXref("color_value/hwb", "hwb()")}}), CIELAB (used by {{CSSXref("color_value/lch", "lch()")}}), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces. See the {{cssxref("hue")}} reference page for more detail and examples.
+    > The angles corresponding to particular hues differ across the sRGB (used by `hsl()` and `hwb()`), CIELAB (used by `lch()`), and Oklab (used by `oklch()`) color spaces. See the `hue` reference page for more detail and examples.
 
 - `S`
-  - A {{CSSXref("&lt;percentage&gt;")}} or the keyword `none` (equivalent to `0%` in this case). This value represents the color's saturation. Here `100%` is completely saturated, while `0%` is completely unsaturated (gray).
+  - A `&lt;percentage&gt;` or the keyword `none` (equivalent to `0%` in this case). This value represents the color's saturation. Here `100%` is completely saturated, while `0%` is completely unsaturated (gray).
 - `L`
-  - A {{CSSXref("&lt;percentage&gt;")}} or the keyword `none` (equivalent to `0%` in this case). This value represents the color's lightness. Here `100%` is white, `0%` is black, and `50%` is "normal".
+  - A `&lt;percentage&gt;` or the keyword `none` (equivalent to `0%` in this case). This value represents the color's lightness. Here `100%` is white, `0%` is black, and `50%` is "normal".
 - `A` <Badge type="info" text="Optional" />
-  - An {{CSSXref("&lt;alpha-value&gt;")}} representing the alpha channel value of the color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to 100%. If included, the value is preceded by a slash (`/`).
+  - An `&lt;alpha-value&gt;` representing the alpha channel value of the color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to 100%. If included, the value is preceded by a slash (`/`).
 
 > [!NOTE]
 > See [Missing color components](/reference/values/color_value#missing_color_components) for more information on the effect of `none`.
 
 > [!NOTE]
-> Absolute `hsl()` colors are serialized to {{CSSXref("color_value/rgb", "rgb()")}} values. The values of the red, green, and blue components may be rounded in serialization.
+> Absolute `hsl()` colors are serialized to `rgb()` values. The values of the red, green, and blue components may be rounded in serialization.
 
 #### Relative value syntax
 
@@ -113,24 +113,24 @@ hsl(from <color> H S L[ / A])
 The parameters are as follows:
 
 - `from <color>`
-  - The keyword `from` is always included when defining a relative color, followed by a {{cssxref("&lt;color&gt;")}} value representing the **origin color**. This is the original color that the relative color is based on. The origin color can be _any_ valid {{cssxref("&lt;color&gt;")}} syntax, including another relative color.
+  - The keyword `from` is always included when defining a relative color, followed by a `&lt;color&gt;` value representing the **origin color**. This is the original color that the relative color is based on. The origin color can be _any_ valid `&lt;color&gt;` syntax, including another relative color.
 - `H`
-  - A {{CSSXref("&lt;number&gt;")}}, an {{cssxref("angle")}}, or the keyword `none` (equivalent to `0deg` in this case) representing the output color's {{cssxref("hue")}} angle.
+  - A `&lt;number&gt;`, an `angle`, or the keyword `none` (equivalent to `0deg` in this case) representing the output color's `hue` angle.
 - `S`
-  - A {{CSSXref("&lt;percentage&gt;")}} or the keyword `none` (equivalent to `0%` in this case). This represents the saturation of the output color. Here `100%` is completely saturated, while `0%` is completely unsaturated (gray).
+  - A `&lt;percentage&gt;` or the keyword `none` (equivalent to `0%` in this case). This represents the saturation of the output color. Here `100%` is completely saturated, while `0%` is completely unsaturated (gray).
 - `L`
-  - A {{CSSXref("&lt;percentage&gt;")}} or the keyword `none` (equivalent to `0%` in this case). This represents the lightness of the output color. Here `100%` is white, `0%` is black, and `50%` is "normal".
+  - A `&lt;percentage&gt;` or the keyword `none` (equivalent to `0%` in this case). This represents the lightness of the output color. Here `100%` is white, `0%` is black, and `50%` is "normal".
 - `A` <Badge type="info" text="Optional" />
-  - An {{CSSXref("&lt;alpha-value&gt;")}} representing the alpha channel value of the output color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to the alpha channel value of the origin color. If included, the value is preceded by a slash (`/`).
+  - An `&lt;alpha-value&gt;` representing the alpha channel value of the output color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to the alpha channel value of the origin color. If included, the value is preceded by a slash (`/`).
 
 > [!NOTE]
-> To fully enable the representation of the full spectrum of visible colors, the output of relative `hsl()` color functions is serialized to `color(srgb)`. That means that querying the output color value via the {{DOMxRef("HTMLElement.style")}} property or the {{DOMxRef("CSSStyleDeclaration.getPropertyValue()")}} method returns the output color as a [`color(srgb ...)`](/reference/values/color_value/color) value.
+> To fully enable the representation of the full spectrum of visible colors, the output of relative `hsl()` color functions is serialized to `color(srgb)`. That means that querying the output color value via the `HTMLElement.style` property or the `CSSStyleDeclaration.getPropertyValue()` method returns the output color as a [`color(srgb ...)`](/reference/values/color_value/color) value.
 
 #### Defining relative color output channel components
 
 When using relative color syntax inside an `hsl()` function, the browser converts the origin color into an equivalent HSL color (if it is not already specified as such). The color is defined as three distinct color channel values — `h` (hue), `s` (saturation), and `l` (lightness) — plus an alpha channel value (`alpha`). These channel values are made available inside the function to be used when defining the output color channel values:
 
-- The `h` value is resolved to a {{cssxref("&lt;number&gt;")}} between `0` and `360`, inclusive, that represents the origin color's {{cssxref("hue")}} degree value.
+- The `h` value is resolved to a `&lt;number&gt;` between `0` and `360`, inclusive, that represents the origin color's `hue` degree value.
 - The `s` and `l` values are each resolved to a `<number>` between `0` and `100`, inclusive, where `100` is equivalent to `100%`.
 - The `alpha` value is resolved to a `<number>` between `0` and `1`, inclusive.
 
@@ -183,7 +183,7 @@ hsl(from rgb(255 0 0 / 0.8) h s l / 0.5)
 /* Computed output color: color(srgb 1 0 0 / 0.5) */
 ```
 
-In the following example, the `rgb()` origin color is again converted into an `hsl()` representation — `hsl(0 100% 50% / 0.8)`. {{cssxref("calc")}} calculations are applied to the `H`, `S`, `L`, and `A` values, and the final output color is the equivalent of `hsl(60 80% 30% / 0.7)` in the sRGB color space: `color(srgb 0.72 0.72 0.08 / 0.7)`.
+In the following example, the `rgb()` origin color is again converted into an `hsl()` representation — `hsl(0 100% 50% / 0.8)`. `calc` calculations are applied to the `H`, `S`, `L`, and `A` values, and the final output color is the equivalent of `hsl(60 80% 30% / 0.7)` in the sRGB color space: `color(srgb 0.72 0.72 0.08 / 0.7)`.
 
 ```css
 hsl(from rgb(255 0 0 / 0.8) calc(h + 60) calc(s - 20) calc(l - 10) / calc(alpha - 0.1))
@@ -397,7 +397,7 @@ div.legacyHSLA {
 
 ## See also
 
-- {{cssxref("hue")}} data type
+- `hue` data type
 - [`lch()`](/reference/values/color_value/lch) and [`hwb()`](/reference/values/color_value/hwb) color functions
 - [Hue interpolation in `color-mix()`](/reference/values/color_value/color-mix#using_hue_interpolation_in_color-mix)
 - [List of all color notations](/reference/values/color_value)

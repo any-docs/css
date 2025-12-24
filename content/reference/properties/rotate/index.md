@@ -6,7 +6,7 @@ browser-compat: css.properties.rotate
 sidebar: cssref
 ---
 
-The **`rotate`** [CSS](/en-US/docs/Web/CSS) property allows you to specify rotation transforms individually and independently of the {{CSSxRef("transform")}} property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` property.
+The **`rotate`** [CSS](/en-US/docs/Web/CSS) property allows you to specify rotation transforms individually and independently of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` property.
 
 {{InteractiveExample("CSS Demo: rotate")}}
 
@@ -132,11 +132,11 @@ rotate: unset;
 ### Values
 
 - angle value
-  - An {{cssxref("angle")}} specifying the angle to rotate the affected element through, around the Z axis. Equivalent to a `rotate()` (2D rotation) function.
+  - An `angle` specifying the angle to rotate the affected element through, around the Z axis. Equivalent to a `rotate()` (2D rotation) function.
 - x, y, or z axis name plus angle value
-  - The name of the axis you want to rotate the affected element around (`x`, `y`, or `z`), plus an {{cssxref("angle")}} specifying the angle to rotate the element through. Equivalent to a `rotateX()`/`rotateY()`/`rotateZ()` (3D rotation) function.
+  - The name of the axis you want to rotate the affected element around (`x`, `y`, or `z`), plus an `angle` specifying the angle to rotate the element through. Equivalent to a `rotateX()`/`rotateY()`/`rotateZ()` (3D rotation) function.
 - vector plus angle value
-  - Three {{CSSxRef("&lt;number&gt;")}}s representing an origin-centered vector that defines a line around which you want to rotate the element, plus an {{cssxref("angle")}} specifying the angle to rotate the element through. Equivalent to a `rotate3d()` (3D rotation) function.
+  - Three `&lt;number&gt;`s representing an origin-centered vector that defines a line around which you want to rotate the element, plus an `angle` specifying the angle to rotate the element through. Equivalent to a `rotate3d()` (3D rotation) function.
 - `none`
   - Specifies that no rotation should be applied.
 

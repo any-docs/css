@@ -10,7 +10,7 @@ The **`@supports`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules
 Using this at-rule is commonly called a _feature query_.
 The rule must be placed at the top level of your code or nested inside any other conditional group at-rule.
 
-In JavaScript, `@supports` can be accessed via the CSS object model interface {{DOMxRef("CSSSupportsRule")}}.
+In JavaScript, `@supports` can be accessed via the CSS object model interface `CSSSupportsRule`.
 
 {{InteractiveExample("CSS Demo: @supports", "tabbed-standard")}}
 
@@ -143,7 +143,7 @@ The following table describes the available formats (`<font-format>` values) tha
 ### The not operator
 
 The `not` operator precedes an expression resulting in the negation of the expression.
-The following returns true if the browser's {{CSSxRef("transform-origin")}} property considers `10em 10em 10em` **to be invalid:**
+The following returns true if the browser's `transform-origin` property considers `10em 10em 10em` **to be invalid:**
 
 ```css
 @supports not (transform-origin: 10em 10em 10em) {
@@ -245,7 +245,7 @@ Multiple disjunctions can be juxtaposed without the need of more parentheses. Th
 
 ### Testing for the support of a selector
 
-CSS conditional rules provide the ability to test for the support of a selector such as {{cssxref(":has",":has()")}}.
+CSS conditional rules provide the ability to test for the support of a selector such as `:has()`.
 
 ```css
 /* This rule won't be applied in browsers that don't support :has() */
@@ -285,7 +285,7 @@ The following example applies the [Bungee Spice](https://fonts.google.com/specim
 }
 ```
 
-It's also possible to test for the support of a font technology by using the `tech` function inside the {{CSSxRef("@font-face")}} at-rule.
+It's also possible to test for the support of a font technology by using the `tech` function inside the `@font-face` at-rule.
 In the following example, if a browser doesn't support the color font technology in the [`bungee-spice.woff2`](https://fonts.google.com/specimen/Bungee+Spice) font, a regular [`bungee.woff2`](https://fonts.google.com/specimen/Bungee) font will be used instead.
 
 ```css
@@ -323,7 +323,7 @@ body {
 }
 ```
 
-However, a more efficient way to specify multiple font formats is to list them in the `src` descriptor of a single {{cssxref("@font-face")}} at-rule in the order from the most preferred format to the least preferred:
+However, a more efficient way to specify multiple font formats is to list them in the `src` descriptor of a single `@font-face` at-rule in the order from the most preferred format to the least preferred:
 
 ```css
 @font-face {
@@ -350,5 +350,5 @@ body {
 
 - [Using feature queries](/guides/Conditional_rules/Using_feature_queries)
 - [CSS at-rule functions](/en-US/docs/Web/CSS/Reference/At-rules/At-rule_functions)
-- {{DOMxRef("CSSSupportsRule")}}
-- {{DOMxref("CSS.supports_static", "CSS.supports()")}} method
+- `CSSSupportsRule`
+- `CSS.supports()` method

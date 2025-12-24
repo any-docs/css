@@ -50,7 +50,7 @@ dd:nth-last-of-type(3n) {
 
 The `:nth-last-of-type()` pseudo-class is specified with a single argument, which represents the pattern for matching elements, counting from the end.
 
-See {{Cssxref(":nth-last-child")}} for a more detailed explanation of its syntax.
+See `:nth-last-child` for a more detailed explanation of its syntax.
 
 ## Examples
 
@@ -89,4 +89,4 @@ span:nth-last-of-type(2) {
 
 ## See also
 
-- {{Cssxref(":nth-last-child")}}, {{Cssxref(":nth-of-type")}}
+- `:nth-last-child`, `:nth-of-type`

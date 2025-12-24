@@ -82,7 +82,7 @@ The return value is calculated as follows:
 
 1. The `<if-condition>` expressions are evaluated, in the order they appear in the function.
 2. The first `<if-condition>` that evaluates to `true` has its associated `<value>` returned.
-3. If no `<if-condition>` evaluates to `true`, the function returns a {{glossary("guaranteed_invalid_value", "&lt;guaranteed-invalid&gt:")}}. This behaves as invalid or `false` if the `if()` function is used in a value statement that has a fallback, such as a [custom property](/reference/properties/--*) or an {{cssxref("anchor()")}} function.
+3. If no `<if-condition>` evaluates to `true`, the function returns a {{glossary("guaranteed_invalid_value", "&lt;guaranteed-invalid&gt:")}}. This behaves as invalid or `false` if the `if()` function is used in a value statement that has a fallback, such as a [custom property](/reference/properties/--*) or an `anchor()` function.
 
 For example:
 
@@ -96,7 +96,7 @@ div {
 }
 ```
 
-In this case, we are setting a different {{cssxref("linear-gradient()")}} as the {{cssxref("background-image")}} on {{htmlelement("div")}} elements, depending on whether a `--scheme` [custom property](/reference/properties/--*) is set to `ice` or `fire`. If `--scheme` doesn't exist, or it exists and is set to any other value, the `else` value comes into play, and the `background-image` property is set to `none`.
+In this case, we are setting a different `linear-gradient()` as the `background-image` on {{htmlelement("div")}} elements, depending on whether a `--scheme` [custom property](/reference/properties/--*) is set to `ice` or `fire`. If `--scheme` doesn't exist, or it exists and is set to any other value, the `else` value comes into play, and the `background-image` property is set to `none`.
 
 > [!NOTE]
 > Each condition must be separated from its associated value with a colon, and each `<if-condition> : <value>` pair must be separated with a semi-colon. The semi-colon is optional for the last `<if-condition> : <value>` pair.
@@ -142,7 +142,7 @@ background-color: if(else: yellow);
 background-image: if();
 ```
 
-These functions are not useful. They were included to demonstrate their validity. In this case, the {{cssxref("background-color")}} value will always be set to `yellow` and the `background-image` will be set to its initial value. You would be better off setting the `background-color` directly to `yellow`, and the `background-image` to `initial` or `none`.
+These functions are not useful. They were included to demonstrate their validity. In this case, the `background-color` value will always be set to `yellow` and the `background-image` will be set to its initial value. You would be better off setting the `background-color` directly to `yellow`, and the `background-image` to `initial` or `none`.
 
 ### Types of if-tests
 
@@ -161,7 +161,7 @@ background-image: if(
 
 If the `--scheme` custom property is set to a value of `ice` on the same element, the provided `linear-gradient()` value is returned. If not, then `none` is returned.
 
-Using style queries inside `if()` statements has an advantage over {{cssxref("@container")}} queries — you can target an element with styles directly, based on whether a custom property is set on it, rather than having to check set styles on a container parent element.
+Using style queries inside `if()` statements has an advantage over `@container` queries — you can target an element with styles directly, based on whether a custom property is set on it, rather than having to check set styles on a container parent element.
 
 You can also use `and`, `or`, or `not` logic inside style queries. For example:
 
@@ -230,13 +230,13 @@ background-color: if(
 );
 ```
 
-When you want to set multiple declarations or rules based on one media query, a regular {{cssxref("@media")}} construct is needed. The two approaches are complementary, and have different uses.
+When you want to set multiple declarations or rules based on one media query, a regular `@media` construct is needed. The two approaches are complementary, and have different uses.
 
 #### Feature queries
 
 A [feature query](/guides/Conditional_rules/Using_feature_queries) `<if-test>` can be used to set a value for a property depending on whether the browser supports a particular property value.
 
-For example, the following returns an {{cssxref("color_value/lch()")}} color if `lch()` colors are supported, or an {{cssxref("color_value/rgb()")}} color if not:
+For example, the following returns an `color_value/lch()` color if `lch()` colors are supported, or an `color_value/rgb()` color if not:
 
 ```css
 color: if(
@@ -245,7 +245,7 @@ color: if(
 )
 ```
 
-Selector support queries also work. The following will return a value of `1em` if the browser supports the {{cssxref(":buffering")}} pseudo-class, or `initial` if not:
+Selector support queries also work. The following will return a value of `1em` if the browser supports the `:buffering` pseudo-class, or `initial` if not:
 
 ```css
 margin-top: if(
@@ -270,13 +270,13 @@ margin-top: if(
 );
 ```
 
-Feature queries are really useful inside `if()` statements when you need to vary a single property value based on support for a particular value or a separate property. When you want to set multiple declarations or rules based on one feature query, a regular {{cssxref("@supports")}} construct is better. The two approaches are complementary, and have different uses.
+Feature queries are really useful inside `if()` statements when you need to vary a single property value based on support for a particular value or a separate property. When you want to set multiple declarations or rules based on one feature query, a regular `@supports` construct is better. The two approaches are complementary, and have different uses.
 
 ### Providing fallback values
 
 The `if()` statement does not gracefully degrade; an explicit fallback needs to be provided for non-supporting browsers.
 
-For example, in this case we provide a static {{cssxref("padding")}} value for browsers that don't support `if()`. Browsers that support `if()` will override the first declaration with the second one, which sets different padding values depending on whether or not the `--size: "2xl"` custom property is set.
+For example, in this case we provide a static `padding` value for browsers that don't support `if()`. Browsers that support `if()` will override the first declaration with the second one, which sets different padding values depending on whether or not the `--size: "2xl"` custom property is set.
 
 ```css
 padding: 1em;
@@ -288,7 +288,7 @@ padding: if(style(--size: "2xl"): 1em; else: 0.25em);
 
 ### Whole and partial values
 
-An `if()` function can be set as the value of any CSS property, but it can also be used to determine parts of property values. For example, the following sets a different {{cssxref("border-color")}} inside a {{cssxref("border")}} shorthand property, depending on whether {{cssxref("color_value/lch()")}} colors are supported:
+An `if()` function can be set as the value of any CSS property, but it can also be used to determine parts of property values. For example, the following sets a different `border-color` inside a `border` shorthand property, depending on whether `color_value/lch()` colors are supported:
 
 ```css
 border: if(
@@ -297,7 +297,7 @@ border: if(
 );
 ```
 
-However, we could use the `if()` function to determine the {{cssxref("border-color")}} component only:
+However, we could use the `if()` function to determine the `border-color` component only:
 
 ```css
 border: 3px solid
@@ -308,7 +308,7 @@ border: 3px solid
 
 ### Nesting if() functions
 
-Because an `if()` function can take the place of whole property values or individual components, it is possible to nest `if()` functions within other `if()` functions, and inside other functions such as {{cssxref("calc()")}}.
+Because an `if()` function can take the place of whole property values or individual components, it is possible to nest `if()` functions within other `if()` functions, and inside other functions such as `calc()`.
 
 For example, in this declaration we are using `if()` to set a `color` property value depending on various conditions. We have an outer `if()` function that returns a particular value depending on whether the `--scheme` custom property is set to `ice` or `fire` (with an `else` value of `black` that is returned if neither of the conditions return true).
 
@@ -362,7 +362,7 @@ Our HTML features a {{htmlelement("section")}} element with two {{htmlelement("a
 
 #### CSS
 
-In our CSS, we first target the `<section>` element, laying it out with [flexbox](/guides/Flexible_box_layout) and setting a {{cssxref("gap")}} between the two child `<article>` elements. We then use an `if()` function with an [`orientation`](/en-US/docs/Web/CSS/Reference/At-rules/@media/orientation) media query `<if-test>` to set the value of the {{cssxref("flex-direction")}} property to `row` if the document is in landscape orientation, or `column` if it is in portrait orientation. This lays out the `article` elements side-by-side in wide screens, and top-to-bottom in narrow screens.
+In our CSS, we first target the `<section>` element, laying it out with [flexbox](/guides/Flexible_box_layout) and setting a `gap` between the two child `<article>` elements. We then use an `if()` function with an [`orientation`](/en-US/docs/Web/CSS/Reference/At-rules/@media/orientation) media query `<if-test>` to set the value of the `flex-direction` property to `row` if the document is in landscape orientation, or `column` if it is in portrait orientation. This lays out the `article` elements side-by-side in wide screens, and top-to-bottom in narrow screens.
 
 ```css hidden live-sample___basic
 html {
@@ -397,7 +397,7 @@ section {
 }
 ```
 
-Next, we target the `<h2>` element's {{cssxref("::before")}} pseudo-element, setting its {{cssxref("content")}} property to an apple emoji, but only if `--show-apple: true` is set (we did this earlier with an inline {{htmlelement("style")}} in our HTML). We achieve this using an `if()` function with a [style query](/guides/Containment/Container_size_and_style_queries#style_queries_for_custom_properties) `<if-test>`:
+Next, we target the `<h2>` element's `::before` pseudo-element, setting its `content` property to an apple emoji, but only if `--show-apple: true` is set (we did this earlier with an inline {{htmlelement("style")}} in our HTML). We achieve this using an `if()` function with a [style query](/guides/Containment/Container_size_and_style_queries#style_queries_for_custom_properties) `<if-test>`:
 
 ```css live-sample___basic
 h2::before {
@@ -407,7 +407,7 @@ h2::before {
 }
 ```
 
-Finally, we target the `<h2>` element itself. We use a feature query `<if-test>` to test whether the browser supports `lch()` colors, and set the {{cssxref("color")}} property to an `lch()` color if so, or a hex equivalent if not.
+Finally, we target the `<h2>` element itself. We use a feature query `<if-test>` to test whether the browser supports `lch()` colors, and set the `color` property to an `lch()` color if so, or a hex equivalent if not.
 
 ```css live-sample___basic
 h2 {
@@ -481,7 +481,7 @@ selectElem.addEventListener("change", () => {
 
 ### CSS
 
-In our CSS, we give the `<body>` element a {{cssxref("max-width")}} of `700px` and center it using `auto` {{cssxref("margin")}} values. However, we use an `if()` function with a media query `<if-test>` to set the {{cssxref("margin-top")}} component inside the `margin` shorthand to `0` if the viewport's width is less than `700px`, and `20px` if it is wider. This means that on wide screens we get a bit of margin at the top of the content, but this is removed on narrow screens, where it looks a bit weird.
+In our CSS, we give the `<body>` element a `max-width` of `700px` and center it using `auto` `margin` values. However, we use an `if()` function with a media query `<if-test>` to set the `margin-top` component inside the `margin` shorthand to `0` if the viewport's width is less than `700px`, and `20px` if it is wider. This means that on wide screens we get a bit of margin at the top of the content, but this is removed on narrow screens, where it looks a bit weird.
 
 ```css hidden live-sample___color-scheme
 * {
@@ -529,7 +529,7 @@ We then set the `--scheme` custom property to match the `<article>` element's `c
 }
 ```
 
-We can see the real power of CSS `if()` functions when we combine them with custom properties. Here we use `if()` functions to set our `--color1` and `--color2` custom properties to different color values depending on the value of the `--scheme` custom property. We then use the `--color1` and `--color2` values in our `<article>` element's {{cssxref("color")}}, {{cssxref("border")}}, and {{cssxref("background-image")}} properties, and our `<aside>` element's `color` and `background-color` properties.
+We can see the real power of CSS `if()` functions when we combine them with custom properties. Here we use `if()` functions to set our `--color1` and `--color2` custom properties to different color values depending on the value of the `--scheme` custom property. We then use the `--color1` and `--color2` values in our `<article>` element's `color`, `border`, and `background-image` properties, and our `<aside>` element's `color` and `background-color` properties.
 
 We are controlling our entire color scheme via custom properties, with different values set via `if()` functions.
 
@@ -566,8 +566,8 @@ aside {
 
 Finally, we use `if()` functions in a couple more places:
 
-- We set our `<h1>` element's {{cssxref("font-size")}} to be `calc(3rem + 2vw)` if the viewport is wider than `700px`, and `3rem` otherwise. This means the font size updates dynamically with viewport width changes on wider screens, but stays the same on narrow screens.
-- We set a suitable emoji as the {{cssxref("content")}} of our `<h1>` element's {{cssxref("::before")}} pseudo-class, depending on the value of the `--scheme` custom property.
+- We set our `<h1>` element's `font-size` to be `calc(3rem + 2vw)` if the viewport is wider than `700px`, and `3rem` otherwise. This means the font size updates dynamically with viewport width changes on wider screens, but stays the same on narrow screens.
+- We set a suitable emoji as the `content` of our `<h1>` element's `::before` pseudo-class, depending on the value of the `--scheme` custom property.
 
 ```css live-sample___color-scheme
 h1 {

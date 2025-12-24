@@ -54,8 +54,8 @@ overflow: auto;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("overflow-x")}}
-- {{cssxref("overflow-y")}}
+- `overflow-x`
+- `overflow-y`
 
 ## Syntax
 
@@ -76,16 +76,16 @@ overflow: revert-layer;
 overflow: unset;
 ```
 
-The `overflow` property is specified as one or two {{CSSXref("overflow_value", "&lt;overflow&gt;")}} keyword values. If only one keyword is specified, both `overflow-x` and `overflow-y` are set to the same value. If two keywords are specified, the first value applies to `overflow-x` in the horizontal direction and the second one applies to `overflow-y` in the vertical direction.
+The `overflow` property is specified as one or two `&lt;overflow&gt;` keyword values. If only one keyword is specified, both `overflow-x` and `overflow-y` are set to the same value. If two keywords are specified, the first value applies to `overflow-x` in the horizontal direction and the second one applies to `overflow-y` in the vertical direction.
 
 ### Values
 
 - `visible`
   - Overflow content is not clipped and may be visible outside the element's padding box. The element box is not a {{glossary("scroll container")}}. This is the default value of the `overflow` property.
 - `hidden`
-  - Overflow content is clipped at the element's padding box. There are no scroll bars, and the clipped content is not visible (i.e., clipped content is hidden), but the content still exists. User agents do not add scroll bars and also do not allow users to view the content outside the clipped region by actions such as dragging on a touch screen or using the scroll wheel on a mouse. The content _can_ be scrolled programmatically (for example, by linking to anchor text, by tabbing to a hidden yet focusable element, or by setting the value of the {{domxref("Element.scrollLeft", "scrollLeft")}} property or the {{domxref("Element.scrollTo", "scrollTo()")}} method), in which case the element box is a scroll container.
+  - Overflow content is clipped at the element's padding box. There are no scroll bars, and the clipped content is not visible (i.e., clipped content is hidden), but the content still exists. User agents do not add scroll bars and also do not allow users to view the content outside the clipped region by actions such as dragging on a touch screen or using the scroll wheel on a mouse. The content _can_ be scrolled programmatically (for example, by linking to anchor text, by tabbing to a hidden yet focusable element, or by setting the value of the `scrollLeft` property or the `scrollTo()` method), in which case the element box is a scroll container.
 - `clip`
-  - Overflow content is clipped at the element's _overflow clip edge_ that is defined using the {{cssxref("overflow-clip-margin")}} property. As a result, content overflows the element's padding box by the {{cssxref("&lt;length&gt;")}} value of `overflow-clip-margin` or by `0px` if not set. Overflow content outside the clipped region is not visible, user agents do not add a scroll bar, and programmatic scrolling is also not supported. No new [formatting context](/guides/Display/Block_formatting_context) is created. To establish a formatting context, use `overflow: clip` along with {{cssxref("display", "display: flow-root", "#flow-root")}}. The element box is not a scroll container.
+  - Overflow content is clipped at the element's _overflow clip edge_ that is defined using the `overflow-clip-margin` property. As a result, content overflows the element's padding box by the `&lt;length&gt;` value of `overflow-clip-margin` or by `0px` if not set. Overflow content outside the clipped region is not visible, user agents do not add a scroll bar, and programmatic scrolling is also not supported. No new [formatting context](/guides/Display/Block_formatting_context) is created. To establish a formatting context, use `overflow: clip` along with {{cssxref("display", "display: flow-root", "#flow-root")}}. The element box is not a scroll container.
 - `scroll`
   - Overflow content is clipped at the element's padding box, and overflow content can be scrolled into view using scroll bars. User agents display scroll bars whether or not any content is overflowing, so in the horizontal and vertical directions if the value applies to both directions. The use of this keyword, therefore, can prevent scroll bars from appearing and disappearing as content changes. Printers may still print overflow content. The element box is a scroll container.
 - `auto`
@@ -101,10 +101,10 @@ Overflow options include hiding overflow content, enabling scroll bars to view o
 The following nuances should be kept in mind while using the various keywords for `overflow`:
 
 - Specifying a value other than `visible` (the default) or `clip` for `overflow` creates a new [block formatting context](/guides/Display/Block_formatting_context). This is necessary for technical reasons; if a float intersects with a scrolling element, it would forcibly rewrap the content after each scroll step, leading to a slow scrolling experience.
-- For an `overflow` setting to create the desired effect, the block-level element must have either a set height ({{cssxref("height")}} or {{cssxref("max-height")}}) if the overflow is in the vertical direction, a set width ({{cssxref("width")}} or {{cssxref("max-width")}}) if the overflow is in the horizontal direction, a set block-size (({{cssxref("block-size")}} or {{cssxref("max-block-size")}}) if the overflow is in the block direction, or a set inline-size (({{cssxref("inline-size")}} or {{cssxref("max-inline-size")}}) or {{cssxref("white-space")}} set to `nowrap` if the overflow is in the inline direction.
+- For an `overflow` setting to create the desired effect, the block-level element must have either a set height (`height` or `max-height`) if the overflow is in the vertical direction, a set width (`width` or `max-width`) if the overflow is in the horizontal direction, a set block-size ((`block-size` or `max-block-size`) if the overflow is in the block direction, or a set inline-size ((`inline-size` or `max-inline-size`) or `white-space` set to `nowrap` if the overflow is in the inline direction.
 - Setting overflow to `visible` in one direction (i.e., `overflow-x` or `overflow-y`) when it isn't set to `visible` or `clip` in the other direction results in the `visible` value behaving as `auto`.
 - Setting overflow to `clip` in one direction when it isn't set to `visible` or `clip` in the other direction results in the `clip` value behaving as `hidden`.
-- The JavaScript {{domxref("Element.scrollTop")}} property may be used to scroll through content in a scroll container, except when `overflow` is set to `clip`.
+- The JavaScript `Element.scrollTop` property may be used to scroll through content in a scroll container, except when `overflow` is set to `clip`.
 
 ## Formal definition
 
@@ -250,9 +250,9 @@ p.overlay {
 
 ## See also
 
-- {{Cssxref("overflow-x")}}, {{Cssxref("overflow-y")}}
-- {{Cssxref("overflow-block")}}, {{Cssxref("overflow-clip-margin")}}, {{Cssxref("overflow-inline")}}
-- {{Cssxref("clip")}}, {{Cssxref("display")}}, {{cssxref("text-overflow")}}, {{cssxref("white-space")}}
+- `overflow-x`, `overflow-y`
+- `overflow-block`, `overflow-clip-margin`, `overflow-inline`
+- `clip`, `display`, `text-overflow`, `white-space`
 - SVG {{SVGAttr("overflow")}} attribute
 - [CSS overflow](/guides/Overflow) module
 - [Keyboard-only scrolling areas](https://adrianroselli.com/2022/06/keyboard-only-scrolling-areas.html) on adrianroselli.com (2022)

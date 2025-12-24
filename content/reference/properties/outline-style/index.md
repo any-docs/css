@@ -6,7 +6,7 @@ browser-compat: css.properties.outline-style
 sidebar: cssref
 ---
 
-The **`outline-style`** [CSS](/en-US/docs/Web/CSS) property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the {{cssxref("border")}}.
+The **`outline-style`** [CSS](/en-US/docs/Web/CSS) property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
 
 {{InteractiveExample("CSS Demo: outline-style")}}
 
@@ -47,7 +47,7 @@ outline-style: inset;
 }
 ```
 
-It is often more convenient to use the shorthand property {{cssxref("outline")}} when defining the appearance of an outline.
+It is often more convenient to use the shorthand property `outline` when defining the appearance of an outline.
 
 ## Syntax
 
@@ -79,7 +79,7 @@ The `outline-style` property is specified as any one of the values listed below.
 - `auto`
   - Permits the user agent to render a custom outline style.
 - `none`
-  - No outline is used. The {{cssxref("outline-width")}} is `0`.
+  - No outline is used. The `outline-width` is `0`.
 - `dotted`
   - The outline is a series of dots.
 - `dashed`
@@ -87,7 +87,7 @@ The `outline-style` property is specified as any one of the values listed below.
 - `solid`
   - The outline is a single line.
 - `double`
-  - The outline is two single lines. The {{cssxref("outline-width")}} is the sum of the two lines and the space between them.
+  - The outline is two single lines. The `outline-width` is the sum of the two lines and the space between them.
 - `groove`
   - The outline looks as though it were carved into the page.
 - `ridge`
@@ -279,6 +279,6 @@ The `auto` value indicates a custom outline style, described in [the specificati
 
 ## See also
 
-- {{cssxref("outline")}}
-- {{cssxref("outline-width")}}
-- {{cssxref("outline-color")}}
+- `outline`
+- `outline-width`
+- `outline-color`

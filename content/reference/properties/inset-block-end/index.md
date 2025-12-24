@@ -6,7 +6,7 @@ browser-compat: css.properties.inset-block-end
 sidebar: cssref
 ---
 
-The **`inset-block-end`** [CSS](/en-US/docs/Web/CSS) property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, or {{cssxref("left")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The **`inset-block-end`** [CSS](/en-US/docs/Web/CSS) property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 This {{glossary("inset properties", "inset property")}} has no effect on non-positioned elements.
 
@@ -89,7 +89,7 @@ inset-block-end: unset;
 
 ### Values
 
-The `inset-block-end` property takes the same values as the {{cssxref("left")}} property.
+The `inset-block-end` property takes the same values as the `left` property.
 
 ## Formal definition
 
@@ -142,6 +142,6 @@ div {
 
 ## See also
 
-- The properties which defines other insets: {{cssxref("inset-block-start")}}, {{cssxref("inset-inline-start")}}, and {{cssxref("inset-inline-end")}}
-- The mapped physical properties: {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, and {{cssxref("left")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- The properties which defines other insets: `inset-block-start`, `inset-inline-start`, and `inset-inline-end`
+- The mapped physical properties: `top`, `right`, `bottom`, and `left`
+- `writing-mode`, `direction`, `text-orientation`

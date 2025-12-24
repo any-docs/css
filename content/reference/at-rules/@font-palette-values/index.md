@@ -23,11 +23,11 @@ The [&lt;dashed-ident&gt;](/reference/values/dashed-ident) is a user defined ide
 
 ### Descriptors
 
-- {{cssxref("@font-palette-values/base-palette", "base-palette")}}
+- `base-palette`
   - Specifies the name or index of the base-palette, created by the font-maker, to use.
-- {{cssxref("@font-palette-values/font-family", "font-family")}}
+- `font-family`
   - Specifies the name of the font family that this palette can be applied to. A `font-family` name is required for the `@font-palette-values` rule to be valid.
-- {{cssxref("@font-palette-values/override-colors", "override-colors")}}
+- `override-colors`
   - Specifies the colors in the base palette to override.
 
 ## Formal syntax
@@ -82,8 +82,8 @@ When overriding colors of the normal or base-palette at index 0 you do not need 
 
 ## See also
 
-- {{cssxref("font-palette", "font-palette")}} property
-- {{cssxref("@font-palette-values/font-family", "font-family")}} descriptor
-- {{cssxref("@font-palette-values/base-palette", "base-palette")}} descriptor
-- {{cssxref("@font-palette-values/override-colors", "override-colors")}} descriptor
-- {{domxref("CSSFontPaletteValuesRule")}}
+- `font-palette` property
+- `font-family` descriptor
+- `base-palette` descriptor
+- `override-colors` descriptor
+- `CSSFontPaletteValuesRule`

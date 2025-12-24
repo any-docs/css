@@ -155,10 +155,10 @@ p {
 - [Drawing text in a `<canvas>`](/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_text)
 - [CSS Text Decoration](/guides/Text_decoration) CSS module
 - Related CSS properties
-  - {{cssxref("text-decoration")}} (and its longhand properties, such as {{cssxref("text-decoration-line")}}, {{cssxref("text-decoration-style")}}, and {{cssxref("text-decoration-thickness")}})
-  - {{cssxref("text-emphasis")}} (and its longhand properties, including {{cssxref("text-emphasis-color")}}, {{cssxref("text-emphasis-position")}}, and {{cssxref("text-emphasis-style")}})
-  - {{cssxref("text-shadow")}}
-  - {{cssxref("text-transform")}}
+  - `text-decoration` (and its longhand properties, such as `text-decoration-line`, `text-decoration-style`, and `text-decoration-thickness`)
+  - `text-emphasis` (and its longhand properties, including `text-emphasis-color`, `text-emphasis-position`, and `text-emphasis-style`)
+  - `text-shadow`
+  - `text-transform`
 
 - The [SVG](/en-US/docs/Web/SVG) {{SVGAttr("text-rendering")}} attribute
 - [SVG and CSS](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/SVG_and_CSS)

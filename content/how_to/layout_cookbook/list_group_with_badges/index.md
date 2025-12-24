@@ -83,9 +83,9 @@ body {
 
 Flexbox makes this particular pattern straightforward and also facilitates making changes to the layout.
 
-To ensure the text and badge line up correctly, I use the {{cssxref("justify-content")}} property with a value of `space-between`. This places any extra space between the items. In the live example, if you remove this property, you will see the badge move to the end of the text on items with text shorter than the one line.
+To ensure the text and badge line up correctly, I use the `justify-content` property with a value of `space-between`. This places any extra space between the items. In the live example, if you remove this property, you will see the badge move to the end of the text on items with text shorter than the one line.
 
-To align the content horizontally, I use the {{cssxref("align-items")}} property to align the text and badge on the cross axis. If you want the badge to align to the top of the content instead, change this to `align-items: flex-start`.
+To align the content horizontally, I use the `align-items` property to align the text and badge on the cross axis. If you want the badge to align to the top of the content instead, change this to `align-items: flex-start`.
 
 ## See also
 

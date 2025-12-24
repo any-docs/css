@@ -53,10 +53,10 @@ border-width: 0 4px 8px 12px;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-bottom-width")}}
-- {{cssxref("border-left-width")}}
-- {{cssxref("border-right-width")}}
-- {{cssxref("border-top-width")}}
+- `border-bottom-width`
+- `border-left-width`
+- `border-right-width`
+- `border-top-width`
 
 ## Syntax
 
@@ -97,7 +97,7 @@ The `border-width` property may be specified using one, two, three, or four valu
 ### Values
 
 - `<line-width>`
-  - Defines the width of the border, either as an explicit nonnegative {{cssxref("&lt;length&gt;")}} or a keyword. If it's a keyword, it must be one of the following values:
+  - Defines the width of the border, either as an explicit nonnegative `&lt;length&gt;` or a keyword. If it's a keyword, it must be one of the following values:
     - `thin`
     - `medium`
     - `thick`
@@ -174,5 +174,5 @@ p {
 
 ## See also
 
-- The border-related shorthand properties: {{Cssxref("border")}}, {{Cssxref("border-style")}}, {{Cssxref("border-color")}}
-- The border-width-related properties: {{Cssxref("border-bottom-width")}}, {{Cssxref("border-left-width")}}, {{Cssxref("border-right-width")}}, {{Cssxref("border-top-width")}}
+- The border-related shorthand properties: `border`, `border-style`, `border-color`
+- The border-width-related properties: `border-bottom-width`, `border-left-width`, `border-right-width`, `border-top-width`

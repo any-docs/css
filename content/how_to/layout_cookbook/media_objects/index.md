@@ -173,9 +173,9 @@ p {
 
 I have chosen to use [grid layout](/guides/Grid_layout) for the media object as it allows me to control the layout in two dimensions when I need to. This means that when we have a footer, with short content above, the footer can be pushed down to the bottom of the media object.
 
-Another reason to use grid layout is in order that I can use {{cssxref("fit-content")}} for the track sizing of the image. By using `fit-content` with a maximum size of 200 pixels, when we have a small image such as the icon, the track only gets as large as the size of that image — the `max-content` size. If the image is larger, the track stops growing at 200 pixels and as the image has a {{cssxref("max-width")}} of 100% applied, it scales down so that it continues to fit inside the column.
+Another reason to use grid layout is in order that I can use `fit-content` for the track sizing of the image. By using `fit-content` with a maximum size of 200 pixels, when we have a small image such as the icon, the track only gets as large as the size of that image — the `max-content` size. If the image is larger, the track stops growing at 200 pixels and as the image has a `max-width` of 100% applied, it scales down so that it continues to fit inside the column.
 
-By using {{cssxref("grid-template-areas")}} to achieve the layout, I can see the pattern in the CSS. I define my grid once the viewport is 500 pixels wide, so on smaller devices the media object stacks.
+By using `grid-template-areas` to achieve the layout, I can see the pattern in the CSS. I define my grid once the viewport is 500 pixels wide, so on smaller devices the media object stacks.
 
 An option for the pattern is to flip it to switch the image to the other side — this is done by adding the `media-flip` class, which defines a flipped grid template causing the layout to be mirrored.
 
@@ -183,6 +183,6 @@ When we nest one media object inside another we need to place it into the second
 
 ## See also
 
-- {{cssxref("fit-content")}} property
+- `fit-content` property
 - [Using grid template areas](/guides/Grid_layout/Grid_template_areas)
 - [CSS grid layout](/guides/Grid_layout) module

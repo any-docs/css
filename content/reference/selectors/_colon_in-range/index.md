@@ -112,7 +112,7 @@ input:out-of-range + label::after {
 {{EmbedLiveSample('Examples', 600, 140)}}
 
 > [!NOTE]
-> An empty `<input>` does not count as out of range, and will not be selected using the `:out-of-range` pseudo-class selector. The {{cssxref(":blank")}} pseudo-class exists to select blank inputs, although at the time of writing this is experimental and not well-supported. You could also use the `required` attribute and the {{cssxref(":invalid")}} pseudo-class to provide more general logic and styling for making inputs mandatory (`:invalid` will style blank _and_ out-of-range inputs).
+> An empty `<input>` does not count as out of range, and will not be selected using the `:out-of-range` pseudo-class selector. The `:blank` pseudo-class exists to select blank inputs, although at the time of writing this is experimental and not well-supported. You could also use the `required` attribute and the `:invalid` pseudo-class to provide more general logic and styling for making inputs mandatory (`:invalid` will style blank _and_ out-of-range inputs).
 
 ## Specifications
 
@@ -124,5 +124,5 @@ input:out-of-range + label::after {
 
 ## See also
 
-- {{cssxref(":out-of-range")}}
+- `:out-of-range`
 - [Form data validation](/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation)

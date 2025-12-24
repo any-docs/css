@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`rotateX()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that rotates an element around the
-x-axis (horizontal) without deforming it. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+x-axis (horizontal) without deforming it. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: rotateX()")}}
 
@@ -129,6 +129,6 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}} property
-- {{cssxref("rotate")}} property
-- {{cssxref("&lt;transform-function&gt;")}}
+- `transform` property
+- `rotate` property
+- `&lt;transform-function&gt;`

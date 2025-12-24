@@ -114,7 +114,7 @@ The third way is to create an unnamed layer using a `@layer` block at-rule witho
 
 This creates an _anonymous cascade layer_. This layer functions in the same way as named layers; however, rules cannot be assigned to it later. The order of precedence for anonymous layers is the order in which layers are declared, named or not, and lower than the styles declared outside of a layer.
 
-Another way to create a cascade layer is by using {{cssxref("@import")}}. In this case, the rules would be in the imported stylesheet. Remember that the `@import` at-rule must precede all other types of rules, except `@charset` and `@layer` rules.
+Another way to create a cascade layer is by using `@import`. In this case, the rules would be in the imported stylesheet. Remember that the `@import` at-rule must precede all other types of rules, except `@charset` and `@layer` rules.
 
 ```css
 @import "theme.css" layer(utilities);
@@ -232,11 +232,11 @@ In the following example, two layers are created with no rules applied, then CSS
 
 ## See also
 
-- {{cssxref("@import")}}
-- {{domxref("CSSLayerBlockRule")}}
-- {{domxref("CSSLayerStatementRule")}}
+- `@import`
+- `CSSLayerBlockRule`
+- `CSSLayerStatementRule`
 - [`!important`](/reference/values/important)
-- {{cssxref("revert-layer")}}
+- `revert-layer`
 - [Introducing the CSS cascade](/guides/Cascade/Introduction)
 - [Learn: Handling conflicts](/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts)
 - [Learn: Cascade layers](/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers)

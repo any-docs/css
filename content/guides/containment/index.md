@@ -19,20 +19,20 @@ Container queries are similar to dimension [media queries](/guides/Media_queries
 
 ### Properties
 
-- {{cssxref("contain")}}
-- {{cssxref("content-visibility")}}
+- `contain`
+- `content-visibility`
 
 ### Events
 
-- {{domxref("Element.contentvisibilityautostatechange_event", "contentvisibilityautostatechange")}}
+- `contentvisibilityautostatechange`
 
 ### Interfaces
 
-- {{domxref("ContentVisibilityAutoStateChangeEvent")}}
-  - {{domxref("ContentVisibilityAutoStateChangeEvent.skipped", "skipped")}} property
-- {{domxref("CSSContainerRule")}}
-  - {{domxref("CSSContainerRule.containerName")}}
-  - {{domxref("CSSContainerRule.containerQuery")}}
+- `ContentVisibilityAutoStateChangeEvent`
+  - `skipped` property
+- `CSSContainerRule`
+  - `CSSContainerRule.containerName`
+  - `CSSContainerRule.containerQuery`
 
 ## Guides
 
@@ -51,26 +51,26 @@ Container queries are similar to dimension [media queries](/guides/Media_queries
 - [Block formatting context](/guides/Display/Block_formatting_context)
 
 - [CSS conditional rules](/guides/Conditional_rules) module
-  - {{cssxref("@container")}} at-rule
-  - {{CSSxRef("container")}} property
-  - {{CSSxRef("container-name")}} property
-  - {{CSSxRef("container-type")}} property
+  - `@container` at-rule
+  - `container` property
+  - `container-name` property
+  - `container-type` property
 
 - [CSS media queries](/guides/Media_queries) module
-  - {{cssxref("@media")}} at-rule
+  - `@media` at-rule
   - [CSS logical operators](/en-US/docs/Web/CSS/Reference/At-rules/@media#logical_operators) (`not`, `or`, and `and`)
 
 - [CSS transitions](/guides/Transitions) module
-  - {{cssxref("@starting-style")}} at-rule
-  - {{cssxref("transition-behavior")}} property
+  - `@starting-style` at-rule
+  - `transition-behavior` property
 
 - [CSS box sizing](/guides/Box_sizing) module
-  - {{CSSxRef("aspect-ratio")}} property
-  - {{cssxref("contain-intrinsic-size")}} shorthand property
-  - {{CSSxRef("contain-intrinsic-inline-size")}} property
-  - {{CSSxRef("contain-intrinsic-block-size")}} property
-  - {{CSSxRef("contain-intrinsic-width")}} property
-  - {{CSSxRef("contain-intrinsic-height")}} property
+  - `aspect-ratio` property
+  - `contain-intrinsic-size` shorthand property
+  - `contain-intrinsic-inline-size` property
+  - `contain-intrinsic-block-size` property
+  - `contain-intrinsic-width` property
+  - `contain-intrinsic-height` property
 
 - [CSS counter styles](/guides/Counter_styles) module
   - [Using CSS counters](/guides/Counter_styles/Using_counters) guide
@@ -87,4 +87,4 @@ Container queries are similar to dimension [media queries](/guides/Media_queries
 - [Using feature queries](/guides/Conditional_rules/Using_feature_queries)
 - [Using CSS media queries](/guides/Media_queries/Using)
 - [Understanding aspect ratios](/guides/Box_sizing/Aspect_ratios)
-- {{cssxref("@supports")}} at-rule
+- `@supports` at-rule

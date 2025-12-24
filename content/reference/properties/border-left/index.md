@@ -52,9 +52,9 @@ border-left: 4mm ridge rgb(211 220 50 / 0.6);
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-left-color")}}
-- {{cssxref("border-left-style")}}
-- {{cssxref("border-left-width")}}
+- `border-left-color`
+- `border-left-style`
+- `border-left-width`
 
 ## Syntax
 
@@ -76,11 +76,11 @@ The three values of the shorthand property can be specified in any order, and on
 ### Values
 
 - `<br-width>`
-  - See {{cssxref("border-left-width")}}.
+  - See `border-left-width`.
 - `<br-style>`
-  - See {{cssxref("border-left-style")}}.
-- {{cssxref("&lt;color&gt;")}}
-  - See {{cssxref("border-left-color")}}.
+  - See `border-left-style`.
+- `&lt;color&gt;`
+  - See `border-left-color`.
 
 ## Description
 
@@ -98,7 +98,7 @@ border-left-style: dotted;
 border-left: none thick green;
 ```
 
-The value of {{cssxref("border-left-style")}} given before `border-left` is ignored. Since the default value of {{cssxref("border-left-style")}} is `none`, not specifying the `border-style` part results in no border.
+The value of `border-left-style` given before `border-left` is ignored. Since the default value of `border-left-style` is `none`, not specifying the `border-style` part results in no border.
 
 ## Formal definition
 
@@ -145,8 +145,8 @@ div {
 
 ## See also
 
-- {{cssxref("border")}}
-- {{cssxref("border-block")}}
-- {{cssxref("outline")}}
+- `border`
+- `border-block`
+- `outline`
 - [Backgrounds and borders](/guides/Backgrounds_and_borders)
 - [Learn CSS: Backgrounds and borders](/en-US/docs/Learn_web_development/Core/Styling_basics/Backgrounds_and_borders)

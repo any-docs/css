@@ -10,9 +10,9 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`corner-start-end-shape`** [CSS](/en-US/docs/Web/CSS) property specifies the shape of a box's block-start and inline-end corner, within its {{cssxref("border-radius")}} area.
+The **`corner-start-end-shape`** [CSS](/en-US/docs/Web/CSS) property specifies the shape of a box's block-start and inline-end corner, within its `border-radius` area.
 
-For a full description of corner shape behavior and multiple examples, see the {{cssxref("corner-shape")}} shorthand property page.
+For a full description of corner shape behavior and multiple examples, see the `corner-shape` shorthand property page.
 
 ## Syntax
 
@@ -35,7 +35,7 @@ corner-start-end-shape: unset;
 
 ### Values
 
-The `corner-start-end-shape` property is specified using a {{cssxref("&lt;corner-shape-value>")}} value.
+The `corner-start-end-shape` property is specified using a `&lt;corner-shape-value>` value.
 
 ## Formal definition
 
@@ -47,7 +47,7 @@ The `corner-start-end-shape` property is specified using a {{cssxref("&lt;corner
 
 ## Examples
 
-You can find other related examples on the {{cssxref("corner-shape")}} reference page.
+You can find other related examples on the `corner-shape` reference page.
 
 ### Basic `corner-start-end-shape` usage
 
@@ -61,7 +61,7 @@ The markup for this example contains a single {{htmlelement("div")}} element.
 
 #### CSS
 
-We give the box some basic styles, which we've hidden for brevity. We also apply a {{cssxref("box-shadow")}}, a `border-radius` of `20px 40px 60px 80px`, and a `corner-start-end-shape` of `notch`.
+We give the box some basic styles, which we've hidden for brevity. We also apply a `box-shadow`, a `border-radius` of `20px 40px 60px 80px`, and a `corner-start-end-shape` of `notch`.
 
 ```css hidden live-sample___basic-usage
 body {
@@ -109,10 +109,10 @@ The rendered result looks like this:
 
 ## See also
 
-- {{cssxref("corner-shape")}} shorthand property
-- {{cssxref("corner-start-start-shape")}}, {{cssxref("corner-end-start-shape")}}, and {{cssxref("corner-end-end-shape")}}
-- {{cssxref("corner-top-left-shape")}}, {{cssxref("corner-top-right-shape")}}, {{cssxref("corner-bottom-left-shape")}}, and {{cssxref("corner-bottom-right-shape")}}
-- {{cssxref("border-radius")}} shorthand property
-- {{cssxref("border-start-end-radius")}}
+- `corner-shape` shorthand property
+- `corner-start-start-shape`, `corner-end-start-shape`, and `corner-end-end-shape`
+- `corner-top-left-shape`, `corner-top-right-shape`, `corner-bottom-left-shape`, and `corner-bottom-right-shape`
+- `border-radius` shorthand property
+- `border-start-end-radius`
 - [CSS borders and box decorations](/guides/Borders_and_box_decorations) module
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module

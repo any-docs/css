@@ -9,7 +9,7 @@ Layout methods such as flexbox and grid enable controlling the order of content.
 
 ## Reverse the display of the items
 
-The {{cssxref("flex-direction")}} property can take one of four values:
+The `flex-direction` property can take one of four values:
 
 - `row`
 - `column`
@@ -38,7 +38,7 @@ If you are using a reverse value, or otherwise reordering your items, you should
 
 The flexible box layout specification warns us not to use reordering as a way of fixing source issues:
 
-> "Authors _must not_ use order or the \*-reverse values of {{cssxref("flex-flow")}}/`flex-direction` as a substitute for correct source ordering, as that can ruin the accessibility of the document."
+> "Authors _must not_ use order or the \*-reverse values of `flex-flow`/`flex-direction` as a substitute for correct source ordering, as that can ruin the accessibility of the document."
 
 As you tab from link to link in the live example below, the focus style is highlighted, demonstrating that changing the order of flex-items with `flex-direction` does not change the tabbing order, which will continue to follow the source code order.
 
@@ -76,9 +76,9 @@ In the same way that changing the value of `flex-direction` does not change the 
 
 ## The order property
 
-In addition to reversing the order in which flex items are visually displayed, you can target individual items and change where they appear in the visual order with the {{cssxref("order")}} property.
+In addition to reversing the order in which flex items are visually displayed, you can target individual items and change where they appear in the visual order with the `order` property.
 
-The {{cssxref("order")}} property is designed to lay the items out in _ordinal groups_. This means items are assigned an integer that represents their group. The items are then placed in the visual order according to that integer, lowest values first. If more than one item has the same integer value, then within that group the items are laid out as per source order.
+The `order` property is designed to lay the items out in _ordinal groups_. This means items are assigned an integer that represents their group. The items are then placed in the visual order according to that integer, lowest values first. If more than one item has the same integer value, then within that group the items are laid out as per source order.
 
 As an example, five flex items are assigned `order` values as follows:
 

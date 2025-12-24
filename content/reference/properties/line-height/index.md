@@ -82,11 +82,11 @@ The `line-height` property is specified as any one of the following:
 - `normal`
   - Depends on the user agent. Desktop browsers (including Firefox) use a default value of roughly **`1.2`**, depending on the element's `font-family`.
 - `<number>` (unitless)
-  - The used value is this unitless {{cssxref("&lt;number&gt;")}} multiplied by the element's own font size. The computed value is the same as the specified `<number>`. In most cases, **this is the preferred way** to set `line-height` and avoid unexpected results due to inheritance.
+  - The used value is this unitless `&lt;number&gt;` multiplied by the element's own font size. The computed value is the same as the specified `<number>`. In most cases, **this is the preferred way** to set `line-height` and avoid unexpected results due to inheritance.
 - `<length>`
-  - The specified {{cssxref("&lt;length&gt;")}} is used in the calculation of the line box height. Values given in **em** units may produce unexpected results (see example below).
+  - The specified `&lt;length&gt;` is used in the calculation of the line box height. Values given in **em** units may produce unexpected results (see example below).
 - `<percentage>`
-  - Relative to the font size of the element itself. The computed value is this {{cssxref("&lt;percentage&gt;")}} multiplied by the element's computed font size. **Percentage** values may produce unexpected results (see the second example below).
+  - Relative to the font size of the element itself. The computed value is this `&lt;percentage&gt;` multiplied by the element's computed font size. **Percentage** values may produce unexpected results (see the second example below).
 
 ## Accessibility
 
@@ -136,11 +136,11 @@ div {
 }
 ```
 
-It is often more convenient to set `line-height` by using the {{cssxref("font")}} shorthand as shown above, but this requires the `font-family` property to be specified as well.
+It is often more convenient to set `line-height` by using the `font` shorthand as shown above, but this requires the `font-family` property to be specified as well.
 
 ### Prefer unitless numbers for line-height values
 
-This example shows why it is better to use {{cssxref("&lt;number&gt;")}} values instead of {{cssxref("&lt;length&gt;")}} values. We will use two {{HTMLElement("div")}} elements. The first div, with the green border, uses a unitless `line-height` value. The second div, with the red border, uses a `line-height` value defined in `em`s.
+This example shows why it is better to use `&lt;number&gt;` values instead of `&lt;length&gt;` values. We will use two {{HTMLElement("div")}} elements. The first div, with the green border, uses a unitless `line-height` value. The second div, with the red border, uses a `line-height` value defined in `em`s.
 
 #### HTML
 
@@ -237,5 +237,5 @@ The `line-height` property can be used to adjust space between vertical lines in
 
 ## See also
 
-- {{Cssxref("font")}}, {{Cssxref("font-size")}}
+- `font`, `font-size`
 - {{glossary("Leading")}}

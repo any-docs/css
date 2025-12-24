@@ -107,10 +107,10 @@ These values vertically align the element relative to its parent element:
   - Aligns the bottom of the element with the bottom of the parent element's font.
 - `middle`
   - Aligns the middle of the element with the baseline plus half the x-height of the parent.
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Aligns the baseline of the element to the given length above the baseline of its parent. A negative value is allowed.
-- {{cssxref("&lt;percentage&gt;")}}
-  - Aligns the baseline of the element to the given percentage above the baseline of its parent, with the value being a percentage of the {{Cssxref("line-height")}} property. A negative value is allowed.
+- `&lt;percentage&gt;`
+  - Aligns the baseline of the element to the given percentage above the baseline of its parent, with the value being a percentage of the `line-height` property. A negative value is allowed.
 
 #### Line-relative values
 
@@ -318,6 +318,6 @@ td {
 ## See also
 
 - [Typical use cases of flexbox, section "Center item"](/guides/Flexible_box_layout/Use_cases#center_item)
-- {{Cssxref("line-height")}}, {{Cssxref("text-align")}}, {{Cssxref("margin")}}
+- `line-height`, `text-align`, `margin`
 - [Understanding `vertical-align`, or "How (Not) To Vertically Center Content"](https://phrogz.net/css/vertical-align/index.html)
 - [Vertical-Align: All You Need To Know](https://christopheraue.net/design/vertical-align)

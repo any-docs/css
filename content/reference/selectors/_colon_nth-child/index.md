@@ -79,7 +79,7 @@ li:nth-child(even) {
     - `B` is an integer offset,
     - `n` is all nonnegative integers, starting from 0.
 
-    It can be read as the `An+B`-th element of a list. The `A` and `B` must both have {{cssxref("&lt;integer&gt;")}} values.
+    It can be read as the `An+B`-th element of a list. The `A` and `B` must both have `&lt;integer&gt;` values.
 
 #### The `of <selector>` syntax
 
@@ -120,7 +120,7 @@ This selector selects list items if they are among the first three children and 
 - `p:nth-child(n)`
   - Represents every `<p>` element in a group of siblings. This selects the same elements as a simple `p` selector (although with a higher specificity).
 - `p:nth-child(1)` or `p:nth-child(0n+1)`
-  - Represents every `<p>` that is the first element in a group of siblings. This is the same as the {{cssxref(":first-child")}} selector (and has the same specificity).
+  - Represents every `<p>` that is the first element in a group of siblings. This is the same as the `:first-child` selector (and has the same specificity).
 - `p:nth-child(n+8):nth-child(-n+15)`
   - Represents the eighth through the fifteenth `<p>` elements of a group of siblings.
 

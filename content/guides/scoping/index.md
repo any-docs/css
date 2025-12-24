@@ -22,10 +22,10 @@ Sometimes it's useful to be able to style a host from inside the shadow tree con
 
 ### Selectors
 
-- {{CSSXref(":host")}}
-- {{CSSXref(":host()")}}
-- {{cssxref(":host-context()")}}
-- {{CSSXref("::slotted")}}
+- `:host`
+- `:host()`
+- `:host-context()`
+- `::slotted`
 
 ## Guides
 
@@ -43,8 +43,8 @@ Sometimes it's useful to be able to style a host from inside the shadow tree con
 
 ## Related concepts
 
-- CSS {{CSSXref(":defined")}} pseudo-class
-- CSS {{CSSXref("::part")}} pseudo-element
+- CSS `:defined` pseudo-class
+- CSS `::part` pseudo-element
 
 - HTML {{HTMLElement("template")}} element
 - HTML {{HTMLElement("slot")}} element
@@ -56,17 +56,17 @@ Sometimes it's useful to be able to style a host from inside the shadow tree con
 - [Selector list](/en-US/docs/Web/CSS/Reference/Selectors/Selector_list) term
 
 - [Web components](/en-US/docs/Web/API/Web_components) interfaces, properties, and methods
-  - {{DOMxRef("CustomElementRegistry")}} interface
-  - {{DOMxRef("Element")}} API
-    - {{DOMxRef("Element.slot")}} property
-    - {{DOMxRef("Element.assignedSlot")}} property
-    - {{DOMxRef("Element.attachShadow()")}} method
-  - {{DOMxRef("HTMLSlotElement")}} interface
-  - {{DOMxRef("HTMLTemplateElement")}} interface
-  - {{DOMxRef("ShadowRoot")}} interface
+  - `CustomElementRegistry` interface
+  - `Element` API
+    - `Element.slot` property
+    - `Element.assignedSlot` property
+    - `Element.attachShadow()` method
+  - `HTMLSlotElement` interface
+  - `HTMLTemplateElement` interface
+  - `ShadowRoot` interface
 
 > [!NOTE]
-> Despite the name, the {{CSSXref(":scope")}} pseudo-class, which represents elements that are a reference point (or scope) for selectors to match against, is defined in the [Selectors](/guides/Selectors) module. It is otherwise unrelated to the CSS scoping module, which is focused on scoping as it pertains to the Shadow DOM scoping mechanism.
+> Despite the name, the `:scope` pseudo-class, which represents elements that are a reference point (or scope) for selectors to match against, is defined in the [Selectors](/guides/Selectors) module. It is otherwise unrelated to the CSS scoping module, which is focused on scoping as it pertains to the Shadow DOM scoping mechanism.
 
 ## Specifications
 

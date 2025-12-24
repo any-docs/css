@@ -6,7 +6,7 @@ browser-compat: css.at-rules.page.page-orientation
 sidebar: cssref
 ---
 
-The **`page-orientation`** [CSS](/en-US/docs/Web/CSS) descriptor for the {{cssxref("@page")}} at-rule controls the rotation of a printed page. It handles the flow of content across pages when the orientation of a page is changed. This behavior differs from the [`size`](/en-US/docs/Web/CSS/Reference/At-rules/@page/size) descriptor in that a user can define the direction in which to rotate the page.
+The **`page-orientation`** [CSS](/en-US/docs/Web/CSS) descriptor for the `@page` at-rule controls the rotation of a printed page. It handles the flow of content across pages when the orientation of a page is changed. This behavior differs from the [`size`](/en-US/docs/Web/CSS/Reference/At-rules/@page/size) descriptor in that a user can define the direction in which to rotate the page.
 
 This descriptor helps with the layout and orientation of printed documents, especially when documents are printed double-sided. A user can specify how the pages will be rotated when printed. This is particularly useful to lay out content such as tables, which may be wider than the rest of the content, in a different orientation.
 

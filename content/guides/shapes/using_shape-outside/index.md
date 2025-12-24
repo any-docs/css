@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-CSS shapes can be defined using the {{cssxref("basic-shape")}} type. In this guide, we discuss creating rectangles, circles, ellipses, and polygons with the {{cssxref("shape-outside")}} property. These are features defined in the [CSS shapes module](/guides/Shapes).
+CSS shapes can be defined using the `basic-shape` type. In this guide, we discuss creating rectangles, circles, ellipses, and polygons with the `shape-outside` property. These are features defined in the [CSS shapes module](/guides/Shapes).
 
 Before looking at shapes, it is worth understanding two pieces of information that go together to make these shapes possible:
 
@@ -15,7 +15,7 @@ Before looking at shapes, it is worth understanding two pieces of information th
 
 ## The \<basic-shape> type
 
-The {{cssxref("basic-shape")}} type is used as the value for all of our basic shapes. This type is a functional notation: the function parentheses contain arguments used to describe the shape.
+The `basic-shape` type is used as the value for all of our basic shapes. This type is a functional notation: the function parentheses contain arguments used to describe the shape.
 
 The accepted arguments vary depending on the shape you are creating. We will cover these in the examples below.
 
@@ -38,7 +38,7 @@ shape-outside: circle(50%);
 shape-outside: circle(50%) margin-box;
 ```
 
-For your shape to use a different reference box, include a different {{cssxref("box-edge")}} value, for example, to use the border as a reference box for our circle, set:
+For your shape to use a different reference box, include a different `box-edge` value, for example, to use the border as a reference box for our circle, set:
 
 ```css
 .shape {
@@ -52,7 +52,7 @@ Shapes created that extend past the margin box will have the shape clipped to th
 
 The [`inset()`](/reference/values/basic-shape/inset) function defines a rectangle. This may not seem very useful as floating an item, without shapes, will give you a rectangular shape around it. However, the `inset()` type enables the definition of offsets, thus pulling the wrapping text around the reduced-size rectangle, over parts of the floated element.
 
-The `inset()` function takes up to four side offset values, plus an optional `round` keyword, followed by a {{cssxref("border-radius")}} value. The below CSS creates a rectangular shape inset from the reference box of the floated element 20 pixels from the top and bottom and 10 pixels from the left and right, with a `border-radius` value of 10 pixels.
+The `inset()` function takes up to four side offset values, plus an optional `round` keyword, followed by a `border-radius` value. The below CSS creates a rectangular shape inset from the reference box of the floated element 20 pixels from the top and bottom and 10 pixels from the left and right, with a `border-radius` value of 10 pixels.
 
 ```css
 .shape {
@@ -61,7 +61,7 @@ The `inset()` function takes up to four side offset values, plus an optional `ro
 }
 ```
 
-The offset values use the same rules as the {{cssxref("margin")}} shorthand. Four space-separated values define the top, right, bottom, and left offsets — in that order. You can also set more than one offset at once:
+The offset values use the same rules as the `margin` shorthand. Four space-separated values define the top, right, bottom, and left offsets — in that order. You can also set more than one offset at once:
 
 - If there is only one value, it applies to all sides.
 - If there are two values, the top and bottom offsets are set to the first value and the right and left offsets are set to the second.
@@ -160,11 +160,11 @@ You can also create rectangles based on distances from the top and left edges of
 
 The [`circle()`](/reference/values/basic-shape/circle) value for `shape-outside` can accept two possible arguments: a `<shape-radius>` defining the size and the `<position>` defining its location.
 
-The `circle()` and `ellipse()` `shape-outside` values both accept [`<shape-radius>`](/reference/values/basic-shape#shape-radius) as an argument. This can be a {{cssxref("length")}}, a {{cssxref("percentage")}}, or one of the keywords `closest-side` or `farthest-side`.
+The `circle()` and `ellipse()` `shape-outside` values both accept [`<shape-radius>`](/reference/values/basic-shape#shape-radius) as an argument. This can be a `length`, a `percentage`, or one of the keywords `closest-side` or `farthest-side`.
 
 The `closest-side` keyword value uses the length from the center of the shape to the closest side of the reference box to create the radius length. The `farthest-side` keyword value uses the length from the center of the shape to the farthest side of the reference box.
 
-The second argument is a `position`, which accepts a one- or two-keyword {{cssxref("&lt;position&gt;")}} value, to indicate the position of the center of the circle. This is specified the same way as {{cssxref("background-position")}}; if one or both values are omitted, the values default to `center`.
+The second argument is a `position`, which accepts a one- or two-keyword `&lt;position&gt;` value, to indicate the position of the center of the circle. This is specified the same way as `background-position`; if one or both values are omitted, the values default to `center`.
 
 To create a circle, we include a single radius value, optionally followed by the keyword **at** followed by a position value. This example has a circle applied to an {{htmlelement("img")}} with a `width` and `height` of `210px` and a `margin` of `20px`. This gives a total width for the reference box of `250px`. The `50%` value for the `<shape-radius>` means the radius is `125px`. The position value is set to `30%`, which is `30%` from the left and at the default vertical `center`.
 
@@ -373,4 +373,4 @@ The `inset()`, `circle()`, `ellipse()`, and `polygon()` are inspectable and edit
 
 ![The polygon basic shape, highlighted with the Shapes Inspector.](shapes-polygon.png)
 
-Another resource is [Clippy](https://bennettfeely.com/clippy/), a tool for creating shapes with examples using the CSS {{cssxref("clip-path")}} property, which uses the same basic shape functions and values as the `shape-outside` property.
+Another resource is [Clippy](https://bennettfeely.com/clippy/), a tool for creating shapes with examples using the CSS `clip-path` property, which uses the same basic shape functions and values as the `shape-outside` property.

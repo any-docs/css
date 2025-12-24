@@ -21,10 +21,10 @@ The **`-moz-device-pixel-ratio`** Gecko-only [CSS](/en-US/docs/Web/CSS) [media f
 
 ## Syntax
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - The number of device pixels per CSS pixel.
 
-**Media:** {{cssxref("@media")}}
+**Media:** `@media`
 **Accepts min/max prefixes:** yes
 
 ## Examples

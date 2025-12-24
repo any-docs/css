@@ -52,7 +52,7 @@ p {
 
 If the specified decoration has a specific semantic meaning, like a line-through line meaning that some text has been deleted, authors are encouraged to denote this meaning using an HTML tag, like {{ HTMLElement("del") }} or {{ HTMLElement("s") }}. As browsers can disable styling in some cases, the semantic meaning won't disappear in such a situation.
 
-When setting multiple line-decoration properties at once, it may be more convenient to use the {{cssxref("text-decoration")}} shorthand property instead.
+When setting multiple line-decoration properties at once, it may be more convenient to use the `text-decoration` shorthand property instead.
 
 ## Syntax
 
@@ -85,7 +85,7 @@ text-decoration-style: unset;
 - wavy
   - Draws a wavy line.
 - \-moz-none
-  - Draws no line. Use {{cssxref("text-decoration-line", "text-decoration-line: none")}} instead.
+  - Draws no line. Use `text-decoration-line: none` instead.
 
 ## Formal definition
 
@@ -131,8 +131,8 @@ The following creates a red wavy underline:
 
 ## See also
 
-- When setting multiple line-decoration properties at once, it may be more convenient to use the {{cssxref("text-decoration")}} shorthand property instead.
-- {{cssxref("text-decoration-line")}}
-- {{cssxref("text-decoration-color")}}
-- {{cssxref("text-decoration-thickness")}}
-- {{cssxref("text-underline-offset")}}
+- When setting multiple line-decoration properties at once, it may be more convenient to use the `text-decoration` shorthand property instead.
+- `text-decoration-line`
+- `text-decoration-color`
+- `text-decoration-thickness`
+- `text-underline-offset`

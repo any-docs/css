@@ -97,7 +97,7 @@ How overflowing columns are handled depends on whether the media context is frag
 
 In fragmented media, after a fragment (for example, a page) is filled with columns, the columns will move to a new page and fill that up with columns. In continuous media, columns will overflow in the inline direction. On the web, this means that you will get a horizontal scrollbar.
 
-The example below shows this overflow behavior. The multicol container has a set {{CSSXref("height")}} and there is more text than space to create columns; therefore, we get columns created outside of the container.
+The example below shows this overflow behavior. The multicol container has a set `height` and there is more text than space to create columns; therefore, we get columns created outside of the container.
 
 ```html live-sample___overflow-inline
 <div class="container">

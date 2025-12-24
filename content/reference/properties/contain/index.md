@@ -138,7 +138,7 @@ Using the `contain` property is useful on pages with groups of elements that are
 > [!NOTE]
 > Using `layout`, `paint`, `strict` or `content` values for this property creates:
 >
-> 1. A new [containing block](/guides/Display/Containing_block) (for the descendants whose {{cssxref("position")}} property is `absolute` or `fixed`).
+> 1. A new [containing block](/guides/Display/Containing_block) (for the descendants whose `position` property is `absolute` or `fixed`).
 > 2. A new [stacking context](/guides/Positioned_layout/Stacking_context).
 > 3. A new [block formatting context](/guides/Display/Block_formatting_context).
 
@@ -262,7 +262,7 @@ This impacts performance and interferes with the rest of the page layout.
 ### Style containment
 
 Style containment scopes [counters](/guides/Counter_styles/Using_counters) and [quotes](/reference/properties/quotes) to the contained element.
-For CSS counters, the {{cssxref("counter-increment")}} and {{cssxref("counter-set")}} properties are scoped to the element as if the element is at the root of the document.
+For CSS counters, the `counter-increment` and `counter-set` properties are scoped to the element as if the element is at the root of the document.
 
 #### Containment and counters
 
@@ -294,13 +294,13 @@ li::before {
 ```
 
 Without containment, the counter would increment from 1 to 5 for each list item.
-Style containment causes the {{cssxref("counter-increment")}} property to be scoped to the element's subtree and the counter begins again at 1:
+Style containment causes the `counter-increment` property to be scoped to the element's subtree and the counter begins again at 1:
 
 {{EmbedLiveSample('Containment_and_counters', '100%', 140)}}
 
 #### Containment and quotes
 
-CSS quotes are similarly affected in that the {{cssxref("content")}} values relating to quotes are scoped to the element:
+CSS quotes are similarly affected in that the `content` values relating to quotes are scoped to the element:
 
 ```html
 <!-- With style containment -->
@@ -355,5 +355,5 @@ Because of containment, the first closing quote ignores the inner span and uses 
 
 - [CSS containment](/guides/Containment)
 - [CSS container queries](/guides/Containment/Container_queries)
-- CSS {{cssxref("content-visibility")}} property
-- CSS {{cssxref("position")}} property
+- CSS `content-visibility` property
+- CSS `position` property

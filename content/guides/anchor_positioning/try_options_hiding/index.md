@@ -17,19 +17,19 @@ This guide explains how to use CSS anchor positioning mechanisms to manage these
 
 ## Feature summary
 
-If a tooltip is fixed to the top-right of a UI element, when the user scrolls the content so that the UI feature is in the top-right corner of the viewport, that UI feature's tooltip will have scrolled off the screen. CSS anchor positioning solves such problems. The module's {{cssxref("position-try-fallbacks")}} property specifies one or more alternative position-try fallback options for the browser to try to prevent the positioned element from overflowing.
+If a tooltip is fixed to the top-right of a UI element, when the user scrolls the content so that the UI feature is in the top-right corner of the viewport, that UI feature's tooltip will have scrolled off the screen. CSS anchor positioning solves such problems. The module's `position-try-fallbacks` property specifies one or more alternative position-try fallback options for the browser to try to prevent the positioned element from overflowing.
 
 Position-try fallback options can be specified using:
 
 - [Predefined fallback options](#predefined_fallback_options).
 - [`position-area` values](#using_position-area_try_fallback_options).
-- [Custom options](#custom_fallback_options) defined using the {{cssxref("@position-try")}} at-rule.
+- [Custom options](#custom_fallback_options) defined using the `@position-try` at-rule.
 
-In addition, the {{cssxref("position-try-order")}} property allows you to specify various options that result in an available position try option being set in preference to the element's initial positioning. For example, you might want to initially display the element in a space that has more available height or width.
+In addition, the `position-try-order` property allows you to specify various options that result in an available position try option being set in preference to the element's initial positioning. For example, you might want to initially display the element in a space that has more available height or width.
 
-The shorthand property {{cssxref("position-try")}} can be used to specify `position-try-order` and `position-try-fallbacks` values in a single declaration.
+The shorthand property `position-try` can be used to specify `position-try-order` and `position-try-fallbacks` values in a single declaration.
 
-In some situations, anchor-positioned content does not make sense if the anchor is off-screen, or vice-versa. For example, you might have an anchor containing a quiz question, and answers contained in associated positioned elements, and wish to show them both together or not at all. This can be achieved with conditional hiding, which is managed via the {{cssxref("position-visibility")}} property. This property takes various values that define conditions under which overflowing elements will be hidden.
+In some situations, anchor-positioned content does not make sense if the anchor is off-screen, or vice-versa. For example, you might have an anchor containing a quiz question, and answers contained in associated positioned elements, and wish to show them both together or not at all. This can be achieved with conditional hiding, which is managed via the `position-visibility` property. This property takes various values that define conditions under which overflowing elements will be hidden.
 
 ## Predefined fallback options
 
@@ -184,7 +184,7 @@ This means that the browser will first try `flip-block` and then try `flip-inlin
 
 The predefined `<try-tactic>` try fallback options are useful but limited, as they only allow positioned element placement to be flipped across axes. What if you had an anchor-positioned element positioned to the top left of its anchor, and wanted to change its position to directly below the anchor if it started to overflow?
 
-To achieve this, you can use a {{cssxref("position-area")}} value as a position-try fallback option, including it in the `position-try-fallbacks` list. This automatically creates a try fallback option based on that position area. In effect, it is a shortcut for creating a [custom position option](#custom_fallback_options) that contains only that `position-area` property value.
+To achieve this, you can use a `position-area` value as a position-try fallback option, including it in the `position-try-fallbacks` list. This automatically creates a try fallback option based on that position area. In effect, it is a shortcut for creating a [custom position option](#custom_fallback_options) that contains only that `position-area` property value.
 
 The following example shows `position-area` position try fallback options in use. We use the same HTML and CSS, except for the infobox positioning. In this case, our position-try fallback options are `position-area` values — `top`, `top-right`, `right`, `bottom-right`, `bottom`, `bottom-left`, and `left`. The positioned element will be reasonably positioned no matter which viewport edge the anchor approaches. This verbose approach is more granular and flexible than the predefined values approach.
 
@@ -251,7 +251,7 @@ Scroll the page and check out the effect of these position-try fallback options 
 
 ## Custom fallback options
 
-To use custom position fallback options that aren't available via the above mechanisms, you can create your own with the {{cssxref("@position-try")}} at-rule. The syntax is:
+To use custom position fallback options that aren't available via the above mechanisms, you can create your own with the `@position-try` at-rule. The syntax is:
 
 ```plain
 @position-try --try-fallback-name {
@@ -259,16 +259,16 @@ To use custom position fallback options that aren't available via the above mech
 }
 ```
 
-The `--try-fallback-name` is a developer-defined name for the position try fallback option. This name can then be specified within the comma-separated list of try fallback options within the {{cssxref("position-try-fallbacks")}} property value. If multiple `@position-try` rules have the same name, the last one in the document order overrides the others. Avoid using the same name for your try fallback options _and_ your anchor or custom property names; it doesn't invalidate the at-rule, but it will make your CSS very difficult to follow.
+The `--try-fallback-name` is a developer-defined name for the position try fallback option. This name can then be specified within the comma-separated list of try fallback options within the `position-try-fallbacks` property value. If multiple `@position-try` rules have the same name, the last one in the document order overrides the others. Avoid using the same name for your try fallback options _and_ your anchor or custom property names; it doesn't invalidate the at-rule, but it will make your CSS very difficult to follow.
 
 The `descriptor-list` defines the property values for that individual custom try fallback option, including how the positioned element should be placed and sized, and any margins. The limited list of property descriptors allowed includes:
 
-- {{cssxref("position-area")}}
+- `position-area`
 - [Inset properties](/en-US/docs/Glossary/Inset_properties)
-- Margin properties (e.g., {{cssxref("margin-left")}}, {{cssxref("margin-block-start")}})
+- Margin properties (e.g., `margin-left`, `margin-block-start`)
 - [self-alignment](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center) properties
-- Sizing properties ({{cssxref("width")}}, {{cssxref("block-size")}}, etc.)
-- {{cssxref("position-anchor")}}
+- Sizing properties (`width`, `block-size`, etc.)
+- `position-anchor`
 
 The values you include in the at-rule get applied to the positioned element if the named custom-try fallback option gets applied. If any of the properties were previously set on the positioned element, those property values get overridden by the descriptor values. If the user scrolls, causing a different try fallback option or no try fallback option to be applied, the values from the previously-applied try fallback option are unset.
 
@@ -376,7 +376,7 @@ Scroll the page and check out the effect of these position-try fallback options 
 
 ## Using `position-try-order`
 
-The {{cssxref("position-try-order")}} property has a slightly different focus to the rest of the position try functionality, in that it makes use of position try fallback options when the positioned element is first displayed, rather than when it is in the process of overflowing.
+The `position-try-order` property has a slightly different focus to the rest of the position try functionality, in that it makes use of position try fallback options when the positioned element is first displayed, rather than when it is in the process of overflowing.
 
 This property allows you to specify that you want the positioned element initially displayed using the position try fallback option that gives its containing block the most width or most height. This is achieved by setting the `most-height`, `most-width`, `most-block-size`, or `most-inline-size` values. You can also remove the effects of any previously set `position-try-order` values using the `normal` value.
 
@@ -496,13 +496,13 @@ Try selecting the `most-height` order option. This has the effect of applying th
 
 ## Conditionally hiding anchor-positioned elements
 
-In some situations, you might want to hide an anchor-positioned element. For example, if the anchor element is clipped because it's too close to the edge of the viewport, you might want to just hide its associated element altogether. The {{cssxref("position-visibility")}} property allows you to specify conditions under which positioned elements are hidden.
+In some situations, you might want to hide an anchor-positioned element. For example, if the anchor element is clipped because it's too close to the edge of the viewport, you might want to just hide its associated element altogether. The `position-visibility` property allows you to specify conditions under which positioned elements are hidden.
 
 By default, the positioned element is `always` displayed. The `no-overflow` value will **strongly hide** the positioned element if it starts to overflow its containing element or the viewport.
 
 The `anchors-visible` value, on the other hand, strongly hides the positioned element if its associated anchor(s) are _completely_ hidden, either by overflowing its containing element (or the viewport) or being covered by other elements. The positioned element will be visible if any part of the anchor(s) is still visible.
 
-A strongly hidden element acts as though it and its descendant elements have a {{cssxref("visibility")}} value of `hidden` set, regardless of what their actual `visibility` value is.
+A strongly hidden element acts as though it and its descendant elements have a `visibility` value of `hidden` set, regardless of what their actual `visibility` value is.
 
 Let's see this property in action.
 

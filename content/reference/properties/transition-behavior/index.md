@@ -32,7 +32,7 @@ transition-behavior: unset;
 
 ## Description
 
-The `transition-behavior` property is only relevant when used in conjunction with other transition properties, notably {{cssxref("transition-property")}} and {{cssxref("transition-duration")}}, as no transition occurs if no properties are animated over a non-zero duration of time.
+The `transition-behavior` property is only relevant when used in conjunction with other transition properties, notably `transition-property` and `transition-duration`, as no transition occurs if no properties are animated over a non-zero duration of time.
 
 ```css
 .card {
@@ -47,7 +47,7 @@ The `transition-behavior` property is only relevant when used in conjunction wit
 }
 ```
 
-The `transition-behavior` value can be included as part of a shorthand {{cssxref("transition")}} declaration. When included in the shorthand, when using or defaulting to all properties, the `allow-discrete` value has no impact on regular animatable properties. The following CSS is equivalent to the longhand declarations above:
+The `transition-behavior` value can be included as part of a shorthand `transition` declaration. When included in the shorthand, when using or defaulting to all properties, the `allow-discrete` value has no impact on regular animatable properties. The following CSS is equivalent to the longhand declarations above:
 
 ```css
 .card {
@@ -146,14 +146,14 @@ html {
 }
 ```
 
-The two properties we want to animate are {{cssxref("opacity")}} and {{cssxref("transform")}}: we want the popover to fade in and out while growing and shrinking in the horizontal direction. We set a starting state for these properties on the default hidden state of the popover element (selected via `[popover]`), and an end state on the open state of the popover (selected via the {{cssxref(":popover-open")}} pseudo-class). We then set a {{cssxref("transition")}} property to animate between the two.
+The two properties we want to animate are `opacity` and `transform`: we want the popover to fade in and out while growing and shrinking in the horizontal direction. We set a starting state for these properties on the default hidden state of the popover element (selected via `[popover]`), and an end state on the open state of the popover (selected via the `:popover-open` pseudo-class). We then set a `transition` property to animate between the two.
 
 Because the animated element is being promoted to the [top layer](/en-US/docs/Glossary/Top_layer) when shown and removed from the top layer when hidden — which also means that its hidden state has [`display: none`](/reference/properties/display) set on it — the following properties are added to the list of transitioned elements to get the animation working in both directions. In both cases, `transition-behavior: allow-discrete` is set in the shorthand to enable discrete animation.
 
 - `display`: Required so that the animated element is visible (set to `display: block`) throughout both the entry and exit animation. Without this, the exit animation would not be visible; in effect, the popover would just disappear.
-- {{cssxref("overlay")}}: Required to make sure that the removal of the element from the top layer is deferred until the animation has been completed. This doesn't make a huge difference for basic animations such as this one, but in more complex cases not doing this can result in the element being removed from the overlay too quickly, meaning the animation is not smooth or effective.
+- `overlay`: Required to make sure that the removal of the element from the top layer is deferred until the animation has been completed. This doesn't make a huge difference for basic animations such as this one, but in more complex cases not doing this can result in the element being removed from the overlay too quickly, meaning the animation is not smooth or effective.
 
-In addition, a starting state for the animation is set inside the {{cssxref("@starting-style")}} at-rule. This is needed to avoid unexpected behavior. By default transitions are not triggered on elements' first style updates, or when the `display` type changes from `none` to another type. `@starting-style` allows you to override that default in a specific controlled fashion. Without this, the entry animation would not occur and the popover would just appear.
+In addition, a starting state for the animation is set inside the `@starting-style` at-rule. This is needed to avoid unexpected behavior. By default transitions are not triggered on elements' first style updates, or when the `display` type changes from `none` to another type. `@starting-style` allows you to override that default in a specific controlled fashion. Without this, the entry animation would not occur and the popover would just appear.
 
 #### Result
 
@@ -176,7 +176,7 @@ The code renders as follows:
 
 ## See also
 
-- {{cssxref("overlay")}}
-- {{cssxref("@starting-style")}}
+- `overlay`
+- `@starting-style`
 - [CSS transitions](/guides/Transitions) module
 - [Four new CSS features for smooth entry and exit animations](https://developer.chrome.com/blog/entry-exit-animations/) on developer.chrome.com (2023)

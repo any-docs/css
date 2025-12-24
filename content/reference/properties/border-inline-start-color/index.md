@@ -6,7 +6,7 @@ browser-compat: css.properties.border-inline-start-color
 sidebar: cssref
 ---
 
-The **`border-inline-start-color`** [CSS](/en-US/docs/Web/CSS) property defines the color of the logical inline start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("border-top-color")}}, {{cssxref("border-right-color")}}, {{cssxref("border-bottom-color")}}, or {{cssxref("border-left-color")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The **`border-inline-start-color`** [CSS](/en-US/docs/Web/CSS) property defines the color of the logical inline start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 {{InteractiveExample("CSS Demo: border-inline-start-color")}}
 
@@ -60,11 +60,11 @@ border-inline-start-color: revert-layer;
 border-inline-start-color: unset;
 ```
 
-Related properties are {{cssxref("border-block-start-color")}}, {{cssxref("border-block-end-color")}}, and {{cssxref("border-inline-end-color")}}, which define the other border colors of the element.
+Related properties are `border-block-start-color`, `border-block-end-color`, and `border-inline-end-color`, which define the other border colors of the element.
 
 ### Values
 
-- {{CSSXref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the border.
 
 ## Formal definition
@@ -114,5 +114,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- This property maps to one of the physical border properties: {{cssxref("border-top-color")}}, {{cssxref("border-right-color")}}, {{cssxref("border-bottom-color")}}, and {{cssxref("border-left-color")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- This property maps to one of the physical border properties: `border-top-color`, `border-right-color`, `border-bottom-color`, and `border-left-color`
+- `writing-mode`, `direction`, `text-orientation`

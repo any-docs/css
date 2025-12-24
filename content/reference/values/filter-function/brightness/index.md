@@ -6,7 +6,7 @@ browser-compat: css.types.filter-function.brightness
 sidebar: cssref
 ---
 
-The **`brightness()`** [CSS](/en-US/docs/Web/CSS) {{cssxref("filter-function")}} applies a linear multiplier value on an element or an input image, making the image appear brighter or darker.
+The **`brightness()`** [CSS](/en-US/docs/Web/CSS) `filter-function` applies a linear multiplier value on an element or an input image, making the image appear brighter or darker.
 
 {{InteractiveExample("CSS Demo: brightness()")}}
 
@@ -45,7 +45,7 @@ brightness(amount)
 ### Values
 
 - `amount` <Badge type="info" text="Optional" />
-  - Brightness specified as a {{cssxref("&lt;number&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}. A value less than `100%` darkens the input image or element, while a value over `100%` brightens it. A value of `0%` creates a completely black image or element, while a value of `100%` leaves the input unchanged. Other values between `0%` to `100%` have a linear multiplier effect. Values greater than `100%` are allowed, providing brighter results. The initial value for {{Glossary("interpolation")}} is `1`. Negative values are not allowed. The default value is `1`.
+  - Brightness specified as a `&lt;number&gt;` or a `&lt;percentage&gt;`. A value less than `100%` darkens the input image or element, while a value over `100%` brightens it. A value of `0%` creates a completely black image or element, while a value of `100%` leaves the input unchanged. Other values between `0%` to `100%` have a linear multiplier effect. Values greater than `100%` are allowed, providing brighter results. The initial value for {{Glossary("interpolation")}} is `1`. Negative values are not allowed. The default value is `1`.
 
 The following are pairs of equivalent values:
 
@@ -72,7 +72,7 @@ brightness(200%)
 
 ### Applying brightness using the backdrop-filter property
 
-This example shows how to apply the `brightness()` filter to a paragraph via the {{cssxref("backdrop-filter")}} CSS property.
+This example shows how to apply the `brightness()` filter to a paragraph via the `backdrop-filter` CSS property.
 
 #### CSS
 
@@ -115,7 +115,7 @@ In this example, the colors in the area behind the `<p>` element shift linearly.
 
 ### Applying brightness using the filter property
 
-In this example, a `brightness()` filter is applied to the entire element, including content, border, and background image via the {{cssxref("filter")}} CSS property. The result shows three variations of different brightness values.
+In this example, a `brightness()` filter is applied to the entire element, including content, border, and background image via the `filter` CSS property. The result shows three variations of different brightness values.
 
 ```css
 p:first-of-type {
@@ -243,13 +243,13 @@ svg:not(:root) {
 ## See also
 
 - [CSS filter effects](/guides/Filter_effects) module
-- The other {{cssxref("filter-function")}} functions available to be used in values of the {{cssxref("filter")}} and {{cssxref("backdrop-filter")}} properties include:
-  - {{cssxref("filter-function/blur", "blur()")}}
-  - {{cssxref("filter-function/contrast", "contrast()")}}
-  - {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-  - {{cssxref("filter-function/grayscale", "grayscale()")}}
-  - {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-  - {{cssxref("filter-function/invert", "invert()")}}
-  - {{cssxref("filter-function/opacity", "opacity()")}}
-  - {{cssxref("filter-function/saturate", "saturate()")}}
-  - {{cssxref("filter-function/sepia", "sepia()")}}
+- The other `filter-function` functions available to be used in values of the `filter` and `backdrop-filter` properties include:
+  - `blur()`
+  - `contrast()`
+  - `drop-shadow()`
+  - `grayscale()`
+  - `hue-rotate()`
+  - `invert()`
+  - `opacity()`
+  - `saturate()`
+  - `sepia()`

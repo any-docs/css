@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`grid`** [CSS](/en-US/docs/Web/CSS) property is a [shorthand property](/guides/Cascade/Shorthand_properties) that sets all of the explicit and implicit grid properties in a single declaration.
 
-Using `grid` you specify one axis using {{cssxref("grid-template-rows")}} or {{cssxref("grid-template-columns")}}, you then specify how content should auto-repeat in the other axis using the implicit grid properties: {{cssxref("grid-auto-rows")}}, {{cssxref("grid-auto-columns")}}, and {{cssxref("grid-auto-flow")}}.
+Using `grid` you specify one axis using `grid-template-rows` or `grid-template-columns`, you then specify how content should auto-repeat in the other axis using the implicit grid properties: `grid-auto-rows`, `grid-auto-columns`, and `grid-auto-flow`.
 
 {{InteractiveExample("CSS Demo: grid")}}
 
@@ -70,12 +70,12 @@ grid: repeat(3, 80px) / auto-flow;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("grid-auto-columns")}}
-- {{cssxref("grid-auto-flow")}}
-- {{cssxref("grid-auto-rows")}}
-- {{cssxref("grid-template-areas")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-rows")}}
+- `grid-auto-columns`
+- `grid-auto-flow`
+- `grid-auto-rows`
+- `grid-template-areas`
+- `grid-template-columns`
+- `grid-template-rows`
 
 ## Syntax
 
@@ -114,14 +114,14 @@ grid: unset;
 ### Values
 
 - `<'grid-template'>`
-  - Defines the {{cssxref("grid-template")}} including {{cssxref("grid-template-columns")}}, {{cssxref("grid-template-rows")}} and {{cssxref("grid-template-areas")}}.
+  - Defines the `grid-template` including `grid-template-columns`, `grid-template-rows` and `grid-template-areas`.
 - `<'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>?`
-  - Sets up an auto-flow by setting the row tracks explicitly via the {{cssxref("grid-template-rows")}} property (and the {{cssxref("grid-template-columns")}} property to `none`) and specifying how to auto-repeat the column tracks via {{cssxref("grid-auto-columns")}} (and setting {{cssxref("grid-auto-rows")}} to `auto`). {{cssxref("grid-auto-flow")}} is also set to `column` accordingly, with `dense` if it's specified.
+  - Sets up an auto-flow by setting the row tracks explicitly via the `grid-template-rows` property (and the `grid-template-columns` property to `none`) and specifying how to auto-repeat the column tracks via `grid-auto-columns` (and setting `grid-auto-rows` to `auto`). `grid-auto-flow` is also set to `column` accordingly, with `dense` if it's specified.
 
     All other `grid` sub-properties are reset to their initial values.
 
 - `[ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>`
-  - Sets up an auto-flow by setting the column tracks explicitly via the {{cssxref("grid-template-columns")}} property (and the {{cssxref("grid-template-rows")}} property to `none`) and specifying how to auto-repeat the row tracks via {{cssxref("grid-auto-rows")}} (and setting {{cssxref("grid-auto-columns")}} to `auto`). {{cssxref("grid-auto-flow")}} is also set to `row` accordingly, with `dense` if it's specified.
+  - Sets up an auto-flow by setting the column tracks explicitly via the `grid-template-columns` property (and the `grid-template-rows` property to `none`) and specifying how to auto-repeat the row tracks via `grid-auto-rows` (and setting `grid-auto-columns` to `auto`). `grid-auto-flow` is also set to `row` accordingly, with `dense` if it's specified.
 
     All other `grid` sub-properties are reset to their initial values.
 
@@ -181,12 +181,12 @@ grid: unset;
 
 ## See also
 
-- {{cssxref("grid-template")}}
-- {{cssxref("grid-template-rows")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-areas")}}
-- {{cssxref("grid-auto-columns")}}
-- {{cssxref("grid-auto-rows")}}
-- {{cssxref("grid-auto-flow")}}
+- `grid-template`
+- `grid-template-rows`
+- `grid-template-columns`
+- `grid-template-areas`
+- `grid-auto-columns`
+- `grid-auto-rows`
+- `grid-auto-flow`
 - [Line-based placement with CSS grid](/guides/Grid_layout/Line-based_placement)
 - [Grid template areas: grid definition shorthands](/guides/Grid_layout/Grid_template_areas#grid_definition_shorthands)

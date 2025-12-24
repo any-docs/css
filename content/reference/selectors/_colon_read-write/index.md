@@ -52,7 +52,7 @@ input[type="submit"] {
 ### Confirming form details using read-only controls
 
 You can use [`readonly`](/en-US/docs/Web/HTML/Reference/Attributes/readonly) form controls when you want a user to verify information they entered earlier, which you want to submit with new data in read-write controls.
-In the example below, the {{cssxref(":read-only")}} pseudo-class is used to make the {{htmlelement("textarea")}} (a user's address) look like a regular paragraph. The `:read-write` pseudo-class provides a way to highlight the editable `<textarea>` (the delivery instructions):
+In the example below, the `:read-only` pseudo-class is used to make the {{htmlelement("textarea")}} (a user's address) look like a regular paragraph. The `:read-write` pseudo-class provides a way to highlight the editable `<textarea>` (the delivery instructions):
 
 ```css hidden
 body {
@@ -171,5 +171,5 @@ p:read-write {
 
 ## See also
 
-- {{cssxref(":read-only")}}
+- `:read-only`
 - HTML [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) attribute

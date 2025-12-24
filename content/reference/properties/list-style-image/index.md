@@ -72,7 +72,7 @@ hr {
 ```
 
 > [!NOTE]
-> This property is applied to list items, i.e., elements with `{{cssxref("display")}}: list-item;` [by default](https://html.spec.whatwg.org/multipage/rendering.html#lists) this includes {{HTMLElement("li")}} elements. Because this property is inherited, it can be set on the parent element (normally {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to let it apply to all list items.
+> This property is applied to list items, i.e., elements with ``display`: list-item;` [by default](https://html.spec.whatwg.org/multipage/rendering.html#lists) this includes {{HTMLElement("li")}} elements. Because this property is inherited, it can be set on the parent element (normally {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to let it apply to all list items.
 
 ## Syntax
 
@@ -96,10 +96,10 @@ list-style-image: unset;
 
 ### Values
 
-- {{cssxref("image")}}
+- `image`
   - A valid image to use as the marker.
 - `none`
-  - Specifies that no image is used as the marker. If this value is set, the marker defined in {{ Cssxref("list-style-type") }} will be used instead. This is the default value for {{cssxref("list-style")}}.
+  - Specifies that no image is used as the marker. If this value is set, the marker defined in {{ Cssxref("list-style-type") }} will be used instead. This is the default value for `list-style`.
 
 ## Formal definition
 
@@ -113,7 +113,7 @@ list-style-image: unset;
 
 ### Using a url value
 
-This example has a star as a marker, which we include using the {{cssxref("url_value", "&lt;url&gt;")}} image function.
+This example has a star as a marker, which we include using the `&lt;url&gt;` image function.
 
 #### HTML
 
@@ -138,7 +138,7 @@ ul {
 
 ### Using a gradient
 
-This example has a [CSS gradient](/guides/Images/Using_gradients) as a marker, which we create uses the {{cssxref("gradient/linear-gradient", "linear-gradient()")}} image function.
+This example has a [CSS gradient](/guides/Images/Using_gradients) as a marker, which we create uses the `linear-gradient()` image function.
 
 #### HTML
 
@@ -172,9 +172,9 @@ ul {
 
 ## See also
 
-- {{Cssxref("list-style")}} shorthand
-- {{Cssxref("list-style-type")}} property
-- {{Cssxref("list-style-position")}} property
-- {{cssxref("::marker")}} pseudo-element
+- `list-style` shorthand
+- `list-style-type` property
+- `list-style-position` property
+- `::marker` pseudo-element
 - [CSS lists and counters](/guides/Lists) module
 - [CSS counter styles](/guides/Counter_styles) module

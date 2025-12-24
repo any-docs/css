@@ -43,11 +43,11 @@ video:volume-locked {
 
 ## See also
 
-- {{cssxref(":buffering")}}
-- {{cssxref(":muted")}}
-- {{cssxref(":paused")}}
-- {{cssxref(":playing")}}
-- {{cssxref(":seeking")}}
-- {{cssxref(":stalled")}}
+- `:buffering`
+- `:muted`
+- `:paused`
+- `:playing`
+- `:seeking`
+- `:stalled`
 - [CSS selectors](/guides/Selectors)
-- [`volume`](/en-US/docs/Web/API/HTMLMediaElement/volume) property of {{domxref("HTMLMediaElement")}} objects
+- [`volume`](/en-US/docs/Web/API/HTMLMediaElement/volume) property of `HTMLMediaElement` objects

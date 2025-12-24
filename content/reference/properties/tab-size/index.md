@@ -59,9 +59,9 @@ tab-size: unset;
 
 ### Values
 
-- {{CSSxRef("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - A multiple of the advance width of the space character (U+0020) to be used as the width of tabs. Must be non-negative. The advance width means the distance a cursor or a print head moves before printing the next character.
-- {{CSSxRef("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The width of tabs. Must be non-negative.
 
 ## Formal definition
@@ -92,7 +92,7 @@ pre {
 
 ### Default tab size vs custom sizes
 
-This example compares a default tab size with a custom tab size. Note that {{cssxref("white-space")}} is set to `pre` to prevent the tabs from collapsing.
+This example compares a default tab size with a custom tab size. Note that `white-space` is set to `pre` to prevent the tabs from collapsing.
 
 #### HTML
 

@@ -6,7 +6,7 @@ browser-compat: css.properties.border-top-style
 sidebar: cssref
 ---
 
-The **`border-top-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's top {{CSSxRef("border")}}.
+The **`border-top-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's top `border`.
 
 > [!NOTE]
 > The specification doesn't define how borders of different styles connect in the corners.
@@ -83,7 +83,7 @@ border-top-style: revert-layer;
 border-top-style: unset;
 ```
 
-The `border-top-style` property is specified as a single {{cssxref("line-style")}} keyword value.
+The `border-top-style` property is specified as a single `line-style` keyword value.
 
 ## Formal definition
 
@@ -182,5 +182,5 @@ td {
 
 ## See also
 
-- The other style-related border properties: {{CSSxRef("border-left-style")}}, {{CSSxRef("border-right-style")}}, {{CSSxRef("border-bottom-style")}}, and {{CSSxRef("border-style")}}.
-- The other top-border-related properties: {{CSSxRef("border-top")}}, {{CSSxRef("border-top-color")}}, and {{CSSxRef("border-top-width")}}.
+- The other style-related border properties: `border-left-style`, `border-right-style`, `border-bottom-style`, and `border-style`.
+- The other top-border-related properties: `border-top`, `border-top-color`, and `border-top-width`.

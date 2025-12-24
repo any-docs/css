@@ -107,11 +107,11 @@ span {
 {{EmbedLiveSample("mbp", "", "340px")}}
 
 > [!NOTE]
-> I am using the logical, flow-relative properties — {{cssxref("padding-inline-start")}} rather than {{cssxref("padding-left")}} — so that they work in the inline dimension whether the text is horizontal or vertical. Read more about these properties in [Logical Properties and Values](/guides/Logical_properties_and_values).
+> I am using the logical, flow-relative properties — `padding-inline-start` rather than `padding-left` — so that they work in the inline dimension whether the text is horizontal or vertical. Read more about these properties in [Logical Properties and Values](/guides/Logical_properties_and_values).
 
 ## Alignment in the block direction
 
-Inline boxes may be aligned in the block direction in different ways, using the {{cssxref("vertical-align")}} property, which will align on the block axis in vertical writing modes (therefore not vertically at all!). In the example below the large text is making the line box of the first sentence larger, therefore the `vertical-align` property can be used to align the inline boxes either side of it. I have used the value `top`, try changing it to `middle`, `bottom`, or `baseline`.
+Inline boxes may be aligned in the block direction in different ways, using the `vertical-align` property, which will align on the block axis in vertical writing modes (therefore not vertically at all!). In the example below the large text is making the line box of the first sentence larger, therefore the `vertical-align` property can be used to align the inline boxes either side of it. I have used the value `top`, try changing it to `middle`, `bottom`, or `baseline`.
 
 ```html live-sample___align
 <div class="example horizontal">
@@ -156,7 +156,7 @@ span {
 
 ## Alignment in the inline direction
 
-If there is additional space in the inline direction, the {{cssxref("text-align")}} property can be used to align the inline boxes within their line box. Try changing the value of `text-align` below to `end`.
+If there is additional space in the inline direction, the `text-align` property can be used to align the inline boxes within their line box. Try changing the value of `text-align` below to `end`.
 
 ```html live-sample___text-align
 <div class="example horizontal">One Two Three</div>
@@ -193,7 +193,7 @@ body {
 
 ## Effect of floats
 
-Line boxes usually have the same size in the inline direction, therefore the same width if working in a horizontal writing mode, or height if working in a vertical writing mode. If there is a {{cssxref("float")}} within the same block formatting context however, the float will cause the line boxes that wrap the float to become shorter.
+Line boxes usually have the same size in the inline direction, therefore the same width if working in a horizontal writing mode, or height if working in a vertical writing mode. If there is a `float` within the same block formatting context however, the float will cause the line boxes that wrap the float to become shorter.
 
 ```html live-sample___float
 <div class="box">

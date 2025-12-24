@@ -17,7 +17,7 @@ The CSS round display module introduces the `border-boundary` and `shape-inside`
 
 ### At-rules and descriptors
 
-- {{cssxref("@media/shape", "shape")}} ({{cssxref("@media")}} feature)
+- `shape` (`@media` feature)
 
 ## Guides
 
@@ -32,10 +32,10 @@ The CSS round display module introduces the `border-boundary` and `shape-inside`
 
 ## Related concepts
 
-- {{cssxref("@media")}} at-rule
-- {{cssxref("offset-distance")}} property
-- {{cssxref("offset-path")}} property
-- {{cssxref("offset-position")}} property
+- `@media` at-rule
+- `offset-distance` property
+- `offset-path` property
+- `offset-position` property
 - [`viewport-fit`](/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport#viewport-fit) value for {{htmlelement("meta")}} `content` attribute
 
 ## Specifications
@@ -44,8 +44,8 @@ The CSS round display module introduces the `border-boundary` and `shape-inside`
 
 ## See also
 
-- {{cssxref("basic-shape")}} data-type
-- {{cssxref("shape-outside")}} property
+- `basic-shape` data-type
+- `shape-outside` property
 - [CSS shapes](/guides/Shapes) module
 - [CSS media queries](/guides/Media_queries) module
 - [CSS environment variables](/guides/Environment_variables) module

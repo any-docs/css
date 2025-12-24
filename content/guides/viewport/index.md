@@ -17,13 +17,13 @@ The {{glossary("viewport")}} initial containing block for continuous media has t
 
 ### Properties
 
-- {{cssxref("zoom")}}
+- `zoom`
 
 ### Interfaces
 
-- {{domxref("Window.Viewport")}}
-- {{domxref("Viewport")}}
-  - {{domxref("Viewport.segments")}}
+- `Window.Viewport`
+- `Viewport`
+  - `Viewport.segments`
 
 ### Glossary terms and definitions
 
@@ -45,12 +45,12 @@ The {{glossary("viewport")}} initial containing block for continuous media has t
 ## Related concepts
 
 - [CSS media queries](/guides/Media_queries) module
-  - {{cssxref("@media")}}
-  - {{cssxref("@media/horizontal-viewport-segments", "horizontal-viewport-segments")}} descriptor
-  - {{cssxref("@media/vertical-viewport-segments", "vertical-viewport-segments")}} descriptor
+  - `@media`
+  - `horizontal-viewport-segments` descriptor
+  - `vertical-viewport-segments` descriptor
 
 - [CSS environment variables](/guides/Environment_variables)
-  - {{cssxref("env()")}}
+  - `env()`
   - [`<environment-variable-name>`](/guides/Environment_variables/Using#browser-defined_environment_variables)
 
 - [Device Posture API](/en-US/docs/Web/API/Device_Posture_API)

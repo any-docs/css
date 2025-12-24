@@ -10,16 +10,16 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`corner-shape`** [shorthand](/guides/Cascade/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property specifies the shape of a box's corners, within the area specified by its {{cssxref("border-radius")}} property value.
+The **`corner-shape`** [shorthand](/guides/Cascade/Shorthand_properties) [CSS](/en-US/docs/Web/CSS) property specifies the shape of a box's corners, within the area specified by its `border-radius` property value.
 
 ## Constituent properties
 
 The `corner-shape` property is a shorthand for the following physical properties:
 
-- {{cssxref("corner-top-left-shape")}}
-- {{cssxref("corner-top-right-shape")}}
-- {{cssxref("corner-bottom-left-shape")}}
-- {{cssxref("corner-bottom-right-shape")}}
+- `corner-top-left-shape`
+- `corner-top-right-shape`
+- `corner-bottom-left-shape`
+- `corner-bottom-right-shape`
 
 ## Syntax
 
@@ -44,7 +44,7 @@ corner-shape: revert-layer;
 corner-shape: unset;
 ```
 
-The `corner-shape` property may be specified using one, two, three, or four {{cssxref("&lt;corner-shape-value>")}} values:
+The `corner-shape` property may be specified using one, two, three, or four `&lt;corner-shape-value>` values:
 
 - If **one** value is used, it specifies the shape of **all four corners**.
 - If **two** values are used, the first shape applies to the **top-left and bottom-right** corners, and the second to the **top-right and bottom-left corners**.
@@ -53,16 +53,16 @@ The `corner-shape` property may be specified using one, two, three, or four {{cs
 
 ### Values
 
-- {{cssxref("corner-shape-value")}}
-  - A {{cssxref("superellipse()")}} or keyword equivalent describing the shape of the corner.
+- `corner-shape-value`
+  - A `superellipse()` or keyword equivalent describing the shape of the corner.
 
 ## Description
 
-The `corner-shape` property is used to modify the shape of rounded corners created by the {{cssxref("border-radius")}} property and its associated longhands. Already-rounded corners can be further customized in terms of the degree of rounding applied to them, allowing the creation of, for example, bevelled, notched, and squircle corners. Borders, outlines, shadows, and background effects applied to the container will follow the defined corner shape.
+The `corner-shape` property is used to modify the shape of rounded corners created by the `border-radius` property and its associated longhands. Already-rounded corners can be further customized in terms of the degree of rounding applied to them, allowing the creation of, for example, bevelled, notched, and squircle corners. Borders, outlines, shadows, and background effects applied to the container will follow the defined corner shape.
 
 If a `border-radius` is not applied to a container, or the `border-radius` resolves to `0`, `corner-shape` will have no effect.
 
-The `corner-shape` shorthand property and its associated [`corner-*-shape` shorthands and longhands](#corner--shape_shorthands_and_longhands) accept one to four {{cssxref("&lt;corner-shape-value>")}} values. Each is specified directly as a {{cssxref("superellipse()")}} function or a keyword describing a common shape. Each keyword is equivalent to a specific `superellipse()` value.
+The `corner-shape` shorthand property and its associated [`corner-*-shape` shorthands and longhands](#corner--shape_shorthands_and_longhands) accept one to four `&lt;corner-shape-value>` values. Each is specified directly as a `superellipse()` function or a keyword describing a common shape. Each keyword is equivalent to a specific `superellipse()` value.
 
 The default (initial) value of `corner-shape` is `round`, which gives the same effect as using `border-radius` on its own, without `corner-shape`. There is also a keyword value `square`, which gives the same effect as default square corners, effectively removing any `border-radius` applied. The `bevel` value has the effect of drawing a straight line between the two ends of a `border-radius`.
 
@@ -77,28 +77,28 @@ The `corner-shape` shorthand defines the shapes of all four corners in one decla
 To set only one corner shape at a time, use the corner shape longhands:
 
 - Physical longhand corner shape properties:
-  - {{cssxref("corner-bottom-left-shape")}}
-  - {{cssxref("corner-bottom-right-shape")}}
-  - {{cssxref("corner-top-left-shape")}}
-  - {{cssxref("corner-top-right-shape")}}
+  - `corner-bottom-left-shape`
+  - `corner-bottom-right-shape`
+  - `corner-top-left-shape`
+  - `corner-top-right-shape`
 - Logical longhand corner shape properties:
-  - {{cssxref("corner-start-start-shape")}}
-  - {{cssxref("corner-start-end-shape")}}
-  - {{cssxref("corner-end-start-shape")}}
-  - {{cssxref("corner-end-end-shape")}}
+  - `corner-start-start-shape`
+  - `corner-start-end-shape`
+  - `corner-end-start-shape`
+  - `corner-end-end-shape`
 
 To set two corner shapes at a time, use the side shorthands:
 
 - Physical side shorthand properties:
-  - {{cssxref("corner-top-shape")}}
-  - {{cssxref("corner-right-shape")}}
-  - {{cssxref("corner-bottom-shape")}}
-  - {{cssxref("corner-left-shape")}}
+  - `corner-top-shape`
+  - `corner-right-shape`
+  - `corner-bottom-shape`
+  - `corner-left-shape`
 - Logical side shorthand properties:
-  - {{cssxref("corner-block-start-shape")}}
-  - {{cssxref("corner-block-end-shape")}}
-  - {{cssxref("corner-inline-start-shape")}}
-  - {{cssxref("corner-inline-end-shape")}}
+  - `corner-block-start-shape`
+  - `corner-block-end-shape`
+  - `corner-inline-start-shape`
+  - `corner-inline-end-shape`
 
 ### Constraining opposite corner shape radii
 
@@ -120,13 +120,13 @@ div {
 
 The following properties all follow the shape of the corner when set on the container:
 
-- {{cssxref("background-color")}}
-- {{cssxref("background-image")}}
-- {{cssxref("border")}}
-- {{cssxref("outline")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("overflow")}}
-- {{cssxref("backdrop-filter")}}
+- `background-color`
+- `background-image`
+- `border`
+- `outline`
+- `box-shadow`
+- `overflow`
+- `backdrop-filter`
 
 See [Demonstration of properties that follow the `corner-shape`](#demonstration_of_properties_that_follow_the_corner-shape) for some examples.
 
@@ -152,7 +152,7 @@ The markup for this example contains a single {{htmlelement("div")}} element.
 
 #### CSS
 
-We give the box a fixed {{cssxref("height")}}, a {{cssxref("box-shadow")}}, a `border-radius` of 30 pixels, and a `corner-shape` of `scoop`, along with some additional styles that we've hidden for brevity.
+We give the box a fixed `height`, a `box-shadow`, a `border-radius` of 30 pixels, and a `corner-shape` of `scoop`, along with some additional styles that we've hidden for brevity.
 
 ```css hidden live-sample___basic-corner-shape
 body {
@@ -228,13 +228,13 @@ The markup for this example contains a single {{htmlelement("div")}} element wit
 
 #### CSS
 
-To demonstrate how some styles follow the shape of a container's corners, we apply a {{cssxref("background-image")}} to the document `<body>`, then apply a `border-radius` of `40px` and a `corner-shape` of `scoop notch` to the `<div>`.
+To demonstrate how some styles follow the shape of a container's corners, we apply a `background-image` to the document `<body>`, then apply a `border-radius` of `40px` and a `corner-shape` of `scoop notch` to the `<div>`.
 
 We then apply the following to the `<div>`:
 
-- A semi-transparent {{cssxref("background-color")}}.
-- A different color and style of {{cssxref("border")}} on each edge.
-- A {{cssxref("backdrop-filter")}} that inverts the `background-image` set on the `<body>`.
+- A semi-transparent `background-color`.
+- A different color and style of `border` on each edge.
+- A `backdrop-filter` that inverts the `background-image` set on the `<body>`.
 - A `:hover` style so you can see that the clickable content area falls outside the corner shape.
 
 Additional set up styles have been hidden for brevity.
@@ -312,11 +312,11 @@ Note how most of the set styles follow the shape of the `<div>` resulting from i
 
 ### Comparing `corner-shape` values
 
-In this demonstration, you can select different `corner-shape` values and set different {{cssxref("border-radius")}} values on a container and compare the effects.
+In this demonstration, you can select different `corner-shape` values and set different `border-radius` values on a container and compare the effects.
 
 #### HTML
 
-The markup for this example contains a {{htmlelement("select")}} picker from which different `corner-shape` values can be selected, an [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) slider to select different `border-radius` values, and a {{htmlelement("section")}} element to create a container to apply those values to. The select {{htmlelement("option")}} elements provide multiple keyword and {{cssxref("superellipse()")}} value choices, broken into two groups using {{htmlelement("optgroup")}} elements. In the case of the keyword values, we've also included the `superellipse()` value equivalent for each one, separated by a pipe character.
+The markup for this example contains a {{htmlelement("select")}} picker from which different `corner-shape` values can be selected, an [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) slider to select different `border-radius` values, and a {{htmlelement("section")}} element to create a container to apply those values to. The select {{htmlelement("option")}} elements provide multiple keyword and `superellipse()` value choices, broken into two groups using {{htmlelement("optgroup")}} elements. In the case of the keyword values, we've also included the `superellipse()` value equivalent for each one, separated by a pipe character.
 
 ```html live-sample___corner-shape-select
 <form>
@@ -357,7 +357,7 @@ The markup for this example contains a {{htmlelement("select")}} picker from whi
 
 #### CSS
 
-We apply a {{cssxref("box-shadow")}} to the `<section>`. We also give the `<section>` and form elements some basic styles, which we've hidden for brevity.
+We apply a `box-shadow` to the `<section>`. We also give the `<section>` and form elements some basic styles, which we've hidden for brevity.
 
 ```css hidden live-sample___corner-shape-select
 html {
@@ -452,7 +452,7 @@ Try selecting different values to see how this affects the shape of the corners.
 
 ### `superellipse()` value comparison
 
-In this example, we provide two [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) sliders allowing you to cycle through many different `corner-shape` {{cssxref("superellipse()")}} values and {{cssxref("border-radius")}} values to compare the effects of each on a container.
+In this example, we provide two [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) sliders allowing you to cycle through many different `corner-shape` `superellipse()` values and `border-radius` values to compare the effects of each on a container.
 
 #### HTML
 
@@ -486,7 +486,7 @@ The markup for this example contains two `<input type="range">` elements from wh
 
 #### CSS
 
-We apply a {{cssxref("box-shadow")}} to the `<section>` element. Additional basic styles have been hidden for brevity.
+We apply a `box-shadow` to the `<section>` element. Additional basic styles have been hidden for brevity.
 
 ```css hidden live-sample___superellipse-slider
 html {
@@ -588,7 +588,7 @@ In this example, we demonstrate how the `corner-shape` property can be animated.
 
 #### CSS
 
-We create a set of {{cssxref("@keyframes")}} that animate smoothly between the `corner-shape` values of `square` and `notch`. We then apply an {{cssxref("animation")}} based on those `@keyframes` to the `<div>` when its containing `<html>` element is hovered over or focused. Additional basic `<div>` styles have been hidden for brevity.
+We create a set of `@keyframes` that animate smoothly between the `corner-shape` values of `square` and `notch`. We then apply an `animation` based on those `@keyframes` to the `<div>` when its containing `<html>` element is hovered over or focused. Additional basic `<div>` styles have been hidden for brevity.
 
 ```css hidden live-sample___corner-shape-animation
 body {
@@ -670,7 +670,7 @@ The rendered result looks like this:
 
 ## See also
 
-- {{Cssxref("border-radius")}}
+- `border-radius`
 - [CSS borders and box decorations](/guides/Borders_and_box_decorations) module
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
 - [CSS animations](/guides/Animations) module

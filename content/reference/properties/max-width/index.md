@@ -6,7 +6,7 @@ browser-compat: css.properties.max-width
 sidebar: cssref
 ---
 
-The **`max-width`** [CSS](/en-US/docs/Web/CSS) property sets the maximum width of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the {{cssxref("width")}} property from becoming larger than the value specified by `max-width`.
+The **`max-width`** [CSS](/en-US/docs/Web/CSS) property sets the maximum width of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the `width` property from becoming larger than the value specified by `max-width`.
 
 {{InteractiveExample("CSS Demo: max-width")}}
 
@@ -45,7 +45,7 @@ max-width: 20ch;
 }
 ```
 
-`max-width` overrides {{cssxref("width")}}, but {{cssxref("min-width")}} overrides `max-width`.
+`max-width` overrides `width`, but `min-width` overrides `max-width`.
 
 ## Syntax
 
@@ -76,17 +76,17 @@ max-width: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Defines the `max-width` as an absolute value.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Defines the `max-width` as a percentage of the containing block's width.
 - `none`
   - No limit on the size of the box.
-- {{cssxref("max-content")}}
+- `max-content`
   - The intrinsic preferred `max-width`.
-- {{cssxref("min-content")}}
+- `min-content`
   - The intrinsic minimum `max-width`.
-- {{cssxref("fit-content")}}
+- `fit-content`
   - Use the available space, but not more than [max-content](/reference/values/max-content), i.e., `min(max-content, max(min-content, stretch))`.
 - [`fit-content(<length-percentage>)`](/reference/values/fit-content_function)
   - Uses the `fit-content` formula with the available space replaced by the specified argument, i.e., `min(max-content, max(min-content, argument))`.
@@ -156,10 +156,10 @@ In this example, the "child" will be either 150 pixels wide or the width of the 
 
 ## See also
 
-- {{Cssxref("min-width")}}
-- {{Cssxref("width")}}
-- {{cssxref("max-inline-size")}}
-- {{cssxref("max-block-size")}}
-- {{cssxref("box-sizing")}}
+- `min-width`
+- `width`
+- `max-inline-size`
+- `max-block-size`
+- `box-sizing`
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

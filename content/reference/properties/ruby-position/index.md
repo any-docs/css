@@ -153,4 +153,4 @@ ruby {
 ## See also
 
 - {{HTMLElement("ruby")}}, {{HTMLElement("rt")}}, {{HTMLElement("rp")}}, and {{HTMLElement("rtc")}} HTML elements
-- {{cssxref("ruby-align")}}
+- `ruby-align`

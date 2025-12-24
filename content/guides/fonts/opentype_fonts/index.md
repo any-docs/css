@@ -6,14 +6,14 @@ page-type: guide
 sidebar: cssref
 ---
 
-Font features or variants refer to different glyphs or character styles contained within an OpenType font. These include things like ligatures (special glyphs that combine characters like 'fi' or 'ffl'), kerning (adjustments to the spacing between specific letterform pairings), fractions, numeral styles, and several others. These are all referred to as OpenType Features, and are made available to use on the web via specific properties and low-level control properties — {{cssxref("font-feature-settings")}}. This article provides you with all you need to know about using OpenType font features in CSS.
+Font features or variants refer to different glyphs or character styles contained within an OpenType font. These include things like ligatures (special glyphs that combine characters like 'fi' or 'ffl'), kerning (adjustments to the spacing between specific letterform pairings), fractions, numeral styles, and several others. These are all referred to as OpenType Features, and are made available to use on the web via specific properties and low-level control properties — `font-feature-settings`. This article provides you with all you need to know about using OpenType font features in CSS.
 
 Some fonts will have one or more of these features enabled by default (kerning and default ligatures are common examples), while others are left to the designer or developer to choose to enable in specific scenarios.
 
 In addition to broad feature sets like ligatures or lining figures (numerals that line up evenly as opposed to 'oldstyle', which look more like lower-case letters), there are also very specific ones such as stylistic sets (which might include several specific variants of glyphs meant to be used together), alternates (which might be one or more variants of the letter 'a'), or even language-specific alterations for East Asian languages. In the latter case, these alterations are actually necessary to properly express the language, so they go beyond the more stylistic preference of most other OpenType features.
 
 > [!WARNING]
-> There are many CSS attributes defined to leverage font features, but unfortunately many are not fully implemented. They are all defined and shown here, but many will only work using the lower-level {{cssxref("font-feature-settings")}} property. It's possible to write CSS to work both ways but this can become cumbersome. The issue with using `font-feature-settings` for everything is that every time you want to change one of the individual features, you have to redefine the entire string (similar to manipulating variable fonts with {{cssxref("font-variation-settings")}}).
+> There are many CSS attributes defined to leverage font features, but unfortunately many are not fully implemented. They are all defined and shown here, but many will only work using the lower-level `font-feature-settings` property. It's possible to write CSS to work both ways but this can become cumbersome. The issue with using `font-feature-settings` for everything is that every time you want to change one of the individual features, you have to redefine the entire string (similar to manipulating variable fonts with `font-variation-settings`).
 
 ## Discovering availability of features in fonts
 
@@ -33,7 +33,7 @@ While none of these features individually will render a site useless due to thei
 
 ### Sometimes it's substance, not just style
 
-There are some cases — like with {{cssxref("font-variant-east-asian")}} — that OpenType features are directly tied to using different forms of certain glyphs, which can impact meaning and readability. In cases such as these, it's more than just a nicety, but rather an integral part of the content itself.
+There are some cases — like with `font-variant-east-asian` — that OpenType features are directly tied to using different forms of certain glyphs, which can impact meaning and readability. In cases such as these, it's more than just a nicety, but rather an integral part of the content itself.
 
 ## The font features
 
@@ -44,9 +44,9 @@ There are a number of different features to consider. They are grouped and expla
 
 ### Kerning
 
-Associated CSS property: {{cssxref("font-kerning")}}
+Associated CSS property: `font-kerning`
 
-This refers to the spacing between specific glyph pairings. This is generally on by default (as recommended by the OpenType specification). It should be noted that if {{cssxref("letter-spacing")}} is also set on your text, that is applied after kerning.
+This refers to the spacing between specific glyph pairings. This is generally on by default (as recommended by the OpenType specification). It should be noted that if `letter-spacing` is also set on your text, that is applied after kerning.
 Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
 ```html hidden live-sample___font-kerning-example
@@ -149,9 +149,9 @@ checkBox2.addEventListener("change", () => {
 
 ### Alternates
 
-Associated CSS property: {{cssxref("font-variant-alternates")}}
+Associated CSS property: `font-variant-alternates`
 
-Fonts can supply a number of different alternatives for various glyphs, such as different styles of lower case 'a' or more or less elaborate swashes in a script typeface. This property can activate an entire set of alternates or just a specific one, depending on the values supplied. The example below is showing several different aspects of working with alternate characters. Fonts with alternate glyphs can make them available across the board or individually in separate stylistic sets, or even individual characters. In this example you can see two different typefaces, and the introduction of the {{cssxref("@font-feature-values")}} at-rule. This is used to define shortcuts or named options that can be defined per font family. This way you can create a named option that applies to only a single font, or one that is shared and can be applied more generally. Click "Play" in the code blocks below to edit the example in the MDN Playground:
+Fonts can supply a number of different alternatives for various glyphs, such as different styles of lower case 'a' or more or less elaborate swashes in a script typeface. This property can activate an entire set of alternates or just a specific one, depending on the values supplied. The example below is showing several different aspects of working with alternate characters. Fonts with alternate glyphs can make them available across the board or individually in separate stylistic sets, or even individual characters. In this example you can see two different typefaces, and the introduction of the `@font-feature-values` at-rule. This is used to define shortcuts or named options that can be defined per font family. This way you can create a named option that applies to only a single font, or one that is shared and can be applied more generally. Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
 ```html hidden live-sample___font-variant-alternates-example
 <fieldset>
@@ -307,7 +307,7 @@ and notice that the lower case 'a' reverts to its regular form and the lower cas
 
 ### Ligatures
 
-Associated CSS property: {{cssxref("font-variant-ligatures")}}
+Associated CSS property: `font-variant-ligatures`
 
 Ligatures are glyphs that replace two or more separate glyphs in order to represent them more smoothly (from a spacing or aesthetic perspective). Some of the most common are letters like 'fi', 'fl', or 'ffl' — but there are many other possibilities. There are the most frequent ones (referred to as common ligatures), and there are also more specialized categories like 'discretionary ligatures', 'historical ligatures', and 'contextual alternates'. While these last ones are not technically ligatures, they are generally similar in that they replace specific combinations of letters when they appear together.
 
@@ -415,7 +415,7 @@ checkBox2.addEventListener("change", () => {
 
 ### Position
 
-Associated CSS property: {{cssxref("font-variant-position")}}
+Associated CSS property: `font-variant-position`
 
 Position variants are used to enable typographic superscript and subscript glyphs. These are designed to work with the surrounding text without altering the baseline or line spacing. This is especially useful with the {{htmlelement("sub")}} or {{htmlelement("sup")}} elements. Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
@@ -527,7 +527,7 @@ checkBox2.addEventListener("change", () => {
 
 ### Capitals
 
-Associated CSS property: {{cssxref("font-variant-caps")}}
+Associated CSS property: `font-variant-caps`
 
 One of the more common use cases for OpenType features is proper small caps. These are capital letters sized to fit better amongst lower case letters and are generally used for acronyms and abbreviations. Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
@@ -647,7 +647,7 @@ checkBox2.addEventListener("change", () => {
 
 ### Numerals
 
-Associated CSS property: {{cssxref("font-variant-numeric")}}
+Associated CSS property: `font-variant-numeric`
 
 There are several different styles of numerals commonly included in fonts:
 
@@ -900,7 +900,7 @@ checkBox2.addEventListener("change", () => {
 
 ### East Asian
 
-Associated CSS property: {{cssxref("font-variant-east-asian")}}
+Associated CSS property: `font-variant-east-asian`
 
 This allows access to various alternate forms of glyphs within a font. The example below shows a string of normal glyphs. Uncheck the box below and you'll see characters with only the `jis78` glyphs. Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
@@ -1003,7 +1003,7 @@ checkBox2.addEventListener("change", () => {
 
 ### Font variant shorthand
 
-The {{Cssxref("font-variant")}} property is the shorthand syntax for defining all of the above. Setting a value of `normal` resets all properties to their initial value. Setting a value of `none` sets `font-variant-ligatures` to none and all other properties to their initial value. Meaning that if kerning is on by default, it will still be on even with a value of `none` being supplied here. Click "Play" in the code blocks below to edit the example in the MDN Playground:
+The `font-variant` property is the shorthand syntax for defining all of the above. Setting a value of `normal` resets all properties to their initial value. Setting a value of `none` sets `font-variant-ligatures` to none and all other properties to their initial value. Meaning that if kerning is on by default, it will still be on even with a value of `none` being supplied here. Click "Play" in the code blocks below to edit the example in the MDN Playground:
 
 ```html hidden live-sample___font-variant-example
 <fieldset>
@@ -1109,7 +1109,7 @@ checkBox2.addEventListener("change", () => {
 
 ## Font feature settings
 
-{{cssxref("font-feature-settings")}} is the 'low level syntax' that allows explicit access to every named available OpenType feature. This gives a lot of control but has some disadvantages in how it impacts inheritance and — as mentioned above — if you wish to change one setting, you have to redeclare the entire string (unless you're using [CSS custom properties](/guides/Cascading_variables/Using_custom_properties) to set the values). Because of this, it's best to use the standard properties shown above wherever possible.
+`font-feature-settings` is the 'low level syntax' that allows explicit access to every named available OpenType feature. This gives a lot of control but has some disadvantages in how it impacts inheritance and — as mentioned above — if you wish to change one setting, you have to redeclare the entire string (unless you're using [CSS custom properties](/guides/Cascading_variables/Using_custom_properties) to set the values). Because of this, it's best to use the standard properties shown above wherever possible.
 
 There are a huge number of possible features. You can see examples of a number of them above, and there are several resources available for finding more of them.
 
@@ -1138,9 +1138,9 @@ According to the specification you can either supply just the 4-character featur
 
 ## Using CSS feature detection for implementation
 
-Since not all properties are evenly implemented, it's good practice to set up your CSS using feature detection to utilize the correct properties, with {{cssxref("font-feature-settings")}} as the fallback.
+Since not all properties are evenly implemented, it's good practice to set up your CSS using feature detection to utilize the correct properties, with `font-feature-settings` as the fallback.
 
-For example, small caps can be set several ways, but if you want to ensure that no matter what the underlying capitalization is that you end up with everything in small caps, it requires 2 settings with `font-feature-settings` versus a single property value using {{cssxref("font-variant-caps")}}.
+For example, small caps can be set several ways, but if you want to ensure that no matter what the underlying capitalization is that you end up with everything in small caps, it requires 2 settings with `font-feature-settings` versus a single property value using `font-variant-caps`.
 
 ```css
 .small-caps {

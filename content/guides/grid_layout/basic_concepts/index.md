@@ -30,7 +30,7 @@ CSS grid layout and [CSS box alignment](/guides/Box_alignment) features enable u
 
 ### Control of overlapping content
 
-More than one item can be placed into a grid cell or area and they can partially overlap each other. This layering may then be controlled with the {{cssxref("z-index")}} property.
+More than one item can be placed into a grid cell or area and they can partially overlap each other. This layering may then be controlled with the `z-index` property.
 
 Grid is a powerful layout method that, when combined with other parts of CSS such as [flexbox](/guides/Flexible_box_layout), can help you create layouts that are responsive, flexible, and accessible. It all starts by creating a grid in your **{{glossary("grid container")}}**.
 
@@ -90,7 +90,7 @@ If we want to start making this more grid-like we need to add column tracks.
 
 ## Grid tracks
 
-We define rows and columns on our grid with the {{cssxref("grid-template-rows")}} and {{cssxref("grid-template-columns")}} properties. These define {{glossary("grid tracks")}}. A _grid track_ is the space between any two adjacent lines on the grid. The image below shows a highlighted track – this is the first-row track in our grid.
+We define rows and columns on our grid with the `grid-template-rows` and `grid-template-columns` properties. These define {{glossary("grid tracks")}}. A _grid track_ is the space between any two adjacent lines on the grid. The image below shows a highlighted track – this is the first-row track in our grid.
 
 ![A box with 3 grid items. Above the three items is a solid light green area which is the track.](1_grid_track.png)
 
@@ -310,14 +310,14 @@ Repeat notation (`repeat()`) uses the track listing to create a repeating patter
 
 ### Implicit and explicit grids
 
-When creating our example grid, we specifically defined our column tracks with the {{cssxref("grid-template-columns")}} property, with the grid creating rows as needed to fit the content. The columns define the explicit grid while the rows are part of the implicit grid.
+When creating our example grid, we specifically defined our column tracks with the `grid-template-columns` property, with the grid creating rows as needed to fit the content. The columns define the explicit grid while the rows are part of the implicit grid.
 
-The _explicit grid_ consists of rows and columns defined with {{cssxref("grid-template-columns")}} or {{cssxref("grid-template-rows")}}. The
+The _explicit grid_ consists of rows and columns defined with `grid-template-columns` or `grid-template-rows`. The
 _implicit grid_ extends the defined explicit grid when content is placed outside of that grid, such as into the rows by drawing additional grid lines.
 
 If you place something outside of the defined grid or, due to the amount of content, more grid tracks are needed, then the grid creates rows and columns in the _implicit grid_. These implicit tracks are auto-sized by default, meaning the size of the created rows or columns is influenced by both their content and by the available free space within the grid container. The `auto` keyword allows the generated tracks to accommodate content while also sharing any remaining space.
 
-You can also define a set size for tracks created in the implicit grid with the {{cssxref("grid-auto-rows")}} and {{cssxref("grid-auto-columns")}} properties.
+You can also define a set size for tracks created in the implicit grid with the `grid-auto-rows` and `grid-auto-columns` properties.
 
 In this example, we set `grid-auto-rows: 200px`, ensuring the tracks created in this implicit grid are `200px` tall.
 
@@ -363,7 +363,7 @@ In this example, we set `grid-auto-rows: 200px`, ensuring the tracks created in 
 
 ### Track sizing and minmax
 
-When setting up an explicit grid or defining the sizing for automatically created rows or columns we may want to give tracks a minimum size, but also ensure they expand to fit any content that is added. For example, we may want our rows to never collapse smaller than 100 pixels, but if our content stretches to 300 pixels in height, then we would like the row to stretch to that height. This is solved by the {{cssxref("minmax()")}} function.
+When setting up an explicit grid or defining the sizing for automatically created rows or columns we may want to give tracks a minimum size, but also ensure they expand to fit any content that is added. For example, we may want our rows to never collapse smaller than 100 pixels, but if our content stretches to 300 pixels in height, then we would like the row to stretch to that height. This is solved by the `minmax()` function.
 
 In this example, we use `minmax()` within the `grid-auto-rows` property value. By setting `grid-auto-rows: minmax(100px, auto);`, automatically created rows will be a minimum of `100px` tall, and have a maximum of `auto`. Setting `auto` as the maximum value allows the track to grow to accommodate its content (up to its `max-content` size) while also sharing any available free space within the grid container.
 
@@ -423,7 +423,7 @@ Lines are numbered according to the writing mode of the document. In a left-to-r
 
 The following example demonstrates basic line-based placement; when placing an item, we target the line rather than the track. We explore this in greater detail in the [grid layout using line-based placement](/guides/Grid_layout/Line-based_placement) guide.
 
-In this example, the first two items on our three column track grid are placed using the {{cssxref("grid-column-start")}}, {{cssxref("grid-column-end")}}, {{cssxref("grid-row-start")}} and {{cssxref("grid-row-end")}} properties. Working from left to right, the first item is placed against column line 1, and spans to column line 4, which in our case is the far-right line on the grid. It begins at row line 1 and ends at row line 3, therefore spanning two row tracks.
+In this example, the first two items on our three column track grid are placed using the `grid-column-start`, `grid-column-end`, `grid-row-start` and `grid-row-end` properties. Working from left to right, the first item is placed against column line 1, and spans to column line 4, which in our case is the far-right line on the grid. It begins at row line 1 and ends at row line 3, therefore spanning two row tracks.
 
 The second item starts on grid column line 1, and spans one track. This is the default, so we do not need to specify the end line. It also spans two row tracks from row line 3 to row line 5. The other items will place themselves into empty spaces on the grid.
 
@@ -484,7 +484,7 @@ Use the grid inspector in your developer tools to see how the items are position
 
 ### Line-positioning shorthands
 
-The longhand values used above can be compressed onto one line for columns with the {{cssxref("grid-column")}} shorthand, and one line for rows with the {{cssxref("grid-row")}} shorthand. The following example would give the same positioning as in the previous code, but with far less CSS. The value before the forward slash character (`/`) is the start line, the value after the end line.
+The longhand values used above can be compressed onto one line for columns with the `grid-column` shorthand, and one line for rows with the `grid-row` shorthand. The following example would give the same positioning as in the previous code, but with far less CSS. The value before the forward slash character (`/`) is the start line, the value after the end line.
 
 You can omit the end value if the area only spans one track.
 
@@ -520,7 +520,7 @@ Items can span one or more cells both by row or by column, and this creates a _g
 
 ## Gutters
 
-_Gutters_ or _alleys_ between grid cells can be created using the {{cssxref("column-gap")}} and {{cssxref("row-gap")}} properties, or the shorthand {{cssxref("gap")}}. In the below example, we add a 10-pixel gap between columns and a `1em` gap between rows.
+_Gutters_ or _alleys_ between grid cells can be created using the `column-gap` and `row-gap` properties, or the shorthand `gap`. In the below example, we add a 10-pixel gap between columns and a `1em` gap between rows.
 
 ```css
 .wrapper {
@@ -638,7 +638,7 @@ If we set `box1` to `display: grid`, we can give it a track definition and it to
 
 {{ EmbedLiveSample('Nesting_without_subgrid', '600', '250') }}
 
-In this case the nested grid has no relationship to the parent. As you can see in the example it has not inherited the {{cssxref("gap")}} of the parent and the lines in the nested grid do not align to the lines in the parent grid.
+In this case the nested grid has no relationship to the parent. As you can see in the example it has not inherited the `gap` of the parent and the lines in the nested grid do not align to the lines in the parent grid.
 
 ### Subgrid
 
@@ -659,7 +659,7 @@ To use them, we edit the above nested grid example to change the track definitio
 
 ## Layering items with z-index
 
-Grid items can occupy the same cell, and in this case we can use the {{cssxref("z-index")}} property to control the order in which overlapping items stack.
+Grid items can occupy the same cell, and in this case we can use the `z-index` property to control the order in which overlapping items stack.
 
 ### Overlapping without z-index
 

@@ -89,7 +89,7 @@ break-before: revert-layer;
 break-before: unset;
 ```
 
-Each possible break point (in other words, each element boundary) is affected by three properties: the {{cssxref("break-after")}} value of the previous element, the `break-before` value of the next element, and the {{cssxref("break-inside")}} value of the containing element.
+Each possible break point (in other words, each element boundary) is affected by three properties: the `break-after` value of the previous element, the `break-before` value of the next element, and the `break-inside` value of the containing element.
 
 To determine if a break must be done, the following rules are applied:
 
@@ -142,7 +142,7 @@ Once forced breaks have been applied, soft breaks may be added if needed, but no
 
 ## Page break aliases
 
-For compatibility reasons, the legacy {{cssxref("page-break-before")}} property should be treated by browsers as an alias of `break-before`. This ensures that sites using `page-break-before` continue to work as designed. A subset of values should be aliased as follows:
+For compatibility reasons, the legacy `page-break-before` property should be treated by browsers as an alias of `break-before`. This ensures that sites using `page-break-before` continue to work as designed. A subset of values should be aliased as follows:
 
 | page-break-before | break-before |
 | ----------------- | ------------ |

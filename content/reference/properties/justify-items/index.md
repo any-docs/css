@@ -6,7 +6,7 @@ browser-compat: css.properties.justify-items
 sidebar: cssref
 ---
 
-The [CSS](/en-US/docs/Web/CSS) **`justify-items`** property defines the default {{CSSxRef("justify-self")}} for all items of the box, giving them all a default way of justifying each box along the appropriate axis.
+The [CSS](/en-US/docs/Web/CSS) **`justify-items`** property defines the default `justify-self` for all items of the box, giving them all a default way of justifying each box along the appropriate axis.
 
 {{InteractiveExample("CSS Demo: justify-items")}}
 
@@ -141,7 +141,7 @@ This property can take one of four different forms:
   - Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group.
     The fallback alignment for `first baseline` is `start`, the one for `last baseline` is `end`.
 - `stretch`
-  - If the combined size of the items is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by {{CSSxRef("max-height")}}/{{CSSxRef("max-width")}} (or equivalent functionality), so that the combined size exactly fills the alignment container.
+  - If the combined size of the items is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by `max-height`/`max-width` (or equivalent functionality), so that the combined size exactly fills the alignment container.
 - `anchor-center`
   - In the case of [anchor-positioned](/guides/Anchor_positioning) elements, aligns the items to the center of the associated anchor element in the inline direction. See [Centering on the anchor using `anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center).
 - `safe`
@@ -230,8 +230,8 @@ span {
 
 ## See also
 
-- {{CSSxRef("justify-self")}}
-- {{CSSxRef("align-items")}}
-- {{CSSxRef("place-items")}} shorthand
+- `justify-self`
+- `align-items`
+- `place-items` shorthand
 - [Box alignment in grid layout](/guides/Box_alignment/In_grid_layout)
 - [CSS box alignment](/guides/Box_alignment) module

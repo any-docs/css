@@ -6,7 +6,7 @@ browser-compat: css.properties.min-height
 sidebar: cssref
 ---
 
-The **`min-height`** [CSS](/en-US/docs/Web/CSS) property sets the minimum height of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the {{cssxref("height")}} property from becoming smaller than the value specified for `min-height`.
+The **`min-height`** [CSS](/en-US/docs/Web/CSS) property sets the minimum height of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the `height` property from becoming smaller than the value specified for `min-height`.
 
 {{InteractiveExample("CSS Demo: min-height")}}
 
@@ -46,7 +46,7 @@ min-height: 10px;
 }
 ```
 
-The element's height is set to the value of `min-height` whenever `min-height` is larger than {{cssxref("max-height")}} or {{cssxref("height")}}.
+The element's height is set to the value of `min-height` whenever `min-height` is larger than `max-height` or `height`.
 
 ## Syntax
 
@@ -76,17 +76,17 @@ min-height: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Defines the `min-height` as an absolute value.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Defines the `min-height` as a percentage of the containing block's height.
 - `auto`
   - The browser will calculate and select a `min-height` for the specified element.
-- {{cssxref("max-content")}}
+- `max-content`
   - The intrinsic preferred `min-height`.
-- {{cssxref("min-content")}}
+- `min-content`
   - The intrinsic minimum `min-height`.
-- {{cssxref("fit-content")}}
+- `fit-content`
   - Use the available space, but not more than [max-content](/reference/values/max-content), i.e., `min(max-content, max(min-content, stretch))`.
 - [`fit-content(<length-percentage>)`](/reference/values/fit-content_function)
   - Uses the `fit-content` formula with the available space replaced by the specified argument, i.e., `min(max-content, max(min-content, argument))`.
@@ -128,10 +128,10 @@ form {
 
 ## See also
 
-- {{Cssxref("max-height")}}
-- {{Cssxref("height")}}
-- {{cssxref("min-inline-size")}}
-- {{cssxref("min-block-size")}}
-- {{cssxref("box-sizing")}}
+- `max-height`
+- `height`
+- `min-inline-size`
+- `min-block-size`
+- `box-sizing`
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

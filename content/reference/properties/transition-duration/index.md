@@ -76,7 +76,7 @@ transition-duration: unset;
 ### Values
 
 - `<time>`
-  - Is a {{cssxref("&lt;time&gt;")}} denoting the amount of time the transition from the old value of a property to the new value should take. A time of `0s` indicates that no transition will happen, that is the switch between the two states will be instantaneous. A negative value for the time renders the declaration invalid.
+  - Is a `&lt;time&gt;` denoting the amount of time the transition from the old value of a property to the new value should take. A time of `0s` indicates that no transition will happen, that is the switch between the two states will be instantaneous. A negative value for the time renders the declaration invalid.
 
 ## Formal definition
 
@@ -172,4 +172,4 @@ changeButton.addEventListener("click", change);
 - {{cssxref('transition-property')}}
 - {{cssxref('transition-timing-function')}}
 - {{cssxref('transition-delay')}}
-- {{domxref("TransitionEvent")}}
+- `TransitionEvent`

@@ -26,7 +26,7 @@ overflow-clip-margin: revert-layer;
 overflow-clip-margin: unset;
 ```
 
-The `<visual-box>` value, which defaults to `padding-box`, specifies the box edge to use as the overflow clip edge origin. The {{cssxref("&lt;length&gt;")}} value specified in `overflow-clip-margin` must be nonnegative.
+The `<visual-box>` value, which defaults to `padding-box`, specifies the box edge to use as the overflow clip edge origin. The `&lt;length&gt;` value specified in `overflow-clip-margin` must be nonnegative.
 
 > [!NOTE]
 > If the element does not have `overflow: clip` then this property will be ignored.
@@ -79,4 +79,4 @@ The `<visual-box>` value, which defaults to `padding-box`, specifies the box edg
 
 ## See also
 
-- Related CSS properties: {{cssxref("text-overflow")}}, {{cssxref("white-space")}}, {{Cssxref("overflow")}}, {{Cssxref("overflow-inline")}}, {{Cssxref("overflow-x")}}, {{Cssxref("overflow-y")}}, {{Cssxref("clip")}}, {{Cssxref("display")}}
+- Related CSS properties: `text-overflow`, `white-space`, `overflow`, `overflow-inline`, `overflow-x`, `overflow-y`, `clip`, `display`

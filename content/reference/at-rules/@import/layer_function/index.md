@@ -6,7 +6,7 @@ browser-compat: css.at-rules.import.layer
 sidebar: cssref
 ---
 
-The **`layer()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is used along with the {{cssxref("@import")}} [at-rule](/guides/Syntax/At-rules) to put the imported resource in a separate named [cascade layer](/en-US/docs/Web/CSS/Reference/At-rules/@layer).
+The **`layer()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is used along with the `@import` [at-rule](/guides/Syntax/At-rules) to put the imported resource in a separate named [cascade layer](/en-US/docs/Web/CSS/Reference/At-rules/@layer).
 
 ## Syntax
 
@@ -29,6 +29,6 @@ The `framework.themes.dark` is the layer into which the CSS file would be import
 
 ## See also
 
-- {{CSSxRef("@import")}}
+- `@import`
 - [CSS at-rule functions](/en-US/docs/Web/CSS/Reference/At-rules/At-rule_functions)
 - [CSS cascading and inheritance](/guides/Cascade) module

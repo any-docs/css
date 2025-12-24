@@ -6,7 +6,7 @@ browser-compat: css.properties.mask-border-slice
 sidebar: cssref
 ---
 
-The **`mask-border-slice`** [CSS](/en-US/docs/Web/CSS) property divides the image set by {{cssxref("mask-border-source")}} into regions. These regions are used to form the components of an element's [mask border](/reference/properties/mask-border).
+The **`mask-border-slice`** [CSS](/en-US/docs/Web/CSS) property divides the image set by `mask-border-source` into regions. These regions are used to form the components of an element's [mask border](/reference/properties/mask-border).
 
 ## Syntax
 
@@ -45,9 +45,9 @@ The optional `fill` value, if used, can be placed anywhere in the declaration.
 
 ### Values
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - Represents an edge offset in _pixels_ for raster images and _coordinates_ for vector images. For vector images, the number is relative to the element's size, not the size of the source image, so percentages are generally preferable in these cases.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Represents an edge offset as a percentage of the source image's size: the width of the image for horizontal offsets, the height for vertical offsets.
 - `fill`
   - Preserves the middle image region. Its width and height are sized to match the top and left image regions, respectively.
@@ -64,7 +64,7 @@ The above diagram illustrates the location of each region.
 - Zones 5-8 are edge regions. These are [repeated, scaled, or otherwise modified](/reference/properties/mask-border-repeat) in the final border image to match the dimensions of the element.
 - Zone 9 is the middle region. It is discarded by default, but is used like a background image if the keyword `fill` is set.
 
-The {{cssxref("mask-border-repeat")}}, {{cssxref("mask-border-width")}}, and {{cssxref("mask-border-outset")}} properties determine how these regions are used to form the final mask border.
+The `mask-border-repeat`, `mask-border-width`, and `mask-border-outset` properties determine how these regions are used to form the final mask border.
 
 ## Formal definition
 
@@ -91,7 +91,7 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 ```
 
 > [!NOTE]
-> The {{cssxref("mask-border")}} page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
+> The `mask-border` page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
 
 > [!NOTE]
 > The fill keyword needs to be included if you want the element's content to be visible.
@@ -106,10 +106,10 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 
 ## See also
 
-- {{cssxref("mask-border")}}
-- {{cssxref("mask-border-mode")}}
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-source")}}
-- {{cssxref("mask-border-width")}}
+- `mask-border`
+- `mask-border-mode`
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-source`
+- `mask-border-width`
 - [Illustrated description of the 1-to-4-value syntax](/guides/Cascade/Shorthand_properties#tricky_edge_cases)

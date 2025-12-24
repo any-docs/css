@@ -11,7 +11,7 @@ The properties defined in the **CSS multi-column layout module** extend the _blo
 
 ### Column count and width
 
-Two CSS properties control whether and how many columns will appear: {{cssxref("column-count")}} and {{cssxref("column-width")}}.
+Two CSS properties control whether and how many columns will appear: `column-count` and `column-width`.
 
 The `column-count` property sets the number of columns to a particular number. E.g.,
 
@@ -87,7 +87,7 @@ In a multi-column block, content automatically flows from one column into the ne
 
 ### The columns shorthand
 
-You can use either {{cssxref("column-count")}} or {{cssxref("column-width")}}. Because values for these properties do not overlap, it is often convenient to use the shorthand {{cssxref("columns")}}.
+You can use either `column-count` or `column-width`. Because values for these properties do not overlap, it is often convenient to use the shorthand `columns`.
 
 ## Example 3
 
@@ -180,11 +180,11 @@ Assuming a default `1em` gap between columns, if the container is wider than `10
 
 CSS columns require that the column heights must be balanced: that is, the browser automatically sets the maximum column height so that the heights of the content in each column are approximately equal. Firefox does this.
 
-However, in some situations it is also useful to set the maximum height of the columns explicitly, and then lay out content starting at the first column and creating as many columns as necessary, possibly overflowing to the right. Therefore, if the height is constrained, by setting the CSS {{cssxref("height")}} or {{cssxref("max-height")}} properties on a multi-column block, each column is allowed to grow to that height and no further before adding new column. This mode is also much more efficient for layout.
+However, in some situations it is also useful to set the maximum height of the columns explicitly, and then lay out content starting at the first column and creating as many columns as necessary, possibly overflowing to the right. Therefore, if the height is constrained, by setting the CSS `height` or `max-height` properties on a multi-column block, each column is allowed to grow to that height and no further before adding new column. This mode is also much more efficient for layout.
 
 ### Column Gaps
 
-There is a gap between columns. The recommended default is `1em`. This size can be changed by applying the {{cssxref("column-gap")}} property to the multi-column block:
+There is a gap between columns. The recommended default is `1em`. This size can be changed by applying the `column-gap` property to the multi-column block:
 
 ## Example 6
 

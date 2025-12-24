@@ -12,7 +12,7 @@ When we describe flexbox as being one-dimensional we are describing the fact tha
 
 ## The two axes of flexbox
 
-When working with flexbox you need to think in terms of two axes — the _main axis_ and the _cross axis_. The [main axis](#the_main_axis) is defined by the {{cssxref("flex-direction")}} property, and the [cross axis](#the_cross_axis) runs perpendicular to it. Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.
+When working with flexbox you need to think in terms of two axes — the _main axis_ and the _cross axis_. The [main axis](#the_main_axis) is defined by the `flex-direction` property, and the [cross axis](#the_cross_axis) runs perpendicular to it. Everything we do with flexbox refers back to these axes, so it is worth understanding how they work from the outset.
 
 ### The main axis
 
@@ -61,18 +61,18 @@ After a while, thinking about start and end rather than left and right becomes n
 
 ## The flex container
 
-An area of a document that is laid out using flexbox is called a **flex container**. To create a {{glossary("flex container")}}, set the area's {{cssxref("display")}} property to `flex`. When we do this, the direct children of that container become **flex items**. You can explicitly control whether the container itself is displayed inline or in block formatting context using `inline flex` or `inline-flex` for inline flex containers or `block flex` or `flex` for block level flex containers.
+An area of a document that is laid out using flexbox is called a **flex container**. To create a {{glossary("flex container")}}, set the area's `display` property to `flex`. When we do this, the direct children of that container become **flex items**. You can explicitly control whether the container itself is displayed inline or in block formatting context using `inline flex` or `inline-flex` for inline flex containers or `block flex` or `flex` for block level flex containers.
 
 ### Initial values
 
 As with all properties in CSS, some initial values are defined, so the contents of a new flex container will behave in the following way:
 
-- Items display in a row (the {{cssxref("flex-direction")}} property's default value is `row`).
+- Items display in a row (the `flex-direction` property's default value is `row`).
 - The items start from the start edge of the main axis.
-- The items do not stretch on the main dimension but can shrink (a flex-item's {{cssxref("flex-grow")}} property's default value is `0` and its {{cssxref("flex-shrink")}} property's default value is `1`).
-- The items will stretch to fill the size of the cross-axis (the {{cssxref("align-items")}} property's default value is `stretch`).
-- The flex-item's {{cssxref("flex-basis")}} property's default value is `auto`. This means that, in each case, it will be equal to the flex item {{cssxref("width")}} in horizontal writing mode, and the flex item {{cssxref("height")}} in vertical writing mode. If the corresponding `width`/`height` is also set to `auto`, the `flex-basis` `content` value is used instead.
-- All the items will be in a single row (the {{cssxref("flex-wrap")}} property's default value is `nowrap`), overflowing their container if their combined `width`/`height` exceeds the containing element `width`/`height`.
+- The items do not stretch on the main dimension but can shrink (a flex-item's `flex-grow` property's default value is `0` and its `flex-shrink` property's default value is `1`).
+- The items will stretch to fill the size of the cross-axis (the `align-items` property's default value is `stretch`).
+- The flex-item's `flex-basis` property's default value is `auto`. This means that, in each case, it will be equal to the flex item `width` in horizontal writing mode, and the flex item `height` in vertical writing mode. If the corresponding `width`/`height` is also set to `auto`, the `flex-basis` `content` value is used instead.
+- All the items will be in a single row (the `flex-wrap` property's default value is `nowrap`), overflowing their container if their combined `width`/`height` exceeds the containing element `width`/`height`.
 
 The result of this is that your items will all line up in a row, using the size of the content as their size in the main axis. If there are more items than can fit in the container, they will not wrap but will instead overflow. If some items are taller than others, all items will stretch along the full length of the cross-axis.
 
@@ -103,7 +103,7 @@ You can see in the live sample below how this looks. Click "Play" to open the ex
 
 ### Changing flex-direction
 
-Adding the {{cssxref("flex-direction")}} property to the flex container allows us to change the direction in which our flex items display. Setting `flex-direction: row-reverse` will keep the items displaying along the row, however the start and end lines are switched.
+Adding the `flex-direction` property to the flex container allows us to change the direction in which our flex items display. Setting `flex-direction: row-reverse` will keep the items displaying along the row, however the start and end lines are switched.
 
 If we change `flex-direction` to `column` the main axis switches and our items now display in a column. Set `column-reverse` and the start and end lines are again switched.
 
@@ -137,7 +137,7 @@ The live sample below has `flex-direction` set to `row-reverse`. Try the other v
 
 While flexbox is a one dimensional model, it is possible to make flex items wrap across multiple lines. If you do this, you should consider each line as a new flex container. Any space distribution will happen across each line, without reference to the previous or subsequent lines.
 
-To cause wrapping behavior add the property {{cssxref("flex-wrap")}} with a value of `wrap`. Now, if your items are too large to all display in one line, they will wrap onto another line. The live sample below contains items that have been given a `width`. The total width of the items is too wide for the flex container. As `flex-wrap` is set to `wrap`, the items wrap across multiple lines. If you set it to `nowrap`, which is the initial value, they will shrink to fit the container. They shrink because they are using initial flexbox values, including `flex-shrink: 1`, that allows items to shrink. Using `nowrap` would cause an [overflow](/en-US/docs/Learn_web_development/Core/Styling_basics/Overflow) if the items were not able to shrink, or could not shrink small enough to fit.
+To cause wrapping behavior add the property `flex-wrap` with a value of `wrap`. Now, if your items are too large to all display in one line, they will wrap onto another line. The live sample below contains items that have been given a `width`. The total width of the items is too wide for the flex container. As `flex-wrap` is set to `wrap`, the items wrap across multiple lines. If you set it to `nowrap`, which is the initial value, they will shrink to fit the container. They shrink because they are using initial flexbox values, including `flex-shrink: 1`, that allows items to shrink. Using `nowrap` would cause an [overflow](/en-US/docs/Learn_web_development/Core/Styling_basics/Overflow) if the items were not able to shrink, or could not shrink small enough to fit.
 
 ```html live-sample___flex-wrap
 <div class="box">
@@ -169,7 +169,7 @@ Find out more about wrapping flex items in the guide [Mastering wrapping of flex
 
 ## The flex-flow shorthand
 
-You can combine the two properties `flex-direction` and `flex-wrap` into the {{cssxref("flex-flow")}} shorthand.
+You can combine the two properties `flex-direction` and `flex-wrap` into the `flex-flow` shorthand.
 
 In the live sample below, try changing the first value to one of the allowable values for `flex-direction` - `row`, `row-reverse`, `column` or `column-reverse`, and also change the second to `wrap` and `nowrap`.
 
@@ -203,9 +203,9 @@ In the live sample below, try changing the first value to one of the allowable v
 
 To control the inline-size of each flex item, we target them directly via three properties:
 
-- {{cssxref("flex-grow")}}
-- {{cssxref("flex-shrink")}}
-- {{cssxref("flex-basis")}}
+- `flex-grow`
+- `flex-shrink`
+- `flex-basis`
 
 We will take a brief look at these properties below, but if you want more comprehensive information, take a look at the [Controlling ratios of flex items on the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios) guide.
 
@@ -233,14 +233,14 @@ Each item with a positive value consumes a portion of any available space based 
 
 Where the `flex-grow` property deals with adding space in the main axis, the `flex-shrink` property controls how it is taken away. If we do not have enough space in the container to lay out our items, and `flex-shrink` is set to a positive integer, then the item can become smaller than the `flex-basis`. As with `flex-grow`, different values can be assigned in order to cause one item to shrink faster than others — an item with a higher value set for `flex-shrink` will shrink faster than its siblings that have lower values.
 
-An item can shrink down to its {{cssxref("min-content")}} size. This minimum size is taken into account while working out the actual amount of shrinkage that will happen, which means that `flex-shrink` has the potential to appear less consistent than `flex-grow` in behavior. We'll therefore take a more detailed look at how this algorithm works in the article [Controlling ratios of items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios).
+An item can shrink down to its `min-content` size. This minimum size is taken into account while working out the actual amount of shrinkage that will happen, which means that `flex-shrink` has the potential to appear less consistent than `flex-grow` in behavior. We'll therefore take a more detailed look at how this algorithm works in the article [Controlling ratios of items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios).
 
 > [!NOTE]
 > These values for `flex-grow` and `flex-shrink` are proportions. Typically if we had all of our items set to `flex: 1 1 200px` and then wanted one item to grow at twice the rate, we would set that item to `flex: 2 1 200px`. However you could also use `flex: 10 1 200px` and `flex: 20 1 200px` if you wanted.
 
 ### Shorthand values for the flex properties
 
-You will very rarely see the `flex-grow`, `flex-shrink`, and `flex-basis` properties used individually; instead they are combined into the {{cssxref("flex")}} shorthand. The `flex` shorthand allows you to set the three values in this order — `flex-grow`, `flex-shrink`, `flex-basis`.
+You will very rarely see the `flex-grow`, `flex-shrink`, and `flex-basis` properties used individually; instead they are combined into the `flex` shorthand. The `flex` shorthand allows you to set the three values in this order — `flex-grow`, `flex-shrink`, `flex-basis`.
 
 The live sample below allows you to test out the different values of the flex shorthand; remember that the first value is `flex-grow`. Giving this a positive value means the item can grow. The second is `flex-shrink` — with a positive value the items can shrink, but only if their total values overflow the main axis. The final value is `flex-basis`; this is the value the items are using as their base value to grow and shrink from.
 
@@ -337,7 +337,7 @@ A key feature of flexbox is the ability to align and justify items on the main- 
 
 ### align-items
 
-The {{cssxref("align-items")}} property aligns all the flex items on the cross axis.
+The `align-items` property aligns all the flex items on the cross axis.
 
 The initial value for this property is `stretch` and is why flex items stretch to the height of the flex container by default (or the width if `flex-direction` is set to `column` or `column-reverse`). This height may come from the tallest item in the container or the size set on the flex container itself.
 
@@ -378,11 +378,11 @@ You could instead set `align-items` to `flex-start`, or simply `start`, in order
 
 {{EmbedLiveSample("align-items")}}
 
-The `align-items` is set on the flex container and impacts all the flex items. If you want to align a flex item differently from others, you can set the {{cssxref("align-self")}} on the flex item.
+The `align-items` is set on the flex container and impacts all the flex items. If you want to align a flex item differently from others, you can set the `align-self` on the flex item.
 
 ### justify-content
 
-The {{cssxref("justify-content")}} property is used to align the items on the main axis, the direction in which `flex-direction` has set the flow. The initial value is `flex-start` which will line the items up at the start edge of the container, but you could also set the value to `flex-end` to line them up at the end, or `center` to line them up in the center.
+The `justify-content` property is used to align the items on the main axis, the direction in which `flex-direction` has set the flow. The initial value is `flex-start` which will line the items up at the start edge of the container, but you could also set the value to `flex-end` to line them up at the end, or `center` to line them up in the center.
 
 You can also use the value `space-between` to take all the spare space after the items have been laid out, and share it out evenly between the items so there will be an equal amount of space between each item. To cause an equal amount of space on the right and left (or top and bottom for columns) of each item use the value `space-around`. With `space-around`, items have a half-size space on either end. Or, to cause items to have equal space around them use the value `space-evenly`. With `space-evenly`, items have a full-size space on either end.
 
@@ -429,13 +429,13 @@ The article [Aligning items in a flex container](/guides/Flexible_box_layout/Ali
 
 ### justify-items
 
-The {{cssxref("justify-items")}} property is ignored in flexbox layouts.
+The `justify-items` property is ignored in flexbox layouts.
 
 ### place-items and place-content
 
-The {{cssxref("place-items")}} property is a shorthand property for `align-items` and `justify-items`. If set on a flex container, it will set the alignment but not the justification, as `justify-items` is ignored in flexbox.
+The `place-items` property is a shorthand property for `align-items` and `justify-items`. If set on a flex container, it will set the alignment but not the justification, as `justify-items` is ignored in flexbox.
 
-There is another shorthand property, {{cssxref("place-content")}}, that defines the {{cssxref("align-content")}} and `justify-content` properties. The `align-content` property only affects flex containers that wrap, and is discussed in [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items).
+There is another shorthand property, `place-content`, that defines the `align-content` and `justify-content` properties. The `align-content` property only affects flex containers that wrap, and is discussed in [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items).
 
 ## Next steps
 

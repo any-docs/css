@@ -51,7 +51,7 @@ text-overflow: "";
 }
 ```
 
-The `text-overflow` property doesn't force an overflow to occur. To make text overflow its container, you have to set other CSS properties: {{cssxref("overflow")}} and {{cssxref("white-space")}}. For example:
+The `text-overflow` property doesn't force an overflow to occur. To make text overflow its container, you have to set other CSS properties: `overflow` and `white-space`. For example:
 
 ```css
 overflow: hidden;
@@ -84,7 +84,7 @@ The `text-overflow` property may be specified using one or two values. If one va
 - `ellipsis`
   - This keyword value will display an ellipsis (`'…'`, `U+2026 HORIZONTAL ELLIPSIS`) to represent clipped text. The ellipsis is displayed inside the [content area](/guides/Box_model/Introduction), decreasing the amount of text displayed. If there is not enough space to display the ellipsis, it is clipped.
 - `<string>`
-  - The {{cssxref("&lt;string&gt;")}} to be used to represent clipped text. The string is displayed inside the [content area](/guides/Box_model/Introduction), shortening the size of the displayed text. If there is not enough space to display the string itself, it is clipped.
+  - The `&lt;string&gt;` to be used to represent clipped text. The string is displayed inside the [content area](/guides/Box_model/Introduction), shortening the size of the displayed text. If there is not enough space to display the string itself, it is clipped.
 
 ## Formal definition
 
@@ -262,5 +262,5 @@ A previous version of this interface reached the _Candidate Recommendation_ stat
 
 ## See also
 
-- Related CSS properties: {{cssxref("overflow")}}, {{cssxref("white-space")}}
-- CSS properties that control line breaks in words: {{cssxref("overflow-wrap")}}, {{cssxref("word-break")}}
+- Related CSS properties: `overflow`, `white-space`
+- CSS properties that control line breaks in words: `overflow-wrap`, `word-break`

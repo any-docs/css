@@ -10,7 +10,7 @@ The **`width`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/CSS/R
 
 ## Syntax
 
-The `width` feature is specified as a {{cssxref("&lt;length&gt;")}} value representing the viewport width. It is a range feature, meaning that you can also use the prefixed **`min-width`** and **`max-width`** variants to query minimum and maximum values, respectively.
+The `width` feature is specified as a `&lt;length&gt;` value representing the viewport width. It is a range feature, meaning that you can also use the prefixed **`min-width`** and **`max-width`** variants to query minimum and maximum values, respectively.
 
 ## Examples
 

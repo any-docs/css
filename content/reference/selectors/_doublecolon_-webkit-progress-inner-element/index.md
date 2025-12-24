@@ -10,10 +10,10 @@ sidebar: cssref
 
 {{Non-standard_header}}
 
-The **`::-webkit-progress-inner-element`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) represents the outermost container of the {{HTMLElement("progress")}} element. It is the parent of the {{cssxref("::-webkit-progress-bar")}} pseudo-element.
+The **`::-webkit-progress-inner-element`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) represents the outermost container of the {{HTMLElement("progress")}} element. It is the parent of the `::-webkit-progress-bar` pseudo-element.
 
 > [!NOTE]
-> In order to let `::-webkit-progress-value` take effect, {{cssxref("appearance")}} needs to be set to `none` on the `<progress>` element.
+> In order to let `::-webkit-progress-value` take effect, `appearance` needs to be set to `none` on the `<progress>` element.
 
 ## Syntax
 
@@ -70,7 +70,7 @@ Not part of any standard.
 ## See also
 
 - The pseudo-elements used by WebKit/Blink to style other parts of a {{HTMLElement("progress")}} element:
-  - {{cssxref("::-webkit-progress-bar")}}
-  - {{cssxref("::-webkit-progress-value")}}
+  - `::-webkit-progress-bar`
+  - `::-webkit-progress-value`
 
-- {{cssxref("::-moz-progress-bar")}}
+- `::-moz-progress-bar`

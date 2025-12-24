@@ -9,7 +9,7 @@ sidebar: cssref
 The **`rem()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) returns a remainder left over when the first parameter is divided by the second parameter, similar to the JavaScript [remainder operator (`%`)](/en-US/docs/Web/JavaScript/Reference/Operators/Remainder). The remainder is the value left over when one operand, the dividend, is divided by a second operand, the divisor. It always takes the sign of the dividend.
 
 > [!NOTE]
-> To read about the unit `rem`, see the {{CSSxRef("&lt;length&gt;")}} page.
+> To read about the unit `rem`, see the `&lt;length&gt;` page.
 
 For example, the CSS `rem(27, 5)` function returns the remainder of `2`. When dividing 27 by 5, the result is 5 with a remainder of 2. The full calculation is `27 / 5 = 5 * 5 + 2`.
 
@@ -42,17 +42,17 @@ transition-duration: rem(20s / 2, 3000ms * 2); /* 4s */
 
 ### Parameters
 
-The `rem(dividend, divisor)` function accepts two comma-separated values as its parameters. Both parameters must have the same type, [number](/reference/values/number), [dimension](/reference/values/dimension), or {{cssxref("percentage")}}, for the function to be valid. While the units in the two parameters don't need to be the same, they do need of the same dimension type, such as {{cssxref("length")}}, {{cssxref("angle")}}, {{cssxref("time")}}, or {{cssxref("frequency")}} to be valid.
+The `rem(dividend, divisor)` function accepts two comma-separated values as its parameters. Both parameters must have the same type, [number](/reference/values/number), [dimension](/reference/values/dimension), or `percentage`, for the function to be valid. While the units in the two parameters don't need to be the same, they do need of the same dimension type, such as `length`, `angle`, `time`, or `frequency` to be valid.
 
 - `dividend`
-  - A calculation that resolves to a {{CSSxREF("&lt;number&gt;")}}, {{CSSxREF("&lt;dimension&gt;")}}, or {{CSSxREF("&lt;percentage&gt;")}} representing the dividend.
+  - A calculation that resolves to a `&lt;number&gt;`, `&lt;dimension&gt;`, or `&lt;percentage&gt;` representing the dividend.
 
 - `divisor`
-  - A calculation that resolves to a {{CSSxREF("&lt;number&gt;")}}, {{CSSxREF("&lt;dimension&gt;")}}, or {{CSSxREF("&lt;percentage&gt;")}} representing the divisor.
+  - A calculation that resolves to a `&lt;number&gt;`, `&lt;dimension&gt;`, or `&lt;percentage&gt;` representing the divisor.
 
 ### Return value
 
-Returns a {{CSSxREF("&lt;number&gt;")}}, {{CSSxREF("&lt;dimension&gt;")}}, or {{CSSxREF("&lt;percentage&gt;")}} (corresponds to the parameters' type) representing the remainder, that is, the operation left over.
+Returns a `&lt;number&gt;`, `&lt;dimension&gt;`, or `&lt;percentage&gt;` (corresponds to the parameters' type) representing the remainder, that is, the operation left over.
 
 - If `divisor` is `0`, the result is `NaN`.
 - If `dividend` is `infinite`, the result is `NaN`.
@@ -72,6 +72,6 @@ Returns a {{CSSxREF("&lt;number&gt;")}}, {{CSSxREF("&lt;dimension&gt;")}}, or {{
 
 ## See also
 
-- {{CSSxRef("round")}}
-- {{CSSxRef("mod")}}
-- {{CSSxRef("&lt;length&gt;")}}
+- `round`
+- `mod`
+- `&lt;length&gt;`

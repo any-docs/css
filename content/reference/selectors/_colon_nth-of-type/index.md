@@ -50,7 +50,7 @@ dd:nth-of-type(even) {
 
 The `:nth-of-type()` pseudo-class is specified with a single argument, which represents the pattern for matching elements.
 
-See {{Cssxref(":nth-child")}} for a more detailed explanation of its syntax.
+See `:nth-child` for a more detailed explanation of its syntax.
 
 ## Examples
 
@@ -111,4 +111,4 @@ p.fancy:nth-of-type(2n + 1) {
 
 ## See also
 
-- {{Cssxref(":nth-child")}}, {{Cssxref(":nth-last-of-type")}}
+- `:nth-child`, `:nth-last-of-type`

@@ -82,9 +82,9 @@ rgb(R G B[ / A])
 The parameters are as follows:
 
 - `R`, `G`, `B`
-  - Each value can be represented as a {{CSSXref("&lt;number&gt;")}} between `0` and `255`, a {{CSSXref("&lt;percentage&gt;")}} between `0%` and `100%`, or the keyword `none` (equivalent to `0%` in this case). These values represent the red, green, and blue channels, respectively.
+  - Each value can be represented as a `&lt;number&gt;` between `0` and `255`, a `&lt;percentage&gt;` between `0%` and `100%`, or the keyword `none` (equivalent to `0%` in this case). These values represent the red, green, and blue channels, respectively.
 - `A` <Badge type="info" text="Optional" />
-  - An {{CSSXref("&lt;alpha-value&gt;")}} representing the alpha channel value of the color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to 100%. If included, the value is preceded by a slash (`/`).
+  - An `&lt;alpha-value&gt;` representing the alpha channel value of the color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to 100%. If included, the value is preceded by a slash (`/`).
 
 > [!NOTE]
 > See [Missing color components](/reference/values/color_value#missing_color_components) for more information on the effect of `none`.
@@ -98,14 +98,14 @@ rgb(from <color> R G B[ / A])
 The parameters are as follows:
 
 - `from <color>`
-  - The keyword `from` is always included when defining a relative color, followed by a {{cssxref("&lt;color&gt;")}} value representing the **origin color**: This is the original color that the relative color is based on. The origin color can be _any_ valid {{cssxref("&lt;color&gt;")}} syntax, including another relative color.
+  - The keyword `from` is always included when defining a relative color, followed by a `&lt;color&gt;` value representing the **origin color**: This is the original color that the relative color is based on. The origin color can be _any_ valid `&lt;color&gt;` syntax, including another relative color.
 - `R`, `G`, `B`
-  - Each value can be represented as a {{CSSXref("&lt;number&gt;")}} between `0` and `255`, a {{CSSXref("&lt;percentage&gt;")}} between `0%` and `100%`, or the keyword `none` (equivalent to `0%` in this case). These values represent the red, green, and blue channel values of the output color, respectively.
+  - Each value can be represented as a `&lt;number&gt;` between `0` and `255`, a `&lt;percentage&gt;` between `0%` and `100%`, or the keyword `none` (equivalent to `0%` in this case). These values represent the red, green, and blue channel values of the output color, respectively.
 - `A` <Badge type="info" text="Optional" />
-  - An {{CSSXref("&lt;alpha-value&gt;")}} representing the alpha channel value of the output color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to the alpha channel value of the origin color. If included, the value is preceded by a slash (`/`).
+  - An `&lt;alpha-value&gt;` representing the alpha channel value of the output color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to the alpha channel value of the origin color. If included, the value is preceded by a slash (`/`).
 
 > [!NOTE]
-> To fully enable the representation of the full spectrum of visible colors, the output of relative `rgb()` color functions is serialized to `color(srgb)`. That means that querying the output color value via the {{DOMxRef("HTMLElement.style")}} property or the {{DOMxRef("CSSStyleDeclaration.getPropertyValue()")}} method returns the output color as a [`color(srgb ...)`](/reference/values/color_value/color) value.
+> To fully enable the representation of the full spectrum of visible colors, the output of relative `rgb()` color functions is serialized to `color(srgb)`. That means that querying the output color value via the `HTMLElement.style` property or the `CSSStyleDeclaration.getPropertyValue()` method returns the output color as a [`color(srgb ...)`](/reference/values/color_value/color) value.
 
 #### Defining relative color output channel components
 
@@ -163,7 +163,7 @@ rgb(from hsl(0 100% 50% / 0.8) r g b / 0.5)
 /* Computed output color: color(srgb 1 0 0 / 0.5) */
 ```
 
-In the following example, the `hsl()` origin color is again converted into an `rgb()` representation — `rgb(255 0 0)`. {{cssxref("calc")}} calculations are applied to the `R`, `G`, `B`, and `A` values. After calculating, the R, G, B and A values are `127.5`, `25`, `175`, and `0.9` respectively. The final output color is the equivalent of `rgb(127.5 25 175 / 0.9)` in the sRGB color space: `color(srgb 0.5 0.0980392 0.686275 / 0.9)`.
+In the following example, the `hsl()` origin color is again converted into an `rgb()` representation — `rgb(255 0 0)`. `calc` calculations are applied to the `R`, `G`, `B`, and `A` values. After calculating, the R, G, B and A values are `127.5`, `25`, `175`, and `0.9` respectively. The final output color is the equivalent of `rgb(127.5 25 175 / 0.9)` in the sRGB color space: `color(srgb 0.5 0.0980392 0.686275 / 0.9)`.
 
 ```css
 rgb(from hsl(0 100% 50%) calc(r/2) calc(g + 25) calc(b + 175) / calc(alpha - 0.1))
@@ -194,7 +194,7 @@ In this example, we have three {{htmlelement("div")}} elements with different ba
 
 #### CSS
 
-The background colors are set using the `rgb()` color function. The three colors are the same. The third is semi-transparent, so we included a {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}} on the {{htmlelement("body")}} to better demonstrate the transparency of alpha channels.
+The background colors are set using the `rgb()` color function. The three colors are the same. The third is semi-transparent, so we included a `repeating-linear-gradient()` on the {{htmlelement("body")}} to better demonstrate the transparency of alpha channels.
 
 ```css hidden
 div {
@@ -342,7 +342,7 @@ div.comma-separated {
 
 ## See also
 
-- The {{CSSXref("&lt;color&gt;")}} data type for a list of all color notations
+- The `&lt;color&gt;` data type for a list of all color notations
 - [Color format converter tool](/guides/Colors/Color_format_converter)
 - [Using relative colors](/guides/Colors/Using_relative_colors)
 - [CSS colors](/guides/Colors) module

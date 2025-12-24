@@ -61,7 +61,7 @@ If we do not place these onto the grid in any way, they will lay out according t
 
 ## Positioning items by line number
 
-We can use line-based placement to control where these items sit on the grid. We can use the {{cssxref("grid-column-start")}} and {{cssxref("grid-column-end")}} properties to make the first item start on the far left of the grid and span a single column track. With {{cssxref("grid-row-start")}} and {{cssxref("grid-row-end")}}, we make the item start on the first row line at the top of the grid, and span to the fourth row line.
+We can use line-based placement to control where these items sit on the grid. We can use the `grid-column-start` and `grid-column-end` properties to make the first item start on the far left of the grid and span a single column track. With `grid-row-start` and `grid-row-end`, we make the item start on the first row line at the top of the grid, and span to the fourth row line.
 
 ```css
 .box1 {
@@ -141,7 +141,7 @@ Note that we can leave cells empty if we wish. One of the very nice things about
 
 ## The `grid-column` and `grid-row` shorthands
 
-The previous example had quite a lot of code to position each item. It should come as no surprise to know there is a [shorthand](/guides/Cascade/Shorthand_properties). The {{cssxref("grid-column-start")}} and {{cssxref("grid-column-end")}} properties can be combined into {{cssxref("grid-column")}}, {{cssxref("grid-row-start")}} and {{cssxref("grid-row-end")}} into {{cssxref("grid-row")}}. In this example, we replicate the above example using these shorthand properties:
+The previous example had quite a lot of code to position each item. It should come as no surprise to know there is a [shorthand](/guides/Cascade/Shorthand_properties). The `grid-column-start` and `grid-column-end` properties can be combined into `grid-column`, `grid-row-start` and `grid-row-end` into `grid-row`. In this example, we replicate the above example using these shorthand properties:
 
 ```css hidden
 * {
@@ -319,12 +319,12 @@ Our shorthand would look like the following code, with no forward slash and seco
 
 ## The `grid-area` property
 
-We can take things a step further and define each area with a single property – {{cssxref("grid-area")}}. The order of the values for `grid-area` is as follows.
+We can take things a step further and define each area with a single property – `grid-area`. The order of the values for `grid-area` is as follows.
 
-– {{cssxref("grid-row-start")}}
-– {{cssxref("grid-column-start")}}
-– {{cssxref("grid-row-end")}}
-– {{cssxref("grid-column-end")}}
+– `grid-row-start`
+– `grid-column-start`
+– `grid-row-end`
+– `grid-column-end`
 
 ```css hidden
 * {
@@ -467,7 +467,7 @@ Being able to address the start and end lines of the grid is useful as you can t
 
 ## Gutters or Alleys
 
-CSS grid includes the ability to add gutters between column and row tracks with the {{cssxref("column-gap")}} and {{cssxref("row-gap")}} properties, or {{cssxref("gap")}} shorthand.
+CSS grid includes the ability to add gutters between column and row tracks with the `column-gap` and `row-gap` properties, or `gap` shorthand.
 
 Gaps only appear between tracks of the grid, they do not add space to the top and bottom, left or right of the container. We can add gaps to our earlier example by using these properties on the grid container.
 
@@ -533,7 +533,7 @@ Gaps only appear between tracks of the grid, they do not add space to the top an
 
 ### The gap shorthand
 
-The two properties can also be expressed as a shorthand, {{cssxref("gap")}}. If you only give one value for `gap` it will apply to both column and row gaps. If you specify two values, the first is used for `row-gap` and the second for `column-gap`.
+The two properties can also be expressed as a shorthand, `gap`. If you only give one value for `gap` it will apply to both column and row gaps. If you specify two values, the first is used for `row-gap` and the second for `column-gap`.
 
 ```css
 .wrapper {

@@ -52,7 +52,7 @@ label {
 
 ## Examples
 
-This example shows a basic shipping form. It uses the [JavaScript](/en-US/docs/Web/JavaScript) {{domxref("HTMLElement/change_event", "change")}} event to let the user enable/disable the billing fields.
+This example shows a basic shipping form. It uses the [JavaScript](/en-US/docs/Web/JavaScript) `change` event to let the user enable/disable the billing fields.
 
 ### HTML
 
@@ -116,4 +116,4 @@ Check/un-check the checkbox to change the styling on the billing fields.
 
 ## See also
 
-- {{Cssxref(":enabled")}}
+- `:enabled`

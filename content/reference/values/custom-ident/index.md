@@ -27,7 +27,7 @@ Note that `id1`, `Id1`, `iD1`, and `ID1` are all different identifiers as they a
 
 ### Escaping characters
 
-Any Unicode code point can be included as part of a `<custom-ident>` or quoted {{cssxref("string")}} by escaping it.
+Any Unicode code point can be included as part of a `<custom-ident>` or quoted `string` by escaping it.
 
 In CSS, there are several ways to escape a character. Escape sequences start with a backslash (`\`), and continue with:
 
@@ -44,15 +44,15 @@ To include actual white space after an escape sequence, include two white spaces
 
 ### Forbidden values
 
-A `<custom-ident>` must not be placed between single or double quotes as this would be identical to a {{CSSxRef("&lt;string&gt;")}}. Moreover, the first character must not be a decimal digit, nor a hyphen (`-`) followed by a decimal digit.
+A `<custom-ident>` must not be placed between single or double quotes as this would be identical to a `&lt;string&gt;`. Moreover, the first character must not be a decimal digit, nor a hyphen (`-`) followed by a decimal digit.
 
 To prevent ambiguity, each property that uses `<custom-ident>` forbids the use of specific values:
 
-- {{CSSxRef("animation-name")}}
+- `animation-name`
   - Forbids the global CSS values (`unset`, `initial`, and `inherit`), as well as `none`.
-- {{CSSxRef("counter-reset")}}, {{CSSxRef("counter-increment")}}
+- `counter-reset`, `counter-increment`
   - Forbids the global CSS values (`unset`, `initial`, and `inherit`), as well as `none`.
-- {{CSSxRef("@counter-style")}}, {{CSSxRef("list-style-type")}}
+- `@counter-style`, `list-style-type`
   - Forbids the global CSS values (`unset`, `initial`, and `inherit`), as well as the values:
     - `none`
     - `inline`
@@ -115,11 +115,11 @@ To prevent ambiguity, each property that uses `<custom-ident>` forbids the use o
     - `disclosure-open`
     - `disclosure-close`
 
-- {{CSSxRef("grid-row-start")}}, {{CSSxRef("grid-row-end")}}, {{CSSxRef("grid-column-start")}}, {{CSSxRef("grid-column-end")}}, {{CSSxRef("grid-template-rows")}}, {{CSSxRef("grid-template-columns")}}
+- `grid-row-start`, `grid-row-end`, `grid-column-start`, `grid-column-end`, `grid-template-rows`, `grid-template-columns`
   - Forbids the `span` and `auto` values.
-- {{CSSxRef("view-transition-name")}}
+- `view-transition-name`
   - Forbids the global CSS values (`unset`, `initial`, and `inherit`), as well as `none`.
-- {{CSSxRef("will-change")}}
+- `will-change`
   - Forbids the global CSS values (`unset`, `initial`, and `inherit`), as well as the values `will-change`, `auto`, `scroll-position`, and `contents`.
 
 ## Examples

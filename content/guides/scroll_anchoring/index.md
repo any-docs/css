@@ -17,7 +17,7 @@ For scroll containers that are [snapped](/en-US/docs/Glossary/Scroll_snap) to an
 
 ### Properties
 
-- {{cssxref("overflow-anchor")}}
+- `overflow-anchor`
 
 ## Glossary terms
 
@@ -31,7 +31,7 @@ For scroll containers that are [snapped](/en-US/docs/Glossary/Scroll_snap) to an
 
 ## Related concepts
 
-- {{CSSxRef("overscroll-behavior")}}
+- `overscroll-behavior`
 
 ## Specifications
 

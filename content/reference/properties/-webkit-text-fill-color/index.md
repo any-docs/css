@@ -6,7 +6,7 @@ browser-compat: css.properties.-webkit-text-fill-color
 sidebar: cssref
 ---
 
-The **`-webkit-text-fill-color`** [CSS](/en-US/docs/Web/CSS) property specifies the fill [color](/reference/values/color_value) of characters of text. If this property is not set, the value of the {{cssxref("color")}} property is used.
+The **`-webkit-text-fill-color`** [CSS](/en-US/docs/Web/CSS) property specifies the fill [color](/reference/values/color_value) of characters of text. If this property is not set, the value of the `color` property is used.
 
 ## Syntax
 
@@ -73,6 +73,6 @@ p {
 
 - [Introducing Text-Stroke](https://webkit.org/blog/85/introducing-text-stroke/) on webkit.org (2006)
 - [CSS-Tricks article explaining this feature](https://css-tricks.com/adding-stroke-to-web-text/)
-- {{cssxref("-webkit-text-stroke-color")}}
-- {{cssxref("-webkit-text-stroke-width")}}
-- {{cssxref("-webkit-text-stroke")}}
+- `-webkit-text-stroke-color`
+- `-webkit-text-stroke-width`
+- `-webkit-text-stroke`

@@ -111,4 +111,4 @@ p:target i {
 ## See also
 
 - [Using the :target pseudo-class in selectors](/guides/Selectors/Using_:target)
-- {{cssxref("::target-text")}} (for highlighting text fragments)
+- `::target-text` (for highlighting text fragments)

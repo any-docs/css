@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`:where()`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) function takes a selector list as its argument, and selects any element that can be selected by one of the selectors in that list.
 
-The difference between `:where()` and {{cssxref(":is()")}} is that `:where()` always has 0 [specificity](/guides/Cascade/Specificity), whereas `:is()` takes on the specificity of the most specific selector in its arguments.
+The difference between `:where()` and `:is()` is that `:where()` always has 0 [specificity](/guides/Cascade/Specificity), whereas `:is()` takes on the specificity of the most specific selector in its arguments.
 
 {{InteractiveExample("CSS Demo: :where", "tabbed-shorter")}}
 
@@ -194,6 +194,6 @@ However, selectors inside `:where()` have specificity 0, so the orange footer li
 
 ## See also
 
-- {{cssxref(":is()")}}
+- `:is()`
 - [Selector list](/en-US/docs/Web/CSS/Reference/Selectors/Selector_list)
 - [Web components](/en-US/docs/Web/API/Web_components)

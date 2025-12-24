@@ -27,7 +27,7 @@ shape-rendering: unset;
 
 ### Values
 
-The {{cssxref("length")}} and {{cssxref("percentage")}} values denote the horizontal center of the circle or ellipse.
+The `length` and `percentage` values denote the horizontal center of the circle or ellipse.
 
 - `auto`
   - This value directs the user agents to make tradeoffs in order to balance speed, edge crispness, and geometric precision, with geometric precision given more importance than speed and edge crispness.

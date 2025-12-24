@@ -57,13 +57,13 @@ body {
 
 ## Default rules for auto-placement
 
-As you can see with the above example, if you create a grid without placing any items, the child items will lay themselves out, with one grid item in each grid cell in source-code order. The default flow is to arrange items by row. Grid will lay an item out into each cell of the first row. If you have created additional rows using the {{cssxref("grid-template-rows")}} property, then grid will continue placing items in these rows. If the grid does not have enough rows in the [explicit grid](/guides/Grid_layout/Basic_concepts#implicit_and_explicit_grids) to place all of the items new _implicit_ rows will be created.
+As you can see with the above example, if you create a grid without placing any items, the child items will lay themselves out, with one grid item in each grid cell in source-code order. The default flow is to arrange items by row. Grid will lay an item out into each cell of the first row. If you have created additional rows using the `grid-template-rows` property, then grid will continue placing items in these rows. If the grid does not have enough rows in the [explicit grid](/guides/Grid_layout/Basic_concepts#implicit_and_explicit_grids) to place all of the items new _implicit_ rows will be created.
 
 ### Sizing rows in the implicit grid
 
 The default for automatically created rows in the implicit grid is for them to be _auto-sized_. This means that they will size themselves to contain the content added to them without causing an overflow.
 
-The size of these rows can be controlled using the property {{cssxref("grid-auto-rows")}} property. For example, to make all rows 100px tall, you can use `grid-auto-rows: 100px;`:
+The size of these rows can be controlled using the property `grid-auto-rows` property. For example, to make all rows 100px tall, you can use `grid-auto-rows: 100px;`:
 
 ```css hidden
 body {
@@ -111,7 +111,7 @@ body {
 
 ### Sizing rows using minmax()
 
-The {{cssxref("minmax")}} function enables creating rows that have a minimum size, and can grow to fit content as needed when set as the `grid-auto-rows` value. By setting `grid-auto-rows: minmax(100px, auto);` we set each row to be at least 100px tall, while allowing each row to be as tall as needed:
+The `minmax` function enables creating rows that have a minimum size, and can grow to fit content as needed when set as the `grid-auto-rows` value. By setting `grid-auto-rows: minmax(100px, auto);` we set each row to be at least 100px tall, while allowing each row to be as tall as needed:
 
 ```css hidden
 body {
@@ -213,7 +213,7 @@ body {
 
 ### Auto-placement by column
 
-You can also ask grid to auto-place items by column. Using the property {{cssxref("grid-auto-flow")}} with a value of `column`. In this case grid will add items in rows that you have defined using {{cssxref("grid-template-rows")}}. When it fills up a column it will move onto the next explicit column, or create a new column track in the implicit grid. As with implicit row tracks, these column tracks will be auto sized. You can control the size of implicit column tracks with {{cssxref("grid-auto-columns")}}. This works in the same way as {{cssxref("grid-auto-rows")}}.
+You can also ask grid to auto-place items by column. Using the property `grid-auto-flow` with a value of `column`. In this case grid will add items in rows that you have defined using `grid-template-rows`. When it fills up a column it will move onto the next explicit column, or create a new column track in the implicit grid. As with implicit row tracks, these column tracks will be auto sized. You can control the size of implicit column tracks with `grid-auto-columns`. This works in the same way as `grid-auto-rows`.
 
 In this example, we have a grid with three 200px high row tracks. We declare `grid-auto-flow: column;` to auto-place by column. With `grid-auto-columns: 300px 100px;`, the columns created will alternate between being `300px` wide and `100px` wide until there are enough column tracks to hold all of the items.
 
@@ -338,7 +338,7 @@ body {
 
 ### Deal with items that span tracks
 
-You can use placement properties while still taking advantage of auto-placement. In this next example I have added to the layout by setting items 1, 5, and 9 (4n+1) to span two tracks both for rows and columns. I do this with the {{cssxref("grid-column-end")}} and {{cssxref("grid-row-end")}} properties and setting the value of this to `span 2`. What this means is that the start line of the item will be set by auto-placement, and the end line will span two tracks.
+You can use placement properties while still taking advantage of auto-placement. In this next example I have added to the layout by setting items 1, 5, and 9 (4n+1) to span two tracks both for rows and columns. I do this with the `grid-column-end` and `grid-row-end` properties and setting the value of this to `span 2`. What this means is that the start line of the item will be set by auto-placement, and the end line will span two tracks.
 
 You can see how this then leaves gaps in the grid, as for the auto-placed items if grid comes across an item that doesn't fit into a track, it will move to the next row until it finds a space the item can fit in.
 
@@ -409,7 +409,7 @@ body {
 
 So far, other than items we have specifically placed, grid is always progressing forward and keeping items in DOM order. This is generally what you want, if you are laying out a form for example you wouldn't want the labels and fields to become jumbled up in order to fill in some gap. However sometimes, we are laying things out that don't have a logical order and we would like to create a layout that doesn't have gaps in it.
 
-To do this, add the property {{cssxref("grid-auto-flow")}} with a value of `dense` to the container. This is the same property you use to change the flow order to `column`, so if you were working in columns you would add both values `grid-auto-flow: column dense`.
+To do this, add the property `grid-auto-flow` with a value of `dense` to the container. This is the same property you use to change the flow order to `column`, so if you were working in columns you would add both values `grid-auto-flow: column dense`.
 
 Having done this, grid will now backfill the gaps, as it moves through the grid it leaves gaps as before, but then if it finds an item that will fit in a previous gap it will pick it up and take it out of DOM order to place it in the gap. As with any other reordering in grid this does not change the logical order. Tab order for example, will still follow the document order. We will take a look at the potential accessibility issues of grid layout in the [Grid layout and accessibility guide](/guides/Grid_layout/Accessibility), but you should take care when creating this disconnect between the visual order and display order.
 

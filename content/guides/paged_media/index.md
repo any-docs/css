@@ -17,13 +17,13 @@ The process of paginating content into generated pages and controlling breaks in
 
 ### Properties
 
-- {{cssxref("page")}}
+- `page`
 
 ### At-rules and descriptors
 
-- {{cssxref("@page")}}
-  - {{cssxref("@page/page-orientation", "page-orientation")}} descriptor
-  - {{cssxref("@page/size", "size")}} descriptor
+- `@page`
+  - `page-orientation` descriptor
+  - `size` descriptor
   - [Margin descriptors](/reference/properties/margin)
 - [Margin at-rules](/en-US/docs/Web/CSS/Reference/At-rules/@page#margin_at-rules)
 
@@ -31,10 +31,10 @@ The CSS paged media module also introduces the `bleeds` and `marks` descriptors 
 
 ### Pseudo-classes
 
-- {{cssxref(":blank")}}
-- {{cssxref(":first")}}
-- {{cssxref(":left")}}
-- {{cssxref(":right")}}
+- `:blank`
+- `:first`
+- `:left`
+- `:right`
 
 ## Guides
 
@@ -44,11 +44,11 @@ The CSS paged media module also introduces the `bleeds` and `marks` descriptors 
 ## Related concepts
 
 - [CSS fragmentation](/guides/Fragmentation) module
-  - {{cssxref("break-after")}} property
-  - {{cssxref("break-before")}} property
-  - {{cssxref("break-inside")}} property
-  - {{cssxref("orphans")}} property
-  - {{cssxref("widows")}} property
+  - `break-after` property
+  - `break-before` property
+  - `break-inside` property
+  - `orphans` property
+  - `widows` property
 
 ## Specifications
 

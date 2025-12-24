@@ -13,11 +13,11 @@ The **`-webkit-device-pixel-ratio`** is a non-standard Boolean [CSS](/en-US/docs
 
 ## Syntax
 
-The `-webkit-device-pixel-ratio` feature is specified as a {{cssxref("&lt;number&gt;")}} value. It is a range feature, meaning that you can also use the prefixed **`-webkit-min-device-pixel-ratio`** and **`-webkit-max-device-pixel-ratio`** variants to query minimum and maximum values, respectively.
+The `-webkit-device-pixel-ratio` feature is specified as a `&lt;number&gt;` value. It is a range feature, meaning that you can also use the prefixed **`-webkit-min-device-pixel-ratio`** and **`-webkit-max-device-pixel-ratio`** variants to query minimum and maximum values, respectively.
 
 ### Values
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - The number of device pixels used to represent each CSS [`px`](/reference/values/length#absolute_length_units). Although the value is a `<number>`, and thus doesn't syntactically allow units, its implicit unit is [`dppx`](/reference/values/resolution#units).
 
 ## Implementation
@@ -90,7 +90,7 @@ The `-webkit-device-pixel-ratio` feature is specified as a {{cssxref("&lt;number
 ## See also
 
 - [Using media queries](/guides/Media_queries/Using)
-- {{cssxref("resolution")}}
+- `resolution`
 - [`-webkit-transform-2d`](/en-US/docs/Web/CSS/Reference/At-rules/@media/-webkit-transform-2d)
 - [`-webkit-transform-3d`](/en-US/docs/Web/CSS/Reference/At-rules/@media/-webkit-transform-3d)
 - [`-webkit-transition`](/en-US/docs/Web/CSS/Reference/At-rules/@media/-webkit-transition)

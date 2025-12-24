@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.path
 sidebar: cssref
 ---
 
-The **`path()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) accepts an [SVG path](/en-US/docs/Web/SVG/Reference/Element/path) string, and is used in the [CSS shapes](/guides/Shapes) and [CSS motion path](/guides/Motion_path) modules to enable a shape to be drawn. The `path()` function is a {{cssxref("basic-shape")}} data type value. It can be used in the CSS {{cssxref("offset-path")}} and {{cssxref("clip-path")}} properties and in the SVG [`d`](/en-US/docs/Web/SVG/Reference/Attribute/d) attribute.
+The **`path()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) accepts an [SVG path](/en-US/docs/Web/SVG/Reference/Element/path) string, and is used in the [CSS shapes](/guides/Shapes) and [CSS motion path](/guides/Motion_path) modules to enable a shape to be drawn. The `path()` function is a `basic-shape` data type value. It can be used in the CSS `offset-path` and `clip-path` properties and in the SVG [`d`](/en-US/docs/Web/SVG/Reference/Attribute/d) attribute.
 
 There are some limitations to using the `path()` function. The path has to be defined as a single string, so a custom path can't be created using variables ([`var()`](/reference/values/var) functions). Also, all the lengths in the path are implicitly defined in [pixel](/guides/Values_and_units/Numeric_data_types#absolute_length_units) (`px`) units; other units can't be used. The [`shape()`](/reference/values/basic-shape/shape) function offers more flexibility than the `path()` function.
 
@@ -65,14 +65,14 @@ path(evenodd,"M 10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80")
     - `evenodd`: A point is considered to be inside the shape if a ray drawn from the point crosses an odd number of path segments. This means that for each time the ray enters the shape, it has not exited an equal number of times, indicating an odd count of entries without corresponding exits.
 
     > [!WARNING]
-    > `<fill-rule>` is not supported in {{cssxref("offset-path")}} and using it invalidates the property.
+    > `<fill-rule>` is not supported in `offset-path` and using it invalidates the property.
 
-- {{cssxref("string")}}
+- `string`
   - A [data string](/en-US/docs/Web/SVG/Reference/Attribute/d), contained in quotes, which defines an [SVG path](/en-US/docs/Web/SVG/Reference/Element/path). The SVG path data string contains [path commands](/en-US/docs/Web/SVG/Reference/Attribute/d#path_commands) that implicitly use pixel units. An empty path is considered invalid.
 
 ### Return value
 
-Returns a {{cssxref("basic-shape")}} value.
+Returns a `basic-shape` value.
 
 ## Formal syntax
 
@@ -82,7 +82,7 @@ Returns a {{cssxref("basic-shape")}} value.
 
 ### Using a `path()` function as an `offset-path` value
 
-A `path()` function has been provided as an {{cssxref("offset-path")}} value in the following example to create an elliptical path for a ball to move along.
+A `path()` function has been provided as an `offset-path` value in the following example to create an elliptical path for a ball to move along.
 
 ```html
 <div id="path">
@@ -178,7 +178,7 @@ svg {
 
 ## See also
 
-- {{cssxref("&lt;shape-outside&gt;")}}
+- `&lt;shape-outside&gt;`
 - [CSS shapes](/guides/Shapes) module
 - [Overview of CSS shapes](/guides/Shapes/Overview)
 - [The SVG `path` syntax: an illustrated guide](https://css-tricks.com/svg-path-syntax-illustrated-guide/) via CSS-tricks (2021)

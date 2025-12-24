@@ -203,37 +203,37 @@ transform-origin: unset;
 
 The `transform-origin` property may be specified using one, two, or three values, where each value represents an offset. Offsets that are not explicitly defined are reset to their corresponding [initial values](/guides/Cascade/Property_value_processing#initial_value).
 
-If a single {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} value is defined, it represents the horizontal offset.
+If a single `&lt;length&gt;` or `&lt;percentage&gt;` value is defined, it represents the horizontal offset.
 
 If two or more values are defined and either no value is a keyword, or the only used keyword is `center`, then the first value represents the horizontal offset and the second represents the vertical offset.
 
 - One-value syntax:
-  - The value must be a {{cssxref("&lt;length&gt;")}}, a {{cssxref("&lt;percentage&gt;")}}, or one of the keywords `left`, `center`, `right`, `top`, and `bottom`.
+  - The value must be a `&lt;length&gt;`, a `&lt;percentage&gt;`, or one of the keywords `left`, `center`, `right`, `top`, and `bottom`.
 
 - Two-value syntax:
-  - One value must be a {{cssxref("&lt;length&gt;")}}, a {{cssxref("&lt;percentage&gt;")}}, or one of the keywords `left`, `center`, and `right`.
-  - The other value must be a {{cssxref("&lt;length&gt;")}}, a {{cssxref("&lt;percentage&gt;")}}, or one of the keywords `top`, `center`, and `bottom`.
+  - One value must be a `&lt;length&gt;`, a `&lt;percentage&gt;`, or one of the keywords `left`, `center`, and `right`.
+  - The other value must be a `&lt;length&gt;`, a `&lt;percentage&gt;`, or one of the keywords `top`, `center`, and `bottom`.
 
 - Three-value syntax:
   - The first two values are the same as for the two-value syntax.
-  - The third value must be a {{cssxref("&lt;length&gt;")}}. It always represents the Z offset.
+  - The third value must be a `&lt;length&gt;`. It always represents the Z offset.
 
 ### Values
 
 - _x-offset_
-  - Is a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}} describing how far from the left edge of the box the origin of the transform is set.
+  - Is a `&lt;length&gt;` or a `&lt;percentage&gt;` describing how far from the left edge of the box the origin of the transform is set.
 - _offset-keyword_
   - Is one of the `left`, `right`, `top`, `bottom`, or `center` keyword describing the corresponding offset.
 - _y-offset_
-  - Is a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}} describing how far from the top edge of the box the origin of the transform is set.
+  - Is a `&lt;length&gt;` or a `&lt;percentage&gt;` describing how far from the top edge of the box the origin of the transform is set.
 - _x-offset-keyword_
   - Is one of the `left`, `right`, or `center` keyword describing how far from the left edge of the box the origin of the transform is set.
 - _y-offset-keyword_
   - Is one of the `top`, `bottom`, or `center` keyword describing how far from the top edge of the box the origin of the transform is set.
 - _z-offset_
-  - Is a {{cssxref("&lt;length&gt;")}} (and never a {{cssxref("&lt;percentage&gt;")}} which would make the statement invalid) describing how far from the user eye the z=0 origin is set.
+  - Is a `&lt;length&gt;` (and never a `&lt;percentage&gt;` which would make the statement invalid) describing how far from the user eye the z=0 origin is set.
 
-The keywords are convenience shorthands and match the following {{cssxref("&lt;percentage&gt;")}} values:
+The keywords are convenience shorthands and match the following `&lt;percentage&gt;` values:
 
 | Keyword  | Value  |
 | -------- | ------ |

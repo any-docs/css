@@ -70,14 +70,14 @@ The property specifies two things:
 - Whether and how lines wrap.
 
 > [!NOTE]
-> To make words break _within themselves_, use {{CSSxRef("overflow-wrap")}}, {{CSSxRef("word-break")}}, or {{CSSxRef("hyphens")}} instead.
+> To make words break _within themselves_, use `overflow-wrap`, `word-break`, or `hyphens` instead.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("white-space-collapse")}}
-- {{cssxref("text-wrap-mode")}}
+- `white-space-collapse`
+- `text-wrap-mode`
 
 > [!NOTE]
 > The spec defines a third constituent property: `white-space-trim`, which is not implemented in any browser yet.
@@ -108,7 +108,7 @@ white-space: unset;
 
 ### Values
 
-The `white-space` property values can be specified as one or two keywords representing the values for the {{CSSxRef("white-space-collapse")}} and {{cssxref("text-wrap-mode")}} properties, or the following special keywords:
+The `white-space` property values can be specified as one or two keywords representing the values for the `white-space-collapse` and `text-wrap-mode` properties, or the following special keywords:
 
 - `normal`
   - Sequences of white space are [collapsed](/guides/Text/Whitespace#collapsing_and_transformation). Newline characters in the source are handled the same as other white spaces. Lines are broken as necessary to fill line boxes. Equivalent to `collapse wrap`.
@@ -120,7 +120,7 @@ The `white-space` property values can be specified as one or two keywords repres
   - Sequences of white space are [collapsed](/guides/Text/Whitespace#collapsing_and_transformation). Lines are broken at newline characters, at {{HTMLElement("br")}}, and as necessary to fill line boxes. Equivalent to `preserve-breaks wrap`.
 
 > [!NOTE]
-> The `white-space` property as a shorthand is a relatively new feature (see [browser compatibility](#browser_compatibility)). Originally, it had six keyword values; now, the value `nowrap` is instead interpreted as a value for {{cssxref("text-wrap-mode")}}, while the value `break-spaces` is interpreted as a value for {{cssxref("white-space-collapse")}}. The above four keywords are still specific to `white-space`, but they have longhand equivalents. The change to make `white-space` a shorthand expands acceptable values to even more keywords and combinations, such as `wrap` and `collapse`.
+> The `white-space` property as a shorthand is a relatively new feature (see [browser compatibility](#browser_compatibility)). Originally, it had six keyword values; now, the value `nowrap` is instead interpreted as a value for `text-wrap-mode`, while the value `break-spaces` is interpreted as a value for `white-space-collapse`. The above four keywords are still specific to `white-space`, but they have longhand equivalents. The change to make `white-space` a shorthand expands acceptable values to even more keywords and combinations, such as `wrap` and `collapse`.
 
 The following table summarizes the behavior of these four `white-space` keyword values:
 
@@ -171,7 +171,7 @@ The following table summarizes the behavior of these four `white-space` keyword 
   </tbody>
 </table>
 
-A tab defaults to 8 spaces and can be configured using the {{cssxref("tab-size")}} property. In the case of `normal`, `nowrap`, and `pre-line` values, every tab is converted to a space (U+0020) character.
+A tab defaults to 8 spaces and can be configured using the `tab-size` property. In the case of `normal`, `nowrap`, and `pre-line` values, every tab is converted to a space (U+0020) character.
 
 > [!NOTE]
 > There is a distinction made between **spaces** and **other space separators**. These are defined as follows:
@@ -355,6 +355,6 @@ text {
 
 ## See also
 
-- Properties that define how words break _within themselves_: {{CSSxRef("overflow-wrap")}}, {{CSSxRef("word-break")}}, {{CSSxRef("hyphens")}}
-- {{cssxref("tab-size")}}
+- Properties that define how words break _within themselves_: `overflow-wrap`, `word-break`, `hyphens`
+- `tab-size`
 - [Handling whitespace in CSS](/guides/Text/Whitespace)

@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{deprecated_header}}
 
-The **`font-stretch`** [CSS](/en-US/docs/Web/CSS) descriptor allows authors to specify a normal, condensed, or expanded face for the fonts specified in the {{cssxref("@font-face")}} at-rule.
+The **`font-stretch`** [CSS](/en-US/docs/Web/CSS) descriptor allows authors to specify a normal, condensed, or expanded face for the fonts specified in the `@font-face` at-rule.
 
 For a particular font family, authors can download various font faces which correspond to the different styles of the same font family, and then use the `font-stretch` descriptor to explicitly specify the font face's stretch. The values for the CSS descriptor is same as that of its corresponding font property.
 
@@ -47,7 +47,7 @@ The `font-stretch` property is described using any one of the values listed belo
 - `semi-expanded`, `expanded`, `extra-expanded`, `ultra-expanded`
   - Specifies a more expanded font face than normal, with ultra-expanded as the most expanded.
 - `<percentage>`
-  - A {{cssxref("&lt;percentage&gt;")}} value between 50% and 200% (inclusive). Negative values are not allowed for this property.
+  - A `&lt;percentage&gt;` value between 50% and 200% (inclusive). Negative values are not allowed for this property.
 
 In earlier versions of the `font-stretch` specification, the property accepts only the nine keyword values. CSS Fonts Level 4 extends the syntax to accept a `<percentage>` value as well. This enables variable fonts to offer something more like a continuum of character widths. For TrueType or OpenType variable fonts, the "wdth" variation is used to implement varying widths.
 
@@ -151,11 +151,11 @@ The following find a local Open Sans font or import it, and allow using the font
 
 ## See also
 
-- {{cssxref("@font-face/font-display", "font-display")}}
-- {{cssxref("@font-face/font-family", "font-family")}}
-- {{cssxref("@font-face/font-weight", "font-weight")}}
-- {{cssxref("@font-face/font-style", "font-style")}}
-- {{cssxref("font-feature-settings", "font-feature-settings")}}
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-- {{cssxref("@font-face/src", "src")}}
-- {{cssxref("@font-face/unicode-range", "unicode-range")}} descriptor
+- `font-display`
+- `font-family`
+- `font-weight`
+- `font-style`
+- `font-feature-settings`
+- `font-variation-settings`
+- `src`
+- `unicode-range` descriptor

@@ -6,7 +6,7 @@ browser-compat: css.types.gradient.linear-gradient
 sidebar: cssref
 ---
 
-The **`linear-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the {{cssxref("gradient")}} data type, which is a special kind of {{cssxref("image")}}.
+The **`linear-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the `gradient` data type, which is a special kind of `image`.
 
 {{InteractiveExample("CSS Demo: linear-gradient()")}}
 
@@ -95,10 +95,10 @@ linear-gradient(45deg, red 0 50%, blue 50% 100%)
 
     The values `to top`, `to bottom`, `to left`, and `to right` are equivalent to the angles `0deg`, `180deg`, `270deg`, and `90deg`, respectively. The other values are translated into an angle.
 
-- {{cssxref("angle")}}
+- `angle`
   - The gradient line's angle of direction. A value of `0deg` is equivalent to `to top`; increasing values rotate clockwise from there.
 - `<linear-color-stop>`
-  - A color-stop's {{CSSxRef("&lt;color&gt;")}} value, followed by one or two optional stop positions, (each being either a {{CSSxRef("&lt;percentage&gt;")}} or a {{CSSxRef("&lt;length&gt;")}} along the gradient's axis).
+  - A color-stop's `&lt;color&gt;` value, followed by one or two optional stop positions, (each being either a `&lt;percentage&gt;` or a `&lt;length&gt;` along the gradient's axis).
 - `<color-hint>`
   - An {{glossary("interpolation")}} hint defining how the gradient progresses between adjacent color stops. The length defines at which point between two color stops the gradient color should reach the midpoint of the color transition. If omitted, the midpoint of the color transition is the midpoint between two color stops.
 
@@ -109,9 +109,9 @@ linear-gradient(45deg, red 0 50%, blue 50% 100%)
 
 As with any gradient, a linear gradient has [no intrinsic dimensions](/reference/values/image#description); i.e., it has no natural or preferred size, nor a preferred ratio. Its concrete size will match the size of the element it applies to.
 
-To create a linear gradient that repeats to fill its container, use the {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}} function instead.
+To create a linear gradient that repeats to fill its container, use the `repeating-linear-gradient()` function instead.
 
-Because `<gradient>`s belong to the `<image>` data type, they can only be used where {{cssxref("image")}}s can be used. For this reason, `linear-gradient()` won't work on {{CSSxRef("background-color")}} and other properties that use the {{CSSxRef("&lt;color&gt;")}} data type.
+Because `<gradient>`s belong to the `<image>` data type, they can only be used where `image`s can be used. For this reason, `linear-gradient()` won't work on `background-color` and other properties that use the `&lt;color&gt;` data type.
 
 ### Composition of a linear gradient
 
@@ -125,7 +125,7 @@ The _starting point_ is the location on the gradient line where the first color 
 
 #### Customizing Gradients
 
-By adding more color-stop points on the gradient line, you can create a highly customized transition between multiple colors. A color-stop's position can be explicitly defined by using a {{CSSxRef("&lt;length&gt;")}} or a {{CSSxRef("&lt;percentage&gt;")}}. If you don't specify the location of a color, it is placed halfway between the one that precedes it and the one that follows it. The following two gradients are equivalent.
+By adding more color-stop points on the gradient line, you can create a highly customized transition between multiple colors. A color-stop's position can be explicitly defined by using a `&lt;length&gt;` or a `&lt;percentage&gt;`. If you don't specify the location of a color, it is placed halfway between the one that precedes it and the one that follows it. The following two gradients are equivalent.
 
 ```css
 linear-gradient(red, orange, yellow, green, blue);
@@ -285,8 +285,8 @@ Please see [using CSS gradients](/guides/Images/Using_gradients) for more exampl
 ## See also
 
 - [Using CSS gradients](/guides/Images/Using_gradients)
-- Other gradient functions: {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}, {{cssxref("gradient/radial-gradient", "radial-gradient()")}}, {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}, {{cssxref("gradient/conic-gradient", "conic-gradient()")}}, {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
-- {{cssxref("hue-interpolation-method")}}
-- {{cssxref("color-interpolation-method")}}
-- {{cssxref("image")}}
+- Other gradient functions: `repeating-linear-gradient()`, `radial-gradient()`, `repeating-radial-gradient()`, `conic-gradient()`, `repeating-conic-gradient()`
+- `hue-interpolation-method`
+- `color-interpolation-method`
+- `image`
 - [CSS images module](/guides/Images)

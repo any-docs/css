@@ -10,11 +10,11 @@ The **`revert-layer`** [CSS-wide keyword](/reference/values/Data_types#css-wide_
 
 If there is no other cascade layer to revert to for the matching CSS rule, the property value rolls back to the [computed value](/guides/Cascade/Property_value_processing#computed_value) derived from the current layer. Furthermore, if there is no matching CSS rule in the current layer, the property value for the element rolls back to the style defined in a previous [style origin](/en-US/docs/Glossary/Style_origin).
 
-This keyword can be applied to any CSS property, including the CSS shorthand property {{cssxref("all")}}.
+This keyword can be applied to any CSS property, including the CSS shorthand property `all`.
 
 ## Revert-layer vs. revert
 
-The `revert-layer` keyword lets you rollback styles to those specified in previous cascade layers within the [author origin](/en-US/docs/Glossary/Style_origin). The {{cssxref("revert")}} keyword, in comparison, lets you roll back styles applied in the author origin to those specified in the user origin or user-agent origin.
+The `revert-layer` keyword lets you rollback styles to those specified in previous cascade layers within the [author origin](/en-US/docs/Glossary/Style_origin). The `revert` keyword, in comparison, lets you roll back styles applied in the author origin to those specified in the user origin or user-agent origin.
 
 The `revert-layer` keyword is ideally meant to be applied to properties within a cascade layer. However, if applied to properties outside a cascade layer, it rolls back property values to any values set by presentational hints (such as `width` and `height` attributes or the `<s>` element in HTML), defaulting to the values established by the user agent's stylesheet or user styles. Unlike the `revert` keyword, which considers presentational hints as part of the author origin and reverts them as well, the `revert-layer` keyword ignores presentational hints outside the cascade layer, so it does not revert them.
 
@@ -151,9 +151,9 @@ The style for all `<li>` elements rolls back to the defaults in the user-agent o
 
 ## See also
 
-- {{cssxref("initial")}}
-- {{cssxref("inherit")}}
-- {{cssxref("revert")}}
-- {{cssxref("unset")}}
-- {{cssxref("all")}}
+- `initial`
+- `inherit`
+- `revert`
+- `unset`
+- `all`
 - [CSS cascading and inheritance](/guides/Cascade) module

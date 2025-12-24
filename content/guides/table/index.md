@@ -11,17 +11,17 @@ The **CSS table** module helps you define how to lay out table data.
 
 This CSS module defines styles applicable to the HTML {{htmlelement("table")}} element, which is used to render tabular data. By default, tables are rendered as a two-dimensional grid with cells lined up in a series of consecutive rows and columns. This layout is generated from the table structure and sized according to the content of the cells. This module also enables defining the position of the table's {{htmlelement("caption")}}, if present.
 
-The properties introduced in this module aren't limited to the `<table>` elements; they can be applied to any element with a table-related CSS {{cssxref("display")}} value.
+The properties introduced in this module aren't limited to the `<table>` elements; they can be applied to any element with a table-related CSS `display` value.
 
 ## Reference
 
 ### Properties
 
-- {{cssxref("border-collapse")}}
-- {{cssxref("border-spacing")}}
-- {{cssxref("caption-side")}}
-- {{cssxref("empty-cells")}}
-- {{cssxref("table-layout")}}
+- `border-collapse`
+- `border-spacing`
+- `caption-side`
+- `empty-cells`
+- `table-layout`
 
 ## Guides
 
@@ -36,24 +36,24 @@ The properties introduced in this module aren't limited to the `<table>` element
 
 ## Related concepts
 
-- {{cssxref("display")}} property
-- {{cssxref("vertical-align")}} property
-- {{cssxref("text-align")}} property
+- `display` property
+- `vertical-align` property
+- `text-align` property
 
 - [CSS box sizing](/guides/Box_sizing) module
-  - {{cssxref("box-sizing")}}
-  - {{cssxref("height")}}
-  - {{cssxref("max-width")}}
-  - {{cssxref("min-height")}}
-  - {{cssxref("min-width")}}
-  - {{cssxref("width")}}
-  - {{cssxref("min-content")}} keyword
+  - `box-sizing`
+  - `height`
+  - `max-width`
+  - `min-height`
+  - `min-width`
+  - `width`
+  - `min-content` keyword
 
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
-  - {{cssxref("border")}} shorthand
-  - {{cssxref("border-width")}}
-  - {{cssxref("border-style")}}
-  - {{cssxref("border-color")}}
+  - `border` shorthand
+  - `border-width`
+  - `border-style`
+  - `border-color`
 
 - HTML table-related elements:
   - {{htmlelement("table")}}

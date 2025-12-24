@@ -17,15 +17,15 @@ sidebar: cssref
 
 ## Index of keywords
 
-- {{cssxref("important", "!important")}}
-- {{cssxref("fit-content")}}
-- {{cssxref("inherit")}}
-- {{cssxref("initial")}}
-- {{cssxref("max-content")}}
-- {{cssxref("min-content")}}
-- {{cssxref("revert")}}
-- {{cssxref("revert-layer")}}
-- {{cssxref("unset")}}
+- `!important`
+- `fit-content`
+- `inherit`
+- `initial`
+- `max-content`
+- `min-content`
+- `revert`
+- `revert-layer`
+- `unset`
 
 ## Specifications
 

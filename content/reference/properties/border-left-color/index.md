@@ -6,7 +6,7 @@ browser-compat: css.properties.border-left-color
 sidebar: cssref
 ---
 
-The **`border-left-color`** [CSS](/en-US/docs/Web/CSS) property sets the color of an element's left [border](/reference/properties/border). It can also be set with the shorthand CSS properties {{cssxref("border-color")}} or {{cssxref("border-left")}}.
+The **`border-left-color`** [CSS](/en-US/docs/Web/CSS) property sets the color of an element's left [border](/reference/properties/border). It can also be set with the shorthand CSS properties `border-color` or `border-left`.
 
 {{InteractiveExample("CSS Demo: border-left-color")}}
 
@@ -72,7 +72,7 @@ The `border-left-color` property is specified as a single value.
 
 ### Values
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the left border.
 
 ## Formal definition
@@ -126,7 +126,7 @@ The `border-left-color` property is specified as a single value.
 
 ## See also
 
-- The border-related CSS shorthand properties: {{Cssxref("border")}}, {{Cssxref("border-left")}}, and {{Cssxref("border-color")}}.
-- The color-related CSS properties for the other borders: {{Cssxref("border-right-color")}}, {{Cssxref("border-bottom-color")}}, and {{Cssxref("border-top-color")}}.
-- The other border-related CSS properties applying to the same border: {{cssxref("border-left-style")}} and {{cssxref("border-left-width")}}.
+- The border-related CSS shorthand properties: `border`, `border-left`, and `border-color`.
+- The color-related CSS properties for the other borders: `border-right-color`, `border-bottom-color`, and `border-top-color`.
+- The other border-related CSS properties applying to the same border: `border-left-style` and `border-left-width`.
 - The default [`currentColor`](/reference/values/color_value#currentcolor_keyword) color value.

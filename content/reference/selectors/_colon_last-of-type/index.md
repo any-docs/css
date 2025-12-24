@@ -157,4 +157,4 @@ The last `<div>` and the last `<p>` are both red and bold as the `.item:last-of-
 
 ## See also
 
-- {{cssxref(":last-child")}}, {{Cssxref(":nth-last-of-type")}}
+- `:last-child`, `:nth-last-of-type`

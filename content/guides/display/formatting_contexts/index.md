@@ -20,7 +20,7 @@ The {{HTMLElement("html")}} element is not the only element capable of creating 
 
 A new BFC is created in the following situations:
 
-- elements made to float using {{cssxref("float")}}
+- elements made to float using `float`
 - [absolutely positioned](/reference/properties/position#types_of_positioning) elements
 - elements with {{cssxref("display", "display: inline-block", "#inline-block")}}
 - table cells or elements with `display: table-cell`, including anonymous table cells created when using the `display: table-*` properties
@@ -31,9 +31,9 @@ A new BFC is created in the following situations:
 - {{Glossary("flex item", "flex items")}}
 - grid items
 - [multicol containers](/guides/Multicol_layout/Basic_concepts)
-- elements with {{cssxref("column-span")}} set to `all`
+- elements with `column-span` set to `all`
 
-This is useful because a new BFC will behave much like the outermost document in that it becomes a mini-layout inside the main layout. A BFC contains everything inside it, {{cssxref("float")}} and {{cssxref("clear")}} only apply to items inside the same formatting context, and margins only collapse between elements in the same formatting context.
+This is useful because a new BFC will behave much like the outermost document in that it becomes a mini-layout inside the main layout. A BFC contains everything inside it, `float` and `clear` only apply to items inside the same formatting context, and margins only collapse between elements in the same formatting context.
 
 ### BFC creation examples
 

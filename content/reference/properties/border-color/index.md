@@ -53,10 +53,10 @@ border-color: red yellow green transparent;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-bottom-color")}}
-- {{cssxref("border-left-color")}}
-- {{cssxref("border-right-color")}}
-- {{cssxref("border-top-color")}}
+- `border-bottom-color`
+- `border-left-color`
+- `border-right-color`
+- `border-top-color`
 
 ## Syntax
 
@@ -90,12 +90,12 @@ The `border-color` property may be specified using one, two, three, or four valu
 
 ### Values
 
-- {{CSSxRef("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - Defines the color of the border.
 
 ## Description
 
-Each side can be set individually using {{CSSxRef("border-top-color")}}, {{CSSxRef("border-right-color")}}, {{CSSxRef("border-bottom-color")}}, and {{CSSxRef("border-left-color")}}; or using the writing mode-aware {{CSSxRef("border-block-start-color")}}, {{CSSxRef("border-block-end-color")}}, {{CSSxRef("border-inline-start-color")}}, and {{CSSxRef("border-inline-end-color")}}.
+Each side can be set individually using `border-top-color`, `border-right-color`, `border-bottom-color`, and `border-left-color`; or using the writing mode-aware `border-block-start-color`, `border-block-end-color`, `border-inline-start-color`, and `border-inline-end-color`.
 
 You can find out more information about border colors in [Applying colors to HTML elements](/guides/Colors/Applying_color#borders).
 
@@ -199,8 +199,8 @@ ul {
 
 ## See also
 
-- Border-color related CSS properties: {{CSSxRef("border")}}, {{CSSxRef("border-top-color")}}, {{CSSxRef("border-right-color")}}, {{CSSxRef("border-bottom-color")}}, {{CSSxRef("border-left-color")}},
-- Other border-related CSS properties: {{CSSxRef("border-width")}}, {{CSSxRef("border-style")}}
-- The {{CSSxRef("&lt;color&gt;")}} data type
-- Other color-related properties: {{CSSxRef("color")}}, {{CSSxRef("background-color")}}, {{CSSxRef("outline-color")}}, {{CSSxRef("text-decoration-color")}}, {{CSSxRef("text-emphasis-color")}}, {{CSSxRef("text-shadow")}}, {{CSSxRef("caret-color")}}, and {{CSSxRef("column-rule-color")}}
+- Border-color related CSS properties: `border`, `border-top-color`, `border-right-color`, `border-bottom-color`, `border-left-color`,
+- Other border-related CSS properties: `border-width`, `border-style`
+- The `&lt;color&gt;` data type
+- Other color-related properties: `color`, `background-color`, `outline-color`, `text-decoration-color`, `text-emphasis-color`, `text-shadow`, `caret-color`, and `column-rule-color`
 - [Applying color to HTML elements using CSS](/guides/Colors/Applying_color)

@@ -6,7 +6,7 @@ browser-compat: css.properties.font-size
 sidebar: cssref
 ---
 
-The **`font-size`** [CSS](/en-US/docs/Web/CSS) property sets the size of the font. Changing the font size also updates the sizes of the font size-relative {{cssxref("&lt;length&gt;")}} units, such as `em`, `ex`, and so forth.
+The **`font-size`** [CSS](/en-US/docs/Web/CSS) property sets the size of the font. Changing the font size also updates the sizes of the font size-relative `&lt;length&gt;` units, such as `em`, `ex`, and so forth.
 
 {{InteractiveExample("CSS Demo: font-size")}}
 
@@ -85,13 +85,13 @@ font-size: unset;
 - `larger`, `smaller`
   - [Relative-size](/reference/values/relative-size) keywords. The font will be larger or smaller relative to the parent element's font size, roughly by the ratio used to separate the absolute-size keywords above.
 
-- {{cssxref("&lt;length&gt;")}}
-  - A positive {{cssxref("&lt;length&gt;")}} value. For most font-relative units (such as `em` and `ex`), the font size is relative to the parent element's font size.
+- `&lt;length&gt;`
+  - A positive `&lt;length&gt;` value. For most font-relative units (such as `em` and `ex`), the font size is relative to the parent element's font size.
 
     For font-relative units that are root-based (such as `rem`), the font size is relative to the size of the font used by the {{HTMLElement("html")}} (root) element.
 
-- {{cssxref("&lt;percentage&gt;")}}
-  - A positive {{cssxref("&lt;percentage&gt;")}} value, relative to the parent element's font size.
+- `&lt;percentage&gt;`
+  - A positive `&lt;percentage&gt;` value, relative to the parent element's font size.
     > [!NOTE]
     > To maximize accessibility, it is generally best to use values that are relative to the user's default font size.
 
@@ -246,10 +246,10 @@ See the W3C Editor's Draft for a more detailed description of [font-relative len
 
 ## See also
 
-- {{cssxref("font-size-adjust")}}
-- {{cssxref("font-style")}}
-- {{cssxref("font-weight")}}
-- {{cssxref("math-depth")}}
-- {{cssxref("math-style")}}
+- `font-size-adjust`
+- `font-style`
+- `font-weight`
+- `math-depth`
+- `math-style`
 - SVG {{SVGAttr("font-size")}} attribute
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)

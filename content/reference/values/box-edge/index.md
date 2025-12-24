@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`<box-edge>`** value types represent a [box edge](/guides/Box_model/Introduction) keyword, such as [`content-box`](#content-box) and [`border-box`](#border-box). The box-edge keywords are used to define different aspects of an element's box model and how elements are positioned and rendered on screen.
 
-The box-edge keywords are the components of, but not limited to, the data types `<visual-box>`, `<layout-box>`, `<paint-box>`, `<coord-box>`, and `<geometry-box>`. These types are applied to properties such as {{cssxref("transform-box")}} and {{cssxref("background-clip")}}.
+The box-edge keywords are the components of, but not limited to, the data types `<visual-box>`, `<layout-box>`, `<paint-box>`, `<coord-box>`, and `<geometry-box>`. These types are applied to properties such as `transform-box` and `background-clip`.
 
 ## Syntax
 
@@ -25,19 +25,19 @@ The box-edge keywords are the components of, but not limited to, the data types 
 A `<box-edge>` can be of the type `<visual-box>`, `<layout-box>`, `<paint-box>`, `<coord-box>`, or `<geometry-box>`.
 
 - `<visual-box>`
-  - Refers to the rectangular box generated for an element as seen by a user on a web page. It includes the element's content, padding, and border. Also referred to as `<box>`, this value excludes the margin area. This value type is used for the {{cssxref("background-clip")}} and {{cssxref("overflow-clip-margin")}} properties.
+  - Refers to the rectangular box generated for an element as seen by a user on a web page. It includes the element's content, padding, and border. Also referred to as `<box>`, this value excludes the margin area. This value type is used for the `background-clip` and `overflow-clip-margin` properties.
 
 - `<layout-box>`
-  - Refers to the space occupied by an element, including its content, padding, border, and margin. This value type is used for layout and positioning purposes. Also referred to as `<shape-box>`, this value type is used for the {{cssxref("shape-outside")}} property.
+  - Refers to the space occupied by an element, including its content, padding, border, and margin. This value type is used for layout and positioning purposes. Also referred to as `<shape-box>`, this value type is used for the `shape-outside` property.
 
 - `<paint-box>`
   - Refers to the area within the layout box that is used to visually render the content. This includes the area where the element's background and borders are painted. As an element's paintable area does not include its margins, this value excludes `margin-box`.
 
 - `<coord-box>`
-  - Refers to the coordinate box used for positioning and sizing an element within its parent container. It is used to control how content flows around the edges of the box. It excludes the margin area. This value type is used for the {{cssxref("offset-path")}} property.
+  - Refers to the coordinate box used for positioning and sizing an element within its parent container. It is used to control how content flows around the edges of the box. It excludes the margin area. This value type is used for the `offset-path` property.
 
 - `<geometry-box>`
-  - Defines the reference box for a [basic shape](/reference/values/basic-shape), or if specified by itself, causes the edges of the specified box, including any corner shaping (such as a {{cssxref("border-radius")}}), to be the clipping path. This value type is used for the {{cssxref("clip-path")}}, {{cssxref("mask-clip")}}, and {{cssxref("mask-origin")}} properties and the SVG {{SVGAttr("clip-path")}} attribute.
+  - Defines the reference box for a [basic shape](/reference/values/basic-shape), or if specified by itself, causes the edges of the specified box, including any corner shaping (such as a `border-radius`), to be the clipping path. This value type is used for the `clip-path`, `mask-clip`, and `mask-origin` properties and the SVG {{SVGAttr("clip-path")}} attribute.
 
 ### Keywords
 

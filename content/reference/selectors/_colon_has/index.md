@@ -17,7 +17,7 @@ h1:has(+ p) {
 }
 ```
 
-The `:has()` pseudo-class takes on the [specificity](/guides/Cascade/Specificity) of the most specific selector in its arguments the same way as {{cssxref(":is()")}} and {{cssxref(":not()")}} do.
+The `:has()` pseudo-class takes on the [specificity](/guides/Cascade/Specificity) of the most specific selector in its arguments the same way as `:is()` and `:not()` do.
 
 ## Syntax
 

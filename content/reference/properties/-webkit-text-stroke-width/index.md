@@ -93,6 +93,6 @@ p {
 
 - [Introducing Text-Stroke](https://webkit.org/blog/85/introducing-text-stroke/) on webkit.org (2006)
 - [CSS-Tricks article explaining this feature](https://css-tricks.com/adding-stroke-to-web-text/)
-- {{cssxref("-webkit-text-stroke-color")}}
-- {{cssxref("-webkit-text-stroke")}}
-- {{cssxref("-webkit-text-fill-color")}}
+- `-webkit-text-stroke-color`
+- `-webkit-text-stroke`
+- `-webkit-text-fill-color`

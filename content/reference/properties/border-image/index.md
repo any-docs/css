@@ -9,7 +9,7 @@ sidebar: cssref
 The **`border-image`** [CSS](/en-US/docs/Web/CSS) property draws an image around a given element. It replaces the element's regular [border](/reference/properties/border).
 
 > [!NOTE]
-> You should specify a separate {{cssxref("border-style")}} in case the border image fails to load. Although the specification doesn't strictly require it, some browsers don't render the border image if {{cssxref("border-style")}} is `none` or {{cssxref("border-width")}} is `0`.
+> You should specify a separate `border-style` in case the border image fails to load. Although the specification doesn't strictly require it, some browsers don't render the border image if `border-style` is `none` or `border-width` is `0`.
 
 {{InteractiveExample("CSS Demo: border-image")}}
 
@@ -63,11 +63,11 @@ border-image: repeating-linear-gradient(30deg, #4d9f0c, #9198e5, #4d9f0c 20px)
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-image-outset")}}
-- {{cssxref("border-image-repeat")}}
-- {{cssxref("border-image-slice")}}
-- {{cssxref("border-image-source")}}
-- {{cssxref("border-image-width")}}
+- `border-image-outset`
+- `border-image-repeat`
+- `border-image-slice`
+- `border-image-source`
+- `border-image-width`
 
 ## Syntax
 
@@ -95,20 +95,20 @@ border-image: unset;
 The `border-image` property may be specified with anywhere from one to five of the values listed below.
 
 > [!NOTE]
-> If the [computed value](/guides/Cascade/Property_value_processing#computed_value) of {{cssxref("border-image-source")}} is `none`, or if the image cannot be displayed, the {{cssxref("border-style")}} will be displayed instead.
+> If the [computed value](/guides/Cascade/Property_value_processing#computed_value) of `border-image-source` is `none`, or if the image cannot be displayed, the `border-style` will be displayed instead.
 
 ### Values
 
 - `<'border-image-source'>`
-  - The source image. See {{cssxref("border-image-source")}}.
+  - The source image. See `border-image-source`.
 - `<'border-image-slice'>`
-  - The dimensions for slicing the source image into regions. Up to four values may be specified. See {{cssxref("border-image-slice")}}.
+  - The dimensions for slicing the source image into regions. Up to four values may be specified. See `border-image-slice`.
 - `<'border-image-width'>`
-  - The width of the border image. Up to four values may be specified. See {{cssxref("border-image-width")}}.
+  - The width of the border image. Up to four values may be specified. See `border-image-width`.
 - `<'border-image-outset'>`
-  - The distance of the border image from the element's outside edge. Up to four values may be specified. See {{cssxref("border-image-outset")}}.
+  - The distance of the border image from the element's outside edge. Up to four values may be specified. See `border-image-outset`.
 - `<'border-image-repeat'>`
-  - Defines how the edge regions of the source image are adjusted to fit the dimensions of the border image. Up to two values may be specified. See {{cssxref("border-image-repeat")}}.
+  - Defines how the edge regions of the source image are adjusted to fit the dimensions of the border image. Up to two values may be specified. See `border-image-repeat`.
 
 ## Accessibility
 
@@ -190,7 +190,7 @@ To match the size of a single diamond, we will use a value of 81 divided by 3, o
 
 ### Rounded borders
 
-{{cssxref("border-radius")}} has no effect on the border image. This is because {{cssxref("border-image-outset")}} is able to place the image outside the border box, so it doesn't make sense for the border image to be clipped by the border area. To create rounded borders when using a border image, you should create the image itself with rounded corners, or, in the case of a gradient, draw it as the background instead. Below, we show one approach to do this, which is to use two {{cssxref("background-image")}}s: one that extends the border box, and another for the padding box.
+`border-radius` has no effect on the border image. This is because `border-image-outset` is able to place the image outside the border box, so it doesn't make sense for the border image to be clipped by the border area. To create rounded borders when using a border image, you should create the image itself with rounded corners, or, in the case of a gradient, draw it as the background instead. Below, we show one approach to do this, which is to use two `background-image`s: one that extends the border box, and another for the padding box.
 
 #### HTML
 
@@ -221,7 +221,7 @@ To match the size of a single diamond, we will use a value of 81 divided by 3, o
 {{EmbedLiveSample('rounded_borders')}}
 
 > [!NOTE]
-> There is a new `{{cssxref("background-clip")}}: border-area` value [being proposed](https://github.com/w3c/csswg-drafts/issues/9456) to address this use case.
+> There is a new ``background-clip`: border-area` value [being proposed](https://github.com/w3c/csswg-drafts/issues/9456) to address this use case.
 
 ## Specifications
 
@@ -233,10 +233,10 @@ To match the size of a single diamond, we will use a value of 81 divided by 3, o
 
 ## See also
 
-- {{cssxref("border")}}
-- {{cssxref("outline")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("background-image")}}
-- {{cssxref("url_value", "&lt;url&gt;")}} type
-- Gradient functions: {{CSSxRef("gradient/conic-gradient", "conic-gradient()")}}, {{CSSxRef("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}, {{CSSxRef("gradient/linear-gradient", "linear-gradient()")}}, {{CSSxRef("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}, {{CSSxRef("gradient/radial-gradient", "radial-gradient()")}}, {{CSSxRef("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}
+- `border`
+- `outline`
+- `box-shadow`
+- `background-image`
+- `&lt;url&gt;` type
+- Gradient functions: `conic-gradient()`, `repeating-conic-gradient()`, `linear-gradient()`, `repeating-linear-gradient()`, `radial-gradient()`, `repeating-radial-gradient()`
 - [Border images in CSS: A key focus area for Interop 2023](/en-US/blog/border-images-interop-2023/) on MDN blog (2023)

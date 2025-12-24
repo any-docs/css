@@ -6,7 +6,7 @@ browser-compat: css.properties.offset-distance
 sidebar: cssref
 ---
 
-The **`offset-distance`** [CSS](/en-US/docs/Web/CSS) property specifies a position along an {{CSSxRef("offset-path")}} for an element to be placed.
+The **`offset-distance`** [CSS](/en-US/docs/Web/CSS) property specifies a position along an `offset-path` for an element to be placed.
 
 {{InteractiveExample("CSS Demo: offset-distance")}}
 
@@ -125,8 +125,8 @@ The motion aspect in CSS Motion Path typically comes from animating the `offset-
 
 ## See also
 
-- {{cssxref("offset")}}
-- {{cssxref("offset-anchor")}}
-- {{cssxref("offset-path")}}
-- {{cssxref("offset-position")}}
-- {{cssxref("offset-rotate")}}
+- `offset`
+- `offset-anchor`
+- `offset-path`
+- `offset-position`
+- `offset-rotate`

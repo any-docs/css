@@ -62,8 +62,8 @@ gap: calc(20px + 10%);
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("column-gap")}}
-- {{cssxref("row-gap")}}
+- `column-gap`
+- `row-gap`
 
 ## Syntax
 
@@ -104,9 +104,9 @@ gap: unset;
 
 This property is specified as a value for `<'row-gap'>`, followed optionally by a value for `<'column-gap'>`. If `<'column-gap'>` is omitted, it is set to the same value as `<'row-gap'>`. Both `<'row-gap'>` and `<'column-gap'>` can each be specified as a `<length>` or a `<percentage>`.
 
-- {{CSSxRef("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Specifies the width of the gutter separating columns, {{glossary("flex item","flex items")}}, flex lines, and {{glossary("grid lines")}}.
-- {{CSSxRef("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Specifies the width of the gutter separating columns, flex items, flex lines, and grid lines relative to the dimension of the element.
 
 ## Description
@@ -117,9 +117,9 @@ The generated gaps create empty spaces that have the width or height of the gap'
 
 In grid layout, the first value defines the gutter between rows, and the second defines the gutter between columns. In both grid and flex layouts, if only one value is included, that value is used for both dimensions.
 
-With flex containers, whether the first value is the gap between flex items or between flex lines depends on the direction. Flex items are laid out in either rows or columns depending on the value of the {{cssxref("flex-direction")}} property. For rows (`row` (the default) or `row-reverse`), the first value defines the gap between flex lines, and the second value defines the gap between items within each line. For columns (`column` or `column-reverse`), the first value defines the gap between flex items within a flex line, and the second value defines the gaps between each flex line.
+With flex containers, whether the first value is the gap between flex items or between flex lines depends on the direction. Flex items are laid out in either rows or columns depending on the value of the `flex-direction` property. For rows (`row` (the default) or `row-reverse`), the first value defines the gap between flex lines, and the second value defines the gap between items within each line. For columns (`column` or `column-reverse`), the first value defines the gap between flex items within a flex line, and the second value defines the gaps between each flex line.
 
-In multi-column containers, the first value defines the gap between columns. A dividing line can be added to the otherwise "empty space" by using the {{cssxref("column-rule-style")}} property or {{cssxref("column-rule")}} shorthand.
+In multi-column containers, the first value defines the gap between columns. A dividing line can be added to the otherwise "empty space" by using the `column-rule-style` property or `column-rule` shorthand.
 
 Percentage gap values are always calculated against the [content box](/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model#parts_of_a_box) size of the container element. The behavior is well-defined and consistent across layout modes when the container size is definite. As these three layout modes (multi-column, flex, and grid) treat cyclic percentage sizes differently, `gap` also does so. In grid layout, cyclic percentage sizes resolve against zero for determining {{glossary("intrinsic size")}} contributions but resolve against the element's content box when laying out the contents. Two examples below demonstrate percentage gap values with [explicit container size](#percentage_gap_value_and_explicit_container_size) and [implicit container size](#percentage_gap_value_and_implicit_container_size) in the examples section.
 
@@ -355,8 +355,8 @@ In case of the flex layout, the percentage gap always results in zero value.
 
 ## See also
 
-- {{CSSxRef("row-gap")}}
-- {{CSSxRef("column-gap")}}
+- `row-gap`
+- `column-gap`
 - [Basic concepts of grid layout: gutters](/guides/Grid_layout/Basic_concepts#gutters)
 - [CSS box alignment](/guides/Box_alignment) module
 - [CSS flexible box layout](/guides/Flexible_box_layout) module

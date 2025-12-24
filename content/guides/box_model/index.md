@@ -21,21 +21,21 @@ The CSS box model module defines physical (or "page relative") properties such a
 
 ### Properties
 
-- {{cssxref("margin")}} shorthand
-- {{cssxref("margin-bottom")}}
-- {{cssxref("margin-left")}}
-- {{cssxref("margin-right")}}
-- {{cssxref("margin-top")}}
-- {{cssxref("margin-trim")}}
-- {{cssxref("padding")}} shorthand
-- {{cssxref("padding-bottom")}}
-- {{cssxref("padding-left")}}
-- {{cssxref("padding-right")}}
-- {{cssxref("padding-top")}}
+- `margin` shorthand
+- `margin-bottom`
+- `margin-left`
+- `margin-right`
+- `margin-top`
+- `margin-trim`
+- `padding` shorthand
+- `padding-bottom`
+- `padding-left`
+- `padding-right`
+- `padding-top`
 
 ### Data types
 
-- {{cssxref("box-edge")}}
+- `box-edge`
   - [`<visual-box>`](/reference/values/box-edge#visual-box)
   - [`<layout-box>`](/reference/values/box-edge#layout-box)
   - [`<paint-box>`](/reference/values/box-edge#paint-box)
@@ -56,65 +56,65 @@ The CSS box model module defines physical (or "page relative") properties such a
 ## Related concepts
 
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
-  - {{cssxref("border-width")}} shorthand
-  - {{cssxref("border-bottom-width")}}
-  - {{cssxref("border-left-width")}}
-  - {{cssxref("border-right-width")}}
-  - {{cssxref("border-top-width")}}
+  - `border-width` shorthand
+  - `border-bottom-width`
+  - `border-left-width`
+  - `border-right-width`
+  - `border-top-width`
 - [CSS logical properties](/guides/Logical_properties_and_values) module
-  - {{CSSxRef("block-size")}}
-  - {{CSSxRef("inline-size")}}
-  - {{CSSxRef("max-block-size")}}
-  - {{CSSxRef("max-inline-size")}}
-  - {{CSSxRef("min-block-size")}}
-  - {{CSSxRef("min-inline-size")}}
-  - {{CSSxRef("margin-block")}}
-  - {{CSSxRef("margin-block-end")}}
-  - {{CSSxRef("margin-block-start")}}
-  - {{CSSxRef("margin-inline")}}
-  - {{CSSxRef("margin-inline-end")}}
-  - {{CSSxRef("margin-inline-start")}}
-  - {{CSSxRef("padding-block")}}
-  - {{CSSxRef("padding-block-end")}}
-  - {{CSSxRef("padding-block-start")}}
-  - {{CSSxRef("padding-inline")}}
-  - {{CSSxRef("padding-inline-end")}}
-  - {{CSSxRef("padding-inline-start")}}
-  - {{CSSxRef("border-block")}}
-  - {{CSSxRef("border-block-end")}}
-  - {{CSSxRef("border-block-end-width")}}
-  - {{CSSxRef("border-block-start")}}
-  - {{CSSxRef("border-block-start-width")}}
-  - {{CSSxRef("border-block-style")}}
-  - {{CSSxRef("border-block-width")}}
-  - {{CSSxRef("border-inline")}}
-  - {{CSSxRef("border-inline-end")}}
-  - {{CSSxRef("border-inline-end-width")}}
-  - {{CSSxRef("border-inline-start")}}
-  - {{CSSxRef("border-inline-start-width")}}
-  - {{CSSxRef("border-inline-width")}}
+  - `block-size`
+  - `inline-size`
+  - `max-block-size`
+  - `max-inline-size`
+  - `min-block-size`
+  - `min-inline-size`
+  - `margin-block`
+  - `margin-block-end`
+  - `margin-block-start`
+  - `margin-inline`
+  - `margin-inline-end`
+  - `margin-inline-start`
+  - `padding-block`
+  - `padding-block-end`
+  - `padding-block-start`
+  - `padding-inline`
+  - `padding-inline-end`
+  - `padding-inline-start`
+  - `border-block`
+  - `border-block-end`
+  - `border-block-end-width`
+  - `border-block-start`
+  - `border-block-start-width`
+  - `border-block-style`
+  - `border-block-width`
+  - `border-inline`
+  - `border-inline-end`
+  - `border-inline-end-width`
+  - `border-inline-start`
+  - `border-inline-start-width`
+  - `border-inline-width`
 - [CSS box sizing](/guides/Box_sizing) module
-  - {{cssxref("aspect-ratio")}}
-  - {{cssxref("box-sizing")}}
-  - {{cssxref("contain-intrinsic-block-size")}}
-  - {{cssxref("contain-intrinsic-height")}}
-  - {{cssxref("contain-intrinsic-inline-size")}}
-  - {{cssxref("contain-intrinsic-size")}}
-  - {{cssxref("contain-intrinsic-width")}}
-  - {{cssxref("height")}}
-  - {{cssxref("max-height")}}
-  - {{cssxref("max-width")}}
-  - {{cssxref("min-height")}}
-  - {{cssxref("min-width")}}
-  - {{cssxref("width")}}
+  - `aspect-ratio`
+  - `box-sizing`
+  - `contain-intrinsic-block-size`
+  - `contain-intrinsic-height`
+  - `contain-intrinsic-inline-size`
+  - `contain-intrinsic-size`
+  - `contain-intrinsic-width`
+  - `height`
+  - `max-height`
+  - `max-width`
+  - `min-height`
+  - `min-width`
+  - `width`
 - [CSS overflow](/guides/Overflow) module
-  - {{CSSxRef("overflow")}} shorthand
-  - {{CSSxRef("overflow-block")}}
-  - {{CSSxRef("overflow-clip-margin")}}
-  - {{CSSxRef("overflow-inline")}}
-  - {{CSSxRef("overflow-x")}}
-  - {{CSSxRef("overflow-y")}}
-  - {{CSSxRef("text-overflow")}}
+  - `overflow` shorthand
+  - `overflow-block`
+  - `overflow-clip-margin`
+  - `overflow-inline`
+  - `overflow-x`
+  - `overflow-y`
+  - `text-overflow`
 
 ## Specifications
 

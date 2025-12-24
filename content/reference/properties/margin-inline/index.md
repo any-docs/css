@@ -64,8 +64,8 @@ direction: rtl;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("margin-inline-start")}}
-- {{cssxref("margin-inline-end")}}
+- `margin-inline-start`
+- `margin-inline-end`
 
 ## Syntax
 
@@ -89,7 +89,7 @@ margin-inline: revert-layer;
 margin-inline: unset;
 ```
 
-This property corresponds to the {{CSSxRef("margin-top")}} and {{CSSxRef("margin-bottom")}}, or the {{CSSxRef("margin-right")}} and {{CSSxRef("margin-left")}} properties, depending on the values defined for {{CSSxRef("writing-mode")}}, {{CSSxRef("direction")}}, and {{CSSxRef("text-orientation")}}.
+This property corresponds to the `margin-top` and `margin-bottom`, or the `margin-right` and `margin-left` properties, depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 The `margin-inline` property may be specified using one or two values.
 
@@ -159,5 +159,5 @@ p {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- The mapped physical properties: {{CSSxRef("margin-top")}}, {{CSSxRef("margin-right")}}, {{CSSxRef("margin-bottom")}}, and {{CSSxRef("margin-left")}}
-- {{CSSxRef("writing-mode")}}, {{CSSxRef("direction")}}, {{CSSxRef("text-orientation")}}
+- The mapped physical properties: `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`
+- `writing-mode`, `direction`, `text-orientation`

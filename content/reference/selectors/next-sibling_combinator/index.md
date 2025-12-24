@@ -6,7 +6,7 @@ browser-compat: css.selectors.next-sibling
 sidebar: cssref
 ---
 
-The **next-sibling combinator** (`+`) separates two selectors and matches the second element only if it _immediately_ follows the first element, and both are children of the same parent {{DOMxRef("element")}}.
+The **next-sibling combinator** (`+`) separates two selectors and matches the second element only if it _immediately_ follows the first element, and both are children of the same parent `element`.
 
 ```css
 /* Paragraphs that come immediately after any image */
@@ -55,7 +55,7 @@ li:first-of-type + li {
 
 ### Selecting a previous sibling
 
-The next-sibling combinator can be included within the {{cssxref(":has()")}} functional selector to select the previous sibling.
+The next-sibling combinator can be included within the `:has()` functional selector to select the previous sibling.
 
 #### CSS
 

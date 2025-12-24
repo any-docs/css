@@ -10,7 +10,7 @@ spec-urls:
 sidebar: cssref
 ---
 
-A [CSS](/en-US/docs/Web/CSS) **_pseudo-class_** is a keyword added to a selector that lets you select elements based on information that lies outside of the document tree, such as a specific state of the selected element(s). For example, the pseudo-class {{CSSxRef(":hover")}} can be used to style a button when a user's pointer hovers over it.
+A [CSS](/en-US/docs/Web/CSS) **_pseudo-class_** is a keyword added to a selector that lets you select elements based on information that lies outside of the document tree, such as a specific state of the selected element(s). For example, the pseudo-class `:hover` can be used to style a button when a user's pointer hovers over it.
 
 ```css
 /* Any button over which the user's pointer is hovering */
@@ -21,7 +21,7 @@ button:hover {
 
 A pseudo-class consists of a colon (`:`) followed by the pseudo-class name (e.g., `:hover`). A functional pseudo-class also contains a pair of parentheses to define the arguments (e.g., `:dir()`). The element that a pseudo-class is attached to is defined as an _anchor element_ (e.g., `button` in case `button:hover`).
 
-Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but also in relation to external factors like the history of the navigator ({{CSSxRef(":visited")}}, for example), the status of its content (like {{CSSxRef(":checked")}} on certain form elements), or the position of the mouse (like {{CSSxRef(":hover")}}, which lets you know if the mouse is over an element or not).
+Pseudo-classes let you apply a style to an element not only in relation to the content of the document tree, but also in relation to external factors like the history of the navigator (`:visited`, for example), the status of its content (like `:checked` on certain form elements), or the position of the mouse (like `:hover`, which lets you know if the mouse is over an element or not).
 
 > [!NOTE]
 > In contrast to pseudo-classes, [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) can be used to style a _specific part_ of an element.
@@ -30,91 +30,91 @@ Pseudo-classes let you apply a style to an element not only in relation to the c
 
 These pseudo-classes relate to the core identity of elements.
 
-- {{CSSxRef(":defined")}}
+- `:defined`
   - Matches any element that is defined.
-- {{CSSxRef(":heading")}}
+- `:heading`
   - Matches any heading element (`<h1>`-`<h6>`).
 
 ## Element display state pseudo-classes
 
 These pseudo-classes enable the selection of elements based on their display states.
 
-- {{CSSxRef(":open")}}
+- `:open`
   - Matches an element that can either be open or closed that is currently open.
-- {{CSSxRef(":popover-open")}}
+- `:popover-open`
   - Matches a popover element that is currently in the showing state.
-- {{CSSxRef(":modal")}}
+- `:modal`
   - Matches an element that is in a state in which it excludes all interaction with elements outside it until the interaction has been dismissed.
-- {{CSSxRef(":fullscreen")}}
+- `:fullscreen`
   - Matches an element that is currently in fullscreen mode.
-- {{CSSxRef(":picture-in-picture")}}
+- `:picture-in-picture`
   - Matches an element that is currently in picture-in-picture mode.
 
 ## Input pseudo-classes
 
 These pseudo-classes relate to form elements, and enable selecting elements based on HTML attributes and the state that the field is in before and after interaction.
 
-- {{CSSxRef(":enabled")}}
+- `:enabled`
   - Represents a user interface element that is in an enabled state.
-- {{CSSxRef(":disabled")}}
+- `:disabled`
   - Represents a user interface element that is in a disabled state.
-- {{CSSxRef(":read-only")}}
+- `:read-only`
   - Represents any element that cannot be changed by the user.
-- {{CSSxRef(":read-write")}}
+- `:read-write`
   - Represents any element that is user-editable.
-- {{CSSxRef(":placeholder-shown")}}
+- `:placeholder-shown`
   - Matches an input element that is displaying placeholder text. For example, it will match the `placeholder` attribute in the {{htmlelement("input")}} and {{htmlelement("textarea")}} elements.
-- {{CSSxRef(":autofill")}}
+- `:autofill`
   - Matches when an {{htmlelement("input")}} has been autofilled by the browser.
-- {{CSSxRef(":default")}}
+- `:default`
   - Matches one or more UI elements that are the default among a set of elements.
-- {{CSSxRef(":checked")}}
+- `:checked`
   - Matches when elements such as checkboxes and radio buttons are toggled on.
-- {{CSSxRef(":indeterminate")}}
+- `:indeterminate`
   - Matches UI elements when they are in an indeterminate state.
-- {{CSSxRef(":blank")}}
+- `:blank`
   - Matches a user-input element which is empty, containing an empty string or other null input.
-- {{CSSxRef(":valid")}}
+- `:valid`
   - Matches an element with valid contents. For example, an input element with the type 'email' that contains a validly formed email address or an empty value if the control is not required.
-- {{CSSxRef(":invalid")}}
+- `:invalid`
   - Matches an element with invalid contents. For example, an input element with type 'email' with a name entered.
-- {{CSSxRef(":in-range")}}
+- `:in-range`
   - Applies to elements with range limitations. For example, a slider control when the selected value is in the allowed range.
-- {{CSSxRef(":out-of-range")}}
+- `:out-of-range`
   - Applies to elements with range limitations. For example, a slider control when the selected value is outside the allowed range.
-- {{CSSxRef(":required")}}
+- `:required`
   - Matches when a form element is required.
-- {{CSSxRef(":optional")}}
+- `:optional`
   - Matches when a form element is optional.
-- {{CSSxRef(":user-valid")}}
+- `:user-valid`
   - Represents an element with correct input, but only when the user has interacted with it.
-- {{CSSxRef(":user-invalid")}}
+- `:user-invalid`
   - Represents an element with incorrect input, but only when the user has interacted with it.
 
 ## Linguistic pseudo-classes
 
 These pseudo-classes reflect the document language and enable the selection of elements based on language or script direction.
 
-- {{cssxref(":dir()")}}
+- `:dir()`
   - The directionality pseudo-class selects an element based on its directionality as determined by the document language.
-- {{cssxref(":lang()")}}
+- `:lang()`
   - Select an element based on its content language.
 
 ## Location pseudo-classes
 
 These pseudo-classes relate to links, and to targeted elements within the current document.
 
-- {{CSSxRef(":any-link")}}
-  - Matches an element if the element would match either {{CSSxRef(":link")}} or {{CSSxRef(":visited")}}.
-- {{CSSxRef(":link")}}
+- `:any-link`
+  - Matches an element if the element would match either `:link` or `:visited`.
+- `:link`
   - Matches links that have not yet been visited.
-- {{CSSxRef(":visited")}}
+- `:visited`
   - Matches links that have been visited.
-- {{CSSxRef(":local-link")}}
+- `:local-link`
   - Matches links whose absolute URL is the same as the target URL. For example, anchor links to the same page.
-- {{CSSxRef(":target")}}
+- `:target`
   - Matches the element which is the target of the document URL.
-- {{CSSxRef(":scope")}}
+- `:scope`
   - Represents elements that are a reference point for selectors to match against.
 
 > [!NOTE]
@@ -124,122 +124,122 @@ These pseudo-classes relate to links, and to targeted elements within the curren
 
 These pseudo-classes apply to media that is capable of being in a state where it would be described as playing, such as a video.
 
-- {{CSSxRef(":playing")}}
+- `:playing`
   - Represents a playable element that is playing.
-- {{CSSxRef(":paused")}}
+- `:paused`
   - Represents a playable element that is paused.
-- {{CSSxRef(":seeking")}}
+- `:seeking`
   - Represents a playable element that is currently seeking a playback position in the media resource.
-- {{CSSxRef(":buffering")}}
+- `:buffering`
   - Represents a playable element that is playing but is temporarily stalled because it is downloading the media resource.
-- {{CSSxRef(":stalled")}}
+- `:stalled`
   - Represents a playable element that is playing but is stalled because it cannot download the media resource.
-- {{CSSxRef(":muted")}}
+- `:muted`
   - Represents a sound-producing element that is muted.
-- {{CSSxRef(":volume-locked")}}
+- `:volume-locked`
   - Represents a sound-producing element that has its volume level locked by the browser.
 
 ## Time-dimensional pseudo-classes
 
 These pseudo-classes apply when viewing something which has timing, such as a [WebVTT](/en-US/docs/Web/API/WebVTT_API) caption track.
 
-- {{CSSxRef(":current")}}
+- `:current`
   - Represents the element or ancestor of the element that is being displayed.
-- {{CSSxRef(":past")}}
-  - Represents an element that occurs entirely before the {{CSSxRef(":current")}} element.
-- {{CSSxRef(":future")}}
-  - Represents an element that occurs entirely after the {{CSSxRef(":current")}} element.
+- `:past`
+  - Represents an element that occurs entirely before the `:current` element.
+- `:future`
+  - Represents an element that occurs entirely after the `:current` element.
 
 ## Tree-structural pseudo-classes
 
 These pseudo-classes relate to the location of an element within the document tree.
 
-- {{CSSxRef(":root")}}
+- `:root`
   - Represents an element that is the root of the document. In HTML this is usually the `<html>` element.
-- {{CSSxRef(":empty")}}
+- `:empty`
   - Represents an element with no children other than white-space characters.
-- {{cssxref(":nth-child()")}}
+- `:nth-child()`
   - Uses `An+B` notation to select elements from a list of sibling elements.
-- {{cssxref(":nth-last-child()")}}
+- `:nth-last-child()`
   - Uses `An+B` notation to select elements from a list of sibling elements, counting backwards from the end of the list.
-- {{CSSxRef(":first-child")}}
+- `:first-child`
   - Matches an element that is the first of its siblings.
-- {{CSSxRef(":last-child")}}
+- `:last-child`
   - Matches an element that is the last of its siblings.
-- {{CSSxRef(":only-child")}}
+- `:only-child`
   - Matches an element that has no siblings. For example, a list item with no other list items in that list.
-- {{CSSXRef(":heading_function", ":heading()")}}
+- `:heading()`
   - Uses `An+B` notation to select heading elements (`<h1>`-`<h6>`).
-- {{cssxref(":nth-of-type()")}}
+- `:nth-of-type()`
   - Uses `An+B` notation to select elements from a list of sibling elements that match a certain type from a list of sibling elements.
-- {{cssxref(":nth-last-of-type()")}}
+- `:nth-last-of-type()`
   - Uses `An+B` notation to select elements from a list of sibling elements that match a certain type from a list of sibling elements counting backwards from the end of the list.
-- {{CSSxRef(":first-of-type")}}
+- `:first-of-type`
   - Matches an element that is the first of its siblings, and also matches a certain type selector.
-- {{CSSxRef(":last-of-type")}}
+- `:last-of-type`
   - Matches an element that is the last of its siblings, and also matches a certain type selector.
-- {{CSSxRef(":only-of-type")}}
+- `:only-of-type`
   - Matches an element that has no siblings of the chosen type selector.
 
 ## Shadow-structural pseudo-classes
 
 These pseudo-classes relate to the shadow DOM.
 
-- {{CSSxRef(":host")}}
+- `:host`
   - Matches the shadow tree's shadow host.
-- {{cssxref(":host()")}}
-  - Matches an element that matches {{CSSxRef(":host")}} and matches any of the selectors in the list provided.
-- {{cssxref(":host-context()")}}
+- `:host()`
+  - Matches an element that matches `:host` and matches any of the selectors in the list provided.
+- `:host-context()`
   - Selects elements outside of the shadow tree in the context of the shadow host.
-- {{CSSxRef(":has-slotted")}}
+- `:has-slotted`
   - Matches slot elements that have been assigned content.
 
 ## User action pseudo-classes
 
 These pseudo-classes require some interaction by the user in order for them to apply, such as holding a mouse pointer over an element.
 
-- {{CSSxRef(":hover")}}
+- `:hover`
   - Matches when a user designates an item with a pointing device, such as holding the mouse pointer over the item.
-- {{CSSxRef(":active")}}
+- `:active`
   - Matches when an item is being activated by the user. For example, when the item is clicked on.
-- {{CSSxRef(":focus")}}
+- `:focus`
   - Matches when an element has focus.
-- {{CSSxRef(":focus-visible")}}
+- `:focus-visible`
   - Matches when an element has focus and the user agent identifies that the element should be visibly focused.
-- {{CSSxRef(":focus-within")}}
-  - Matches an element to which {{CSSxRef(":focus")}} applies, plus any element that has a descendant to which {{CSSxRef(":focus")}} applies.
-- {{CSSxRef(":target-current")}}
-  - Matches the {{cssxref("::scroll-marker")}} pseudo-element of a {{cssxref("scroll-marker-group")}} that is currently scrolled to, in other words, the **active** scroll marker.
+- `:focus-within`
+  - Matches an element to which `:focus` applies, plus any element that has a descendant to which `:focus` applies.
+- `:target-current`
+  - Matches the `::scroll-marker` pseudo-element of a `scroll-marker-group` that is currently scrolled to, in other words, the **active** scroll marker.
 
 ## Functional pseudo-classes
 
 These pseudo-classes accept a [selector list](/en-US/docs/Web/CSS/Reference/Selectors/Selector_list) or [forgiving selector list](/en-US/docs/Web/CSS/Reference/Selectors/Selector_list#forgiving_selector_list) as a parameter.
 
-- {{cssxref(":is()")}}
+- `:is()`
   - The matches-any pseudo-class matches any element that matches any of the selectors in the list provided. The list is forgiving.
-- {{cssxref(":not()")}}
+- `:not()`
   - The negation, or matches-none, pseudo-class represents any element that is not represented by its argument.
-- {{cssxref(":where()")}}
+- `:where()`
   - The specificity-adjustment pseudo-class matches any element that matches any of the selectors in the list provided without adding any specificity weight. The list is forgiving.
-- {{cssxref(":has()")}}
+- `:has()`
   - The relational pseudo-class represents an element if any of the relative selectors match when anchored against the attached element.
 
 ## Custom state pseudo-classes
 
 These pseudo-classes apply to custom elements.
 
-- {{cssxref(":state()")}}
+- `:state()`
   - Matches custom elements that have the specified custom state.
 
 ## Page pseudo-classes
 
-These pseudo-classes relate to pages in a printed document and are used with the {{CSSxRef("@page")}} at-rule.
+These pseudo-classes relate to pages in a printed document and are used with the `@page` at-rule.
 
-- {{CSSxRef(":left")}}
+- `:left`
   - Represents all left-hand pages of a printed document.
-- {{CSSxRef(":right")}}
+- `:right`
   - Represents all right-hand pages of a printed document.
-- {{CSSxRef(":first")}}
+- `:first`
   - Represents the first page of a printed document.
 - `:blank`
   - Represents a blank page in a printed document.
@@ -248,9 +248,9 @@ These pseudo-classes relate to pages in a printed document and are used with the
 
 These pseudo-classes relate to elements involved in a [view transition](/en-US/docs/Web/API/View_Transition_API).
 
-- {{cssxref(":active-view-transition")}}
+- `:active-view-transition`
   - Matches the root element of a document when a [view transition](/en-US/docs/Web/API/View_Transition_API#concepts_and_usage) is in progress (_active_) and stops matching once the transition has completed.
-- {{cssxref(":active-view-transition-type()")}}
+- `:active-view-transition-type()`
   - Matches the root element of a document when a specified [view transition](/en-US/docs/Web/API/View_Transition_API#concepts_and_usage) is in progress (_active_) and stops matching once the transition has completed.
 
 ## Syntax
@@ -269,137 +269,137 @@ Pseudo-classes defined by a set of CSS specifications include the following:
 
 A
 
-- {{CSSxRef(":active")}}
-- {{CSSxRef(":active-view-transition")}}
-- {{cssxref(":active-view-transition-type()")}}
-- {{CSSxRef(":any-link")}}
-- {{CSSxRef(":autofill")}}
+- `:active`
+- `:active-view-transition`
+- `:active-view-transition-type()`
+- `:any-link`
+- `:autofill`
 
 B
 
-- {{CSSxRef(":blank")}} (input) {{Experimental_Inline}}
+- `:blank` (input) {{Experimental_Inline}}
 - `:blank` (page)
-- {{CSSxRef(":buffering")}}
+- `:buffering`
 
 C
 
-- {{CSSxRef(":checked")}}
-- {{CSSxRef(":current")}} {{Experimental_Inline}}
+- `:checked`
+- `:current` {{Experimental_Inline}}
 
 D
 
-- {{CSSxRef(":default")}}
-- {{CSSxRef(":defined")}}
-- {{cssxref(":dir()")}}
-- {{CSSxRef(":disabled")}}
+- `:default`
+- `:defined`
+- `:dir()`
+- `:disabled`
 
 E
 
-- {{CSSxRef(":empty")}}
-- {{CSSxRef(":enabled")}}
+- `:empty`
+- `:enabled`
 
 F
 
-- {{CSSxRef(":first")}}
-- {{CSSxRef(":first-child")}}
-- {{CSSxRef(":first-of-type")}}
-- {{CSSxRef(":focus")}}
-- {{CSSxRef(":focus-visible")}}
-- {{CSSxRef(":focus-within")}}
-- {{CSSxRef(":fullscreen")}}
-- {{CSSxRef(":future")}}
+- `:first`
+- `:first-child`
+- `:first-of-type`
+- `:focus`
+- `:focus-visible`
+- `:focus-within`
+- `:fullscreen`
+- `:future`
 
 H
 
-- {{CSSxRef(":has-slotted")}}
-- {{cssxref(":has()")}}
-- {{CSSXRef(":heading")}}
-- {{CSSXRef(":heading_function", ":heading()")}}
-- {{CSSxRef(":host")}}
-- {{cssxref(":host()")}}
-- {{cssxref(":host-context()")}}
-- {{CSSxRef(":hover")}}
+- `:has-slotted`
+- `:has()`
+- `:heading`
+- `:heading()`
+- `:host`
+- `:host()`
+- `:host-context()`
+- `:hover`
 
 I
 
-- {{CSSxRef(":in-range")}}
-- {{CSSxRef(":indeterminate")}}
-- {{CSSxRef(":invalid")}}
-- {{cssxref(":is()")}}
+- `:in-range`
+- `:indeterminate`
+- `:invalid`
+- `:is()`
 
 L
 
-- {{cssxref(":lang()")}}
-- {{CSSxRef(":last-child")}}
-- {{CSSxRef(":last-of-type")}}
-- {{CSSxRef(":left")}}
-- {{CSSxRef(":link")}}
-- {{CSSxRef(":local-link")}} {{Experimental_Inline}}
+- `:lang()`
+- `:last-child`
+- `:last-of-type`
+- `:left`
+- `:link`
+- `:local-link` {{Experimental_Inline}}
 
 M
 
-- {{CSSxRef(":modal")}}
-- {{CSSxRef(":muted")}}
+- `:modal`
+- `:muted`
 
 N
 
-- {{cssxref(":not()")}}
-- {{cssxref(":nth-child()")}}
-- {{cssxref(":nth-last-child()")}}
-- {{cssxref(":nth-last-of-type()")}}
-- {{cssxref(":nth-of-type()")}}
+- `:not()`
+- `:nth-child()`
+- `:nth-last-child()`
+- `:nth-last-of-type()`
+- `:nth-of-type()`
 
 O
 
-- {{CSSxRef(":only-child")}}
-- {{CSSxRef(":only-of-type")}}
-- {{CSSxRef(":open")}}
-- {{CSSxRef(":optional")}}
-- {{CSSxRef(":out-of-range")}}
+- `:only-child`
+- `:only-of-type`
+- `:open`
+- `:optional`
+- `:out-of-range`
 
 P
 
-- {{CSSxRef(":past")}}
-- {{CSSxRef(":paused")}}
-- {{CSSxRef(":picture-in-picture")}}
-- {{CSSxRef(":placeholder-shown")}}
-- {{CSSxRef(":playing")}}
-- {{CSSxRef(":popover-open")}}
+- `:past`
+- `:paused`
+- `:picture-in-picture`
+- `:placeholder-shown`
+- `:playing`
+- `:popover-open`
 
 R
 
-- {{CSSxRef(":read-only")}}
-- {{CSSxRef(":read-write")}}
-- {{CSSxRef(":required")}}
-- {{CSSxRef(":right")}}
-- {{CSSxRef(":root")}}
+- `:read-only`
+- `:read-write`
+- `:required`
+- `:right`
+- `:root`
 
 S
 
-- {{CSSxRef(":scope")}}
-- {{CSSxRef(":seeking")}}
-- {{CSSxRef(":stalled")}}
-- {{cssxref(":state()")}}
+- `:scope`
+- `:seeking`
+- `:stalled`
+- `:state()`
 
 T
 
-- {{CSSxRef(":target")}}
-- {{CSSxRef(":target-current")}}
+- `:target`
+- `:target-current`
 
 U
 
-- {{CSSxRef(":user-invalid")}}
-- {{CSSxRef(":user-valid")}}
+- `:user-invalid`
+- `:user-valid`
 
 V
 
-- {{CSSxRef(":valid")}}
-- {{CSSxRef(":visited")}}
-- {{CSSxRef(":volume-locked")}}
+- `:valid`
+- `:visited`
+- `:volume-locked`
 
 W
 
-- {{cssxref(":where()")}}
+- `:where()`
 
 ### Non-standard pseudo-classes
 
@@ -407,21 +407,21 @@ Non-standard vendor-prefixed pseudo-classes include:
 
 #### `-moz-` prefix
 
-- {{CSSxRef(":-moz-broken")}}
-- {{CSSxRef(":-moz-drag-over")}}
-- {{CSSxRef(":-moz-first-node")}}
-- {{CSSxRef(":-moz-handler-blocked")}}
-- {{CSSxRef(":-moz-handler-crashed")}}
-- {{CSSxRef(":-moz-handler-disabled")}}
-- {{CSSxRef(":-moz-last-node")}}
-- {{CSSxRef(":-moz-loading")}}
-- {{CSSxRef(":-moz-locale-dir_ltr", ":-moz-locale-dir(ltr)")}}
-- {{CSSxRef(":-moz-locale-dir_rtl", ":-moz-locale-dir(rtl)")}}
-- {{CSSxRef(":-moz-only-whitespace")}}
-- {{CSSxRef(":-moz-submit-invalid")}}
-- {{CSSxRef(":-moz-suppressed")}}
-- {{CSSxRef(":-moz-user-disabled")}}
-- {{CSSxRef(":-moz-window-inactive")}}
+- `:-moz-broken`
+- `:-moz-drag-over`
+- `:-moz-first-node`
+- `:-moz-handler-blocked`
+- `:-moz-handler-crashed`
+- `:-moz-handler-disabled`
+- `:-moz-last-node`
+- `:-moz-loading`
+- `:-moz-locale-dir(ltr)`
+- `:-moz-locale-dir(rtl)`
+- `:-moz-only-whitespace`
+- `:-moz-submit-invalid`
+- `:-moz-suppressed`
+- `:-moz-user-disabled`
+- `:-moz-window-inactive`
 
 ## Specifications
 

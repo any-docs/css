@@ -133,7 +133,7 @@ li:only-child {
 
 ## See also
 
-- {{Cssxref(":only-of-type")}}
-- {{Cssxref(":first-child")}}
-- {{Cssxref(":last-child")}}
-- {{Cssxref(":nth-child")}}
+- `:only-of-type`
+- `:first-child`
+- `:last-child`
+- `:nth-child`

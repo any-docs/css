@@ -11,7 +11,7 @@ sidebar: cssref
 
 The **CSS writing modes** module defines support for various international writing modes and their combinations, including left-to-right and right-to-left text ordering as well as horizontal and vertical orientations.
 
-A _writing mode_ in CSS is determined by the {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}} properties defined in this module. It is defined primarily in terms of its inline base direction and block flow direction.
+A _writing mode_ in CSS is determined by the `writing-mode`, `direction`, and `text-orientation` properties defined in this module. It is defined primarily in terms of its inline base direction and block flow direction.
 
 Some horizontal languages are left-to-right, including Latin and Indic scripts. Other horizontal languages are written right-to-left, including Hebrew and Arabic scripts. Sometimes text needs to be bidirectional, such as when mixing left-to-right and right-to-left scripts. Some languages can be written with a vertical orientation, for example, Chinese, Japanese, and Korean (CJK) scripts.
 
@@ -21,12 +21,12 @@ The CSS writing module addresses the orientations of all writing modes. Other mo
 
 ### Properties
 
-- {{cssxref("direction")}}
-- {{cssxref("glyph-orientation-vertical")}}
-- {{cssxref("text-combine-upright")}}
-- {{cssxref("text-orientation")}}
-- {{cssxref("unicode-bidi")}}
-- {{cssxref("writing-mode")}}
+- `direction`
+- `glyph-orientation-vertical`
+- `text-combine-upright`
+- `text-orientation`
+- `unicode-bidi`
+- `writing-mode`
 
 ### Glossary and terms
 
@@ -38,7 +38,7 @@ The CSS writing module addresses the orientations of all writing modes. Other mo
 ## Guides
 
 - [Creating vertical form controls](/guides/Writing_modes/Vertical_controls)
-  - The article explains how to use the CSS {{cssxref("writing-mode")}} and {{cssxref("direction")}} properties to create and configure vertical form controls.
+  - The article explains how to use the CSS `writing-mode` and `direction` properties to create and configure vertical form controls.
 - [Introduction to writing mode systems](/guides/Writing_modes/Writing_mode_systems)
   - A brief overview of writing mode systems and their directionalities.
 
@@ -46,27 +46,27 @@ The CSS writing module addresses the orientations of all writing modes. Other mo
 
 [CSS text](/guides/Text) module
 
-- {{cssxref("hanging-punctuation")}}
-- {{cssxref("hyphens")}}
-- {{cssxref("letter-spacing")}}
-- {{cssxref("line-break")}}
-- {{cssxref("overflow-wrap")}}
-- {{cssxref("text-align")}}
-- {{cssxref("text-align-last")}}
-- {{cssxref("text-indent")}}
-- {{cssxref("text-justify")}}
-- {{cssxref("word-break")}}
-- {{cssxref("word-spacing")}}
+- `hanging-punctuation`
+- `hyphens`
+- `letter-spacing`
+- `line-break`
+- `overflow-wrap`
+- `text-align`
+- `text-align-last`
+- `text-indent`
+- `text-justify`
+- `word-break`
+- `word-spacing`
 
 [CSS inline layout](/guides/Inline_layout) module
 
-- {{cssxref("alignment-baseline")}}
-- {{cssxref("dominant-baseline")}}
-- {{cssxref("line-height")}}
-- {{cssxref("text-box-edge")}}
-- {{cssxref("text-box-trim")}}
-- {{cssxref("text-box")}} shorthand
-- {{cssxref("text-edge")}}
+- `alignment-baseline`
+- `dominant-baseline`
+- `line-height`
+- `text-box-edge`
+- `text-box-trim`
+- `text-box` shorthand
+- `text-edge`
 
 [CSS logical properties and values](/guides/Logical_properties_and_values) module
 
@@ -77,14 +77,14 @@ The CSS writing module addresses the orientations of all writing modes. Other mo
 
 [CSS display](/guides/Display) module
 
-- {{cssxref("display")}}
+- `display`
 
-- {{CSSxRef("&lt;display-internal&gt;")}}
+- `&lt;display-internal&gt;`
 - [Visual formatting model](/guides/Display/Visual_formatting_model)
 
 [CSS generated content](/guides/Generated_content)
 
-- {{CSSxRef("quotes")}}
+- `quotes`
 
 [SVG](/en-US/docs/Web/SVG)
 
@@ -119,6 +119,6 @@ The CSS writing module addresses the orientations of all writing modes. Other mo
 - [CSS text decoration](/guides/Text_decoration) module
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists](/guides/Lists) module
-- [CSS containment](/guides/Containment) module: {{CSSxRef("contain-intrinsic-block-size")}} and {{CSSxRef("contain-intrinsic-inline-size")}}
-- [CSS overflow](/guides/Overflow) module: {{CSSxRef("overflow-block")}} and {{CSSxRef("overflow-inline")}}
-- [CSS overscroll behavior](/guides/Overscroll_behavior) module: {{CSSxRef("overscroll-behavior-block")}} and {{CSSxRef("overscroll-behavior-inline")}}
+- [CSS containment](/guides/Containment) module: `contain-intrinsic-block-size` and `contain-intrinsic-inline-size`
+- [CSS overflow](/guides/Overflow) module: `overflow-block` and `overflow-inline`
+- [CSS overscroll behavior](/guides/Overscroll_behavior) module: `overscroll-behavior-block` and `overscroll-behavior-inline`

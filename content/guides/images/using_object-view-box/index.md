@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-The {{cssxref("object-view-box")}} property can be used to define a viewbox within {{glossary("replaced elements")}}, enabling the display of just a section of the replaced content. The subsection of the element displayed can be presented as zoomed-in, zoomed-out, or at original size, while maintaining the content's intrinsic {{glossary("aspect ratio")}}. In this guide, we examine this property, comparing it to the similar {{cssxref("object-fit")}} property, and explore its functionality through zooming in and out, as well as panning across an element.
+The `object-view-box` property can be used to define a viewbox within {{glossary("replaced elements")}}, enabling the display of just a section of the replaced content. The subsection of the element displayed can be presented as zoomed-in, zoomed-out, or at original size, while maintaining the content's intrinsic {{glossary("aspect ratio")}}. In this guide, we examine this property, comparing it to the similar `object-fit` property, and explore its functionality through zooming in and out, as well as panning across an element.
 
 ## Intrinsic size, extrinsic size, and `object-fit`
 
@@ -18,7 +18,7 @@ The intrinsic size is the actual size of the content itself; the size the elemen
 
 ## `object-view-box` versus `object-fit`
 
-CSS has many sizing properties. When it comes to sizing replaced elements, the {{cssxref("object-fit")}} property enables us to control, to some extent, how replaced elements are rendered within a defined box. For example, in the following screenshot, a 1200 x 400 image is displayed using an {{htmlelement("img")}} element. The `<img>` element is sized to 400 x 200. The image content is positioned using `object-fit: none;` declaration.
+CSS has many sizing properties. When it comes to sizing replaced elements, the `object-fit` property enables us to control, to some extent, how replaced elements are rendered within a defined box. For example, in the following screenshot, a 1200 x 400 image is displayed using an {{htmlelement("img")}} element. The `<img>` element is sized to 400 x 200. The image content is positioned using `object-fit: none;` declaration.
 
 ![An image demonstrating extrinsic and intrinsic image sizes; the center 400 by 200 section of a much larger 1200 by 400 image is visible in the 400 by 200 view box that is the size of the element displaying the image.](https://mdn.github.io/shared-assets/images/diagrams/css/object-view-box/extrinsic-intrinsic_sizes.jpg)
 The `object-view-box` property is more flexible than the `object-fit` property, and it is capable of doing more things. For example, it can be used to crop, zoom, and pan images. The property sets the viewable area (viewbox), which defines what part of the content to show and how to fit it inside the extrinsic size. The viewbox value contains a rectangle and its position relative to the intrinsic area of the content, but the _physical size of the view box remains equal to the extrinsic size_. The viewbox marks the area in the content to be displayed, and then the content area is transformed to match the extrinsic dimensions fitting into the HTML element.
@@ -54,7 +54,7 @@ We include an {{htmlelement("img")}} element and a [`range`](/en-US/docs/Web/HTM
 
 ### CSS
 
-We define a `--box-size` custom property, which is used as the height and width in the {{cssxref("basic-shape/xywh", "xywh()")}} function, creating a square viewbox with an aspect ratio of `1:1`. The view box's offset point, the focal point in our zoom effect, is set at `500px` for the `x` coordinate and `30px` for the `y` coordinate, which corresponds to the top-left corner of the leopard's right eye.
+We define a `--box-size` custom property, which is used as the height and width in the `xywh()` function, creating a square viewbox with an aspect ratio of `1:1`. The view box's offset point, the focal point in our zoom effect, is set at `500px` for the `x` coordinate and `30px` for the `y` coordinate, which corresponds to the top-left corner of the leopard's right eye.
 
 ```css hidden
 input {
@@ -184,8 +184,8 @@ Move the slider. Note how increasing and decreasing the `x` value of the `xywh()
 
 ## See also
 
-- {{cssxref("object-view-box")}}
-- {{cssxref("object-fit")}}
-- {{cssxref("object-position")}}
-- {{cssxref("background-size")}}
+- `object-view-box`
+- `object-fit`
+- `object-position`
+- `background-size`
 - [Understanding aspect ratio](/guides/Box_sizing/Aspect_ratios)

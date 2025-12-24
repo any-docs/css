@@ -26,7 +26,7 @@ An `@import` rule _must_ be defined at the top of the stylesheet, before any oth
 where:
 
 - _url_
-  - Is a {{CSSxRef("string")}} or a {{cssxref("url_value", "&lt;url&gt;")}} type representing the location of the resource to import. The URL may be absolute or relative.
+  - Is a `string` or a `&lt;url&gt;` type representing the location of the resource to import. The URL may be absolute or relative.
 - _list-of-media-queries_
   - Is a comma-separated list of [media queries](/guides/Media_queries/Using), which specify the media-dependent conditions for applying the CSS rules defined in the linked URL. If the browser does not support any of these queries, it does not load the linked resource.
 - _layer-name_
@@ -34,13 +34,13 @@ where:
 - _supports-condition_
   - Indicates the feature(s) that the browser must support in order for the stylesheet to be imported.
     If the browser does not conform to the conditions specified in the _supports-condition_, it may not fetch the linked stylesheet, and even if downloaded through some other path, will not load it.
-    The syntax of `supports()` is almost identical to that described in {{CSSxRef("@supports")}}, and that topic can be used as a more complete reference.
+    The syntax of `supports()` is almost identical to that described in `@supports`, and that topic can be used as a more complete reference.
 
 Use `@import` together with the `layer` keyword or `layer()` function to import external style sheets (from frameworks, widget stylesheets, libraries, etc.) into layers.
 
 ## Description
 
-Imported rules must come before all other types of rules, except {{CSSxRef("@charset")}} rules and layer creating {{cssxref("@layer")}} statements.
+Imported rules must come before all other types of rules, except `@charset` rules and layer creating `@layer` statements.
 
 ```css example-bad
 * {
@@ -68,7 +68,7 @@ So that {{glossary("user agent", "user agents")}} can avoid retrieving resources
 
 Similarly, user agents can use the `supports()` function in an `@import` at-rule to only fetch resources if a particular feature set is (or is not) supported.
 This allows authors to take advantage of recently introduced CSS features, while providing graceful fallbacks for older browser versions.
-Note that the conditions in the `supports()` function of an `@import` at-rule can be obtained in JavaScript using {{domxref("CSSImportRule.supportsText")}}.
+Note that the conditions in the `supports()` function of an `@import` at-rule can be obtained in JavaScript using `CSSImportRule.supportsText`.
 
 The `@import` rule can also be used to create a [cascade layer](/en-US/docs/Web/CSS/Reference/At-rules/@layer) by importing rules from a linked resource. Rules can also be imported into an existing cascade layer. The `layer` keyword or the `layer()` function is used with `@import` for this purpose. Declarations in style rules from imported stylesheets interact with the cascade as if they were written literally into the stylesheet at the point of the import.
 
@@ -157,7 +157,7 @@ This is an example of creating two separate unnamed cascade layers and importing
 
 ## See also
 
-- {{CSSxRef("@media")}}
-- {{CSSxRef("@supports")}}
+- `@media`
+- `@supports`
 - [CSS cascading and inheritance](/guides/Cascade) module
 - [CSS at-rule functions](/en-US/docs/Web/CSS/Reference/At-rules/At-rule_functions)

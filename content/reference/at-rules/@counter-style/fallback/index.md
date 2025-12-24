@@ -6,7 +6,7 @@ browser-compat: css.at-rules.counter-style.fallback
 sidebar: cssref
 ---
 
-The **`fallback`** descriptor of the {{cssxref("@counter-style")}} at-rule can be used to specify a counter style to fall back to if the counter style being defined cannot create a marker representation for a particular counter value.
+The **`fallback`** descriptor of the `@counter-style` at-rule can be used to specify a counter style to fall back to if the counter style being defined cannot create a marker representation for a particular counter value.
 
 ## Syntax
 
@@ -21,7 +21,7 @@ fallback: custom-gangnam-style;
 The descriptor takes a single `<counter-style-name>` as its value:
 
 - [`<counter-style-name>`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style#counter-style-name)
-  - Provides the name of the counter style to be used as the fallback, which is either the case-sensitive `<custom-ident>` of a custom CSS counter style (without quotes) or a case-insensitive {{cssxref("list-style-type")}} property value such as `decimal`, `disc`, and so on.
+  - Provides the name of the counter style to be used as the fallback, which is either the case-sensitive `<custom-ident>` of a custom CSS counter style (without quotes) or a case-insensitive `list-style-type` property value such as `decimal`, `disc`, and so on.
 
 If omitted, the counter fallback defaults to `decimal`.
 
@@ -83,6 +83,6 @@ If the specified fallback style is also unable to construct a representation, th
 
 ## See also
 
-- Other {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, and {{cssxref("@counter-style/speak-as", "speak-as")}}
-- {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}}: the functional notation for creating anonymous counter styles
+- Other `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `negative`, `prefix`, `suffix`, `range`, `pad`, and `speak-as`
+- `list-style`, `list-style-image`, `list-style-position`
+- `symbols()`: the functional notation for creating anonymous counter styles

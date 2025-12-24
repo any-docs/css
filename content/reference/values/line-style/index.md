@@ -9,18 +9,18 @@ sidebar: cssref
 
 The **`<line-style>`** {{glossary("enumerated")}} value type represents keyword values that define the style of a line, or the lack of a line. The `<line-style>` keyword values are used in the following longhand and shorthand [border](/guides/Backgrounds_and_borders) and [column](/guides/Multicol_layout) properties:
 
-- {{cssxref("border")}}, {{cssxref("border-style")}}
-- {{cssxref("border-block")}}, {{cssxref("border-block-style")}}
-- {{cssxref("border-block-end")}}, {{cssxref("border-block-end-style")}}
-- {{cssxref("border-block-start")}}, {{cssxref("border-block-start-style")}}
-- {{cssxref("border-bottom")}}, {{cssxref("border-bottom-style")}}
-- {{cssxref("border-inline")}}, {{cssxref("border-inline-style")}}
-- {{cssxref("border-inline-end")}}, {{cssxref("border-inline-end-style")}}
-- {{cssxref("border-inline-start")}}, {{cssxref("border-inline-start-style")}}
-- {{cssxref("border-left")}}, {{cssxref("border-left-style")}}
-- {{cssxref("border-right")}}, {{cssxref("border-right-style")}}
-- {{cssxref("border-top")}}, {{cssxref("border-top-style")}}
-- {{cssxref("column-rule")}}, {{cssxref("column-rule-style")}}
+- `border`, `border-style`
+- `border-block`, `border-block-style`
+- `border-block-end`, `border-block-end-style`
+- `border-block-start`, `border-block-start-style`
+- `border-bottom`, `border-bottom-style`
+- `border-inline`, `border-inline-style`
+- `border-inline-end`, `border-inline-end-style`
+- `border-inline-start`, `border-inline-start-style`
+- `border-left`, `border-left-style`
+- `border-right`, `border-right-style`
+- `border-top`, `border-top-style`
+- `column-rule`, `column-rule-style`
 
 ## Syntax
 
@@ -45,12 +45,12 @@ The `<line-style>` enumerated type is specified using one of the values listed b
 - `ridge`
   - Displays a border with an extruded appearance. This value is the opposite of `groove`.
 - `inset`
-  - Displays a border that makes the element appear embedded. This value is the opposite of `outset`. When applied to a table cell border and {{cssxref("border-collapse")}} is set to `collapsed`, this value behaves like `groove`.
+  - Displays a border that makes the element appear embedded. This value is the opposite of `outset`. When applied to a table cell border and `border-collapse` is set to `collapsed`, this value behaves like `groove`.
 - `outset`
-  - Displays a border that makes the element appear embossed. This value is the opposite of `inset`. When applied to a table cell with {{cssxref("border-collapse")}} set to `collapsed`, this value behaves like `ridge`.
+  - Displays a border that makes the element appear embossed. This value is the opposite of `inset`. When applied to a table cell with `border-collapse` set to `collapsed`, this value behaves like `ridge`.
 
 > [!NOTE]
-> When `<outline-style>` is used as the value type for {{cssxref("outline")}} and {{cssxref("outline-style")}} properties, it is similar to `<line-style>`, but does not support `hidden` and includes the `auto` value. When `auto` is set, the user-agent defined `<line-style>` value is used.
+> When `<outline-style>` is used as the value type for `outline` and `outline-style` properties, it is similar to `<line-style>`, but does not support `hidden` and includes the `auto` value. When `auto` is set, the user-agent defined `<line-style>` value is used.
 
 ## Formal syntax
 
@@ -61,7 +61,7 @@ The first example demonstrates all the `<line-style>` keyword values. The second
 
 ### Defining line styles
 
-This example shows all the `<line-style>` values as values for the CSS {{cssxref("border-style")}} and {{cssxref("column-rule-style")}} properties.
+This example shows all the `<line-style>` values as values for the CSS `border-style` and `column-rule-style` properties.
 
 #### HTML
 
@@ -208,7 +208,7 @@ This example demonstrates line-style and color choice. With some `<line-style>` 
 
 #### CSS
 
-The four sides of each `<div>` have a different `<line-style>` value, and each list item has a different {{cssxref("color_value", "&lt;color>")}} value. We use [generated content](/reference/properties/content) to display the CSS declared inline.
+The four sides of each `<div>` have a different `<line-style>` value, and each list item has a different `&lt;color>` value. We use [generated content](/reference/properties/content) to display the CSS declared inline.
 
 ```css hidden live-sample___line_style_colors
 body {

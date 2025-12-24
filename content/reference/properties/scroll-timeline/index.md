@@ -12,8 +12,8 @@ The **`scroll-timeline`** [CSS](/en-US/docs/Web/CSS) [shorthand property](/guide
 
 This property is a shorthand for the following CSS properties, in order:
 
-- {{cssxref("scroll-timeline-name")}}
-- {{cssxref("scroll-timeline-axis")}}
+- `scroll-timeline-name`
+- `scroll-timeline-axis`
 
 ## Syntax
 
@@ -38,19 +38,19 @@ scroll-timeline: unset;
 
 ### Values
 
-- {{cssxref("scroll-timeline-name", "&lt;scroll-timeline-name>")}}
-  - A {{cssxref("dashed-ident")}} or the keyword `none`.
+- `&lt;scroll-timeline-name>`
+  - A `dashed-ident` or the keyword `none`.
 
-- {{cssxref("scroll-timeline-axis", "&lt;scroll-timeline-axis>")}}
-  - An {{cssxref("axis")}} keyword. The default value is `block`.
+- `&lt;scroll-timeline-axis>`
+  - An `axis` keyword. The default value is `block`.
 
 ## Description
 
 The `scroll-timeline` shorthand property can be applied to a container element to set both the `scroll-timeline-name` and `scroll-timeline-axis` properties. It is set on the scroller that will provide the timeline. If the container has no overflow to scroll or if the overflow is hidden or clipped, no timeline will be created.
 
-The value for the {{cssxref("scroll-timeline-name")}}, if not set to `none`, must be a {{cssxref("dashed-ident")}}, which means it must start with `--`. This helps avoid name clashes with standard CSS keywords. The name can then be used as the value of an element's {{cssxref("animation-timeline")}} property to define the scrolling container element that will define its [animation timeline](/guides/Scroll-driven_animations/Timelines#named_scroll_progress_timelines), driving the animation progress as it scrolls.
+The value for the `scroll-timeline-name`, if not set to `none`, must be a `dashed-ident`, which means it must start with `--`. This helps avoid name clashes with standard CSS keywords. The name can then be used as the value of an element's `animation-timeline` property to define the scrolling container element that will define its [animation timeline](/guides/Scroll-driven_animations/Timelines#named_scroll_progress_timelines), driving the animation progress as it scrolls.
 
-The optional scroll {{cssxref("axis")}} value defines the {{cssxref("scroll-timeline-axis")}}, which defaults to `block` if omitted. If both a name and axis are specified, the order must be the `<scroll-timeline-name>` value followed by the `<axis>` value. If the `<axis>` is listed first, the declaration is invalid and will be ignored.
+The optional scroll `axis` value defines the `scroll-timeline-axis`, which defaults to `block` if omitted. If both a name and axis are specified, the order must be the `<scroll-timeline-name>` value followed by the `<axis>` value. If the `<axis>` is listed first, the declaration is invalid and will be ignored.
 
 ## Formal definition
 
@@ -97,7 +97,7 @@ Using the `scroll-timeline` property, we define the container as the source of a
 }
 ```
 
-We provide basic styles for the square. We apply the `rotateAnimation` using the {{cssxref("animation-name")}} property. By default, this would use the time-based document timeline. By setting the `animation-timeline` property to the `--square-timeline` timeline named above, we set the square to rotate according to the scroll-based timeline, which progresses as the container scrolls.
+We provide basic styles for the square. We apply the `rotateAnimation` using the `animation-name` property. By default, this would use the time-based document timeline. By setting the `animation-timeline` property to the `--square-timeline` timeline named above, we set the square to rotate according to the scroll-based timeline, which progresses as the container scrolls.
 
 ```css
 #square {
@@ -164,9 +164,9 @@ The square animates as you scroll. When using `scroll-timeline`, the duration of
 
 ## See also
 
-- {{cssxref("animation-timeline")}}
-- {{cssxref("scroll-timeline-axis")}}
-- {{cssxref("scroll-timeline-name")}}
+- `animation-timeline`
+- `scroll-timeline-axis`
+- `scroll-timeline-name`
 - [Guide: Scroll-driven animation timelines](/guides/Scroll-driven_animations/Timelines)
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module
 - [CSS animations](/guides/Animations) module

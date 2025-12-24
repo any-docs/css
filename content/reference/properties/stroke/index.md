@@ -32,7 +32,7 @@ stroke: unset;
 
 ### Values
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - Sets the painting of the stroke with any valid CSS color value.
 
 - `<image>`
@@ -205,12 +205,12 @@ Because `stroke-context` is being applied to an element that descends from a {{S
 
 ## See also
 
-- {{cssxref("stroke-dasharray")}}
-- {{cssxref("stroke-dashoffset")}}
-- {{cssxref("stroke-linecap")}}
-- {{cssxref("stroke-linejoin")}}
-- {{cssxref("stroke-miterlimit")}}
-- {{cssxref("stroke-opacity")}}
-- {{cssxref("stroke-width")}}
-- {{cssxref("paint-order")}}
+- `stroke-dasharray`
+- `stroke-dashoffset`
+- `stroke-linecap`
+- `stroke-linejoin`
+- `stroke-miterlimit`
+- `stroke-opacity`
+- `stroke-width`
+- `paint-order`
 - SVG {{SVGAttr("stroke")}} attribute

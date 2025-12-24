@@ -79,4 +79,4 @@ Not part of any standard. Though [submitted](https://lists.w3.org/Archives/Publi
 
 ## See also
 
-- {{cssxref("box-orient")}}
+- `box-orient`

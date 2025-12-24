@@ -72,7 +72,7 @@ grid-template-areas:
 }
 ```
 
-Those areas are not associated with any particular grid item, but can be referenced from the grid-placement properties {{cssxref("grid-row-start")}}, {{cssxref("grid-row-end")}}, {{cssxref("grid-column-start")}}, {{cssxref("grid-column-end")}}, and their shorthands {{cssxref("grid-row")}}, {{cssxref("grid-column")}}, and {{cssxref("grid-area")}}.
+Those areas are not associated with any particular grid item, but can be referenced from the grid-placement properties `grid-row-start`, `grid-row-end`, `grid-column-start`, `grid-column-end`, and their shorthands `grid-row`, `grid-column`, and `grid-area`.
 
 ## Syntax
 
@@ -98,7 +98,7 @@ grid-template-areas: unset;
 
 - `none`
   - The grid container doesn't define any named grid areas.
-- {{cssxref("&lt;string&gt;")}}
+- `&lt;string&gt;`
   - A row is created for every separate string listed, and a column is created for each cell in the string. Multiple cell tokens with the same name within and between rows create a single named grid area that spans the corresponding grid cells. Unless those cells form a rectangle, the declaration is invalid.
 
     All the remaining unnamed areas in a grid can be referred using _null cell tokens_. A null cell token is a sequence of one or more `.` (U+002E FULL STOP) characters, e.g., `.`, `...`, or `.....` etc. A null cell token can be used to create empty spaces in the grid.
@@ -178,8 +178,8 @@ In the above code, a null token (`.`) was used to create an unnamed area in the 
 
 ## See also
 
-- {{cssxref("grid-template-rows")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template")}}
+- `grid-template-rows`
+- `grid-template-columns`
+- `grid-template`
 - [Grid template areas](/guides/Grid_layout/Grid_template_areas)
 - Video: [Grid template areas](https://gridbyexample.com/video/grid-template-areas/)

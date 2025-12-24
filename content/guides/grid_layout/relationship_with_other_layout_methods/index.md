@@ -18,7 +18,7 @@ A basic example can demonstrate the difference between one- and two-dimensional 
 
 In this first example, we use flexbox to lay out a set of boxes. We have five child items in our container, and we have given the flex properties values so that they can grow and shrink from a flex-basis of 150 pixels.
 
-We also set the {{cssxref("flex-wrap")}} property to `wrap`, so that if the space in the container becomes too narrow to maintain the flex basis, items will wrap onto a new row.
+We also set the `flex-wrap` property to `wrap`, so that if the space in the container becomes too narrow to maintain the flex basis, items will wrap onto a new row.
 
 ```css hidden
 * {
@@ -129,7 +129,7 @@ Most grid alignment features were originally defined is the [CSS flexible box la
 
 We will be taking a proper look at [Aligning items in CSS grid layout](/guides/Grid_layout/Box_alignment) later. For now, here is a comparison between examples of flexbox and grid.
 
-In the first example, which uses flexbox, we have a container with three items inside. The container's {{cssxref("min-height")}} is set, so it defines the height of the flex container. We have set {{cssxref("align-items")}} on the flex container to `flex-end` so the items will line up at the end of the flex container. We have also set the {{cssxref("align-self")}} property on `box1` so it will override the default and stretch to the height of the container and on `box2` so it aligns to the start of the flex container.
+In the first example, which uses flexbox, we have a container with three items inside. The container's `min-height` is set, so it defines the height of the flex container. We have set `align-items` on the flex container to `flex-end` so the items will line up at the end of the flex container. We have also set the `align-self` property on `box1` so it will override the default and stretch to the height of the container and on `box2` so it aligns to the start of the flex container.
 
 ```css hidden
 * {
@@ -177,7 +177,7 @@ In the first example, which uses flexbox, we have a container with three items i
 
 ### Alignment in CSS grids
 
-This example uses a grid to create the same layout. We use the box alignment properties as they apply to a grid layout. We align to `start` and `end`. (We could have used the {{cssxref("content-position")}} synonyms `flex-start` and `flex-end`.) In the case of a grid layout, we are aligning the items inside their grid area. In this case that is a single grid cell, but it could be an area made up of several grid cells.
+This example uses a grid to create the same layout. We use the box alignment properties as they apply to a grid layout. We align to `start` and `end`. (We could have used the `content-position` synonyms `flex-start` and `flex-end`.) In the case of a grid layout, we are aligning the items inside their grid area. In this case that is a single grid cell, but it could be an area made up of several grid cells.
 
 ```css hidden
 * {
@@ -226,7 +226,7 @@ This example uses a grid to create the same layout. We use the box alignment pro
 
 ### The `fr` unit and `flex-basis`
 
-We have already seen how the `fr` unit works to assign a proportion of available space in the grid container to our grid tracks. The `fr` unit, when combined with the {{cssxref("minmax()")}} function can give us very similar behavior to the `flex` properties in flexbox while still enabling the creation of a layout in two dimensions.
+We have already seen how the `fr` unit works to assign a proportion of available space in the grid container to our grid tracks. The `fr` unit, when combined with the `minmax()` function can give us very similar behavior to the `flex` properties in flexbox while still enabling the creation of a layout in two dimensions.
 
 If we look back at the example where we demonstrated the difference between one and two-dimensional layouts, you can see there is a difference between the way that the two layouts work responsively. With the flex layout, if we drag our window wider and smaller, the flexbox does a nice job of adjusting the number of items in each row according to the available space. If we have a lot of space all five items can fit on one row. If we have a very narrow container we may only have space for one.
 
@@ -277,7 +277,7 @@ In this next example, we have used the `auto-fill` keyword in place of an intege
 
 ### A flexible number of tracks
 
-This isn't quite the same as flexbox. In the flexbox example, the items are larger than the 200 pixel basis before wrapping. We can achieve the same in grid by combining `auto-fit` and the {{cssxref("minmax()")}} function.
+This isn't quite the same as flexbox. In the flexbox example, the items are larger than the 200 pixel basis before wrapping. We can achieve the same in grid by combining `auto-fit` and the `minmax()` function.
 
 In this example, we create auto filled tracks with `minmax`. We want our tracks to be a minimum of 200 pixels, so we set the maximum to be `1fr`. Once the browser has worked out how many times 200 pixels will fit into the container–also taking account of grid gaps–it will treat the `1fr` maximum as an instruction to share out the remaining space between the items.
 
@@ -326,7 +326,7 @@ Grid interacts with [absolutely positioned](/reference/properties/position#absol
 
 ### A grid container as containing block
 
-To make the grid container a [containing block](/guides/Display/Containing_block), you need to add the {{cssxref("position")}} property to the container with a value of `relative`, just as you would make a containing block for any other absolutely positioned items. Once you have done this, if you give a grid item `position: absolute` it will take as its containing block the grid container or, if the item also has a grid position, the area of the grid it is placed into.
+To make the grid container a [containing block](/guides/Display/Containing_block), you need to add the `position` property to the container with a value of `relative`, just as you would make a containing block for any other absolutely positioned items. Once you have done this, if you give a grid item `position: absolute` it will take as its containing block the grid container or, if the item also has a grid position, the area of the grid it is placed into.
 
 In the below example we have a wrapper containing four child items. Item three is absolutely positioned and also placed on the grid using line-based placement. The grid container has `position: relative` and so becomes the positioning context of this item.
 
@@ -467,7 +467,7 @@ We have given `.box3` position relative and then positioned the sub-item with th
 
 ## Grid and display: contents
 
-A final interaction worth noting is the interaction between CSS grid layout and `display: contents`, defined in the [CSS display](/guides/Display) module. When the {{cssxref("display")}} property is set to `contents`, the element itself does not generate any boxes, but its children and pseudo-elements still generate boxes as normal. This means that, for the purposes of box generation and layout, the element is treated as if it had been replaced with its children and pseudo-elements in the document tree.
+A final interaction worth noting is the interaction between CSS grid layout and `display: contents`, defined in the [CSS display](/guides/Display) module. When the `display` property is set to `contents`, the element itself does not generate any boxes, but its children and pseudo-elements still generate boxes as normal. This means that, for the purposes of box generation and layout, the element is treated as if it had been replaced with its children and pseudo-elements in the document tree.
 
 If you set an item to `display: contents`, the box it would normally create disappears and the boxes of the child elements appear as if they have risen up a level. This means that children of a grid item can become grid items. Sound odd? Here is an example.
 

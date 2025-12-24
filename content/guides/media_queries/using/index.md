@@ -9,9 +9,9 @@ sidebar: cssref
 
 Media queries are used for the following:
 
-- To conditionally apply styles with the [CSS](/en-US/docs/Web/CSS) {{cssxref("@media")}}, {{cssxref("@custom-media")}} and {{cssxref("@import")}} [at-rules](/guides/Syntax/At-rules).
+- To conditionally apply styles with the [CSS](/en-US/docs/Web/CSS) `@media`, `@custom-media` and `@import` [at-rules](/guides/Syntax/At-rules).
 - To target specific media for the {{HTMLElement("style")}}, {{HTMLElement("link")}}, {{HTMLElement("source")}}, and other [HTML](/en-US/docs/Web/HTML) elements with the `media=` or `sizes="` attributes.
-- To [test and monitor media states](/guides/Media_queries/Testing) using the {{domxref("Window.matchMedia()")}} and {{domxref("EventTarget.addEventListener()")}} methods.
+- To [test and monitor media states](/guides/Media_queries/Testing) using the `Window.matchMedia()` and `EventTarget.addEventListener()` methods.
 
 > [!NOTE]
 > The examples on this page use CSS's `@media` for illustrative purposes, but the basic syntax remains the same for all types of media queries.
@@ -26,39 +26,39 @@ Media queries are case-insensitive.
   The type is optional (assumed to be `all`) except when using the `only` logical operator.
 
 - [Media features](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features) describe a specific characteristic of the {{glossary("user agent")}}, output device, or environment:
-  - {{cssxref("@media/any-hover", "any-hover")}}
-  - {{cssxref("@media/any-pointer", "any-pointer")}}
-  - {{cssxref("@media/aspect-ratio", "aspect-ratio")}}
-  - {{cssxref("@media/color", "color")}}
-  - {{cssxref("@media/color-gamut", "color-gamut")}}
-  - {{cssxref("@media/color-index", "color-index")}}
-  - {{cssxref("@media/device-aspect-ratio", "device-aspect-ratio")}} {{deprecated_inline}}
-  - {{cssxref("@media/device-height", "device-height")}} {{deprecated_inline}}
-  - {{cssxref("@media/device-posture", "device-posture")}}
-  - {{cssxref("@media/device-width", "device-width")}} {{deprecated_inline}}
-  - {{cssxref("@media/display-mode", "display-mode")}}
-  - {{cssxref("@media/dynamic-range", "dynamic-range")}}
-  - {{cssxref("@media/forced-colors", "forced-colors")}}
-  - {{cssxref("@media/grid", "grid")}}
-  - {{cssxref("@media/height", "height")}}
-  - {{cssxref("@media/hover", "hover")}}
-  - {{cssxref("@media/inverted-colors", "inverted-colors")}}
-  - {{cssxref("@media/monochrome", "monochrome")}}
-  - {{cssxref("@media/orientation", "orientation")}}
-  - {{cssxref("@media/overflow-block", "overflow-block")}}
-  - {{cssxref("@media/overflow-inline", "overflow-inline")}}
-  - {{cssxref("@media/pointer", "pointer")}}
-  - {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}}
-  - {{cssxref("@media/prefers-contrast", "prefers-contrast")}}
-  - {{cssxref("@media/prefers-reduced-motion", "prefers-reduced-motion")}}
-  - {{cssxref("@media/prefers-reduced-transparency", "prefers-reduced-transparency")}}
-  - {{cssxref("@media/resolution", "resolution")}}
-  - {{cssxref("@media/scripting", "scripting")}}
-  - {{cssxref("@media/update", "update")}}
-  - {{cssxref("@media/video-dynamic-range", "video-dynamic-range")}}
-  - {{cssxref("@media/width", "width")}}
+  - `any-hover`
+  - `any-pointer`
+  - `aspect-ratio`
+  - `color`
+  - `color-gamut`
+  - `color-index`
+  - `device-aspect-ratio` {{deprecated_inline}}
+  - `device-height` {{deprecated_inline}}
+  - `device-posture`
+  - `device-width` {{deprecated_inline}}
+  - `display-mode`
+  - `dynamic-range`
+  - `forced-colors`
+  - `grid`
+  - `height`
+  - `hover`
+  - `inverted-colors`
+  - `monochrome`
+  - `orientation`
+  - `overflow-block`
+  - `overflow-inline`
+  - `pointer`
+  - `prefers-color-scheme`
+  - `prefers-contrast`
+  - `prefers-reduced-motion`
+  - `prefers-reduced-transparency`
+  - `resolution`
+  - `scripting`
+  - `update`
+  - `video-dynamic-range`
+  - `width`
 
-  For example, the {{cssxref("@media/hover", "hover")}} feature allows a query to check whether the device supports hovering over elements.
+  For example, the `hover` feature allows a query to check whether the device supports hovering over elements.
   Media feature expressions test for their presence or value, and are entirely optional.
   Each media feature expression must be surrounded by parentheses.
 

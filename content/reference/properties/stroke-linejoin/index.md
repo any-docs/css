@@ -111,11 +111,11 @@ path:nth-child(4) {
 
 ## See also
 
-- {{cssxref("stroke-dasharray")}}
-- {{cssxref("stroke-dashoffset")}}
-- {{cssxref("stroke-linecap")}}
-- {{cssxref("stroke-miterlimit")}}
-- {{cssxref("stroke-opacity")}}
-- {{cssxref("stroke-width")}}
-- {{cssxref("stroke")}}
+- `stroke-dasharray`
+- `stroke-dashoffset`
+- `stroke-linecap`
+- `stroke-miterlimit`
+- `stroke-opacity`
+- `stroke-width`
+- `stroke`
 - SVG {{SVGAttr("stroke-linejoin")}} attribute

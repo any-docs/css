@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`<position-area>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) defines the cell or spanned cells of a **position-area grid**, a 3x3 grid whose center cell is an anchor element.
 
-The `<position-area>` keyword values can be set as the value of the {{cssxref("position-area")}} property to place an anchor-positioned element in a specific location relative to its associated anchor element.
+The `<position-area>` keyword values can be set as the value of the `position-area` property to place an anchor-positioned element in a specific location relative to its associated anchor element.
 
 ## Syntax
 
@@ -91,7 +91,7 @@ The different types of keywords that can be used include:
 
 ## Physical grid keywords
 
-The physical grid keywords specify a cell or section of the `position-area` grid using physical values. These values are not affected by {{cssxref("writing-mode")}} or {{cssxref("direction")}} settings.
+The physical grid keywords specify a cell or section of the `position-area` grid using physical values. These values are not affected by `writing-mode` or `direction` settings.
 
 With physical row and column keywords, you can specify one keyword from each of the two lists below to select a single specific grid tile:
 
@@ -136,7 +136,7 @@ If only a single physical keyword is specified in the `position-area` value, the
 
 ## Logical grid keywords
 
-The logical grid keywords specify an area of the position area grid using logical values. With these values, the position and direction are affected by {{cssxref("writing-mode")}} and {{cssxref("direction")}} settings on either the element's [containing block](/guides/Display/Containing_block) or, in the case of the `self` keywords, the positioned element itself. There are two types of logical keywords; generic and explicit.
+The logical grid keywords specify an area of the position area grid using logical values. With these values, the position and direction are affected by `writing-mode` and `direction` settings on either the element's [containing block](/guides/Display/Containing_block) or, in the case of the `self` keywords, the positioned element itself. There are two types of logical keywords; generic and explicit.
 
 ### Generic logical row and column keywords
 
@@ -240,7 +240,7 @@ If only a single logical `<position-area>` keyword is specified, the other value
 
 ## Coordinate grid keywords
 
-These keywords specify the cells of the `position-area` grid using x- and y-coordinate values. Its position/direction will be affected by {{cssxref("writing-mode")}} and/or {{cssxref("direction")}} settings on either an element's [containing block](/guides/Display/Containing_block) or, in the case of the `self` keywords, the element itself.
+These keywords specify the cells of the `position-area` grid using x- and y-coordinate values. Its position/direction will be affected by `writing-mode` and/or `direction` settings on either an element's [containing block](/guides/Display/Containing_block) or, in the case of the `self` keywords, the element itself.
 
 However, the grid cells are defined according to physical axes rather than block/inline directions:
 
@@ -322,7 +322,7 @@ If only a single coordinate grid `<position-area>` keyword is specified, the oth
 
 ## Examples
 
-See the {{cssxref("position-area")}} property page.
+See the `position-area` property page.
 
 For detailed information on anchor features and usage, see the [CSS anchor positioning](/guides/Anchor_positioning) module landing page and the [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide.
 
@@ -336,9 +336,9 @@ For detailed information on anchor features and usage, see the [CSS anchor posit
 
 ## See also
 
-- {{cssxref("position-area")}}
-- {{cssxref("anchor-name")}}
-- {{cssxref("position-anchor")}}
+- `position-area`
+- `anchor-name`
+- `position-anchor`
 - [`anchor()`](/reference/values/anchor) function
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide
 - [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide

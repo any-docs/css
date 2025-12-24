@@ -10,10 +10,10 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`:target-before`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) selects scroll markers that come _before_ the active scroll marker (the one that currently matches {{cssxref(":target-current")}}) within a scroll marker group. You can use this selector to style navigation items that come before the current navigation position within a scroll marker group.
+The **`:target-before`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) selects scroll markers that come _before_ the active scroll marker (the one that currently matches `:target-current`) within a scroll marker group. You can use this selector to style navigation items that come before the current navigation position within a scroll marker group.
 
 > [!NOTE]
-> The `:target-before` pseudo-class is only valid on {{cssxref("::scroll-marker")}} pseudo-elements and elements that have been designated as scroll markers via the {{cssxref("scroll-target-group")}} property.
+> The `:target-before` pseudo-class is only valid on `::scroll-marker` pseudo-elements and elements that have been designated as scroll markers via the `scroll-target-group` property.
 
 ## Syntax
 
@@ -27,7 +27,7 @@ The **`:target-before`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/W
 
 ### Styling navigation items before and after the active scroll marker
 
-In this example, we use the `:target-before` and {{cssxref(":target-after")}} pseudo-classes to highlight the scroll markers before and after the active one, indicating items the user has already viewed and those that are still to come.
+In this example, we use the `:target-before` and `:target-after` pseudo-classes to highlight the scroll markers before and after the active one, indicating items the user has already viewed and those that are still to come.
 
 #### HTML
 
@@ -166,7 +166,7 @@ The markup contains a table of contents created using an ordered list ({{htmlele
 
 #### CSS
 
-We've set `scroll-target-group: auto` on the `<ol>` to turn it into a scroll marker group container and let the browser determine which `<a>` element is the active scroll marker at any given time (that is, which link's target is currently in view). We then style the `:target-current` pseudo-class with a `red` {{cssxref("color")}} so that it stands out clearly.
+We've set `scroll-target-group: auto` on the `<ol>` to turn it into a scroll marker group container and let the browser determine which `<a>` element is the active scroll marker at any given time (that is, which link's target is currently in view). We then style the `:target-current` pseudo-class with a `red` `color` so that it stands out clearly.
 
 ```css hidden live-sample___targeting-before-and-after
 body {
@@ -264,11 +264,11 @@ Try navigating either by clicking the links or by scrolling. In both cases, you'
 
 ## See also
 
-- {{cssxref("scroll-marker-group")}}
-- {{cssxref("scroll-target-group")}}
-- {{cssxref(":target-current")}}, {{cssxref(":target-after")}}
-- {{cssxref("::scroll-marker")}}
-- {{cssxref("::scroll-marker-group")}}
+- `scroll-marker-group`
+- `scroll-target-group`
+- `:target-current`, `:target-after`
+- `::scroll-marker`
+- `::scroll-marker-group`
 - [Creating CSS carousels](/guides/Overflow/Carousels)
 - [CSS overflow](/guides/Overflow) module
 - [CSS Carousel Gallery](https://chrome.dev/carousel/) via chrome.dev (2025)

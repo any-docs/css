@@ -28,7 +28,7 @@ In CSS, if you have an unbreakable string such as a very long word, by default i
 
 {{EmbedLiveSample("inline-overflow")}}
 
-CSS will display overflow in this way, because doing something else could cause data loss. In CSS data loss means that some of your content vanishes. So the initial value of {{cssxref("overflow")}} is `visible`, and we can see the overflowing text. It is generally better to be able to see overflow, even if it is messy. If things were to disappear or be cropped as would happen if `overflow` was set to `hidden` you might not spot it when previewing your site. Messy overflow is at least noticeable, and in the worst case, your visitor will be able to see and read the content even if it looks a bit strange.
+CSS will display overflow in this way, because doing something else could cause data loss. In CSS data loss means that some of your content vanishes. So the initial value of `overflow` is `visible`, and we can see the overflowing text. It is generally better to be able to see overflow, even if it is messy. If things were to disappear or be cropped as would happen if `overflow` was set to `hidden` you might not spot it when previewing your site. Messy overflow is at least noticeable, and in the worst case, your visitor will be able to see and read the content even if it looks a bit strange.
 
 In this next example, you can see what happens if `overflow` is set to `hidden`.
 
@@ -52,7 +52,7 @@ In this next example, you can see what happens if `overflow` is set to `hidden`.
 
 ## Finding the min-content size
 
-To find the minimum size of the box that will contain its contents with no overflows, set the {{cssxref("width")}} or {{cssxref("inline-size")}} property of the box to {{cssxref("min-content")}}.
+To find the minimum size of the box that will contain its contents with no overflows, set the `width` or `inline-size` property of the box to `min-content`.
 
 ```html live-sample___min-content
 <div class="box">
@@ -75,7 +75,7 @@ Using `min-content` is therefore one possibility for overflowing boxes. If it is
 
 ## Breaking long words
 
-If the box needs to be a fixed size, or you are keen to ensure that long words can't overflow, then the {{cssxref("overflow-wrap")}} property can help. This property will break a word once it is too long to fit on a line by itself.
+If the box needs to be a fixed size, or you are keen to ensure that long words can't overflow, then the `overflow-wrap` property can help. This property will break a word once it is too long to fit on a line by itself.
 
 ```html live-sample___overflow-wrap
 <div class="box">
@@ -98,7 +98,7 @@ If the box needs to be a fixed size, or you are keen to ensure that long words c
 > [!NOTE]
 > The `overflow-wrap` property acts in the same way as the non-standard property `word-wrap`. The `word-wrap` property is now treated by browsers as an alias of the standard property.
 
-An alternative property to try is {{cssxref("word-break")}}. This property will break the word at the point it overflows. It will cause a break-even if placing the word onto a new line would allow it to display without breaking.
+An alternative property to try is `word-break`. This property will break the word at the point it overflows. It will cause a break-even if placing the word onto a new line would allow it to display without breaking.
 
 In this next example, you can compare the difference between the two properties on the same string of text.
 
@@ -162,7 +162,7 @@ In the example below there is a checkbox and label. Let's say, you want the labe
 
 ## Adding hyphens
 
-To add hyphens when words are broken, use the CSS {{cssxref("hyphens")}} property. Using a value of `auto`, the browser is free to automatically break words at appropriate hyphenation points, following whatever rules it chooses. To have some control over the process, use a value of `manual`, then insert a hard (U+2010) or soft break character (U+00AD) into the string. A hard break character can be added using `‐` or `&#x2010;`, and a soft break character can be added using the `&shy;`, `&#173;`, or `&#xad;` HTML character codes. A hard break will always break, even if it is not necessary to do so. A soft break only breaks if breaking is needed.
+To add hyphens when words are broken, use the CSS `hyphens` property. Using a value of `auto`, the browser is free to automatically break words at appropriate hyphenation points, following whatever rules it chooses. To have some control over the process, use a value of `manual`, then insert a hard (U+2010) or soft break character (U+00AD) into the string. A hard break character can be added using `‐` or `&#x2010;`, and a soft break character can be added using the `&shy;`, `&#173;`, or `&#xad;` HTML character codes. A hard break will always break, even if it is not necessary to do so. A soft break only breaks if breaking is needed.
 
 ```html live-sample___hyphens
 <div class="box">
@@ -183,9 +183,9 @@ To add hyphens when words are broken, use the CSS {{cssxref("hyphens")}} propert
 
 {{EmbedLiveSample("hyphens")}}
 
-You can also use the {{cssxref("hyphenate-character")}} property to use the string of your choice instead of the default hyphenation character at the end of the line (before the hyphenation line break) for the language. The `auto` value selects the correct value to mark a mid-word line break according to the typographic conventions of the current content language.
+You can also use the `hyphenate-character` property to use the string of your choice instead of the default hyphenation character at the end of the line (before the hyphenation line break) for the language. The `auto` value selects the correct value to mark a mid-word line break according to the typographic conventions of the current content language.
 
-CSS provides additional hyphenation control: the {{cssxref("hyphenate-limit-chars")}} property can be used to set the minimum word length that allows for hyphenation as well as the minimum number of characters before and after the hyphen.
+CSS provides additional hyphenation control: the `hyphenate-limit-chars` property can be used to set the minimum word length that allows for hyphenation as well as the minimum number of characters before and after the hyphen.
 
 ## The `<wbr>` element
 
@@ -213,11 +213,11 @@ In the below example the text breaks in the location of the {{HTMLElement("wbr")
 ## See also
 
 - The HTML {{HTMLElement("wbr")}} element
-- The CSS {{cssxref("word-break")}} property
-- The CSS {{cssxref("overflow-wrap")}} property
-- The CSS {{cssxref("white-space")}} property
-- The CSS {{cssxref("text-wrap")}} property
-- The CSS {{cssxref("hyphens")}} property
-- The CSS {{cssxref("hyphenate-character")}} property
-- The CSS {{cssxref("hyphenate-limit-chars")}} property
+- The CSS `word-break` property
+- The CSS `overflow-wrap` property
+- The CSS `white-space` property
+- The CSS `text-wrap` property
+- The CSS `hyphens` property
+- The CSS `hyphenate-character` property
+- The CSS `hyphenate-limit-chars` property
 - [Overflow and Data Loss in CSS](https://www.smashingmagazine.com/2019/09/overflow-data-loss-css/)

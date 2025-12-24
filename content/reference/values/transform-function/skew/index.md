@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`skew()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that skews an element on the 2D
-plane. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+plane. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: skew()")}}
 
@@ -55,9 +55,9 @@ skew(ax, ay)
 ### Values
 
 - `ax`
-  - Is an {{cssxref("angle")}} representing the angle to use to distort the element along the x-axis.
+  - Is an `angle` representing the angle to use to distort the element along the x-axis.
 - `ay` <Badge type="info" text="Optional" />
-  - Is an {{cssxref("angle")}} representing the angle to use to distort the element along the y-axis. If not defined, its default value is `0`, resulting in a purely horizontal skewing.
+  - Is an `angle` representing the angle to use to distort the element along the y-axis. If not defined, its default value is `0`, resulting in a purely horizontal skewing.
 
 <table class="standard-table">
   <thead>
@@ -177,12 +177,12 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
+- `transform`
+- `&lt;transform-function&gt;`
 - [skewX()](/reference/values/transform-function/skewX)
 - [skewY()](/reference/values/transform-function/skewY)
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`
   - Note: there is no `skew` property

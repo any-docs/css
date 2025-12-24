@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`linear()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates a transition curve that progresses uniformly between points.
-As an {{cssxref("easing-function")}}, it creates transitions where the {{Glossary("interpolation")}} occurs at a constant rate from beginning to end.
+As an `easing-function`, it creates transitions where the {{Glossary("interpolation")}} occurs at a constant rate from beginning to end.
 
 ## Syntax
 
@@ -22,13 +22,13 @@ linear(0, 0.5 25% 75%, 1)
 
 The function accepts two or more of the following values, which represent progress points in the animation timeline:
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - Represents a point in time along the duration of the animation or transition.
     At least two values must be specified.
     The value `0` represents the start of the transition, and `1` represents the end.
     Values outside the `0` to `1` range are also allowed.
 
-- {{cssxref("&lt;percentage&gt;")}} <Badge type="info" text="Optional" />
+- `&lt;percentage&gt;` <Badge type="info" text="Optional" />
   - Indicates when the progress `<number>` is reached during the animation timeline.
     It can be specified after any `<number>` value except the first and last and can take up to two values.
     If two percentage values are specified, they define the length of the stop: the first percentage indicates the starting point and the second percentage indicates the ending point for that segment in the animation or transition. If no `<percentage>` value is specified, the progress values are distributed evenly along the timeline.
@@ -92,6 +92,6 @@ linear(start, middle, end)
 
 ## See also
 
-- Other easing functions: {{cssxref("easing-function/cubic-bezier", "cubic-bezier()")}} and {{cssxref("easing-function/steps", "steps()")}}
+- Other easing functions: `cubic-bezier()` and `steps()`
 - [CSS easing functions](/guides/Easing_functions) module
 - [`linear()` easing generator](https://linear-easing-generator.netlify.app/) by Jake Archibald

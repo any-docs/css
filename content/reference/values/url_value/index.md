@@ -30,4 +30,4 @@ The value is either of the following:
 
 ## See also
 
-- {{cssxref("url_function", "url()")}}
+- `url()`

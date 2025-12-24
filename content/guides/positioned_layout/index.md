@@ -19,23 +19,23 @@ Like all CSS modules, this module impacts and is impacted by other modules. This
 
 ### Properties
 
-- {{cssxref("bottom")}}
-- {{cssxref("inset")}}
-- {{cssxref("inset-block")}}
-- {{cssxref("inset-block-end")}}
-- {{cssxref("inset-block-start")}}
-- {{cssxref("inset-inline")}}
-- {{cssxref("inset-inline-end")}}
-- {{cssxref("inset-inline-start")}}
-- {{cssxref("left")}}
-- {{cssxref("overlay")}}
-- {{cssxref("position")}}
-- {{cssxref("right")}}
-- {{cssxref("top")}}
+- `bottom`
+- `inset`
+- `inset-block`
+- `inset-block-end`
+- `inset-block-start`
+- `inset-inline`
+- `inset-inline-end`
+- `inset-inline-start`
+- `left`
+- `overlay`
+- `position`
+- `right`
+- `top`
 
 ### Selectors
 
-- {{cssxref("::backdrop")}}
+- `::backdrop`
 
 ### Glossary terms and definitions
 
@@ -67,25 +67,25 @@ Like all CSS modules, this module impacts and is impacted by other modules. This
 
 ## Related concepts
 
-- {{cssxref("float")}}
-- {{cssxref("clear")}}
-- {{cssxref("transition-property")}}
-- {{cssxref("transition-behavior")}}
+- `float`
+- `clear`
+- `transition-property`
+- `transition-behavior`
 - [Popover API](/en-US/docs/Web/API/Popover_API)
 - {{htmlelement("dialog")}} element
 
 - [CSS anchor positioning](/guides/Anchor_positioning) module
-  - {{cssxref("position-anchor")}}
-  - {{cssxref("position-area")}}
-  - {{cssxref("position-try-fallbacks")}}
-  - {{cssxref("position-try-order")}}
-  - {{cssxref("position-try")}} shorthand
-  - {{cssxref("position-visibility")}}
+  - `position-anchor`
+  - `position-area`
+  - `position-try-fallbacks`
+  - `position-try-order`
+  - `position-try` shorthand
+  - `position-visibility`
 
 - [CSS transforms](/guides/Transforms) module
-  - {{cssxref("transform")}}
-  - {{cssxref("transform-origin")}}
-  - {{cssxref("translate")}}
+  - `transform`
+  - `transform-origin`
+  - `translate`
 
 ## Specifications
 
@@ -94,22 +94,22 @@ Like all CSS modules, this module impacts and is impacted by other modules. This
 ## See also
 
 - Other CSS `*-position` properties:
-  - {{cssxref("background-position")}}
-  - {{cssxref("background-position")}}
-  - {{cssxref("background-position")}}
-  - {{cssxref("font-synthesis-position")}}
-  - {{cssxref("font-variant-position")}}
-  - {{cssxref("list-style-position")}}
-  - {{cssxref("mask-position")}}
-  - {{cssxref("object-position")}}
-  - {{cssxref("offset-position")}}
-  - {{cssxref("ruby-position")}}
-  - {{cssxref("text-emphasis-position")}}
-  - {{cssxref("text-underline-position")}}
+  - `background-position`
+  - `background-position`
+  - `background-position`
+  - `font-synthesis-position`
+  - `font-variant-position`
+  - `list-style-position`
+  - `mask-position`
+  - `object-position`
+  - `offset-position`
+  - `ruby-position`
+  - `text-emphasis-position`
+  - `text-underline-position`
 - Position-related [data types](/reference/values/Data_types)
-  - {{cssxref("baseline-position")}}
-  - {{cssxref("content-position")}}
-  - {{cssxref("overflow-position")}}
-  - {{cssxref("self-position")}}
+  - `baseline-position`
+  - `content-position`
+  - `overflow-position`
+  - `self-position`
 - [CSS Scroll Snap](/guides/Scroll_snap) module
   - {{glossary("Snap positions")}}

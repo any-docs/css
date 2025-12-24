@@ -6,7 +6,7 @@ browser-compat: css.properties.scroll-margin
 sidebar: cssref
 ---
 
-The **`scroll-margin`** [shorthand property](/guides/Cascade/Shorthand_properties) sets all of the scroll margins of an element at once, assigning values much like the {{cssxref("margin")}} property does for margins of an element.
+The **`scroll-margin`** [shorthand property](/guides/Cascade/Shorthand_properties) sets all of the scroll margins of an element at once, assigning values much like the `margin` property does for margins of an element.
 
 {{InteractiveExample("CSS Demo: scroll-margin")}}
 
@@ -74,10 +74,10 @@ scroll-margin: 2em;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("scroll-margin-bottom")}}
-- {{cssxref("scroll-margin-left")}}
-- {{cssxref("scroll-margin-right")}}
-- {{cssxref("scroll-margin-top")}}
+- `scroll-margin-bottom`
+- `scroll-margin-left`
+- `scroll-margin-right`
+- `scroll-margin-top`
 
 ## Syntax
 
@@ -96,7 +96,7 @@ scroll-margin: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - An outset from the corresponding edge of the scroll container.
 
 ## Description

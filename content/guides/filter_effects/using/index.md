@@ -11,36 +11,36 @@ Have you ever hovered over a black-and-white or sepia image and the full-color i
 
 The [Filter effects](/guides/Filter_effects) module in CSS provides properties and functions that let you apply the visual effects described above without using Photoshop or sending extra HTTP requests. The only software required is the user's browser. Moreover, unlike pre-set image effects, CSS filter effects are responsive and animatable.
 
-The CSS filter effects module provides the {{cssxref("filter")}} and {{cssxref("backdrop-filter")}} properties that you can use to impact the rendering of text, images, backgrounds, and borders, or any element on which you apply these properties. This module also defines the {{cssxref("filter-function")}} data type that lets you add graphical effects such as blurring or color shifting. Using the filter functions, you can not only alter the appearance of an element but also reference an SVG filter using a filter that you create.
+The CSS filter effects module provides the `filter` and `backdrop-filter` properties that you can use to impact the rendering of text, images, backgrounds, and borders, or any element on which you apply these properties. This module also defines the `filter-function` data type that lets you add graphical effects such as blurring or color shifting. Using the filter functions, you can not only alter the appearance of an element but also reference an SVG filter using a filter that you create.
 
 ## Filter effect properties
 
 The following two filter properties of the CSS filter effects module enable you to apply zero, one, or more graphical effects to an element:
 
-- Using the {{cssxref("filter")}} property, you can apply filter effects such as blur, drop-shadow, and sepia to an element before the element is rendered. The filters effects are applied directly on the element, including the element's contents, borders, and padding.
+- Using the `filter` property, you can apply filter effects such as blur, drop-shadow, and sepia to an element before the element is rendered. The filters effects are applied directly on the element, including the element's contents, borders, and padding.
 
-- Using the {{cssxref("backdrop-filter")}} property, you can apply graphical effects to the area behind an element (the element's "backdrop"). The `backdrop-filter` property is often used to make the foreground content more legible, especially when the larger area on which the content is placed otherwise does not provide enough contrast for the content. The filter effects are applied only to the background of the element and not to the element's content.
+- Using the `backdrop-filter` property, you can apply graphical effects to the area behind an element (the element's "backdrop"). The `backdrop-filter` property is often used to make the foreground content more legible, especially when the larger area on which the content is placed otherwise does not provide enough contrast for the content. The filter effects are applied only to the background of the element and not to the element's content.
 
 The `filter` and `backdrop-filter` properties accept a space-separated list of filters, which are applied in the order declared.
 
 ## Filter functions
 
-The CSS filter effects module provides 10 {{cssxref("filter-function")}} functions, as well as the ability to define an almost endless array of effects using SVG filters applied via a `url()` reference.
+The CSS filter effects module provides 10 `filter-function` functions, as well as the ability to define an almost endless array of effects using SVG filters applied via a `url()` reference.
 
 The following table lists the 10 filter functions, along with their value types, the minimum valid value if applicable, the largest value that creates an effect, and the initial value used for [interpolation](/en-US/docs/Glossary/Interpolation).
 
 | Filter function                                             | Parameter type                                                     | Min value | Max effect | Default value (no effect) |
 | ----------------------------------------------------------- | ------------------------------------------------------------------ | --------- | ---------- | ------------------------- |
-| {{cssxref("filter-function/blur", "blur()")}}               | {{cssxref("&lt;length&gt;")}}                                      | `0`       |            | `0`                       |
-| {{cssxref("filter-function/brightness", "brightness()")}}   | {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} | `0`       |            | `1` or `100%`             |
-| {{cssxref("filter-function/contrast", "contrast()")}}       | {{cssxref("&lt;length&gt;")}}                                      | `0`       |            | `1` or `100%`             |
-| {{cssxref("filter-function/drop-shadow", "drop-shadow()")}} | `<shadow>`                                                         |           |            | `0 0 0 currentColor`      |
-| {{cssxref("filter-function/grayscale", "grayscale()")}}     | {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} | `0`       | `100%`     | `0` or `0%`               |
-| {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}   | {{cssxref("angle")}}                                               |           |            | `0deg`                    |
-| {{cssxref("filter-function/invert", "invert()")}}           | {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} | `0`       | `100%`     | `0` or `0%`               |
-| {{cssxref("filter-function/opacity", "opacity()")}}         | {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} | `0`       | `100%`     | `1` or `100%`             |
-| {{cssxref("filter-function/saturate", "saturate()")}}       | {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} | `0`       | `100%`     | `100%`                    |
-| {{cssxref("filter-function/sepia", "sepia()")}}             | {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} | `0`       | `100%`     | `0%`                      |
+| `blur()`               | `&lt;length&gt;`                                      | `0`       |            | `0`                       |
+| `brightness()`   | `&lt;number&gt;` or `&lt;percentage&gt;` | `0`       |            | `1` or `100%`             |
+| `contrast()`       | `&lt;length&gt;`                                      | `0`       |            | `1` or `100%`             |
+| `drop-shadow()` | `<shadow>`                                                         |           |            | `0 0 0 currentColor`      |
+| `grayscale()`     | `&lt;number&gt;` or `&lt;percentage&gt;` | `0`       | `100%`     | `0` or `0%`               |
+| `hue-rotate()`   | `angle`                                               |           |            | `0deg`                    |
+| `invert()`           | `&lt;number&gt;` or `&lt;percentage&gt;` | `0`       | `100%`     | `0` or `0%`               |
+| `opacity()`         | `&lt;number&gt;` or `&lt;percentage&gt;` | `0`       | `100%`     | `1` or `100%`             |
+| `saturate()`       | `&lt;number&gt;` or `&lt;percentage&gt;` | `0`       | `100%`     | `100%`                    |
+| `sepia()`             | `&lt;number&gt;` or `&lt;percentage&gt;` | `0`       | `100%`     | `0%`                      |
 
 The minimum value allowed is included for filter functions that have a minimum value. Including a value less than the minimum value for any filter function invalidates the entire property declaration, not just the offending filter function in the comma-separated list.
 
@@ -56,7 +56,7 @@ The `filter` and `backdrop-filter` properties accept a filter function list, whi
 
 If you hover over the sepia image below, you'll see the full-color image come into view instantly.
 
-The image is set to be sepia by specifying the value of the `filter` property as the [`sepia()`](/reference/values/filter-function/sepia) filter function. The filter is removed on {{cssxref(":hover")}} and {{cssxref(":focus")}} by setting `filter: none`.
+The image is set to be sepia by specifying the value of the `filter` property as the [`sepia()`](/reference/values/filter-function/sepia) filter function. The filter is removed on `:hover` and `:focus` by setting `filter: none`.
 
 ```html
 <img tabindex="0" alt="Four trans-people, circa 1912" src="activists.jpg" />
@@ -221,7 +221,7 @@ No filter effect is applied to the third line to show the original effect as a c
 
 ## Using SVG filters
 
-In addition to the 10 defined {{cssxref("filter-function")}}s, the CSS filter effects support `url()`, with the parameter being an [SVG filter](/en-US/docs/Web/SVG/Reference/Element/filter), which may be embedded in an internal or external SVG file.
+In addition to the 10 defined `filter-function`s, the CSS filter effects support `url()`, with the parameter being an [SVG filter](/en-US/docs/Web/SVG/Reference/Element/filter), which may be embedded in an internal or external SVG file.
 
 A single SVG can be used to define several filters, each with an `id`:
 
@@ -250,9 +250,9 @@ filter: url("https://example.com/svg/filters.svg#blur3");
 
 ### Blurring an image
 
-Just like the {{cssxref("filter-function/blur", "blur()")}} filter function applies a Gaussian blur to the elements on which it is applied, the SVG {{SVGElement("feGaussianBlur")}} filter element can also be used to blur content.
+Just like the `blur()` filter function applies a Gaussian blur to the elements on which it is applied, the SVG {{SVGElement("feGaussianBlur")}} filter element can also be used to blur content.
 
-In both the cases, the blur radius value, specified as a {{cssxref("&lt;length&gt;")}} in CSS and as a pixel equivalent {{cssxref("&lt;number&gt;")}} in SVG, defines the value of the standard deviation to the Gaussian function. In other words, it defines the number of pixels on the screen that blend into each other; a larger value creates more blur.
+In both the cases, the blur radius value, specified as a `&lt;length&gt;` in CSS and as a pixel equivalent `&lt;number&gt;` in SVG, defines the value of the standard deviation to the Gaussian function. In other words, it defines the number of pixels on the screen that blend into each other; a larger value creates more blur.
 
 The [`<filter>`](/en-US/docs/Web/SVG/Reference/Element/filter)'s {{SVGAttr("stdDeviation")}} attribute accepts up to two values enabling creating more complex blur values. To create an equivalent blur, we include one value for `stdDeviation`:
 
@@ -322,8 +322,8 @@ td {
 
 ## See also
 
-- {{cssxref("mask")}}
-- {{cssxref("background-blend-mode")}}, {{cssxref("mix-blend-mode")}}
+- `mask`
+- `background-blend-mode`, `mix-blend-mode`
 - [CSS filter effects](/guides/Filter_effects)
 - SVG {{SVGElement("filter")}} element, SVG {{SVGAttr("filter")}} attribute in [SVG](/en-US/docs/Web/SVG)
 - [Applying SVG effects to HTML content](/en-US/docs/Web/SVG/Guides/Applying_SVG_effects_to_HTML_content)

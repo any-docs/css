@@ -6,9 +6,9 @@ browser-compat: css.properties.min-block-size
 sidebar: cssref
 ---
 
-The **`min-block-size`** [CSS](/en-US/docs/Web/CSS) property defines the minimum horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the {{cssxref("min-width")}} or the {{cssxref("min-height")}} property, depending on the value of {{cssxref("writing-mode")}}.
+The **`min-block-size`** [CSS](/en-US/docs/Web/CSS) property defines the minimum horizontal or vertical size of an element's block, depending on its writing mode. It corresponds to either the `min-width` or the `min-height` property, depending on the value of `writing-mode`.
 
-If the writing mode is vertically oriented, the value of `min-block-size` relates to the minimum width of the element; otherwise, it relates to the minimum height of the element. A related property is {{cssxref("min-inline-size")}}, which defines the other dimension of the element.
+If the writing mode is vertically oriented, the value of `min-block-size` relates to the minimum width of the element; otherwise, it relates to the minimum height of the element. A related property is `min-inline-size`, which defines the other dimension of the element.
 
 {{InteractiveExample("CSS Demo: min-block-size")}}
 
@@ -79,7 +79,7 @@ min-block-size: unset;
 
 ### Values
 
-The `min-block-size` property takes the same values as the {{cssxref("min-width")}} and {{cssxref("min-height")}} properties.
+The `min-block-size` property takes the same values as the `min-width` and `min-height` properties.
 
 ## Formal definition
 
@@ -123,5 +123,5 @@ The `min-block-size` property takes the same values as the {{cssxref("min-width"
 
 ## See also
 
-- The mapped physical properties: {{cssxref("min-width")}} and {{cssxref("min-height")}}
-- {{cssxref("writing-mode")}}
+- The mapped physical properties: `min-width` and `min-height`
+- `writing-mode`

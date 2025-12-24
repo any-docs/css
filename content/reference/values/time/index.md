@@ -6,11 +6,11 @@ browser-compat: css.types.time
 sidebar: cssref
 ---
 
-The **`<time>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a time value expressed in seconds or milliseconds. It is used in {{cssxref("animation")}}, {{cssxref("transition")}}, and related properties.
+The **`<time>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a time value expressed in seconds or milliseconds. It is used in `animation`, `transition`, and related properties.
 
 ## Syntax
 
-The `<time>` data type consists of a {{cssxref("&lt;number&gt;")}} followed by one of the units listed below. Optionally, it may be preceded by a single `+` or `-` sign. As with all dimensions, there is no space between the unit literal and the number.
+The `<time>` data type consists of a `&lt;number&gt;` followed by one of the units listed below. Optionally, it may be preceded by a single `+` or `-` sign. As with all dimensions, there is no space between the unit literal and the number.
 
 > [!NOTE]
 > Although the number `0` is always the same regardless of unit, the unit may not be omitted. In other words, `0` is invalid and does not represent `0s` or `0ms`.
@@ -56,5 +56,5 @@ The `<time>` data type consists of a {{cssxref("&lt;number&gt;")}} followed by o
 
 ## See also
 
-- {{cssxref("&lt;time-percentage&gt;")}}
+- `&lt;time-percentage&gt;`
 - [CSS values and units](/guides/Values_and_units) module

@@ -17,13 +17,13 @@ Alternatively, you may want an animation to move forward in distinct steps, to c
 
 ### Functions
 
-- {{cssxref("easing-function/cubic-bezier", "cubic-bezier()")}}
-- {{cssxref("easing-function/linear", "linear()")}}
-- {{cssxref("easing-function/steps", "steps()")}}
+- `cubic-bezier()`
+- `linear()`
+- `steps()`
 
 ### data types
 
-- {{cssxref("easing-function")}}
+- `easing-function`
 - [`<linear-easing-function>`](/reference/values/easing-function#linear-easing-function)
 - [`<cubic-bezier-easing-function>`](/reference/values/easing-function#cubic-bezier-easing-function)
 - [`<step-easing-function>`](/reference/values/easing-function#step-easing-function)
@@ -41,12 +41,12 @@ Alternatively, you may want an animation to move forward in distinct steps, to c
 ## Related concepts
 
 - [CSS animations](/guides/Animations) module
-  - {{cssxref("animation-timing-function")}}
-  - {{cssxref("animation")}} shorthand
+  - `animation-timing-function`
+  - `animation` shorthand
 
 - [CSS transitions](/guides/Transitions) module
-  - {{cssxref("transition-timing-function")}}
-  - {{cssxref("transition")}} shorthand
+  - `transition-timing-function`
+  - `transition` shorthand
 
 ## Specifications
 
@@ -55,4 +55,4 @@ Alternatively, you may want an animation to move forward in distinct steps, to c
 ## See also
 
 - [CSS value functions](/reference/values/Functions)
-- {{cssxref("will-change")}} CSS property
+- `will-change` CSS property

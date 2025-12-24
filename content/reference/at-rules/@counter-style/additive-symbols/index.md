@@ -38,7 +38,7 @@ additive-symbols:
 
 The descriptor accepts a comma-separated list of _additive tuples_ with each tuple consisting of the following two values separated by a space:
 
-- {{cssxref("integer")}}
+- `integer`
   - A non-negative integer values specifying the integer weight of the associated symbol value of the tuple.
 
 - [`<symbol>`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols#symbol)
@@ -67,7 +67,7 @@ When the `system` descriptor value is `cyclic`, `numeric`, `alphabetic`, `symbol
 
 #### HTML
 
-In this example, {{cssxref("@counter-style/system","system: additive")}} along with the `additive-symbols` descriptor values specify how numbers should be represented as Roman numerals. The value of each {{HTMLElement("li")}} element in the list is converted to a Roman numeral according to the rules defined in {{cssxref("@counter-style")}}.
+In this example, `system: additive` along with the `additive-symbols` descriptor values specify how numbers should be represented as Roman numerals. The value of each {{HTMLElement("li")}} element in the list is converted to a Roman numeral according to the rules defined in `@counter-style`.
 
 ```html
 <ul>
@@ -124,7 +124,7 @@ For the list item with the value of `109`, the numeral `C` represents `100`, and
 
 ## See also
 
-- {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, {{cssxref("@counter-style/fallback", "fallback")}}
-- List style properties: {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}} function to create anonymous counter styles
+- `@counter-style` descriptors: `system`, `symbols`, `negative`, `prefix`, `suffix`, `range`, `pad`, `speak-as`, `fallback`
+- List style properties: `list-style`, `list-style-image`, `list-style-position`
+- `symbols()` function to create anonymous counter styles
 - [CSS counter styles](/guides/Counter_styles) module

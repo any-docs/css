@@ -6,9 +6,9 @@ browser-compat: css.properties.animation-name
 sidebar: cssref
 ---
 
-The **`animation-name`** [CSS](/en-US/docs/Web/CSS) property specifies the names of one or more {{cssxref("@keyframes")}} at-rules that describe the animation to apply to an element. Multiple `@keyframes` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframes` at-rule, no properties are animated.
+The **`animation-name`** [CSS](/en-US/docs/Web/CSS) property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframes` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframes` at-rule, no properties are animated.
 
-It is often convenient to use the shorthand property {{cssxref("animation")}} to set all animation properties at once.
+It is often convenient to use the shorthand property `animation` to set all animation properties at once.
 
 {{InteractiveExample("CSS Demo: animation-name")}}
 
@@ -103,10 +103,10 @@ animation-name: unset;
 
 - `none`
   - A special keyword denoting no keyframes. It can be used to deactivate an animation without changing the ordering of the other identifiers, or to deactivate animations coming from the cascade.
-- {{cssxref("&lt;custom-ident&gt;")}}
+- `&lt;custom-ident&gt;`
   - An unquoted name identifying the animation. This identifier is composed of a combination of case-sensitive letters `a` to `z`, numbers `0` to `9`, underscores (`_`), and/or dashes (`-`). The first non-dash character must be a letter. Also, two dashes are forbidden at the beginning of the identifier. Furthermore, the identifier can't be `none`, `unset`, `initial`, or `inherit`.
-- {{cssxref("&lt;string&gt;")}}
-  - A series of characters following the same rules as custom identifiers, as described above, except that they are surrounded by either double (") or single (') quotes. If using a quoted string for both the `animation-name` and the corresponding {{cssxref("@keyframes")}} at-rule name, `none`, global keywords, and names starting with an underscore or double dashes are valid, though not recommended.
+- `&lt;string&gt;`
+  - A series of characters following the same rules as custom identifiers, as described above, except that they are surrounded by either double (") or single (') quotes. If using a quoted string for both the `animation-name` and the corresponding `@keyframes` at-rule name, `none`, global keywords, and names starting with an underscore or double dashes are valid, though not recommended.
 
 > [!NOTE]
 > When you specify multiple comma-separated values on an `animation-*` property, they are applied to the animations in the order in which the `animation-name`s appear. For situations where the number of animations and `animation-*` property values do not match, see [Setting multiple animation property values](/guides/Animations/Using#setting_multiple_animation_property_values).
@@ -175,5 +175,5 @@ See [CSS animations](/guides/Animations/Using) for examples.
 ## See also
 
 - [Using CSS animations](/guides/Animations/Using)
-- JavaScript {{domxref("AnimationEvent")}} API
-- Other related animation properties: {{cssxref("animation")}}, {{cssxref("animation-composition")}}, {{cssxref("animation-delay")}}, {{cssxref("animation-direction")}}, {{cssxref("animation-duration")}}, {{cssxref("animation-fill-mode")}}, {{cssxref("animation-iteration-count")}}, {{cssxref("animation-play-state")}}, {{cssxref("animation-timeline")}}, {{cssxref("animation-timing-function")}}
+- JavaScript `AnimationEvent` API
+- Other related animation properties: `animation`, `animation-composition`, `animation-delay`, `animation-direction`, `animation-duration`, `animation-fill-mode`, `animation-iteration-count`, `animation-play-state`, `animation-timeline`, `animation-timing-function`

@@ -6,7 +6,7 @@ browser-compat: css.properties.text-underline-offset
 sidebar: cssref
 ---
 
-The **`text-underline-offset`** [CSS](/en-US/docs/Web/CSS) property sets the offset distance of an underline text decoration line (applied using {{cssxref("text-decoration")}}) from its original position.
+The **`text-underline-offset`** [CSS](/en-US/docs/Web/CSS) property sets the offset distance of an underline text decoration line (applied using `text-decoration`) from its original position.
 
 {{InteractiveExample("CSS Demo: text-underline-offset")}}
 
@@ -114,5 +114,5 @@ p {
 
 ## See also
 
-- {{cssxref("text-decoration")}}
-- {{cssxref("text-decoration-thickness")}}
+- `text-decoration`
+- `text-decoration-thickness`

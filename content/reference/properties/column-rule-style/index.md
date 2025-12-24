@@ -127,6 +127,6 @@ p {
 ## See also
 
 - [Learn: Multiple-column Layout](/en-US/docs/Learn_web_development/Core/CSS_layout/Multiple-column_Layout)
-- {{CSSXref("column-rule")}}
-- {{CSSXref("column-rule-width")}}
-- {{CSSXref("column-rule-color")}}
+- `column-rule`
+- `column-rule-width`
+- `column-rule-color`

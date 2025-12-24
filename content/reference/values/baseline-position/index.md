@@ -6,7 +6,7 @@ spec-urls: https://drafts.csswg.org/css-align/#typedef-baseline-position
 sidebar: cssref
 ---
 
-The **`<baseline-position>`** {{glossary("enumerated")}} value type represents the `baseline` keyword values and `first` and `last` modifiers, used for the {{cssxref("align-content")}}, {{cssxref("align-items")}}, {{cssxref("align-self")}}, {{cssxref("justify-items")}} and {{cssxref("justify-self")}} properties as well as the {{cssxref("place-content")}}, {{cssxref("place-items")}}, and {{cssxref("place-self")}} shorthand properties.
+The **`<baseline-position>`** {{glossary("enumerated")}} value type represents the `baseline` keyword values and `first` and `last` modifiers, used for the `align-content`, `align-items`, `align-self`, `justify-items` and `justify-self` properties as well as the `place-content`, `place-items`, and `place-self` shorthand properties.
 
 The `first` and `last` values give a box a baseline alignment preference, defaulting to `first` if the modifier is omitted.
 
@@ -35,8 +35,8 @@ The `<baseline-position>` enumerated value type is specified using an optional `
 
 ## See also
 
-- Properties that use this data type: {{cssxref("align-content")}}, {{cssxref("align-items")}}, {{cssxref("align-self")}}, {{cssxref("justify-items")}}, {{cssxref("justify-self")}}, {{cssxref("place-content")}}, {{cssxref("place-items")}}, and {{cssxref("place-self")}}
-- Other box alignment data types: {{cssxref("content-distribution")}}, {{cssxref("content-position")}}, {{cssxref("overflow-position")}}, and {{cssxref("self-position")}}
+- Properties that use this data type: `align-content`, `align-items`, `align-self`, `justify-items`, `justify-self`, `place-content`, `place-items`, and `place-self`
+- Other box alignment data types: `content-distribution`, `content-position`, `overflow-position`, and `self-position`
 - [CSS box alignment](/guides/Box_alignment) module
 - [CSS flexible box layout](/guides/Flexible_box_layout) module
 - [CSS grid layout](/guides/Grid_layout) module

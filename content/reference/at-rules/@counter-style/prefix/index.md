@@ -8,7 +8,7 @@ sidebar: cssref
 
 The {{cssxref('@counter-style')}} rule's **`prefix`** descriptor specifies content that will be added to the beginning of the counter's marker representation.
 
-When the counter value is negative, the `prefix` comes before the negative sign and any other `<symbol>`s added by the {{cssxref("@counter-style/negative", "negative")}} descriptor.
+When the counter value is negative, the `prefix` comes before the negative sign and any other `<symbol>`s added by the `negative` descriptor.
 
 ## Syntax
 
@@ -24,7 +24,7 @@ prefix: url("bullet.png");
 The **`prefix`** descriptor takes as its value a single `<symbol>`:
 
 - `<symbol>`
-  - Specifies a `<symbol>` — a {{cssxref("&lt;string&gt;")}}, {{cssxref("image")}}, or {{cssxref("&lt;custom-ident&gt;")}} — that is prepended to the marker representation.
+  - Specifies a `<symbol>` — a `&lt;string&gt;`, `image`, or `&lt;custom-ident&gt;` — that is prepended to the marker representation.
 
 ## Formal definition
 
@@ -38,7 +38,7 @@ The **`prefix`** descriptor takes as its value a single `<symbol>`:
 
 ### Adding a prefix to a counter
 
-In this example, each counter number is prefixed by "Book " (with a space) and followed by a colon (`:`). The colon is added with the {{cssxref("@counter-style/suffix", "suffix")}} descriptor.
+In this example, each counter number is prefixed by "Book " (with a space) and followed by a colon (`:`). The colon is added with the `suffix` descriptor.
 
 #### HTML
 
@@ -82,8 +82,8 @@ In this example, each counter number is prefixed by "Book " (with a space) and f
 
 ## See also
 
-- Other {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, and {{cssxref("@counter-style/fallback", "fallback")}}
-- {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}}: the functional notation for creating anonymous counter styles
+- Other `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `negative`, `suffix`, `range`, `pad`, `speak-as`, and `fallback`
+- `list-style`, `list-style-image`, `list-style-position`
+- `symbols()`: the functional notation for creating anonymous counter styles
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists and counters](/guides/Lists) module

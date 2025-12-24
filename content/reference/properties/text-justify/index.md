@@ -6,7 +6,7 @@ browser-compat: css.properties.text-justify
 sidebar: cssref
 ---
 
-The **`text-justify`** [CSS](/en-US/docs/Web/CSS) property sets what type of justification should be applied to text when {{cssxref("text-align", "text-align: justify;")}} is set on an element.
+The **`text-justify`** [CSS](/en-US/docs/Web/CSS) property sets what type of justification should be applied to text when `text-align: justify;` is set on an element.
 
 ## Syntax
 
@@ -28,13 +28,13 @@ text-justify: unset;
 ### Values
 
 - `none`
-  - The text justification is turned off. This has the same effect as not setting {{cssxref("text-align")}} at all, although it is useful if you need to turn justification on and off for some reason.
+  - The text justification is turned off. This has the same effect as not setting `text-align` at all, although it is useful if you need to turn justification on and off for some reason.
 - `auto`
   - The browser chooses the best type of justification for the current situation based on a balance between performance and quality, but also on what is most appropriate for the language of the text (e.g., English, CJK languages, etc.). This is the default justification used if `text-justify` is not set at all.
 - `inter-word`
-  - The text is justified by adding space between words (effectively varying {{cssxref("word-spacing")}}), which is most appropriate for languages that separate words using spaces, like English or Korean.
+  - The text is justified by adding space between words (effectively varying `word-spacing`), which is most appropriate for languages that separate words using spaces, like English or Korean.
 - `inter-character`
-  - The text is justified by adding space between characters (effectively varying {{cssxref("letter-spacing")}}), which is most appropriate for languages like Japanese.
+  - The text is justified by adding space between characters (effectively varying `letter-spacing`), which is most appropriate for languages like Japanese.
 - `distribute`
   - Exhibits the same behavior as `inter-character`; this value is kept for backwards compatibility.
 
@@ -126,4 +126,4 @@ p {
 
 ## See also
 
-- {{cssxref("text-align")}}
+- `text-align`

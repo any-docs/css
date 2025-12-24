@@ -71,7 +71,7 @@ word-spacing: unset;
 
 - `normal`
   - The normal inter-word spacing, as defined by the current font and/or the browser.
-- {{cssxref("length")}}
+- `length`
   - Specifies extra spacing in addition to the intrinsic inter-word spacing defined by the font.
 
 ## Accessibility
@@ -124,5 +124,5 @@ Legible `word-spacing` must be determined on a case-by-case basis, as different 
 
 ## See also
 
-- {{cssxref("letter-spacing")}}
+- `letter-spacing`
 - SVG {{SVGAttr("word-spacing")}} attribute

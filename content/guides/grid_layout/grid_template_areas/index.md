@@ -9,7 +9,7 @@ In the [grid layout using line-based placement guide](/guides/Grid_layout/Line-b
 
 ## Naming a grid area
 
-You have already encountered the {{cssxref("grid-area")}} property. This is the property that can take as a value all four of the lines used to position a grid area.
+You have already encountered the `grid-area` property. This is the property that can take as a value all four of the lines used to position a grid area.
 
 ```css
 .box1 {
@@ -21,7 +21,7 @@ What we are doing here when defining all four lines, is defining the area by spe
 
 ![The grid area defined by lines](4_area.png)
 
-We can also define an area by giving it a name and then specify the location of that area in the value of the {{cssxref("grid-template-areas")}} property. You can choose what you would like to name your area. For example, if we wish to create the layout shown below we can identify four main areas.
+We can also define an area by giving it a name and then specify the location of that area in the value of the `grid-template-areas` property. You can choose what you would like to name your area. For example, if we wish to create the layout shown below we can identify four main areas.
 
 - a header
 - a footer
@@ -30,7 +30,7 @@ We can also define an area by giving it a name and then specify the location of 
 
 ![An image showing a two column layout with header and footer](4_layout.png)
 
-With the {{cssxref("grid-area")}} property we can assign each of these areas a name. By itself, this does not create any layout. Rather, it provides named areas to use in a layout.
+With the `grid-area` property we can assign each of these areas a name. By itself, this does not create any layout. Rather, it provides named areas to use in a layout.
 
 ```css
 .header {
@@ -94,7 +94,7 @@ Having defined these names, we then create the layout. This time, instead of pla
 
 {{ EmbedLiveSample('Naming_a_grid_area', '300', '330') }}
 
-Using this method we do not need to specify anything at all on the individual grid items, everything happens on our grid container. We can see the layout described as the value of the {{cssxref("grid-template-areas")}} property.
+Using this method we do not need to specify anything at all on the individual grid items, everything happens on our grid container. We can see the layout described as the value of the `grid-template-areas` property.
 
 ## Leaving a grid cell empty
 
@@ -228,7 +228,7 @@ The area that you create by chaining the area names must be rectangular, at this
 
 {{ EmbedLiveSample('Spanning_multiple_cells', '300', '330') }}
 
-The value of {{cssxref("grid-template-areas")}} must show a complete grid, otherwise it is invalid (and the property is ignored). This means that you must have the same number of cells for each row, if empty with a full stop character demonstrating that the cell is to be left empty. You will also create an invalid grid if your areas are not rectangular.
+The value of `grid-template-areas` must show a complete grid, otherwise it is invalid (and the property is ignored). This means that you must have the same number of cells for each row, if empty with a full stop character demonstrating that the cell is to be left empty. You will also create an invalid grid if your areas are not rectangular.
 
 ## Redefining the grid using media queries
 
@@ -320,7 +320,7 @@ We can then redefine that layout inside [media queries](/guides/Media_queries/Us
 
 ## Using `grid-template-areas` for UI elements
 
-Many of the grid examples you will find online assume you are using grid for whole page layouts; however, grid can be just as useful for laying out small sections. Using {{cssxref("grid-template-areas")}} can be especially nice as it allows you to visualize what your element looks like in the code.
+Many of the grid examples you will find online assume you are using grid for whole page layouts; however, grid can be just as useful for laying out small sections. Using `grid-template-areas` can be especially nice as it allows you to visualize what your element looks like in the code.
 
 ### Media object example
 
@@ -373,7 +373,7 @@ We give the image area a grid area name of `img` and the text area `content`, th
 
 ### Displaying the image on the other side of the box
 
-We might want to be able to display our box with the image the other way around. To do this, we redefine the grid to put the `1fr` track last, and flip the values in {{cssxref("grid-template-areas")}}.
+We might want to be able to display our box with the image the other way around. To do this, we redefine the grid to put the `1fr` track last, and flip the values in `grid-template-areas`.
 
 ```css
 * {
@@ -427,19 +427,19 @@ These can quickly become difficult to read for other developers, or even your fu
 
 Before using any shorthand it is worth remembering that shorthands not only enable the setting of many properties in one go, but they also **reset** everything that you do not (or cannot) set in the shorthand to their initial values. Therefore if you use a shorthand, be aware that it may reset things you have applied elsewhere.
 
-The two shorthands for the grid container are the explicit grid shorthand {{cssxref("grid-template")}} and the grid definition shorthand {{cssxref("grid")}} .
+The two shorthands for the grid container are the explicit grid shorthand `grid-template` and the grid definition shorthand `grid` .
 
 ### `grid-template`
 
-The {{cssxref("grid-template")}} shorthand property sets the following longhand properties:
+The `grid-template` shorthand property sets the following longhand properties:
 
-- {{cssxref("grid-template-rows")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-areas")}}
+- `grid-template-rows`
+- `grid-template-columns`
+- `grid-template-areas`
 
 The property is referred to as the _explicit grid shorthand_ because it sets values that you control when you define an explicit grid, and not those that impact any implicit row or column tracks that might be created.
 
-The following code creates a layout using {{cssxref("grid-template")}} that is the same as the layout created earlier in this guide.
+The following code creates a layout using `grid-template` that is the same as the layout created earlier in this guide.
 
 ```css
 .wrapper {
@@ -458,16 +458,16 @@ Then after `grid-template-areas` we have a forward slash, after that is an expli
 
 ### `grid`
 
-The {{cssxref("grid")}} shorthand goes a step further and also sets properties used by the implicit grid. So you will be setting:
+The `grid` shorthand goes a step further and also sets properties used by the implicit grid. So you will be setting:
 
-- {{cssxref("grid-template-rows")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-areas")}}
-- {{cssxref("grid-auto-rows")}}
-- {{cssxref("grid-auto-columns")}}
-- {{cssxref("grid-auto-flow")}}
+- `grid-template-rows`
+- `grid-template-columns`
+- `grid-template-areas`
+- `grid-auto-rows`
+- `grid-auto-columns`
+- `grid-auto-flow`
 
-You can use this syntax in the exact same way as the {{cssxref("grid-template")}} shorthand. Just be aware that when doing so you will reset the other values set by the property.
+You can use this syntax in the exact same way as the `grid-template` shorthand. Just be aware that when doing so you will reset the other values set by the property.
 
 ```css
 .wrapper {

@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`translate3d()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) repositions an element in 3D space. Its result is a
-{{cssxref("&lt;transform-function&gt;")}} data type.
+`&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: translate3d()")}}
 
@@ -109,14 +109,14 @@ translate3d(tx, ty, tz)
 ### Values
 
 - `tx`
-  - Is a {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} representing the abscissa (horizontal, x-component) of the
+  - Is a `&lt;length&gt;` or `&lt;percentage&gt;` representing the abscissa (horizontal, x-component) of the
     translating vector [tx, ty, tz].
 - `ty`
-  - Is a {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} representing the ordinate (vertical, y-component)of the
+  - Is a `&lt;length&gt;` or `&lt;percentage&gt;` representing the ordinate (vertical, y-component)of the
     translating vector [tx, ty, tz].
 - `tz`
-  - Is a {{cssxref("&lt;length&gt;")}} representing the z-component of the translating vector. It can't be a
-    {{cssxref("&lt;percentage&gt;")}} value; in that case the property containing the transform is considered invalid [tx, ty, tz].
+  - Is a `&lt;length&gt;` representing the z-component of the translating vector. It can't be a
+    `&lt;percentage&gt;` value; in that case the property containing the transform is considered invalid [tx, ty, tz].
 
 <table class="standard-table">
   <thead>
@@ -221,6 +221,6 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("translate")}}
+- `transform`
+- `&lt;transform-function&gt;`
+- `translate`

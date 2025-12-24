@@ -6,9 +6,9 @@ browser-compat: css.types.global_keywords.unset
 sidebar: cssref
 ---
 
-The **`unset`** [CSS](/en-US/docs/Web/CSS) keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its [initial value](/guides/Cascade/Property_value_processing#initial_value) if not. In other words, it behaves like the {{cssxref("inherit")}} keyword in the first case, when the property is an [inherited property](/guides/Cascade/Inheritance#inherited_properties), and like the {{cssxref("initial")}} keyword in the second case, when the property is a [non-inherited property](/guides/Cascade/Inheritance#non-inherited_properties).
+The **`unset`** [CSS](/en-US/docs/Web/CSS) keyword resets a property to its inherited value if the property naturally inherits from its parent, and to its [initial value](/guides/Cascade/Property_value_processing#initial_value) if not. In other words, it behaves like the `inherit` keyword in the first case, when the property is an [inherited property](/guides/Cascade/Inheritance#inherited_properties), and like the `initial` keyword in the second case, when the property is a [non-inherited property](/guides/Cascade/Inheritance#non-inherited_properties).
 
-**`unset`** can be applied to any CSS property, including the CSS shorthand property {{cssxref("all")}}.
+**`unset`** can be applied to any CSS property, including the CSS shorthand property `all`.
 
 ## Examples
 
@@ -98,8 +98,8 @@ p {
 
 ## See also
 
-- Use the {{cssxref("initial")}} keyword to set a property to its initial value.
-- Use the {{cssxref("inherit")}} keyword to make an element's property the same as its parent.
-- Use the {{cssxref("revert")}} keyword to reset a property to the value established by the user-agent stylesheet (or by user styles, if any exist).
-- Use the {{cssxref("revert-layer")}} keyword to reset a property to the value established in a previous cascade layer.
-- The {{cssxref("all")}} property lets you reset all properties to their initial, inherited, reverted, or unset state at once.
+- Use the `initial` keyword to set a property to its initial value.
+- Use the `inherit` keyword to make an element's property the same as its parent.
+- Use the `revert` keyword to reset a property to the value established by the user-agent stylesheet (or by user styles, if any exist).
+- Use the `revert-layer` keyword to reset a property to the value established in a previous cascade layer.
+- The `all` property lets you reset all properties to their initial, inherited, reverted, or unset state at once.

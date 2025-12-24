@@ -6,7 +6,7 @@ browser-compat: css.types.max
 sidebar: cssref
 ---
 
-The **`max()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) lets you set the largest (most positive) value from a list of comma-separated expressions as the value of a CSS property value. The `max()` function can be used anywhere a {{CSSxRef("&lt;length&gt;")}}, {{CSSxRef("&lt;frequency&gt;")}}, {{cssxref("angle")}}, {{CSSxRef("&lt;time&gt;")}}, {{CSSxRef("&lt;percentage&gt;")}}, {{CSSxRef("&lt;number&gt;")}}, or {{CSSxRef("&lt;integer&gt;")}} is allowed.
+The **`max()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) lets you set the largest (most positive) value from a list of comma-separated expressions as the value of a CSS property value. The `max()` function can be used anywhere a `&lt;length&gt;`, `&lt;frequency&gt;`, `angle`, `&lt;time&gt;`, `&lt;percentage&gt;`, `&lt;number&gt;`, or `&lt;integer&gt;` is allowed.
 
 {{InteractiveExample("CSS Demo: max()")}}
 
@@ -46,7 +46,7 @@ max(1px, 2px, 3px)
 
 The `max()` function takes one or more comma-separated expressions as its parameter, with the largest (most positive) expression value used as the value of the property to which it is assigned.
 
-The expressions can be math expressions (using arithmetic operators), literal values, or other expressions, such as {{cssxref("attr()")}}, that evaluate to a valid argument type (like {{CSSxRef("&lt;length&gt;")}}), or nested {{cssxref("min()")}} and `max()` functions.
+The expressions can be math expressions (using arithmetic operators), literal values, or other expressions, such as `attr()`, that evaluate to a valid argument type (like `&lt;length&gt;`), or nested `min()` and `max()` functions.
 
 You can use different units for each value in your expression. You may also use parentheses to establish computation order when needed.
 
@@ -63,7 +63,7 @@ You can use different units for each value in your expression. You may also use 
 
 ## Accessibility
 
-When `max()` is used for controlling text size, make sure the text is always large enough to read. A suggestion is to use the {{cssxref("min()")}} function nested within a `max()` that has as its second value a [relative length unit](/reference/values/length#relative_length_units) that is always large enough to read. For example:
+When `max()` is used for controlling text size, make sure the text is always large enough to read. A suggestion is to use the `min()` function nested within a `max()` that has as its second value a [relative length unit](/reference/values/length#relative_length_units) that is always large enough to read. For example:
 
 ```css
 small {
@@ -116,7 +116,7 @@ Think of the `max()` function as finding the minimum value allowed for a propert
 
 ## See also
 
-- {{cssxref("calc()")}}
-- {{cssxref("clamp()")}}
-- {{cssxref("min()")}}
+- `calc()`
+- `clamp()`
+- `min()`
 - [Learn: Values and units](/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units)

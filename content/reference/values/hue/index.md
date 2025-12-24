@@ -20,7 +20,7 @@ A `<hue>` can be either an `<angle>` or a `<number>`.
 
 ### Values
 
-- {{cssxref("angle")}}
+- `angle`
   - An angle expressed in degrees, gradians, radians, or turns using the `deg`, `grad`, `rad`, or `turn`, respectively.
 - `<number>`
   - A real number, representing degrees of the hue angle.
@@ -35,7 +35,7 @@ The color wheel above shows hues at all angles in the [sRGB](https://en.wikipedi
 
 The angles corresponding to particular hues differ depending on the color space. For example, the hue angle of sRGB green is `120deg` in the sRGB color space, but `134.39deg` in the CIELAB color space.
 
-The following table lists typical colors at various angles in the sRGB (used by {{CSSXref("color_value/hsl", "hsl()")}} and {{CSSXref("color_value/hwb", "hwb()")}}), CIELAB (used by {{CSSXref("color_value/lch", "lch()")}}), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces:
+The following table lists typical colors at various angles in the sRGB (used by `hsl()` and `hwb()`), CIELAB (used by `lch()`), and Oklab (used by `oklch()`) color spaces:
 
 <table>
   <colgroup>
@@ -122,7 +122,7 @@ The following table lists typical colors at various angles in the sRGB (used by 
 
 ## Interpolation of `<hue>` values
 
-`<hue>` values are interpolated as {{cssxref("angle")}} values, and the default interpolation algorithm is [`shorter`](/reference/values/hue-interpolation-method#values). In some color-related CSS functions, this can be overridden by the {{CSSXref("&lt;hue-interpolation-method&gt;")}} component.
+`<hue>` values are interpolated as `angle` values, and the default interpolation algorithm is [`shorter`](/reference/values/hue-interpolation-method#values). In some color-related CSS functions, this can be overridden by the `&lt;hue-interpolation-method&gt;` component.
 
 ## Formal syntax
 
@@ -245,5 +245,5 @@ div {
 
 ## See also
 
-- {{cssxref("&lt;color&gt;")}}
-- {{CSSXref("&lt;hue-interpolation-method&gt;")}}
+- `&lt;color&gt;`
+- `&lt;hue-interpolation-method&gt;`

@@ -6,7 +6,7 @@ browser-compat: css.at-rules.font-face.descent-override
 sidebar: cssref
 ---
 
-The **`descent-override`** [CSS](/en-US/docs/Web/CSS) descriptor for the {{cssxref("@font-face")}} at-rule defines the descent metric for the font. The descent metric is the height below the baseline that CSS uses to lay out line boxes in an inline formatting context.
+The **`descent-override`** [CSS](/en-US/docs/Web/CSS) descriptor for the `@font-face` at-rule defines the descent metric for the font. The descent metric is the height below the baseline that CSS uses to lay out line boxes in an inline formatting context.
 
 ## Syntax
 
@@ -20,7 +20,7 @@ descent-override: 90%;
 - `normal`
   - The default value. When used the metric value is obtained from the font file.
 - `<percentage>`
-  - A {{cssxref("&lt;percentage&gt;")}} value.
+  - A `&lt;percentage&gt;` value.
 
 ## Formal definition
 
@@ -59,15 +59,15 @@ The `descent-override` property can help when overriding the metrics of a fallba
 
 ## See also
 
-- {{cssxref("@font-face/ascent-override", "ascent-override")}}
-- {{cssxref("@font-face/font-display", "font-display")}}
-- {{cssxref("@font-face/font-family", "font-family")}}
-- {{cssxref("@font-face/font-weight", "font-weight")}}
-- {{cssxref("@font-face/font-style", "font-style")}}
-- {{cssxref("@font-face/font-stretch", "font-stretch")}}
-- {{cssxref("font-feature-settings", "font-feature-settings")}}
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-- {{cssxref("@font-face/line-gap-override", "line-gap-override")}}
-- {{cssxref("@font-face/src", "src")}}
-- {{cssxref("@font-face/size-adjust", "size-adjust")}}
-- {{cssxref("@font-face/unicode-range", "unicode-range")}} descriptor
+- `ascent-override`
+- `font-display`
+- `font-family`
+- `font-weight`
+- `font-style`
+- `font-stretch`
+- `font-feature-settings`
+- `font-variation-settings`
+- `line-gap-override`
+- `src`
+- `size-adjust`
+- `unicode-range` descriptor

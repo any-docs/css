@@ -6,7 +6,7 @@ browser-compat: css.types.gradient.repeating-linear-gradient
 sidebar: cssref
 ---
 
-The **`repeating-linear-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of repeating linear gradients. It is similar to {{cssxref("gradient/linear-gradient", "linear-gradient()")}} and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container. The function's result is an object of the {{cssxref("gradient")}} data type, which is a special kind of {{cssxref("image")}}.
+The **`repeating-linear-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of repeating linear gradients. It is similar to `linear-gradient()` and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container. The function's result is an object of the `gradient` data type, which is a special kind of `image`.
 
 {{InteractiveExample("CSS Demo: repeating-linear-gradient()")}}
 
@@ -45,7 +45,7 @@ The length of the gradient that repeats is the distance between the first and la
 
 As with any gradient, a repeating linear gradient has [no intrinsic dimensions](/reference/values/image#description); i.e., it has no natural or preferred size, nor a preferred ratio. Its concrete size will match the size of the element it applies to.
 
-Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `repeating-linear-gradient()` won't work on {{Cssxref("background-color")}} and other properties that use the {{cssxref("&lt;color&gt;")}} data type.
+Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `repeating-linear-gradient()` won't work on `background-color` and other properties that use the `&lt;color&gt;` data type.
 
 ## Syntax
 
@@ -86,10 +86,10 @@ repeating-linear-gradient(in hsl longer hue, blue, red 50px)
 
     The values `to top`, `to bottom`, `to left`, and `to right` are equivalent to the angles `0deg`, `180deg`, `270deg`, and `90deg` respectively. The other values are translated into an angle.
 
-- {{cssxref("angle")}}
+- `angle`
   - The gradient line's angle of direction. A value of `0deg` is equivalent to `to top`; increasing values rotate clockwise from there.
 - `<linear-color-stop>`
-  - A color-stop's {{CSSxRef("&lt;color&gt;")}} value, followed by one or two optional stop positions, (each being either a {{CSSxRef("&lt;percentage&gt;")}} or a {{CSSxRef("&lt;length&gt;")}} along the gradient's axis). A percentage of `0%`, or a length of `0`, represents the start of the gradient; the value `100%` is 100% of the image size, meaning the gradient will not repeat.
+  - A color-stop's `&lt;color&gt;` value, followed by one or two optional stop positions, (each being either a `&lt;percentage&gt;` or a `&lt;length&gt;` along the gradient's axis). A percentage of `0%`, or a length of `0`, represents the start of the gradient; the value `100%` is 100% of the image size, meaning the gradient will not repeat.
 - `<color-hint>`
   - The color-hint is an interpolation hint defining how the gradient progresses between adjacent color stops. The length defines at which point between two color stops the gradient color should reach the midpoint of the color transition. If omitted, the midpoint of the color transition is the midpoint between two color stops.
 
@@ -226,11 +226,11 @@ The box on the top uses [shorter interpolation](/reference/values/hue-interpolat
 ## See also
 
 - [Using CSS gradients](/guides/Images/Using_gradients)
-- Other gradient functions: {{cssxref("gradient/linear-gradient", "linear-gradient()")}}, {{cssxref("gradient/radial-gradient", "radial-gradient()")}}, {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}, {{cssxref("gradient/conic-gradient", "conic-gradient()")}}, {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
-- {{cssxref("hue-interpolation-method")}}
-- {{cssxref("color-interpolation-method")}}
-- {{cssxref("image")}}
-- {{cssxref("image/image","image()")}}
-- {{cssxref("element()")}}
-- {{cssxref("image/image-set","image-set()")}}
-- {{cssxref("cross-fade()")}}
+- Other gradient functions: `linear-gradient()`, `radial-gradient()`, `repeating-radial-gradient()`, `conic-gradient()`, `repeating-conic-gradient()`
+- `hue-interpolation-method`
+- `color-interpolation-method`
+- `image`
+- `image()`
+- `element()`
+- `image-set()`
+- `cross-fade()`

@@ -1,13 +1,8 @@
 ---
 title: CSS anchor positioning
-short-title: Anchor positioning
-slug: Web/CSS/Guides/Anchor_positioning
-page-type: css-module
-spec-urls: https://drafts.csswg.org/css-anchor-position-1/
-sidebar: cssref
 ---
 
-# CSS anchor positioning
+# {{$frontmatter.title}}
 
 The **CSS anchor positioning** module defines features that allow you to tether elements together. Certain elements are defined as **anchor elements**; **anchor-positioned elements** can then have their size and position set based on the size and location of the anchor elements to which they are bound.
 
@@ -54,9 +49,9 @@ The CSS anchor positioning module also introduces the `anchor-scope` property. C
 
 ### Interfaces
 
-- {{domxref("CSSPositionTryDescriptors")}}
-- {{domxref("CSSPositionTryRule")}}
-- {{domxref("HTMLElement.anchorElement")}} <Badge type="info" text="Non-standard. Check cross-browser support before using." />
+- `CSSPositionTryDescriptors`
+- `CSSPositionTryRule`
+- `HTMLElement.anchorElement` <Badge type="info" text="Non-standard. Check cross-browser support before using." />
 
 ## Guides
 
@@ -69,50 +64,50 @@ The CSS anchor positioning module also introduces the `anchor-scope` property. C
 ## Related concepts
 
 - [CSS logical properties and values](/guides/Logical_properties_and_values) module:
-  - {{cssxref("inset-block-start")}}
-  - {{cssxref("inset-block-end")}}
-  - {{cssxref("inset-inline-start")}}
-  - {{cssxref("inset-inline-end")}}
-  - {{cssxref("inset-block")}}
-  - {{cssxref("inset-inline")}}
-  - {{cssxref("inset")}} shorthand
-  - {{cssxref("inline-size")}}
-  - {{cssxref("min-block-size")}}
-  - {{cssxref("min-inline-size")}}
-  - {{cssxref("block-size")}}
-  - {{cssxref("max-block-size")}}
-  - {{cssxref("max-inline-size")}}
-  - {{cssxref("margin-block")}}
-  - {{cssxref("margin-block-end")}}
-  - {{cssxref("margin-block-start")}}
-  - {{cssxref("margin-inline")}}
-  - {{cssxref("margin-inline-end")}}
-  - {{cssxref("margin-inline-start")}}
+  - `inset-block-start`
+  - `inset-block-end`
+  - `inset-inline-start`
+  - `inset-inline-end`
+  - `inset-block`
+  - `inset-inline`
+  - `inset` shorthand
+  - `inline-size`
+  - `min-block-size`
+  - `min-inline-size`
+  - `block-size`
+  - `max-block-size`
+  - `max-inline-size`
+  - `margin-block`
+  - `margin-block-end`
+  - `margin-block-start`
+  - `margin-inline`
+  - `margin-inline-end`
+  - `margin-inline-start`
   - [Inset properties](/en-US/docs/Glossary/Inset_properties) glossary term
 - [CSS positioned layout](/guides/Positioned_layout) module:
-  - {{cssxref("top")}}
-  - {{cssxref("left")}}
-  - {{cssxref("bottom")}}
-  - {{cssxref("right")}}
+  - `top`
+  - `left`
+  - `bottom`
+  - `right`
 - [CSS box model](/guides/Box_model) module:
-  - {{cssxref("width")}}
-  - {{cssxref("height")}}
-  - {{cssxref("min-width")}}
-  - {{cssxref("min-height")}}
-  - {{cssxref("max-width")}}
-  - {{cssxref("max-height")}}
-  - {{cssxref("margin")}}
-  - {{cssxref("margin-bottom")}}
-  - {{cssxref("margin-left")}}
-  - {{cssxref("margin-right")}}
-  - {{cssxref("margin-top")}}
+  - `width`
+  - `height`
+  - `min-width`
+  - `min-height`
+  - `max-width`
+  - `max-height`
+  - `margin`
+  - `margin-bottom`
+  - `margin-left`
+  - `margin-right`
+  - `margin-top`
 - [CSS box alignment](/guides/Box_alignment) module:
-  - {{cssxref("align-items")}}
-  - {{cssxref("align-self")}}
-  - {{cssxref("justify-items")}}
-  - {{cssxref("justify-self")}}
-  - {{cssxref("place-items")}}
-  - {{cssxref("place-self")}}
+  - `align-items`
+  - `align-self`
+  - `justify-items`
+  - `justify-self`
+  - `place-items`
+  - `place-self`
 
 ## Specifications
 

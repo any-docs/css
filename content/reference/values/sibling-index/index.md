@@ -6,13 +6,13 @@ browser-compat: css.types.sibling-index
 sidebar: cssref
 ---
 
-The **`sibling-index()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) returns an integer representing the position of the current element in the DOM tree relative to all its sibling elements. The returned value is the index number of the contextual child's position among all the sibling elements within a parent element, with the first child returning `1` and the last child, returning the `length` of {{domxref("Element.children")}}.
+The **`sibling-index()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) returns an integer representing the position of the current element in the DOM tree relative to all its sibling elements. The returned value is the index number of the contextual child's position among all the sibling elements within a parent element, with the first child returning `1` and the last child, returning the `length` of `Element.children`.
 
 > [!NOTE]
-> Like the {{CSSxRef(":nth-child()")}} pseudo-class, `sibling-index()` starts from 1, not 0.
+> Like the `:nth-child()` pseudo-class, `sibling-index()` starts from 1, not 0.
 
 > [!NOTE]
-> The {{CSSxRef("counter()")}} function provides a similar result but it returns a `<string>` (which is more suitable for [generated content](/guides/Generated_content), while `sibling-index()` returns an `<integer>` (which can be used for calculations).
+> The `counter()` function provides a similar result but it returns a `<string>` (which is more suitable for [generated content](/guides/Generated_content), while `sibling-index()` returns an `<integer>` (which can be used for calculations).
 
 {{InteractiveExample("CSS Demo: sibling-index()")}}
 
@@ -116,7 +116,7 @@ li {
 
 ### Sequential animations
 
-Combining `sibling-index()` with CSS animations opens new possibilities. In this example, the opacity of elements in sequential order by setting an {{cssxref("animation-delay")}} based on their order in the DOM.
+Combining `sibling-index()` with CSS animations opens new possibilities. In this example, the opacity of elements in sequential order by setting an `animation-delay` based on their order in the DOM.
 
 #### HTML
 
@@ -133,7 +133,7 @@ We include a container element with four children:
 
 #### CSS
 
-We apply the `fade-in` animation to each element. We use the `sibling-index()` function within a {{cssxref("calc()")}} function to set the duration of the `animation-delay` based on the source element's position in the source order. The {{cssxref("animation-fill-mode")}} applies the animation's `0%` keyframe until the `animation-duration` expires.
+We apply the `fade-in` animation to each element. We use the `sibling-index()` function within a `calc()` function to set the duration of the `animation-delay` based on the source element's position in the source order. The `animation-fill-mode` applies the animation's `0%` keyframe until the `animation-duration` expires.
 
 ```css
 ul {
@@ -175,5 +175,5 @@ li {
 
 ## See also
 
-- {{cssxref("sibling-count()")}}
-- {{cssxref("counter()")}}
+- `sibling-count()`
+- `counter()`

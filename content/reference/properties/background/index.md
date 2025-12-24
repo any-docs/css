@@ -52,14 +52,14 @@ background:
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("background-attachment")}}
-- {{cssxref("background-clip")}}
-- {{cssxref("background-color")}}
-- {{cssxref("background-image")}}
-- {{cssxref("background-origin")}}
-- {{cssxref("background-position")}}
-- {{cssxref("background-repeat")}}
-- {{cssxref("background-size")}}
+- `background-attachment`
+- `background-clip`
+- `background-color`
+- `background-image`
+- `background-origin`
+- `background-position`
+- `background-repeat`
+- `background-size`
 
 ## Syntax
 
@@ -96,25 +96,25 @@ The syntax of each layer is as follows:
   - `<repeat-style>`
 
 - The `<bg-size>` value may only be included immediately after `<bg-position>`, separated with the '/' character, like this: `center/80%`.
-- The `<visual-box>` value may be included zero, one, or two times. If included once, it sets both {{cssxref("background-origin")}} and {{cssxref("background-clip")}}. If it is included twice, the first occurrence sets {{cssxref("background-origin")}}, and the second sets {{cssxref("background-clip")}}.
+- The `<visual-box>` value may be included zero, one, or two times. If included once, it sets both `background-origin` and `background-clip`. If it is included twice, the first occurrence sets `background-origin`, and the second sets `background-clip`.
 - The `<'background-color'>` value may only be included in the last layer specified.
 
 ### Values
 
 - `<attachment>`
-  - See {{cssxref("background-attachment")}}. Default: `scroll`.
+  - See `background-attachment`. Default: `scroll`.
 - `<visual-box>`
-  - See {{cssxref("background-clip")}} and {{cssxref("background-origin")}}. Default: `border-box` and `padding-box` respectively.
+  - See `background-clip` and `background-origin`. Default: `border-box` and `padding-box` respectively.
 - `<'background-color'>`
-  - See {{cssxref("background-color")}}. Default: `transparent`.
+  - See `background-color`. Default: `transparent`.
 - `<bg-image>`
-  - See {{Cssxref("background-image")}}. Default: `none`.
+  - See `background-image`. Default: `none`.
 - `<bg-position>`
-  - See {{cssxref("background-position")}}. Default: 0% 0%.
+  - See `background-position`. Default: 0% 0%.
 - `<repeat-style>`
-  - See {{cssxref("background-repeat")}}. Default: `repeat`.
+  - See `background-repeat`. Default: `repeat`.
 - `<bg-size>`
-  - See {{cssxref("background-size")}}. Default: `auto`.
+  - See `background-size`. Default: `auto`.
 
 The following three lines of CSS are equivalent:
 
@@ -181,6 +181,6 @@ Browsers do not provide any special information on background images to assistiv
 
 ## See also
 
-- {{cssxref("box-decoration-break")}}
+- `box-decoration-break`
 - [Using gradients](/guides/Images/Using_gradients)
 - [Using multiple backgrounds](/guides/Backgrounds_and_borders/Using_multiple_backgrounds)

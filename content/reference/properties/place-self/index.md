@@ -6,7 +6,7 @@ browser-compat: css.properties.place-self
 sidebar: cssref
 ---
 
-The **`place-self`** [CSS](/en-US/docs/Web/CSS) [shorthand property](/guides/Cascade/Shorthand_properties) allows you to align an individual item in both the block and inline directions at once (i.e., the {{cssxref("align-self")}} and {{cssxref("justify-self")}} properties). This property applies to block-level boxes, absolutely-positioned boxes, and grid items. If the second value is not present, the first value is also used for it.
+The **`place-self`** [CSS](/en-US/docs/Web/CSS) [shorthand property](/guides/Cascade/Shorthand_properties) allows you to align an individual item in both the block and inline directions at once (i.e., the `align-self` and `justify-self` properties). This property applies to block-level boxes, absolutely-positioned boxes, and grid items. If the second value is not present, the first value is also used for it.
 
 {{InteractiveExample("CSS Demo: place-self")}}
 
@@ -56,8 +56,8 @@ place-self: end center;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("align-self")}}
-- {{cssxref("justify-self")}}
+- `align-self`
+- `justify-self`
 
 ## Syntax
 
@@ -91,7 +91,7 @@ place-self: unset;
 ### Values
 
 - `auto`
-  - Computes to the parent's {{cssxref("align-items")}} value.
+  - Computes to the parent's `align-items` value.
 - `normal`
   - The effect of this keyword is dependent of the layout mode we are in:
     - In absolutely-positioned layouts, the keyword behaves like `start` on _replaced_ absolutely-positioned boxes, and as `stretch` on _all other_ absolutely-positioned boxes.
@@ -114,7 +114,7 @@ place-self: unset;
   - Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group.
     The fallback alignment for `first baseline` is `start`, the one for `last baseline` is `end`.
 - `stretch`
-  - If the combined size of the items along the cross axis is less than the size of the alignment container and the item is `auto`-sized, its size is increased equally (not proportionally), while still respecting the constraints imposed by {{cssxref("max-height")}}/{{cssxref("max-width")}} (or equivalent functionality), so that the combined size of all `auto`-sized items exactly fills the alignment container along the cross axis.
+  - If the combined size of the items along the cross axis is less than the size of the alignment container and the item is `auto`-sized, its size is increased equally (not proportionally), while still respecting the constraints imposed by `max-height`/`max-width` (or equivalent functionality), so that the combined size of all `auto`-sized items exactly fills the alignment container along the cross axis.
 - `anchor-center`
   - In the case of [anchor-positioned](/guides/Anchor_positioning) elements, aligns the item to the center of the associated anchor element in the block and inline direction. See [Centering on the anchor using `anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center).
 
@@ -130,7 +130,7 @@ place-self: unset;
 
 ### Basic demonstration
 
-In the following example we have a 2 x 2 grid layout. Initially the grid container has {{cssxref("justify-items")}} and {{cssxref("align-items")}} values of `stretch` — the defaults — which causes the grid items to stretch across the entire width of their cells.
+In the following example we have a 2 x 2 grid layout. Initially the grid container has `justify-items` and `align-items` values of `stretch` — the defaults — which causes the grid items to stretch across the entire width of their cells.
 
 The second, third, and fourth grid items are then given different values of `place-self`, to show how these override the default placements. These values cause the grid items to span only as wide/tall as their content width/height, and align in different positions across their cells, in the block and inline directions.
 
@@ -203,8 +203,8 @@ span {
 
 ## See also
 
-- {{cssxref("align-self")}}
-- {{cssxref("justify-self")}}
+- `align-self`
+- `justify-self`
 - [Basic concepts of flexbox](/guides/Flexible_box_layout/Basic_concepts)
 - [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items)
 - [Box alignment in grid layout](/guides/Box_alignment/In_grid_layout)

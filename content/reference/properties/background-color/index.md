@@ -87,8 +87,8 @@ The `background-color` property is specified as a single `<color>` value.
 
 ### Values
 
-- {{cssxref("&lt;color&gt;")}}
-  - The uniform color of the background. It is rendered behind any {{cssxref("background-image")}} that is specified, although the color will still be visible through any transparency in the image.
+- `&lt;color&gt;`
+  - The uniform color of the background. It is rendered behind any `background-image` that is specified, although the color will still be visible through any transparency in the image.
 
 ## Accessibility
 
@@ -112,7 +112,7 @@ Color contrast ratio is determined by comparing the luminance of the text and ba
 
 ### Colorize boxes
 
-This example demonstrates the applying `background-color` to HTML {{HTMLelement("div")}} elements using different CSS {{cssxref("color_value", "&lt;color&gt;")}} values.
+This example demonstrates the applying `background-color` to HTML {{HTMLelement("div")}} elements using different CSS `&lt;color&gt;` values.
 
 #### HTML
 
@@ -215,5 +215,5 @@ td {
 ## See also
 
 - [Multiple backgrounds](/guides/Backgrounds_and_borders/Using_multiple_backgrounds)
-- The {{cssxref("&lt;color&gt;")}} data type
-- Other color-related properties: {{cssxref("color")}}, {{cssxref("border-color")}}, {{cssxref("outline-color")}}, {{cssxref("text-decoration-color")}}, {{cssxref("text-emphasis-color")}}, {{cssxref("text-shadow")}}, {{cssxref("caret-color")}}, and {{cssxref("column-rule-color")}}
+- The `&lt;color&gt;` data type
+- Other color-related properties: `color`, `border-color`, `outline-color`, `text-decoration-color`, `text-emphasis-color`, `text-shadow`, `caret-color`, and `column-rule-color`

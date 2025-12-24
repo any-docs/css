@@ -130,7 +130,7 @@ font-synthesis: unset;
 - `small-caps`
   - Indicates that the small-caps typeface may be synthesized by the browser if needed.
 - `position`
-  - Indicates that the subscript and superscript typeface may be synthesized by the browser, if needed, when using {{cssxref("font-variant-position")}}.
+  - Indicates that the subscript and superscript typeface may be synthesized by the browser, if needed, when using `font-variant-position`.
 
 ## Description
 
@@ -236,7 +236,7 @@ This example shows the browser's default font-synthesis behavior and compares it
 
 ## See also
 
-- {{cssxref("font-style")}}
-- {{cssxref("font-weight")}}
-- {{cssxref("font-variant-caps")}}
-- {{cssxref("font-variant-position")}}
+- `font-style`
+- `font-weight`
+- `font-variant-caps`
+- `font-variant-position`

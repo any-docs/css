@@ -6,7 +6,7 @@ browser-compat: css.properties.inline-size
 sidebar: cssref
 ---
 
-The **`inline-size`** [CSS](/en-US/docs/Web/CSS) property defines the size of an element's block along the [inline axis](/en-US/docs/Glossary/Grid_Axis). If the {{cssxref("writing-mode")}} is horizontal, it corresponds to the {{cssxref("width")}}; if the writing mode is vertical, it corresponds to the {{cssxref("height")}}. A related property is {{cssxref("block-size")}}, which defines the other dimension of the element.
+The **`inline-size`** [CSS](/en-US/docs/Web/CSS) property defines the size of an element's block along the [inline axis](/en-US/docs/Glossary/Grid_Axis). If the `writing-mode` is horizontal, it corresponds to the `width`; if the writing mode is vertical, it corresponds to the `height`. A related property is `block-size`, which defines the other dimension of the element.
 
 {{InteractiveExample("CSS Demo: inline-size")}}
 
@@ -78,7 +78,7 @@ inline-size: unset;
 
 ### Values
 
-The `inline-size` property takes the same values as the {{cssxref("width")}} and {{cssxref("height")}} properties.
+The `inline-size` property takes the same values as the `width` and `height` properties.
 
 ## Formal definition
 
@@ -122,5 +122,5 @@ The `inline-size` property takes the same values as the {{cssxref("width")}} and
 
 ## See also
 
-- The mapped physical properties: {{cssxref("width")}} and {{cssxref("height")}}
-- {{cssxref("writing-mode")}}
+- The mapped physical properties: `width` and `height`
+- `writing-mode`

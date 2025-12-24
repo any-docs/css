@@ -6,7 +6,7 @@ browser-compat: css.properties.align-self
 sidebar: cssref
 ---
 
-The **`align-self`** [CSS](/en-US/docs/Web/CSS) property overrides a grid or flex item's {{cssxref("align-items")}} value. In grid, it aligns the item inside the {{glossary("Grid Areas", "grid area")}}. In flexbox, it aligns the item on the {{glossary("cross axis")}}.
+The **`align-self`** [CSS](/en-US/docs/Web/CSS) property overrides a grid or flex item's `align-items` value. In grid, it aligns the item inside the {{glossary("Grid Areas", "grid area")}}. In flexbox, it aligns the item on the {{glossary("cross axis")}}.
 
 The property doesn't apply to block-level boxes, or to table cells. If a flexbox item's cross-axis margin is `auto`, then `align-self` is ignored.
 
@@ -93,7 +93,7 @@ align-self: unset;
 ### Values
 
 - `auto`
-  - Computes to the parent's {{cssxref("align-items")}} value.
+  - Computes to the parent's `align-items` value.
 - `normal`
   - The effect of this keyword is dependent of the layout mode we are in:
     - In absolutely-positioned layouts, the keyword behaves like `start` on _replaced_ absolutely-positioned boxes, and as `stretch` on _all other_ absolutely-positioned boxes.
@@ -116,7 +116,7 @@ align-self: unset;
   - Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group.
     The fallback alignment for `first baseline` is `start`, the one for `last baseline` is `end`.
 - `stretch`
-  - If the item's cross-size is `auto`, the used size is set to the length necessary to be as close to filling the container as possible, respecting the item's width and height limits. If the item is not auto-sized, this value falls back to `flex-start`, and to `self-start` or `self-end` if the container's {{cssxref("align-content")}} is `first baseline` (or `baseline`) or `last baseline`.
+  - If the item's cross-size is `auto`, the used size is set to the length necessary to be as close to filling the container as possible, respecting the item's width and height limits. If the item is not auto-sized, this value falls back to `flex-start`, and to `self-start` or `self-end` if the container's `align-content` is `first baseline` (or `baseline`) or `last baseline`.
 - `anchor-center`
   - In the case of [anchor-positioned](/guides/Anchor_positioning) elements, aligns the item to the center of the associated anchor element in the block direction. See [Centering on the anchor using `anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center).
 - `safe`
@@ -184,6 +184,6 @@ div:nth-child(3) {
 - [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items)
 - [Box alignment in grid layout](/guides/Box_alignment/In_grid_layout)
 - [CSS box alignment](/guides/Box_alignment)
-- {{cssxref("align-items")}}
-- {{cssxref("justify-self")}}
-- {{cssxref("place-self")}}
+- `align-items`
+- `justify-self`
+- `place-self`

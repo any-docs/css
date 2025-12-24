@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`flood-opacity`** [CSS](/en-US/docs/Web/CSS) property defines the opacity of the current filter primitive subregion in {{SVGElement("feFlood")}} and {{SVGElement("feDropShadow")}} elements within a {{SVGElement("filter")}}. If present, it overrides the element's {{SVGAttr("flood-opacity")}} attribute.
 
-The property value impacts the {{cssxref("flood-color")}}'s alpha channel; it can increase the transparency of a `flood-color` but can not make the color defined by the `flood-color` property more opaque.
+The property value impacts the `flood-color`'s alpha channel; it can increase the transparency of a `flood-color` but can not make the color defined by the `flood-color` property more opaque.
 
 > [!NOTE]
 > The `flood-opacity` property only applies to {{SVGElement("feFlood")}} and {{SVGElement("feDropShadow")}} elements nested in an {{SVGElement("svg")}}. It doesn't apply to other SVG, HTML, or pseudo-elements.
@@ -30,12 +30,12 @@ flood-opacity: unset;
 
 ### Values
 
-The `<opacity-value>` is a {{cssxref("number")}} or {{cssxref("percentage")}} denoting the opacity of the SVG gradient `<flood>` element.
+The `<opacity-value>` is a `number` or `percentage` denoting the opacity of the SVG gradient `<flood>` element.
 
-- {{cssxref("number")}}
+- `number`
   - A numeric value between `0` and `1`, inclusive.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - A percentage value between `0%` and `100%`, inclusive.
 
 With `0` or `0%` set, the flood is fully transparent. With `1` or `100%` set, the element is the full opacity of the `flood-color` value, which may or may not be partially opaque.
@@ -74,7 +74,7 @@ We have an SVG with a few {{SVGElement("filter")}} elements, each with a {{SVGEl
 
 #### CSS
 
-We define the {{cssxref("height")}}, {{cssxref("width")}}, {{cssxref("x")}}, and {{cssxref("y")}},positioning of our rectangles with CSS, and include a repeating linear gradient as a {{cssxref("background-image")}} on the SVG so the opacity of the flood-color is more apparent:
+We define the `height`, `width`, `x`, and `y`,positioning of our rectangles with CSS, and include a repeating linear gradient as a `background-image` on the SVG so the opacity of the flood-color is more apparent:
 
 ```css
 svg {
@@ -122,12 +122,12 @@ The attributes defined the first square as fully opaque and the second as fully 
 
 ## See also
 
-- {{cssxref("flood-color")}}
-- {{cssxref("fill")}}
-- {{cssxref("stop-opacity")}}
-- {{cssxref("stroke-opacity")}}
-- {{cssxref("opacity")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("text-shadow")}}
-- {{cssxref("filter-function")}}, including {{cssxref("filter-function/opacity", "opacity()")}}
+- `flood-color`
+- `fill`
+- `stop-opacity`
+- `stroke-opacity`
+- `opacity`
+- `box-shadow`
+- `text-shadow`
+- `filter-function`, including `opacity()`
 - SVG {{SVGAttr("flood-opacity")}} attribute

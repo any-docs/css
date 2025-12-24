@@ -11,9 +11,9 @@ The **`<timeline-range-name>`** {{glossary("enumerated")}} data type is a CSS id
 
 The `<timeline-range-name>` keyword values are used in the following longhand and shorthand properties:
 
-- {{cssxref("animation-range-end")}}
-- {{cssxref("animation-range-start")}}
-- {{cssxref("animation-range")}} shorthand
+- `animation-range-end`
+- `animation-range-start`
+- `animation-range` shorthand
 
 ## Syntax
 
@@ -56,10 +56,10 @@ See the [View timeline range visualizer](https://scroll-driven-animations.style/
 
 ## See also
 
-- {{cssxref("animation-range-start")}}, {{cssxref("animation-range-end")}}, {{cssxref("animation-range")}}
-- {{cssxref("animation-timeline")}}
-- {{cssxref("scroll-timeline")}}
-- {{cssxref("view-timeline-inset")}}
+- `animation-range-start`, `animation-range-end`, `animation-range`
+- `animation-timeline`
+- `scroll-timeline`
+- `view-timeline-inset`
 - [Scroll-driven animation timelines](/guides/Scroll-driven_animations/Timelines)
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module
 - [View timeline range visualizer](https://scroll-driven-animations.style/tools/view-timeline/ranges/)

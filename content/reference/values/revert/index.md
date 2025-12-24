@@ -6,15 +6,15 @@ browser-compat: css.types.global_keywords.revert
 sidebar: cssref
 ---
 
-The **`revert`** [CSS](/en-US/docs/Web/CSS) keyword reverts the cascaded value of the property from its current value to the value the property would have had if no changes had been made by the current **{{Glossary("style origin")}}** to the current element. Thus, it resets the property either to user agent set value, to user set value, to its inherited value (if it is inheritable), or to initial value. It can be applied to any CSS property, including the CSS shorthand property {{cssxref("all")}}.
+The **`revert`** [CSS](/en-US/docs/Web/CSS) keyword reverts the cascaded value of the property from its current value to the value the property would have had if no changes had been made by the current **{{Glossary("style origin")}}** to the current element. Thus, it resets the property either to user agent set value, to user set value, to its inherited value (if it is inheritable), or to initial value. It can be applied to any CSS property, including the CSS shorthand property `all`.
 
 This keyword removes from the cascade all of the styles that have been overridden until the style being rolled back to is reached.
 
 - If used by a site's own styles (the author origin), `revert` rolls back the property's cascaded value to the user's custom style, if one exists; otherwise, it rolls the style back to the user agent's default style.
 - If used in a user's custom stylesheet, or if the style was applied by the user (the user origin), `revert` rolls back the cascaded value to the user agent's default style.
-- If used within the user agent's default styles, this keyword is functionally equivalent to {{cssxref("unset")}}.
+- If used within the user agent's default styles, this keyword is functionally equivalent to `unset`.
 
-The `revert` keyword works exactly the same as {{cssxref("unset")}} in many cases. The only difference is for properties that have values set by the browser or by custom stylesheets created by users (set on the browser side).
+The `revert` keyword works exactly the same as `unset` in many cases. The only difference is for properties that have values set by the browser or by custom stylesheets created by users (set on the browser side).
 
 Revert will not affect rules applied to children of an element you reset (but will remove effects of a parent rule on a child). So if you have a `color: green` for all sections and `all: revert` on a specific section, the color of the section will be black. But if you have a rule to make all paragraphs red, then all paragraphs will still be red in all sections.
 
@@ -22,9 +22,9 @@ Revert will not affect rules applied to children of an element you reset (but wi
 > Revert is just a value. It is still possible to override the `revert` value using [specificity](/guides/Cascade/Specificity).
 
 > [!NOTE]
-> The `revert` keyword is different from and should not be confused with the {{cssxref("initial")}} keyword, which uses the [initial value](/guides/Cascade/Property_value_processing#initial_value) defined on a per-property basis by the CSS specifications. In contrast, user-agent stylesheets set default values on the basis of CSS selectors.
+> The `revert` keyword is different from and should not be confused with the `initial` keyword, which uses the [initial value](/guides/Cascade/Property_value_processing#initial_value) defined on a per-property basis by the CSS specifications. In contrast, user-agent stylesheets set default values on the basis of CSS selectors.
 >
-> For example, the [initial value](/guides/Cascade/Property_value_processing#initial_value) for the [`display`](/reference/properties/display#formal_definition) property is `inline`, whereas a normal user-agent stylesheet sets the default {{cssxref("display")}} value of {{HTMLElement("div")}}s to `block`, of {{HTMLElement("table")}}s to `table`, etc.
+> For example, the [initial value](/guides/Cascade/Property_value_processing#initial_value) for the [`display`](/reference/properties/display#formal_definition) property is `inline`, whereas a normal user-agent stylesheet sets the default `display` value of {{HTMLElement("div")}}s to `block`, of {{HTMLElement("table")}}s to `table`, etc.
 
 ## Examples
 
@@ -142,7 +142,7 @@ section.with-revert {
 
 Notice how the paragraph is still red even though a `color` property for the section was reverted. Also, note that both the header and plain text node are `steelblue`. The result of reverting makes it as if `section { color: darkgreen; }` did not exist for the section with `color: revert` applied.
 
-Also, if neither the user agent nor the user override the `<h3>` or `<section>` color values, then the `steelblue` color is inherited from `<main>`, as the {{cssxref("color")}} property is an inherited property.
+Also, if neither the user agent nor the user override the `<h3>` or `<section>` color values, then the `steelblue` color is inherited from `<main>`, as the `color` property is an inherited property.
 
 ## Specifications
 
@@ -154,8 +154,8 @@ Also, if neither the user agent nor the user override the `<h3>` or `<section>` 
 
 ## See also
 
-- Use the {{cssxref("initial")}} keyword to set a property to its initial value.
-- Use the {{cssxref("inherit")}} keyword to make an element's property the same as its parent.
-- Use the {{cssxref("revert-layer")}} keyword to reset a property to the value established in a previous cascade layer.
-- Use the {{cssxref("unset")}} keyword to set a property to its inherited value if it inherits or to its initial value if not.
-- The {{cssxref("all")}} property lets you reset all properties to their initial, inherited, reverted, or unset state at once.
+- Use the `initial` keyword to set a property to its initial value.
+- Use the `inherit` keyword to make an element's property the same as its parent.
+- Use the `revert-layer` keyword to reset a property to the value established in a previous cascade layer.
+- Use the `unset` keyword to set a property to its inherited value if it inherits or to its initial value if not.
+- The `all` property lets you reset all properties to their initial, inherited, reverted, or unset state at once.

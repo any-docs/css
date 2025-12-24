@@ -12,13 +12,13 @@ In [multi-column layout](/guides/Multicol_layout/Basic_concepts), the {{glossary
 
 ## align-content and justify-content
 
-The {{cssxref("align-content")}} property applies to the block axis and {{cssxref("justify-content")}} to the inline axis. Any spacing added to the columns due to use of space distribution will be added to the gap between the columns, therefore making the gap larger than might be specified by the {{cssxref("column-gap")}} (or {{cssxref("gap")}} shorthand) property.
+The `align-content` property applies to the block axis and `justify-content` to the inline axis. Any spacing added to the columns due to use of space distribution will be added to the gap between the columns, therefore making the gap larger than might be specified by the `column-gap` (or `gap` shorthand) property.
 
-Using a value of `justify-content` other than `normal` or `stretch` will cause column boxes to display at the {{cssxref("column-width")}} specified on the multicol container, and the remaining space distributed according to the value of `justify-content`.
+Using a value of `justify-content` other than `normal` or `stretch` will cause column boxes to display at the `column-width` specified on the multicol container, and the remaining space distributed according to the value of `justify-content`.
 
 ## column-gap
 
-The {{cssxref("column-gap")}} property was originally specified in the multiple-column layout specification and then later unified with the gap properties for other layout methods in box alignment. While other layout methods treat the initial value of `column-gap` as `0`, multi-column layout treats it as `1em` — you generally want a gap between columns.
+The `column-gap` property was originally specified in the multiple-column layout specification and then later unified with the gap properties for other layout methods in box alignment. While other layout methods treat the initial value of `column-gap` as `0`, multi-column layout treats it as `1em` — you generally want a gap between columns.
 
 ## See also
 

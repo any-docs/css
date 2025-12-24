@@ -61,5 +61,5 @@ In this case the left auto margin takes up any available space and pushes the it
 ## See also
 
 - [CSS flexible box layout](/guides/Flexible_box_layout) module
-- {{cssxref("display")}} property
-- {{cssxref("margin")}} property
+- `display` property
+- `margin` property

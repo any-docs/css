@@ -9,7 +9,7 @@ sidebar: cssref
 The **`sign()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) contains one calculation, and returns `-1` if the numeric value of the argument is negative, `+1` if the numeric value of the argument is positive, `0⁺` if the numeric value of the argument is 0⁺, and `0⁻` if the numeric value of the argument is 0⁻.
 
 > [!NOTE]
-> While {{CSSxRef("abs")}} returns the absolute value of the argument, `sign()` returns the sign of the argument.
+> While `abs` returns the absolute value of the argument, `sign()` returns the sign of the argument.
 
 ## Syntax
 
@@ -43,7 +43,7 @@ A number representing the sign of `A`:
 
 ### Background image position
 
-For example, in {{cssxref("background-position")}} positive percentages resolve to a negative length, and vice versa, if the background image is larger than the background area. Thus `sign(10%)` might return `1` or `-1`, depending on how the percentage is resolved! (Or even `0`, if it's resolved against a zero length.)
+For example, in `background-position` positive percentages resolve to a negative length, and vice versa, if the background image is larger than the background area. Thus `sign(10%)` might return `1` or `-1`, depending on how the percentage is resolved! (Or even `0`, if it's resolved against a zero length.)
 
 ```css
 div {
@@ -53,7 +53,7 @@ div {
 
 ### Position direction
 
-Another use case is to control the {{cssxref("position")}} of the element. Either a positive or a negative value.
+Another use case is to control the `position` of the element. Either a positive or a negative value.
 
 ```css
 div {
@@ -72,5 +72,5 @@ div {
 
 ## See also
 
-- {{CSSxRef("abs")}}
+- `abs`
 - [Using CSS typed arithmetic](/guides/Values_and_units/Using_typed_arithmetic)

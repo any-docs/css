@@ -29,8 +29,8 @@ lighting-color: unset;
 
 ### Values
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - The lighting's color. This can be any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- `&lt;color>`
+  - The lighting's color. This can be any valid CSS `&lt;color>` value.
 
 ## Formal definition
 
@@ -70,7 +70,7 @@ We have an SVG with two {{SVGElement("filter")}} elements, one with a `<feDiffus
 
 #### CSS
 
-We define the size and position of our `<rect>` using the CSS {{cssxref("height")}}, {{cssxref("width")}}, {{cssxref("x")}}, and {{cssxref("y")}} properties. We also add a background image to the SVG to make any color alpha transparency more apparent:
+We define the size and position of our `<rect>` using the CSS `height`, `width`, `x`, and `y` properties. We also add a background image to the SVG to make any color alpha transparency more apparent:
 
 ```css
 svg {
@@ -121,13 +121,13 @@ The attributes defined the color of both light filters as `red`, but these value
 
 ## See also
 
-- {{cssxref("color")}}
-- {{cssxref("fill")}}
-- {{cssxref("flood-color")}}
-- {{cssxref("stop-color")}}
-- {{cssxref("stroke")}}
-- {{cssxref("flood-opacity")}}
-- {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
-- {{cssxref("filter-function")}}
+- `color`
+- `fill`
+- `flood-color`
+- `stop-color`
+- `stroke`
+- `flood-opacity`
+- `background-color`
+- `&lt;color>`
+- `filter-function`
 - SVG {{SVGAttr("lighting-color")}} attribute

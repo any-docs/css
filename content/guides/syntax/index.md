@@ -18,11 +18,11 @@ This module doesn't define any properties, [data types](/reference/values/Data_t
 - none
 
 > [!NOTE]
-> The module explicitly states that {{cssxref("@charset")}} is not an actual at-rule, but rather an unrecognized legacy rule that should be omitted when a stylesheet is grammar-checked. The only valid `@charset` usage is at the very beginning of a stylesheet, where it is interpreted as a special byte sequence stripped before processing the content.
+> The module explicitly states that `@charset` is not an actual at-rule, but rather an unrecognized legacy rule that should be omitted when a stylesheet is grammar-checked. The only valid `@charset` usage is at the very beginning of a stylesheet, where it is interpreted as a special byte sequence stripped before processing the content.
 
 ### Key concepts
 
-- {{cssxref("at-rule")}}
+- `at-rule`
 - [character escaping](/reference/values/custom-ident#escaping_characters)
 - [CSS comments](/guides/Syntax/Comments)
 - [CSS declaration](/en-US/docs/Web/API/CSS_Object_Model/CSS_Declaration)
@@ -60,8 +60,8 @@ This module doesn't define any properties, [data types](/reference/values/Data_t
 
 [CSS cascading and inheritance](/guides/Cascade) module:
 
-- {{cssxref("@import")}} at-rule
-- {{cssxref("important")}} flag
+- `@import` at-rule
+- `important` flag
 - [Initial values](/guides/Cascade/Property_value_processing#initial_value)
 - [Computed values](/guides/Cascade/Property_value_processing#computed_value)
 - [Used values](/guides/Cascade/Property_value_processing#used_value)
@@ -72,18 +72,18 @@ This module doesn't define any properties, [data types](/reference/values/Data_t
 [CSS custom properties for cascading variables](/guides/Cascading_variables) module:
 
 - [custom property (`--*`)](/reference/properties/--*)
-- {{cssxref("var")}} function
+- `var` function
 
 [CSS conditional rules](/guides/Conditional_rules) module:
 
-- {{cssxref("@media")}} at-rule
-- {{cssxref("@supports")}} at-rule
+- `@media` at-rule
+- `@supports` at-rule
 
 [CSS Object Model (CSSOM)](/en-US/docs/Web/API/CSS_Object_Model) API:
 
-- {{domxref("CSSValue.cssText", "cssText")}} property
-- {{domxref("CSSStyleSheet.insertRule()", "insertRule(rule)")}} method
-- {{domxref("CSSStyleSheet.replace()", "replace(text)")}} method
+- `cssText` property
+- `CSSStyleSheet.insertRule()", "insertRule(rule)")}} method
+- `CSSStyleSheet.replace()", "replace(text)")}} method
 
 [WHATWG](/en-US/docs/Glossary/WHATWG) specification:
 

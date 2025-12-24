@@ -125,4 +125,4 @@ article {
 
 ## See also
 
-- {{CSSxRef("margin")}}
+- `margin`

@@ -6,7 +6,7 @@ browser-compat: css.types.color.contrast-color
 sidebar: cssref
 ---
 
-The **`contrast-color()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) takes a {{cssxref("color_value","color")}} value and returns a contrasting color. The function commonly ensures [the WCAG AA minimum contrast](https://w3c.github.io/wcag/guidelines/22/#contrast-minimum). The browsers may use different and better algorithms.
+The **`contrast-color()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) takes a `color` value and returns a contrasting color. The function commonly ensures [the WCAG AA minimum contrast](https://w3c.github.io/wcag/guidelines/22/#contrast-minimum). The browsers may use different and better algorithms.
 
 The `contrast-color()` function enables specifying a text color and automatically generating a contrasting background color, or vice versa. It avoids the need to maintain background-text color pairs.
 
@@ -20,11 +20,11 @@ contrast-color(var(--backgroundColor))
 ### Parameters
 
 - `color`
-  - Any valid {{cssxref("&lt;color&gt;")}} value.
+  - Any valid `&lt;color&gt;` value.
 
 ### Return value
 
-A {{cssxref("named-color")}} of either `white` or `black`.
+A `named-color` of either `white` or `black`.
 
 ## Description
 
@@ -177,8 +177,8 @@ pre {
 
 - [`contrast()`](/reference/values/filter-function/contrast)
 - [CSS colors](/guides/Colors) module
-- [CSS custom properties](/reference/properties/--*) and {{cssxref("var")}}
-- [`prefers-contrast`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast) and [`prefers-color-scheme`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme) {{cssxref("@media")}} features
+- [CSS custom properties](/reference/properties/--*) and `var`
+- [`prefers-contrast`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-contrast) and [`prefers-color-scheme`](/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-color-scheme) `@media` features
 - [WCAG: color contrast](/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable/Color_contrast)
 - [How to have the browser pick a contrasting color in CSS](https://webkit.org/blog/16929/contrast-color/) on webkit.org (2025)
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) on webaim.org (2025)

@@ -9,7 +9,7 @@ sidebar: cssref
 The **`position-try-order`** [CSS](/en-US/docs/Web/CSS) property allows you to specify various fallback options that result in an available position-try fallback being used to set an anchor-positioned element's position, instead of its initial position settings.
 
 > [!NOTE]
-> There is also a shorthand property — {{cssxref("position-try")}}, which can be used to specify `position-try-order` and {{cssxref("position-try-fallbacks")}} values in a single declaration.
+> There is also a shorthand property — `position-try`, which can be used to specify `position-try-order` and `position-try-fallbacks` values in a single declaration.
 
 ## Syntax
 
@@ -107,7 +107,7 @@ The HTML includes two {{htmlelement("div")}} elements that will become an anchor
 
 #### CSS
 
-In the CSS, the anchor is given an {{cssxref("anchor-name")}} and has a large {{cssxref("margin")}} to position it toward the top center of the viewport:
+In the CSS, the anchor is given an `anchor-name` and has a large `margin` to position it toward the top center of the viewport:
 
 ```css hidden
 .anchor {
@@ -207,9 +207,9 @@ Try selecting the `most-height` order option. This has the effect of applying `-
 
 ## See also
 
-- {{cssxref("position-try")}}
-- {{cssxref("position-try-fallbacks")}}
-- The {{cssxref("@position-try")}} at-rule
+- `position-try`
+- `position-try-fallbacks`
+- The `@position-try` at-rule
 - [CSS anchor positioning](/guides/Anchor_positioning) module
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide
 - [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide

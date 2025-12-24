@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-The **{{cssxref("background-size")}}** [CSS](/en-US/docs/Web/CSS) property lets you resize the background image of an element, overriding the default behavior of tiling the image at its full size by specifying the width and/or height of the image. By doing so, you can scale the image upward or downward as desired.
+The **`background-size`** [CSS](/en-US/docs/Web/CSS) property lets you resize the background image of an element, overriding the default behavior of tiling the image at its full size by specifying the width and/or height of the image. By doing so, you can scale the image upward or downward as desired.
 
 ## Tiling a large image
 
@@ -69,7 +69,7 @@ As you can see, the CSS is actually essentially identical, save the name of the 
 
 ## Special values: `contain` and `cover`
 
-In addition to {{cssxref("&lt;length&gt;")}} values, the {{cssxref("background-size")}} CSS property offers two special size values, `contain` and `cover`. Let's take a look at these.
+In addition to `&lt;length&gt;` values, the `background-size` CSS property offers two special size values, `contain` and `cover`. Let's take a look at these.
 
 ### `contain`
 
@@ -133,7 +133,7 @@ The `cover` value specifies that the background image should be sized so that it
 
 ## See also
 
-- {{cssxref("background-size")}}
-- {{cssxref("background")}}
+- `background-size`
+- `background`
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module
 - [Scaling SVG backgrounds](/guides/Backgrounds_and_borders/Scaling_SVG_backgrounds)

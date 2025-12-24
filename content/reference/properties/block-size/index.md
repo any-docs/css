@@ -6,7 +6,7 @@ browser-compat: css.properties.block-size
 sidebar: cssref
 ---
 
-The **`block-size`** [CSS](/en-US/docs/Web/CSS) property defines the size of an element's block along the [block axis](/en-US/docs/Glossary/Grid_Axis). If the {{cssxref("writing-mode")}} is horizontal, it corresponds to the {{cssxref("height")}}; if the writing mode is vertical, it corresponds to the {{cssxref("width")}}. A related property is {{cssxref("inline-size")}}, which defines the other dimension of the element.
+The **`block-size`** [CSS](/en-US/docs/Web/CSS) property defines the size of an element's block along the [block axis](/en-US/docs/Glossary/Grid_Axis). If the `writing-mode` is horizontal, it corresponds to the `height`; if the writing mode is vertical, it corresponds to the `width`. A related property is `inline-size`, which defines the other dimension of the element.
 
 {{InteractiveExample("CSS Demo: block-size")}}
 
@@ -77,7 +77,7 @@ block-size: unset;
 
 ### Values
 
-The `block-size` property takes the same values as the {{cssxref("width")}} and {{cssxref("height")}} properties.
+The `block-size` property takes the same values as the `width` and `height` properties.
 
 ## Formal definition
 
@@ -121,5 +121,5 @@ The `block-size` property takes the same values as the {{cssxref("width")}} and 
 
 ## See also
 
-- The mapped physical properties: {{cssxref("width")}} and {{cssxref("height")}}
-- {{cssxref("writing-mode")}}
+- The mapped physical properties: `width` and `height`
+- `writing-mode`

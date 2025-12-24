@@ -6,7 +6,7 @@ browser-compat: css.properties.border-bottom-style
 sidebar: cssref
 ---
 
-The **`border-bottom-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's bottom {{cssxref("border")}}.
+The **`border-bottom-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's bottom `border`.
 
 > [!NOTE]
 > The specification doesn't define how borders of different styles connect in the corners.
@@ -83,7 +83,7 @@ border-bottom-style: revert-layer;
 border-bottom-style: unset;
 ```
 
-The `border-bottom-style` property is specified as a single {{cssxref("line-style")}} keyword value.
+The `border-bottom-style` property is specified as a single `line-style` keyword value.
 
 ## Formal definition
 

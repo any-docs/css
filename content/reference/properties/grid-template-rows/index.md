@@ -101,34 +101,34 @@ This property may be specified as:
 ### Values
 
 - `none`
-  - A keyword meaning that there is no explicit grid. Any rows will be implicitly generated and their size will be determined by the {{cssxref("grid-auto-rows")}} property.
+  - A keyword meaning that there is no explicit grid. Any rows will be implicitly generated and their size will be determined by the `grid-auto-rows` property.
 - `[line-name]`
-  - A {{cssxref("custom-ident")}} specifying a name for the line in that location. The ident may be any valid string other than the reserved words `span` and `auto`. Lines may have multiple names separated by a space inside the square brackets, for example `[line-name-a line-name-b]`.
-- {{cssxref("&lt;length&gt;")}}
+  - A `custom-ident` specifying a name for the line in that location. The ident may be any valid string other than the reserved words `span` and `auto`. Lines may have multiple names separated by a space inside the square brackets, for example `[line-name-a line-name-b]`.
+- `&lt;length&gt;`
   - A non-negative length.
-- {{cssxref("&lt;percentage&gt;")}}
-  - A non-negative {{cssxref("percentage", "&lt;percentage&gt;")}} value, relative to the block size of the grid container. If the size of the grid container depends on the size of its tracks, the browser treats the percentage as `auto` for the purpose of calculating the intrinsic size of the grid container. The percentage is then resolved against the resulting grid container size for laying out the grid and its items. The browser may adjust the intrinsic size contributions of the track to the size of the grid container and may increase the final size of the track by the minimum amount that would result in honoring the percentage.
-- {{cssxref("&lt;flex_value&gt;","&lt;flex&gt;")}}
+- `&lt;percentage&gt;`
+  - A non-negative `&lt;percentage&gt;` value, relative to the block size of the grid container. If the size of the grid container depends on the size of its tracks, the browser treats the percentage as `auto` for the purpose of calculating the intrinsic size of the grid container. The percentage is then resolved against the resulting grid container size for laying out the grid and its items. The browser may adjust the intrinsic size contributions of the track to the size of the grid container and may increase the final size of the track by the minimum amount that would result in honoring the percentage.
+- `&lt;flex&gt;`
   - A non-negative dimension with the unit `fr` specifying the track's flex factor. Each `<flex>`-sized track takes a share of the remaining space in proportion to its flex factor. When appearing outside a `minmax()` notation, it implies an automatic minimum (i.e., `minmax(auto, <flex>)`).
-- {{cssxref("max-content")}}
+- `max-content`
   - A keyword representing the largest maximal content contribution of the grid items occupying the grid track.
-- {{cssxref("min-content")}}
+- `min-content`
   - A keyword representing the largest minimal content contribution of the grid items occupying the grid track.
-- {{cssxref("minmax", "minmax(min, max)")}}
+- `minmax(min, max)`
   - A functional notation that defines a size range, greater than or equal to _min_, and less than or equal to _max_. If _max_ is smaller than _min_, then _max_ is ignored and the function is treated as _min_. As a maximum, a `<flex>` value sets the track's flex factor. It is invalid as a minimum.
 - `auto`
-  - As a maximum value, it represents the largest {{cssxref("max-content")}} size of the items in that track.
+  - As a maximum value, it represents the largest `max-content` size of the items in that track.
 
-    As a minimum value, it represents the largest minimum size of items in that track (specified by the {{cssxref("min-width")}}/{{cssxref("min-height")}} properties of the items). This often corresponds to the {{cssxref("min-content")}} size, but not always.
+    As a minimum value, it represents the largest minimum size of items in that track (specified by the `min-width`/`min-height` properties of the items). This often corresponds to the `min-content` size, but not always.
 
-    If used outside of {{cssxref("minmax()")}} notation, `auto` represents the range between the minimum and maximum values described above. In most cases, this behaves similarly to `minmax(min-content,max-content)`.
+    If used outside of `minmax()` notation, `auto` represents the range between the minimum and maximum values described above. In most cases, this behaves similarly to `minmax(min-content,max-content)`.
 
     > [!NOTE]
-    > `auto` track sizes (and only `auto` track sizes) can be stretched by the {{cssxref("align-content")}} and {{cssxref("justify-content")}} properties. Therefore, by default, an `auto`-sized track will take up any remaining space in the grid container.
+    > `auto` track sizes (and only `auto` track sizes) can be stretched by the `align-content` and `justify-content` properties. Therefore, by default, an `auto`-sized track will take up any remaining space in the grid container.
 
-- {{cssxref("fit-content_function", "fit-content( [ &lt;length&gt; | &lt;percentage&gt; ] )")}}
+- `fit-content( [ &lt;length&gt; | &lt;percentage&gt; ] )`
   - Represents the formula `min(max-content, max(auto, argument))`, which is calculated similar to `auto` (i.e., `minmax(auto, max-content)`), except that the track size is clamped at _argument_ if it is greater than the `auto` minimum.
-- {{cssxref("repeat", "repeat( [ &lt;positive-integer&gt; | auto-fill | auto-fit ] , &lt;track-list&gt; )")}}
+- `repeat( [ &lt;positive-integer&gt; | auto-fill | auto-fit ] , &lt;track-list&gt; )`
   - Represents a repeated fragment of the track list, allowing a large number of rows that exhibit a recurring pattern to be written in a more compact form.
 - [`masonry`](/guides/Grid_layout/Masonry_layout)
   - Indicates that this axis should be laid out according to the masonry algorithm.
@@ -188,9 +188,9 @@ This property may be specified as:
 
 ## See also
 
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-areas")}}
-- {{cssxref("grid-template")}}
+- `grid-template-columns`
+- `grid-template-areas`
+- `grid-template`
 - [Basic concepts of grid layout: grid tracks](/guides/Grid_layout/Basic_concepts#grid_tracks)
 - Video: [Defining a grid](https://gridbyexample.com/video/series-define-a-grid/)
 - [Subgrid](/guides/Grid_layout/Subgrid)

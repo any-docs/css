@@ -48,13 +48,13 @@ Currently, no browsers support this feature.
 
 ## See also
 
-- {{cssxref("mask-mode")}}
-- {{cssxref("mask-type")}}
+- `mask-mode`
+- `mask-type`
 - [Alpha transparency versus luminance](/guides/Masking/Introduction#alpha_transparency_versus_luminance)
-- {{cssxref("mask-border")}} shorthand
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-source")}}
-- {{cssxref("mask-border-width")}}
-- {{cssxref("mask-mode")}}
+- `mask-border` shorthand
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-source`
+- `mask-border-width`
+- `mask-mode`
 - [CSS masking](/guides/Masking) module

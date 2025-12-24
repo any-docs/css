@@ -72,7 +72,7 @@ We include an HTML {{htmlelement("div")}} element, that we will then style.
 
 #### CSS
 
-We provide size and color our `<div>`, then add two {{cssxref("mask-image")}}s, and make their size match that of the element they're masking with the {{cssxref("mask-size")}} property. Lastly, we subtract the second mask image from the first mask image with the `mask-composite` property set to `subtract`.
+We provide size and color our `<div>`, then add two `mask-image`s, and make their size match that of the element they're masking with the `mask-size` property. Lastly, we subtract the second mask image from the first mask image with the `mask-composite` property set to `subtract`.
 
 ```css
 div {
@@ -220,7 +220,7 @@ And an SVG with 4 masks; an alpha heart and circle and a luminance heart and cir
 
 #### CSS
 
-First we style the `<mask>` elements, providing each mask with a {{cssxref("mask-type")}} property value of either `alpha` or `luminance`.
+First we style the `<mask>` elements, providing each mask with a `mask-type` property value of either `alpha` or `luminance`.
 
 ```css
 mask.luminance {
@@ -232,7 +232,7 @@ mask.alpha {
 }
 ```
 
-We then apply the heart and circle masks as the comma-separated {{cssxref("mask-image")}} property values. These are applied to each {{htmlelement("img")}} element, with all the images in a row getting the same masks.
+We then apply the heart and circle masks as the comma-separated `mask-image` property values. These are applied to each {{htmlelement("img")}} element, with all the images in a row getting the same masks.
 
 ```css
 /* apply the mask images */
@@ -300,9 +300,9 @@ body > img {
 
 ## See also
 
-- {{cssxref("mask")}} shorthand
-- {{cssxref("mask-type")}}
-- {{cssxref("mask-mode")}}
+- `mask` shorthand
+- `mask-type`
+- `mask-mode`
 - [Introduction to CSS masking](/guides/Masking/Introduction)
 - [CSS `mask` properties](/guides/Masking/Mask_properties)
 - [Declaring multiple masks](/guides/Masking/Multiple_masks)

@@ -76,7 +76,7 @@ mix-blend-mode: unset;
 
 ### Values
 
-- {{cssxref("&lt;blend-mode&gt;")}}
+- `&lt;blend-mode&gt;`
   - The blending mode that should be applied.
 - `plus-darker`
   - Blending using the [_plus-darker_ compositing operator](https://drafts.fxtf.org/compositing/#porterduffcompositingoperators_plus_darker).
@@ -871,5 +871,5 @@ p {
 
 ## See also
 
-- {{cssxref("&lt;blend-mode&gt;")}}
-- {{cssxref("background-blend-mode")}}
+- `&lt;blend-mode&gt;`
+- `background-blend-mode`

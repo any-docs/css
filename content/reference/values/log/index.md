@@ -26,10 +26,10 @@ width: calc(100px * log(625, 5)); /* 400px */
 The `log(value [, base]?)` function accepts two comma-separated values as its parameters.
 
 - `value`
-  - A calculation which resolves to a {{cssxref("&lt;number&gt;")}} greater than or equal to 0. Representing the value to be taken the log of.
+  - A calculation which resolves to a `&lt;number&gt;` greater than or equal to 0. Representing the value to be taken the log of.
 
 - `base`
-  - Optional. A calculation which resolves to a {{cssxref("&lt;number&gt;")}} greater than or equal to 0. Representing the base of the logarithm. If not defined, the default logarithmic base `e` is used.
+  - Optional. A calculation which resolves to a `&lt;number&gt;` greater than or equal to 0. Representing the base of the logarithm. If not defined, the default logarithmic base `e` is used.
 
 ### Return value
 
@@ -91,7 +91,7 @@ This example illustrates how the `log()` function can be used to visualize data 
 
 ## See also
 
-- {{CSSxRef("pow")}}
-- {{CSSxRef("sqrt")}}
-- {{CSSxRef("hypot")}}
-- {{CSSxRef("exp")}}
+- `pow`
+- `sqrt`
+- `hypot`
+- `exp`

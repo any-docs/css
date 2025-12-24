@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`matrix()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a homogeneous 2D transformation matrix. Its result is
-a {{cssxref("&lt;transform-function&gt;")}} data type.
+a `&lt;transform-function&gt;` data type.
 
 > [!NOTE]
 > The `matrix(a, b, c, d, tx, ty)` function is a shorthand for `matrix3d(a, b, 0, 0, c, d, 0, 0, 0, 0, 1, 0, tx, ty, 0, 1)`.
@@ -52,9 +52,9 @@ The `matrix()` function is specified with six values. The constant values are im
 parameters; the other parameters are described in the column-major order.
 
 - _a_ _b_ _c_ _d_
-  - Are {{cssxref("&lt;number&gt;")}}s describing the linear transformation.
+  - Are `&lt;number&gt;`s describing the linear transformation.
 - _tx_ _ty_
-  - Are {{cssxref("&lt;number&gt;")}}s describing the translation to apply.
+  - Are `&lt;number&gt;`s describing the translation to apply.
 
 <table class="standard-table">
   <thead>
@@ -139,10 +139,10 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
+- `transform`
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
-- {{cssxref("&lt;transform-function&gt;")}}
+  - `translate`
+  - `scale`
+  - `rotate`
+- `&lt;transform-function&gt;`
 - [`matrix3d()`](/reference/values/transform-function/matrix3d)

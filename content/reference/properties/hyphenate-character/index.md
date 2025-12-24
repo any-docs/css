@@ -52,7 +52,7 @@ The value either sets the string to use instead of a hyphen, or indicates that t
 ### Values
 
 - `<string>`
-  - The {{cssxref("&lt;string&gt;")}} to use at the end of the line before a hyphenation break.
+  - The `&lt;string&gt;` to use at the end of the line before a hyphenation break.
     The user agent may truncate this value if too many characters are used.
 - `auto`
   - The user-agent selects an appropriate string based on the content language's typographic conventions.
@@ -68,7 +68,7 @@ The value either sets the string to use instead of a hyphen, or indicates that t
 
 ## Examples
 
-This example shows two identical blocks of text that have {{cssxref("hyphens")}} set to ensure that they break wherever needed, and on soft hyphen breaks (created using `&shy;`).
+This example shows two identical blocks of text that have `hyphens` set to ensure that they break wherever needed, and on soft hyphen breaks (created using `&shy;`).
 The first block has the value of the hyphen changed to the equals symbol (`=`).
 The second block has no hyphenate-character set, which is equivalent to `hyphenate-character: auto` for user agents that support this property.
 
@@ -112,4 +112,4 @@ dd#string {
 
 ## See also
 
-- Related CSS properties: {{cssxref("hyphens")}}, {{cssxref("overflow-wrap")}}.
+- Related CSS properties: `hyphens`, `overflow-wrap`.

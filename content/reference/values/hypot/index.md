@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`hypot()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is an exponential function that returns the [square root](https://en.wikipedia.org/wiki/Square_root) of the sum of squares of its parameters.
 
-While {{CSSxRef("pow")}} and {{CSSxRef("sqrt")}} only work on unitless numbers, `hypot()` accepts values with units, but they all must have the same [type](/reference/values/Data_types).
+While `pow` and `sqrt` only work on unitless numbers, `hypot()` accepts values with units, but they all must have the same [type](/reference/values/Data_types).
 
 ## Syntax
 
@@ -26,11 +26,11 @@ width: hypot(3px, 4px, 5px); /* 7.0710678118654755px */
 The `hypot(x [, ...]#)` function accepts one or more comma-separated calculations as its parameters.
 
 - `x`, `x2`, ..., `xN`
-  - A calculation that resolves to a {{CSSxRef("&lt;number&gt;")}}, {{CSSxRef("&lt;dimension&gt;")}}, or {{CSSxRef("&lt;percentage&gt;")}}.
+  - A calculation that resolves to a `&lt;number&gt;`, `&lt;dimension&gt;`, or `&lt;percentage&gt;`.
 
 ### Return value
 
-Returns a {{CSSxRef("&lt;number&gt;")}}, {{CSSxRef("&lt;dimension&gt;")}}, or {{CSSxRef("&lt;percentage&gt;")}} (based on the inputs), which is the square root of the sum of squares of its parameters.
+Returns a `&lt;number&gt;`, `&lt;dimension&gt;`, or `&lt;percentage&gt;` (based on the inputs), which is the square root of the sum of squares of its parameters.
 
 - If any of the inputs is `infinite`, the result is `+∞`.
 - If a single parameter is provided, the result is the absolute value of its input. `hypot(2em)` and `hypot(-2em)` both resolve to `2em`.
@@ -125,7 +125,7 @@ The sizes are then applied as the `width` and `height` values of the selectors.
 
 ## See also
 
-- {{CSSxRef("pow")}}
-- {{CSSxRef("sqrt")}}
-- {{CSSxRef("log")}}
-- {{CSSxRef("exp")}}
+- `pow`
+- `sqrt`
+- `log`
+- `exp`

@@ -10,10 +10,10 @@ sidebar: cssref
 
 {{seecompattable}}
 
-The **`scroll-marker-group`** [CSS](/en-US/docs/Web/CSS) property controls whether a {{glossary("scroll container")}} element has a {{cssxref("::scroll-marker-group")}} pseudo-element generated. If present, the property also specifies whether the scroll marker group should be placed `before` _or_ `after` the contents of the scroll group container in the default visual and tab order.
+The **`scroll-marker-group`** [CSS](/en-US/docs/Web/CSS) property controls whether a {{glossary("scroll container")}} element has a `::scroll-marker-group` pseudo-element generated. If present, the property also specifies whether the scroll marker group should be placed `before` _or_ `after` the contents of the scroll group container in the default visual and tab order.
 
 > [!NOTE]
-> To create a scroll marker group container from an existing element that contains a set of {{htmlelement("a")}} elements, use the {{cssxref("scroll-target-group")}} property. Read about the [differences in behavior](/reference/properties/scroll-target-group#differences_between_scroll-target-group_and_scroll-marker-group) between the two.
+> To create a scroll marker group container from an existing element that contains a set of {{htmlelement("a")}} elements, use the `scroll-target-group` property. Read about the [differences in behavior](/reference/properties/scroll-target-group#differences_between_scroll-target-group_and_scroll-marker-group) between the two.
 
 ## Syntax
 
@@ -34,16 +34,16 @@ scroll-marker-group: unset;
 ### Values
 
 - `after`
-  - A {{cssxref("::scroll-marker-group")}} pseudo-element is generated as a sibling of the scroll container's child DOM elements, immediately preceding them, and any generated {{cssxref("::scroll-button()")}} pseudo-elements. It appears at the end of the container's tab order and layout box order (but not DOM structure).
+  - A `::scroll-marker-group` pseudo-element is generated as a sibling of the scroll container's child DOM elements, immediately preceding them, and any generated `::scroll-button()` pseudo-elements. It appears at the end of the container's tab order and layout box order (but not DOM structure).
 
 - `before`
-  - A `::scroll-marker-group` pseudo-element is generated as a sibling of the scroll container's child DOM elements, immediately preceding them, and any generated {{cssxref("::scroll-button()")}} pseudo-elements. The scroll marker group appears at the start of the container's tab order and layout box order.
+  - A `::scroll-marker-group` pseudo-element is generated as a sibling of the scroll container's child DOM elements, immediately preceding them, and any generated `::scroll-button()` pseudo-elements. The scroll marker group appears at the start of the container's tab order and layout box order.
 
 - `none`
   - No `::scroll-marker-group` pseudo-element will be generated on the element. This is the default value.
 
 > [!NOTE]
-> As an accessibility best practice, match the visual rendering position of the scroll marker group container with the tab order. When positioning the marker group at the start of the content with styles applied to {{cssxref("::scroll-marker-group")}}, put it at the beginning of the tab order using `before`. When positioning the group at the end of the content, put it at the end of the tab order using `after`.
+> As an accessibility best practice, match the visual rendering position of the scroll marker group container with the tab order. When positioning the marker group at the start of the content with styles applied to `::scroll-marker-group`, put it at the beginning of the tab order using `before`. When positioning the group at the end of the content, put it at the end of the tab order using `after`.
 
 ## Formal definition
 
@@ -89,7 +89,7 @@ We have a basic HTML {{htmlelement("ul")}} list with several {{htmlelement("li")
 
 #### CSS
 
-We convert our `<ul>` into a carousel by setting the {{cssxref("display")}} to `flex`, creating a single, non-wrapping row of `<li>` elements. The {{cssxref("overflow-x")}} property is set to `auto`, meaning if the items overflow their container on the x-axis, the content will scroll horizontally. We then convert the `<ul>` into a [scroll-snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container), ensuring that items always snap into place when the container is scrolled with a {{cssxref("scroll-snap-type")}} value of `mandatory`.
+We convert our `<ul>` into a carousel by setting the `display` to `flex`, creating a single, non-wrapping row of `<li>` elements. The `overflow-x` property is set to `auto`, meaning if the items overflow their container on the x-axis, the content will scroll horizontally. We then convert the `<ul>` into a [scroll-snap container](/en-US/docs/Glossary/Scroll_snap#scroll_snap_container), ensuring that items always snap into place when the container is scrolled with a `scroll-snap-type` value of `mandatory`.
 
 We create a scroll marker group container with the `scroll-marker-group` property, placing the group after all the content.
 
@@ -107,7 +107,7 @@ ul {
 }
 ```
 
-Next, we style the `<li>` elements, using the {{cssxref("flex")}} property to make them `33%` of the width of the container. The {{cssxref("scroll-snap-align")}} value of `start` makes the left-hand side of the left-most visible item snap to the left edge of the container when the content is scrolled.
+Next, we style the `<li>` elements, using the `flex` property to make them `33%` of the width of the container. The `scroll-snap-align` value of `start` makes the left-hand side of the left-most visible item snap to the left edge of the container when the content is scrolled.
 
 ```css
 li {
@@ -120,7 +120,7 @@ li {
 }
 ```
 
-We then use the {{cssxref("::scroll-marker")}} pseudo-element to create a square marker for each list item with a red border, and apply styles to the {{cssxref("::scroll-marker-group")}} pseudo-element to lay out the scroll markers in a row with a `0.2em` gap between each one.
+We then use the `::scroll-marker` pseudo-element to create a square marker for each list item with a red border, and apply styles to the `::scroll-marker-group` pseudo-element to lay out the scroll markers in a row with a `0.2em` gap between each one.
 
 ```css
 li::scroll-marker {
@@ -136,7 +136,7 @@ li::scroll-marker {
 }
 ```
 
-Finally, to ensure good user experience, we style the marker of the currently-scrolled element differently from the others, targeting the marker with the {{cssxref(":target-current")}} pseudoclass.
+Finally, to ensure good user experience, we style the marker of the currently-scrolled element differently from the others, targeting the marker with the `:target-current` pseudoclass.
 
 ```css
 ::scroll-marker:target-current {
@@ -182,13 +182,13 @@ Note the placement of the scroll marker group container. Check out how the keybo
 
 ## See also
 
-- {{cssxref("scroll-target-group")}}
-- {{cssxref("::scroll-button()")}}
-- {{cssxref("::scroll-marker-group")}}
-- {{cssxref("::scroll-marker")}}
-- {{cssxref(":target-current")}}
-- {{cssxref(":target-before")}}
-- {{cssxref(":target-after")}}
+- `scroll-target-group`
+- `::scroll-button()`
+- `::scroll-marker-group`
+- `::scroll-marker`
+- `:target-current`
+- `:target-before`
+- `:target-after`
 - [Creating CSS carousels](/guides/Overflow/Carousels)
 - [CSS overflow](/guides/Overflow) module
 - [CSS Carousel Gallery](https://chrome.dev/carousel/) via chrome.dev (2025)

@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-When the {{cssxref("z-index")}} property is not specified on any element, elements are stacked in the following order (from bottom to top):
+When the `z-index` property is not specified on any element, elements are stacked in the following order (from bottom to top):
 
 1. The background and borders of the root element.
 2. Descendant non-positioned elements, in order of appearance in the HTML.
@@ -14,7 +14,7 @@ When the {{cssxref("z-index")}} property is not specified on any element, elemen
 
 See [types of positioning](/reference/properties/position#types_of_positioning) for an explanation of positioned and non-positioned elements.
 
-Keep in mind, when the {{cssxref("order")}} property alters rendering from the _order of appearance in the HTML_ within {{cssxref("flex")}} containers, it similarly affects the order for stacking context.
+Keep in mind, when the `order` property alters rendering from the _order of appearance in the HTML_ within `flex` containers, it similarly affects the order for stacking context.
 
 ## Example
 

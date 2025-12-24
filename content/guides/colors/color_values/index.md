@@ -12,7 +12,7 @@ A color model is a mathematical model that represents colors using numeric value
 
 Originally, monitors were limited regarding how many colors they could render, and CSS colors were limited by those constraints, expanding as capabilities improved. With modern devices no longer limited to RGB, we now also have color models based on human perception instead, providing a much wider {{glossary("gamut")}} of colors. We can now describe color in CSS in several ways, and the options keep expanding.
 
-This guide introduces the different {{cssxref("&lt;color&gt;")}} value types. For a more detailed discussion, see the reference links provided below.
+This guide introduces the different `&lt;color&gt;` value types. For a more detailed discussion, see the reference links provided below.
 
 ## Keywords
 
@@ -20,9 +20,9 @@ The web defines a set of standard color names that lets you use keywords instead
 
 Color keywords include standard primary and secondary colors (such as `red`, `blue`, or `orange`), shades of gray (from `black` to `white`, including colors like `darkgray` and `lightgrey`), and a variety of other blended colors, including `lightseagreen`, `cornflowerblue`, and `rebeccapurple`. Named colors use the [RGB](/en-US/docs/Glossary/RGB) model and are associated with the sRGB (`srgb`) color space.
 
-There are over 160 named colors. There are named colors of special interest: [`transparent`](/reference/values/named-color#transparent) sets a transparent color value, while [`currentColor`](/reference/values/color_value#currentcolor_keyword) sets the current value of the CSS {{cssxref("color")}} property. There are also named {{cssxref("system-color")}} colors, such as `accentcolortext` and `buttonface`, that reflect the default color choices made by the user, the browser, or the operating system.
+There are over 160 named colors. There are named colors of special interest: [`transparent`](/reference/values/named-color#transparent) sets a transparent color value, while [`currentColor`](/reference/values/color_value#currentcolor_keyword) sets the current value of the CSS `color` property. There are also named `system-color` colors, such as `accentcolortext` and `buttonface`, that reflect the default color choices made by the user, the browser, or the operating system.
 
-All color keywords are case-insensitive. See the {{cssxref("named-color")}} data type for more information on color keywords.
+All color keywords are case-insensitive. See the `named-color` data type for more information on color keywords.
 
 ## RGB values
 
@@ -67,13 +67,13 @@ color: #ff000044;
 color: #f004;
 ```
 
-See the {{cssxref("hex-color")}} data type for more information on hexadecimal string notation for colors.
+See the `hex-color` data type for more information on hexadecimal string notation for colors.
 
 #### HTML color input type
 
 There are many situations in which your website may need to let the user select a color. Perhaps you have a customizable user interface, or you're implementing a drawing app. Maybe you have editable text and need to let the user choose the text color. Or perhaps your app lets the user assign colors to folders or items. For such use cases, the {{HTMLElement("input")}} element has a `"color"` [`type`](/en-US/docs/Web/HTML/Reference/Elements/input#type), which renders a color picker control.
 
-This example allows you to choose a color. Once a choice is made, the {{cssxref("border-color")}} is set to that color, and the value is displayed.
+This example allows you to choose a color. Once a choice is made, the `border-color` is set to that color, and the value is displayed.
 
 ```html
 <div id="box">
@@ -119,42 +119,42 @@ colorPicker.addEventListener("change", (event) => {
 });
 ```
 
-The {{domxref("Element/input_event", "input")}} event is sent every time the value of the element changes; that is, every time the user adjusts the color in the color picker. Each time this event arrives, we set the box's border color to match the color picker's current value.
+The `input` event is sent every time the value of the element changes; that is, every time the user adjusts the color in the color picker. Each time this event arrives, we set the box's border color to match the color picker's current value.
 
-The {{domxref("HTMLElement/change_event", "change")}} event is received when the color picker's value is finalized. We respond by setting the contents of the `<output>` to the string value of the selected color.
+The `change` event is received when the color picker's value is finalized. We respond by setting the contents of the `<output>` to the string value of the selected color.
 
 ### RGB functional notation
 
-RGB (Red/Green/Blue) functional notation, like hexadecimal string notation, represents colors using their red, green, and blue components (and, optionally, an alpha channel component for opacity). However, instead of using a string, the color is defined using the CSS function {{cssxref("color_value/rgb", "rgb()")}}. This function accepts 3 or 4 input parameters — red, green, and blue component values and an optional alpha channel value.
+RGB (Red/Green/Blue) functional notation, like hexadecimal string notation, represents colors using their red, green, and blue components (and, optionally, an alpha channel component for opacity). However, instead of using a string, the color is defined using the CSS function `rgb()`. This function accepts 3 or 4 input parameters — red, green, and blue component values and an optional alpha channel value.
 
 Legal values for each of these parameters are:
 
 - `red`, `green`, and `blue`
-  - Each must be an {{cssxref("&lt;number&gt;")}} value between 0 and 255 (inclusive), a {{cssxref("&lt;percentage&gt;")}} from 0% to 100%, or the keyword `none`, which is equal to `0` in this case.
+  - Each must be an `&lt;number&gt;` value between 0 and 255 (inclusive), a `&lt;percentage&gt;` from 0% to 100%, or the keyword `none`, which is equal to `0` in this case.
 
 - `alpha`
   - The alpha channel is specified as a percentage between `0%` (fully transparent) and `100%` (fully opaque), or a number between `0.0` (equivalent to `0%`) and `1.0` (equivalent to `100%`).
 
 For example, a bright red that's 50% opaque can be represented as `rgb(255 0 0 / 50%)` or `rgb(100% 0 0 / 0.5)`.
 
-See the {{cssxref("color_value/rgb", "rgb()")}} color function for more information on the RGB functional notation.
+See the `rgb()` color function for more information on the RGB functional notation.
 
 ## Color functions with a hue component
 
-The color functions that have a {{cssxref("hue")}} component — an {{cssxref("angle")}} from that color model's {{glossary("color wheel")}} — include the `srgb` color functions `hsl()` and `hwb()`, CIElab's `lch()` function, and OKLab's `oklch()` color function. These color functions are more intuitive as the hue allows us to tell the difference or similarity between colors like red, orange, yellow, green, blue, etc.
+The color functions that have a `hue` component — an `angle` from that color model's {{glossary("color wheel")}} — include the `srgb` color functions `hsl()` and `hwb()`, CIElab's `lch()` function, and OKLab's `oklch()` color function. These color functions are more intuitive as the hue allows us to tell the difference or similarity between colors like red, orange, yellow, green, blue, etc.
 
 ### HSL functional notation
 
 The `hsl()` CSS color function was the first hue-based color function to be supported in browsers. `hsl()` is more intuitive than `rgb()` — it is generally easier to determine the effect of varying hue (`h`), saturation (`s`), and lightness (`l`) values than it is to declare specific colors via red, green, and blue channel values. In addition, HSL is similar to the HSB (hue, saturation, and brightness) color picker in Photoshop, which made it immediately familiar to many people when first supported.
 
-The `hsl()` and `hwb()` sRGB color functions are both cylindrical. Hue defines the color as an {{cssxref("angle")}} on a circular {{glossary("color wheel")}}. The diagram below shows an HSL color cylinder. Saturation is a percentage that defines how far the color is along a scale between completely grayscale and having the maximum possible amount of the given hue.
+The `hsl()` and `hwb()` sRGB color functions are both cylindrical. Hue defines the color as an `angle` on a circular {{glossary("color wheel")}}. The diagram below shows an HSL color cylinder. Saturation is a percentage that defines how far the color is along a scale between completely grayscale and having the maximum possible amount of the given hue.
 As the value of lightness increases, the color transitions from the darkest to the lightest possible color (from black to white).
 
 ![HSL color cylinder](640px-hsl_color_solid_cylinder.png)
 
 Image courtesy of user [SharkD](https://commons.wikimedia.org/wiki/User:SharkD) on [Wikipedia](https://en.wikipedia.org/), distributed under the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) license.
 
-The value of the hue (`H`) component of an HSL (or HWB) color is an angle that starts at 0° as red, then moves through yellow, green, cyan, blue, and magenta, before ending up back at red again at 360°. The value can be specified in any {{cssxref("angle")}} unit supported by CSS, including degrees (`deg`), radians (`rad`), gradians (`grad`), or turns (`turn`). The hue value identifies what the base shade of the color is, but it doesn't control how vivid or dull, or how light or dark the color is.
+The value of the hue (`H`) component of an HSL (or HWB) color is an angle that starts at 0° as red, then moves through yellow, green, cyan, blue, and magenta, before ending up back at red again at 360°. The value can be specified in any `angle` unit supported by CSS, including degrees (`deg`), radians (`rad`), gradians (`grad`), or turns (`turn`). The hue value identifies what the base shade of the color is, but it doesn't control how vivid or dull, or how light or dark the color is.
 
 The saturation (`S`) component of the color specifies the percentage of the final color comprised of the specified hue, with 100% being fully saturated and 0% being a complete lack of color (greyscale). The lightness (`L`) component specifies how light the color is along a sliding scale between completely black (`0%`) and completely white (`100%`). You can also optionally include an alpha channel, preceded by a slash (`/`) to make the color less than 100% opaque.
 
@@ -385,7 +385,7 @@ You may notice how the brightness of the latter gradients is more even across th
 
 Note also how the spread of blue values in CIE Lab is longer than in the other two. This is the difference between `lch()` and `oklch()`. The `lch()` blue spread is due to a bug that shifts the chroma and lightness of hue values between `270deg` and `330deg`. This was resolved in the oklab color space and therefore the `oklch()` color notation.
 
-As discussed above, the hue (`H`) in the `lch()` and `oklch()` is an `<angle>`, `number` or the keyword `none`. The `lightness` is either a {{cssxref("percentage")}} or for `lch()` a number between `0` and `100` and for `oklch()` a number between `0` and `1`, with `0` or `0%` being the complete lack of lightness, which is black.
+As discussed above, the hue (`H`) in the `lch()` and `oklch()` is an `<angle>`, `number` or the keyword `none`. The `lightness` is either a `percentage` or for `lch()` a number between `0` and `100` and for `oklch()` a number between `0` and `1`, with `0` or `0%` being the complete lack of lightness, which is black.
 
 The `C` is a `<number>`, `<percentage>`, or the keyword `none` (equivalent to `0%`) is the color's chroma, or the "amount of color". This is similar to the `S` saturation value of the `hsl()` color function. The value `0` is the complete lack of chroma or saturation; resulting in a grey between white and black inclusive, depending on the lightness value. The number values are theoretically unbounded, with `100%` being equal to `150` for `lch()` and `0.4` with `oklch()`.
 
@@ -445,7 +445,7 @@ The [`lab()`](/reference/values/color_value/lab) functional notation expresses a
 
 Similar to `lch()` and `oklch()`, the `lightness` is either:
 
-- A {{cssxref("percentage")}}, with `0%` being completely black and `100%` being completely white.
+- A `percentage`, with `0%` being completely black and `100%` being completely white.
 - A number between `0` and `100` for `lab()` and `0` and `1` for `oklab()`, where `0` is completely black and `1`/`100` is completely white.
 
 The `a` value is `<number>` between `-125` and `125` for `lab()` or `-0.4` and `0.4` for `oklab()`, a `<percentage>` between `-100%` and `100%`, or the keyword `none` (equivalent to `0%` in this case). This value specifies the color's distance along the a-axis in the color space, which defines how green (moving towards -100%) or red (moving towards +100%) the color is.
@@ -516,23 +516,23 @@ For example, if you wanted to show the `display-p3 0 0 1` color, which is outsid
 }
 ```
 
-Understanding `color()` is important when it comes to relative colors, discussed next. The older sRGB color notations discussed above — `hsl()`, `hwb()`, and `rgb()`— do not express the full spectrum of visible colors, while the `color()` function supports a much wider color gamut. As a result, when using the older functions types to define relative colors, the output color returned by querying {{domxref("HTMLElement.style")}} property or the {{domxref("CSSStyleDeclaration.getPropertyValue()")}} method will be a `color(srgb ...)` value.
+Understanding `color()` is important when it comes to relative colors, discussed next. The older sRGB color notations discussed above — `hsl()`, `hwb()`, and `rgb()`— do not express the full spectrum of visible colors, while the `color()` function supports a much wider color gamut. As a result, when using the older functions types to define relative colors, the output color returned by querying `HTMLElement.style` property or the `CSSStyleDeclaration.getPropertyValue()` method will be a `color(srgb ...)` value.
 
 To see an example of converting the `rgb()`, `hsl()`, `hwb()`, and other [color formats](/reference/values/color_value), check out our [color format converter tool](/guides/Colors/Color_format_converter).
 
 ### Relative colors
 
-Every color function listed above can be used to define [**relative colors**](/guides/Colors/Using_relative_colors), which allows {{cssxref("&lt;color&gt;")}} values to be defined relative to other existing colors, rather than defining a color value from scratch each time. This powerful feature enables the creation of complements to existing colors — such as lighter, darker, saturated, semi-transparent, or inverted variants of an original color. Relative colors provide an effective mechanism to create palettes and define color adjustments. See each color function page to learn more about their relative syntaxes.
+Every color function listed above can be used to define [**relative colors**](/guides/Colors/Using_relative_colors), which allows `&lt;color&gt;` values to be defined relative to other existing colors, rather than defining a color value from scratch each time. This powerful feature enables the creation of complements to existing colors — such as lighter, darker, saturated, semi-transparent, or inverted variants of an original color. Relative colors provide an effective mechanism to create palettes and define color adjustments. See each color function page to learn more about their relative syntaxes.
 
 As noted above, when using `rgb()`, `hsl()`, or `hwb()` to output a relative color, the output color will be a `color()` function in the `srgb` color space.
 
 ### color-mix() function
 
-The {{cssxref("color_value/color-mix", "color-mix()")}} function takes two color values of any syntax mentioned above, optionally with proportional percent values for each color, and returns the result of mixing them in a given colorspace by a given amount.
+The `color-mix()` function takes two color values of any syntax mentioned above, optionally with proportional percent values for each color, and returns the result of mixing them in a given colorspace by a given amount.
 
 ### light-dark() function
 
-The {{cssxref("color_value/light-dark", "light-dark()")}} function lets you specify two color values for a property intended for use in light and dark color schemes, respectively. Which one is set depends on whether the developer has set or the user has requested a light or dark color scheme. This is a shortcut function, allowing you to achieve the same results as the {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}} media feature query but with less code.
+The `light-dark()` function lets you specify two color values for a property intended for use in light and dark color schemes, respectively. Which one is set depends on whether the developer has set or the user has requested a light or dark color scheme. This is a shortcut function, allowing you to achieve the same results as the `prefers-color-scheme` media feature query but with less code.
 
 ## See also
 

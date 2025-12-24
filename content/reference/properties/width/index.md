@@ -6,7 +6,7 @@ browser-compat: css.properties.width
 sidebar: cssref
 ---
 
-The **`width`** [CSS](/en-US/docs/Web/CSS) property sets an element's width. By default, it sets the width of the [content area](/guides/Box_model/Introduction#content_area), but if {{cssxref("box-sizing")}} is set to `border-box`, it sets the width of the [border area](/guides/Box_model/Introduction#border_area).
+The **`width`** [CSS](/en-US/docs/Web/CSS) property sets an element's width. By default, it sets the width of the [content area](/guides/Box_model/Introduction#content_area), but if `box-sizing` is set to `border-box`, it sets the width of the [border area](/guides/Box_model/Introduction#border_area).
 
 {{InteractiveExample("CSS Demo: width")}}
 
@@ -45,7 +45,7 @@ width: auto;
 }
 ```
 
-The specified value of `width` applies to the content area so long as its value remains within the values defined by {{cssxref("min-width")}} and {{cssxref("max-width")}}.
+The specified value of `width` applies to the content area so long as its value remains within the values defined by `min-width` and `max-width`.
 
 - If the value for `width` is less than the value for `min-width`, then `min-width` overrides `width`.
 - If the value for `width` is greater than the value for `max-width`, then `max-width` overrides `width`.
@@ -83,17 +83,17 @@ width: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Defines the width as a distance value.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Defines the width as a percentage of the [containing block](/guides/Display/Containing_block)'s width.
 - `auto`
   - The browser will calculate and select a width for the specified element.
-- {{cssxref("max-content")}}
+- `max-content`
   - The intrinsic preferred width.
-- {{cssxref("min-content")}}
+- `min-content`
   - The intrinsic minimum width.
-- {{cssxref("fit-content")}}
+- `fit-content`
   - Use the available space, but not more than [max-content](/reference/values/max-content), i.e., `min(max-content, max(min-content, stretch))`.
 - [`fit-content(<length-percentage>)`](/reference/values/fit-content_function)
   - Uses the fit-content formula with the available space replaced by the specified argument, i.e., `min(max-content, max(min-content, <length-percentage>))`.
@@ -261,11 +261,11 @@ p.min-blue {
 
 ## See also
 
-- {{cssxref("height")}}
-- {{cssxref("box-sizing")}}
-- {{cssxref("min-width")}}, {{cssxref("max-width")}}
-- {{cssxref("block-size")}}, {{cssxref("inline-size")}}
-- {{cssxref("anchor-size()")}}
+- `height`
+- `box-sizing`
+- `min-width`, `max-width`
+- `block-size`, `inline-size`
+- `anchor-size()`
 - SVG {{SVGAttr("width")}} attribute
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

@@ -49,9 +49,9 @@ direction: rtl;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-block-color")}}
-- {{cssxref("border-block-style")}}
-- {{cssxref("border-block-width")}}
+- `border-block-color`
+- `border-block-style`
+- `border-block-width`
 
 ## Syntax
 
@@ -73,17 +73,17 @@ border-block: unset;
 The `border-block` is specified with one or more of the following, in any order:
 
 - `<'border-width'>`
-  - The width of the border. See {{cssxref("border-width")}}.
+  - The width of the border. See `border-width`.
 - `<'border-style'>`
-  - The line style of the border. See {{cssxref("border-style")}}.
-- {{CSSXref("&lt;color&gt;")}}
+  - The line style of the border. See `border-style`.
+- `&lt;color&gt;`
   - The color of the border.
 
 ## Description
 
-`border-block` can be used to set the values for one or more of {{cssxref("border-block-width")}}, {{cssxref("border-block-style")}}, and {{cssxref("border-block-color")}} setting both the start and end in the block dimension at once. The physical borders to which it maps depends on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("border-top")}} and {{cssxref("border-bottom")}} or {{cssxref("border-right")}}, and {{cssxref("border-left")}} properties depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+`border-block` can be used to set the values for one or more of `border-block-width`, `border-block-style`, and `border-block-color` setting both the start and end in the block dimension at once. The physical borders to which it maps depends on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top` and `border-bottom` or `border-right`, and `border-left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
-The borders in the other dimension can be set with {{cssxref("border-inline")}}, which sets {{cssxref("border-inline-start")}}, and {{cssxref("border-inline-end")}}.
+The borders in the other dimension can be set with `border-inline`, which sets `border-inline-start`, and `border-inline-end`.
 
 ## Formal definition
 
@@ -135,5 +135,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- This property maps to one of the physical border properties: {{cssxref("border-top")}}, {{cssxref("border-right")}}, {{cssxref("border-bottom")}}, or {{cssxref("border-left")}}.
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- This property maps to one of the physical border properties: `border-top`, `border-right`, `border-bottom`, or `border-left`.
+- `writing-mode`, `direction`, `text-orientation`

@@ -6,7 +6,7 @@ browser-compat: css.types.gradient.radial-gradient
 sidebar: cssref
 ---
 
-The **`radial-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of a progressive transition between two or more colors that radiate from an origin. Its shape may be a circle or an ellipse. The function's result is an object of the {{cssxref("gradient")}} data type, which is a special kind of {{cssxref("image")}}.
+The **`radial-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of a progressive transition between two or more colors that radiate from an origin. Its shape may be a circle or an ellipse. The function's result is an object of the `gradient` data type, which is a special kind of `image`.
 
 {{InteractiveExample("CSS Demo: radial-gradient()")}}
 
@@ -64,8 +64,8 @@ A radial gradient is specified by indicating the center of the gradient (where t
 
 ### Values
 
-- {{cssxref("&lt;position&gt;")}}
-  - The position of the gradient, interpreted in the same way as {{cssxref("background-position")}} or {{cssxref("transform-origin")}}. If unspecified, it defaults to `center`.
+- `&lt;position&gt;`
+  - The position of the gradient, interpreted in the same way as `background-position` or `transform-origin`. If unspecified, it defaults to `center`.
 - `<ending-shape>`
   - The gradient's ending-shape. The value can be `circle` (meaning that the gradient's shape is a circle with a constant radius) or `ellipse` (meaning that the shape is an axis-aligned ellipse). If unspecified, it defaults to `ellipse`.
 - `<size>`
@@ -80,14 +80,14 @@ A radial gradient is specified by indicating the center of the gradient (where t
     | `farthest-side`   | Similar to `closest-side`, except the ending shape is sized to meet the side of the box farthest from its center (or vertical and horizontal sides).                            |
     | `farthest-corner` | The default value, the gradient's ending shape is sized so that it exactly meets the farthest corner of the box from its center.                                                |
 
-    If `<ending-shape>` is specified as `circle`, the size may be given explicitly as a {{cssxref("length")}}, which provides an explicit circle radius. Negative values are invalid.
+    If `<ending-shape>` is specified as `circle`, the size may be given explicitly as a `length`, which provides an explicit circle radius. Negative values are invalid.
 
-    If `<ending-shape>` is specified as `ellipse`, the size may be given as a {{cssxref("length-percentage")}} with two values to provide an explicit ellipse size. The first value represents the horizontal radius and the second is the vertical radius. Percentage values are relative to the corresponding dimension of the gradient box. Negative values are invalid.
+    If `<ending-shape>` is specified as `ellipse`, the size may be given as a `length-percentage` with two values to provide an explicit ellipse size. The first value represents the horizontal radius and the second is the vertical radius. Percentage values are relative to the corresponding dimension of the gradient box. Negative values are invalid.
 
     When the `<ending-shape>` keyword is omitted, the gradient shape is determined by the size given. One `<length>` value provides a circle, while two values in `<length-percentage>` units provide an ellipse. A single `<percentage>` value is not valid.
 
 - `<linear-color-stop>`
-  - A color-stop's {{cssxref("&lt;color&gt;")}} value, followed by one or two optional stop positions (either a {{cssxref("&lt;percentage&gt;")}} or a {{cssxref("&lt;length&gt;")}} along the gradient's axis). A percentage of `0%`, or a length of `0`, represents the center of the gradient; the value `100%` represents the intersection of the ending shape with the virtual gradient ray. Percentage values in between are linearly positioned on the gradient ray. Including two stop positions is equivalent to declaring two color stops with the same color at the two positions.
+  - A color-stop's `&lt;color&gt;` value, followed by one or two optional stop positions (either a `&lt;percentage&gt;` or a `&lt;length&gt;` along the gradient's axis). A percentage of `0%`, or a length of `0`, represents the center of the gradient; the value `100%` represents the intersection of the ending shape with the virtual gradient ray. Percentage values in between are linearly positioned on the gradient ray. Including two stop positions is equivalent to declaring two color stops with the same color at the two positions.
 - `<color-hint>`
   - The color-hint is an interpolation hint defining how the gradient progresses between adjacent color stops. The length defines at which point between two color stops the gradient color should reach the midpoint of the color transition. If omitted, the midpoint of the color transition is the midpoint between two color stops.
 
@@ -95,9 +95,9 @@ A radial gradient is specified by indicating the center of the gradient (where t
 
 As with any gradient, a radial gradient has [no intrinsic dimensions](/reference/values/image#description); i.e., it has no natural or preferred size, nor a preferred ratio. Its concrete size will match the size of the element it applies to.
 
-To create a radial gradient that repeats so as to fill its container, use the {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}} function instead.
+To create a radial gradient that repeats so as to fill its container, use the `repeating-radial-gradient()` function instead.
 
-Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `radial-gradient()` won't work on {{Cssxref("background-color")}} and other properties that use the {{cssxref("&lt;color&gt;")}} data type.
+Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `radial-gradient()` won't work on `background-color` and other properties that use the `&lt;color&gt;` data type.
 
 ### Composition of a radial gradient
 
@@ -228,11 +228,11 @@ Please see [Using CSS gradients](/guides/Images/Using_gradients) for more exampl
 ## See also
 
 - [Using CSS gradients](/guides/Images/Using_gradients)
-- Other gradient functions: {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}, {{cssxref("gradient/linear-gradient", "linear-gradient()")}}, {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}, {{cssxref("gradient/conic-gradient", "conic-gradient()")}}, {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
-- {{cssxref("hue-interpolation-method")}}
-- {{cssxref("color-interpolation-method")}}
-- {{cssxref("image")}}
-- {{cssxref("image/image","image()")}}
-- {{cssxref("element()")}}
-- {{cssxref("image/image-set","image-set()")}}
-- {{cssxref("cross-fade()")}}
+- Other gradient functions: `repeating-radial-gradient()`, `linear-gradient()`, `repeating-linear-gradient()`, `conic-gradient()`, `repeating-conic-gradient()`
+- `hue-interpolation-method`
+- `color-interpolation-method`
+- `image`
+- `image()`
+- `element()`
+- `image-set()`
+- `cross-fade()`

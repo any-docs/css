@@ -87,7 +87,7 @@ scroll-margin-top: unset;
 
 ### Values
 
-- {{CSSXref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - An outset from the top edge of the scroll container.
 
 ## Formal definition

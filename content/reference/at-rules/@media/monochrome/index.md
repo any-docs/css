@@ -10,7 +10,7 @@ The **`monochrome`** [CSS](/en-US/docs/Web/CSS) [media feature](/en-US/docs/Web/
 
 ## Syntax
 
-The `monochrome` feature is specified as an {{cssxref("&lt;integer&gt;")}} representing the number of bits per pixel in the monochrome frame buffer. If the device is not a monochrome device, the value is zero. It is a range feature, meaning that you can also use the prefixed **`min-monochrome`** and **`max-monochrome`** variants to query minimum and maximum values, respectively.
+The `monochrome` feature is specified as an `&lt;integer&gt;` representing the number of bits per pixel in the monochrome frame buffer. If the device is not a monochrome device, the value is zero. It is a range feature, meaning that you can also use the prefixed **`min-monochrome`** and **`max-monochrome`** variants to query minimum and maximum values, respectively.
 
 ## Examples
 

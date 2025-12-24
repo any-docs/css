@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`mask-border-source`** [CSS](/en-US/docs/Web/CSS) property sets the source image used to create an element's [mask border](/reference/properties/mask-border).
 
-The {{cssxref("mask-border-slice")}} property is used to divide the source image into regions, which are then dynamically applied to the final mask border.
+The `mask-border-slice` property is used to divide the source image into regions, which are then dynamically applied to the final mask border.
 
 ## Syntax
 
@@ -32,7 +32,7 @@ mask-border-source: unset;
 
 - `none`
   - No mask border is used.
-- {{cssxref("image")}}
+- `image`
   - Image reference to use for the mask border.
 
 ## Formal definition
@@ -60,7 +60,7 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 ```
 
 > [!NOTE]
-> The {{cssxref("mask-border")}} page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
+> The `mask-border` page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
 
 ## Specifications
 
@@ -72,8 +72,8 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 
 ## See also
 
-- {{cssxref("mask-border")}}
-- {{cssxref("mask-border-mode")}}
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-width")}}
+- `mask-border`
+- `mask-border-mode`
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-width`

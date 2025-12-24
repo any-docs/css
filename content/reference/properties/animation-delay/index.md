@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`animation-delay`** [CSS](/en-US/docs/Web/CSS) property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
 
-It is often convenient to use the shorthand property {{cssxref("animation")}} to set all animation properties at once.
+It is often convenient to use the shorthand property `animation` to set all animation properties at once.
 
 {{InteractiveExample("CSS Demo: animation-delay")}}
 
@@ -128,7 +128,7 @@ animation-delay: unset;
 
 ### Values
 
-- {{cssxref("&lt;time&gt;")}}
+- `&lt;time&gt;`
   - The time offset, from the moment at which the animation is applied to the element, at which the animation should begin. This may be specified in either seconds (`s`) or milliseconds (`ms`). The unit is required.
 
     A positive value indicates that the animation should begin after the specified amount of time has elapsed. A value of `0s`, which is the default, indicates that the animation should begin as soon as it's applied.
@@ -136,7 +136,7 @@ animation-delay: unset;
     A negative value causes the animation to begin immediately, but partway through its cycle. For example, if you specify `-1s` as the animation delay time, the animation will begin immediately but will start 1 second into the animation sequence. If you specify a negative value for the animation delay, but the starting value is implicit, the starting value is taken from the moment the animation is applied to the element.
 
 > [!NOTE]
-> When you specify multiple comma-separated values on an `animation-*` property, they are applied to the animations in the order in which the {{cssxref("animation-name")}}s appear. For situations where the number of animations and `animation-*` property values do not match, see [Setting multiple animation property values](/guides/Animations/Using#setting_multiple_animation_property_values).
+> When you specify multiple comma-separated values on an `animation-*` property, they are applied to the animations in the order in which the `animation-name`s appear. For situations where the number of animations and `animation-*` property values do not match, see [Setting multiple animation property values](/guides/Animations/Using#setting_multiple_animation_property_values).
 
 > [!NOTE]
 > `animation-delay` has no effect on [CSS scroll-driven animations](/guides/Scroll-driven_animations).
@@ -206,5 +206,5 @@ See [CSS animations](/guides/Animations/Using) for examples.
 ## See also
 
 - [Using CSS animations](/guides/Animations/Using)
-- JavaScript {{domxref("AnimationEvent")}} API
-- Other related animation properties: {{cssxref("animation")}}, {{cssxref("animation-composition")}}, {{cssxref("animation-direction")}}, {{cssxref("animation-duration")}}, {{cssxref("animation-fill-mode")}}, {{cssxref("animation-iteration-count")}}, {{cssxref("animation-name")}}, {{cssxref("animation-play-state")}}, {{cssxref("animation-timeline")}}, {{cssxref("animation-timing-function")}}
+- JavaScript `AnimationEvent` API
+- Other related animation properties: `animation`, `animation-composition`, `animation-direction`, `animation-duration`, `animation-fill-mode`, `animation-iteration-count`, `animation-name`, `animation-play-state`, `animation-timeline`, `animation-timing-function`

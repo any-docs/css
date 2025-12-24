@@ -6,7 +6,7 @@ browser-compat: css.properties.text-emphasis-color
 sidebar: cssref
 ---
 
-The **`text-emphasis-color`** [CSS](/en-US/docs/Web/CSS) property sets the color of emphasis marks. This value can also be set using the {{cssxref("text-emphasis")}} shorthand.
+The **`text-emphasis-color`** [CSS](/en-US/docs/Web/CSS) property sets the color of emphasis marks. This value can also be set using the `text-emphasis` shorthand.
 
 {{InteractiveExample("CSS Demo: text-emphasis-color")}}
 
@@ -110,6 +110,6 @@ em {
 
 ## See also
 
-- The {{cssxref("&lt;color&gt;")}} data type
-- The other emphasis mark related properties: {{cssxref('text-emphasis-style')}}, {{cssxref('text-emphasis')}}, and {{cssxref("text-emphasis-position")}}.
-- Other color-related properties: {{cssxref("color")}}, {{cssxref("background-color")}}, {{cssxref("border-color")}}, {{cssxref("outline-color")}}, {{cssxref("text-shadow")}}, {{cssxref("caret-color")}}, and {{cssxref("column-rule-color")}}
+- The `&lt;color&gt;` data type
+- The other emphasis mark related properties: {{cssxref('text-emphasis-style')}}, {{cssxref('text-emphasis')}}, and `text-emphasis-position`.
+- Other color-related properties: `color`, `background-color`, `border-color`, `outline-color`, `text-shadow`, `caret-color`, and `column-rule-color`

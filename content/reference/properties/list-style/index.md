@@ -85,15 +85,15 @@ hr {
 }
 ```
 
-The values of this property are applied to list items, including {{HTMLElement("li")}} elements and elements with `{{cssxref("display")}}: list-item;`. Because this property is inherited, it can be set on a parent element (normally {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to make the same list styling apply to all the nested items.
+The values of this property are applied to list items, including {{HTMLElement("li")}} elements and elements with ``display`: list-item;`. Because this property is inherited, it can be set on a parent element (normally {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to make the same list styling apply to all the nested items.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("list-style-image")}}
-- {{cssxref("list-style-position")}}
-- {{cssxref("list-style-type")}}
+- `list-style-image`
+- `list-style-position`
+- `list-style-type`
 
 ## Syntax
 
@@ -125,16 +125,16 @@ list-style: revert-layer;
 list-style: unset;
 ```
 
-The `list-style` property is specified as one, two, or three values in any order. If {{cssxref("list-style-type")}} and {{cssxref("list-style-image")}} are both set, the `list-style-type` is used as a fallback if the image is unavailable.
+The `list-style` property is specified as one, two, or three values in any order. If `list-style-type` and `list-style-image` are both set, the `list-style-type` is used as a fallback if the image is unavailable.
 
 ### Values
 
-- {{cssxref("list-style-type")}}
-  - A `<counter-style>`, {{cssxref("string")}}, or `none`. If omitted in the shorthand, the default `disc` value is used. See {{cssxref("list-style-type")}}.
-- {{cssxref("list-style-image")}}
-  - An {{cssxref("image")}} or `none`. If omitted, the default `none` value is used. See {{cssxref("list-style-image")}}.
-- {{cssxref("list-style-position")}}
-  - Either `inside` or `outside`. If omitted, the default `outside` value is used. See {{cssxref("list-style-position")}}.
+- `list-style-type`
+  - A `<counter-style>`, `string`, or `none`. If omitted in the shorthand, the default `disc` value is used. See `list-style-type`.
+- `list-style-image`
+  - An `image` or `none`. If omitted, the default `none` value is used. See `list-style-image`.
+- `list-style-position`
+  - Either `inside` or `outside`. If omitted, the default `outside` value is used. See `list-style-position`.
 - `none`
   - No list style is used.
 
@@ -227,7 +227,7 @@ List 2
 
 ## See also
 
-- Component properties: {{Cssxref("list-style-type")}}, {{Cssxref("list-style-image")}}, and {{Cssxref("list-style-position")}}
-- {{Cssxref("::marker")}} pseudo-element
+- Component properties: `list-style-type`, `list-style-image`, and `list-style-position`
+- `::marker` pseudo-element
 - [CSS lists and counters](/guides/Lists) module
 - [CSS counter styles](/guides/Counter_styles) module

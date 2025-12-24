@@ -56,16 +56,16 @@ padding: 0;
 An element's padding area is the space between its content and its border.
 
 > [!NOTE]
-> Padding creates extra space within an element. In contrast, {{cssxref("margin")}} creates extra space _around_ an element.
+> Padding creates extra space within an element. In contrast, `margin` creates extra space _around_ an element.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("padding-top")}}
-- {{cssxref("padding-right")}}
-- {{cssxref("padding-bottom")}}
-- {{cssxref("padding-left")}}
+- `padding-top`
+- `padding-right`
+- `padding-bottom`
+- `padding-left`
 
 ## Syntax
 
@@ -90,7 +90,7 @@ padding: revert-layer;
 padding: unset;
 ```
 
-The `padding` property may be specified using one, two, three, or four values. Each value is a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}. Negative values are invalid.
+The `padding` property may be specified using one, two, three, or four values. Each value is a `&lt;length&gt;` or a `&lt;percentage&gt;`. Negative values are invalid.
 
 - When **one** value is specified, it applies the same padding to **all four sides**.
 - When **two** values are specified, the first padding applies to the **top and bottom**, the second to the **left and right**.
@@ -99,10 +99,10 @@ The `padding` property may be specified using one, two, three, or four values. E
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the padding as a fixed value.
-- {{cssxref("&lt;percentage&gt;")}}
-  - The size of the padding as a percentage, relative to the inline size (_width_ in a horizontal language, defined by {{cssxref("writing-mode")}}) of the [containing block](/guides/Display/Containing_block).
+- `&lt;percentage&gt;`
+  - The size of the padding as a percentage, relative to the inline size (_width_ in a horizontal language, defined by `writing-mode`) of the [containing block](/guides/Display/Containing_block).
 
 ## Formal definition
 
@@ -171,8 +171,8 @@ padding: 1em 3px 30px 5px; /* top:    1em padding  */
 
 ## See also
 
-- {{cssxref("padding-top")}}, {{cssxref("padding-right")}}, {{cssxref("padding-bottom")}}, and {{cssxref("padding-left")}}
-- {{cssxref("padding-block-start")}}, {{cssxref("padding-block-end")}}, {{cssxref("padding-inline-start")}}, and {{cssxref("padding-inline-end")}}
-- {{cssxref("padding-block")}} and {{cssxref("padding-inline")}} shorthands
+- `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`
+- `padding-block-start`, `padding-block-end`, `padding-inline-start`, and `padding-inline-end`
+- `padding-block` and `padding-inline` shorthands
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

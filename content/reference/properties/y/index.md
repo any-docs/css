@@ -28,12 +28,12 @@ y: unset;
 
 ### Values
 
-The {{cssxref("length")}} and {{cssxref("percentage")}} values denote the y-axis coordinate position of the top left corner of the SVG element.
+The `length` and `percentage` values denote the y-axis coordinate position of the top left corner of the SVG element.
 
-- {{cssxref("length")}}
-  - As an absolute or relative length, it can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type.
+- `length`
+  - As an absolute or relative length, it can be expressed in any unit allowed by the CSS `&lt;length&gt;` data type.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - Percentages refer to the height of the SVG {{SVGAttr("viewBox")}}, if declared, otherwise, the percentage refers to the height of the current SVG viewport.
 
 ## Formal definition
@@ -65,7 +65,7 @@ We include four identical SVG `<rect>` elements; their {{SVGAttr("x")}} and `y` 
 
 #### CSS
 
-We style all the rectangles to have a black border and be slightly transparent, so overlapping rectangles are visible. We provide the rectangle with different {{cssxref("fill")}} and `y` values.
+We style all the rectangles to have a black border and be slightly transparent, so overlapping rectangles are visible. We provide the rectangle with different `fill` and `y` values.
 
 ```css
 svg {
@@ -111,8 +111,8 @@ The top edges of the rectangles are at `10` (from the attribute), `-20px`, `4em`
 ## See also
 
 - SVG {{SVGAttr("y")}} attribute
-- Geometry properties: `y`, {{cssxref("cx")}}, {{cssxref("cy")}}, {{cssxref("r")}}, {{cssxref("rx")}}, {{cssxref("ry")}}, {{cssxref("x")}}, {{cssxref("width")}}, {{cssxref("height")}}
-- {{cssxref("fill")}}
-- {{cssxref("stroke")}}
-- {{cssxref("paint-order")}}
-- {{cssxref("basic-shape")}} data type
+- Geometry properties: `y`, `cx`, `cy`, `r`, `rx`, `ry`, `x`, `width`, `height`
+- `fill`
+- `stroke`
+- `paint-order`
+- `basic-shape` data type

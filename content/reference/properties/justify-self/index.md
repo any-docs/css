@@ -139,7 +139,7 @@ This property can take one of three different forms:
   - Specifies participation in first- or last-baseline alignment: aligns the alignment baseline of the box's first or last baseline set with the corresponding baseline in the shared first or last baseline set of all the boxes in its baseline-sharing group.
     The fallback alignment for `first baseline` is `start`, the one for `last baseline` is `end`.
 - `stretch`
-  - If the combined size of the items is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by {{CSSxRef("max-height")}}/{{CSSxRef("max-width")}} (or equivalent functionality), so that the combined size exactly fills the alignment container.
+  - If the combined size of the items is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by `max-height`/`max-width` (or equivalent functionality), so that the combined size exactly fills the alignment container.
 - `anchor-center`
   - In the case of [anchor-positioned](/guides/Anchor_positioning) elements, aligns the item to the center of the associated anchor element in the inline direction. See [Centering on the anchor using `anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center).
 - `safe`
@@ -235,6 +235,6 @@ span {
 
 - [Box alignment in grid layout](/guides/Box_alignment/In_grid_layout)
 - [CSS box alignment](/guides/Box_alignment) module
-- {{CSSxRef("justify-items")}}
-- {{cssxref("align-self")}}
-- {{cssxref("place-self")}}
+- `justify-items`
+- `align-self`
+- `place-self`

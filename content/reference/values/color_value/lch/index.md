@@ -9,7 +9,7 @@ spec-urls:
 sidebar: cssref
 ---
 
-The **`lch()`** functional notation expresses a given color using the LCH {{glossary("color space")}}, which represents lightness, chroma, and hue. It uses the same `L` axis as the {{cssxref("color_value/lab","lab()")}} color function of the [CIELab color space](/en-US/docs/Glossary/Color_space#cielab_color_spaces), but it uses the polar coordinates `C` (Chroma) and `H` (Hue).
+The **`lch()`** functional notation expresses a given color using the LCH {{glossary("color space")}}, which represents lightness, chroma, and hue. It uses the same `L` axis as the `lab()` color function of the [CIELab color space](/en-US/docs/Glossary/Color_space#cielab_color_spaces), but it uses the polar coordinates `C` (Chroma) and `H` (Hue).
 
 ## Syntax
 
@@ -43,22 +43,22 @@ lch(L C H[ / A])
 The parameters are as follows:
 
 - `L`
-  - A {{CSSXref("&lt;number&gt;")}} between `0` and `100`, a {{CSSXref("&lt;percentage&gt;")}} between `0%` and `100%`, or the keyword `none` (equivalent to `0%`). The number `0` corresponds to `0%` (black), and the number `100` corresponds to `100%` (white). This value specifies the color's brightness in the [CIELab color space](/en-US/docs/Glossary/Color_space#cielab_color_spaces).
+  - A `&lt;number&gt;` between `0` and `100`, a `&lt;percentage&gt;` between `0%` and `100%`, or the keyword `none` (equivalent to `0%`). The number `0` corresponds to `0%` (black), and the number `100` corresponds to `100%` (white). This value specifies the color's brightness in the [CIELab color space](/en-US/docs/Glossary/Color_space#cielab_color_spaces).
 
     > [!NOTE]
     > The `L` in `lch()` is the perceived lightness, which refers to the "brightness" we visually perceive with our eyes. This is different from the `L` in `hsl()`, where it represents lightness as compared to other colors.
 
 - `C`
-  - A {{CSSXref("&lt;number&gt;")}}, a {{CSSXref("&lt;percentage&gt;")}}, or the keyword `none` (equivalent to `0%` in this case). This value is a measure of the color's chroma (roughly representing the "amount of color"). Its minimum useful value is `0%`, or `0`, while its maximum is theoretically unbounded (but in practice does not exceed `230`), with `100%` being equivalent to `150`.
+  - A `&lt;number&gt;`, a `&lt;percentage&gt;`, or the keyword `none` (equivalent to `0%` in this case). This value is a measure of the color's chroma (roughly representing the "amount of color"). Its minimum useful value is `0%`, or `0`, while its maximum is theoretically unbounded (but in practice does not exceed `230`), with `100%` being equivalent to `150`.
 
 - `H`
-  - A {{CSSXref("&lt;number&gt;")}}, an {{cssxref("angle")}}, or the keyword `none` (equivalent to `0deg`) representing the color's {{cssxref("hue")}} angle.
+  - A `&lt;number&gt;`, an `angle`, or the keyword `none` (equivalent to `0deg`) representing the color's `hue` angle.
 
     > [!NOTE]
-    > The angles corresponding to particular hues differ across the sRGB (used by {{CSSXref("color_value/hsl", "hsl()")}} and {{CSSXref("color_value/hwb", "hwb()")}}), CIELAB (used by `lch()`), and Oklab (used by {{CSSXref("color_value/oklch", "oklch()")}}) color spaces. See the [hues in LCH](#hues_in_lch) example below and the {{cssxref("hue")}} reference page for more detail and examples.
+    > The angles corresponding to particular hues differ across the sRGB (used by `hsl()` and `hwb()`), CIELAB (used by `lch()`), and Oklab (used by `oklch()`) color spaces. See the [hues in LCH](#hues_in_lch) example below and the `hue` reference page for more detail and examples.
 
 - `A` <Badge type="info" text="Optional" />
-  - An {{CSSXref("&lt;alpha-value&gt;")}} representing the alpha channel value of the color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to 100%. If included, the value is preceded by a slash (`/`).
+  - An `&lt;alpha-value&gt;` representing the alpha channel value of the color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to 100%. If included, the value is preceded by a slash (`/`).
 
 > [!NOTE]
 > See [Missing color components](/reference/values/color_value#missing_color_components) for more information on the effect of `none`.
@@ -72,19 +72,19 @@ lch(from <color> L C H[ / A])
 The parameters are as follows:
 
 - `from <color>`
-  - The keyword `from` is always included when defining a relative color, followed by a {{cssxref("&lt;color&gt;")}} value representing the **origin color**. This is the original color that the relative color is based on. The origin color can be _any_ valid {{cssxref("&lt;color&gt;")}} syntax, including another relative color.
+  - The keyword `from` is always included when defining a relative color, followed by a `&lt;color&gt;` value representing the **origin color**. This is the original color that the relative color is based on. The origin color can be _any_ valid `&lt;color&gt;` syntax, including another relative color.
 
 - `L`
-  - A {{CSSXref("&lt;number&gt;")}} between `0` and `100`, a {{CSSXref("&lt;percentage&gt;")}} between `0%` and `100%`, or the keyword `none` (equivalent to `0%`). The number `0` corresponds to `0%` (black), and the number `100` corresponds to `100%` (white). This value specifies the color's brightness in the CIELab color space.
+  - A `&lt;number&gt;` between `0` and `100`, a `&lt;percentage&gt;` between `0%` and `100%`, or the keyword `none` (equivalent to `0%`). The number `0` corresponds to `0%` (black), and the number `100` corresponds to `100%` (white). This value specifies the color's brightness in the CIELab color space.
 
 - `C`
-  - A {{CSSXref("&lt;number&gt;")}}, a {{CSSXref("&lt;percentage&gt;")}}, or the keyword `none` (equivalent to `0%` in this case). This value represents the output color's chroma value (roughly representing the "amount of color"). Its minimum useful value is `0%`, or `0`, while its maximum is theoretically unbounded (but in practice does not exceed `230`), with `100%` being equivalent to `150`.
+  - A `&lt;number&gt;`, a `&lt;percentage&gt;`, or the keyword `none` (equivalent to `0%` in this case). This value represents the output color's chroma value (roughly representing the "amount of color"). Its minimum useful value is `0%`, or `0`, while its maximum is theoretically unbounded (but in practice does not exceed `230`), with `100%` being equivalent to `150`.
 
 - `H`
-  - A {{CSSXref("&lt;number&gt;")}}, an {{cssxref("angle")}}, or the keyword `none` (equivalent to `0deg`) representing the output color's {{cssxref("hue")}} angle. See the [hue example](#result_3) below.
+  - A `&lt;number&gt;`, an `angle`, or the keyword `none` (equivalent to `0deg`) representing the output color's `hue` angle. See the [hue example](#result_3) below.
 
 - `A` <Badge type="info" text="Optional" />
-  - An {{CSSXref("&lt;alpha-value&gt;")}} representing the alpha channel value of the output color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to the alpha channel value of the origin color. If included, the value is preceded by a slash (`/`).
+  - An `&lt;alpha-value&gt;` representing the alpha channel value of the output color, where the number `0` corresponds to `0%` (fully transparent) and `1` corresponds to `100%` (fully opaque). Additionally, the keyword `none` can be used to explicitly specify no alpha channel. If the `A` channel value is not explicitly specified, it defaults to the alpha channel value of the origin color. If included, the value is preceded by a slash (`/`).
 
 #### Defining relative color output channel components
 
@@ -144,7 +144,7 @@ lch(from hsl(0 100% 50% / 0.8) l c h / 0.5)
 /* Computed output color: lch(54.29 106.854 40.856 / 0.5) */
 ```
 
-In the following example, the `hsl()` origin color is again converted to the `lch()` equivalent — `lch(54.29 106.854 40.856)`. {{cssxref("calc")}} calculations are applied to the `L`, `C`, `H`, and `A` values, resulting in an output color of `lch(74.29 86.8541 0.856018 / 0.9)`:
+In the following example, the `hsl()` origin color is again converted to the `lch()` equivalent — `lch(54.29 106.854 40.856)`. `calc` calculations are applied to the `L`, `C`, `H`, and `A` values, resulting in an output color of `lch(74.29 86.8541 0.856018 / 0.9)`:
 
 ```css
 lch(from hsl(0 100% 50%) calc(l + 20) calc(c - 20) calc(h - 40) / calc(alpha - 0.1))
@@ -436,7 +436,7 @@ and so on.
 
 {{EmbedLiveSample("hues in lch")}}
 
-The hue angles in `lch()` are different from those in {{CSSXref("color_value/hsl", "hsl()")}}. See {{cssxref("hue")}} for more information. In `hsl()`, the sRGB color `0deg` represents red. However, in the CIELab color space, `0deg` corresponds to magenta, while red is approximately `41deg`.
+The hue angles in `lch()` are different from those in `hsl()`. See `hue` for more information. In `hsl()`, the sRGB color `0deg` represents red. However, in the CIELab color space, `0deg` corresponds to magenta, while red is approximately `41deg`.
 
 ### Adjusting opacity with lch()
 
@@ -551,5 +551,5 @@ The output is as follows:
 - [List of all color notations](/reference/values/color_value)
 - [Using relative colors](/guides/Colors/Using_relative_colors)
 - [CSS colors](/guides/Colors) module
-- {{cssxref("hue")}} data type
+- `hue` data type
 - [LCH colors in CSS: what, why, and how?](https://lea.verou.me/blog/2020/04/lch-colors-in-css-what-why-and-how/) by Lea Verou (2020)

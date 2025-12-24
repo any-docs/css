@@ -6,7 +6,7 @@ browser-compat: css.properties.quotes
 sidebar: cssref
 ---
 
-The [CSS](/en-US/docs/Web/CSS) **`quotes`** property sets how the browser should render quotation marks that are automatically added to the HTML {{HTMLElement("q")}} element or added using the `open-quotes` or `close-quotes` (or omitted using the `no-open-quote` and `no-close-quote`) values of the of the CSS {{cssxref("content")}} property.
+The [CSS](/en-US/docs/Web/CSS) **`quotes`** property sets how the browser should render quotation marks that are automatically added to the HTML {{HTMLElement("q")}} element or added using the `open-quotes` or `close-quotes` (or omitted using the `no-open-quote` and `no-close-quote`) values of the of the CSS `content` property.
 
 {{InteractiveExample("CSS Demo: quotes")}}
 
@@ -69,10 +69,10 @@ quotes: unset;
 ### Values
 
 - `none`
-  - The `open-quote` and `close-quote` values of the {{cssxref("content")}} property produce no quotation marks, as if `no-open-quote` and `no-close-quote` were set, respectively.
+  - The `open-quote` and `close-quote` values of the `content` property produce no quotation marks, as if `no-open-quote` and `no-close-quote` were set, respectively.
 - `auto`
   - Quotation marks that are typographically appropriate for the inherited language (i.e., via the [`lang`](/en-US/docs/Web/HTML/Reference/Global_attributes/lang) attribute set on the parent or other ancestor).
-- {{cssxref("&lt;string&gt;")}}
+- `&lt;string&gt;`
   - Defines one or more pairs of quotation mark values for opening and closing quotes. In each pair, the first of each pair of quotes are used as the values for the `open-quote` and the second of each pair is the `close-quote`.
 
     The first pair represents the quotation's outer level. The second pair, if present, represents the first nested level. The next pair is used for doubly nested levels, and so on. If the depth of quote nesting is greater than the number of pairs, the last pair in the `quotes` value is repeated.
@@ -193,7 +193,7 @@ Note that the [`lang`](/en-US/docs/Web/HTML/Reference/Global_attributes/lang) at
 
 ### With generated content
 
-In this example, instead of using the `<q>` element, we are adding quotation marks to the {{cssxref("::before")}} and {{cssxref("::after")}} pseudo-elements before and after the content of each element with a specific class name.
+In this example, instead of using the `<q>` element, we are adding quotation marks to the `::before` and `::after` pseudo-elements before and after the content of each element with a specific class name.
 
 #### HTML
 

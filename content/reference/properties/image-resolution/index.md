@@ -32,7 +32,7 @@ image-resolution: unset;
 
 ### Values
 
-- {{cssxref("resolution")}}
+- `resolution`
   - Specifies the intrinsic resolution explicitly.
 - `from-image`
   - Uses the intrinsic resolution as specified by the image format. If the image does not specify its own resolution, the explicitly specified resolution is used (if given), else it defaults to `1dppx` (1 image pixel per CSS px unit).
@@ -84,5 +84,5 @@ Currently, no browsers support this feature.
 
 ## See also
 
-- Other image-related CSS properties: {{cssxref("object-fit")}}, {{cssxref("object-position")}}, {{cssxref("image-orientation")}}, {{cssxref("image-rendering")}}.
+- Other image-related CSS properties: `object-fit`, `object-position`, `image-orientation`, `image-rendering`.
 - [Chromium bug: 1086473](https://crbug.com/1086473).

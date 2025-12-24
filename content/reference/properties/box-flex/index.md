@@ -40,7 +40,7 @@ The **`-moz-box-flex`** and **`-webkit-box-flex`** [CSS](/en-US/docs/Web/CSS) pr
 -webkit-box-flex: unset;
 ```
 
-The `box-flex` property is specified as a {{CSSxRef("&lt;number&gt;")}}. If the value is 0, the box does not grow. If it is greater than 0, the box grows to fill a proportion of the available space.
+The `box-flex` property is specified as a `&lt;number&gt;`. If the value is 0, the box does not grow. If it is greater than 0, the box grows to fill a proportion of the available space.
 
 ## Notes
 
@@ -105,7 +105,7 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef("box-orient")}}
-- {{CSSxRef("box-pack")}}
-- {{CSSxRef("box-direction")}}
-- {{CSSxRef("flex")}}
+- `box-orient`
+- `box-pack`
+- `box-direction`
+- `flex`

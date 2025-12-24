@@ -55,9 +55,9 @@ grid-template-columns: fit-content(40%) fit-content(40%) 1fr;
 
 The function can be used as a track size in [CSS grid](/guides/Grid_layout) properties, where the maximum size is defined by `max-content` and the minimum size by `auto`, which is calculated similar to `auto` (i.e., [`minmax(auto, max-content)`](/reference/values/minmax)), except that the track size is clamped at _argument_ if it is greater than the `auto` minimum.
 
-See the {{cssxref("grid-template-columns")}} page for more information on the `max-content` and `auto` keywords.
+See the `grid-template-columns` page for more information on the `max-content` and `auto` keywords.
 
-The `fit-content()` function can also be used as laid out box size for {{cssxref("width")}}, {{cssxref("height")}}, {{cssxref("min-width")}}, {{cssxref("min-height")}}, {{cssxref("max-width")}} and {{cssxref("max-height")}}, where the maximum and minimum sizes refer to the content size.
+The `fit-content()` function can also be used as laid out box size for `width`, `height`, `min-width`, `min-height`, `max-width` and `max-height`, where the maximum and minimum sizes refer to the content size.
 
 ## Syntax
 
@@ -74,9 +74,9 @@ fit-content(40%)
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - An absolute length.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - A percentage relative to the available space in the given axis.
 
     In grid properties it is relative to the inline size of the grid container in column tracks and to the block size of the grid container for row tracks. Otherwise it is relative to the available inline size or block size of the laid out box depending on the writing mode.
@@ -136,15 +136,15 @@ fit-content(40%)
 
 ## See also
 
-- {{cssxref("min-content")}} keyterm
-- {{cssxref("max-content")}} keyterm
+- `min-content` keyterm
+- `max-content` keyterm
 - [CSS box sizing](/guides/Box_sizing) module
-- {{cssxref("grid-template")}}
-- {{cssxref("grid-template-rows")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-areas")}}
-- {{cssxref("grid-auto-columns")}}
-- {{cssxref("grid-auto-rows")}}
-- {{cssxref("grid-auto-flow")}}
+- `grid-template`
+- `grid-template-rows`
+- `grid-template-columns`
+- `grid-template-areas`
+- `grid-auto-columns`
+- `grid-auto-rows`
+- `grid-auto-flow`
 - [Line-based placement with CSS grid](/guides/Grid_layout/Line-based_placement)
 - [Grid template areas: grid definition shorthands](/guides/Grid_layout/Grid_template_areas#grid_definition_shorthands)

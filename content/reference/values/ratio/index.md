@@ -7,11 +7,11 @@ spec-urls: https://drafts.csswg.org/css-values-4/#ratio-value
 sidebar: cssref
 ---
 
-The **`<ratio>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) describes the proportional relationship between two values. It mostly represents the aspect ratio, which relates width to height. For example, the `<ratio>` is used as a value for the `aspect-ratio` media feature in {{cssxref("@media")}} media queries, the `aspect-ratio` size feature in {{cssxref("@container")}} container queries, and as a value for the CSS {{cssxref("aspect-ratio")}} property.
+The **`<ratio>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) describes the proportional relationship between two values. It mostly represents the aspect ratio, which relates width to height. For example, the `<ratio>` is used as a value for the `aspect-ratio` media feature in `@media` media queries, the `aspect-ratio` size feature in `@container` container queries, and as a value for the CSS `aspect-ratio` property.
 
 ## Syntax
 
-The `<ratio>` data type is a {{cssxref("&lt;number&gt;")}} followed by a forward slash ('/', Unicode `U+002F SOLIDUS`) and a second {{cssxref("&lt;number&gt;")}}. Both numbers must be positive. Spaces before and after the slash are optional. The first number represents the width, while the second represents the height. In addition a single {{cssxref("&lt;number&gt;")}} as a value is allowable.
+The `<ratio>` data type is a `&lt;number&gt;` followed by a forward slash ('/', Unicode `U+002F SOLIDUS`) and a second `&lt;number&gt;`. Both numbers must be positive. Spaces before and after the slash are optional. The first number represents the width, while the second represents the height. In addition a single `&lt;number&gt;` as a value is allowable.
 
 Two ratios are compared using the quotients' numeric values. For example, 16/16 is less than 16/9 because it resolves to 1 while the second resolves to 1.7. This means a tall screen's aspect ratio is smaller than a wide screen's, and portrait images have smaller aspect ratios than landscape images.
 

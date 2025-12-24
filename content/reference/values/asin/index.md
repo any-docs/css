@@ -6,7 +6,7 @@ browser-compat: css.types.asin
 sidebar: cssref
 ---
 
-The **`asin()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the inverse sine of a number between `-1` and `1`. The function contains a single calculation that returns an {{cssxref("angle")}} between `-90deg` and `90deg`.
+The **`asin()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the inverse sine of a number between `-1` and `1`. The function contains a single calculation that returns an `angle` between `-90deg` and `90deg`.
 
 ## Syntax
 
@@ -25,11 +25,11 @@ transform: rotate(asin(e / 3));
 The `asin(number)` function accepts only one value as its parameter.
 
 - `number`
-  - A calculation which resolves to a {{cssxref("&lt;number&gt;")}} between `-1` and `1`.
+  - A calculation which resolves to a `&lt;number&gt;` between `-1` and `1`.
 
 ### Return value
 
-The inverse sine of a `number` will always return an {{cssxref("angle")}} between `-90deg` and `90deg`.
+The inverse sine of a `number` will always return an `angle` between `-90deg` and `90deg`.
 
 - If `number` is less than `-1` or greater than `1`, the result is `NaN`.
 - If `number` is `0⁻`, the result is `0⁻`.
@@ -42,7 +42,7 @@ The inverse sine of a `number` will always return an {{cssxref("angle")}} betwee
 
 ### Rotate elements
 
-The `asin()` function can be used to {{cssxref("transform-function/rotate", "rotate")}} elements as it return an {{cssxref("angle")}}.
+The `asin()` function can be used to `rotate` elements as it return an `angle`.
 
 #### HTML
 
@@ -103,9 +103,9 @@ div.box-5 {
 
 ## See also
 
-- {{CSSxRef("sin")}}
-- {{CSSxRef("cos")}}
-- {{CSSxRef("tan")}}
-- {{CSSxRef("acos")}}
-- {{CSSxRef("atan")}}
-- {{CSSxRef("atan2")}}
+- `sin`
+- `cos`
+- `tan`
+- `acos`
+- `atan`
+- `atan2`

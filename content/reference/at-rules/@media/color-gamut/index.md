@@ -58,7 +58,7 @@ p {
 
 - [`color()`](/reference/values/color_value/color) function to specify colors in a defined colorspace.
 - [CSS colors](/guides/Colors) module
-- {{cssxref("@media")}} at-rule that is used to specify the color-gamut expression.
+- `@media` at-rule that is used to specify the color-gamut expression.
 - [Using media queries](/guides/Media_queries/Using) to understand when and how to use a media query.
 - [CSS media queries](/guides/Media_queries) module
 - [sRGB](https://en.wikipedia.org/wiki/SRGB) on Wikipedia

@@ -7,7 +7,7 @@ spec-urls: https://drafts.csswg.org/css-shadow-parts/
 sidebar: cssref
 ---
 
-The **CSS shadow parts** module defines the {{cssxref("::part()")}} pseudo-element that can be set on a [shadow host](/en-US/docs/Glossary/Shadow_tree). Using this pseudo-element, you can enable shadow hosts to expose the selected element in the shadow tree to the outside page for styling purposes.
+The **CSS shadow parts** module defines the `::part()` pseudo-element that can be set on a [shadow host](/en-US/docs/Glossary/Shadow_tree). Using this pseudo-element, you can enable shadow hosts to expose the selected element in the shadow tree to the outside page for styling purposes.
 
 By default, elements in a shadow tree can be styled only within their respective shadow roots. The CSS shadow parts module enables including a [`part`](/en-US/docs/Web/HTML/Reference/Global_attributes/part) attribute on {{HTMLElement("template")}} descendants that make up the custom element, exposing the shadow tree node to external styling via the `::part()` pseudo-element.
 
@@ -15,7 +15,7 @@ By default, elements in a shadow tree can be styled only within their respective
 
 ### Selectors
 
-- {{cssxref("::part()")}}
+- `::part()`
 
 ### HTML attributes
 
@@ -38,15 +38,15 @@ By default, elements in a shadow tree can be styled only within their respective
 
 - HTML {{HTMLElement("template")}} element
 - HTML {{HTMLElement("slot")}} element
-- {{domxref("Element.part")}} property
-- {{domxref("Element.shadowRoot")}} property
-- {{domxref("Element.attachShadow()")}} method
-- {{domxref("ShadowRoot")}} interface
+- `Element.part` property
+- `Element.shadowRoot` property
+- `Element.attachShadow()` method
+- `ShadowRoot` interface
 - [CSS scoping](/guides/Scoping) module
-  - {{CSSXref(":host")}}
-  - {{cssxref(":host()")}}
-  - {{cssxref(":host-context()")}}
-  - {{CSSXref("::slotted")}}
+  - `:host`
+  - `:host()`
+  - `:host-context()`
+  - `::slotted`
 
 ## Specifications
 

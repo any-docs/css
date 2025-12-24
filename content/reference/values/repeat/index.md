@@ -55,7 +55,7 @@ grid-template-columns: repeat(auto-fill, 40px);
 }
 ```
 
-This function can be used in the CSS grid properties {{cssxref("grid-template-columns")}} and {{cssxref("grid-template-rows")}}.
+This function can be used in the CSS grid properties `grid-template-columns` and `grid-template-rows`.
 
 ## Syntax
 
@@ -123,30 +123,30 @@ There is a fourth form, `<name-repeat>`, which is used to add line names to subg
 
 - `<fixed-size>`
   - One of the following forms:
-    - a {{cssxref("&lt;length-percentage&gt;")}} value
-    - a {{cssxref("minmax()")}} function with:
-      - `min` given as a {{cssxref("&lt;length-percentage&gt;")}} value
-      - `max` given as one of a {{cssxref("&lt;length-percentage&gt;")}} value, a {{cssxref("&lt;flex&gt;")}} value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
-    - a {{cssxref("minmax()")}} function with:
-      - `min` given as a {{cssxref("&lt;length-percentage&gt;")}} value or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
-      - `max` given as a {{cssxref("&lt;length-percentage&gt;")}} value.
-- {{cssxref("&lt;flex&gt;")}}
+    - a `&lt;length-percentage&gt;` value
+    - a `minmax()` function with:
+      - `min` given as a `&lt;length-percentage&gt;` value
+      - `max` given as one of a `&lt;length-percentage&gt;` value, a `&lt;flex&gt;` value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
+    - a `minmax()` function with:
+      - `min` given as a `&lt;length-percentage&gt;` value or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
+      - `max` given as a `&lt;length-percentage&gt;` value.
+- `&lt;flex&gt;`
   - A non-negative dimension with the unit `fr` specifying the track's flex factor. Each `<flex>`-sized track takes a share of the remaining space in proportion to its flex factor.
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - A positive integer length.
 - `<line-names>`
-  - Zero or more {{cssxref("&lt;custom-ident&gt;")}} values, space-separated and enclosed in square brackets, like this: `[first header-start]`.
-- {{cssxref("&lt;percentage&gt;")}}
+  - Zero or more `&lt;custom-ident&gt;` values, space-separated and enclosed in square brackets, like this: `[first header-start]`.
+- `&lt;percentage&gt;`
   - A non-negative percentage relative to the inline size of the grid container in column grid tracks, and the block size of the grid container in row grid tracks. If the size of the grid container depends on the size of its tracks, then the `<percentage>` must be treated as `auto`. The user-agent may adjust the intrinsic size contributions of the track to the size of the grid container and increase the final size of the track by the minimum amount that would result in honoring the percentage.
 - `<track-size>`
   - One of the following forms:
-    - a {{cssxref("&lt;length-percentage&gt;")}} value, a {{cssxref("&lt;flex&gt;")}} value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
-    - a {{cssxref("minmax()")}} function with:
-      - `min` given as a {{cssxref("&lt;length-percentage&gt;")}} value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
-      - `max` given as a {{cssxref("&lt;length-percentage&gt;")}} value, a {{cssxref("&lt;flex&gt;")}} value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
-    - a {{cssxref("fit-content()")}} function, passed a {{cssxref("&lt;length-percentage&gt;")}} value.
+    - a `&lt;length-percentage&gt;` value, a `&lt;flex&gt;` value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
+    - a `minmax()` function with:
+      - `min` given as a `&lt;length-percentage&gt;` value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
+      - `max` given as a `&lt;length-percentage&gt;` value, a `&lt;flex&gt;` value, or one of the following keywords: [`min-content`](#min-content), [`max-content`](#max-content), or [`auto`](#auto)
+    - a `fit-content()` function, passed a `&lt;length-percentage&gt;` value.
 - `auto`
-  - As a maximum, identical to `max-content`. As a minimum it represents the largest minimum size (as specified by {{cssxref("min-width")}}/{{cssxref("min-height")}}) of the grid items occupying the grid track.
+  - As a maximum, identical to `max-content`. As a minimum it represents the largest minimum size (as specified by `min-width`/`min-height`) of the grid items occupying the grid track.
 - `auto-fill`
   - If the grid container has a definite or maximal size in the relevant axis, then the number of repetitions is the largest possible positive integer that does not cause the grid to overflow its grid container. Treating each track as its maximal track sizing function (each independent value used to define `grid-template-rows` or `grid-template-columns`), if that is definite. Otherwise, as its minimum track sizing function, and taking grid-gap into account. If any number of repetitions would overflow, then the repetition is `1`. Otherwise, if the grid container has a definite minimal size in the relevant axis, the number of repetitions is the smallest possible positive integer that fulfills that minimum requirement. Otherwise, the specified track list repeats only once.
 - `auto-fit`
@@ -156,9 +156,9 @@ There is a fourth form, `<name-repeat>`, which is used to add line names to subg
 
     For the purpose of finding the number of auto-repeated tracks, the user agent floors the track size to a user agent specified value (e.g., `1px`), to avoid division by zero.
 
-- {{cssxref("max-content")}}
+- `max-content`
   - Represents the largest max-content contribution of the grid items occupying the grid track.
-- {{cssxref("min-content")}}
+- `min-content`
   - Represents the largest min-content contribution of the grid items occupying the grid track.
 
 ## Formal syntax
@@ -214,12 +214,12 @@ There is a fourth form, `<name-repeat>`, which is used to add line names to subg
 
 ## See also
 
-- {{cssxref("grid-template")}}
-- {{cssxref("grid-template-rows")}}
-- {{cssxref("grid-template-columns")}}
-- {{cssxref("grid-template-areas")}}
-- {{cssxref("grid-auto-columns")}}
-- {{cssxref("grid-auto-rows")}}
-- {{cssxref("grid-auto-flow")}}
+- `grid-template`
+- `grid-template-rows`
+- `grid-template-columns`
+- `grid-template-areas`
+- `grid-auto-columns`
+- `grid-auto-rows`
+- `grid-auto-flow`
 - [Line-based placement with CSS grid](/guides/Grid_layout/Line-based_placement)
 - [Grid template areas: grid definition shorthands](/guides/Grid_layout/Grid_template_areas#grid_definition_shorthands)

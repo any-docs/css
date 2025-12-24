@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{seecompattable}}
 
-The **`calc-size()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) allows you to perform calculations on {{glossary("intrinsic size")}} values such as `auto`, {{cssxref("fit-content")}}, and {{cssxref("max-content")}}; this is not supported by the regular {{cssxref("calc()")}} function.
+The **`calc-size()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) allows you to perform calculations on {{glossary("intrinsic size")}} values such as `auto`, `fit-content`, and `max-content`; this is not supported by the regular `calc()` function.
 
 `calc-size()` return values can also be [interpolated](/en-US/docs/Glossary/Interpolation), enabling size keyword values to be used in [animations](/guides/Animations) and [transitions](/guides/Transitions). In effect, including `calc-size()` in a property value automatically applies [`interpolate-size: allow-keywords`](/reference/properties/interpolate-size) to the selection.
 
@@ -44,7 +44,7 @@ The parameters are:
 - `<calc-size-basis>`
   - The value (most commonly an intrinsic size) that you want to perform a calculation on.
 
-- {{cssxref("calc-sum")}}
+- `calc-sum`
   - An expression that defines the calculation to be performed on the `<calc-size-basis>`.
 
 ### Return value
@@ -53,17 +53,17 @@ Returns a value equal to the `<calc-size-basis>` modified by the `<calc-sum>` ex
 
 ## Description
 
-Certain browser layout algorithms have special behaviors for intrinsic sizing keywords. The `calc-size()` function is explicitly defined to represent an intrinsic size rather than a {{cssxref("length-percentage")}}, thereby enforcing correctness. `calc-size()` enables calculations to be performed on intrinsic size values in a safe, well-defined manner.
+Certain browser layout algorithms have special behaviors for intrinsic sizing keywords. The `calc-size()` function is explicitly defined to represent an intrinsic size rather than a `length-percentage`, thereby enforcing correctness. `calc-size()` enables calculations to be performed on intrinsic size values in a safe, well-defined manner.
 
 ### Valid values for the first argument (`<calc-size-basis>`)
 
 The first `calc-size()` argument can be one of the following intrinsic values:
 
 - `auto`
-- {{cssxref("min-content")}}
-- {{cssxref("max-content")}}
-- {{cssxref("fit-content")}}
-- `content` (for containers sized using {{cssxref("flex-basis")}}).
+- `min-content`
+- `max-content`
+- `fit-content`
+- `content` (for containers sized using `flex-basis`).
 
 There are also a few special values that this argument can take:
 
@@ -107,19 +107,19 @@ Mixing different intrinsic sizes together in the same calculation doesn't work. 
 
 ### Valid values for the second argument (`<calc-sum>`)
 
-The second `calc-size()` argument is a {{cssxref("calc-sum")}} expression.
+The second `calc-size()` argument is a `calc-sum` expression.
 
 In this expression:
 
 - The keyword `size` represents the `<calc-size-basis>` specified as the first argument.
 - Operands can include `size`, and any value types that make sense in the context.
 - The `+`, `-`, `*`, and `/` operators can be included.
-- Other mathematical functions can be included such as {{cssxref("round()")}}, {{cssxref("max()")}}, or even a nested `calc-size()`.
-- The overall expression must match {{cssxref("length-percentage")}}, and resolve to a {{cssxref("length")}}.
+- Other mathematical functions can be included such as `round()`, `max()`, or even a nested `calc-size()`.
+- The overall expression must match `length-percentage`, and resolve to a `length`.
 
 ### Enabling animation of intrinsic size values
 
-`calc-size()` return values can be interpolated, enabling animations between a {{cssxref("length-percentage")}} value and a `calc-size()` intrinsic size return value.
+`calc-size()` return values can be interpolated, enabling animations between a `length-percentage` value and a `calc-size()` intrinsic size return value.
 
 > [!NOTE]
 > You should avoid animating box model properties if possible, to cut down on layout events and mitigate the resulting impact on performance (see [Critical rendering path > Layout](/en-US/docs/Web/Performance/Guides/Critical_rendering_path#layout)).
@@ -138,7 +138,7 @@ section:focus {
 }
 ```
 
-In the above case, we are not calculating anything — we are putting `auto` into `calc-size()` and returning it unchanged. The {{cssxref("interpolate-size")}} property makes animations like the above simpler to implement in most cases, especially when there are multiple animations to consider. It is inherited and therefore only needs to be declared once on an ancestor property, meaning we could have transitioned between `0` and `auto` without using `calc-size()`.
+In the above case, we are not calculating anything — we are putting `auto` into `calc-size()` and returning it unchanged. The `interpolate-size` property makes animations like the above simpler to implement in most cases, especially when there are multiple animations to consider. It is inherited and therefore only needs to be declared once on an ancestor property, meaning we could have transitioned between `0` and `auto` without using `calc-size()`.
 
 The `calc-size()` function should only be used to enable intrinsic size animations if they also require calculations. For example, in the following case we are animating the `width` _and_ applying a calculation to the intrinsic size end state:
 
@@ -154,7 +154,7 @@ section:focus {
 }
 ```
 
-One case in which `calc-size()` is useful is when you want to animate between an intrinsic size and a modified version of the same intrinsic size. This is not possible with `interpolate-size` and `calc()`. For example, the following {{cssxref("@keyframes")}} definition animates a container `width` between `fit-content` and 70% of the `fit-content`.
+One case in which `calc-size()` is useful is when you want to animate between an intrinsic size and a modified version of the same intrinsic size. This is not possible with `interpolate-size` and `calc()`. For example, the following `@keyframes` definition animates a container `width` between `fit-content` and 70% of the `fit-content`.
 
 ```css
 @keyframes narrower {
@@ -244,7 +244,7 @@ We've created some horizontal and vertical space for the text to be centered in,
 
 ### Basic `calc-size` animations
 
-This example demonstrates how to use `calc-size()` to animate between a specific size and an intrinsic size. The demo features a character badge/"name tag", which can be hovered or focused to reveal information about the character. The reveal is handled by a {{cssxref("height")}} transition between a set length and `max-content`.
+This example demonstrates how to use `calc-size()` to animate between a specific size and an intrinsic size. The demo features a character badge/"name tag", which can be hovered or focused to reveal information about the character. The reveal is handled by a `height` transition between a set length and `max-content`.
 
 #### HTML
 
@@ -312,7 +312,7 @@ p {
 }
 ```
 
-In the CSS, we set the `<section>`'s {{cssxref("height")}} to `2.5rem` and {{cssxref("overflow")}} to `hidden` so only the `<header>` is shown by default, then specify a `transition` that animates the `<section>` `height` over 1 second during state changes. Finally, we set the `<section>` `height` to a `calc-size()` function call on {{cssxref(":hover")}} and {{cssxref(":focus")}}. The function return value is the equivalent of `max-content` + `2rem`.
+In the CSS, we set the `<section>`'s `height` to `2.5rem` and `overflow` to `hidden` so only the `<header>` is shown by default, then specify a `transition` that animates the `<section>` `height` over 1 second during state changes. Finally, we set the `<section>` `height` to a `calc-size()` function call on `:hover` and `:focus`. The function return value is the equivalent of `max-content` + `2rem`.
 
 ```css
 section {
@@ -399,7 +399,7 @@ button {
 }
 ```
 
-In the CSS, we set the `<section>`'s {{cssxref("width")}} to a default of {{cssxref("fit-content")}}. We then define two sets of {{cssxref("@keyframes")}}, `narrower`, which animates from `fit-content` to 70% of `fit-content` (calculated using `calc-size()`), and `wider`, which animates the same values but in the opposite direction. Finally, we attach those animations to two classes — `.narrower` and `.wider`. Each animation is defined to last one second and to keep the final state applied once finished.
+In the CSS, we set the `<section>`'s `width` to a default of `fit-content`. We then define two sets of `@keyframes`, `narrower`, which animates from `fit-content` to 70% of `fit-content` (calculated using `calc-size()`), and `wider`, which animates the same values but in the opposite direction. Finally, we attach those animations to two classes — `.narrower` and `.wider`. Each animation is defined to last one second and to keep the final state applied once finished.
 
 ```css
 section {
@@ -551,7 +551,7 @@ Try entering some text inside the form inputs, and see how they grow when the va
 
 ## See also
 
-- {{cssxref("interpolate-size")}}
-- {{cssxref("calc()")}}
-- {{cssxref("round()")}}
+- `interpolate-size`
+- `calc()`
+- `round()`
 - [Animate to height: auto; (and other intrinsic sizing keywords) in CSS](https://developer.chrome.com/docs/css-ui/animate-to-height-auto) on developer.chrome.com (2024)

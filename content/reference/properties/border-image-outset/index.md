@@ -77,7 +77,7 @@ border-image-outset: revert-layer;
 border-image-outset: unset;
 ```
 
-The `border-image-outset` property may be specified as one, two, three, or four values. Each value is a {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;number&gt;")}}. Negative values are invalid and will cause the `border-image-outset` declaration to be ignored.
+The `border-image-outset` property may be specified as one, two, three, or four values. Each value is a `&lt;length&gt;` or `&lt;number&gt;`. Negative values are invalid and will cause the `border-image-outset` declaration to be ignored.
 
 1. If **one** value is specified, it applies to **all four sides**.
 2. If **two** values are specified, the first applies to the **top and bottom** and the second to the **left and right**.
@@ -86,10 +86,10 @@ The `border-image-outset` property may be specified as one, two, three, or four 
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the `border-image` outset as a dimension — a number with a unit.
-- {{cssxref("&lt;number&gt;")}}
-  - The size of the `border-image` outset as a multiple of the element's corresponding {{cssxref("border-width")}}s. For example, if an element has `border-width: 1em 2px 0 1.5rem`, and `border-image-outset: 2`, the final `border-image-outset` would be calculated as `2em 4px 0 3rem`.
+- `&lt;number&gt;`
+  - The size of the `border-image` outset as a multiple of the element's corresponding `border-width`s. For example, if an element has `border-width: 1em 2px 0 1.5rem`, and `border-image-outset: 2`, the final `border-image-outset` would be calculated as `2em 4px 0 3rem`.
 
 ## Formal definition
 

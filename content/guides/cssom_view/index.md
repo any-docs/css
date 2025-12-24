@@ -12,20 +12,20 @@ The **CSSOM view** module lets you manipulate the visual view of a document, inc
 
 ### Events
 
-- {{domxref("Window")}} events:
-  - {{domxref("Window/resize_event", "resize")}}
-- {{domxref("VisualViewport")}} events:
-  - {{domxref("VisualViewport/resize_event", "resize")}}
-  - {{domxref("VisualViewport/scroll_event", "scroll")}}
-  - {{domxref("VisualViewport/scrollend_event", "scrollend")}}
-- {{domxref("Document")}} events
-  - {{domxref("Document/scroll_event", "scroll")}}
-  - {{domxref("Document/scrollend_event", "scrollend")}}
-- {{domxref("Element")}} events
-  - {{domxref("Element/scroll_event", "scroll")}}
-  - {{domxref("Element/scrollend_event", "scrollend")}}
-- {{domxref("MediaQueryList")}} events
-  - {{domxref("MediaQueryList/change_event", "change")}}
+- `Window` events:
+  - `resize`
+- `VisualViewport` events:
+  - `resize`
+  - `scroll`
+  - `scrollend`
+- `Document` events
+  - `scroll`
+  - `scrollend`
+- `Element` events
+  - `scroll`
+  - `scrollend`
+- `MediaQueryList` events
+  - `change`
 
 ### Glossary terms
 
@@ -46,7 +46,7 @@ For the JavaScript API defined by this module, see the [CSSOM view API](/en-US/d
 
 ## Related concepts
 
-- {{cssxref("zoom")}}
+- `zoom`
 - {{htmlelement("meta")}}
 
 ### Glossary terms

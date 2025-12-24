@@ -250,63 +250,63 @@ To compare scroll snapping to regular scrolling, check the "disable snapping" ch
 
 ### Properties on containers
 
-- {{cssxref("scroll-snap-type")}}
-- {{cssxref("scroll-padding")}}
-  - {{cssxref("scroll-padding-top")}}
-  - {{cssxref("scroll-padding-right")}}
-  - {{cssxref("scroll-padding-bottom")}}
-  - {{cssxref("scroll-padding-left")}}
-  - {{cssxref("scroll-padding-inline")}}
-  - {{cssxref("scroll-padding-inline-start")}}
-  - {{cssxref("scroll-padding-inline-end")}}
-  - {{cssxref("scroll-padding-block")}}
-  - {{cssxref("scroll-padding-block-start")}}
-  - {{cssxref("scroll-padding-block-end")}}
+- `scroll-snap-type`
+- `scroll-padding`
+  - `scroll-padding-top`
+  - `scroll-padding-right`
+  - `scroll-padding-bottom`
+  - `scroll-padding-left`
+  - `scroll-padding-inline`
+  - `scroll-padding-inline-start`
+  - `scroll-padding-inline-end`
+  - `scroll-padding-block`
+  - `scroll-padding-block-start`
+  - `scroll-padding-block-end`
 
 ### Properties on children
 
-- {{cssxref("scroll-snap-align")}}
-- {{cssxref("scroll-margin")}}
-  - {{cssxref("scroll-margin-top")}}
-  - {{cssxref("scroll-margin-right")}}
-  - {{cssxref("scroll-margin-bottom")}}
-  - {{cssxref("scroll-margin-left")}}
-  - {{cssxref("scroll-margin-inline")}}
-  - {{cssxref("scroll-margin-inline-start")}}
-  - {{cssxref("scroll-margin-inline-end")}}
-  - {{cssxref("scroll-margin-block")}}
-  - {{cssxref("scroll-margin-block-start")}}
-  - {{cssxref("scroll-margin-block-end")}}
-- {{cssxref("scroll-snap-stop")}}
+- `scroll-snap-align`
+- `scroll-margin`
+  - `scroll-margin-top`
+  - `scroll-margin-right`
+  - `scroll-margin-bottom`
+  - `scroll-margin-left`
+  - `scroll-margin-inline`
+  - `scroll-margin-inline-start`
+  - `scroll-margin-inline-end`
+  - `scroll-margin-block`
+  - `scroll-margin-block-start`
+  - `scroll-margin-block-end`
+- `scroll-snap-stop`
 
 ### Events
 
-- {{domxref("Element/scrollsnapchange_event", "scrollsnapchange")}} {{experimental_inline}}
-- {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} {{experimental_inline}}
+- `scrollsnapchange` {{experimental_inline}}
+- `scrollsnapchanging` {{experimental_inline}}
 
 ### Interfaces
 
-- {{domxref("SnapEvent")}} {{experimental_inline}}
-  - {{domxref("SnapEvent.snapTargetBlock")}} {{experimental_inline}}
-  - {{domxref("SnapEvent.snapTargetInline")}} {{experimental_inline}}
+- `SnapEvent` {{experimental_inline}}
+  - `SnapEvent.snapTargetBlock` {{experimental_inline}}
+  - `SnapEvent.snapTargetInline` {{experimental_inline}}
 
 ## Guides
 
 - [Basic concepts of CSS scroll snap](/guides/Scroll_snap/Basic_concepts)
   - An overview and examples of CSS scroll snap features.
 - [Using scroll snap events](/guides/Scroll_snap/Using_scroll_snap_events)
-  - A guide to using the {{domxref("Element/scrollsnapchanging_event", "scrollsnapchanging")}} and {{domxref("Element/scrollsnapchange_event", "scrollsnapchange")}} scroll snap events that are fired when the browser determines a new snap target is pending or selected.
+  - A guide to using the `scrollsnapchanging` and `scrollsnapchange` scroll snap events that are fired when the browser determines a new snap target is pending or selected.
 
 ## Related concepts
 
-- {{cssxref(":target")}} pseudo-class
-- {{cssxref("overflow")}} CSS property
-- Element {{domxref("Element.scroll", "scroll()")}} method
-- Element {{domxref("Element.scrollBy", "scrollBy()")}} method
-- Element {{domxref("Element.scrollIntoView", "scrollIntoView()")}} method
-- Element {{domxref("Element.scrollTo", "scrollTo()")}} method
-- Element {{domxref("Element.scroll_event", "scroll")}} event
-- Element {{domxref("Element.scrollend_event", "scrollend")}} event
+- `:target` pseudo-class
+- `overflow` CSS property
+- Element `scroll()` method
+- Element `scrollBy()` method
+- Element `scrollIntoView()` method
+- Element `scrollTo()` method
+- Element `scroll` event
+- Element `scrollend` event
 - [`scrollbar`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/scrollbar_role) ARIA role
 - {{Glossary("Scroll container")}} glossary term
 

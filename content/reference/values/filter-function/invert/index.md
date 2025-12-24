@@ -6,7 +6,7 @@ browser-compat: css.types.filter-function.invert
 sidebar: cssref
 ---
 
-The **`invert()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) inverts the color samples in the input image. Its result is a {{cssxref("filter-function")}}.
+The **`invert()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) inverts the color samples in the input image. Its result is a `filter-function`.
 
 {{InteractiveExample("CSS Demo: invert()")}}
 
@@ -58,7 +58,7 @@ invert(60%)
 
 ### Parameters
 
-- {{cssxref("&lt;number&gt;")}} or {{cssxref("&lt;percentage&gt;")}} <Badge type="info" text="Optional" />
+- `&lt;number&gt;` or `&lt;percentage&gt;` <Badge type="info" text="Optional" />
   - Specifies the amount of the conversion. A value of `100%` is completely inverted, while a value of `0%` leaves the input unchanged. Values between `0%` and `100%` are linear multipliers on the effect. The initial value for {{Glossary("interpolation")}} is `0`. The default value is `1`.
 
 ## Formal syntax
@@ -185,14 +185,14 @@ td {
 
 ## See also
 
-The other {{cssxref("filter-function")}} functions available to be used in values of the {{cssxref("filter")}} and {{cssxref("backdrop-filter")}} properties include:
+The other `filter-function` functions available to be used in values of the `filter` and `backdrop-filter` properties include:
 
-- {{cssxref("filter-function/blur", "blur()")}}
-- {{cssxref("filter-function/brightness", "brightness()")}}
-- {{cssxref("filter-function/contrast", "contrast()")}}
-- {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-- {{cssxref("filter-function/grayscale", "grayscale()")}}
-- {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-- {{cssxref("filter-function/opacity", "opacity()")}}
-- {{cssxref("filter-function/saturate", "saturate()")}}
-- {{cssxref("filter-function/sepia", "sepia()")}}
+- `blur()`
+- `brightness()`
+- `contrast()`
+- `drop-shadow()`
+- `grayscale()`
+- `hue-rotate()`
+- `opacity()`
+- `saturate()`
+- `sepia()`

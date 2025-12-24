@@ -6,7 +6,7 @@ browser-compat: css.selectors.before
 sidebar: cssref
 ---
 
-In CSS, **`::before`** creates a [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) that is the first child of the selected element. It is often used to add cosmetic content to an element with the {{cssxref("content")}} property. It is inline by default.
+In CSS, **`::before`** creates a [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) that is the first child of the selected element. It is often used to add cosmetic content to an element with the `content` property. It is inline by default.
 
 {{InteractiveExample("CSS Demo: ::before", "tabbed-standard")}}
 
@@ -50,18 +50,18 @@ a::before {
 
 ## Description
 
-The `::before` pseudo-element is an inline box generated as an immediate child of the element it is associated with, or the "originating element". It is often used to add cosmetic content to an element via the {{CSSxRef("content")}} property, such as icons, quote marks, or other decoration.
+The `::before` pseudo-element is an inline box generated as an immediate child of the element it is associated with, or the "originating element". It is often used to add cosmetic content to an element via the `content` property, such as icons, quote marks, or other decoration.
 
 `::before` pseudo-elements can't be applied to _{{ glossary("replaced elements")}}_ such as {{htmlelement("img")}}, whose contents are determined by external resources and not affected by the current document's styles.
 
-A `::before` pseudo-element with a {{cssxref("display")}} value of `list-item` behaves like a list item, and can therefore generate a {{cssxref("::marker")}} pseudo-element just like an {{htmlelement("li")}} element.
+A `::before` pseudo-element with a `display` value of `list-item` behaves like a list item, and can therefore generate a `::marker` pseudo-element just like an {{htmlelement("li")}} element.
 
-If the {{cssxref("content")}} property is not specified, has an invalid value, or has `normal` or `none` as a value, then the `::before` pseudo-element is not rendered. It behaves as if `display: none` is set.
+If the `content` property is not specified, has an invalid value, or has `normal` or `none` as a value, then the `::before` pseudo-element is not rendered. It behaves as if `display: none` is set.
 
 > [!NOTE]
 > The [Selectors Level 3](https://drafts.csswg.org/selectors-3/#gen-content) specification introduced the double-colon notation `::before` to distinguish [pseudo-classes](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) from [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements). Browsers also accept single-colon notation `:before`, introduced in CSS2.
 
-By default, the `::before` and `::after` pseudo-elements share the same stacking context as their parent. If no {{cssxref("z-index")}} is explicitly set, the `::after` pseudo-element's generated content will appear above the `::before` pseudo-element's generated content because `::after` is rendered later in the DOM flow.
+By default, the `::before` and `::after` pseudo-elements share the same stacking context as their parent. If no `z-index` is explicitly set, the `::after` pseudo-element's generated content will appear above the `::before` pseudo-element's generated content because `::after` is rendered later in the DOM flow.
 
 ## Accessibility
 
@@ -71,7 +71,7 @@ Using a `::before` pseudo-element to add content is discouraged, as it is not re
 
 ### Quotation marks
 
-One example of using `::before` pseudo-elements is to provide quotation marks. Here we use both `::before` and {{Cssxref("::after")}} to insert quotation characters.
+One example of using `::before` pseudo-elements is to provide quotation marks. Here we use both `::before` and `::after` to insert quotation characters.
 
 #### HTML
 
@@ -99,7 +99,7 @@ q::after {
 
 ### Decorative example
 
-We can style text or images in the {{cssxref("content")}} property almost any way we want.
+We can style text or images in the `content` property almost any way we want.
 
 #### HTML
 
@@ -233,7 +233,7 @@ li[aria-current="step"]::before {
 
 ### `::before::marker` nested pseudo-elements
 
-The `::before::marker` [nested pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements#nesting_pseudo-elements) selects the list {{CSSxRef("::marker")}} of a `::before` pseudo-element that is itself a list item, that is, it has its {{CSSxRef("display")}} property set to `list-item`.
+The `::before::marker` [nested pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements#nesting_pseudo-elements) selects the list `::marker` of a `::before` pseudo-element that is itself a list item, that is, it has its `display` property set to `list-item`.
 
 In this demo, we generate extra [list items](/en-US/docs/Web/HTML/Reference/Elements/li) before and after a list navigation menu using `::before` and `::after` (setting them to `display: list-item` so they behave like list items). We then use `ul::before::marker` and `ul::after::marker` to give their list markers a different color.
 
@@ -291,5 +291,5 @@ While the list bullets of the three navigation items are generated because they 
 
 ## See also
 
-- {{Cssxref("::after")}}
-- {{Cssxref("content")}}
+- `::after`
+- `content`

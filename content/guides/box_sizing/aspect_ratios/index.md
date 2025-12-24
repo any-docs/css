@@ -15,9 +15,9 @@ Using CSS, you can adjust the size of replaced and non-replaced elements based o
 
 ## How the `aspect-ratio` property works
 
-The CSS {{cssxref("aspect-ratio")}} property value defines the preferred width-to-height ratio of an element's box. The value is either a {{cssxref("ratio")}}, the keyword `auto`, or a space-separated combination of both.
+The CSS `aspect-ratio` property value defines the preferred width-to-height ratio of an element's box. The value is either a `ratio`, the keyword `auto`, or a space-separated combination of both.
 
-The `<ratio>` is the ratio of the width and height, in that order. It is represented by two positive {{cssxref("number")}} values separated by a forward slash (`/`) or a single `<number>`. When a single number is used, it is the same as writing the ratio as `<number> / 1`, which is also the width divided by the height.
+The `<ratio>` is the ratio of the width and height, in that order. It is represented by two positive `number` values separated by a forward slash (`/`) or a single `<number>`. When a single number is used, it is the same as writing the ratio as `<number> / 1`, which is also the width divided by the height.
 
 The following values are all equivalent:
 
@@ -97,7 +97,7 @@ This is a `220px` square image with no CSS applied; it is displayed at its intri
 
 If replaced content is auto-sized or you provide a size for only one dimension, such as setting a value for `width`, the browser will automatically resize the other dimension, in this case, the height, while maintaining the media's original aspect ratio.
 
-In this example, only the {{cssxref("width")}} is set on the image, so the user agent preserves its aspect ratio. The same image is repeated three times, displayed at different widths: `55px`, `110px`, and at its natural size of `220px` via the [`width: auto`](/reference/properties/width) value.
+In this example, only the `width` is set on the image, so the user agent preserves its aspect ratio. The same image is repeated three times, displayed at different widths: `55px`, `110px`, and at its natural size of `220px` via the [`width: auto`](/reference/properties/width) value.
 
 ```html hidden live-sample___image
 <img
@@ -130,7 +130,7 @@ img + img + img {
 
 Only when you provide sizes for both dimensions is there a risk of distorting the replaced element. For example, setting `width: 100vw;` and `height: 100vh;` on an image creates a variable aspect ratio; the image will appear either stretched or squashed when the viewport's aspect ratio differs from the image's natural aspect ratio.
 
-In this example, the same image is repeated three times, explicitly sized with the same {{cssxref("height")}} value (`110px`) but different {{cssxref("width")}} values (`55px`, `110px`, and `220px`).
+In this example, the same image is repeated three times, explicitly sized with the same `height` value (`110px`) but different `width` values (`55px`, `110px`, and `220px`).
 
 ```html hidden live-sample___image-bad
 <img
@@ -163,7 +163,7 @@ img + img + img {
 
 We have distorted the images intentionally by setting both a `height` and `width`: we've squashed the first one and stretched the third.
 
-We could have created this same distorted effect using the CSS {{cssxref("aspect-ratio")}} property, by setting a single dimension (not both or neither) and providing a value other than `1` (or `1 / 1`). You likely don't want to do this, but it's good to know that it's possible.
+We could have created this same distorted effect using the CSS `aspect-ratio` property, by setting a single dimension (not both or neither) and providing a value other than `1` (or `1 / 1`). You likely don't want to do this, but it's good to know that it's possible.
 
 ```html hidden live-sample___stretch
 <img
@@ -184,7 +184,7 @@ We have declared a single dimension; `100vh` is the full height of the example {
 
 ### Fitting replaced elements within their containers
 
-To fit a replaced element to the dimensions of its container while maintaining its intrinsic aspect ratio, set the {{cssxref("object-fit")}} property value to `cover` or `contain`. This will resize the replaced element and either clip it to "cover" the container or display it at a smaller size, fully "contained" within it.
+To fit a replaced element to the dimensions of its container while maintaining its intrinsic aspect ratio, set the `object-fit` property value to `cover` or `contain`. This will resize the replaced element and either clip it to "cover" the container or display it at a smaller size, fully "contained" within it.
 
 In this example, the square image is placed into a grid of three items, each with an aspect ratio of `5 / 2`.
 
@@ -292,7 +292,7 @@ In this example, the same quote is displayed in `200px` and `600px` wide contain
 </p>
 ```
 
-To highlight the issue with setting a non-replaced element's aspect ratio via size dimensions, toggle the {{cssxref("overflow")}} property between `auto` and `visible`.
+To highlight the issue with setting a non-replaced element's aspect ratio via size dimensions, toggle the `overflow` property between `auto` and `visible`.
 
 ```css hidden live-sample___alder
 blockquote {
@@ -333,7 +333,7 @@ blockquote:nth-of-type(3) {
 
 {{EmbedLiveSample("alder", "100", "800")}}
 
-While it's possible to define an aspect ratio on non-replaced elements by setting both the dimensions and hiding overflowing content, the CSS {{cssxref("aspect-ratio")}} property provides explicit aspect ratio support. This means a specific aspect ratio can be set even when you don't know the content or screen sizes.
+While it's possible to define an aspect ratio on non-replaced elements by setting both the dimensions and hiding overflowing content, the CSS `aspect-ratio` property provides explicit aspect ratio support. This means a specific aspect ratio can be set even when you don't know the content or screen sizes.
 
 In the next example, we render square boxes regardless of the width of the text by setting `aspect ratio: 1` on {{htmlelement("blockquote")}}, a non-replaced element:
 
@@ -362,7 +362,7 @@ blockquote {
 
 {{EmbedLiveSample("words", "100", "400")}}
 
-Each box has one dimension defined: the {{cssxref("inline-size")}}, which is the width in horizontal languages, is set to {{cssxref("max-content")}}, which sets the size to be as wide as it needs to be to fit the content without wrapping. The second dimension, in this case, the {{cssxref("block-size")}} or {{cssxref("height")}}, is set to be the same length as the first dimension. This is accomplished with the {{cssxref("aspect-ratio")}} property. We defined the desired width-to-height ratio of the element's box to be `1`, which is the same as `1 / 1`, a square. This sets the block direction to match the width of the element, without using the {{cssxref("height")}} or {{cssxref("block-size")}} properties.
+Each box has one dimension defined: the `inline-size`, which is the width in horizontal languages, is set to `max-content`, which sets the size to be as wide as it needs to be to fit the content without wrapping. The second dimension, in this case, the `block-size` or `height`, is set to be the same length as the first dimension. This is accomplished with the `aspect-ratio` property. We defined the desired width-to-height ratio of the element's box to be `1`, which is the same as `1 / 1`, a square. This sets the block direction to match the width of the element, without using the `height` or `block-size` properties.
 
 In these examples, a size was explicitly set on the element itself. When working with non-replaced elements, aspect ratio comes into play when no size dimension is explicitly set.
 
@@ -372,7 +372,7 @@ The inline-size of non-replaced block-level elements is the size of their contai
 
 In this example, we have a container {{htmlelement("div")}} that is `200px` wide, which includes `5px` of padding on each side. Therefore, the inline-size of the content box is `190px`. Without setting a height or width on the nested {{htmlelement("p")}} element, we know its inline-size is `190px`. With `aspect-ratio: 1` set, the paragraph will be `190px` tall, unless it has visible overflowing content causing it to be taller (which it doesn't).
 
-The height of the `<div>` element is not explicitly set, but it contains the `190px` tall paragraph, the `5px` of padding on top and bottom, and the combined heights of the default top and bottom margins of `<p>`. As a result, it is taller than it is wide. Both elements have a {{cssxref("border-radius")}} of `50%`, so the container is an oval while the child, with an `aspect-ratio` of `1` but no inline or block sizing explicitly defined, is a circle.
+The height of the `<div>` element is not explicitly set, but it contains the `190px` tall paragraph, the `5px` of padding on top and bottom, and the combined heights of the default top and bottom margins of `<p>`. As a result, it is taller than it is wide. Both elements have a `border-radius` of `50%`, so the container is an oval while the child, with an `aspect-ratio` of `1` but no inline or block sizing explicitly defined, is a circle.
 
 ```html live-sample___circle
 <div><p>Hello world</p></div>
@@ -465,7 +465,7 @@ For context, the standard aspect ratio of YouTube videos is 16:9 when viewed on 
 }
 ```
 
-We can use the `aspect-ratio` feature within the {{cssxref("@media")}} query alongside the `aspect-ratio` property to adjust the size of both the iframe and the video it contains. This ensures that the video content is always as large as possible - taking up either the full width or height of the viewport, regardless of the viewport size - while maintaining a specific aspect ratio.
+We can use the `aspect-ratio` feature within the `@media` query alongside the `aspect-ratio` property to adjust the size of both the iframe and the video it contains. This ensures that the video content is always as large as possible - taking up either the full width or height of the viewport, regardless of the viewport size - while maintaining a specific aspect ratio.
 
 We can set the landscape-oriented YouTube videos to be as wide as the viewport and the portrait-oriented TitTok and Instagram video iframes to be as tall as the viewport. If a viewport's aspect ratio is wider than 16:9, we set the YouTube video to be the height of the viewport. If the viewport is narrower than 9:16, we set both Instagram and TikTok videos to the width of the viewport.
 
@@ -570,7 +570,7 @@ div div::after {
 </div>
 ```
 
-For the content of a grid item to not grow beyond the preferred height set by the `aspect-ratio`, set the {{cssxref("min-height")}} to `0` and the {{cssxref("overflow")}} to a value other than `visible`. This will work for intrinsically sized content. If you have content that is intrinsically larger than the available space, set that content to not be larger than the grid item by setting the {{cssxref("max-height")}} (or {{cssxref("max-width")}}, depending on the content) to `100%`.
+For the content of a grid item to not grow beyond the preferred height set by the `aspect-ratio`, set the `min-height` to `0` and the `overflow` to a value other than `visible`. This will work for intrinsically sized content. If you have content that is intrinsically larger than the available space, set that content to not be larger than the grid item by setting the `max-height` (or `max-width`, depending on the content) to `100%`.
 
 ```css
 .item {

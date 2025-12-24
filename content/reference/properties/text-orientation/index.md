@@ -6,7 +6,7 @@ browser-compat: css.properties.text-orientation
 sidebar: cssref
 ---
 
-The **`text-orientation`** [CSS](/en-US/docs/Web/CSS) property sets the orientation of the text characters in a line. It only affects text in vertical mode (when {{cssxref("writing-mode")}} is not `horizontal-tb`). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
+The **`text-orientation`** [CSS](/en-US/docs/Web/CSS) property sets the orientation of the text characters in a line. It only affects text in vertical mode (when `writing-mode` is not `horizontal-tb`). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
 
 {{InteractiveExample("CSS Demo: text-orientation")}}
 
@@ -56,7 +56,7 @@ The `text-orientation` property is specified as a single keyword from the list b
 - `mixed`
   - Rotates the characters of horizontal scripts 90° clockwise. Lays out the characters of vertical scripts naturally. Default value.
 - `upright`
-  - Lays out the characters of horizontal scripts naturally (upright), as well as the glyphs for vertical scripts. Note that this keyword causes all characters to be considered as left-to-right: the used value of {{cssxref("direction")}} is forced to be `ltr`.
+  - Lays out the characters of horizontal scripts naturally (upright), as well as the glyphs for vertical scripts. Note that this keyword causes all characters to be considered as left-to-right: the used value of `direction` is forced to be `ltr`.
 - `sideways`
   - Causes characters to be laid out as they would be horizontally, but with the whole line rotated 90° clockwise.
 - `sideways-right`
@@ -103,7 +103,7 @@ p {
 
 ## See also
 
-- The other vertical-script related CSS properties: {{cssxref("writing-mode")}}, {{cssxref("text-combine-upright")}}, and {{cssxref("unicode-bidi")}}.
+- The other vertical-script related CSS properties: `writing-mode`, `text-combine-upright`, and `unicode-bidi`.
 - [CSS Logical properties](/guides/Logical_properties_and_values)
 - [Styling vertical text (Chinese, Japanese, Korean and Mongolian)](https://www.w3.org/International/articles/vertical-text/)
 - Extensive browsers support test results: <https://w3c.github.io/i18n-tests/results/horizontal-in-vertical.html#text_orientation>

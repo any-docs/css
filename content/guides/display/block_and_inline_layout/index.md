@@ -199,7 +199,7 @@ Find out more about how block and inline boxes behave in our guide to the [visua
 
 ## The display property and flow layout
 
-In addition to the rules existing in CSS2.1, new levels of CSS further describe the behavior of block and inline boxes. The {{cssxref("display")}} property defines how a box and any boxes inside it behave. In the CSS Display Model Level 3, we can learn more about how the `display` property changes the behavior of boxes and the boxes they generate.
+In addition to the rules existing in CSS2.1, new levels of CSS further describe the behavior of block and inline boxes. The `display` property defines how a box and any boxes inside it behave. In the CSS Display Model Level 3, we can learn more about how the `display` property changes the behavior of boxes and the boxes they generate.
 
 The display type of an element defines the outer display type; this dictates how the box displays alongside other elements in the same formatting context. It also defines the inner display type, which dictates how boxes inside this element behave. We can see this very clearly when considering a flex layout. In the example below I have a {{HTMLElement("div")}}, which I have given `display: flex`. The flex container behaves like a block element: it displays on a new line and takes up all of the space it can in the inline direction. This is the outer display type of `block`.
 

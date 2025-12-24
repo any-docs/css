@@ -6,7 +6,7 @@ browser-compat: css.properties.place-content
 sidebar: cssref
 ---
 
-The **`place-content`** [CSS](/en-US/docs/Web/CSS) [shorthand property](/guides/Cascade/Shorthand_properties) allows you to align content along both the block and inline directions at once (i.e., the {{CSSxRef("align-content")}} and {{CSSxRef("justify-content")}} properties) in a relevant layout system such as [Grid](/guides/Grid_layout) or [Flexbox](/guides/Flexible_box_layout).
+The **`place-content`** [CSS](/en-US/docs/Web/CSS) [shorthand property](/guides/Cascade/Shorthand_properties) allows you to align content along both the block and inline directions at once (i.e., the `align-content` and `justify-content` properties) in a relevant layout system such as [Grid](/guides/Grid_layout) or [Flexbox](/guides/Flexible_box_layout).
 
 {{InteractiveExample("CSS Demo: place-content")}}
 
@@ -62,8 +62,8 @@ place-content: end;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("align-content")}}
-- {{cssxref("justify-content")}}
+- `align-content`
+- `justify-content`
 
 ## Syntax
 
@@ -96,7 +96,7 @@ place-content: revert-layer;
 place-content: unset;
 ```
 
-The first value is the {{CSSxRef("align-content")}} property value, the second the {{CSSxRef("justify-content")}} one.
+The first value is the `align-content` property value, the second the `justify-content` one.
 
 > [!NOTE]
 > If the second value is not present, the first value is used for both, provided it is a valid value for both. If it is invalid for one or the other, the whole value will be invalid.
@@ -129,7 +129,7 @@ The first value is the {{CSSxRef("align-content")}} property value, the second t
 - `space-evenly`
   - The items are evenly distributed within the alignment container. The spacing between each pair of adjacent items, the main-start edge and the first item, and the main-end edge and the last item, are all exactly the same.
 - `stretch`
-  - If the combined size of the items is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by {{CSSxRef("max-height")}}/{{CSSxRef("max-width")}} (or equivalent functionality), so that the combined size exactly fills the alignment container
+  - If the combined size of the items is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by `max-height`/`max-width` (or equivalent functionality), so that the combined size exactly fills the alignment container
 - `safe`
   - Used alongside an alignment keyword. If the chosen keyword means that the item overflows the alignment container causing data loss, the item is instead aligned as if the alignment mode were `start`.
 - `unsafe`
@@ -283,8 +283,8 @@ div > div {
 
 ## See also
 
-- {{cssxref("align-content")}}
-- {{cssxref("justify-content")}}
+- `align-content`
+- `justify-content`
 - [Basic concepts of flexbox](/guides/Flexible_box_layout/Basic_concepts)
 - [Aligning items in a flex container](/guides/Flexible_box_layout/Aligning_items)
 - [Box alignment in grid layout](/guides/Box_alignment/In_grid_layout)

@@ -30,10 +30,10 @@ stroke-opacity: unset;
 
 ### Values
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - Any real number from 0 to 1, inclusive. A value of `0` makes the stroke completely transparent, and a value of `1` makes it completely opaque. Values outside the range 0 – 1 are clipped to the nearest end of that range; thus, negative values are clipped to `0`.
 
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - The same as `<number>` (see above), except the allowed range is 0% to 100% and clipping is done with regard to that range.
 
 ## Formal definition
@@ -115,10 +115,10 @@ g path:nth-child(5) {
 - {{cssxref('fill-opacity')}}
 - {{cssxref('paint-order')}}
 - {{cssxref('stroke')}}
-- {{cssxref("stroke-dasharray")}}
-- {{cssxref("stroke-dashoffset")}}
-- {{cssxref("stroke-linecap")}}
-- {{cssxref("stroke-linejoin")}}
-- {{cssxref("stroke-miterlimit")}}
-- {{cssxref("stroke-width")}}
+- `stroke-dasharray`
+- `stroke-dashoffset`
+- `stroke-linecap`
+- `stroke-linejoin`
+- `stroke-miterlimit`
+- `stroke-width`
 - SVG {{SVGAttr("stroke-opacity")}} attribute

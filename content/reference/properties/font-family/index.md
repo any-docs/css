@@ -52,9 +52,9 @@ section {
 }
 ```
 
-Values are separated by commas to indicate that they are alternatives. The browser will select the first font in the list that is installed or that can be downloaded using a {{CSSxRef("@font-face")}} at-rule.
+Values are separated by commas to indicate that they are alternatives. The browser will select the first font in the list that is installed or that can be downloaded using a `@font-face` at-rule.
 
-It is often convenient to use the shorthand property {{CSSxRef("font")}} to set `font-size` and other font related properties all at once.
+It is often convenient to use the shorthand property `font` to set `font-size` and other font related properties all at once.
 
 You should always include at least one generic family name in a `font-family` list, since there's no guarantee that any given font is available. This lets the browser select an acceptable fallback font when necessary.
 
@@ -100,7 +100,7 @@ font-family: "Gill Sans Extrabold", sans-serif;
 ### Values
 
 - `<family-name>`
-  - The name of a font family. This must be either a single {{cssxref("string")}} value or a space-separated sequence of {{cssxref("custom-ident")}} values. String values must be quoted but may contain any Unicode character. Custom identifiers are not quoted, but certain characters must be escaped.
+  - The name of a font family. This must be either a single `string` value or a space-separated sequence of `custom-ident` values. String values must be quoted but may contain any Unicode character. Custom identifiers are not quoted, but certain characters must be escaped.
 
     It is good practice to quote font family names that contain white space, digits, or punctuation characters other than hyphens.
 
@@ -255,8 +255,8 @@ font-family:
 
 ## See also
 
-- {{cssxref("font-style")}}
-- {{cssxref("font-weight")}}
-- {{cssxref("font-variant-emoji")}}
+- `font-style`
+- `font-weight`
+- `font-variant-emoji`
 - SVG {{SVGAttr("font-family")}} attribute
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)

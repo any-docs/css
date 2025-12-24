@@ -59,8 +59,8 @@ Not part of any standard.
 ## See also
 
 - The pseudo-elements used by Gecko to style other parts of a range input:
-  - {{cssxref("::-moz-range-thumb")}} represents the indicator that slides in the groove.
-  - {{cssxref("::-moz-range-track")}} represents the groove in which the thumb slides.
+  - `::-moz-range-thumb` represents the indicator that slides in the groove.
+  - `::-moz-range-track` represents the groove in which the thumb slides.
 
 - [CSS-Tricks: Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
 - [QuirksMode: Styling and scripting sliders](https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html)

@@ -6,7 +6,7 @@ browser-compat: css.properties.max-height
 sidebar: cssref
 ---
 
-The **`max-height`** [CSS](/en-US/docs/Web/CSS) property sets the maximum height of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the {{cssxref("height")}} property from becoming larger than the value specified for `max-height`.
+The **`max-height`** [CSS](/en-US/docs/Web/CSS) property sets the maximum height of an element. It prevents the [used value](/guides/Cascade/Property_value_processing#used_value) of the `height` property from becoming larger than the value specified for `max-height`.
 
 {{InteractiveExample("CSS Demo: max-height")}}
 
@@ -45,7 +45,7 @@ max-height: 10px;
 }
 ```
 
-`max-height` overrides {{cssxref("height")}}, but {{cssxref("min-height")}} overrides `max-height`.
+`max-height` overrides `height`, but `min-height` overrides `max-height`.
 
 ## Syntax
 
@@ -76,17 +76,17 @@ max-height: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Defines the `max-height` as an absolute value.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Defines the `max-height` as a percentage of the containing block's height.
 - `none`
   - No limit on the size of the box.
-- {{cssxref("max-content")}}
+- `max-content`
   - The intrinsic preferred `max-height`.
-- {{cssxref("min-content")}}
+- `min-content`
   - The intrinsic minimum `max-height`.
-- {{cssxref("fit-content")}}
+- `fit-content`
   - Use the available space, but not more than [max-content](/reference/values/max-content), i.e., `min(max-content, max(min-content, stretch))`.
 - [`fit-content(<length-percentage>)`](/reference/values/fit-content_function)
   - Uses the `fit-content` formula with the available space replaced by the specified argument, i.e., `min(max-content, max(min-content, argument))`.
@@ -135,10 +135,10 @@ form {
 
 ## See also
 
-- {{Cssxref("min-height")}}
-- {{Cssxref("height")}}
-- {{cssxref("max-inline-size")}}
-- {{cssxref("max-block-size")}}
-- {{cssxref("box-sizing")}}
+- `min-height`
+- `height`
+- `max-inline-size`
+- `max-block-size`
+- `box-sizing`
 - [Introduction to the CSS box model](/guides/Box_model/Introduction) guide
 - [CSS box model](/guides/Box_model) module

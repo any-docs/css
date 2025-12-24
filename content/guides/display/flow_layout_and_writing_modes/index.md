@@ -13,7 +13,7 @@ This is not a comprehensive guide to the use of writing modes in CSS, the aim he
 
 The CSS Writing Modes Level 3 Specification defines the impact a change the document writing mode has on flow layout. In the writing modes introduction, [the specification says](https://drafts.csswg.org/css-writing-modes-3/#text-flow),
 
-> "A writing mode in CSS is determined by the {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}} properties. It is defined primarily in terms of its inline base direction and block flow direction."
+> "A writing mode in CSS is determined by the `writing-mode`, `direction`, and `text-orientation` properties. It is defined primarily in terms of its inline base direction and block flow direction."
 
 The specification defines the _inline base direction_ as the direction in which content is ordered on a line. This defines the start and end of the inline direction. The start is where sentences start and the end is where a line of text ends before it would begin to wrap onto a new line.
 
@@ -49,7 +49,7 @@ h1 {
 
 ## Block flow direction
 
-The {{cssxref("writing-mode")}} property accepts the values `horizontal-tb`, `vertical-rl` and `vertical-lr`. These values control the direction that blocks flow on the page. The initial value is `horizontal-tb`, which is a top to bottom block flow direction with a horizontal inline direction. Left to right languages, such as English, and Right to left languages, such as Arabic, are all `horizontal-tb`.
+The `writing-mode` property accepts the values `horizontal-tb`, `vertical-rl` and `vertical-lr`. These values control the direction that blocks flow on the page. The initial value is `horizontal-tb`, which is a top to bottom block flow direction with a horizontal inline direction. Left to right languages, such as English, and Right to left languages, such as Arabic, are all `horizontal-tb`.
 
 The following example shows blocks using the initial `horizontal-tb` value explicitly:
 
@@ -288,7 +288,7 @@ body {
 
 {{EmbedLiveSample("width")}}
 
-Therefore, we have the {{cssxref("block-size")}} and {{cssxref("inline-size")}} properties. If we give our block an `inline-size` of 100px, it doesn't matter whether we are in a horizontal or vertical writing mode; `inline-size` will always mean the size in the inline direction.
+Therefore, we have the `block-size` and `inline-size` properties. If we give our block an `inline-size` of 100px, it doesn't matter whether we are in a horizontal or vertical writing mode; `inline-size` will always mean the size in the inline direction.
 
 ```html live-sample___inline-size
 <div class="box">

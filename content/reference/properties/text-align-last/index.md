@@ -70,7 +70,7 @@ text-align-last: unset;
 ### Values
 
 - `auto`
-  - The affected line is aligned per the value of {{cssxref("text-align")}}, unless {{cssxref("text-align")}} is `justify`, in which case the effect is the same as setting `text-align-last` to `start`.
+  - The affected line is aligned per the value of `text-align`, unless `text-align` is `justify`, in which case the effect is the same as setting `text-align-last` to `start`.
 - `start`
   - The same as `left` if direction is left-to-right and `right` if direction is right-to-left.
 - `end`
@@ -128,4 +128,4 @@ p {
 
 ## See also
 
-- {{cssxref("text-align")}}
+- `text-align`

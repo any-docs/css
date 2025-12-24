@@ -8,7 +8,7 @@ browser-compat:
 sidebar: cssref
 ---
 
-The `<display-outside>` keywords specify the element's outer {{CSSxRef("display")}} type, which is essentially its role in flow layout. These keywords are used as values of the `display` property, and can be used for legacy purposes as a single keyword, or as defined in the Level 3 specification alongside a value from the {{CSSxRef("&lt;display-inside&gt;")}} keywords.
+The `<display-outside>` keywords specify the element's outer `display` type, which is essentially its role in flow layout. These keywords are used as values of the `display` property, and can be used for legacy purposes as a single keyword, or as defined in the Level 3 specification alongside a value from the `&lt;display-inside&gt;` keywords.
 
 ## Syntax
 
@@ -60,12 +60,12 @@ span {
 
 ## See also
 
-- {{CSSxRef("display")}}
-  - {{CSSxRef("&lt;display-inside&gt;")}}
-  - {{CSSxRef("&lt;display-listitem&gt;")}}
-  - {{CSSxRef("&lt;display-internal&gt;")}}
-  - {{CSSxRef("&lt;display-box&gt;")}}
-  - {{CSSxRef("&lt;display-legacy&gt;")}}
+- `display`
+  - `&lt;display-inside&gt;`
+  - `&lt;display-listitem&gt;`
+  - `&lt;display-internal&gt;`
+  - `&lt;display-box&gt;`
+  - `&lt;display-legacy&gt;`
 
 - [Block and inline layout in normal flow](/guides/Display/Block_and_inline_layout)
 - [Introduction to formatting contexts](/guides/Display/Formatting_contexts)

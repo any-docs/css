@@ -6,7 +6,7 @@ browser-compat: css.properties.shape-image-threshold
 sidebar: cssref
 ---
 
-The **`shape-image-threshold`** [CSS](/en-US/docs/Web/CSS) property sets the alpha channel threshold used to extract the shape using an image as the value for {{cssxref("shape-outside")}}.
+The **`shape-image-threshold`** [CSS](/en-US/docs/Web/CSS) property sets the alpha channel threshold used to extract the shape using an image as the value for `shape-outside`.
 
 {{InteractiveExample("CSS Demo: shape-image-threshold")}}
 
@@ -94,7 +94,7 @@ shape-image-threshold: unset;
 
 ### Values
 
-- {{cssxref("&lt;alpha-value&gt;")}}
+- `&lt;alpha-value&gt;`
   - Sets the threshold used for extracting a shape from an image. The shape is defined by the pixels whose alpha value is greater than the threshold. Values outside the range 0.0 (fully transparent) to 1.0 (fully opaque) are clamped to this range.
 
 ## Formal definition
@@ -143,7 +143,7 @@ This example creates a {{HTMLElement("div")}} block with a gradient background i
 }
 ```
 
-The shape is established here using {{cssxref("background-image")}} with a linear gradient rather than an image file. The same gradient is also used as the image from which the shape is derived for establishing the float area, using the {{cssxref("shape-outside")}} property.
+The shape is established here using `background-image` with a linear gradient rather than an image file. The same gradient is also used as the image from which the shape is derived for establishing the float area, using the `shape-outside` property.
 
 The 20% opacity threshold for treating gradient pixels as part of the shape is then established using `shape-image-threshold` with a value of `0.2`.
 
@@ -163,6 +163,6 @@ The 20% opacity threshold for treating gradient pixels as part of the shape is t
 
 - [CSS Shapes](/guides/Shapes)
 - [Overview of CSS Shapes](/guides/Shapes/Overview)
-- {{cssxref("basic-shape")}}
-- {{cssxref("shape-outside")}}
-- {{cssxref("shape-margin")}}
+- `basic-shape`
+- `shape-outside`
+- `shape-margin`

@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-To round off this [set of CSS grid layout guides](/guides/Grid_layout#guides), we're going to walk through a few different layouts, which demonstrate some of the techniques you can use when designing with grid layout. We will look at an example using {{cssxref("grid-template-areas")}}, a 12-column flexible grid system, and also a product listing using auto-placement. As you can see from this set of examples, there is often more than one way to get the results you want with CSS grid layout. Choose the method you find most helpful for the problems that you are solving and the designs that you need to implement.
+To round off this [set of CSS grid layout guides](/guides/Grid_layout#guides), we're going to walk through a few different layouts, which demonstrate some of the techniques you can use when designing with grid layout. We will look at an example using `grid-template-areas`, a 12-column flexible grid system, and also a product listing using auto-placement. As you can see from this set of examples, there is often more than one way to get the results you want with CSS grid layout. Choose the method you find most helpful for the problems that you are solving and the designs that you need to implement.
 
 ## A responsive layout with 1 to 3 fluid columns using `grid-template-areas`
 
@@ -70,7 +70,7 @@ nav ul {
 </div>
 ```
 
-As we are using {{cssxref("grid-template-areas")}} to create the layout, we need to name the areas outside of any [media queries](/guides/Media_queries/Using). We name areas using the {{cssxref("grid-area")}} property.
+As we are using `grid-template-areas` to create the layout, we need to name the areas outside of any [media queries](/guides/Media_queries/Using). We name areas using the `grid-area` property.
 
 ```css
 .main-head {
@@ -109,7 +109,7 @@ This does not create a layout. Rather, the items now have names we can use to do
 }
 ```
 
-With our mobile layout in place, we can now proceed to add a {{cssxref("@media")}} query to adapt this layout for bigger screens with enough real estate to display two columns.
+With our mobile layout in place, we can now proceed to add a `@media` query to adapt this layout for bigger screens with enough real estate to display two columns.
 
 ```css
 @media (width >= 500px) {
@@ -128,7 +128,7 @@ With our mobile layout in place, we can now proceed to add a {{cssxref("@media")
 }
 ```
 
-You can see the layout taking shape in the value of {{cssxref("grid-template-areas")}}. The `header` spans over two column tracks, as does the `nav`. In the third row track, we place the `sidebar` alongside the `content`. We place the `ad` content in the fourth row track so it appears under the sidebar. The `footer` is next to it under the content. We use [CSS flexible box layout](/guides/Flexible_box_layout) on the navigation to evenly space the navigation items in a row.
+You can see the layout taking shape in the value of `grid-template-areas`. The `header` spans over two column tracks, as does the `nav`. In the third row track, we place the `sidebar` alongside the `content`. We place the `ad` content in the fourth row track so it appears under the sidebar. The `footer` is next to it under the content. We use [CSS flexible box layout](/guides/Flexible_box_layout) on the navigation to evenly space the navigation items in a row.
 
 We can now add a final breakpoint for wider screens able to display a three-column layout.
 
@@ -232,7 +232,7 @@ We don't need to add any markup to create a row. CSS framework grid systems ofte
 
 ## Building a layout using the 12-column system
 
-To see how this layout method works in practice, we can create the same layout we created with {{cssxref("grid-template-areas")}}, this time using the 12-column grid system. Let's start with the same markup as used for the grid template areas example.
+To see how this layout method works in practice, we can create the same layout we created with `grid-template-areas`, this time using the 12-column grid system. Let's start with the same markup as used for the grid template areas example.
 
 ```css hidden
 * {
@@ -458,7 +458,7 @@ h2 {
 }
 ```
 
-We create a grid with a flexible number of flexible columns. We want them to be at least 200 pixels wide and share any available remaining space equally – so we always get equal-width column tracks. We achieve this with the {{cssxref("minmax()")}} function in our {{cssxref("repeat")}} notation for track sizing.
+We create a grid with a flexible number of flexible columns. We want them to be at least 200 pixels wide and share any available remaining space equally – so we always get equal-width column tracks. We achieve this with the `minmax()` function in our `repeat` notation for track sizing.
 
 ```css
 .listing {
@@ -472,7 +472,7 @@ We create a grid with a flexible number of flexible columns. We want them to be 
 
 When we add this CSS, the items will be laid out as a grid. If we make the window smaller or wider, the number of column tracks changes – without media queries adding breakpoints and without needing to redefine the grid.
 
-We can tidy up the internals of the boxes using a touch of flexbox. We set the list item to `display: flex` and the {{cssxref("flex-direction")}} to `column`. We can then use an auto margin on the `.cta` to push this bar down to the bottom of the box.
+We can tidy up the internals of the boxes using a touch of flexbox. We set the list item to `display: flex` and the `flex-direction` to `column`. We can then use an auto margin on the `.cta` to push this bar down to the bottom of the box.
 
 ```css
 .listing li {
@@ -498,11 +498,11 @@ This is one of the key reasons to use flexbox rather than CSS grid layout. If yo
 
 ## Preventing gaps with the dense keyword
 
-This is all looking fairly complete now. However, we sometimes have cards that contain far more content than the others. It might be nice to make those span two tracks, then they won't be so tall. We add a `wide` class on the larger item, and add a rule giving it a {{cssxref("grid-column-end")}} with a value of `span 2`. When this item is encountered, it will be assigned to two tracks. This means that, at some breakpoints, we'll get a gap in the grid – where there isn't enough space to lay out a two-track item.
+This is all looking fairly complete now. However, we sometimes have cards that contain far more content than the others. It might be nice to make those span two tracks, then they won't be so tall. We add a `wide` class on the larger item, and add a rule giving it a `grid-column-end` with a value of `span 2`. When this item is encountered, it will be assigned to two tracks. This means that, at some breakpoints, we'll get a gap in the grid – where there isn't enough space to lay out a two-track item.
 
 ![The layout has gaps as there is not space to lay out a two track item.](11-grid-auto-flow-sparse.png)
 
-We can make the grid backfill those gaps by setting {{cssxref("grid-auto-flow", "grid-auto-flow: dense")}} on the grid container. Take care when doing this as it can cause items to be taken out of their logical source order. You should only do this if your items do not have a set order. Additionally, be aware of the [accessibility and re-ordering issues](/guides/Grid_layout/Accessibility#visual_not_logical_re-ordering) resulting from the tab order following the source and not your reordered display.
+We can make the grid backfill those gaps by setting `grid-auto-flow: dense` on the grid container. Take care when doing this as it can cause items to be taken out of their logical source order. You should only do this if your items do not have a set order. Additionally, be aware of the [accessibility and re-ordering issues](/guides/Grid_layout/Accessibility#visual_not_logical_re-ordering) resulting from the tab order following the source and not your reordered display.
 
 ```html hidden
 <ul class="listing">

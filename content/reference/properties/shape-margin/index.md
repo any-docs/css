@@ -6,7 +6,7 @@ browser-compat: css.properties.shape-margin
 sidebar: cssref
 ---
 
-The **`shape-margin`** [CSS](/en-US/docs/Web/CSS) property sets a margin for a CSS shape created using {{cssxref("shape-outside")}}.
+The **`shape-margin`** [CSS](/en-US/docs/Web/CSS) property sets a margin for a CSS shape created using `shape-outside`.
 
 {{InteractiveExample("CSS Demo: shape-margin")}}
 
@@ -82,7 +82,7 @@ shape-margin: unset;
 ### Values
 
 - `<length-percentage>`
-  - Sets the margin of the shape to a {{cssxref("&lt;length&gt;")}} value or to a {{cssxref("&lt;percentage&gt;")}} of the width of the element's containing block.
+  - Sets the margin of the shape to a `&lt;length&gt;` value or to a `&lt;percentage&gt;` of the width of the element's containing block.
 
 ## Formal definition
 
@@ -145,6 +145,6 @@ section {
 
 - [CSS Shapes](/guides/Shapes)
 - [Overview of CSS Shapes](/guides/Shapes/Overview)
-- {{cssxref("shape-outside")}}
-- {{cssxref("shape-image-threshold")}}
-- {{cssxref("basic-shape")}}
+- `shape-outside`
+- `shape-image-threshold`
+- `basic-shape`

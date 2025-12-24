@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`mask-origin`** [CSS](/en-US/docs/Web/CSS) property sets the origin of a mask. This property determines the mask positioning area: the area within which a mask image is positioned. HTML elements can have masks contained within their content border box, padding box, or content box, whereas SVG elements (which don't have the associated CSS layout boxes) can have masks contained inside their fill, stroke, or view box.
-For elements rendered as multiple boxes, such as a {{htmlelement("span")}} of text that spans more than one line, the `mask-origin` property specifies which boxes the {{cssxref("box-decoration-break")}} property operates on to determine the mask positioning area.
+For elements rendered as multiple boxes, such as a {{htmlelement("span")}} of text that spans more than one line, the `mask-origin` property specifies which boxes the `box-decoration-break` property operates on to determine the mask positioning area.
 
 ## Syntax
 
@@ -53,19 +53,19 @@ There are three non-standard values that are shortcuts for standard `<coord-box>
 
 ## Description
 
-The `mask-origin` property is very similar to the {{cssxref("background-origin")}} property, but it has a different set of values and a different initial value. The initial value depends on the if there is an associated CSS layout box; if yes, the default value is `border-box`. In comparison, the default for `background-origin` is `padding-box`.
+The `mask-origin` property is very similar to the `background-origin` property, but it has a different set of values and a different initial value. The initial value depends on the if there is an associated CSS layout box; if yes, the default value is `border-box`. In comparison, the default for `background-origin` is `padding-box`.
 
 For SVG elements without an associated CSS layout box, the values `content-box`, `padding-box`, and `border-box` (the default value) compute to `fill-box`, meaning the position is relative to the object bounding box. For HTML elements, if a SVG-related value of `fill-box`, `stroke-box`, or `view-box` is set, the value is computed to `border-box`.
 
-An element can have multiple mask layers applied. The number of layers is determined by the number of comma-separated values in the {{cssxref("mask-image")}} property value (even if one or more of those values is `none`). Each `mask-origin` value in the comma-separated list of values is matched with a comma-separated `mask-image` value, in the same order.
+An element can have multiple mask layers applied. The number of layers is determined by the number of comma-separated values in the `mask-image` property value (even if one or more of those values is `none`). Each `mask-origin` value in the comma-separated list of values is matched with a comma-separated `mask-image` value, in the same order.
 
 If the number of values in the two properties differs, any excess values of `mask-origin` are not used in cases where `mask-origin` has more values than `mask-image`. If `mask-origin` has fewer values than `mask-image`, the `mask-origin` values are repeated.
 
 For elements rendered as a single box, this property specifies the mask positioning area — or the origin position — of the image referenced by the `mask-image` property.
 
-For elements rendered as multiple boxes, such as inline boxes that span more than one line, the `mask-origin` property specifies which boxes the {{cssxref("box-decoration-break")}} property operates upon to determine the mask positioning area.
+For elements rendered as multiple boxes, such as inline boxes that span more than one line, the `mask-origin` property specifies which boxes the `box-decoration-break` property operates upon to determine the mask positioning area.
 
-The `mask-origin` can cause the mask layer image to be clipped. For example, if the {{cssxref("mask-clip")}} property is set to `padding-box`, the `mask-origin` is set to `border-box`, the {{cssxref("mask-position")}} is set to the `top left` edge, and the element has a border, then the mask layer image will be clipped at the top-left edge.
+The `mask-origin` can cause the mask layer image to be clipped. For example, if the `mask-clip` property is set to `padding-box`, the `mask-origin` is set to `border-box`, the `mask-position` is set to the `top left` edge, and the element has a border, then the mask layer image will be clipped at the top-left edge.
 
 ## Formal definition
 
@@ -102,7 +102,7 @@ We include four {{htmlelement("section")}} elements, each containing one {{htmle
 
 #### CSS
 
-We apply {{cssxref("border")}}, {{cssxref("padding")}}, and {{cssxref("margin")}} to every `<div>`. These create the reference points for the mask image origin. The `border` shorthand includes a {{cssxref("border-color")}}. We also include a {{cssxref("background-color")}}. These provide a green background and a blue border to mask. Finally, all our `<div>` elements are provided with a {{cssxref("mask-image")}}.
+We apply `border`, `padding`, and `margin` to every `<div>`. These create the reference points for the mask image origin. The `border` shorthand includes a `border-color`. We also include a `background-color`. These provide a green background and a blue border to mask. Finally, all our `<div>` elements are provided with a `mask-image`.
 
 ```css
 div {
@@ -183,7 +183,7 @@ We include a single `<div>`.
 
 #### CSS
 
-We apply three mask images instead of one, each with a different {{cssxref("mask-position")}}. We also set the mask images not to repeat.
+We apply three mask images instead of one, each with a different `mask-position`. We also set the mask images not to repeat.
 
 ```css
 div {
@@ -222,12 +222,12 @@ We have three `mask-image` values, but only two `mask-origin` values. This means
 
 ## See also
 
-- {{cssxref("background-origin")}}
-- {{cssxref("mask-image")}}
-- {{cssxref("mask-position")}}
-- {{cssxref("mask-repeat")}}
-- {{cssxref("mask-size")}}
-- {{cssxref("mask")}} shorthand
+- `background-origin`
+- `mask-image`
+- `mask-position`
+- `mask-repeat`
+- `mask-size`
+- `mask` shorthand
 - [Introduction to CSS masking](/guides/Masking/Introduction)
 - [CSS `mask` properties](/guides/Masking/Mask_properties)
 - [Declaring multiple masks](/guides/Masking/Multiple_masks)

@@ -6,7 +6,7 @@ browser-compat: css.at-rules.counter-style.pad
 sidebar: cssref
 ---
 
-The **`pad`** descriptor of the {{cssxref("@counter-style")}} at-rule is used to set a minimum length for marker representations.
+The **`pad`** descriptor of the `@counter-style` at-rule is used to set a minimum length for marker representations.
 
 ## Syntax
 
@@ -19,7 +19,7 @@ pad: "+" 5;
 
 The descriptor accepts the following two values, which are separated by a space and can be specified in any order:
 
-- {{cssxref("integer")}}
+- `integer`
   - Specifies the minimum length that all marker representations must reach. The value must be non-negative. In the case of the `pad` descriptor, this value is also known as the _pad length_.
 
 - [`<symbol>`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols#symbol)
@@ -43,7 +43,7 @@ The `pad` descriptor takes an `<integer>` for the minimum marker length and a `<
 
 ### Padding a counter
 
-This example extends the `decimal` {{cssxref("@counter-style/system","system")}} to create a counter that is at least three characters long, padding shorter counters with `0` to reach that minimum length. A {{cssxref("@counter-style/suffix", "suffix")}} descriptor has been added to make the output more legible.
+This example extends the `decimal` `system` to create a counter that is at least three characters long, padding shorter counters with `0` to reach that minimum length. A `suffix` descriptor has been added to make the output more legible.
 
 #### HTML
 
@@ -88,8 +88,8 @@ ul {
 
 ## See also
 
-- {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/suffix", "suffix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, {{cssxref("@counter-style/fallback", "fallback")}}
-- List style properties: {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}} function to create anonymous counter styles
+- `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `negative`, `prefix`, `suffix`, `range`, `speak-as`, `fallback`
+- List style properties: `list-style`, `list-style-image`, `list-style-position`
+- `symbols()` function to create anonymous counter styles
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists and counters](/guides/Lists) module

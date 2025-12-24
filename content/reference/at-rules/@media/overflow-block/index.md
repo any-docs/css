@@ -20,7 +20,7 @@ The `overflow-block` feature is specified as a keyword value chosen from the lis
 - `scroll`
   - Content that overflows the block axis can be seen by scrolling to it.
 - `optional-paged`
-  - Content that overflows the block axis can be seen by scrolling to it, but page breaks can be manually triggered (such as via {{cssxref("break-inside")}}, etc.) to cause the following content to display on the following page.
+  - Content that overflows the block axis can be seen by scrolling to it, but page breaks can be manually triggered (such as via `break-inside`, etc.) to cause the following content to display on the following page.
 - `paged`
   - Content is broken up into discrete pages; content that overflows one page in the block axis is displayed on the following page.
 

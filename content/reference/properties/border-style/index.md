@@ -61,10 +61,10 @@ body {
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-bottom-style")}}
-- {{cssxref("border-left-style")}}
-- {{cssxref("border-right-style")}}
-- {{cssxref("border-top-style")}}
+- `border-bottom-style`
+- `border-left-style`
+- `border-right-style`
+- `border-top-style`
 
 ## Syntax
 
@@ -112,25 +112,25 @@ Each value is a keyword chosen from the list below.
 - `<line-style>`
   - Describes the style of the border. It can have the following values:
     - `none`
-      - Like the `hidden` keyword, displays no border. Unless a {{cssxref("background-image")}} is set, the computed value of the same side's {{cssxref("border-width")}} will be `0`, even if the specified value is something else. In the case of table cell and border collapsing, the `none` value has the _lowest_ priority: if any other conflicting border is set, it will be displayed.
+      - Like the `hidden` keyword, displays no border. Unless a `background-image` is set, the computed value of the same side's `border-width` will be `0`, even if the specified value is something else. In the case of table cell and border collapsing, the `none` value has the _lowest_ priority: if any other conflicting border is set, it will be displayed.
     - `hidden`
-      - Like the `none` keyword, displays no border. Unless a {{cssxref("background-image")}} is set, the computed value of the same side's {{cssxref("border-width")}} will be `0`, even if the specified value is something else. In the case of table cell and border collapsing, the `hidden` value has the _highest_ priority: if any other conflicting border is set, it won't be displayed.
+      - Like the `none` keyword, displays no border. Unless a `background-image` is set, the computed value of the same side's `border-width` will be `0`, even if the specified value is something else. In the case of table cell and border collapsing, the `hidden` value has the _highest_ priority: if any other conflicting border is set, it won't be displayed.
     - `dotted`
-      - Displays a series of rounded dots. The spacing of the dots is not defined by the specification and is implementation-specific. The radius of the dots is half the computed value of the same side's {{cssxref("border-width")}}.
+      - Displays a series of rounded dots. The spacing of the dots is not defined by the specification and is implementation-specific. The radius of the dots is half the computed value of the same side's `border-width`.
     - `dashed`
       - Displays a series of short square-ended dashes or line segments. The exact size and length of the segments are not defined by the specification and are implementation-specific.
     - `solid`
       - Displays a single, straight, solid line.
     - `double`
-      - Displays two straight lines that add up to the pixel size defined by {{cssxref("border-width")}}.
+      - Displays two straight lines that add up to the pixel size defined by `border-width`.
     - `groove`
       - Displays a border with a carved appearance. It is the opposite of `ridge`.
     - `ridge`
       - Displays a border with an extruded appearance. It is the opposite of `groove`.
     - `inset`
-      - Displays a border that makes the element appear embedded. It is the opposite of `outset`. When applied to a table cell with {{cssxref("border-collapse")}} set to `collapsed`, this value behaves like `ridge`.
+      - Displays a border that makes the element appear embedded. It is the opposite of `outset`. When applied to a table cell with `border-collapse` set to `collapsed`, this value behaves like `ridge`.
     - `outset`
-      - Displays a border that makes the element appear embossed. It is the opposite of `inset`. When applied to a table cell with {{cssxref("border-collapse")}} set to `collapsed`, this value behaves like `groove`.
+      - Displays a border that makes the element appear embossed. It is the opposite of `inset`. When applied to a table cell with `border-collapse` set to `collapsed`, this value behaves like `groove`.
 
 ## Formal definition
 
@@ -231,4 +231,4 @@ pre {
 
 ## See also
 
-- The border-related shorthand CSS properties: {{Cssxref("border")}}, {{Cssxref("border-width")}}, {{Cssxref("border-color")}}, {{Cssxref("border-radius")}}
+- The border-related shorthand CSS properties: `border`, `border-width`, `border-color`, `border-radius`

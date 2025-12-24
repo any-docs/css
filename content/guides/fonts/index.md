@@ -19,77 +19,77 @@ The CSS fonts module also supports variable fonts. Unlike regular fonts, where e
 
 ### Properties
 
-- {{cssxref("font")}} shorthand
-- {{cssxref("font-family")}}
-- {{cssxref("font-feature-settings")}}
-- {{cssxref("font-kerning")}}
-- {{cssxref("font-language-override")}}
-- {{cssxref("font-optical-sizing")}}
-- {{cssxref("font-palette")}}
-- {{cssxref("font-size")}}
-- {{cssxref("font-size-adjust")}}
-- {{cssxref("font-stretch")}}
-- {{cssxref("font-style")}}
-- {{cssxref("font-weight")}}
+- `font` shorthand
+- `font-family`
+- `font-feature-settings`
+- `font-kerning`
+- `font-language-override`
+- `font-optical-sizing`
+- `font-palette`
+- `font-size`
+- `font-size-adjust`
+- `font-stretch`
+- `font-style`
+- `font-weight`
 
-- {{cssxref("font-synthesis")}} shorthand
-- {{cssxref("font-synthesis-position")}}
-- {{cssxref("font-synthesis-small-caps")}}
-- {{cssxref("font-synthesis-style")}}
-- {{cssxref("font-synthesis-weight")}}
+- `font-synthesis` shorthand
+- `font-synthesis-position`
+- `font-synthesis-small-caps`
+- `font-synthesis-style`
+- `font-synthesis-weight`
 
-- {{cssxref("font-variant")}} shorthand
-- {{cssxref("font-variant-alternates")}}
-- {{cssxref("font-variant-caps")}}
-- {{cssxref("font-variant-east-asian")}}
-- {{cssxref("font-variant-emoji")}}
-- {{cssxref("font-variant-ligatures")}}
-- {{cssxref("font-variant-numeric")}}
-- {{cssxref("font-variant-position")}}
-- {{cssxref("font-variation-settings")}}
+- `font-variant` shorthand
+- `font-variant-alternates`
+- `font-variant-caps`
+- `font-variant-east-asian`
+- `font-variant-emoji`
+- `font-variant-ligatures`
+- `font-variant-numeric`
+- `font-variant-position`
+- `font-variation-settings`
 
 The specification also defines the `font-width` property, which is not yet supported by any browser.
 
 ### At-rules and descriptors
 
-- At-rule: {{cssxref("@font-face")}}
+- At-rule: `@font-face`
   - Descriptors:
-    - {{cssxref("@font-face/ascent-override", "ascent-override")}}
-    - {{cssxref("@font-face/descent-override", "descent-override")}}
-    - {{cssxref("@font-face/font-display", "font-display")}}
-    - {{cssxref("@font-face/font-family", "font-family")}}
-    - {{cssxref("@font-face/font-feature-settings", "font-feature-settings")}}
-    - {{cssxref("@font-face/font-stretch", "font-stretch")}}
-    - {{cssxref("@font-face/font-style", "font-style")}}
-    - {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-    - {{cssxref("@font-face/font-weight", "font-weight")}}
-    - {{cssxref("@font-face/line-gap-override", "line-gap-override")}}
-    - {{cssxref("@font-face/size-adjust", "size-adjust")}}
-    - {{cssxref("@font-face/src", "src")}}
-    - {{cssxref("@font-face/unicode-range", "unicode-range")}}
+    - `ascent-override`
+    - `descent-override`
+    - `font-display`
+    - `font-family`
+    - `font-feature-settings`
+    - `font-stretch`
+    - `font-style`
+    - `font-variation-settings`
+    - `font-weight`
+    - `line-gap-override`
+    - `size-adjust`
+    - `src`
+    - `unicode-range`
 
 The CSS fonts module also defines the `font-language-override`, `font-named-instance`, `font-width`, `font-size`, `subscript-position-override`, `subscript-size-override`, `superscript-position-override`, and `superscript-size-override` descriptors. Currently, no browsers support these features.
 
-- At-rule: {{cssxref("@font-feature-values")}}
+- At-rule: `@font-feature-values`
 
-The CSS fonts module also defines the {{cssxref("@font-feature-values/font-display", "font-display")}} descriptor. Currently, no browsers support this feature.
+The CSS fonts module also defines the `font-display` descriptor. Currently, no browsers support this feature.
 
-- At-rule: {{cssxref("@font-palette-values")}}
+- At-rule: `@font-palette-values`
   - Descriptors:
-    - {{cssxref("@font-palette-values/base-palette", "base-palette")}}
-    - {{cssxref("@font-palette-values/font-family", "font-family")}}
-    - {{cssxref("@font-palette-values/override-colors", "override-colors")}}
+    - `base-palette`
+    - `font-family`
+    - `override-colors`
 
 ### Data types
 
 `font-size` types:
 
-- {{cssxref("absolute-size")}}
-- {{cssxref("relative-size")}}
+- `absolute-size`
+- `relative-size`
 
 `font-family` type:
 
-- {{cssxref("generic-family")}}
+- `generic-family`
 
 `font-feature-settings` type:
 
@@ -134,20 +134,20 @@ The CSS fonts module also defines the {{cssxref("@font-feature-values/font-displ
 
 ### Interfaces
 
-- {{domxref("CSSFontFaceRule")}}
-- {{domxref("CSSFontFeatureValuesRule")}}
-- {{domxref("CSSFontPaletteValuesRule")}}
+- `CSSFontFaceRule`
+- `CSSFontFeatureValuesRule`
+- `CSSFontPaletteValuesRule`
 
 ## Guides
 
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
-  - This beginner's learning article covers the basic fundamentals of text and font styling. It covers how to set the font weight, family, and style by using the {{cssxref("font")}} shorthand and how to align text and manage line and letter spacing.
+  - This beginner's learning article covers the basic fundamentals of text and font styling. It covers how to set the font weight, family, and style by using the `font` shorthand and how to align text and manage line and letter spacing.
 
 - [Learn: Web fonts](/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts)
   - This beginner's learning article explains how to use custom fonts on your web page to allow for more varied and custom text styling.
 
 - [OpenType font features](/guides/Fonts/OpenType_fonts)
-  - Font features or variants refer to different glyphs or character styles contained within an OpenType font. These include things like ligatures (special glyphs that combine characters like 'fi' or 'ffl'), kerning (adjustments to the spacing between specific letterform pairings), fractions, numeral styles, and a number of others. These are all referred to as OpenType Features, and are made available to use on the web via specific properties and a low-level control property — {{cssxref("font-feature-settings")}}. This article provides you with all you need to know about using OpenType font features in CSS.
+  - Font features or variants refer to different glyphs or character styles contained within an OpenType font. These include things like ligatures (special glyphs that combine characters like 'fi' or 'ffl'), kerning (adjustments to the spacing between specific letterform pairings), fractions, numeral styles, and a number of others. These are all referred to as OpenType Features, and are made available to use on the web via specific properties and a low-level control property — `font-feature-settings`. This article provides you with all you need to know about using OpenType font features in CSS.
 
 - [Web Open Font Format (WOFF)](/guides/Fonts/WOFF)
   - WOFF uses a compressed version of the same table-based `sfnt` structure used by TrueType, OpenType, and Open Font Format, but adds metadata and private-use data structures, including predefined fields allowing foundries and vendors to provide license information if desired.
@@ -160,9 +160,9 @@ The CSS fonts module also defines the {{cssxref("@font-feature-values/font-displ
 
 ## Related concepts
 
-- {{cssxref("letter-spacing")}} CSS property
-- {{cssxref("line-height")}} CSS property
-- {{cssxref("text-transform")}} CSS property
+- `letter-spacing` CSS property
+- `line-height` CSS property
+- `text-transform` CSS property
 
 ## Specifications
 

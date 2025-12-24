@@ -60,9 +60,9 @@ image-orientation: unset;
 
 ## Description
 
-This property is intended _only_ to be used for the purpose of correcting the orientation of images which were shot with the camera rotated. It should _not_ be used for arbitrary rotations. For any purpose other than correcting an image's orientation due to how it was shot or scanned, use a {{cssxref("transform")}} property with the `rotate` keyword to specify rotation. This includes any user-directed changes to the orientation of the image, or changes required for printing in portrait versus landscape orientation.
+This property is intended _only_ to be used for the purpose of correcting the orientation of images which were shot with the camera rotated. It should _not_ be used for arbitrary rotations. For any purpose other than correcting an image's orientation due to how it was shot or scanned, use a `transform` property with the `rotate` keyword to specify rotation. This includes any user-directed changes to the orientation of the image, or changes required for printing in portrait versus landscape orientation.
 
-If used in conjunction with other CSS properties, such as a {{cssxref("&lt;transform-function&gt;")}}, any `image-orientation` rotation is applied before any other transformations.
+If used in conjunction with other CSS properties, such as a `&lt;transform-function&gt;`, any `image-orientation` rotation is applied before any other transformations.
 
 ## Formal definition
 
@@ -135,5 +135,5 @@ document.addEventListener("change", (evt) => {
 
 ## See also
 
-- Other image-related CSS properties: {{cssxref("object-fit")}}, {{cssxref("object-position")}}, {{cssxref("image-rendering")}}, {{cssxref("image-resolution")}}.
-- {{cssxref("transform")}} and {{cssxref("rotate")}}
+- Other image-related CSS properties: `object-fit`, `object-position`, `image-rendering`, `image-resolution`.
+- `transform` and `rotate`

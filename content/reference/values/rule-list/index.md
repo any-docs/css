@@ -95,6 +95,6 @@ body {
 
 ## See also
 
-- CSS {{cssxref("@supports")}} at-rule
-- CSS {{cssxref("@media")}} at-rule
-- CSS {{cssxref("@custom-media")}} at-rule
+- CSS `@supports` at-rule
+- CSS `@media` at-rule
+- CSS `@custom-media` at-rule

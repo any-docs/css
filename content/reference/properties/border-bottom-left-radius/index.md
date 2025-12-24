@@ -81,17 +81,17 @@ border-bottom-left-radius: unset;
 
 With one value:
 
-- the value is a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}} denoting the radius of the circle to use for the border in that corner.
+- the value is a `&lt;length&gt;` or a `&lt;percentage&gt;` denoting the radius of the circle to use for the border in that corner.
 
 With two values:
 
-- the first value is a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}} denoting the horizontal semi-major axis of the ellipse to use for the border in that corner.
-- the second value is a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}} denoting the vertical semi-major axis of the ellipse to use for the border in that corner.
+- the first value is a `&lt;length&gt;` or a `&lt;percentage&gt;` denoting the horizontal semi-major axis of the ellipse to use for the border in that corner.
+- the second value is a `&lt;length&gt;` or a `&lt;percentage&gt;` denoting the vertical semi-major axis of the ellipse to use for the border in that corner.
 
 ### Values
 
 - `<length-percentage>`
-  - Denotes the size of the circle radius or the semi-major and semi-minor axes of the ellipse. As absolute length it can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Percentages for the horizontal axis refer to the width of the box, percentages for the vertical axis refer to the height of the box. Negative values are invalid.
+  - Denotes the size of the circle radius or the semi-major and semi-minor axes of the ellipse. As absolute length it can be expressed in any unit allowed by the CSS `&lt;length&gt;` data type. Percentages for the horizontal axis refer to the width of the box, percentages for the vertical axis refer to the height of the box. Negative values are invalid.
 
 ## Description
 
@@ -99,10 +99,10 @@ The rounding can be a circle or an ellipse, or if one of the value is `0` no rou
 
 ![border-bottom-left-radius.png](border-bottom-left-radius.png)
 
-A background, being an image or a color, is clipped at the border, even a rounded one; the exact location of the clipping is defined by the value of the {{cssxref("background-clip")}} property.
+A background, being an image or a color, is clipped at the border, even a rounded one; the exact location of the clipping is defined by the value of the `background-clip` property.
 
 > [!NOTE]
-> If the value of this property is not set in a {{cssxref("border-radius")}} shorthand property that is applied to the element after the `border-bottom-left-radius` CSS property, the value of this property is then reset to its initial value by the [shorthand property](/guides/Cascade/Shorthand_properties).
+> If the value of this property is not set in a `border-radius` shorthand property that is applied to the element after the `border-bottom-left-radius` CSS property, the value of this property is then reset to its initial value by the [shorthand property](/guides/Cascade/Shorthand_properties).
 
 ## Formal definition
 
@@ -204,5 +204,5 @@ div {
 
 ## See also
 
-- {{cssxref("border-radius")}} shorthand property
-- {{cssxref("border-top-right-radius")}}, {{cssxref("border-bottom-right-radius")}}, and {{cssxref("border-top-left-radius")}}
+- `border-radius` shorthand property
+- `border-top-right-radius`, `border-bottom-right-radius`, and `border-top-left-radius`

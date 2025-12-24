@@ -241,21 +241,21 @@ function sepia() {
 
 ### Properties
 
-- {{cssxref("backdrop-filter")}}
-- {{cssxref("filter")}}
+- `backdrop-filter`
+- `filter`
 
 ### Functions
 
-- {{cssxref("filter-function/blur", "blur()")}}
-- {{cssxref("filter-function/brightness", "brightness()")}}
-- {{cssxref("filter-function/contrast", "contrast()")}}
-- {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-- {{cssxref("filter-function/grayscale", "grayscale()")}}
-- {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-- {{cssxref("filter-function/invert", "invert()")}}
-- {{cssxref("filter-function/opacity", "opacity()")}}
-- {{cssxref("filter-function/saturate", "saturate()")}}
-- {{cssxref("filter-function/sepia", "sepia()")}}
+- `blur()`
+- `brightness()`
+- `contrast()`
+- `drop-shadow()`
+- `grayscale()`
+- `hue-rotate()`
+- `invert()`
+- `opacity()`
+- `saturate()`
+- `sepia()`
 
 ## Guides
 
@@ -264,12 +264,12 @@ function sepia() {
 
 ## Related concepts
 
-- {{cssxref("image")}} data type
-- {{cssxref("filter-function")}} data type
+- `image` data type
+- `filter-function` data type
 
-- {{cssxref("background-image")}} CSS property
-- {{cssxref("background-blend-mode")}} CSS property
-- {{cssxref("mix-blend-mode")}} CSS property
+- `background-image` CSS property
+- `background-blend-mode` CSS property
+- `mix-blend-mode` CSS property
 
 - {{glossary("interpolation")}} glossary term
 

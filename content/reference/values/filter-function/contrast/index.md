@@ -6,7 +6,7 @@ browser-compat: css.types.filter-function.contrast
 sidebar: cssref
 ---
 
-The **`contrast()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) adjusts the contrast of the input image. Its result is a {{cssxref("filter-function")}}.
+The **`contrast()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) adjusts the contrast of the input image. Its result is a `filter-function`.
 
 {{InteractiveExample("CSS Demo: contrast()")}}
 
@@ -45,7 +45,7 @@ contrast(amount)
 ### Values
 
 - `amount` <Badge type="info" text="Optional" />
-  - The contrast of the result, specified as a {{cssxref("&lt;number&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}. A value under `100%` decreases the contrast, while a value over `100%` increases it. A value of `0` or `0%` will create an image that is completely gray, while a value of `1` or `100%` leaves the input unchanged. Negative values are not allowed. The initial value for {{Glossary("interpolation")}} is `1`. The default value is `1`.
+  - The contrast of the result, specified as a `&lt;number&gt;` or a `&lt;percentage&gt;`. A value under `100%` decreases the contrast, while a value over `100%` increases it. A value of `0` or `0%` will create an image that is completely gray, while a value of `1` or `100%` leaves the input unchanged. Negative values are not allowed. The initial value for {{Glossary("interpolation")}} is `1`. The default value is `1`.
 
 The following are pairs of equivalent values:
 
@@ -72,7 +72,7 @@ contrast(200%)
 
 ### With the backdrop-filter property
 
-This example applies a `contrast()` filter via the {{cssxref("backdrop-filter")}} CSS property to the paragraph and monospaced text, color shifting to the area behind the `<p>` and `<code>`.
+This example applies a `contrast()` filter via the `backdrop-filter` CSS property to the paragraph and monospaced text, color shifting to the area behind the `<p>` and `<code>`.
 
 ```css
 .container {
@@ -114,7 +114,7 @@ p {
 
 ### With the filter property
 
-This example applies a `contrast()` filter via the {{cssxref("filter")}} CSS property, changing contrast by shifting colors of the entire element, including content, border, background, and shadows.
+This example applies a `contrast()` filter via the `filter` CSS property, changing contrast by shifting colors of the entire element, including content, border, background, and shadows.
 
 ```css
 p:first-of-type {
@@ -245,13 +245,13 @@ svg:not(:root) {
 ## See also
 
 - [CSS filter effects](/guides/Filter_effects) module
-- The other {{cssxref("filter-function")}} functions available to be used in values of the {{cssxref("filter")}} and {{cssxref("backdrop-filter")}} properties include:
-  - {{cssxref("filter-function/blur", "blur()")}}
-  - {{cssxref("filter-function/brightness", "brightness()")}}
-  - {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
-  - {{cssxref("filter-function/grayscale", "grayscale()")}}
-  - {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-  - {{cssxref("filter-function/invert", "invert()")}}
-  - {{cssxref("filter-function/opacity", "opacity()")}}
-  - {{cssxref("filter-function/saturate", "saturate()")}}
-  - {{cssxref("filter-function/sepia", "sepia()")}}
+- The other `filter-function` functions available to be used in values of the `filter` and `backdrop-filter` properties include:
+  - `blur()`
+  - `brightness()`
+  - `drop-shadow()`
+  - `grayscale()`
+  - `hue-rotate()`
+  - `invert()`
+  - `opacity()`
+  - `saturate()`
+  - `sepia()`

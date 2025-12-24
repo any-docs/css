@@ -79,13 +79,13 @@ body {
 
 ## Choices made
 
-This recipe uses the CSS grid {{cssxref("minmax()")}} function to define the grid track sizes in the {{cssxref("grid-template-columns")}} property. For the central columns with a maximum width, we can set a minimum value of `0` or greater and a maximum value that specifies the maximum size the column tracks will grow to. Using [relative](/reference/values/length#relative_length_units_based_on_font) or [absolute](/reference/values/length#absolute_length_units) {{cssxref("length")}} units (pixels, ems, rems) will create a fixed maximum size for the central wrapper, whereas using {{cssxref("percentage")}} values or [viewport units](/reference/values/length#relative_length_units_based_on_viewport) will cause the wrapper to grow or shrink in response to its context.
+This recipe uses the CSS grid `minmax()` function to define the grid track sizes in the `grid-template-columns` property. For the central columns with a maximum width, we can set a minimum value of `0` or greater and a maximum value that specifies the maximum size the column tracks will grow to. Using [relative](/reference/values/length#relative_length_units_based_on_font) or [absolute](/reference/values/length#absolute_length_units) `length` units (pixels, ems, rems) will create a fixed maximum size for the central wrapper, whereas using `percentage` values or [viewport units](/reference/values/length#relative_length_units_based_on_viewport) will cause the wrapper to grow or shrink in response to its context.
 
 The outer two columns have a maximum size of `1fr`, meaning that they will each expand to fill the remaining available space in the grid container.
 
 ## Useful fallbacks or alternative methods
 
-To center the grid horizontally on the page you can set a `max-width` along with left and right `auto` {{cssxref("margin")}}s:
+To center the grid horizontally on the page you can set a `max-width` along with left and right `auto` `margin`s:
 
 ```css
 .grid {
@@ -100,7 +100,7 @@ Although CSS grid enables positioning items anywhere (within reason), ensuring t
 
 ## See also
 
-- {{Cssxref("grid-template-columns")}} property
+- `grid-template-columns` property
 - [CSS grid layout](/guides/Grid_layout) module
 - [CSS grid: More flexibility with `minmax()`](https://css-irl.info/more-flexibility-with-minmax/) (2018)
 - [Breaking out with CSS grid](https://rachelandrew.co.uk/archives/2017/06/01/breaking-out-with-css-grid-explained/) (2017)

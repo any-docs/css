@@ -11,12 +11,12 @@ The **`<axis>`** {{glossary("enumerated")}} data type specifies the scrolling di
 
 The `<axis>` keyword values are used in the following [CSS functions](/reference/values/Functions) and properties:
 
-- {{cssxref("scroll-timeline-axis")}}
-- {{cssxref("scroll-timeline")}} shorthand
-- {{cssxref("animation-timeline/scroll", "scroll()")}}
-- {{cssxref("view-timeline-axis")}}
-- {{cssxref("view-timeline")}} shorthand
-- {{cssxref("animation-timeline/view", "view()")}}
+- `scroll-timeline-axis`
+- `scroll-timeline` shorthand
+- `scroll()`
+- `view-timeline-axis`
+- `view-timeline` shorthand
+- `view()`
 
 ## Syntax
 
@@ -44,6 +44,6 @@ Valid `<axis>` values:
 
 ## See also
 
-- {{cssxref("animation-timeline")}}
+- `animation-timeline`
 - [Scroll-driven animation timelines](/guides/Scroll-driven_animations/Timelines) guide
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module

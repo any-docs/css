@@ -6,7 +6,7 @@ browser-compat: css.types.cos
 sidebar: cssref
 ---
 
-The **`cos()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the cosine of a number, which is a value between `-1` and `1`. The function contains a single calculation that must resolve to either a {{cssxref("&lt;number&gt;")}} or an {{cssxref("angle")}} by interpreting the result of the argument as radians. That is, `cos(45deg)`, `cos(0.125turn)`, and `cos(3.14159 / 4)` all represent the same value, approximately `0.707`.
+The **`cos()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the cosine of a number, which is a value between `-1` and `1`. The function contains a single calculation that must resolve to either a `&lt;number&gt;` or an `angle` by interpreting the result of the argument as radians. That is, `cos(45deg)`, `cos(0.125turn)`, and `cos(3.14159 / 4)` all represent the same value, approximately `0.707`.
 
 {{InteractiveExample("CSS Demo: cos()")}}
 
@@ -92,7 +92,7 @@ width: calc(100px * cos(e / 2));
 The `cos(angle)` function accepts only one value as its parameter.
 
 - `angle`
-  - A calculation which resolves to a {{cssxref("&lt;number&gt;")}} or an {{cssxref("angle")}}. When specifying unitless numbers they are interpreted as a number of radians, representing an {{cssxref("angle")}}.
+  - A calculation which resolves to a `&lt;number&gt;` or an `angle`. When specifying unitless numbers they are interpreted as a number of radians, representing an `angle`.
 
 ### Return value
 
@@ -110,9 +110,9 @@ The cosine of an `angle` will always return a number between `−1` and `1`.
 
 The `cos()` function can be used to keep the size of a rotated box.
 
-When the element is rotated using {{cssxref("transform-function/rotate", "rotate()")}}, it goes beyond its initial size. To fix this, we will use `cos()` to update the element size.
+When the element is rotated using `rotate()`, it goes beyond its initial size. To fix this, we will use `cos()` to update the element size.
 
-For example, if you rotate a `100px`/`100px` square `45deg`, the diamond it creates will be wider and taller than the original square. To shrink the diamond into the box allotted for the original square, you would have to scale down the diamond using this formula: `width = height = 100px * cos(45deg) = 100px * 0.707 = 70.7px`. You need to also adjust the {{cssxref("transform-origin")}} and add {{cssxref("transform-function/translate", "translate()")}} to correct the position:
+For example, if you rotate a `100px`/`100px` square `45deg`, the diamond it creates will be wider and taller than the original square. To shrink the diamond into the box allotted for the original square, you would have to scale down the diamond using this formula: `width = height = 100px * cos(45deg) = 100px * 0.707 = 70.7px`. You need to also adjust the `transform-origin` and add `translate()` to correct the position:
 
 #### HTML
 
@@ -170,9 +170,9 @@ div.rotated-scaled-diamond {
 
 ## See also
 
-- {{CSSxRef("sin")}}
-- {{CSSxRef("tan")}}
-- {{CSSxRef("asin")}}
-- {{CSSxRef("acos")}}
-- {{CSSxRef("atan")}}
-- {{CSSxRef("atan2")}}
+- `sin`
+- `tan`
+- `asin`
+- `acos`
+- `atan`
+- `atan2`

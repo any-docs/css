@@ -6,7 +6,7 @@ browser-compat: css.at-rules.counter-style.suffix
 sidebar: cssref
 ---
 
-The **`suffix`** descriptor of the {{cssxref("@counter-style")}} rule specifies content that will be added to the end of the marker representation.
+The **`suffix`** descriptor of the `@counter-style` rule specifies content that will be added to the end of the marker representation.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ suffix: url("bullet.png");
 The **`suffix`** descriptor takes as its value a single `<symbol>`:
 
 - `<symbol>`
-  - Specifies a `<symbol>` that is appended to the marker representation. It may be a {{cssxref("&lt;string&gt;")}}, {{cssxref("image")}}, or {{cssxref("&lt;custom-ident&gt;")}}.
+  - Specifies a `<symbol>` that is appended to the marker representation. It may be a `&lt;string&gt;`, `image`, or `&lt;custom-ident&gt;`.
 
 ## Formal definition
 
@@ -75,8 +75,8 @@ The **`suffix`** descriptor takes as its value a single `<symbol>`:
 
 ## See also
 
-- Other {{cssxref("@counter-style")}} descriptors: {{cssxref("@counter-style/system","system")}}, {{cssxref("@counter-style/symbols", "symbols")}}, {{cssxref("@counter-style/additive-symbols", "additive-symbols")}}, {{cssxref("@counter-style/negative", "negative")}}, {{cssxref("@counter-style/prefix", "prefix")}}, {{cssxref("@counter-style/range", "range")}}, {{cssxref("@counter-style/pad", "pad")}}, {{cssxref("@counter-style/speak-as", "speak-as")}}, and {{cssxref("@counter-style/fallback", "fallback")}}
-- {{Cssxref("list-style")}}, {{Cssxref("list-style-image")}}, {{Cssxref("list-style-position")}}
-- {{cssxref("symbols()")}}: the functional notation for creating anonymous counter styles
+- Other `@counter-style` descriptors: `system`, `symbols`, `additive-symbols`, `negative`, `prefix`, `range`, `pad`, `speak-as`, and `fallback`
+- `list-style`, `list-style-image`, `list-style-position`
+- `symbols()`: the functional notation for creating anonymous counter styles
 - [CSS counter styles](/guides/Counter_styles) module
 - [CSS lists and counters](/guides/Lists) module

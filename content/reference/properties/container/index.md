@@ -12,8 +12,8 @@ The **container** [shorthand](/guides/Cascade/Shorthand_properties) [CSS](/en-US
 
 This property is a shorthand for the following CSS properties:
 
-- {{Cssxref("container-name")}}
-- {{Cssxref("container-type")}}
+- `container-name`
+- `container-type`
 
 ## Syntax
 
@@ -36,10 +36,10 @@ container: unset;
 
 - `<container-name>`
   - A case-sensitive name for the containment context.
-    More details on the syntax are covered in the {{cssxref("container-name")}} property page.
+    More details on the syntax are covered in the `container-name` property page.
 - `<container-type>`
   - The type of containment context.
-    More details on the syntax are covered in the {{cssxref("container-type")}} property page.
+    More details on the syntax are covered in the `container-type` property page.
 
 ## Formal definition
 
@@ -81,7 +81,7 @@ The `container` shorthand is intended to make this simpler to define in a single
 }
 ```
 
-You can then target that container by name using the {{cssxref("@container")}} at-rule:
+You can then target that container by name using the `@container` at-rule:
 
 ```css
 @container sidebar (width >= 400px) {
@@ -101,8 +101,8 @@ You can then target that container by name using the {{cssxref("@container")}} a
 
 - [CSS container queries](/guides/Containment/Container_queries)
 - [Using container size and style queries](/guides/Containment/Container_size_and_style_queries)
-- {{Cssxref("@container")}} at-rule
-- CSS {{Cssxref("contain")}} property
-- CSS {{Cssxref("container-type")}} property
-- CSS {{Cssxref("container-name")}} property
-- CSS {{cssxref("content-visibility")}} property
+- `@container` at-rule
+- CSS `contain` property
+- CSS `container-type` property
+- CSS `container-name` property
+- CSS `content-visibility` property

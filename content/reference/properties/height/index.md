@@ -6,7 +6,7 @@ browser-compat: css.properties.height
 sidebar: cssref
 ---
 
-The **`height`** [CSS](/en-US/docs/Web/CSS) property specifies the height of an element. By default, the property defines the height of the [content area](/guides/Box_model/Introduction#content_area). If {{cssxref("box-sizing")}} is set to `border-box`, however, it instead determines the height of the [border area](/guides/Box_model/Introduction#border_area).
+The **`height`** [CSS](/en-US/docs/Web/CSS) property specifies the height of an element. By default, the property defines the height of the [content area](/guides/Box_model/Introduction#content_area). If `box-sizing` is set to `border-box`, however, it instead determines the height of the [border area](/guides/Box_model/Introduction#border_area).
 
 {{InteractiveExample("CSS Demo: height")}}
 
@@ -44,7 +44,7 @@ height: auto;
 }
 ```
 
-The {{cssxref("min-height")}} and {{cssxref("max-height")}} properties override `height`.
+The `min-height` and `max-height` properties override `height`.
 
 > [!NOTE]
 > As a geometric property, `height` also applies to the {{SVGElement("svg")}}, {{SVGElement("rect")}}, {{SVGElement("image")}}, and {{SVGElement("foreignObject")}} SVG elements, with `auto` resolving to `0` and percent values being relative to the SVG viewport height for `<rect>`. The CSS `height` property value overrides any SVG {{SVGAttr("height")}} attribute value set on the SVG element.
@@ -81,17 +81,17 @@ height: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Defines the height as a distance value.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Defines the height as a percentage of the [containing block](/guides/Display/Containing_block)'s height.
 - `auto`
   - The browser will calculate and select a height for the specified element.
-- {{cssxref("max-content")}}
+- `max-content`
   - The intrinsic preferred height.
-- {{cssxref("min-content")}}
+- `min-content`
   - The intrinsic minimum height.
-- {{cssxref("fit-content")}}
+- `fit-content`
   - Use the available space, but not more than [max-content](/reference/values/max-content), i.e., `min(max-content, max(min-content, stretch))`.
 - [`fit-content(<length-percentage>)`](/reference/values/fit-content_function)
   - Uses the fit-content formula with the available space replaced by the specified argument, i.e., `min(max-content, max(min-content, <length-percentage>))`.
@@ -217,13 +217,13 @@ div {
 
 ## See also
 
-- {{cssxref("width")}}
-- {{cssxref("box-sizing")}}
-- {{cssxref("min-height")}}, {{cssxref("max-height")}}
-- {{cssxref("block-size")}}, {{cssxref("inline-size")}}
-- {{cssxref("anchor-size()")}}
-- {{cssxref("clamp()")}}
-- {{cssxref("minmax()")}}
+- `width`
+- `box-sizing`
+- `min-height`, `max-height`
+- `block-size`, `inline-size`
+- `anchor-size()`
+- `clamp()`
+- `minmax()`
 - SVG {{SVGAttr("height")}} attribute
 - [Introduction to the CSS box model](/guides/Box_model/Introduction)
 - [CSS box model](/guides/Box_model) module

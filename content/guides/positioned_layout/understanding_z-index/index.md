@@ -5,11 +5,11 @@ page-type: guide
 sidebar: cssref
 ---
 
-In the most basic cases, when text, images, and other elements are arranged on the page without overlapping, [HTML](/en-US/docs/Web/HTML) pages can be considered two-dimensional. In such cases, there is a single rendering flow, and all elements are aware of the space taken by others. CSS isn't that simple — CSS positioning, transformation, containment, and other features can cause elements to overlap. In this guide, we introduce the {{cssxref("z-index")}} property, which lets you place elements in front or behind other elements in the same [stacking context](/guides/Positioned_layout/Stacking_context).
+In the most basic cases, when text, images, and other elements are arranged on the page without overlapping, [HTML](/en-US/docs/Web/HTML) pages can be considered two-dimensional. In such cases, there is a single rendering flow, and all elements are aware of the space taken by others. CSS isn't that simple — CSS positioning, transformation, containment, and other features can cause elements to overlap. In this guide, we introduce the `z-index` property, which lets you place elements in front or behind other elements in the same [stacking context](/guides/Positioned_layout/Stacking_context).
 
 ## Layers on the z-axis
 
-The elements rendered on a page are comprised of a series of boxes. Each box has a position in three dimensions. In addition to their inline and block positions, boxes lie along a third dimension known as the _z-axis_. Controlling an element's z-axis position becomes especially relevant when element boxes overlap visually. Several property values can cause elements to overlap. The {{cssxref("z-index")}} property provides you a way to control how they overlap!
+The elements rendered on a page are comprised of a series of boxes. Each box has a position in three dimensions. In addition to their inline and block positions, boxes lie along a third dimension known as the _z-axis_. Controlling an element's z-axis position becomes especially relevant when element boxes overlap visually. Several property values can cause elements to overlap. The `z-index` property provides you a way to control how they overlap!
 
 By default, element boxes are rendered on Layer 0. The `z-index` property allows you to position elements on different layers along the z-axis, in addition to the default rendering layer. Each element's position along the imaginary z-axis (z-index value) is expressed as an integer (positive, negative, or zero) and controls the stacking order during rendering. Greater numbers mean elements are closer to the observer.
 
@@ -93,7 +93,7 @@ div {
 
 ## Rearranging layers
 
-We can use the CSS {{cssxref("z-index")}} property to position each element along the z-axis, effectively rearranging the stacking order.
+We can use the CSS `z-index` property to position each element along the z-axis, effectively rearranging the stacking order.
 
 By adding `z-index` values, we change the default layer order:
 

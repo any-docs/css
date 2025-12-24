@@ -6,7 +6,7 @@ browser-compat: css.selectors.any-link
 sidebar: cssref
 ---
 
-The **`:any-link`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) selector represents an element that acts as the source anchor of a hyperlink, independent of whether it has been visited. In other words, it matches every {{HTMLElement("a")}} or {{HTMLElement("area")}} element that has an `href` attribute. Thus, it matches all elements that match {{cssxref(":link")}} or {{cssxref(":visited")}}.
+The **`:any-link`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) selector represents an element that acts as the source anchor of a hyperlink, independent of whether it has been visited. In other words, it matches every {{HTMLElement("a")}} or {{HTMLElement("area")}} element that has an `href` attribute. Thus, it matches all elements that match `:link` or `:visited`.
 
 {{InteractiveExample("CSS Demo: :any-link", "tabbed-shorter")}}
 
@@ -92,5 +92,5 @@ a:-webkit-any-link {
 - [Creating links](/en-US/docs/Learn_web_development/Core/Structuring_content/Creating_links)
 - Matches HTML elements: [`<a>`](/en-US/docs/Web/HTML/Reference/Elements/a) and [`<area>`](/en-US/docs/Web/HTML/Reference/Elements/area) with an [`href`](/en-US/docs/Web/HTML/Reference/Elements/a#href) attribute
 - Related CSS selectors:
-  - {{cssxref(":visited")}}
-  - {{cssxref(":link")}}
+  - `:visited`
+  - `:link`

@@ -32,7 +32,7 @@ Both symbols appear literally in a value definition.
 
 #### Basic data types
 
-Some data types are used throughout CSS and are defined once for all values in the specification. Called _basic data types_, they are represented with their name surrounded by the symbols `<` and `>`: {{cssxref("angle")}}, {{CSSxRef("<string>")}}, …
+Some data types are used throughout CSS and are defined once for all values in the specification. Called _basic data types_, they are represented with their name surrounded by the symbols `<` and `>`: `angle`, `<string>`, …
 
 #### Non-terminal data types
 
@@ -74,7 +74,7 @@ But not:
 
 - `thin 1em, bold`, as the entities must be in the expressed order
 - `bold 1em thin`, as the entities are mandatory; the comma, a literal, must be present
-- `bold 0.5ms, thin`, as the `ms` values are not {{CSSxRef("&lt;length&gt;")}}
+- `bold 0.5ms, thin`, as the `ms` values are not `&lt;length&gt;`
 
 ### Double ampersand
 
@@ -258,7 +258,7 @@ But not:
 
 ## Bracketed range notation (`[min,max]`)
 
-Some types can accept numeric values within a certain range. For example, the {{cssxref("column-count")}} property can accept an integer value between positive 1 and infinity, inclusive. The corresponding syntax looks like this:
+Some types can accept numeric values within a certain range. For example, the `column-count` property can accept an integer value between positive 1 and infinity, inclusive. The corresponding syntax looks like this:
 
 {{CSSSyntaxRaw('example <integer [1,∞]>')}}
 

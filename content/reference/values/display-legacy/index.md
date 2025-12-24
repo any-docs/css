@@ -86,9 +86,9 @@ In the new syntax the inline flex container would be created using two values, i
 
 ## See also
 
-- {{CSSxRef("display")}}
-  - {{CSSxRef("&lt;display-outside&gt;")}}
-  - {{CSSxRef("&lt;display-inside&gt;")}}
-  - {{CSSxRef("&lt;display-listitem&gt;")}}
-  - {{CSSxRef("&lt;display-internal&gt;")}}
-  - {{CSSxRef("&lt;display-box&gt;")}}
+- `display`
+  - `&lt;display-outside&gt;`
+  - `&lt;display-inside&gt;`
+  - `&lt;display-listitem&gt;`
+  - `&lt;display-internal&gt;`
+  - `&lt;display-box&gt;`

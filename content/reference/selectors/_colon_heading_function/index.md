@@ -25,7 +25,7 @@ The **`:heading()`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/C
 
 ### Parameters
 
-The `:heading()` pseudo-class function takes a comma-separated list of {{cssxref("&lt;integer&gt;")}}s that represent the heading levels to be styled.
+The `:heading()` pseudo-class function takes a comma-separated list of `&lt;integer&gt;`s that represent the heading levels to be styled.
 
 ## Usage notes
 
@@ -67,4 +67,4 @@ In this example, a comma-separated list of values is used to target headings at 
 
 ## See also
 
-- {{cssxref(":heading")}}
+- `:heading`

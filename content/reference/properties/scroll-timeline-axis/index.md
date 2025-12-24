@@ -38,7 +38,7 @@ The `scroll-timeline-axis` property specifies which scrollbar will be used to pr
 
 If the scroller element does not overflow its container in the axis dimension or if the overflow is hidden or clipped, no scroll progress timeline will be created.
 
-The `scroll-timeline-axis` and {{cssxref("scroll-timeline-name")}} properties can also be set using the {{cssxref("scroll-timeline")}} shorthand property.
+The `scroll-timeline-axis` and `scroll-timeline-name` properties can also be set using the `scroll-timeline` shorthand property.
 
 ## Formal definition
 
@@ -74,7 +74,7 @@ The scroll axis is set using `scroll-timeline-axis: x;` which causes the _horizo
 
 The width of the `.content` element is set to a large value to make it overflow the `:root` element.
 
-The `.animation` element has the animation applied to it using the {{cssxref("animation")}} shorthand, and the scroll timeline set using the {{cssxref("animation-timeline")}}.
+The `.animation` element has the animation applied to it using the `animation` shorthand, and the scroll timeline set using the `animation-timeline`.
 
 ```css
 :root {
@@ -152,8 +152,8 @@ Scroll the horizontal bar at the bottom to see the square animate as you scroll.
 
 ## See also
 
-- {{cssxref("animation-timeline")}}
-- {{cssxref("scroll-timeline")}}
-- {{cssxref("scroll-timeline-name")}}
+- `animation-timeline`
+- `scroll-timeline`
+- `scroll-timeline-name`
 - [Scroll-driven animation timelines](/guides/Scroll-driven_animations/Timelines)
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module

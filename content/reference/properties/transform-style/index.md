@@ -76,16 +76,16 @@ transform-style: unset;
 The spec lists some [grouping property values](https://drafts.csswg.org/css-transforms-2/#grouping-property-values), which
 require the user agent to create a flattened representation of the descendant elements before they can be applied, and therefore force the element to have a [used value](/guides/Cascade/Property_value_processing#used_value) of `transform-style: flat`, even when `preserve-3d` is specified. These property values include:
 
-- {{cssxref("overflow")}}: any value other than `visible` or `clip`.
-- {{cssxref("opacity")}}: any value less than `1`.
-- {{cssxref("filter")}}: any value other than `none`.
-- {{cssxref("clip")}}: any value other than `auto`.
-- {{cssxref("clip-path")}}: any value other than `none`.
-- {{cssxref("isolation")}}: used value of `isolate`.
-- {{cssxref("mask-image")}}: any value other than `none`.
-- {{cssxref("mask-border-source")}}: any value other than `none`.
-- {{cssxref("mix-blend-mode")}}: any value other than `normal`.
-- {{cssxref("contain")}}: `paint` and any other property/value combination that causes paint containment. This includes any property that affect the used value of the `contain` property, such as `content-visibility: hidden`.
+- `overflow`: any value other than `visible` or `clip`.
+- `opacity`: any value less than `1`.
+- `filter`: any value other than `none`.
+- `clip`: any value other than `auto`.
+- `clip-path`: any value other than `none`.
+- `isolation`: used value of `isolate`.
+- `mask-image`: any value other than `none`.
+- `mask-border-source`: any value other than `none`.
+- `mix-blend-mode`: any value other than `normal`.
+- `contain`: `paint` and any other property/value combination that causes paint containment. This includes any property that affect the used value of the `contain` property, such as `content-visibility: hidden`.
 
 ## Formal definition
 

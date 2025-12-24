@@ -26,11 +26,11 @@ We are able to align the content inside grid areas, and the grid tracks themselv
 
 ## Aligning items on the block axis
 
-The {{cssxref("align-self")}} and {{cssxref("align-items")}} properties control alignment on the block axis. When we use these properties, we are changing the alignment of the item within the grid area you have placed it.
+The `align-self` and `align-items` properties control alignment on the block axis. When we use these properties, we are changing the alignment of the item within the grid area you have placed it.
 
 ### Using align-items
 
-In the following example, we have four {{glossary("grid areas")}} within our grid. We can use the {{cssxref("align-items")}} property on the {{glossary("grid container")}}, to align the items using `normal`, `stretch`, or {{cssxref("self-position")}} or {{cssxref("baseline-position")}} values:
+In the following example, we have four {{glossary("grid areas")}} within our grid. We can use the `align-items` property on the {{glossary("grid container")}}, to align the items using `normal`, `stretch`, or `self-position` or `baseline-position` values:
 
 - `normal`
 - `stretch`
@@ -102,9 +102,9 @@ The default value is `normal`, which resolves to `stretch` for grid containers.
 
 {{ EmbedLiveSample('Using_align-items', '500', '500') }}
 
-Keep in mind that once you set `align-items: start`, the height of each child `<div>` will be determined by the contents of the `<div>`. This is in contrast to omitting {{cssxref("align-items")}} completely, in which case the height of each `<div>` stretches to fill its grid area.
+Keep in mind that once you set `align-items: start`, the height of each child `<div>` will be determined by the contents of the `<div>`. This is in contrast to omitting `align-items` completely, in which case the height of each `<div>` stretches to fill its grid area.
 
-The `align-items` property sets the {{cssxref("align-self")}} property for all of the child grid items. This means that you can set the property individually, by using `align-self` directly on a grid item.
+The `align-items` property sets the `align-self` property for all of the child grid items. This means that you can set the property individually, by using `align-self` directly on a grid item.
 
 ### Using align-self
 
@@ -172,11 +172,11 @@ In this next example, we are using the `align-self` property, to demonstrate the
 
 ### Items with an intrinsic aspect ratio
 
-The default behavior for {{cssxref("align-self")}} is to inherit from the grid container's `align-items` property, for which the `normal` default is to stretch, except for items which have an intrinsic {{glossary("aspect ratio")}}, in this case they behave as `start`. The reason for this, is that if items with an aspect ratio are made to stretch, they would be distorted.
+The default behavior for `align-self` is to inherit from the grid container's `align-items` property, for which the `normal` default is to stretch, except for items which have an intrinsic {{glossary("aspect ratio")}}, in this case they behave as `start`. The reason for this, is that if items with an aspect ratio are made to stretch, they would be distorted.
 
 ## Justifying items on the inline axis
 
-Whereas `align-items` and `align-self` align items on the block axis, {{cssxref("justify-items")}} and {{cssxref("justify-self")}} align items on the inline axis. The values you can choose from are similar to the `normal`, `stretch`, {{cssxref("self-position")}} and {{cssxref("baseline-position")}} values of the `align-self` property, along with `left` and `right`. Values include:
+Whereas `align-items` and `align-self` align items on the block axis, `justify-items` and `justify-self` align items on the inline axis. The values you can choose from are similar to the `normal`, `stretch`, `self-position` and `baseline-position` values of the `align-self` property, along with `left` and `right`. Values include:
 
 - `normal`
 - `start`
@@ -190,7 +190,7 @@ Whereas `align-items` and `align-self` align items on the block axis, {{cssxref(
 - `last baseline`
 - `auto` (`justify-self` only)
 
-You can see the same example as used for {{cssxref("align-items")}}, below. This time, we are applying the {{cssxref("justify-self")}} property.
+You can see the same example as used for `align-items`, below. This time, we are applying the `justify-self` property.
 
 Once again, the default is `stretch` other than for items with an intrinsic aspect ratio. This means that grid items will cover their grid area by default, unless you change the alignment. In this example, the first item demonstrates the default `stretch` alignment value:
 
@@ -257,13 +257,13 @@ Once again, the default is `stretch` other than for items with an intrinsic aspe
 As with `align-self` and `align-items`, you can apply `justify-items` to the grid container to set a `justify-self` value for all the grid items within the container.
 
 > [!NOTE]
-> The `justify-self` and `justify-items` properties are not implemented in flexbox. This is due to the one-dimensional nature of [flexbox](/guides/Flexible_box_layout), and that there may be multiple items along the axis, making it impossible to justify a single item. To align items along the main, inline axis in flexbox you use the {{cssxref("justify-content")}} property.
+> The `justify-self` and `justify-items` properties are not implemented in flexbox. This is due to the one-dimensional nature of [flexbox](/guides/Flexible_box_layout), and that there may be multiple items along the axis, making it impossible to justify a single item. To align items along the main, inline axis in flexbox you use the `justify-content` property.
 
 ### Shorthand properties
 
-The {{CSSxRef("place-items")}} property is shorthand for `align-items` and `justify-items`.
+The `place-items` property is shorthand for `align-items` and `justify-items`.
 
-The {{CSSxRef("place-self")}} property is shorthand for `align-self` and `justify-self`.
+The `place-self` property is shorthand for `align-self` and `justify-self`.
 
 ## Center an item in the area
 
@@ -316,9 +316,9 @@ By combining the align and justify properties we can easily center an item insid
 
 ## Aligning the grid tracks on the block axis
 
-If you have a situation where your grid tracks use an area that is smaller than the grid container you can align the grid tracks themselves inside that container. The {{cssxref("align-content")}} aligns the tracks on the block axis and {{cssxref("justify-content")}} aligns on the inline axis. As with the `*-items` and `*-item` properties, the {{CSSxRef("place-content")}} property is shorthand for `align-content` and `justify-content`.
+If you have a situation where your grid tracks use an area that is smaller than the grid container you can align the grid tracks themselves inside that container. The `align-content` aligns the tracks on the block axis and `justify-content` aligns on the inline axis. As with the `*-items` and `*-item` properties, the `place-content` property is shorthand for `align-content` and `justify-content`.
 
-The values for `align-content`, `justify-content` and `place-content` all include the {{cssxref("content-distribution")}} and {{cssxref("content-position")}} values. The `align-content` property also accepts {{cssxref("baseline-position")}} values and, like the other `justify-*` properties, `justify-content` also accepts `left` and `right`.
+The values for `align-content`, `justify-content` and `place-content` all include the `content-distribution` and `content-position` values. The `align-content` property also accepts `baseline-position` values and, like the other `justify-*` properties, `justify-content` also accepts `left` and `right`.
 
 Valid keywords for `place-content` include:
 
@@ -470,7 +470,7 @@ Using the same CSS and HTML, in this example we add `align-content` with a value
 
 ### Setting align-content: space-between
 
-We can also apply the {{cssxref("content-distribution")}} space distribution values of `space-between`, `space-around`, `space-evenly`, and `stretch`. In this example, we set {{cssxref("align-content")}}, which aligns the tracks on the block axis, to `space-between`, which spaces out the tracks:
+We can also apply the `content-distribution` space distribution values of `space-between`, `space-around`, `space-evenly`, and `stretch`. In this example, we set `align-content`, which aligns the tracks on the block axis, to `space-between`, which spaces out the tracks:
 
 ```css
 .wrapper {
@@ -544,7 +544,7 @@ In the below image, we placed the grid with two different `align-content` values
 
 We can use `justify-content` to perform the same type of alignment on the inline axis that we used `align-content` for in the block axis.
 
-Using the same example, we set {{cssxref("justify-content")}} to `space-around`. This once again causes tracks which span more than one column track to gain extra space:
+Using the same example, we set `justify-content` to `space-around`. This once again causes tracks which span more than one column track to gain extra space:
 
 ```css
 .wrapper {
@@ -613,7 +613,7 @@ Using the same example, we set {{cssxref("justify-content")}} to `space-around`.
 
 Another way to align items inside their area is to use auto margins. If you have ever centered a layout in the viewport, or any block level element within its parent, you may have done so by setting the right and left margin of element you wanted to center to `auto`. The auto margin absorbs all of the available space. Setting the margin to `auto` on both sides pushes the block-level element into the middle as both margins attempt to take all of the space.
 
-In this next example, item 1 has its {{cssxref("margin-left")}} property set to `auto`. This pushes the content over to the right side of the area, as the auto margin takes up the available space that remained after space needed for the content has been assigned:
+In this next example, item 1 has its `margin-left` property set to `auto`. This pushes the content over to the right side of the area, as the auto margin takes up the available space that remained after space needed for the content has been assigned:
 
 ```css hidden
 * {
@@ -684,7 +684,7 @@ All these examples were in English, a left-to-right language. This means that ou
 
 CSS grid layout and CSS box alignment work with writing modes in CSS. When displaying a right to left language, such as Arabic, the start of the grid is the top right, so the default of `justify-content: start` would be for grid tracks to start on the right-hand side of the grid.
 
-Setting {{glossary("physical properties")}}, such as setting auto margins using {{cssxref("margin-right")}} or {{cssxref("margin-left")}}, or absolutely positioning items using the {{cssxref("top")}}, {{cssxref("right")}}, {{cssxref("bottom")}}, and {{cssxref("left")}} offsets, does not honor writing modes. In the [grids, logical values, and writing modes](/guides/Grid_layout/Logical_values_and_writing_modes) guide, we will look further into this interaction between CSS grid layout, box alignment and writing modes. This will be important to understand, if you develop sites that are then displayed in multiple languages, or if you want to mix languages or writing modes in a design.
+Setting {{glossary("physical properties")}}, such as setting auto margins using `margin-right` or `margin-left`, or absolutely positioning items using the `top`, `right`, `bottom`, and `left` offsets, does not honor writing modes. In the [grids, logical values, and writing modes](/guides/Grid_layout/Logical_values_and_writing_modes) guide, we will look further into this interaction between CSS grid layout, box alignment and writing modes. This will be important to understand, if you develop sites that are then displayed in multiple languages, or if you want to mix languages or writing modes in a design.
 
 ## See also
 

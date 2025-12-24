@@ -6,7 +6,7 @@ browser-compat: css.selectors.defined
 sidebar: cssref
 ---
 
-The **`:defined`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) represents any element that has been defined. This includes any standard element built into the browser and custom elements that have been successfully defined (i.e., with the {{domxref("CustomElementRegistry.define()")}} method).
+The **`:defined`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) represents any element that has been defined. This includes any standard element built into the browser and custom elements that have been successfully defined (i.e., with the `CustomElementRegistry.define()` method).
 
 ```css
 /* Selects any defined element */
@@ -105,9 +105,9 @@ custom-element:defined::before {
 }
 ```
 
-We have also used the {{cssxref("::before")}} pseudo-element to show a "Loading..." overlay message until the element is defined. After definition, it is removed by setting the {{cssxref("content")}} to an empty string.
+We have also used the `::before` pseudo-element to show a "Loading..." overlay message until the element is defined. After definition, it is removed by setting the `content` to an empty string.
 
-The following JavaScript has been used to define the custom element. To allow you to see the state of the custom element before and after definition we run the {{domxref("CustomElementRegistry.define", "define()")}} method when the button is clicked.
+The following JavaScript has been used to define the custom element. To allow you to see the state of the custom element before and after definition we run the `define()` method when the button is clicked.
 
 ```js
 const btn = document.querySelector("#btn");

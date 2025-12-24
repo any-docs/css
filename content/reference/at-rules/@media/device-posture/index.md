@@ -51,7 +51,7 @@ To see the above code in action, view the [Device Posture API demo](https://mdn.
 
 ## See also
 
-- {{domxref("DevicePosture")}}
+- `DevicePosture`
 - [Device Posture API](/en-US/docs/Web/API/Device_Posture_API)
 - [Using Media Queries](/guides/Media_queries/Using)
 - [@media](/en-US/docs/Web/CSS/Reference/At-rules/@media)

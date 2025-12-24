@@ -141,6 +141,6 @@ Not part of any standard.
 
 ## See also
 
-- {{CSSxRef("box-orient")}}
-- {{CSSxRef("box-direction")}}
-- {{CSSxRef("box-align")}}
+- `box-orient`
+- `box-direction`
+- `box-align`

@@ -9,7 +9,7 @@ sidebar: cssref
 The **`sibling-count()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) returns an integer representing the total number of sibling DOM elements (direct children of the parent) of the element on which it is used, including itself.
 
 > [!NOTE]
-> The {{CSSxRef("counter()")}} function provides a similar result but it returns a `<string>` (which is more suitable for [generated content](/guides/Generated_content), while `sibling-count()` returns an `<integer>` (which can be used for calculations).
+> The `counter()` function provides a similar result but it returns a `<string>` (which is more suitable for [generated content](/guides/Generated_content), while `sibling-count()` returns an `<integer>` (which can be used for calculations).
 
 ## Syntax
 
@@ -47,7 +47,7 @@ We include a {{htmlelement("ul")}} container and several {{htmlelement("li")}} e
 
 #### CSS
 
-We divide the {{CSSxRef("width")}} of each list item by the number of direct children the list contains. We also set every odd element to have a {{CSSxRef("background-color")}} to better demonstrate the resulting effect.
+We divide the `width` of each list item by the number of direct children the list contains. We also set every odd element to have a `background-color` to better demonstrate the resulting effect.
 
 ```css
 ul {
@@ -81,5 +81,5 @@ li:nth-of-type(odd) {
 
 ## See also
 
-- {{CSSxRef("sibling-index()")}}
-- {{CSSxRef("calc")}}
+- `sibling-index()`
+- `calc`

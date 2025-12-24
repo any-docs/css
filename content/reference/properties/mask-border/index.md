@@ -12,12 +12,12 @@ The **`mask-border`** [CSS](/en-US/docs/Web/CSS) [shorthand property](/guides/Ca
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("mask-border-mode")}}
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-slice")}}
-- {{cssxref("mask-border-source")}}
-- {{cssxref("mask-border-width")}}
+- `mask-border-mode`
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-slice`
+- `mask-border-source`
+- `mask-border-width`
 
 ## Syntax
 
@@ -45,17 +45,17 @@ mask-border: unset;
 ### Values
 
 - `<'mask-border-source'>`
-  - The source image. See {{cssxref("mask-border-source")}}.
+  - The source image. See `mask-border-source`.
 - `<'mask-border-slice'>`
-  - The dimensions for slicing the source image into regions. Up to four values may be specified. See {{cssxref("mask-border-slice")}}.
+  - The dimensions for slicing the source image into regions. Up to four values may be specified. See `mask-border-slice`.
 - `<'mask-border-width'>`
-  - The width of the border mask. Up to four values may be specified. See {{cssxref("mask-border-width")}}.
+  - The width of the border mask. Up to four values may be specified. See `mask-border-width`.
 - `<'mask-border-outset'>`
-  - The distance of the border mask from the element's outside edge. Up to four values may be specified. See {{cssxref("mask-border-outset")}}.
+  - The distance of the border mask from the element's outside edge. Up to four values may be specified. See `mask-border-outset`.
 - `<'mask-border-repeat'>`
-  - Defines how the edge regions of the source image are adjusted to fit the dimensions of the border mask. Up to two values may be specified. See {{cssxref("mask-border-repeat")}}.
+  - Defines how the edge regions of the source image are adjusted to fit the dimensions of the border mask. Up to two values may be specified. See `mask-border-repeat`.
 - `<'mask-border-mode'>`
-  - Defines whether the source image is treated as a luminance mask or alpha mask. See {{cssxref("mask-border-mode")}}.
+  - Defines whether the source image is treated as a luminance mask or alpha mask. See `mask-border-mode`.
 
 ## Formal definition
 
@@ -116,8 +116,8 @@ To match the size of a single diamond, we will use a value of 90 divided by 3, o
 
 ## See also
 
-- {{cssxref("mask-border-mode")}}
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-repeat")}}
-- {{cssxref("mask-border-source")}}
-- {{cssxref("mask-border-width")}}
+- `mask-border-mode`
+- `mask-border-outset`
+- `mask-border-repeat`
+- `mask-border-source`
+- `mask-border-width`

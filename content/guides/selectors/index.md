@@ -31,69 +31,69 @@ The CSS selectors module also introduces the [column combinator](/en-US/docs/Web
 
 ### Selectors
 
-- {{CSSXref(":active")}}
-- {{CSSXref(":any-link")}}
-- {{CSSXref(":autofill")}}
-- {{CSSXref(":buffering")}}
-- {{CSSXref(":checked")}}
-- {{CSSXref(":default")}}
-- {{CSSXref(":defined")}}
-- {{cssxref(":dir()")}}
-- {{CSSXref(":disabled")}}
-- {{CSSXref(":empty")}}
-- {{CSSXref(":enabled")}}
-- {{CSSXref(":first-child")}}
-- {{CSSXref(":first-of-type")}}
-- {{CSSXref(":focus")}}
-- {{CSSXref(":focus-visible")}}
-- {{CSSXref(":focus-within")}}
-- {{CSSXref(":fullscreen")}}
-- {{CSSXref(":future")}}
-- {{cssxref(":has()")}}
-- {{CSSXref(":hover")}}
-- {{CSSXref(":in-range")}}
-- {{CSSXref(":indeterminate")}}
-- {{CSSXref(":interest-source")}}
-- {{CSSXref(":interest-target")}}
-- {{CSSXref(":invalid")}}
-- {{cssxref(":is()")}}
-- {{cssxref(":lang()")}}
-- {{CSSXref(":last-child")}}
-- {{CSSXref(":last-of-type")}}
-- {{CSSXref(":link")}}
+- `:active`
+- `:any-link`
+- `:autofill`
+- `:buffering`
+- `:checked`
+- `:default`
+- `:defined`
+- `:dir()`
+- `:disabled`
+- `:empty`
+- `:enabled`
+- `:first-child`
+- `:first-of-type`
+- `:focus`
+- `:focus-visible`
+- `:focus-within`
+- `:fullscreen`
+- `:future`
+- `:has()`
+- `:hover`
+- `:in-range`
+- `:indeterminate`
+- `:interest-source`
+- `:interest-target`
+- `:invalid`
+- `:is()`
+- `:lang()`
+- `:last-child`
+- `:last-of-type`
+- `:link`
 - `:matches()` (obsolete legacy selector alias for {{CSSXref( ":is", ":is()")}})
-- {{CSSXref(":modal")}}
-- {{CSSXref(":muted")}}
-- {{cssxref(":not()")}}
-- {{cssxref(":nth-child()")}}
-- {{cssxref(":nth-of-type()")}}
-- {{cssxref(":nth-last-child()")}}
-- {{cssxref(":nth-last-of-type()")}}
-- {{CSSXref(":only-child")}}
-- {{CSSXref(":only-of-type")}}
-- {{CSSXref(":open")}}
-- {{CSSXref(":optional")}}
-- {{CSSXref(":out-of-range")}}
-- {{CSSXref(":past")}}
-- {{CSSXref(":paused")}}
-- {{CSSXref(":picture-in-picture")}}
-- {{CSSXref(":placeholder-shown")}}
-- {{CSSXref(":playing")}}
-- {{CSSXref(":popover-open")}}
-- {{CSSXref(":read-only")}}
-- {{CSSXref(":read-write")}}
-- {{CSSXref(":required")}}
-- {{CSSXref(":root")}}
-- {{CSSXref(":scope")}}
-- {{CSSXref(":seeking")}}
-- {{CSSXref(":stalled")}}
-- {{CSSXref(":target")}}
-- {{CSSXref(":user-invalid")}}
-- {{CSSXref(":user-valid")}}
-- {{CSSXref(":valid")}}
-- {{CSSXref(":visited")}}
-- {{CSSXref(":volume-locked")}}
-- {{cssxref(":where()")}}
+- `:modal`
+- `:muted`
+- `:not()`
+- `:nth-child()`
+- `:nth-of-type()`
+- `:nth-last-child()`
+- `:nth-last-of-type()`
+- `:only-child`
+- `:only-of-type`
+- `:open`
+- `:optional`
+- `:out-of-range`
+- `:past`
+- `:paused`
+- `:picture-in-picture`
+- `:placeholder-shown`
+- `:playing`
+- `:popover-open`
+- `:read-only`
+- `:read-write`
+- `:required`
+- `:root`
+- `:scope`
+- `:seeking`
+- `:stalled`
+- `:target`
+- `:user-invalid`
+- `:user-valid`
+- `:valid`
+- `:visited`
+- `:volume-locked`
+- `:where()`
 - [`:-webkit-` pseudo-classes](/en-US/docs/Web/CSS/Reference/Webkit_extensions#pseudo-classes)
 - [Attribute selectors](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors)
 - [Class selector](/en-US/docs/Web/CSS/Reference/Selectors/Class_selectors)
@@ -101,7 +101,7 @@ The CSS selectors module also introduces the [column combinator](/en-US/docs/Web
 - [Type selectors](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors)
 - [Universal selectors](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors)
 
-The CSS selectors module also introduces the {{CSSXref(":blank")}}, {{CSSXref(":current")}}, and {{CSSXref(":local-link")}} pseudo-classes. Currently, no browsers support these features.
+The CSS selectors module also introduces the `:blank`, `:current`, and `:local-link` pseudo-classes. Currently, no browsers support these features.
 
 ## Terms
 
@@ -126,7 +126,7 @@ The CSS selectors module also introduces the {{CSSXref(":blank")}}, {{CSSXref(":
   - Lists the pseudo-classes, selectors that allow the selection of elements based on state information that is not contained in the document tree, defined in the various CSS modules and HTML.
 
 - [Using the `:target` pseudo-class in selectors](/guides/Selectors/Using_:target)
-  - Learn how to use the {{CSSXref(":target")}} pseudo-class to style the target element a URL's fragment identifier.
+  - Learn how to use the `:target` pseudo-class to style the target element a URL's fragment identifier.
 
 - [Privacy and the `:visited` selector](/guides/Selectors/Privacy_and_:visited)
   - Explores the style limitations set on the `:visited` class for user privacy.
@@ -142,62 +142,62 @@ The CSS selectors module also introduces the {{CSSXref(":blank")}}, {{CSSXref(":
 
 ## Related concepts
 
-- {{CSSXref(":state","state()")}} pseudo-class
+- `state()` pseudo-class
 - [CSS nesting](/guides/Nesting) module
   - [`&` nesting selector](/en-US/docs/Web/CSS/Reference/Selectors/Nesting_selector)
 - [CSS scoping](/guides/Scoping) module
-  - {{CSSXref(":host")}} pseudo-class
-  - {{cssxref(":host()")}} pseudo-class
-  - {{cssxref(":host-context()")}} pseudo-class
-  - {{CSSXref(":has-slotted")}} pseudo-class
-  - {{CSSXref("::slotted")}} pseudo-element
+  - `:host` pseudo-class
+  - `:host()` pseudo-class
+  - `:host-context()` pseudo-class
+  - `:has-slotted` pseudo-class
+  - `::slotted` pseudo-element
 
 - [CSS overflow](/guides/Overflow) module
-  - {{cssxref("::scroll-button()")}}
-  - {{cssxref("::scroll-marker")}}
-  - {{cssxref("::scroll-marker-group")}}
-  - {{cssxref(":target-current")}}
+  - `::scroll-button()`
+  - `::scroll-marker`
+  - `::scroll-marker-group`
+  - `:target-current`
 
 - [CSS multi-column layout](/guides/Multicol_layout) module
-  - {{cssxref("::column")}}
+  - `::column`
 
 - [CSS paged media](/guides/Paged_media) module
-  - {{CSSXref(":left")}} pseudo-class
-  - {{CSSXref(":right")}} pseudo-class
-  - {{CSSXref(":first")}} pseudo-class
+  - `:left` pseudo-class
+  - `:right` pseudo-class
+  - `:first` pseudo-class
   - `:blank` pseudo-class
 
 - [CSS pseudo-element module](/guides/Pseudo-elements) (representing entities not included in HTML)
-  - {{CSSXref("::after")}}
-  - {{CSSXref("::before")}}
-  - {{CSSXref("::file-selector-button")}}
-  - {{CSSXref("::first-letter")}}
-  - {{CSSXref("::first-line")}}
-  - {{CSSXref("::grammar-error")}}
-  - {{CSSXref("::marker")}}
-  - {{CSSXref("::placeholder")}}
-  - {{CSSXref("::selection")}}
-  - {{CSSXref("::spelling-error")}}
-  - {{CSSXref("::target-text")}}
+  - `::after`
+  - `::before`
+  - `::file-selector-button`
+  - `::first-letter`
+  - `::first-line`
+  - `::grammar-error`
+  - `::marker`
+  - `::placeholder`
+  - `::selection`
+  - `::spelling-error`
+  - `::target-text`
 
 - [CSS shadow parts module](/guides/Shadow_parts)
-  - {{CSSXref("::part")}} pseudo-element
+  - `::part` pseudo-element
 
 - [CSS positioned layout module](/guides/Positioned_layout)
-  - {{CSSxRef("::backdrop")}}
+  - `::backdrop`
 
 - Other [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements)
-  - {{CSSxRef("::cue")}}
+  - `::cue`
 
-- {{CSSXref("@namespace")}} at-rule
+- `@namespace` at-rule
 
-- {{cssxref("important", "!important")}}
+- `!important`
 - [Specificity](/guides/Cascade/Specificity)
 - [Cascade](/guides/Cascade/Introduction)
 
-- {{domxref("Document.querySelector")}} method
-- {{domxref("Document.querySelectorAll")}} method
-- {{domxref("NodeList.forEach()")}} method
+- `Document.querySelector` method
+- `Document.querySelectorAll` method
+- `NodeList.forEach()` method
 
 ## Specifications
 

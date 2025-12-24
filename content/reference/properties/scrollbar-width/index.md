@@ -11,7 +11,7 @@ The **`scrollbar-width`** property allows the author to set the desired thicknes
 The purpose of the `scrollbar-width` is to optimize the space occupied by the scrollbar on a page or element; the purpose is not related to scrollbar aesthetics. The `scrollbar-width` predefined keyword values indicate to the user agent whether a normal or smaller scrollbar should be rendered. Avoid using `none`, as hiding a scrollbar negatively impacts [accessibility](#accessibility).
 
 > [!NOTE]
-> For elements that are scrollable only via programmatic means and not by direct user interaction, use the {{cssxref("overflow")}} property with a value of `hidden` rather than `scrollbar-width: none`.
+> For elements that are scrollable only via programmatic means and not by direct user interaction, use the `overflow` property with a value of `hidden` rather than `scrollbar-width: none`.
 
 ## Syntax
 
@@ -103,6 +103,6 @@ WCAG criterion 2.1.1 (Keyboard) has been in place for a long time to advise on b
 
 - [CSS overflow](/guides/Overflow) module
 - [CSS scrollbars styling](/guides/Scrollbars_styling) module
-- {{CSSxRef("overflow")}}
-- {{CSSxRef("scrollbar-gutter")}}
-- {{CSSxRef("scrollbar-color")}}
+- `overflow`
+- `scrollbar-gutter`
+- `scrollbar-color`

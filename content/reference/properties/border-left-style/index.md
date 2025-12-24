@@ -6,7 +6,7 @@ browser-compat: css.properties.border-left-style
 sidebar: cssref
 ---
 
-The **`border-left-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's left {{cssxref("border")}}.
+The **`border-left-style`** [CSS](/en-US/docs/Web/CSS) property sets the line style of an element's left `border`.
 
 > [!NOTE]
 > The specification doesn't define how borders of different styles connect in the corners.
@@ -83,7 +83,7 @@ border-left-style: revert-layer;
 border-left-style: unset;
 ```
 
-The `border-left-style` property is specified as a single {{cssxref("line-style")}} keyword value.
+The `border-left-style` property is specified as a single `line-style` keyword value.
 
 ## Formal definition
 
@@ -182,5 +182,5 @@ td {
 
 ## See also
 
-- The other style-related border properties: {{Cssxref("border-bottom-style")}}, {{Cssxref("border-right-style")}}, {{Cssxref("border-top-style")}}, and {{Cssxref("border-style")}}.
-- The other left-border-related properties: {{Cssxref("border-left")}}, {{Cssxref("border-left-color")}}, and {{Cssxref("border-left-width")}}.
+- The other style-related border properties: `border-bottom-style`, `border-right-style`, `border-top-style`, and `border-style`.
+- The other left-border-related properties: `border-left`, `border-left-color`, and `border-left-width`.

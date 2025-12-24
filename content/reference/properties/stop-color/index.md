@@ -29,8 +29,8 @@ stop-color: unset;
 
 ### Values
 
-- {{cssxref("color_value", "&lt;color>")}}
-  - The color of the fill. This can be any valid CSS {{cssxref("color_value", "&lt;color>")}} value.
+- `&lt;color>`
+  - The color of the fill. This can be any valid CSS `&lt;color>` value.
 
 ## Formal definition
 
@@ -79,7 +79,7 @@ We have an SVG with three {{SVGElement("rect")}} squares and three {{SVGElement(
 
 #### CSS
 
-We include a {{cssxref("stroke")}} and {{cssxref("stroke-width")}} outlining the rectangle. We define the colors of the first and last stops in each gradient, overriding their `stop-color` attribute values, using the `stop-color` property. Various CSS {{cssxref("color_value", "&lt;color>")}} syntaxes are shown.
+We include a `stroke` and `stroke-width` outlining the rectangle. We define the colors of the first and last stops in each gradient, overriding their `stop-color` attribute values, using the `stop-color` property. Various CSS `&lt;color>` syntaxes are shown.
 
 ```css hidden
 svg {
@@ -136,8 +136,8 @@ rect {
 ## See also
 
 - SVG {{SVGAttr("stop-color")}} attribute
-- Presentation properties: `stop-color`, {{cssxref("clip-rule")}}, {{cssxref("color-interpolation-filters")}}, {{cssxref("fill-opacity")}}, {{cssxref("fill-rule")}}, {{cssxref("fill")}}, {{cssxref("marker-end")}}, {{cssxref("marker-mid")}}, {{cssxref("marker-start")}}, {{cssxref("shape-rendering")}}, {{cssxref("stop-opacity")}}, {{cssxref("stroke")}}, {{cssxref("stroke-dasharray")}}, {{cssxref("stroke-dashoffset")}}, {{cssxref("stroke-linecap")}}, {{cssxref("stroke-linejoin")}}, {{cssxref("stroke-miterlimit")}}, {{cssxref("stroke-opacity")}}, {{cssxref("stroke-width")}}, {{cssxref("text-anchor")}}, and {{cssxref("vector-effect")}}
-- {{cssxref("opacity")}}
-- {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
-- {{cssxref("basic-shape")}} data type
+- Presentation properties: `stop-color`, `clip-rule`, `color-interpolation-filters`, `fill-opacity`, `fill-rule`, `fill`, `marker-end`, `marker-mid`, `marker-start`, `shape-rendering`, `stop-opacity`, `stroke`, `stroke-dasharray`, `stroke-dashoffset`, `stroke-linecap`, `stroke-linejoin`, `stroke-miterlimit`, `stroke-opacity`, `stroke-width`, `text-anchor`, and `vector-effect`
+- `opacity`
+- `background-color`
+- `&lt;color>`
+- `basic-shape` data type

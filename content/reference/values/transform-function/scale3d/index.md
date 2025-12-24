@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`scale3d()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that resizes an element in 3D space.
 Because the amount of scaling is defined by a vector [sx, sy, sz], it can resize different dimensions at different scales. Its
-result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: scale3d()")}}
 
@@ -115,11 +115,11 @@ scale3d(sx, sy, sz)
 ### Values
 
 - `sx`
-  - Is a {{cssxref("&lt;number&gt;")}} representing the abscissa (horizontal, x-component) of the scaling vector.
+  - Is a `&lt;number&gt;` representing the abscissa (horizontal, x-component) of the scaling vector.
 - `sy`
-  - Is a {{cssxref("&lt;number&gt;")}} representing the ordinate (vertical, y-component) of the scaling vector.
+  - Is a `&lt;number&gt;` representing the ordinate (vertical, y-component) of the scaling vector.
 - `sz`
-  - Is a {{cssxref("&lt;number&gt;")}} representing the z-component of the scaling vector.
+  - Is a `&lt;number&gt;` representing the z-component of the scaling vector.
 
 <table class="standard-table">
   <thead>
@@ -222,12 +222,12 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
+- `transform`
+- `&lt;transform-function&gt;`
 - [`scaleZ()`](/reference/values/transform-function/scaleZ)
 - [`translate3d()`](/reference/values/transform-function/translate3d)
 - [`rotate3d()`](/reference/values/transform-function/rotate3d)
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`

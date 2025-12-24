@@ -44,7 +44,7 @@ This example applies a different background color to a {{htmlelement("div")}} el
 </div>
 ```
 
-The `:fullscreen` pseudo-class is used to override the {{cssxref("background-color")}} of the `<div>` when it is in fullscreen mode.
+The `:fullscreen` pseudo-class is used to override the `background-color` of the `<div>` when it is in fullscreen mode.
 
 ```css
 .element {
@@ -95,6 +95,6 @@ document.querySelector(".toggle").addEventListener("click", (event) => {
 
 - [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API)
 - [Guide to the Fullscreen API](/en-US/docs/Web/API/Fullscreen_API/Guide)
-- {{cssxref("::backdrop")}}
+- `::backdrop`
 - DOM API: {{ domxref("Element.requestFullscreen()") }}, {{ domxref("Document.exitFullscreen()") }}, {{ domxref("Document.fullscreenElement") }}
 - [`allowfullscreen`](/en-US/docs/Web/HTML/Reference/Elements/iframe#allowfullscreen) attribute

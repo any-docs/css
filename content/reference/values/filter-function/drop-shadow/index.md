@@ -6,7 +6,7 @@ browser-compat: css.types.filter-function.drop-shadow
 sidebar: cssref
 ---
 
-The **`drop-shadow()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) applies a drop shadow effect to the input image. Its result is a {{cssxref("filter-function")}}.
+The **`drop-shadow()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) applies a drop shadow effect to the input image. Its result is a `filter-function`.
 
 {{InteractiveExample("CSS Demo: drop-shadow()")}}
 
@@ -35,7 +35,7 @@ filter: drop-shadow(0 0 0.75rem crimson);
 A drop shadow is effectively a blurred, offset version of the input image's alpha mask, drawn in a specific color and composited below the image.
 
 > [!NOTE]
-> This function is somewhat similar to the {{Cssxref("box-shadow")}} property. The `box-shadow` property creates a rectangular shadow behind an element's _entire box_, while the `drop-shadow()` filter function creates a shadow that conforms to the shape (alpha channel) of the _image itself_.
+> This function is somewhat similar to the `box-shadow` property. The `box-shadow` property creates a rectangular shadow behind an element's _entire box_, while the `drop-shadow()` filter function creates a shadow that conforms to the shape (alpha channel) of the _image itself_.
 
 ## Syntax
 
@@ -64,12 +64,12 @@ drop-shadow(#ee2233 0.5rem 0.5rem 1rem)
 drop-shadow(10px 10px red) drop-shadow(-5px -5px yellow)
 ```
 
-The `drop-shadow()` function accepts a parameter of type `<shadow>` (defined in the {{cssxref("box-shadow")}} property), with the exception that the `inset` keyword and `spread` parameters are not allowed.
+The `drop-shadow()` function accepts a parameter of type `<shadow>` (defined in the `box-shadow` property), with the exception that the `inset` keyword and `spread` parameters are not allowed.
 
 ### Parameters
 
 - `<color>` <Badge type="info" text="Optional" />
-  - Specifies the color for the shadow. If not specified, the value of the {{cssxref("color")}} property defined in the parent element is used.
+  - Specifies the color for the shadow. If not specified, the value of the `color` property defined in the parent element is used.
 
 - `<length>`
   - Specifies the offset length of the shadow. This parameter accepts two or three values. If two values are specified, they are interpreted as `<offset-x>` (horizontal offset) and `<offset-y>` (vertical offset) values. Negative `<offset-x>` value places the shadow to the left of the element. Negative `<offset-y>` value places the shadow above the element. If not specified, the value of `0` is used for the missing length. If a third value is specified, it is interpreted as `<standard-deviation>`, which is the value of the standard deviation to the [Gaussian blur](https://en.wikipedia.org/wiki/Gaussian_blur) function. A larger `<standard-deviation>` value creates a larger and more blurred shadow. Negative values for `<standard-deviation>` are not allowed.
@@ -142,19 +142,19 @@ In the absence of a `<color>` value in the `drop-shadow()` function in the first
 
 ## See also
 
-- {{cssxref("filter-function")}} functions:
-  - {{cssxref("filter-function/blur", "blur()")}}
-  - {{cssxref("filter-function/brightness", "brightness()")}}
-  - {{cssxref("filter-function/contrast", "contrast()")}}
-  - {{cssxref("filter-function/grayscale", "grayscale()")}}
-  - {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
-  - {{cssxref("filter-function/invert", "invert()")}}
-  - {{cssxref("filter-function/opacity", "opacity()")}}
-  - {{cssxref("filter-function/saturate", "saturate()")}}
-  - {{cssxref("filter-function/sepia", "sepia()")}}
-- {{cssxref("filter")}}
-- {{cssxref("backdrop-filter")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("text-shadow")}}
+- `filter-function` functions:
+  - `blur()`
+  - `brightness()`
+  - `contrast()`
+  - `grayscale()`
+  - `hue-rotate()`
+  - `invert()`
+  - `opacity()`
+  - `saturate()`
+  - `sepia()`
+- `filter`
+- `backdrop-filter`
+- `box-shadow`
+- `text-shadow`
 - [Introduction to text shadows](/guides/Text_decoration/Text_shadows)
 - [CSS filter effects](/guides/Filter_effects) module

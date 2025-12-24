@@ -137,10 +137,10 @@ When using background images, make sure the contrast in color is great enough th
 
 ## See also
 
-- {{cssxref("image")}}
-- {{cssxref("url_value", "&lt;url&gt;")}}
-- {{cssxref("image/image", "image()")}}
-- {{cssxref("image/image-set", "image-set()")}}
-- {{cssxref("element")}}
+- `image`
+- `&lt;url&gt;`
+- `image()`
+- `image-set()`
+- `element`
 - [Using CSS gradients](/guides/Images/Using_gradients)
-- Gradient functions: {{cssxref("gradient/linear-gradient", "linear-gradient()")}}, {{cssxref("gradient/radial-gradient", "radial-gradient()")}}, {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}, {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}, {{cssxref("gradient/conic-gradient", "conic-gradient()")}}, {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
+- Gradient functions: `linear-gradient()`, `radial-gradient()`, `repeating-linear-gradient()`, `repeating-radial-gradient()`, `conic-gradient()`, `repeating-conic-gradient()`

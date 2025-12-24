@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`superellipse()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines the curvature of an ellipse, and is used to specify [corner shapes](/reference/properties/corner-shape) either directly, or via {{cssxref("&lt;corner-shape-value>")}} keywords.
+The **`superellipse()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines the curvature of an ellipse, and is used to specify [corner shapes](/reference/properties/corner-shape) either directly, or via `&lt;corner-shape-value>` keywords.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ superellipse(-infinity)
 
 ### Parameters
 
-- {{cssxref("&lt;number>")}}
+- `&lt;number>`
   - A number in the range of `-infinity` to `infinity`, inclusive.
 
 ### Return value
@@ -35,7 +35,7 @@ A superellipse shape.
 
 ## Description
 
-The `superellipse()` function returns a superellipse shape, which is used to specify {{cssxref("corner-shape")}} values. A superellipse is a closed curve symmetric shape between a rectangle and an ellipse. It resembles an ellipse that retains the geometric features of its two axes.
+The `superellipse()` function returns a superellipse shape, which is used to specify `corner-shape` values. A superellipse is a closed curve symmetric shape between a rectangle and an ellipse. It resembles an ellipse that retains the geometric features of its two axes.
 
 The superellipse shape is calculated using a modified version of an ellipse. The following equation defines an ellipse centered at the origin:
 
@@ -118,7 +118,7 @@ The following diagram illustrates different `superellipse()` values for the top 
 
 ![Line diagram illustrating the ellipses created using different K values, as described subsequently](superellipse-param.svg)
 
-- A `K` value of `0` creates a straight line. This value can be used to create bevelled corners and corresponds to the {{cssxref("&lt;corner-shape-value>")}} `bevel` keyword.
+- A `K` value of `0` creates a straight line. This value can be used to create bevelled corners and corresponds to the `&lt;corner-shape-value>` `bevel` keyword.
 - A `K` value of `1` creates an ordinary ellipse, corresponding to the `round` keyword.
 - A `K` value of `>1` makes the ellipse shape more square; `2` corresponds to the `squircle` keyword.
 - A `K` value of `infinity` creates a perfect square (corresponding to the `square` keyword), although `K` values of `10` or more are virtually indistinguishable from a square.
@@ -127,7 +127,7 @@ The following diagram illustrates different `superellipse()` values for the top 
 A negative or positive superellipse would appear symmetrical to a superellipse with its inverse value.
 
 > [!NOTE]
-> For any `K` parameter value passed, the `superellipse()` function's return value will always be the same for that `K` value. When that value is applied to two elements, the appearance of the corner shape may differ if the box size or {{cssxref("border-radius")}} values differ.
+> For any `K` parameter value passed, the `superellipse()` function's return value will always be the same for that `K` value. When that value is applied to two elements, the appearance of the corner shape may differ if the box size or `border-radius` values differ.
 
 ## Formal syntax
 
@@ -137,7 +137,7 @@ A negative or positive superellipse would appear symmetrical to a superellipse w
 
 ### `superellipse()` value comparison
 
-In this example, two [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) sliders allow you to cycle through many different `corner-shape` `superellipse()` values and {{cssxref("border-radius")}} values enabling you to compare the effects of each on a container. The code is hidden for brevity, but the full explanation of the [superellipse value comparison](/reference/properties/corner-shape#superellipse_value_comparison) is provided on the {{cssxref("corner-shape")}} reference page.
+In this example, two [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) sliders allow you to cycle through many different `corner-shape` `superellipse()` values and `border-radius` values enabling you to compare the effects of each on a container. The code is hidden for brevity, but the full explanation of the [superellipse value comparison](/reference/properties/corner-shape#superellipse_value_comparison) is provided on the `corner-shape` reference page.
 
 ```html hidden live-sample___value-comparison
 <form>
@@ -231,6 +231,6 @@ setCorners();
 
 ## See also
 
-- {{cssxref("corner-shape")}}
-- {{cssxref("&lt;corner-shape-value>")}}
+- `corner-shape`
+- `&lt;corner-shape-value>`
 - [CSS borders and box decorations](/guides/Borders_and_box_decorations) module

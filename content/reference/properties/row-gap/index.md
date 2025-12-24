@@ -79,7 +79,7 @@ row-gap: unset;
 ### Values
 
 - `<length-percentage>`
-  - Is the width of the gutter separating the rows. {{CSSxRef("&lt;percentage&gt;")}} values are relative to the dimension of the element.
+  - Is the width of the gutter separating the rows. `&lt;percentage&gt;` values are relative to the dimension of the element.
 
 ## Formal definition
 
@@ -175,6 +175,6 @@ row-gap: unset;
 
 ## See also
 
-- {{CSSxRef("column-gap")}}
-- {{CSSxRef("gap")}}
+- `column-gap`
+- `gap`
 - [Basic concepts of grid layout: gutters](/guides/Grid_layout/Basic_concepts#gutters)

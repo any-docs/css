@@ -6,7 +6,7 @@ spec-urls: https://drafts.csswg.org/css-align/#typedef-self-position
 sidebar: cssref
 ---
 
-The **`<self-position>`** {{glossary("enumerated")}} value data type is used by the {{cssxref("justify-self")}} and {{cssxref("align-self")}} properties, and the {{cssxref("place-self")}} shorthand, to align the box within its alignment container. It is also used by the {{cssxref("justify-items")}} and {{cssxref("align-items")}} properties, and the {{cssxref("place-items")}} shorthand, to specify default values for `justify-self` and `align-self`.
+The **`<self-position>`** {{glossary("enumerated")}} value data type is used by the `justify-self` and `align-self` properties, and the `place-self` shorthand, to align the box within its alignment container. It is also used by the `justify-items` and `align-items` properties, and the `place-items` shorthand, to specify default values for `justify-self` and `align-self`.
 
 ## Syntax
 
@@ -34,7 +34,7 @@ The following keyword values are represented by the `<self-position>` grammar te
   - In flex layout, aligns the alignment subject flush with the edge of the alignment container corresponding to the flex container's main-end or cross-end side, as appropriate. Identical to `end` for layout modes other than flex layout.
 
 > [!NOTE]
-> The `left` and `right` keywords are excluded from `<self-position>`, despite being valid positional alignment values for the `justify-*` properties ({{cssxref("justify-content")}}, {{cssxref("justify-self")}}, and {{cssxref("justify-items")}}), because they are not allowed in the `align-*` properties ({{cssxref("align-content")}}, {{cssxref("align-self")}}, and {{cssxref("align-items")}}). They are instead explicitly included in the `justify-*` properties' grammars.
+> The `left` and `right` keywords are excluded from `<self-position>`, despite being valid positional alignment values for the `justify-*` properties (`justify-content`, `justify-self`, and `justify-items`), because they are not allowed in the `align-*` properties (`align-content`, `align-self`, and `align-items`). They are instead explicitly included in the `justify-*` properties' grammars.
 
 ## Specifications
 
@@ -42,8 +42,8 @@ The following keyword values are represented by the `<self-position>` grammar te
 
 ## See also
 
-- Properties that use this data type: {{cssxref("align-self")}}, {{cssxref("justify-self")}}, {{cssxref("place-self")}}, {{cssxref("align-items")}}, {{cssxref("justify-items")}}, {{cssxref("place-items")}}
-- Other box alignment data types: {{cssxref("baseline-position")}}, {{cssxref("content-distribution")}}, {{cssxref("overflow-position")}}, and {{cssxref("content-position")}}
+- Properties that use this data type: `align-self`, `justify-self`, `place-self`, `align-items`, `justify-items`, `place-items`
+- Other box alignment data types: `baseline-position`, `content-distribution`, `overflow-position`, and `content-position`
 - [CSS box alignment](/guides/Box_alignment) module
 - [CSS flexible box layout](/guides/Flexible_box_layout) module
 - [CSS grid layout](/guides/Grid_layout) module

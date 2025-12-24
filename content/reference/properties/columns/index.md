@@ -49,8 +49,8 @@ columns: 3;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("column-count")}}
-- {{cssxref("column-width")}}
+- `column-count`
+- `column-width`
 
 ## Syntax
 
@@ -80,9 +80,9 @@ The `columns` property may be specified as one or two of the values listed below
 ### Values
 
 - `<'column-width'>`
-  - The ideal column width, defined as a {{cssxref("&lt;length&gt;")}} or the keyword `auto`. The actual width may be wider or narrower to fit the available space. See {{cssxref("column-width")}}.
+  - The ideal column width, defined as a `&lt;length&gt;` or the keyword `auto`. The actual width may be wider or narrower to fit the available space. See `column-width`.
 - `<'column-count'>`
-  - The ideal number of columns into which the element's content should be flowed, defined as an {{cssxref("&lt;integer&gt;")}} or the keyword `auto`. If neither this value nor the column's width are `auto`, it merely indicates the maximum allowable number of columns. See {{cssxref("column-count")}}.
+  - The ideal number of columns into which the element's content should be flowed, defined as an `&lt;integer&gt;` or the keyword `auto`. If neither this value nor the column's width are `auto`, it merely indicates the maximum allowable number of columns. See `column-count`.
 
 ## Formal definition
 
@@ -127,7 +127,7 @@ The `columns` property may be specified as one or two of the values listed below
 
 ## See also
 
-- {{cssxref("widows")}}
-- {{cssxref("orphans")}}
+- `widows`
+- `orphans`
 - [Paged media](/guides/Paged_media)
 - [Learn: Multiple-column Layout](/en-US/docs/Learn_web_development/Core/CSS_layout/Multiple-column_Layout)

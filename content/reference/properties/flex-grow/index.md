@@ -11,7 +11,7 @@ The **`flex-grow`** [CSS](/en-US/docs/Web/CSS) property sets the flex grow facto
 When the flex-container's main size is larger than the combined main sizes of its flex items, this positive free space can be distributed among the flex items, with each item's growth being their growth factor value as a proportion of the sum total of all the flex items' flex grow factors.
 
 > [!NOTE]
-> It is recommended to use the {{cssxref("flex")}} shorthand with a keyword value like `auto` or `initial` instead of setting `flex-grow` on its own. The [keyword values](/reference/properties/flex#values) expand to reliable combinations of `flex-grow`, {{cssxref("flex-shrink")}}, and {{cssxref("flex-basis")}}, which help to achieve the commonly desired flex behaviors.
+> It is recommended to use the `flex` shorthand with a keyword value like `auto` or `initial` instead of setting `flex-grow` on its own. The [keyword values](/reference/properties/flex#values) expand to reliable combinations of `flex-grow`, `flex-shrink`, and `flex-basis`, which help to achieve the commonly desired flex behaviors.
 
 {{InteractiveExample("CSS Demo: flex-grow")}}
 
@@ -73,13 +73,13 @@ The `flex-grow` property is specified as a single `<number>`.
 ### Values
 
 - `<number>`
-  - See {{cssxref("&lt;number&gt;")}}. Negative values are invalid. Defaults to 0, which prevents the flex item from growing.
+  - See `&lt;number&gt;`. Negative values are invalid. Defaults to 0, which prevents the flex item from growing.
 
 ## Description
 
 This property specifies how much of the remaining space in the flex container should be assigned to the item (the flex grow factor).
 
-The [main size](/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox#the_flex_model) is either the width or height of the item, depending on the {{cssxref("flex-direction")}} value.
+The [main size](/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox#the_flex_model) is either the width or height of the item, depending on the `flex-direction` value.
 
 The remaining space, or positive free space, is the size of the flex container minus the size of all flex items' sizes together. If all sibling items have the same flex grow factor, then all items will receive the same share of remaining space. The common practice is to set `flex-grow: 1`, but setting the flex grow factor for all the flex items to `88`, `100`, `1.2`, or any other value greater than `0` will produce the same result: the value is a ratio.
 
@@ -87,7 +87,7 @@ If the `flex-grow` values differ, the positive free space is distributed accordi
 
 For example, if four `100px` flex items are in a `700px` container and the flex items have `flex-grow` factors of `0`, `1`, `2`, and `3`, respectively, the total main size of the four items is `400px`, meaning there is `300px` of positive free space to be distributed. The sum of the four grow factors (`0 + 1 + 2 + 3 = 6`) is equal to six. Therefore, each grow factor is equal to `50px` (`(300px / 6 )`. Each flex item is given 50px of free space multiplied by its `flex-grow` factor — so `0`, `50px`, `100px`, and `150px` respectively. The total flex item sizes become `100px`, `150px`, `200px`, and `250px`, respectively.
 
-`flex-grow` is generally used alongside the other {{cssxref("flex")}} shorthand properties, {{cssxref("flex-shrink")}} and {{cssxref("flex-basis")}}. Using the `flex` shorthand property is recommended to ensure all values are set.
+`flex-grow` is generally used alongside the other `flex` shorthand properties, `flex-shrink` and `flex-basis`. Using the `flex` shorthand property is recommended to ensure all values are set.
 
 ## Formal definition
 
@@ -181,7 +181,7 @@ When the six flex items are distributed along the container's main axis, if the 
 
 ## See also
 
-- {{cssxref("flex")}} shorthand
+- `flex` shorthand
 - [Basic Concepts of Flexbox](/guides/Flexible_box_layout/Basic_concepts)
 - [Controlling Ratios of flex items along the main axis](/guides/Flexible_box_layout/Controlling_flex_item_ratios)
 - [CSS flexible box layout](/guides/Flexible_box_layout) module

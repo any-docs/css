@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`overscroll-behavior-y`** [CSS](/en-US/docs/Web/CSS) property sets the browser's behavior when the vertical boundary of a scrolling area is reached.
 
-See {{cssxref("overscroll-behavior")}} for a full explanation.
+See `overscroll-behavior` for a full explanation.
 
 ## Syntax
 
@@ -57,7 +57,7 @@ The `overscroll-behavior-y` property is specified as a keyword chosen from the l
 }
 ```
 
-See {{cssxref("overscroll-behavior")}} for a full example and explanation.
+See `overscroll-behavior` for a full example and explanation.
 
 ## Specifications
 
@@ -69,8 +69,8 @@ See {{cssxref("overscroll-behavior")}} for a full example and explanation.
 
 ## See also
 
-- {{cssxref("overscroll-behavior")}}
-- {{cssxref("overscroll-behavior-x")}}
-- {{cssxref("overscroll-behavior-inline")}}
-- {{cssxref("overscroll-behavior-block")}}
+- `overscroll-behavior`
+- `overscroll-behavior-x`
+- `overscroll-behavior-inline`
+- `overscroll-behavior-block`
 - [CSS overscroll behavior](/guides/Overscroll_behavior) module

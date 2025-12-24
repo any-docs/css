@@ -133,5 +133,5 @@ text-decoration-thickness: unset;
 
 ## See also
 
-- {{cssxref("text-decoration")}}
-- {{cssxref("text-underline-offset")}}
+- `text-decoration`
+- `text-underline-offset`

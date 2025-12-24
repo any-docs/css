@@ -59,12 +59,12 @@ For example:
 
 - `animation-name: pi;` refers to an animation named "pi", not the `pi` numeric constant.
 - `line-height: e;` is invalid, but `line-height: calc(e);` is valid.
-- `rotate(1rad * pi);` won't work because {{CSSxRef("transform-function/rotate", "rotate()")}} is not a math function. Use `rotate(calc(1rad * pi));`
+- `rotate(1rad * pi);` won't work because `rotate()` is not a math function. Use `rotate(calc(1rad * pi));`
 
-In math functions, `<calc-keyword>` values are evaluated as {{CSSxRef("number")}} values, therefore `e` and `pi` act as numeric constants.
+In math functions, `<calc-keyword>` values are evaluated as `number` values, therefore `e` and `pi` act as numeric constants.
 
 Both `infinity` and `NaN` are slightly different, they are considered as degenerate numeric constants.
-While not technically numbers, they act as {{CSSxRef("number")}} values, so to get an infinite {{CSSxRef("length")}}, for example, requires an expression like `calc(infinity * 1px)`.
+While not technically numbers, they act as `number` values, so to get an infinite `length`, for example, requires an expression like `calc(infinity * 1px)`.
 
 The `infinity` and `NaN` values are included mostly to make serialization simpler and more obvious, but can be used to indicate a "largest possible value", since an infinite value is clamped to the allowed range.
 It's rare for this to be reasonable, but when using infinity its much simpler than just putting an enormous number in a stylesheet or hardcoding magic numbers.
@@ -214,6 +214,6 @@ logSerializedWidth("calc(1px * (NaN + 1))"); // calc(NaN * 1px)
 
 ## See also
 
-- {{CSSxRef("&lt;calc-sum&gt;")}}
-- {{CSSxRef("&lt;calc-product&gt;")}}
-- {{CSSxRef("&lt;calc-value&gt;")}}
+- `&lt;calc-sum&gt;`
+- `&lt;calc-product&gt;`
+- `&lt;calc-value&gt;`

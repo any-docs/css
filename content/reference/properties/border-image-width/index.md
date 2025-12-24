@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`border-image-width`** [CSS](/en-US/docs/Web/CSS) property sets the width of an element's [border image](/reference/properties/border-image).
 
-If this property's value is greater than the element's {{cssxref("border-width")}}, the border image will extend beyond the padding (and/or content) edge.
+If this property's value is greater than the element's `border-width`, the border image will extend beyond the padding (and/or content) edge.
 
 {{InteractiveExample("CSS Demo: border-image-width")}}
 
@@ -93,11 +93,11 @@ The `border-image-width` property may be specified using one, two, three, or fou
 ### Values
 
 - `<length-percentage>`
-  - The width of the border, specified as a {{cssxref("&lt;length&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}. Percentages are relative to the _width_ of the border image area for horizontal offsets and the _height_ of the border image area for vertical offsets. Must not be negative.
+  - The width of the border, specified as a `&lt;length&gt;` or a `&lt;percentage&gt;`. Percentages are relative to the _width_ of the border image area for horizontal offsets and the _height_ of the border image area for vertical offsets. Must not be negative.
 - `<number>`
-  - The width of the border, specified as a multiple of the corresponding {{cssxref("border-width")}}. Must not be negative.
+  - The width of the border, specified as a multiple of the corresponding `border-width`. Must not be negative.
 - `auto`
-  - The width of the border is made equal to the intrinsic width or height (whichever is applicable) of the corresponding {{cssxref("border-image-slice")}}. If the image does not have the required intrinsic dimension, the corresponding `border-width` is used instead.
+  - The width of the border is made equal to the intrinsic width or height (whichever is applicable) of the corresponding `border-image-slice`. If the image does not have the required intrinsic dimension, the corresponding `border-width` is used instead.
 
 ## Formal definition
 

@@ -31,16 +31,16 @@ rx: unset;
 
 ### Values
 
-The {{cssxref("length")}}, {{cssxref("percentage")}}, or `auto` keyword value denotes the horizontal radius of ellipses and the horizontal border-radius of rectangles.
+The `length`, `percentage`, or `auto` keyword value denotes the horizontal radius of ellipses and the horizontal border-radius of rectangles.
 
-- {{cssxref("length")}}
-  - Absolute or relative lengths can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Negative values are invalid.
+- `length`
+  - Absolute or relative lengths can be expressed in any unit allowed by the CSS `&lt;length&gt;` data type. Negative values are invalid.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - Percentages refer to the width of the current SVG viewport. The used value for a `<rect>` is never more than 50% of the width of the rectangle.
 
 - `auto`
-  - When set or defaulting to `auto`, the `rx` value equals the absolute length value used for {{cssxref("ry")}}. If both `rx` and `ry` have a computed value of `auto`, the used value is `0`.
+  - When set or defaulting to `auto`, the `rx` value equals the absolute length value used for `ry`. If both `rx` and `ry` have a computed value of `auto`, the used value is `0`.
 
 ## Formal definition
 
@@ -123,7 +123,7 @@ We include two identical `<ellipse>` elements in an SVG; each with the `rx` attr
 
 #### CSS
 
-We only style the first ellipse, letting its twin use default user agent styles (with {{cssxref("fill")}} defaulting to black). The geometric `rx` property overrides the value of the SVG {{SVGAttr("rx")}} attribute. We also set the `fill` and {{cssxref("stroke")}} properties to differentiate the styled shape from its twin.
+We only style the first ellipse, letting its twin use default user agent styles (with `fill` defaulting to black). The geometric `rx` property overrides the value of the SVG {{SVGAttr("rx")}} attribute. We also set the `fill` and `stroke` properties to differentiate the styled shape from its twin.
 
 ```css
 svg {
@@ -190,11 +190,11 @@ When using percentage values for `rx`, the values are relative to the width of t
 
 ## See also
 
-- Geometry properties: `rx`, {{cssxref("cx")}}, {{cssxref("cy")}}, {{cssxref("r")}}, {{cssxref("ry")}}, {{cssxref("x")}}, {{cssxref("y")}}, {{cssxref("width")}}, {{cssxref("height")}}
-- {{cssxref("fill")}}
-- {{cssxref("stroke")}}
-- {{cssxref("paint-order")}}
-- {{cssxref("border-radius")}} shorthand property
-- {{cssxref("gradient/radial-gradient", "radial-gradient")}}
-- {{cssxref("basic-shape")}} data type
+- Geometry properties: `rx`, `cx`, `cy`, `r`, `ry`, `x`, `y`, `width`, `height`
+- `fill`
+- `stroke`
+- `paint-order`
+- `border-radius` shorthand property
+- `radial-gradient`
+- `basic-shape` data type
 - SVG {{SVGAttr("rx")}} attribute

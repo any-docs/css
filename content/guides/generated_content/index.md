@@ -100,7 +100,7 @@ div::before {
 
 {{EmbedLiveSample("generated_content", "", "400px")}}
 
-The HTML for this sample is a single, empty {{HTMLElement("div")}} inside an otherwise empty {{HTMLElement("body")}}. The snowman was created with [CSS images](/guides/Images) and [CSS backgrounds and borders](/guides/Backgrounds_and_borders). The carrot nose was added using generated content: an empty box with a wide orange [left border](/reference/properties/border-left) added to the {{cssxref("::before")}} pseudo-element. The text is also generated content: "only one &lt;div>" was generated with the {{cssxref("content")}} property applied to the {{cssxref("::after")}} pseudo-element.
+The HTML for this sample is a single, empty {{HTMLElement("div")}} inside an otherwise empty {{HTMLElement("body")}}. The snowman was created with [CSS images](/guides/Images) and [CSS backgrounds and borders](/guides/Backgrounds_and_borders). The carrot nose was added using generated content: an empty box with a wide orange [left border](/reference/properties/border-left) added to the `::before` pseudo-element. The text is also generated content: "only one &lt;div>" was generated with the `content` property applied to the `::after` pseudo-element.
 
 Click "Play" in the example above to see or edit the code in the MDN Playground.
 
@@ -108,8 +108,8 @@ Click "Play" in the example above to see or edit the code in the MDN Playground.
 
 ### Properties
 
-- {{cssxref("content")}}
-- {{cssxref("quotes")}}
+- `content`
+- `quotes`
 
 The CSS generated content module also introduces four at-risk properties: `string-set`, `bookmark-label`, `bookmark-level`, and `bookmark-state`. Currently, no browsers support these features.
 
@@ -120,8 +120,8 @@ The CSS generated content module introduces six yet-to-be implemented CSS functi
 ### Data types
 
 - [`<content-list>`](/reference/properties/content#values)
-- `<content-replacement>` (see {{cssxref("image")}})
-- {{cssxref("image")}}
+- `<content-replacement>` (see `image`)
+- `image`
 - [`<counter>`](/reference/properties/content#counter)
 - [`<quote>`](/reference/properties/content#quote)
 - [`<target>`](/reference/properties/content#target)
@@ -129,7 +129,7 @@ The CSS generated content module introduces six yet-to-be implemented CSS functi
 ## Guides
 
 - ["How to" guide for generated content](/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Generated_content)
-  - Learn how to add text or image content to a document using the {{cssxref("content")}} property.
+  - Learn how to add text or image content to a document using the `content` property.
 
 - [Create fancy boxes with generated content](/en-US/docs/Learn_web_development/Howto/Solve_CSS_problems/Create_fancy_boxes)
   - Example of styling generated content for visual effects.
@@ -137,25 +137,25 @@ The CSS generated content module introduces six yet-to-be implemented CSS functi
 ## Related concepts
 
 - [CSS pseudo-elements](/guides/Pseudo-elements) module
-  - {{cssxref("::before")}} pseudo-element
-  - {{cssxref("::after")}} pseudo-element
-  - {{cssxref("::marker")}} pseudo-element
+  - `::before` pseudo-element
+  - `::after` pseudo-element
+  - `::marker` pseudo-element
 
 - [CSS lists and counters](/guides/Lists) module
-  - {{cssxref("counter()")}} function
-  - {{cssxref("counters()")}} function
-  - {{cssxref("counter-increment")}} property
-  - {{cssxref("counter-reset")}} property
+  - `counter()` function
+  - `counters()` function
+  - `counter-increment` property
+  - `counter-reset` property
 
 - [CSS overflow](/guides/Overflow) module
-  - {{cssxref("::scroll-button()")}} pseudo-element
-  - {{cssxref("::scroll-marker")}} pseudo-element
-  - {{cssxref(":target-current")}} pseudo-class
+  - `::scroll-button()` pseudo-element
+  - `::scroll-marker` pseudo-element
+  - `:target-current` pseudo-class
 
 - [CSS values and units](/guides/Values_and_units) module
-  - {{cssxref("attr()")}} function
-  - {{cssxref("string")}} data type
-  - {{cssxref("image")}} data type
+  - `attr()` function
+  - `string` data type
+  - `image` data type
 
 ## Specifications
 

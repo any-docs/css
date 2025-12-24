@@ -87,7 +87,7 @@ scroll-margin-bottom: unset;
 
 ### Values
 
-- {{CSSXref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - An outset from the bottom edge of the scroll container.
 
 ## Formal definition

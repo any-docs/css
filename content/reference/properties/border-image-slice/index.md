@@ -6,7 +6,7 @@ browser-compat: css.properties.border-image-slice
 sidebar: cssref
 ---
 
-The **`border-image-slice`** [CSS](/en-US/docs/Web/CSS) property divides the image specified by {{cssxref("border-image-source")}} into regions. These regions form the components of an element's [border image](/reference/properties/border-image).
+The **`border-image-slice`** [CSS](/en-US/docs/Web/CSS) property divides the image specified by `border-image-source` into regions. These regions form the components of an element's [border image](/reference/properties/border-image).
 
 {{InteractiveExample("CSS Demo: border-image-slice")}}
 
@@ -89,12 +89,12 @@ The optional `fill` value, if used, can be placed anywhere in the declaration.
 
 ### Values
 
-- {{cssxref("&lt;number&gt;")}}
+- `&lt;number&gt;`
   - Represents an edge offset in _pixels_ for raster images and _coordinates_ for vector images. For vector images, the number is relative to the element's size, not the size of the source image, so percentages are generally preferable in these cases.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Represents an edge offset as a percentage of the source image's size: the width of the image for horizontal offsets, the height for vertical offsets.
 - `fill`
-  - Preserves the middle image region and displays it like a background image, but stacked above the actual {{cssxref("background")}}. Its width and height are sized to match the top and left image regions, respectively.
+  - Preserves the middle image region and displays it like a background image, but stacked above the actual `background`. Its width and height are sized to match the top and left image regions, respectively.
 
 ## Description
 
@@ -108,7 +108,7 @@ The above diagram illustrates the location of each region.
 - Zones 5-8 are edge regions. These are [repeated, scaled, or otherwise modified](/reference/properties/border-image-repeat) in the final border image to match the dimensions of the element.
 - Zone 9 is the middle region. It is discarded by default, but is used like a background image if the keyword `fill` is set.
 
-The {{cssxref("border-image-repeat")}}, {{cssxref("border-image-width")}}, and {{cssxref("border-image-outset")}} properties determine how these regions are used to form the final border image.
+The `border-image-repeat`, `border-image-width`, and `border-image-outset` properties determine how these regions are used to form the final border image.
 
 ## Formal definition
 
@@ -126,7 +126,7 @@ The following example shows a `<div>` with a border image set on it. The source 
 
 ![nice multi-colored diamonds](border-diamonds.png)
 
-The diamonds are 30px across, so setting 30 pixels as the value for both {{cssxref("border-width")}} and `border-image-slice` will get you complete and fairly crisp diamonds in your border:
+The diamonds are 30px across, so setting 30 pixels as the value for both `border-width` and `border-image-slice` will get you complete and fairly crisp diamonds in your border:
 
 ```css
 border-width: 30px;

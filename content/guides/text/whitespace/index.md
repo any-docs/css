@@ -17,7 +17,7 @@ CSS also defines the concept of [_segment breaks_](https://drafts.csswg.org/css-
 
 ## How does HTML process whitespace?
 
-It is a common myth that "HTML ignores whitespace", which is untrue: **HTML preserves all whitespace text content as you wrote them in the source code.** As a markup language, HTML produces a {{glossary("DOM")}} where all whitespace in the text content is preserved, which can be retrieved and manipulated via DOM APIs such as {{domxref("Node.textContent")}}. If HTML strips whitespace from the DOM, then CSS, a downstream rendering engine that works on the DOM, would not be able to preserve them using the {{cssxref("white-space")}} property.
+It is a common myth that "HTML ignores whitespace", which is untrue: **HTML preserves all whitespace text content as you wrote them in the source code.** As a markup language, HTML produces a {{glossary("DOM")}} where all whitespace in the text content is preserved, which can be retrieved and manipulated via DOM APIs such as `Node.textContent`. If HTML strips whitespace from the DOM, then CSS, a downstream rendering engine that works on the DOM, would not be able to preserve them using the `white-space` property.
 
 > [!NOTE]
 > To be clear, we're talking about whitespace _between HTML tags_, which becomes text nodes in the DOM. Any whitespace _inside a tag_ (between the angle brackets but not as part of an attribute value) is just part of the HTML syntax and does not appear in the DOM.
@@ -106,7 +106,7 @@ Because this `<h1>` element contains only inline elements, it establishes an [in
 Inside this inline formatting context, whitespace characters are processed as follows:
 
 > [!NOTE]
-> This algorithm can be configured via the {{cssxref("white-space-collapse")}} property (or its shorthand property {{cssxref("white-space")}}). We'll start by assuming its default value (`white-space-collapse: collapse`), then look at how different property values affect this algorithm.
+> This algorithm can be configured via the `white-space-collapse` property (or its shorthand property `white-space`). We'll start by assuming its default value (`white-space-collapse: collapse`), then look at how different property values affect this algorithm.
 
 1. First, all spaces and tabs immediately before and after a line break are ignored. So, if we take our example markup from before:
 
@@ -154,7 +154,7 @@ This is why people visiting the web page will see the phrase "Hello World!" nice
 
 After these steps, the browser processes line wrapping and bidirectional text, which we will ignore here. Note that there are still spaces left after the opening `<h1>` tag and before the closing `</h1>` tag, but these are not rendered in the browser. We'll handle that next, as each line is laid out.
 
-Different {{cssxref("white-space-collapse")}} values skip different steps of this algorithm:
+Different `white-space-collapse` values skip different steps of this algorithm:
 
 - `preserve` and `break-spaces`: the whole algorithm is skipped, and no whitespace collapsing or transformation happens.
 - `preserve-breaks`: steps 2 and 3 are skipped, and line breaks are preserved.
@@ -204,7 +204,7 @@ This renders like so:
 The whitespace in this example is handled as follows:
 
 > [!NOTE]
-> This algorithm can be configured via the {{cssxref("white-space-collapse")}} property (or its shorthand property {{cssxref("white-space")}}). We'll start by assuming its default value (`white-space-collapse: collapse`), then look at how different property values affect this algorithm.
+> This algorithm can be configured via the `white-space-collapse` property (or its shorthand property `white-space`). We'll start by assuming its default value (`white-space-collapse: collapse`), then look at how different property values affect this algorithm.
 
 1. First, the whitespace is [collapsed](#collapsing_and_transformation) the same way as we saw in the previous section, turning this:
 
@@ -248,7 +248,7 @@ The whitespace in this example is handled as follows:
    </body>
    ```
 
-3. Each tab that's preserved at this point is rendered according to {{cssxref("tab-size")}}. This can only happen with `white-space-collapse` set to `preserve` or `break-spaces` because all other settings turn tabs into spaces.
+3. Each tab that's preserved at this point is rendered according to `tab-size`. This can only happen with `white-space-collapse` set to `preserve` or `break-spaces` because all other settings turn tabs into spaces.
 4. Sequences of spaces at the end of a line are removed, so the above becomes:
 
    ```html
@@ -263,7 +263,7 @@ The whitespace in this example is handled as follows:
 
 The three empty lines we now have are not going to occupy any space in the final layout, because they don't contain any visible content. So we'll end up with only two lines taking up space in the page. People viewing the web page see the words "Hello" and "World!" on two separate lines, just as you'd expect two `<div>`s to be laid out. Browsers essentially ignore all of the whitespace that was included in the HTML code.
 
-Different {{cssxref("white-space-collapse")}} values skip different steps of this algorithm:
+Different `white-space-collapse` values skip different steps of this algorithm:
 
 - `preserve` and `break-spaces`: The whole algorithm is skipped except for step 3, so no whitespace collapsing or transformation happens.
 - `preserve-spaces`: The whole algorithm is skipped, so whitespace characters at the start and end of lines are preserved.
@@ -271,9 +271,9 @@ Different {{cssxref("white-space-collapse")}} values skip different steps of thi
 
 ## How do DOM APIs process whitespace?
 
-As mentioned previously, [whitespace is preserved in the DOM](#how_does_html_process_whitespace). This means that if you retrieve {{domxref("Node.textContent")}}, you will get the text content as you wrote it in the HTML source code, and if you retrieve {{domxref("Node.childNodes")}}, you will get all the text nodes, including those that contain only whitespace.
+As mentioned previously, [whitespace is preserved in the DOM](#how_does_html_process_whitespace). This means that if you retrieve `Node.textContent`, you will get the text content as you wrote it in the HTML source code, and if you retrieve `Node.childNodes`, you will get all the text nodes, including those that contain only whitespace.
 
-Not all DOM APIs preserve whitespace; some APIs deal with the _rendered text_ by design. For example, {{domxref("HTMLElement.innerText")}} returns the text exactly as it's rendered, with all whitespace collapsed and trimmed. {{domxref("Selection.toString()")}} returns the text as it would be pasted, which generally means that whitespace is collapsed. However, in Firefox (which collapses whitespace between Chinese characters, as mentioned in the [collapsing and transformation](#collapsing_and_transformation) section above), the collapsed whitespace is still preserved both in the string returned by `toString()` and in the pasted text.
+Not all DOM APIs preserve whitespace; some APIs deal with the _rendered text_ by design. For example, `HTMLElement.innerText` returns the text exactly as it's rendered, with all whitespace collapsed and trimmed. `Selection.toString()` returns the text as it would be pasted, which generally means that whitespace is collapsed. However, in Firefox (which collapses whitespace between Chinese characters, as mentioned in the [collapsing and transformation](#collapsing_and_transformation) section above), the collapsed whitespace is still preserved both in the string returned by `toString()` and in the pasted text.
 
 ```html
 <div id="test">Hello world!</div>
@@ -367,7 +367,7 @@ There are a few ways of getting around this problem:
   }
   ```
 
-- If you need to rely on `inline-block`, you could set the {{cssxref("font-size")}} of the list to `0`. This only works if the blocks are not sized with `em` units (since `em` is based on `font-size`, the block size would also end up being sized as `0`). Using `rem` units would be a good choice here:
+- If you need to rely on `inline-block`, you could set the `font-size` of the list to `0`. This only works if the blocks are not sized with `em` units (since `em` is based on `font-size`, the block size would also end up being sized as `0`). Using `rem` units would be a good choice here:
 
   ```css
   ul {

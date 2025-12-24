@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`scaleX()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that resizes an element along the
-x-axis (horizontally). Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+x-axis (horizontally). Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: scaleX()")}}
 
@@ -39,7 +39,7 @@ transform: scaleX(-0.5);
 
 It modifies the abscissa (horizontal, x-coordinate) of each element point by a constant factor, except when the scale factor is 1, in which case
 the function is the identity transform. The scaling is not isotropic, and the angles of the element are generally not conserved, except for multiples of 90 degrees.
-`scaleX(-1)` defines an [axial symmetry](https://en.wikipedia.org/wiki/Axial_symmetry), with a vertical axis passing through the origin (as specified by the {{cssxref("transform-origin")}}
+`scaleX(-1)` defines an [axial symmetry](https://en.wikipedia.org/wiki/Axial_symmetry), with a vertical axis passing through the origin (as specified by the `transform-origin`
 property).
 
 > [!NOTE]
@@ -56,7 +56,7 @@ scaleX(s)
 ### Values
 
 - `s`
-  - Is a {{cssxref("&lt;number&gt;")}} representing the scaling factor to apply on the abscissa (horizontal, x-coordinate) of each point of the
+  - Is a `&lt;number&gt;` representing the scaling factor to apply on the abscissa (horizontal, x-coordinate) of each point of the
     element.
 
 <table class="standard-table">
@@ -141,11 +141,11 @@ div {
 
 - [`scaleY()`](/reference/values/transform-function/scaleY)
 - [`scaleZ()`](/reference/values/transform-function/scaleZ)
-- {{cssxref("transform")}}
-- {{cssxref("scale")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("transform-origin")}}
+- `transform`
+- `scale`
+- `&lt;transform-function&gt;`
+- `transform-origin`
 - Other individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `rotate`
   - Note: there is no `skew` property

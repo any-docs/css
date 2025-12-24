@@ -6,7 +6,7 @@ browser-compat: css.properties.text-shadow
 sidebar: cssref
 ---
 
-The **`text-shadow`** [CSS](/en-US/docs/Web/CSS) property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its {{cssxref("text-decoration")}}. Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color.
+The **`text-shadow`** [CSS](/en-US/docs/Web/CSS) property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its `text-decoration`. Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color.
 
 {{InteractiveExample("CSS Demo: text-shadow")}}
 
@@ -87,16 +87,16 @@ Each shadow is specified as two or three `<length>` values, followed optionally 
 
 When more than one shadow is given, shadows are applied front-to-back, with the first-specified shadow on top.
 
-This property applies to both {{cssxref("::first-line")}} and {{cssxref("::first-letter")}} [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements).
+This property applies to both `::first-line` and `::first-letter` [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements).
 
 ### Values
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - Optional. The color of the shadow. It can be specified either before or after the offset values. If unspecified, the color's value is left up to the user agent, so when consistency across browsers is desired you should define it explicitly.
 - `<offset-x> <offset-y>`
-  - Required. These {{cssxref("&lt;length&gt;")}} values specify the shadow's distance from the text. `<offset-x>` specifies the horizontal distance; a negative value places the shadow to the left of the text. `<offset-y>` specifies the vertical distance; a negative value places the shadow above the text. If both values are `0`, the shadow is placed directly behind the text, although it may be partly visible due to the effect of `<blur-radius>`.
+  - Required. These `&lt;length&gt;` values specify the shadow's distance from the text. `<offset-x>` specifies the horizontal distance; a negative value places the shadow to the left of the text. `<offset-y>` specifies the vertical distance; a negative value places the shadow above the text. If both values are `0`, the shadow is placed directly behind the text, although it may be partly visible due to the effect of `<blur-radius>`.
 - `<blur-radius>`
-  - Optional. This is a {{cssxref("&lt;length&gt;")}} value. The higher the value, the bigger the blur; the shadow becomes wider and lighter. If not specified, it defaults to `0`.
+  - Optional. This is a `&lt;length&gt;` value. The higher the value, the bigger the blur; the shadow becomes wider and lighter. If not specified, it defaults to `0`.
 
 ## Formal definition
 
@@ -160,7 +160,7 @@ This property applies to both {{cssxref("::first-line")}} and {{cssxref("::first
 ## See also
 
 - [Introduction to text shadows](/guides/Text_decoration/Text_shadows)
-- {{cssxref("&lt;color&gt;")}}
-- {{cssxref("box-shadow")}}
-- {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
+- `&lt;color&gt;`
+- `box-shadow`
+- `drop-shadow()`
 - [CSS text decoration](/guides/Text_decoration) module

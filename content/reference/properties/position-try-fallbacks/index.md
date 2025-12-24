@@ -9,10 +9,10 @@ sidebar: cssref
 The **`position-try-fallbacks`** [CSS](/en-US/docs/Web/CSS) property enables you to specify a list of one or more alternative **position try fallback options** for anchor-positioned elements to be placed relative to their associated anchor elements. When the element would otherwise overflow its inset-modified containing block, the browser will try placing the positioned element in these different fallback positions, in the order provided, until it finds a value that stops it from overflowing its container or the viewport.
 
 > [!NOTE]
-> The {{cssxref("position-try")}} shorthand property can be used to specify {{cssxref("position-try-order")}} and `position-try-fallbacks` values in a single declaration.
+> The `position-try` shorthand property can be used to specify `position-try-order` and `position-try-fallbacks` values in a single declaration.
 
 > [!NOTE]
-> This property was originally named and supported in Chromium browsers as `position-try-options`, with the same property values. Until `position-try-fallbacks` is supported, use the {{cssxref("position-try")}} shorthand instead.
+> This property was originally named and supported in Chromium browsers as `position-try-options`, with the same property values. Until `position-try-fallbacks` is supported, use the `position-try` shorthand instead.
 
 ## Syntax
 
@@ -65,9 +65,9 @@ The `position-try-fallbacks` property may be specified as either the keyword val
     - `flip-start`
       - Flips both the inline and block axis values, swapping the `start` properties with each other, and the `end` properties with each other.
 - [`position-area`](/reference/properties/position-area) value
-  - Positions the element relative to the edges of its associated anchor element by placing the positioned element on one or more tiles of an implicit 3x3 [position area grid](/reference/properties/position-area#description) based on the specified {{cssxref("position-area_value","<position-area>")}} value; the effect is the same as a custom {{cssxref("@position-try")}} fallback option containing only a {{cssxref("position-area")}} descriptor.
+  - Positions the element relative to the edges of its associated anchor element by placing the positioned element on one or more tiles of an implicit 3x3 [position area grid](/reference/properties/position-area#description) based on the specified `<position-area>` value; the effect is the same as a custom `@position-try` fallback option containing only a `position-area` descriptor.
 - [`<dashed-ident>`](/reference/values/dashed-ident)
-  - Adds a custom {{cssxref("@position-try")}} option to the fallback options list, the identifying name of which matches the specified `dashed-ident`. If no custom position option exists with that name, the option is ignored.
+  - Adds a custom `@position-try` option to the fallback options list, the identifying name of which matches the specified `dashed-ident`. If no custom position option exists with that name, the option is ignored.
 
 > [!NOTE]
 > Multiple options can be specified, separated by commas.
@@ -81,7 +81,7 @@ This is achieved by providing one or more position-try fallback options in the `
 If no option can be found that will place the positioned element completely on-screen, the browser will revert to displaying the positioned element at its default position before any try fallback options were applied.
 
 > [!NOTE]
-> In some situations you might want to just hide overflowing positioned elements, which can be achieved using the {{cssxref("position-visibility")}} property. In most cases however it is better to keep them on-screen and usable.
+> In some situations you might want to just hide overflowing positioned elements, which can be achieved using the `position-visibility` property. In most cases however it is better to keep them on-screen and usable.
 
 For detailed information on anchor features and position try fallback usage, see the [CSS anchor positioning](/guides/Anchor_positioning) module landing page and the [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide.
 
@@ -135,7 +135,7 @@ The HTML includes two {{htmlelement("div")}} elements that will become an anchor
 
 We style the `<body>` element to be very large, to enable both horizontal and vertical scrolling.
 
-The anchor is given an {{cssxref("anchor-name")}} and large margins to place it somewhere near the center of the visible section of the `<body>`:
+The anchor is given an `anchor-name` and large margins to place it somewhere near the center of the visible section of the `<body>`:
 
 ```css hidden
 .anchor {
@@ -162,7 +162,7 @@ body {
 }
 ```
 
-The infobox is given fixed positioning, a {{cssxref("position-anchor")}} property that references the anchor's `anchor-name`, to associate the two together, and it is tethered to the anchor's top-left corner using a `position-area`.
+The infobox is given fixed positioning, a `position-anchor` property that references the anchor's `anchor-name`, to associate the two together, and it is tethered to the anchor's top-left corner using a `position-area`.
 
 We include a `position-try-fallbacks` list (and re-declare it with the `position-try` shorthand in case the longhand property name is not yet supported), providing two predefined position-try fallback options to prevent it from overflowing when the anchor gets near the edge of the viewport, by flipping it along the inline or block axis of the anchor.
 
@@ -199,7 +199,7 @@ Try scrolling so the anchor nears the edges:
 - If you move the anchor near the top of the viewport, you will see the positioned element flip to the bottom-left of the anchor to avoid overflowing.
 - If you move the anchor near the left of the viewport, you will see the positioned element flip to the top-right of the anchor to avoid overflowing.
 
-Depending on the browser, once the positioned element moves to the fallback position, it may remain in the fallback position even if the fallback positioning is no longer necessary, such as when the space allows it to return to the position defined by the {{cssxref("position-area")}}.
+Depending on the browser, once the positioned element moves to the fallback position, it may remain in the fallback position even if the fallback positioning is no longer necessary, such as when the space allows it to return to the position defined by the `position-area`.
 
 However, if you move the anchor towards the top-left corner of the viewport, you'll notice a problem — as the positioned element starts to overflow in the block and inline direction, it flips back to its default top-left position and overflows in both directions, which is not what we want.
 
@@ -352,7 +352,7 @@ Scroll the page and check out the effect of these position-try fallback options 
 
 ### Custom try option examples
 
-See the {{cssxref("@position-try")}} reference page.
+See the `@position-try` reference page.
 
 ## Specifications
 
@@ -364,10 +364,10 @@ See the {{cssxref("@position-try")}} reference page.
 
 ## See also
 
-- {{cssxref("position-try")}}
-- {{cssxref("position-try-order")}}
-- {{cssxref("@position-try")}} at-rule
-- {{cssxref("position-area")}}
+- `position-try`
+- `position-try-order`
+- `@position-try` at-rule
+- `position-area`
 - [`<position-area>`](/reference/values/position-area_value) value
 - [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide

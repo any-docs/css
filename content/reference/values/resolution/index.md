@@ -12,7 +12,7 @@ On screens, the units are related to _CSS_ inches, centimeters, or pixels, not p
 
 ## Syntax
 
-The `<resolution>` data type consists of a strictly positive {{cssxref("&lt;number&gt;")}} followed by one of the units listed below. As with all CSS dimensions, there is no space between the unit literal and the number.
+The `<resolution>` data type consists of a strictly positive `&lt;number&gt;` followed by one of the units listed below. As with all CSS dimensions, there is no space between the unit literal and the number.
 
 ### Units
 
@@ -21,7 +21,7 @@ The `<resolution>` data type consists of a strictly positive {{cssxref("&lt;numb
 - `dpcm`
   - Represents the number of [dots per centimeter](https://en.wikipedia.org/wiki/Dots_per_inch). As 1 inch is 2.54 cm, `1dpcm ≈ 2.54dpi`.
 - `dppx`
-  - Represents the number of dots per [`px`](/reference/values/length#px) unit. Due to the 1:96 fixed ratio of CSS `in` to CSS `px`, `1dppx` is equivalent to `96dpi`, which corresponds to the default resolution of images displayed in CSS as defined by {{cssxref("image-resolution")}}.
+  - Represents the number of dots per [`px`](/reference/values/length#px) unit. Due to the 1:96 fixed ratio of CSS `in` to CSS `px`, `1dppx` is equivalent to `96dpi`, which corresponds to the default resolution of images displayed in CSS as defined by `image-resolution`.
 - `x`
   - Alias for `dppx`.
 
@@ -77,5 +77,5 @@ ten dpi    The number must use digits only.
 ## See also
 
 - [resolution](/en-US/docs/Web/CSS/Reference/At-rules/@media/resolution) media feature
-- The {{cssxref("image-resolution")}} property
+- The `image-resolution` property
 - [Using @media queries](/guides/Media_queries/Using)

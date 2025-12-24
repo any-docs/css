@@ -51,9 +51,9 @@ showDialogBtn.addEventListener("click", () => favDialog.showModal());
 
 Backdrops appear in the following instances:
 
-- Elements which have been placed in fullscreen mode using the [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API) {{domxref("Element.requestFullscreen()")}} method.
-- {{HTMLElement("dialog")}} elements that have been shown in the top layer via a {{domxref("HTMLDialogElement.showModal()")}} call.
-- {{domxref("Popover API", "Popover", "", "nocode")}} elements that have been shown in the top layer via a {{domxref("HTMLElement.showPopover()")}} call.
+- Elements which have been placed in fullscreen mode using the [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API) `Element.requestFullscreen()` method.
+- {{HTMLElement("dialog")}} elements that have been shown in the top layer via a `HTMLDialogElement.showModal()` call.
+- `Popover API", "Popover", "", "nocode")}} elements that have been shown in the top layer via a `HTMLElement.showPopover()` call.
 
 When multiple elements have been placed into the top layer, each one has its own `::backdrop` pseudo-element.
 
@@ -149,7 +149,7 @@ closeButton.addEventListener("click", () => {
 
 ## See also
 
-- {{cssxref(":fullscreen")}} pseudo-class
+- `:fullscreen` pseudo-class
 - {{HTMLElement("dialog")}} HTML element
 - [Fullscreen API](/en-US/docs/Web/API/Fullscreen_API)
 - [`popover`](/en-US/docs/Web/HTML/Reference/Global_attributes/popover) HTML global attribute

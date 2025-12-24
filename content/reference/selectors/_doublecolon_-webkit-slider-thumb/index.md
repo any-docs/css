@@ -30,9 +30,9 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref("::-webkit-slider-runnable-track")}}
+- `::-webkit-slider-runnable-track`
 - Similar pseudo-elements used by other browsers:
-  - {{cssxref("::-moz-range-thumb")}}
+  - `::-moz-range-thumb`
 
 - [CSS-Tricks: Styling Cross-Browser Compatible Range Inputs with CSS](https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/)
 - [QuirksMode: Styling and scripting sliders](https://www.quirksmode.org/blog/archives/2015/11/styling_and_scr.html)

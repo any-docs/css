@@ -6,7 +6,7 @@ browser-compat: css.types.string
 sidebar: cssref
 ---
 
-The **`<string>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a sequence of characters. Strings are used in numerous CSS properties, such as {{CSSxRef("content")}}, {{CSSxRef("font-family")}}, and {{CSSxRef("quotes")}}.
+The **`<string>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a sequence of characters. Strings are used in numerous CSS properties, such as `content`, `font-family`, and `quotes`.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ Importantly, certain characters which would otherwise be invalid can be escaped 
 
 To output new lines, you must escape them with a line feed character such as `\A` or `\00000A`. In your code, however, strings can span multiple lines, in which case each new line must be escaped with a `\` as the last character of the line.
 
-However, to get new lines, you must also set the {{cssxref("white-space")}} property to appropriate value.
+However, to get new lines, you must also set the `white-space` property to appropriate value.
 
 > [!NOTE]
 > {{glossary("character reference", "Character references")}} (such as `&nbsp;` or `&#8212;`) cannot be used in a CSS `<string>`.

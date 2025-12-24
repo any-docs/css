@@ -6,7 +6,7 @@ browser-compat: css.properties.font-style
 sidebar: cssref
 ---
 
-The **`font-style`** [CSS](/en-US/docs/Web/CSS) property sets whether a font should be styled with a normal, italic, or oblique face from its {{cssxref("font-family")}}.
+The **`font-style`** [CSS](/en-US/docs/Web/CSS) property sets whether a font should be styled with a normal, italic, or oblique face from its `font-family`.
 
 {{InteractiveExample("CSS Demo: font-style")}}
 
@@ -51,7 +51,7 @@ section {
 }
 ```
 
-**Italic** font faces are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, while **oblique** faces are usually just sloped versions of the regular face. When the specified style is not available, both italic and oblique faces are simulated by artificially sloping the glyphs of the regular face (use {{cssxref("font-synthesis")}} to control this behavior).
+**Italic** font faces are generally cursive in nature, usually using less horizontal space than their unstyled counterparts, while **oblique** faces are usually just sloped versions of the regular face. When the specified style is not available, both italic and oblique faces are simulated by artificially sloping the glyphs of the regular face (use `font-synthesis` to control this behavior).
 
 ## Syntax
 
@@ -74,12 +74,12 @@ The `font-style` property is specified as a single keyword chosen from the list 
 ### Values
 
 - `normal`
-  - Selects a font that is classified as `normal` within a {{Cssxref("font-family")}}.
+  - Selects a font that is classified as `normal` within a `font-family`.
 - `italic`
   - Selects a font that is classified as `italic`. If no italic version of the face is available, one classified as `oblique` is used instead. If neither is available, the style is artificially simulated.
 - `oblique`
   - Selects a font that is classified as `oblique`. If no oblique version of the face is available, one classified as `italic` is used instead. If neither is available, the style is artificially simulated.
-- `oblique` {{cssxref("angle")}}
+- `oblique` `angle`
   - Selects a font classified as `oblique`, and additionally specifies an angle for the slant of the text. If one or more oblique faces are available in the chosen font family, the one that most closely matches the specified angle is chosen. If no oblique faces are available, the browser will synthesize an oblique version of the font by slanting a normal face by the specified amount. Valid values are degree values of `-90deg` to `90deg` inclusive. If an angle is not specified, an angle of 14 degrees is used. Positive values are slanted to the end of the line, while negative values are slanted towards the beginning.
 
     In general, for a requested angle of 14 degrees or greater, larger angles are preferred; otherwise, smaller angles are preferred (see the spec's [font matching section](https://drafts.csswg.org/css-fonts-4/#font-matching-algorithm) for the precise algorithm).
@@ -88,7 +88,7 @@ The `font-style` property is specified as a single keyword chosen from the list 
 
 Variable fonts can offer a fine control over the degree to which an oblique face is slanted. You can select this using the `<angle>` modifier for the `oblique` keyword.
 
-For TrueType or OpenType variable fonts, the `"slnt"` variation is used to implement varying slant angles for oblique, and the `"ital"` variation with a value of 1 is used to implement italic values. See {{cssxref("font-variation-settings")}}.
+For TrueType or OpenType variable fonts, the `"slnt"` variation is used to implement varying slant angles for oblique, and the `"ital"` variation with a value of 1 is used to implement italic values. See `font-variation-settings`.
 
 Click "Play" in the code blocks below to edit the example in the MDN Playground. Change the angle value to see the slant of the text change.
 
@@ -168,7 +168,7 @@ Large sections of text set with a `font-style` value of `italic` may be difficul
 
 ## See also
 
-- {{cssxref("font-family")}}
-- {{cssxref("font-weight")}}
+- `font-family`
+- `font-weight`
 - SVG {{SVGAttr("font-style")}} attribute
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)

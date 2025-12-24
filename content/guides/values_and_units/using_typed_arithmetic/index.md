@@ -6,9 +6,9 @@ page-type: guide
 sidebar: cssref
 ---
 
-**CSS typed arithmetic** refers to permitted calculations performed with typed CSS values via functions such as {{cssxref("calc()")}}, and specifically, to the behavior defined in the [CSS values and units](/guides/Values_and_units) module. CSS typed arithmetic enables dividing a value with one unit by a value with a different unit of the same data type, resulting in unitless quotients.
+**CSS typed arithmetic** refers to permitted calculations performed with typed CSS values via functions such as `calc()`, and specifically, to the behavior defined in the [CSS values and units](/guides/Values_and_units) module. CSS typed arithmetic enables dividing a value with one unit by a value with a different unit of the same data type, resulting in unitless quotients.
 
-These quotients can then be used as a {{cssxref("number")}} in the values of unitless properties, or converted into any numeric data type (such as a {{cssxref("length")}}, {{cssxref("percentage")}}, or {{cssxref("angle")}}) by multiplying them by a numeric typed value.
+These quotients can then be used as a `number` in the values of unitless properties, or converted into any numeric data type (such as a `length`, `percentage`, or `angle`) by multiplying them by a numeric typed value.
 
 This typed arithmetic behavior enables relationships to be created between different values on a page. This article explores typed arithmetic and presents several examples that make use of it.
 
@@ -44,7 +44,7 @@ calc(50% + 90deg)
 
 ## Multiplication
 
-When multiplying values in CSS, only one of the values can have a unit. All other values must be unitless {{cssxref("number")}} values. This is because you want a product that is a greater or lesser amount of the same unit, and do not want to create squared units, which no CSS properties accept.
+When multiplying values in CSS, only one of the values can have a unit. All other values must be unitless `number` values. This is because you want a product that is a greater or lesser amount of the same unit, and do not want to create squared units, which no CSS properties accept.
 
 ```css example-good
 calc(200px * 4) /* 800px */
@@ -106,21 +106,21 @@ The key to all of this is being able to represent values in a unitless form via 
 --viewport-width-in-pixels: calc(100vw / 1px);
 ```
 
-The result is a {{cssxref("number")}} representing the viewport width in pixels as a unitless value. This can be used anywhere a number is valid, including other `calc()` functions. You can dynamically vary other property values based on this value, regardless of what units they have.
+The result is a `number` representing the viewport width in pixels as a unitless value. This can be used anywhere a number is valid, including other `calc()` functions. You can dynamically vary other property values based on this value, regardless of what units they have.
 
-For example, the unitless value can be immediately transferred to {{cssxref("opacity")}}:
+For example, the unitless value can be immediately transferred to `opacity`:
 
 ```css
 opacity: calc(var(--viewport-width-in-pixels) / 1000 - 0.5);
 ```
 
-You can multiply it by a value such as `1deg` to create an {{cssxref("&lt;angle>")}} value:
+You can multiply it by a value such as `1deg` to create an `&lt;angle>` value:
 
 ```css
 rotate: calc(var(--viewport-width-in-pixels) * 1deg);
 ```
 
-You can multiply it by a value such as `1rem` to create a {{cssxref("&lt;length>")}} value:
+You can multiply it by a value such as `1rem` to create a `&lt;length>` value:
 
 ```css
 font-size: calc(var(--viewport-width-in-pixels) * 1rem / 200);
@@ -150,7 +150,7 @@ The HTML contains some basic text content wrapped in a {{htmlelement("div")}} el
 
 ### CSS
 
-We start by defining a [CSS custom property](/guides/Cascading_variables/Using_custom_properties) called `--width-percentage` on the {{cssxref(":root")}} element, which contains the result of the calculation `100vw / 2000px`. This value represents the viewport width as a percentage of `2000px` that we will later use as an alpha channel value. When the viewport is `2000px` wide, the calculation will return `1`, which is equivalent to `100%` alpha. Anything less than a `2000px` viewport width will result in a smaller value.
+We start by defining a [CSS custom property](/guides/Cascading_variables/Using_custom_properties) called `--width-percentage` on the `:root` element, which contains the result of the calculation `100vw / 2000px`. This value represents the viewport width as a percentage of `2000px` that we will later use as an alpha channel value. When the viewport is `2000px` wide, the calculation will return `1`, which is equivalent to `100%` alpha. Anything less than a `2000px` viewport width will result in a smaller value.
 
 ```css
 :root {
@@ -161,7 +161,7 @@ We start by defining a [CSS custom property](/guides/Cascading_variables/Using_c
 > [!NOTE]
 > Any alpha value greater than `1` is treated as `1`, therefore we don't need to clamp the maximum value.
 
-We then set a fixed {{cssxref("width")}} and some {{cssxref("padding")}} on the wrapper `<div>`, and center it horizontally using {{cssxref("margin")}}.
+We then set a fixed `width` and some `padding` on the wrapper `<div>`, and center it horizontally using `margin`.
 
 ```css
 .wrapper {
@@ -173,8 +173,8 @@ We then set a fixed {{cssxref("width")}} and some {{cssxref("padding")}} on the 
 
 Finally, we set multiple backgrounds on the {{htmlelement("body")}} element. We'll go through these in reverse order:
 
-1. The last and therefore bottom-most {{cssxref("background")}} value is a non-repeating background image located near the top-right corner.
-2. The top background is a white semi-transparent overlay created using a {{cssxref("linear-gradient()")}} function with both color stops set to the same color. The color's alpha channel value is calculated as `1` minus the `--width-percentage` custom property we set earlier: As the viewport width gets narrower, `--width-percentage` will get smaller, therefore the white gradient will become more opaque, reducing the opacity of the background image.
+1. The last and therefore bottom-most `background` value is a non-repeating background image located near the top-right corner.
+2. The top background is a white semi-transparent overlay created using a `linear-gradient()` function with both color stops set to the same color. The color's alpha channel value is calculated as `1` minus the `--width-percentage` custom property we set earlier: As the viewport width gets narrower, `--width-percentage` will get smaller, therefore the white gradient will become more opaque, reducing the opacity of the background image.
 
 ```css
 body {
@@ -216,10 +216,10 @@ We start off our CSS in a similar way to the previous demo, creating a unitless 
 }
 ```
 
-Now on to the styling of the paragraph itself. We first give it some basic styles (a {{cssxref("border")}} and {{cssxref("text-align")}} of `center`), then set two values based on the `--viewport-in-pixels` property created earlier:
+Now on to the styling of the paragraph itself. We first give it some basic styles (a `border` and `text-align` of `center`), then set two values based on the `--viewport-in-pixels` property created earlier:
 
-1. We set the {{cssxref("font-size")}} of the paragraph to a value equal to `--viewport-in-pixels` divided by `200`, multiplied by `1em` to convert the numeric quotient into `em`s.
-2. We set the {{cssxref("background-color")}} of the paragraph to an [`lch()`](/reference/values/color_value/lch) color value. The lightness and chroma components are constant values (`75%` and `50%`, respectively), whereas the hue component is set to `--viewport-in-pixels` divided by `10`, plus `100`. We then multiply the result of that by `1deg` to ensure the value is an {{cssxref("angle")}}.
+1. We set the `font-size` of the paragraph to a value equal to `--viewport-in-pixels` divided by `200`, multiplied by `1em` to convert the numeric quotient into `em`s.
+2. We set the `background-color` of the paragraph to an [`lch()`](/reference/values/color_value/lch) color value. The lightness and chroma components are constant values (`75%` and `50%`, respectively), whereas the hue component is set to `--viewport-in-pixels` divided by `10`, plus `100`. We then multiply the result of that by `1deg` to ensure the value is an `angle`.
    > [!NOTE]
    > This last step is not strictly necessary, as `lch()` also accepts unitless hue values. However, a degree value may be more intuitive, and we wanted to show another example of how the unitless value can be converted into a different data type.
 
@@ -262,7 +262,7 @@ The HTML is fairly basic — a {{htmlelement("div")}} containing multiple {{html
 
 ### CSS
 
-We start the CSS by setting a {{cssxref("height")}} of `100%` on the {{cssxref(":root")}} element.
+We start the CSS by setting a `height` of `100%` on the `:root` element.
 
 ```css
 :root {
@@ -273,9 +273,9 @@ We start the CSS by setting a {{cssxref("height")}} of `100%` on the {{cssxref("
 Next, we set several properties on the {{htmlelement("body")}} element:
 
 - We start by setting a `height` of `inherit`, meaning the `<body>` will inherit the `:root` element's `100%` height and therefore span the full height of the viewport.
-- Next, we horizontally center the `<body>` using {{cssxref("margin")}}, and give it a {{cssxref("max-width")}}. As you'll see later on, this upper bound is important for controlling the maximum rotation of the fan/circle shape.
+- Next, we horizontally center the `<body>` using `margin`, and give it a `max-width`. As you'll see later on, this upper bound is important for controlling the maximum rotation of the fan/circle shape.
 - We center the `<div>` with `class="story-circle"` horizontally and vertically inside the `<body>` using [flexbox](/guides/Flexible_box_layout).
-- We use the {{cssxref("container-type")}} property to declare the `<body>` as an inline [size query container](/guides/Containment/Container_size_and_style_queries#container_size_queries). This is important because we want to vary the shape rotation based on the `<body>` width, and not the viewport width as we did in previous examples. Setting it as a size query container allows us to reference its size in calculations.
+- We use the `container-type` property to declare the `<body>` as an inline [size query container](/guides/Containment/Container_size_and_style_queries#container_size_queries). This is important because we want to vary the shape rotation based on the `<body>` width, and not the viewport width as we did in previous examples. Setting it as a size query container allows us to reference its size in calculations.
 
 ```css
 body {
@@ -305,12 +305,12 @@ We are using the container query width rather than the viewport width to control
 
 Since the `max-width` is `1600px`, you might have expected the calculation to be `100cqw / 1600px)`. This would work, but we've instead gone for `(100cqw / 1200px) - 0.33333` (the `0.33333` comes from `1600px/1200px - 1`). Both would cause the maximum rotation to occur at a `<body>` width of `1600px`, but the fan now has a smaller minimum rotation, which gives a better effect at narrow viewport widths.
 
-The final style rule selects the paragraphs themselves. Most of this styling is rudimentary. It is worth pointing out that we have set {{cssxref("position")}} to `absolute` to cause all of the paragraphs to sit on top of one another, and we've set a {{cssxref("transform-origin")}} value of `center left` to cause paragraphs to rotate around the center of their left edge, so they will all fan out from a center point over their containing `<div>`.
+The final style rule selects the paragraphs themselves. Most of this styling is rudimentary. It is worth pointing out that we have set `position` to `absolute` to cause all of the paragraphs to sit on top of one another, and we've set a `transform-origin` value of `center left` to cause paragraphs to rotate around the center of their left edge, so they will all fan out from a center point over their containing `<div>`.
 
-Now onto the interesting bit — we define a custom property called `--angle` that contains the unitless rotation angle of the paragraph, before setting the {{cssxref("rotate")}} property to the resulting value. We multiply the resulting number by `1deg` to convert it to a degree value. The `--angle` custom property is the product of three values:
+Now onto the interesting bit — we define a custom property called `--angle` that contains the unitless rotation angle of the paragraph, before setting the `rotate` property to the resulting value. We multiply the resulting number by `1deg` to convert it to a degree value. The `--angle` custom property is the product of three values:
 
-1. The paragraph's {{cssxref("sibling-index()")}} minus `1`, which causes the first paragraph to have a rotation angle of `0`, as we want it to be horizontal.
-2. `360` divided by the paragraph's {{cssxref("sibling-count()")}}, which causes all the paragraphs to be equally spaced around the circle, meaning the design will still work if the number of paragraphs changes.
+1. The paragraph's `sibling-index()` minus `1`, which causes the first paragraph to have a rotation angle of `0`, as we want it to be horizontal.
+2. `360` divided by the paragraph's `sibling-count()`, which causes all the paragraphs to be equally spaced around the circle, meaning the design will still work if the number of paragraphs changes.
 3. our `--width-percentage` custom property, which causes the rotation of the paragraphs around the circle to vary as the viewport width changes. Remember that this property has a maximum value of `1`, which will be achieved when the `<body>` element hits its `max-width` of `1600px`.
 
 ```css
@@ -337,6 +337,6 @@ To see the result, [view our animated story circle example live](https://mdn.git
 
 ## See also
 
-- {{cssxref("calc()")}}, {{cssxref("abs()")}}
+- `calc()`, `abs()`
 - [CSS values and units](/guides/Values_and_units) module
 - [CSS Typed Arithmetic](https://css-tricks.com/css-typed-arithmetic/) on css-tricks.com (2025)

@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`skewY()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that skews an element in the vertical
-direction on the 2D plane. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+direction on the 2D plane. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: skewY()")}}
 
@@ -51,7 +51,7 @@ skewY(a)
 ### Values
 
 - `a`
-  - Is an {{cssxref("angle")}} representing the angle to use to distort the element along the ordinate (vertical, y-coordinate).
+  - Is an `angle` representing the angle to use to distort the element along the ordinate (vertical, y-coordinate).
 
 <table class="standard-table">
   <thead>
@@ -133,10 +133,10 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
+- `transform`
+- `&lt;transform-function&gt;`
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`
   - Note: there is no `skew` property

@@ -36,7 +36,7 @@ Some of them are _fancy_ and are pretty self-contained.
 They are easy to use for anybody with a fair knowledge of basic concepts.
 
 - [CSS Counter Styles](/guides/Counter_styles/Using_counters)
-  - Counting items and pages is an easy task in CSS. Learn to use {{cssxref("counter-reset")}}, {{cssxref("counter-increment")}}, {{cssxref("counters()")}}, and {{cssxref("counter()")}}.
+  - Counting items and pages is an easy task in CSS. Learn to use `counter-reset`, `counter-increment`, `counters()`, and `counter()`.
 - [CSS Animations](/guides/Animations/Using)
   - CSS Animations allow you to define configurations of style, as [keyframes](/en-US/docs/Web/CSS/Reference/At-rules/@keyframes), and to transition between them defining an animation.
 - [CSS Transitions](/guides/Transitions/Using)

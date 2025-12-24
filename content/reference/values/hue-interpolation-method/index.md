@@ -7,9 +7,9 @@ spec-urls: https://drafts.csswg.org/css-color/#hue-interpolation
 sidebar: cssref
 ---
 
-The **`<hue-interpolation-method>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents the algorithm used for interpolation between {{cssxref("hue")}} values.
+The **`<hue-interpolation-method>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents the algorithm used for interpolation between `hue` values.
 The interpolation method specifies how to find a midpoint between two hue values based on a color wheel.
-It is used as a component of the {{CSSXref("&lt;color-interpolation-method&gt;")}} data type.
+It is used as a component of the `&lt;color-interpolation-method&gt;` data type.
 
 When interpolating `<hue>` values, the hue interpolation algorithm defaults to [`shorter`](#shorter).
 
@@ -84,7 +84,7 @@ A notable feature of `increasing` and `decreasing` is that when the hue angle di
 
 ### Comparing hue interpolation algorithms
 
-The following example shows the effect of using different hue interpolation algorithms in a {{CSSXref("gradient/linear-gradient", "linear-gradient()")}}.
+The following example shows the effect of using different hue interpolation algorithms in a `linear-gradient()`.
 
 #### HTML
 
@@ -233,5 +233,5 @@ p {
 
 ## See also
 
-- {{CSSXref("&lt;color-interpolation-method&gt;")}}
-- {{cssxref("hue")}} data type
+- `&lt;color-interpolation-method&gt;`
+- `hue` data type

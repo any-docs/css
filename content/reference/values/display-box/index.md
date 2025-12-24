@@ -19,7 +19,7 @@ Valid `<display-box>` values:
 
 - `none`
   - Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
-    To have an element take up the space that it would normally take, but without actually rendering anything, use the {{CSSxRef("visibility")}} property instead.
+    To have an element take up the space that it would normally take, but without actually rendering anything, use the `visibility` property instead.
 
 ## Accessibility
 
@@ -97,12 +97,12 @@ In this example the outer {{htmlelement("div")}} has a 2-pixel red border and a 
 
 ## See also
 
-- {{CSSxRef("display")}}
-  - {{CSSxRef("&lt;display-outside&gt;")}}
-  - {{CSSxRef("&lt;display-inside&gt;")}}
-  - {{CSSxRef("&lt;display-listitem&gt;")}}
-  - {{CSSxRef("&lt;display-internal&gt;")}}
-  - {{CSSxRef("&lt;display-legacy&gt;")}}
+- `display`
+  - `&lt;display-outside&gt;`
+  - `&lt;display-inside&gt;`
+  - `&lt;display-listitem&gt;`
+  - `&lt;display-internal&gt;`
+  - `&lt;display-legacy&gt;`
 
 - [Display: Contents Is Not a CSS Reset | Adrian Roselli](https://adrianroselli.com/2018/05/display-contents-is-not-a-css-reset.html)
 - [More accessible markup with display: contents](https://hidde.blog/more-accessible-markup-with-display-contents/) by Hidde de Vries (2018)

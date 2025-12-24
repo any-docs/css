@@ -10,11 +10,11 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`element()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines an {{cssxref("image")}} value generated from an arbitrary HTML element. This image is live, meaning that if the HTML element is changed, the CSS properties using the resulting value are automatically updated.
+The **`element()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines an `image` value generated from an arbitrary HTML element. This image is live, meaning that if the HTML element is changed, the CSS properties using the resulting value are automatically updated.
 
 A particularly useful scenario for using this would be to render an image in an HTML {{HTMLElement("canvas")}} element, then use that as a background.
 
-On Gecko browsers, you can use the non-standard {{domxref("document.mozSetImageElement()")}} method to change the element being used as the background for a given CSS background element.
+On Gecko browsers, you can use the non-standard `document.mozSetImageElement()` method to change the element being used as the background for a given CSS background element.
 
 ## Syntax
 
@@ -119,9 +119,9 @@ This [example based on Vincent De Oliveira's](https://iamvdo.me/en/blog/css-elem
 
 ## See also
 
-- {{cssxref("image/image", "image()")}}
-- {{cssxref("image/image-set", "image-set()")}}
-- {{cssxref("image")}}
-- {{cssxref("gradient")}}
-- {{cssxref("cross-fade()")}}
-- {{domxref("document.mozSetImageElement()")}}
+- `image()`
+- `image-set()`
+- `image`
+- `gradient`
+- `cross-fade()`
+- `document.mozSetImageElement()`

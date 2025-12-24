@@ -16,13 +16,13 @@ There are several ways to create this circle. In this guide, we will look at how
 
 The specification defines a few properties, including:
 
-- {{cssxref("shape-outside")}} — Allows definition of basic shapes.
-- {{cssxref("shape-image-threshold")}} — Sets an opacity threshold value. If an image is being used to define a shape, only the parts of the image that are the same opacity or greater than the threshold value are used in the shape. Any other parts are ignored.
-- {{cssxref("shape-margin")}} — Sets a margin around the defined shape.
+- `shape-outside` — Allows definition of basic shapes.
+- `shape-image-threshold` — Sets an opacity threshold value. If an image is being used to define a shape, only the parts of the image that are the same opacity or greater than the threshold value are used in the shape. Any other parts are ignored.
+- `shape-margin` — Sets a margin around the defined shape.
 
 ## Defining basic shapes
 
-The `shape-outside` property allows us to define a shape. It takes a variety of values that define different shapes specified in the {{cssxref("basic-shape")}} data type.
+The `shape-outside` property allows us to define a shape. It takes a variety of values that define different shapes specified in the `basic-shape` data type.
 
 In the following example, an image is floated to the left. We apply the `shape-outside` property with a `circle(50%)` value. The result is that the content now curves around the circular shape rather than following the rectangle created by the box of the image.
 
@@ -58,20 +58,20 @@ img {
 
 {{EmbedLiveSample("circle", "", "280px")}}
 
-Here we used the {{cssxref("basic-shape/circle", "circle()")}} function, which is supported across all modern browsers. If we used a newer shape type that doesn't have full support, users of non-supporting browsers would see the content flowing around the sides of a rectangular, due to the image being floated. Shapes are a visual progressive enhancement.
+Here we used the `circle()` function, which is supported across all modern browsers. If we used a newer shape type that doesn't have full support, users of non-supporting browsers would see the content flowing around the sides of a rectangular, due to the image being floated. Shapes are a visual progressive enhancement.
 
 ### Basic shapes
 
 The value `circle(50%)` is an example of a basic shape. The specification defines several `<basic-shape>` values, including:
 
-- {{cssxref("basic-shape/circle","circle()")}}
-- {{cssxref("basic-shape/ellipse","ellipse()")}}
-- {{cssxref("basic-shape/inset","inset()")}}
-- {{cssxref("basic-shape/path","path()")}}
-- {{cssxref("basic-shape/polygon","polygon()")}}
-- {{cssxref("basic-shape/rect","rect()")}}
-- {{cssxref("basic-shape/shape","shape()")}}
-- {{cssxref("basic-shape/xywh","xywh()")}}
+- `circle()`
+- `ellipse()`
+- `inset()`
+- `path()`
+- `polygon()`
+- `rect()`
+- `shape()`
+- `xywh()`
 
 Three of these functions only define rectangles. With the `inset()` function, you define four offset values, thus pulling the line boxes of any wrapping content closer to the object than they otherwise would. The `rect()` function defines a rectangle by specifying the distance from the top and left edges of the containing block. The `xywh()` function works by specifying distances from the top and left edges of the reference box and setting the width and height of the rectangle from that starting point.
 
@@ -222,7 +222,7 @@ To learn more about creating shapes from images, see the [Shapes from images](/g
 
 ## The `shape-margin` property
 
-The {{cssxref("shape-margin")}} property adds a margin to `shape-outside`. This will further shorten the line boxes of any content wrapping the shape, pushing it away from the shape itself.
+The `shape-margin` property adds a margin to `shape-outside`. This will further shorten the line boxes of any content wrapping the shape, pushing it away from the shape itself.
 
 In the example below we have added a `shape-margin` to a basic shape. Change the margin to push the text further away from the path the shape would take by default.
 
@@ -302,7 +302,7 @@ body {
 
 ## Relationship to `clip-path`
 
-The basic shapes and box values used to create shapes are the same as those used as values for {{cssxref("clip-path")}}. Therefore, if you want to create a shape using an image, and also clip away part of that image, you can use the same values.
+The basic shapes and box values used to create shapes are the same as those used as values for `clip-path`. Therefore, if you want to create a shape using an image, and also clip away part of that image, you can use the same values.
 
 The image below is a square image with a blue background. We have defined a shape using `shape-outside: ellipse(40% 50%);` and also used `clip-path: ellipse(40% 50%);` to clip away the same area that we used to define the shape.
 

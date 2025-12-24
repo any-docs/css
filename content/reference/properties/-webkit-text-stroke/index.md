@@ -6,14 +6,14 @@ browser-compat: css.properties.-webkit-text-stroke
 sidebar: cssref
 ---
 
-The **`-webkit-text-stroke`** [CSS](/en-US/docs/Web/CSS) property specifies the [width](/reference/values/length) and [color](/reference/values/color_value) of strokes for text characters. This is a shorthand property for the longhand properties {{cssxref("-webkit-text-stroke-width")}} and {{cssxref("-webkit-text-stroke-color")}}.
+The **`-webkit-text-stroke`** [CSS](/en-US/docs/Web/CSS) property specifies the [width](/reference/values/length) and [color](/reference/values/color_value) of strokes for text characters. This is a shorthand property for the longhand properties `-webkit-text-stroke-width` and `-webkit-text-stroke-color`.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("-webkit-text-stroke-color")}}
-- {{cssxref("-webkit-text-stroke-width")}}
+- `-webkit-text-stroke-color`
+- `-webkit-text-stroke-width`
 
 ## Syntax
 
@@ -31,9 +31,9 @@ This property is a shorthand for the following CSS properties:
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The width of the stroke.
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the stroke.
 
 ## Formal definition
@@ -80,6 +80,6 @@ This property is a shorthand for the following CSS properties:
 
 - [Introducing Text-Stroke](https://webkit.org/blog/85/introducing-text-stroke/) on webkit.org (2006)
 - [CSS-Tricks article explaining this feature](https://css-tricks.com/adding-stroke-to-web-text/)
-- {{cssxref("-webkit-text-stroke-width")}}
-- {{cssxref("-webkit-text-stroke-color")}}
-- {{cssxref("-webkit-text-fill-color")}}
+- `-webkit-text-stroke-width`
+- `-webkit-text-stroke-color`
+- `-webkit-text-fill-color`

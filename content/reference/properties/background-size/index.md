@@ -9,7 +9,7 @@ sidebar: cssref
 The **`background-size`** [CSS](/en-US/docs/Web/CSS) property sets the size of the element's background image.
 The image can be left to its natural size, stretched, or constrained to fit the available space.
 
-Spaces not covered by a background image are filled with the {{cssxref("background-color")}} property, and the background color will be visible behind background images that have transparency/translucency.
+Spaces not covered by a background image are filled with the `background-color` property, and the background color will be visible behind background images that have transparency/translucency.
 
 {{InteractiveExample("CSS Demo: background-size")}}
 
@@ -87,7 +87,7 @@ The `background-size` property is specified in one of the following ways:
 - Using the keyword values `contain` or `cover`.
 - Using a width value only, in which case the height defaults to `auto`.
 - Using both a width and a height value, in which case the first sets the width and the second sets the height.
-  Each value can be a {{cssxref("&lt;length&gt;")}}, a {{cssxref("&lt;percentage&gt;")}}, or `auto`.
+  Each value can be a `&lt;length&gt;`, a `&lt;percentage&gt;`, or `auto`.
 
 To specify the size of multiple background images, separate the value for each one with a comma.
 
@@ -95,18 +95,18 @@ To specify the size of multiple background images, separate the value for each o
 
 - `contain`
   - Scales the image as large as possible within its container without cropping or stretching the image.
-    If the container is larger than the image, this will result in image tiling, unless the {{cssxref("background-repeat")}} property is set to `no-repeat`.
+    If the container is larger than the image, this will result in image tiling, unless the `background-repeat` property is set to `no-repeat`.
 - `cover`
   - Scales the image (while preserving its ratio) to the smallest possible size to fill the container (that is: both its height and width completely _cover_ the container), leaving no empty space.
     If the proportions of the background differ from the element, the image is cropped either vertically or horizontally.
 - `auto`
   - Scales the background image in the corresponding direction such that its intrinsic proportions are maintained.
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Stretches the image in the corresponding dimension to the specified length. Negative values are not allowed.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - Stretches the image in the corresponding dimension to the specified percentage of the _background positioning area_.
-    The background positioning area is determined by the value of {{cssxref("background-origin")}} (by default, the padding box).
-    However, if the background's {{cssxref("background-attachment")}} value is `fixed`, the positioning area is instead the entire {{glossary("viewport")}}.
+    The background positioning area is determined by the value of `background-origin` (by default, the padding box).
+    However, if the background's `background-attachment` value is `fixed`, the positioning area is instead the entire {{glossary("viewport")}}.
     Negative values are not allowed.
 
 ### Intrinsic dimensions and proportions
@@ -118,8 +118,8 @@ These attributes are as follows:
 - A vector image (such as SVG) does not necessarily have intrinsic dimensions.
   If it has both horizontal and vertical intrinsic dimensions, it also has intrinsic proportions.
   If it has no dimensions or only one dimension, it may or may not have proportions.
-- CSS {{cssxref("gradient")}}s have no intrinsic dimensions or intrinsic proportions.
-- Background images created with the {{cssxref("element()")}} function use the intrinsic dimensions and proportions of the generating element.
+- CSS `gradient`s have no intrinsic dimensions or intrinsic proportions.
+- Background images created with the `element()` function use the intrinsic dimensions and proportions of the generating element.
 
 > [!NOTE]
 > In Gecko, background images created using the [`element()`](/reference/values/element) function are currently treated as images with the dimensions of the element, or of the background positioning area if the element is SVG, with the corresponding intrinsic proportion. This is non-standard behavior.
@@ -203,4 +203,4 @@ See [Resizing background images](/guides/Backgrounds_and_borders/Resizing_backgr
 
 - [Resizing background images](/guides/Backgrounds_and_borders/Resizing_background_images)
 - [Scaling SVG backgrounds](/guides/Backgrounds_and_borders/Scaling_SVG_backgrounds)
-- {{cssxref("object-fit")}}
+- `object-fit`

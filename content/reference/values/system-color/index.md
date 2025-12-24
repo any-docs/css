@@ -14,7 +14,7 @@ In forced colors mode, authors should use colors from the `<system-color>` type 
 
 Authors can detect forced colors mode using the [`forced-colors`](/en-US/docs/Web/CSS/Reference/At-rules/@media/forced-colors) media feature.
 
-A `<system-color>` value can be used anywhere a {{cssxref("&lt;color&gt;")}} can be used.
+A `<system-color>` value can be used anywhere a `&lt;color&gt;` can be used.
 
 ## Syntax
 
@@ -288,7 +288,7 @@ The following keywords were defined in earlier versions of the CSS Color Module.
 
 ### Using system colors
 
-In this example we have a button that normally gets its contrast using the {{cssxref("box-shadow")}} property. In forced colors mode, `box-shadow` is forced to `none`, so the example uses the `forced-colors` media feature to ensure there is a border of the appropriate color (`ButtonBorder` in this case).
+In this example we have a button that normally gets its contrast using the `box-shadow` property. In forced colors mode, `box-shadow` is forced to `none`, so the example uses the `forced-colors` media feature to ensure there is a border of the appropriate color (`ButtonBorder` in this case).
 
 #### HTML
 
@@ -330,4 +330,4 @@ In this example we have a button that normally gets its contrast using the {{css
 
 ## See also
 
-- {{cssxref("&lt;color&gt;")}}: the data type these keywords belong to
+- `&lt;color&gt;`: the data type these keywords belong to

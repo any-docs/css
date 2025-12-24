@@ -73,7 +73,7 @@ border-left-width: unset;
 ### Values
 
 - `<line-width>`
-  - Defines the width of the border, either as an explicit nonnegative {{cssxref("&lt;length&gt;")}} or a keyword. If it's a keyword, it must be one of the following values:
+  - Defines the width of the border, either as an explicit nonnegative `&lt;length&gt;` or a keyword. If it's a keyword, it must be one of the following values:
     - `thin`
     - `medium`
     - `thick`
@@ -130,5 +130,5 @@ div:nth-child(2) {
 
 ## See also
 
-- The other border-width-related CSS properties: {{Cssxref("border-top-width")}}, {{Cssxref("border-right-width")}}, {{Cssxref("border-bottom-width")}}, and {{Cssxref("border-width")}}.
-- The other border-left-related CSS properties: {{Cssxref("border")}}, {{Cssxref("border-left")}}, {{Cssxref("border-left-style")}}, and {{Cssxref("border-left-color")}}.
+- The other border-width-related CSS properties: `border-top-width`, `border-right-width`, `border-bottom-width`, and `border-width`.
+- The other border-left-related CSS properties: `border`, `border-left`, `border-left-style`, and `border-left-color`.

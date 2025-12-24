@@ -6,7 +6,7 @@ browser-compat: css.properties.mask-type
 sidebar: cssref
 ---
 
-The **`mask-type`** [CSS](/en-US/docs/Web/CSS) property applies to the SVG {{svgElement("mask")}} element. It defines whether to use the _luminance_ (brightness) or _alpha_ (transparency) content of the mask. This property may be overridden by the {{cssxref("mask-mode")}} property. The `mask-type` property has no effect on image or gradient masks.
+The **`mask-type`** [CSS](/en-US/docs/Web/CSS) property applies to the SVG {{svgElement("mask")}} element. It defines whether to use the _luminance_ (brightness) or _alpha_ (transparency) content of the mask. This property may be overridden by the `mask-mode` property. The `mask-type` property has no effect on image or gradient masks.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ If the SVG `<mask>` element has `fill="rgb(0 0 0 / 0.5)"`, which is a 50% transp
 
 ### Effect of `mask-mode` on `mask-type`
 
-While the `mask-type` property is set on the SVG `<mask>` element, the {{cssxref("mask-mode")}} property is set on the element being masked (the element you're applying the mask to).
+While the `mask-type` property is set on the SVG `<mask>` element, the `mask-mode` property is set on the element being masked (the element you're applying the mask to).
 If the mask image source is not an SVG `<mask>`, this property has no effect.
 
 The default value of `mask-mode` is `match-source`, which means the browser uses the `mask-type` value from the `<mask>` element to determine how to interpret it. If `mask-mode` is set to a value other than `match-source`, that value takes precedence and overrides the `mask-type` value of the applied mask.
@@ -160,8 +160,8 @@ As the default value for the `mask-mode` property is `match-source`, the first m
 
 ## See also
 
-- {{cssxref("mask")}}
-- {{cssxref("mask-mode")}}
+- `mask`
+- `mask-mode`
 - [Introduction to CSS masking](/guides/Masking/Introduction)
 - [CSS masking](/guides/Masking) module
 - SVG {{svgattr("mask-type")}} attribute

@@ -36,9 +36,9 @@ math-depth: unset;
 
 - `auto-add`
   - Set to the inherited `math-depth` plus 1 when inherited [math-style](/reference/properties/math-style) is `compact`.
-- `add({{cssxref("&lt;integer&gt;")}})`
+- `add(`&lt;integer&gt;`)`
   - Set to the inherited `math-depth` plus the specified integer.
-- {{cssxref("&lt;integer&gt;")}}
+- `&lt;integer&gt;`
   - Set to the specified integer.
 
 ## Formal definition
@@ -114,5 +114,5 @@ p {
 
 ## See also
 
-- {{cssxref("font-size")}}
-- {{cssxref("math-style")}}
+- `font-size`
+- `math-style`

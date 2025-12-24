@@ -6,7 +6,7 @@ browser-compat: css.properties.translate
 sidebar: cssref
 ---
 
-The **`translate`** [CSS](/en-US/docs/Web/CSS) property allows you to specify translation transforms individually and independently of the {{CSSxRef("transform")}} property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
+The **`translate`** [CSS](/en-US/docs/Web/CSS) property allows you to specify translation transforms individually and independently of the `transform` property. This maps better to typical user interface usage, and saves having to remember the exact order of transform functions to specify in the `transform` value.
 
 {{InteractiveExample("CSS Demo: translate")}}
 
@@ -127,12 +127,12 @@ translate: unset;
 
 ### Values
 
-- Single {{cssxref("&lt;length-percentage&gt;")}} value
-  - A {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} that specifies a translation along the X-axis. Equivalent to a `translate()` (2D translation) function with a single value specified.
-- Two {{cssxref("&lt;length-percentage&gt;")}} values
-  - Two {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} that specify the X and Y axis translation values (respectively) of a 2D translation. Equivalent to a `translate()` (2D translation) function with two values specified.
+- Single `&lt;length-percentage&gt;` value
+  - A `&lt;length&gt;` or `&lt;percentage&gt;` that specifies a translation along the X-axis. Equivalent to a `translate()` (2D translation) function with a single value specified.
+- Two `&lt;length-percentage&gt;` values
+  - Two `&lt;length&gt;` or `&lt;percentage&gt;` that specify the X and Y axis translation values (respectively) of a 2D translation. Equivalent to a `translate()` (2D translation) function with two values specified.
 - Three values
-  - Two {{cssxref("&lt;length-percentage&gt;")}} and single {{cssxref("&lt;length&gt;")}} values that specify the X, Y, and Z axis translation values (respectively) of a 3D translation. Equivalent to a `translate3d()` (3D translation) function.
+  - Two `&lt;length-percentage&gt;` and single `&lt;length&gt;` values that specify the X, Y, and Z axis translation values (respectively) of a 3D translation. Equivalent to a `translate3d()` (3D translation) function.
 - `none`
   - Specifies that no translation should be applied.
 

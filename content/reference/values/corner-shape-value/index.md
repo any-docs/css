@@ -10,15 +10,15 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`<corner-shape-value>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) describes the shape of a container corner. It is used by the {{cssxref("corner-shape")}} shorthand property and its [constituent properties](/reference/properties/corner-shape#constituent_properties) to specify the shape to apply to affected container corners.
+The **`<corner-shape-value>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) describes the shape of a container corner. It is used by the `corner-shape` shorthand property and its [constituent properties](/reference/properties/corner-shape#constituent_properties) to specify the shape to apply to affected container corners.
 
 ## Syntax
 
-The `<corner-shape-value>` data type can take a {{cssxref("superellipse()")}} function that defines a custom shape, or one of six keyword values that describe common `superellipse()` values.
+The `<corner-shape-value>` data type can take a `superellipse()` function that defines a custom shape, or one of six keyword values that describe common `superellipse()` values.
 
 ### Values
 
-- {{cssxref("superellipse()")}}
+- `superellipse()`
   - Defines a custom corner superellipse shape. A negative parameter creates an inward, or concave, curve while a positive parameter creates an outward, or convex, curve.
 - Keywords
   - The available keyword values are as follows:
@@ -27,7 +27,7 @@ The `<corner-shape-value>` data type can take a {{cssxref("superellipse()")}} fu
     - `notch`
       - Defines a 90-degree concave square corner. The `notch` keyword is equivalent to `superellipse(-infinity)`.
     - `round`
-      - Defines a convex ordinary ellipse, which is the standard rounded corner created by {{cssxref("border-radius")}} without a `corner-shape` applied. The `round` keyword is equivalent to `superellipse(1)`. This is the default (initial) value for all `corner-shape` properties.
+      - Defines a convex ordinary ellipse, which is the standard rounded corner created by `border-radius` without a `corner-shape` applied. The `round` keyword is equivalent to `superellipse(1)`. This is the default (initial) value for all `corner-shape` properties.
     - `scoop`
       - Defines a concave ordinary ellipse. The `scoop` keyword is equivalent to `superellipse(-1)`.
     - `square`
@@ -46,9 +46,9 @@ The `<corner-shape-value>` data type can take a {{cssxref("superellipse()")}} fu
 
 ### `<corner-shape-value>` value comparison
 
-In this example, we provide a drop-down menu allowing you to select different `<corner-shape-value>` values and a slider that updates the container's {{cssxref("border-radius")}}. This enables visualizing the effect of the different keywords and `superellipse()` parameter values.
+In this example, we provide a drop-down menu allowing you to select different `<corner-shape-value>` values and a slider that updates the container's `border-radius`. This enables visualizing the effect of the different keywords and `superellipse()` parameter values.
 
-The `corner-shape` property defines the shape of the box's corners while the region the shape is applied to is specified by the `border-radius` property. The code is hidden for brevity, but you can find a [full explanation of `corner-shape` values](/reference/properties/corner-shape#comparing_corner-shape_values) along with other related examples on the {{cssxref("corner-shape")}} reference page.
+The `corner-shape` property defines the shape of the box's corners while the region the shape is applied to is specified by the `border-radius` property. The code is hidden for brevity, but you can find a [full explanation of `corner-shape` values](/reference/properties/corner-shape#comparing_corner-shape_values) along with other related examples on the `corner-shape` reference page.
 
 ```html hidden live-sample___value-comparison
 <form>
@@ -161,7 +161,7 @@ setCorners();
 
 ## See also
 
-- {{cssxref("corner-shape")}}
-- {{cssxref("border-radius")}}
-- {{cssxref("superellipse()")}}
+- `corner-shape`
+- `border-radius`
+- `superellipse()`
 - [CSS borders and box decorations](/guides/Borders_and_box_decorations) module

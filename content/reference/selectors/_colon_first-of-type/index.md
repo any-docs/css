@@ -112,4 +112,4 @@ article :first-of-type {
 
 ## See also
 
-- {{Cssxref(":first-child")}}, {{Cssxref(":last-of-type")}}, {{Cssxref(":nth-of-type")}}
+- `:first-child`, `:last-of-type`, `:nth-of-type`

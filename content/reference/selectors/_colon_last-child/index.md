@@ -130,7 +130,7 @@ ul li:last-child {
 
 ## See also
 
-- {{CSSxRef(":-moz-last-node")}}
-- {{CSSxRef(":last-of-type")}}
-- {{CSSxRef(":first-child")}}
-- {{CSSxRef(":nth-child")}}
+- `:-moz-last-node`
+- `:last-of-type`
+- `:first-child`
+- `:nth-child`

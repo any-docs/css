@@ -10,38 +10,38 @@ spec-urls:
 sidebar: cssref
 ---
 
-The **CSS images** module defines the types of images that can be used (the {{cssxref("image")}} type, containing URLs, gradients and other types of images), how to resize them and how they, and other replaced content, interact with the different layout models.
+The **CSS images** module defines the types of images that can be used (the `image` type, containing URLs, gradients and other types of images), how to resize them and how they, and other replaced content, interact with the different layout models.
 
 ## Reference
 
 ### Properties
 
-- {{CSSxRef("image-orientation")}}
-- {{CSSxRef("image-rendering")}}
-- {{CSSxRef("object-fit")}}
-- {{CSSxRef("object-position")}}
-- {{cssxref("object-view-box")}}
+- `image-orientation`
+- `image-rendering`
+- `object-fit`
+- `object-position`
+- `object-view-box`
 
-The CSS images module also defines the {{CSSxRef("image-resolution")}} property. Currently, no browsers support this feature.
+The CSS images module also defines the `image-resolution` property. Currently, no browsers support this feature.
 
 ### Functions
 
-- {{CSSxRef("gradient/linear-gradient", "linear-gradient()")}}
-- {{CSSxRef("gradient/radial-gradient", "radial-gradient()")}}
-- {{CSSxRef("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}
-- {{CSSxRef("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}
-- {{CSSxRef("gradient/conic-gradient", "conic-gradient()")}}
-- {{CSSxRef("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
-- {{cssxref("cross-fade()")}}
-- {{cssxref("element()")}}
-- {{CSSxRef("image/image-set", "image-set()")}}
+- `linear-gradient()`
+- `radial-gradient()`
+- `repeating-linear-gradient()`
+- `repeating-radial-gradient()`
+- `conic-gradient()`
+- `repeating-conic-gradient()`
+- `cross-fade()`
+- `element()`
+- `image-set()`
 
-The CSS images module also defines the {{CSSxRef("image/image", "image()")}} function. Currently, no browsers support this feature.
+The CSS images module also defines the `image()` function. Currently, no browsers support this feature.
 
 ### Data types
 
-- {{cssxref("gradient")}}
-- {{cssxref("image")}}
+- `gradient`
+- `image`
 
 ## Guides
 
@@ -62,8 +62,8 @@ The CSS images module also defines the {{CSSxRef("image/image", "image()")}} fun
 
 ## Related concepts
 
-- {{cssxref("url_value", "&lt;url&gt;")}}
-- {{cssxref("url_function", "url()")}}
+- `&lt;url&gt;`
+- `url()`
 - [`<basic-shape-rect>`](/reference/values/basic-shape#syntax_for_rectangles_basic-shape-rect)
 
 ## Specifications

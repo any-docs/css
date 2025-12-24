@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`font-synthesis-weight`** [CSS](/en-US/docs/Web/CSS) property lets you specify whether or not the browser may synthesize the bold typeface when it is missing in a font family.
 
-It is often convenient to use the shorthand property {{cssxref("font-synthesis")}} to control all typeface synthesis values.
+It is often convenient to use the shorthand property `font-synthesis` to control all typeface synthesis values.
 
 ## Syntax
 
@@ -88,4 +88,4 @@ This example shows turning off synthesis of the bold typeface by the browser in 
 ## See also
 
 - [font-synthesis](/reference/properties/font-synthesis) shorthand, [font-synthesis-small-caps](/reference/properties/font-synthesis-small-caps), [font-synthesis-style](/reference/properties/font-synthesis-style)
-- {{cssxref("font-style")}}, {{cssxref("font-variant")}}, {{cssxref("font-weight")}}
+- `font-style`, `font-variant`, `font-weight`

@@ -32,7 +32,7 @@ d: unset;
 
 ### Values
 
-The value is either a {{cssxref("basic-shape/path", "path()")}} function with a single {{cssxref("&lt;string&gt;")}} parameter or the keyword `none`.
+The value is either a `path()` function with a single `&lt;string&gt;` parameter or the keyword `none`.
 
 - `none`
   - No path is drawn.
@@ -66,7 +66,7 @@ We include two identical `<path>` elements in an SVG; their `d` attribute values
 
 #### CSS
 
-With CSS, we style both paths, providing a black {{cssxref("stroke")}} and semi-opaque red {{cssxref("fill")}}. We then use the `d` property to override the value of the SVG {{SVGAttr("d")}} attribute for the last path only. The browser renders SVG images as `300px` wide and `150px` tall by default.
+With CSS, we style both paths, providing a black `stroke` and semi-opaque red `fill`. We then use the `d` property to override the value of the SVG {{SVGAttr("d")}} attribute for the last path only. The browser renders SVG images as `300px` wide and `150px` tall by default.
 
 ```css
 svg {
@@ -107,7 +107,7 @@ We create a `<svg>` containing a single `<path>` element.
 
 #### CSS
 
-We use the `d` attribute to define a heart with a line through it. We use CSS to define the {{cssxref("fill")}}, {{cssxref("stroke")}}, and {{cssxref("stroke-width")}} of that path, and add a two-second {{cssxref("transition")}}. We add a {{cssxref(":hover")}} style that contains a slightly different {{cssxref("basic-shape/path", "path()")}} function; the path has the same number of data points as the default state, making the path animatable.
+We use the `d` attribute to define a heart with a line through it. We use CSS to define the `fill`, `stroke`, and `stroke-width` of that path, and add a two-second `transition`. We add a `:hover` style that contains a slightly different `path()` function; the path has the same number of data points as the default state, making the path animatable.
 
 ```css
 svg {
@@ -149,9 +149,9 @@ To view the animation, hover over the SVG.
 ## See also
 
 - SVG {{SVGAttr("d")}} attribute
-- {{cssxref("fill")}}
-- {{cssxref("stroke")}}
-- {{cssxref("basic-shape/path", "path()")}} function
-- {{cssxref("basic-shape")}} data type
+- `fill`
+- `stroke`
+- `path()` function
+- `basic-shape` data type
 - [Overview of CSS shapes](/guides/Shapes/Overview)
 - [CSS shapes](/guides/Shapes) module

@@ -6,7 +6,7 @@ browser-compat: css.types.position
 sidebar: cssref
 ---
 
-The **`<position>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) denotes a two-dimensional coordinate used to set a location relative to an element box. It is used in the {{cssxref("background-position")}}, {{cssxref("object-position")}}, {{cssxref("mask-position")}} {{cssxref("offset-position")}}, {{cssxref("offset-anchor")}} and {{cssxref("transform-origin")}} properties.
+The **`<position>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) denotes a two-dimensional coordinate used to set a location relative to an element box. It is used in the `background-position`, `object-position`, `mask-position` `offset-position`, `offset-anchor` and `transform-origin` properties.
 
 > [!NOTE]
 > The final position described by the `<position>` value does not need to be inside the element's box.
@@ -19,7 +19,7 @@ The `<position>` data type is specified with one or two keywords, with optional 
 
 The keyword values are `center`, `top`, `right`, `bottom`, and `left`. Each keyword represents either an edge of the element's box or the center line between two edges. Depending on the context, `center` represents either the center between the left and right edges, or the center between the top and bottom edges.
 
-If specified, an offset can be either a relative {{cssxref("&lt;percentage&gt;")}} value or an absolute {{cssxref("&lt;length&gt;")}} value. Positive values are offset towards the right or the bottom, whichever is appropriate. Negative values are offset in the opposite directions.
+If specified, an offset can be either a relative `&lt;percentage&gt;` value or an absolute `&lt;length&gt;` value. Positive values are offset towards the right or the bottom, whichever is appropriate. Negative values are offset in the opposite directions.
 
 If only a single offset value is specified, it defines the x-coordinate, with the value for the other axis defaulting to `center`.
 
@@ -39,7 +39,7 @@ keyword value keyword value /* Each value is an offset from the keyword that pre
 ```
 
 > [!NOTE]
-> The {{cssxref("background-position")}} property also accepts a three-value syntax. This is not allowed in other properties that use `<position>`.
+> The `background-position` property also accepts a three-value syntax. This is not allowed in other properties that use `<position>`.
 
 ## Interpolation
 
@@ -85,6 +85,6 @@ bottom top
 
 - [CSS values and units](/guides/Values_and_units) module
 - [Learn: CSS Values and units](/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units)
-- {{cssxref("background-position")}}
-- {{cssxref("gradient/radial-gradient", "radial-gradient()")}}
-- {{cssxref("gradient/conic-gradient", "conic-gradient()")}}
+- `background-position`
+- `radial-gradient()`
+- `conic-gradient()`

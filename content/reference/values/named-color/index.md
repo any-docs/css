@@ -6,9 +6,9 @@ browser-compat: css.types.color.named-color
 sidebar: cssref
 ---
 
-The **`<named-color>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) is the name of a color, such as `red`, `blue`, `black`, or `lightseagreen`. Syntactically, a `<named-color>` is an {{cssxref("ident")}}.
+The **`<named-color>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) is the name of a color, such as `red`, `blue`, `black`, or `lightseagreen`. Syntactically, a `<named-color>` is an `ident`.
 
-A `<named-color>` value can be used anywhere a {{cssxref("&lt;color&gt;")}} can be used.
+A `<named-color>` value can be used anywhere a `&lt;color&gt;` can be used.
 
 ## Syntax
 
@@ -893,9 +893,9 @@ In [CSS Colors Level 4](https://drafts.csswg.org/css-color-4/#named-colors), an 
 
 The `transparent` keyword represents a fully transparent color. This makes the background behind the colored item completely visible. Technically, `transparent` is a shortcut for `rgb(0 0 0 / 0%)`.
 
-To prevent unexpected behavior, such as in a {{cssxref("gradient")}}, the current CSS spec states that `transparent` should be calculated in the [alpha-premultiplied color space](https://drafts.csswg.org/css-color/#interpolation-alpha). However, be aware that older browsers may treat it as black with an alpha value of `0`.
+To prevent unexpected behavior, such as in a `gradient`, the current CSS spec states that `transparent` should be calculated in the [alpha-premultiplied color space](https://drafts.csswg.org/css-color/#interpolation-alpha). However, be aware that older browsers may treat it as black with an alpha value of `0`.
 
-The `transparent` keyword wasn't a true color in CSS Level 2 (Revision 1). It was a special keyword that could be used instead of a regular `<color>` value on two CSS properties: {{Cssxref("background")}} and {{Cssxref("border")}}. It was essentially added to allow developers to override an inherited solid color. With the advent of alpha channels in CSS Colors Level 3, `transparent` was redefined as a true color. It can now be used wherever a `<color>` value can be used.
+The `transparent` keyword wasn't a true color in CSS Level 2 (Revision 1). It was a special keyword that could be used instead of a regular `<color>` value on two CSS properties: `background` and `border`. It was essentially added to allow developers to override an inherited solid color. With the advent of alpha channels in CSS Colors Level 3, `transparent` was redefined as a true color. It can now be used wherever a `<color>` value can be used.
 
 ## Description
 
@@ -975,4 +975,4 @@ Though many keywords have been adapted from [X11](https://en.wikipedia.org/wiki/
 
 ## See also
 
-- {{cssxref("&lt;color&gt;")}}: the data type of whose definition `<named-color>` is a constituent part.
+- `&lt;color&gt;`: the data type of whose definition `<named-color>` is a constituent part.

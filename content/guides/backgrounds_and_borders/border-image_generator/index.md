@@ -5,7 +5,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-This tool can be used to generate CSS {{cssxref("border-image")}} values.
+This tool can be used to generate CSS `border-image` values.
 
 {{EmbedGHLiveSample("css-examples/tools/border-image-generator/", '100%', 1300)}}
 

@@ -5,7 +5,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-CSS custom functions enable you to create reusable blocks of CSS code that can accept arguments, contain complex logic (defined using features such as CSS {{cssxref("if()")}} functions and {{cssxref("@media")}} at-rules), and return values based on that logic. They work similarly to [CSS custom properties](/reference/properties/--*), but provide more flexibility.
+CSS custom functions enable you to create reusable blocks of CSS code that can accept arguments, contain complex logic (defined using features such as CSS `if()` functions and `@media` at-rules), and return values based on that logic. They work similarly to [CSS custom properties](/reference/properties/--*), but provide more flexibility.
 
 In this article, we'll show you how to use them and present some real-world examples.
 
@@ -19,12 +19,12 @@ A basic CSS custom function definition looks like this:
 }
 ```
 
-After the `@function` syntax, we define a name for the function: `--half-opacity`. This must be a {{cssxref("&lt;dashed-ident>")}} type — it must start with a double-dash, and is case-sensitive. The function name is immediately followed by a set of parentheses (`()`) and a set of curly braces (`{}`).
+After the `@function` syntax, we define a name for the function: `--half-opacity`. This must be a `&lt;dashed-ident>` type — it must start with a double-dash, and is case-sensitive. The function name is immediately followed by a set of parentheses (`()`) and a set of curly braces (`{}`).
 
 > [!NOTE]
-> If multiple CSS functions are given the same name, the function in the stronger cascade {{cssxref("@layer")}} wins. If all of them are in the same layer, the function defined last in the source order wins.
+> If multiple CSS functions are given the same name, the function in the stronger cascade `@layer` wins. If all of them are in the same layer, the function defined last in the source order wins.
 
-Inside the curly braces is the function **body**, which is where the function logic is defined. This can contain multiple declarations, including custom properties (which will be locally scoped to the function body), at-rules such as {{cssxref("@media")}}, and the [`result`](/en-US/docs/Web/CSS/Reference/At-rules/@function#result_2) descriptor. The value of the `result` descriptor is evaluated to determine the value returned by the function.
+Inside the curly braces is the function **body**, which is where the function logic is defined. This can contain multiple declarations, including custom properties (which will be locally scoped to the function body), at-rules such as `@media`, and the [`result`](/en-US/docs/Web/CSS/Reference/At-rules/@function#result_2) descriptor. The value of the `result` descriptor is evaluated to determine the value returned by the function.
 
 Here, we are setting `result` to the value `0.5`: the `--half-opacity()` function will always return `0.5`.
 
@@ -36,7 +36,7 @@ The body of a CSS function is evaluated from start to finish. If there are multi
 
 ### Calling a CSS function
 
-A CSS function can be called in place of any suitable property value using the {{cssxref("&lt;dashed-function>")}} syntax, which consists of the function name followed by parentheses containing the arguments to pass to the function, if any. For example, we can call our `--half-opacity()` function like this:
+A CSS function can be called in place of any suitable property value using the `&lt;dashed-function>` syntax, which consists of the function name followed by parentheses containing the arguments to pass to the function, if any. For example, we can call our `--half-opacity()` function like this:
 
 ```css
 h2 {
@@ -58,7 +58,7 @@ One practical use of CSS functions with no parameters is in feature detection. I
 }
 ```
 
-You can then define a "feature not supported" banner, and set its {{cssxref("display")}} property to `--supports()`:
+You can then define a "feature not supported" banner, and set its `display` property to `--supports()`:
 
 ```html
 <p class="support">
@@ -111,7 +111,7 @@ Let's modify our previous function to provide data types:
 }
 ```
 
-The data type of each parameter is specified after the parameter name, and the data type of the `result` is specified just before the opening curly brace, preceded by the `returns` keyword. The {{cssxref("type()")}} function is used to specify a data type.
+The data type of each parameter is specified after the parameter name, and the data type of the `result` is specified just before the opening curly brace, preceded by the `returns` keyword. The `type()` function is used to specify a data type.
 
 Note that, in cases where you are only specifying a single data type, you can omit the `type()` syntax and just write the type as a shorthand:
 
@@ -121,7 +121,7 @@ Note that, in cases where you are only specifying a single data type, you can om
 }
 ```
 
-Now the function will only produce a valid value if the input arguments are a {{cssxref("&lt;color>")}} and a {{cssxref("&lt;number>")}}, respectively, and the `result` is a {{cssxref("&lt;color>")}}. If not, for example:
+Now the function will only produce a valid value if the input arguments are a `&lt;color>` and a `&lt;number>`, respectively, and the `result` is a `&lt;color>`. If not, for example:
 
 ```css
 section {
@@ -207,7 +207,7 @@ section {
 
 ## Including complex logic
 
-You can include more complex logic in functions using constructs such as {{cssxref("@media")}} at-rules and {{cssxref("if()")}} functions.
+You can include more complex logic in functions using constructs such as `@media` at-rules and `if()` functions.
 
 Our [responsive-narrow-wide](https://mdn.github.io/dom-examples/css-custom-functions/responsive-narrow-wide/) example (see the [source code](https://github.com/mdn/dom-examples/tree/main/css-custom-functions/responsive-narrow-wide)) features a function called `--narrow-wide()`, which can be used to provide two value options for any property. One will be set if the viewport is below a specific breakpoint, and the other will be set if it is above.
 
@@ -256,7 +256,7 @@ We could rewrite the `--narrow-wide()` function to use an `if()` function instea
 
 A key use case for CSS functions is to define a complex section of syntax once, and be able to reuse it multiple times with a much simpler function call.
 
-Our [gradient-function](https://mdn.github.io/dom-examples/css-custom-functions/gradient-function/) example (see the [source code](https://github.com/mdn/dom-examples/tree/main/css-custom-functions/gradient-function)) provides an example of this. It features a function called `--shippo-pattern()` that accepts length and color arguments, and returns a complex {{cssxref("background")}} value featuring multiple {{cssxref("radial-gradient()")}} backgrounds:
+Our [gradient-function](https://mdn.github.io/dom-examples/css-custom-functions/gradient-function/) example (see the [source code](https://github.com/mdn/dom-examples/tree/main/css-custom-functions/gradient-function)) provides an example of this. It features a function called `--shippo-pattern()` that accepts length and color arguments, and returns a complex `background` value featuring multiple `radial-gradient()` backgrounds:
 
 ```css
 @function --shippo-pattern(--size <length>, --tint <color>) {

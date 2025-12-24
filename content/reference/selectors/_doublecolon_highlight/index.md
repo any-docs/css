@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`::highlight()`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements) applies styles to a custom highlight.
 
-A custom highlight is a collection of {{domxref("Range")}} objects and is registered on a webpage using the {{domxref("HighlightRegistry")}}.
+A custom highlight is a collection of `Range` objects and is registered on a webpage using the `HighlightRegistry`.
 
 The `::highlight()` pseudo-element follows a special inheritance model common to all highlight pseudo-elements. For more details on how this inheritance works, see the [Highlight pseudo-elements inheritance](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements#highlight_pseudo-elements_inheritance) section.
 
@@ -16,13 +16,13 @@ The `::highlight()` pseudo-element follows a special inheritance model common to
 
 Only certain CSS properties can be used with `::highlight()`:
 
-- {{CSSxRef("color")}}
-- {{CSSxRef("background-color")}}
-- {{CSSxRef("text-decoration")}} and its associated properties
-- {{CSSxRef("text-shadow")}}
-- {{CSSxRef("-webkit-text-stroke-color")}}, {{CSSxRef("-webkit-text-fill-color")}} and {{CSSxRef("-webkit-text-stroke-width")}}
+- `color`
+- `background-color`
+- `text-decoration` and its associated properties
+- `text-shadow`
+- `-webkit-text-stroke-color`, `-webkit-text-fill-color` and `-webkit-text-stroke-width`
 
-In particular, {{CSSxRef("background-image")}} is ignored.
+In particular, `background-image` is ignored.
 
 ## Syntax
 

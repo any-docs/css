@@ -58,5 +58,5 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref("::-moz-list-number")}}
-- {{cssxref("::marker")}}
+- `::-moz-list-number`
+- `::marker`

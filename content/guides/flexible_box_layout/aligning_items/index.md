@@ -10,7 +10,7 @@ One of the reasons flexbox is so useful is that it enables proper alignment, inc
 
 ## Using alignment in flexbox
 
-Flexbox provides several properties to control alignment and spacing, with `align-items` and `justify-content` being fundamental for centering elements. To center an element, we use the {{cssxref("align-items")}} property to align the item on the {{glossary("cross axis")}}, which in this case is the [block axis](/en-US/docs/Glossary/Flow_relative_values) running vertically. We use {{cssxref("justify-content")}} to align the item on the main axis, which in this case is the inline axis running horizontally.
+Flexbox provides several properties to control alignment and spacing, with `align-items` and `justify-content` being fundamental for centering elements. To center an element, we use the `align-items` property to align the item on the {{glossary("cross axis")}}, which in this case is the [block axis](/en-US/docs/Glossary/Flow_relative_values) running vertically. We use `justify-content` to align the item on the main axis, which in this case is the inline axis running horizontally.
 
 ![The cross axis is the vertical axis and the main axis is the horizontal axis.](align1.png)
 
@@ -45,17 +45,17 @@ Change the size of the container or nested element in the code example below. Th
 
 The properties we will look at in this guide are as follows.
 
-- {{cssxref("justify-content")}}: Controls the alignment of all items on the main axis.
-- {{cssxref("align-items")}}: Controls the alignment of all items on the cross axis.
-- {{cssxref("align-self")}}: Controls the alignment of an individual flex item on the cross axis.
-- {{cssxref("align-content")}}: Controls the space between flex lines on the cross axis.
-- {{cssxref("gap")}}, {{cssxref("column-gap")}}, and {{cssxref("row-gap")}}: Used to create gaps or gutters between flex items.
+- `justify-content`: Controls the alignment of all items on the main axis.
+- `align-items`: Controls the alignment of all items on the cross axis.
+- `align-self`: Controls the alignment of an individual flex item on the cross axis.
+- `align-content`: Controls the space between flex lines on the cross axis.
+- `gap`, `column-gap`, and `row-gap`: Used to create gaps or gutters between flex items.
 
 We will also discover how auto margins can be used for alignment in flexbox.
 
 ## Aligning items on the cross axis
 
-The {{cssxref("align-items")}} property, set on the flex container, and the {{cssxref("align-self")}} property, set on flex items, control the alignment of flex items on the cross axis. The cross axis runs down the columns if {{cssxref("flex-direction")}} is `row` and along the rows if `flex-direction` is `column`.
+The `align-items` property, set on the flex container, and the `align-self` property, set on flex items, control the alignment of flex items on the cross axis. The cross axis runs down the columns if `flex-direction` is `row` and along the rows if `flex-direction` is `column`.
 
 In this basic flex example, we're using cross-axis alignment. When we add `display: flex` to a container, the child items become flex items arranged in a row. By default, they will all stretch to match the height of the tallest item, as that item defines the height of the items on the cross axis. If the flex container has a height set, the items will stretch to that height, regardless of how much content is in each item.
 
@@ -106,7 +106,7 @@ In the example below, the value of `align-items` is `stretch`. Try the other val
 
 ### Aligning one item with `align-self`
 
-The `align-items` property sets the `align-self` property on all of the flex items as a group. This means you can explicitly declare the {{cssxref("align-self")}} property to target a single item. The `align-self` property accepts all of the same values as `align-items`, plus a value of `auto`, which resets the value to that defined on the flex container.
+The `align-items` property sets the `align-self` property on all of the flex items as a group. This means you can explicitly declare the `align-self` property to target a single item. The `align-self` property accepts all of the same values as `align-items`, plus a value of `auto`, which resets the value to that defined on the flex container.
 
 In this next live example, the flex container has `align-items: flex-start`, which means the items are all aligned to the start of the cross axis. Using the `first-child` selector, the first item is set to `align-self: stretch`. Another item with the `selected` class has `align-self: center` set. Change the value of `align-items` or change the values of `align-self` on the individual items to see how this works.
 
@@ -189,7 +189,7 @@ You can try this out in the example below, which has a flex container with `flex
 
 ## Aligning content on the cross axis with the `align-content` property
 
-So far, we have focused on aligning items or individual items inside the area defined by a {{glossary("flex container")}} containing a single line of flex items. When flex items are allowed to wrap across multiple lines, the {{cssxref("align-content")}} property can be used to control the distribution of space between the lines, also known as **packing flex lines**.
+So far, we have focused on aligning items or individual items inside the area defined by a {{glossary("flex container")}} containing a single line of flex items. When flex items are allowed to wrap across multiple lines, the `align-content` property can be used to control the distribution of space between the lines, also known as **packing flex lines**.
 
 For `align-content` to have an effect, the cross axis dimension (the height in this case) of the flex container must be greater than needed to display the items. It then works on all the items as a set. The `align-content` values dictate what happens with the extra available space and the alignment of the entire set of items within it.
 
@@ -475,7 +475,7 @@ A common pattern is a navigation bar where some key items are aligned to the rig
 
 Instead, the _d_ item can be pushed over using CSS margins.
 
-In this live example, item 4 is separated from the first three items by setting {{cssxref("margin-left")}} to `auto`, which consumes all the space it can in its axis. This is how centering a block with {{cssxref("margin")}} auto left and right works. Each side tries to take as much space as it can, and so the block is pushed into the middle.
+In this live example, item 4 is separated from the first three items by setting `margin-left` to `auto`, which consumes all the space it can in its axis. This is how centering a block with `margin` auto left and right works. Each side tries to take as much space as it can, and so the block is pushed into the middle.
 
 In this live example, the flex items are arranged in a row with the basic flex values, and the class `push`, set on the fourth item, applies `margin-left: auto` to that item. Try removing the class on the fourth item or adding the class to a different item to see how it works.
 
@@ -510,10 +510,10 @@ In this live example, the flex items are arranged in a row with the basic flex v
 
 ## Creating gaps between items
 
-To create a gap between flex items, use the {{cssxref("gap")}}, {{cssxref("column-gap")}}, and {{cssxref("row-gap")}} properties. The {{cssxref("column-gap")}} property creates gaps between items in a row. The {{cssxref("row-gap")}} property creates gaps between flex lines when you have {{cssxref("flex-wrap")}} set to `wrap`.
+To create a gap between flex items, use the `gap`, `column-gap`, and `row-gap` properties. The `column-gap` property creates gaps between items in a row. The `row-gap` property creates gaps between flex lines when you have `flex-wrap` set to `wrap`.
 
-The {{cssxref("gap")}} property is a shorthand that sets both `row-gap` and `column-gap`.
-The gaps between flex items or flex lines depend on the direction. If the {{cssxref("flex-direction")}} property creates rows, the first value defines the gap between flex lines, and the second value defines the gap between items within each line. With columns (when `flex-direction` is set to `column` or `column-reverse`), the first value defines the gap between flex items, and the second value defines the gaps between flex lines.
+The `gap` property is a shorthand that sets both `row-gap` and `column-gap`.
+The gaps between flex items or flex lines depend on the direction. If the `flex-direction` property creates rows, the first value defines the gap between flex lines, and the second value defines the gap between items within each line. With columns (when `flex-direction` is set to `column` or `column-reverse`), the first value defines the gap between flex items, and the second value defines the gaps between flex lines.
 
 ```html live-sample___gap
 <div class="box">

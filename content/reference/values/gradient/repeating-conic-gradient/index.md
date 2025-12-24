@@ -55,12 +55,12 @@ repeating-conic-gradient(in hsl shorter hue, red, blue 90deg, green 180deg)
 
 ### Values
 
-- {{cssxref("angle")}}
+- `angle`
   - Preceded by the `from` keyterm, and taking an angle as its value, defines the gradient rotation in clockwise direction.
 - `<position>`
   - Using the same length, order and keyterm values as the [background-position](/reference/properties/background-position) property, the position defines center of the gradient. If omitted, the default value is `center`, meaning the gradient will be centered.
 - `<angular-color-stop>`
-  - A color-stop's {{CSSxRef("&lt;color&gt;")}} value, followed by one or two optional stop positions, (an {{cssxref("angle")}} along the gradient's circumference axis). The last color stop minus the first color-stop angle defines the size of the repeating gradient.
+  - A color-stop's `&lt;color&gt;` value, followed by one or two optional stop positions, (an `angle` along the gradient's circumference axis). The last color stop minus the first color-stop angle defines the size of the repeating gradient.
 - `<color-hint>`
   - An {{Glossary("interpolation")}} hint defining how the gradient progresses between adjacent color stops. The length defines at which point between two color stops the gradient color should reach the midpoint of the color transition. If omitted, the midpoint of the color transition is the midpoint between two color stops.
 
@@ -69,20 +69,20 @@ repeating-conic-gradient(in hsl shorter hue, red, blue 90deg, green 180deg)
 
 ## Description
 
-Example repeating conic gradients include starbursts. The result of the `repeating-conic-gradient()` function is an object of the {{cssxref("gradient")}} data type, which is a special kind of {{cssxref("image")}}.
+Example repeating conic gradients include starbursts. The result of the `repeating-conic-gradient()` function is an object of the `gradient` data type, which is a special kind of `image`.
 
 If neither the first nor the last color stops include a color stop angle greater than 0deg or less than 360 degrees respectively, the conic-gradient will not repeat.
 
 As with any gradient, a repeating-conic gradient has [no intrinsic dimensions](/reference/values/image#description); i.e., it has no natural or preferred size, nor a preferred ratio. Its concrete size will match the size of the element it applies to, or the size the `<image>` is set to if it's set to something other than the element's size.
 
-Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `repeating-conic-gradient()` won't work on {{CSSxRef("background-color")}} and other properties that use the {{CSSxRef("&lt;color&gt;")}} data type.
+Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `repeating-conic-gradient()` won't work on `background-color` and other properties that use the `&lt;color&gt;` data type.
 
 > [!NOTE]
-> To create a conic gradient that does not repeat, make the gradient a full 360 degree rotation, or use the {{cssxref("gradient/conic-gradient", "conic-gradient()")}} function instead.
+> To create a conic gradient that does not repeat, make the gradient a full 360 degree rotation, or use the `conic-gradient()` function instead.
 
 ### Understanding repeating conic gradients
 
-The repeating-conic-gradient syntax is similar to the {{cssxref("gradient/conic-gradient", "conic-gradient()")}} and {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}} syntax. Like the non-repeating conic-gradient, the color-stops are placed around a gradient arc. Like the repeating radial gradient, the size of the repeating section is the first color stop subtracted from the angle of the last color stop.
+The repeating-conic-gradient syntax is similar to the `conic-gradient()` and `repeating-radial-gradient()` syntax. Like the non-repeating conic-gradient, the color-stops are placed around a gradient arc. Like the repeating radial gradient, the size of the repeating section is the first color stop subtracted from the angle of the last color stop.
 
 ![Comparison of the color stops for repeating and non-repeating conic and radial gradients](repeatingconicgradient.png)
 
@@ -110,7 +110,7 @@ The gradient arc is part of the circumference of the gradient. 0 degrees is nort
 
 #### Customizing gradients
 
-By adding more angled color-stop points on the gradient arc, you can create a highly customized transition between multiple colors. A color-stop's position can be explicitly defined by using an {{cssxref("angle")}}. If you don't specify the location of a color stop, it is placed halfway between the one that precedes it and the one that follows it. Like the non-repeating gradient counterpart, if you don't specify an angle for the first or last color stop, the values will be 0deg and 360deg. If you don't declare an angle for either, you'll get a non-repeating conic gradient. If you declare a non 0 or 360degree for the first or last respectively, the gradient will repeat based on that value. For example, if you don't declare an angle for the first color, and declare 10% on the last color stop, the arc will repeat 10 times. Rather, the starting point is the first color stop declared, and the last color stop is the last color stop angle declared. The following two gradients are equivalent:
+By adding more angled color-stop points on the gradient arc, you can create a highly customized transition between multiple colors. A color-stop's position can be explicitly defined by using an `angle`. If you don't specify the location of a color stop, it is placed halfway between the one that precedes it and the one that follows it. Like the non-repeating gradient counterpart, if you don't specify an angle for the first or last color stop, the values will be 0deg and 360deg. If you don't declare an angle for either, you'll get a non-repeating conic gradient. If you declare a non 0 or 360degree for the first or last respectively, the gradient will repeat based on that value. For example, if you don't declare an angle for the first color, and declare 10% on the last color stop, the arc will repeat 10 times. Rather, the starting point is the first color stop declared, and the last color stop is the last color stop angle declared. The following two gradients are equivalent:
 
 ```css
 repeating-conic-gradient(red, orange, yellow, green, blue 50%);
@@ -254,11 +254,11 @@ Please see [Using CSS gradients](/guides/Images/Using_gradients) for more exampl
 ## See also
 
 - [Using CSS gradients](/guides/Images/Using_gradients)
-- Other gradient functions: {{cssxref("gradient/conic-gradient", "conic-gradient()")}}, {{cssxref("gradient/linear-gradient", "linear-gradient()")}}, {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}, {{cssxref("gradient/radial-gradient", "radial-gradient()")}}, {{cssxref("gradient/repeating-radial-gradient", "repeating-radial-gradient()")}}
-- {{cssxref("hue-interpolation-method")}}
-- {{cssxref("color-interpolation-method")}}
-- {{cssxref("image")}}
-- {{cssxref("image/image","image()")}}
-- {{cssxref("element()")}}
-- {{cssxref("image/image-set","image-set()")}}
-- {{cssxref("cross-fade()")}}
+- Other gradient functions: `conic-gradient()`, `linear-gradient()`, `repeating-linear-gradient()`, `radial-gradient()`, `repeating-radial-gradient()`
+- `hue-interpolation-method`
+- `color-interpolation-method`
+- `image`
+- `image()`
+- `element()`
+- `image-set()`
+- `cross-fade()`

@@ -29,7 +29,7 @@ CSS is full of **physical** positioning properties and keywords – `left` and `
 </div>
 ```
 
-This example uses the {{cssxref("left")}} and {{cssxref("right")}} properties; these are just two of the many **{{glossary("physical properties")}}** in CSS. We can also add margins, padding, and borders using physical properties, for example {{cssxref("margin-left")}} and {{cssxref("padding-left")}}. You might also see physical keywords in use, such as when using `text-align: right` to align text to the right.
+This example uses the `left` and `right` properties; these are just two of the many **{{glossary("physical properties")}}** in CSS. We can also add margins, padding, and borders using physical properties, for example `margin-left` and `padding-left`. You might also see physical keywords in use, such as when using `text-align: right` to align text to the right.
 
 We call these keywords and properties _physical_ because they relate to the screen you are looking at. Left is always left, no matter what direction your text is running.
 
@@ -37,7 +37,7 @@ We call these keywords and properties _physical_ because they relate to the scre
 
 Physical properties can cause issues when developing a site that has to work in multiple languages, including languages where the text flows from right to left, or top to bottom. Browsers are designed to correctly display content regardless of the language. Some CSS features can override browser defaults and cause content to display less than optimally.
 
-In this example, the {{cssxref("direction")}} property has been set to {{glossary("rtl")}}, which switches the writing mode from the default for an English language document of `ltr`. We have two paragraphs. These should both flow from right to left because of the `direction` value set on an ancestor element (`<body>`). The first paragraph has {{cssxref("text-align")}} set to `left`, so it aligns with the left of its container. The second paragraph aligns with the right and flows from right to left.
+In this example, the `direction` property has been set to {{glossary("rtl")}}, which switches the writing mode from the default for an English language document of `ltr`. We have two paragraphs. These should both flow from right to left because of the `direction` value set on an ancestor element (`<body>`). The first paragraph has `text-align` set to `left`, so it aligns with the left of its container. The second paragraph aligns with the right and flows from right to left.
 
 ```html hidden
 <p class="left">
@@ -84,11 +84,11 @@ When using logical rather than physical properties, we don't see the world as le
 
 ## CSS writing modes
 
-The [CSS writing modes](/guides/Writing_modes) module specifies how writing modes work in CSS. These features are not just for supporting languages with a different writing mode to English; they can also be used for creative purposes. The examples in this section make use of the {{cssxref("writing-mode")}} property to make changes to the writing mode applied to our grid, demonstrating how logical values work in the process.
+The [CSS writing modes](/guides/Writing_modes) module specifies how writing modes work in CSS. These features are not just for supporting languages with a different writing mode to English; they can also be used for creative purposes. The examples in this section make use of the `writing-mode` property to make changes to the writing mode applied to our grid, demonstrating how logical values work in the process.
 
 ### `writing-mode`
 
-Writing modes are more than just left to right and right to left text, and the `writing-mode` property helps us display text running in other directions. The {{cssxref("writing-mode")}} property can have values of:
+Writing modes are more than just left to right and right to left text, and the `writing-mode` property helps us display text running in other directions. The `writing-mode` property can have values of:
 
 - `horizontal-tb`
 - `vertical-rl`
@@ -233,7 +233,7 @@ If we add `writing-mode: vertical-lr` to the grid container in the previous exam
 
 With the block and inline axis able to change direction, the logical values for the alignment properties start to make more sense.
 
-In this example, we use alignment (the {{cssxref("align-self")}} and {{cssxref("justify-self")}} properties) to align items inside a grid that is set to `writing-mode: vertical-lr`. The `start` and `end` properties work in exactly the same way that they do in the default writing mode, and remain logical in a way that using left and right, top and bottom to align items would not do. This occurs once we've flipped the grid onto the side, like this:
+In this example, we use alignment (the `align-self` and `justify-self` properties) to align items inside a grid that is set to `writing-mode: vertical-lr`. The `start` and `end` properties work in exactly the same way that they do in the default writing mode, and remain logical in a way that using left and right, top and bottom to align items would not do. This occurs once we've flipped the grid onto the side, like this:
 
 ```css hidden
 * {
@@ -362,7 +362,7 @@ In this example, we have a grid laid out in the default `ltr` direction, with th
 
 ### Line-based placement with right to left text
 
-If we add the {{cssxref("direction")}} property with a value of `rtl` to the grid container in the previous example, line 1 is placed on the right-hand side of the grid, and line -1 on the left.
+If we add the `direction` property with a value of `rtl` to the grid container in the previous example, line 1 is placed on the right-hand side of the grid, and line -1 on the left.
 
 ```css hidden
 * {
@@ -424,7 +424,7 @@ If you are switching the direction of your text, either for entire pages or for 
 
 ### The strange order of values in the `grid-area` property
 
-You can use the {{cssxref("grid-area")}} property to specify all four lines of a grid area as one value. When people first encounter this, they are often surprised that the values do not follow the same order as the shorthand for {{cssxref("margin")}} – which runs clockwise: top, right, bottom, left.
+You can use the `grid-area` property to specify all four lines of a grid area as one value. When people first encounter this, they are often surprised that the values do not follow the same order as the shorthand for `margin` – which runs clockwise: top, right, bottom, left.
 
 The order of `grid-area` values is:
 

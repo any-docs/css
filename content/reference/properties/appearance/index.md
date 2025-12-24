@@ -73,7 +73,7 @@ The `appearance` property can be applied to all elements and pseudo-elements, bu
   - Sets interactive widgets to render with their _OS-native_ appearance. Behaves as `none` on elements with no OS-native styling.
 
 - `base-select`
-  - Only relevant to the {{htmlelement("select")}} element and {{cssxref("::picker()", "::picker(select)")}} pseudo-element, allowing them to be styled.
+  - Only relevant to the {{htmlelement("select")}} element and `::picker(select)` pseudo-element, allowing them to be styled.
 
 - `<compat-special>`
   - Has an effect similar to `auto` on certain elements.
@@ -93,7 +93,7 @@ The `appearance` property can be applied to all elements and pseudo-elements, bu
 Some non-standard values are also supported in some browsers:
 
 - `slider-vertical`
-  - Makes the slider vertical when applied to `<input type="range">` elements. To [create a vertical slider](/guides/Writing_modes/Vertical_controls) you should instead set the {{cssxref("writing-mode")}} to `vertical-lr` and the {{cssxref("direction")}} to `rtl`.
+  - Makes the slider vertical when applied to `<input type="range">` elements. To [create a vertical slider](/guides/Writing_modes/Vertical_controls) you should instead set the `writing-mode` to `vertical-lr` and the `direction` to `rtl`.
 
 - `-apple-pay-button`
   - Displays the Apple Pay logo when set on a {{htmlelement("button")}}, {{htmlelement("a")}}, or {{htmlelement("input")}} element of type `button` or `reset`.
@@ -110,7 +110,7 @@ Some widgets disappear completely when set to `appearance: none`. The hidden con
 
 Because `none` can cause a widget to be hidden, the `base` value is being added to provide widgets with a base appearance. When supported, the `base` value will ensure widgets maintain their native appearance while enabling CSS to be used to change a widget's styles that are not changeable by default. Unlike `none`, which can make radio buttons and checkboxes disappear, `base` gives the widget a primitive appearance with default native styles that are usable and interoperable, as well as enabling a good degree of customization via CSS. While this `base` value is not yet supported, the many `<compat-auto>` values provide similar functionality but are type-specific and not global.
 
-The `base-select` value, which is relevant only to the {{htmlelement("select")}} element and {{cssxref("::picker()", "::picker(select)")}} pseudo-element, enables [styling `<select>` elements and the select picker](#setting_the_appearance_of_a_select) (which contains the `<option>` elements). The picker is rendered in the top layer, similar to a popover. When `base-select` is set, the picker can be positioned relative to the select (or other elements) using [CSS anchor positioning](/guides/Anchor_positioning) features. In addition, the `base-select` value causes the `<select>` not to render outside the browser pane or to trigger built-in mobile operating system components. It is also no longer sized based on the width of the widest `<option>`.
+The `base-select` value, which is relevant only to the {{htmlelement("select")}} element and `::picker(select)` pseudo-element, enables [styling `<select>` elements and the select picker](#setting_the_appearance_of_a_select) (which contains the `<option>` elements). The picker is rendered in the top layer, similar to a popover. When `base-select` is set, the picker can be positioned relative to the select (or other elements) using [CSS anchor positioning](/guides/Anchor_positioning) features. In addition, the `base-select` value causes the `<select>` not to render outside the browser pane or to trigger built-in mobile operating system components. It is also no longer sized based on the width of the widest `<option>`.
 
 ### Prefixed non-standard values
 
@@ -285,7 +285,7 @@ label {
 }
 ```
 
-We apply styles to both {{htmlelement("input")}} elements of type `checkbox`; these styles create a red square if the element is stylable. We set `appearance: none` on the {{cssxref(":checked")}} UI state for all inputs (`checkbox` and `radio`), as well as to elements with the `.none` class. This removes all the style of the radio button and checkbox, other than the margins, and allows any set styles to be applied. There are no alternative styles provided for the radio buttons or `<select>` elements for when `none` is set.
+We apply styles to both {{htmlelement("input")}} elements of type `checkbox`; these styles create a red square if the element is stylable. We set `appearance: none` on the `:checked` UI state for all inputs (`checkbox` and `radio`), as well as to elements with the `.none` class. This removes all the style of the radio button and checkbox, other than the margins, and allows any set styles to be applied. There are no alternative styles provided for the radio buttons or `<select>` elements for when `none` is set.
 
 ```css
 [type="checkbox"] {
@@ -345,7 +345,7 @@ We include three `<select>` elements, with the same multiple {{htmlelement("opti
 
 #### CSS
 
-We select the pickers of all the `<select>` elements using the {{cssxref("::picker()")}} pseudo-element with the `select` parameter. We set the `appearance` value of all the pickers and one `<select>` element to `base-select`. We set the last `<select>` to `menulist-button`. The first `<select>` defaults to the `auto` state:
+We select the pickers of all the `<select>` elements using the `::picker()` pseudo-element with the `select` parameter. We set the `appearance` value of all the pickers and one `<select>` element to `base-select`. We set the last `<select>` to `menulist-button`. The first `<select>` defaults to the `auto` state:
 
 ```css
 .baseSelect,
@@ -363,7 +363,7 @@ label {
 }
 ```
 
-We set values for the `<select>` and pickers' {{cssxref("background-color")}} and {{cssxref("border")}} properties to demonstrate the effects of the `appearance` values:
+We set values for the `<select>` and pickers' `background-color` and `border` properties to demonstrate the effects of the `appearance` values:
 
 ```css
 select {
@@ -381,7 +381,7 @@ select {
 
 {{EmbedLiveSample("Setting the appearance of a select", 1050, 80)}}
 
-While the {{cssxref("background-color")}} and {{cssxref("border")}} styles are defined on all the `<select>` elements and their pickers, the `::picker(select)` styles only effect the picker where both the select and the picker have the `appearance` property set to `base-select`. The first and third selects look the same because `menulist-button` is a compatibility keyword.
+While the `background-color` and `border` styles are defined on all the `<select>` elements and their pickers, the `::picker(select)` styles only effect the picker where both the select and the picker have the `appearance` property set to `base-select`. The first and third selects look the same because `menulist-button` is a compatibility keyword.
 
 Notice that, by default, the inline-size of the `<select>` is generally the inline-size of the `<option>` with the most text, and that the drop-down picker appears over the top of the rendered page when opened, making it not constrained by the surrounding page and therefore fully visible. These statements are no longer true when `base-select` is set.
 

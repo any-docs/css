@@ -28,12 +28,12 @@ cx: unset;
 
 ### Values
 
-The {{cssxref("length")}} and {{cssxref("percentage")}} values denote the horizontal center of the circle or ellipse.
+The `length` and `percentage` values denote the horizontal center of the circle or ellipse.
 
-- {{cssxref("length")}}
-  - As an absolute or relative length, it can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Negative values are invalid.
+- `length`
+  - As an absolute or relative length, it can be expressed in any unit allowed by the CSS `&lt;length&gt;` data type. Negative values are invalid.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - Percentages refer to the width of the current SVG viewport.
 
 ## Formal definition
@@ -65,7 +65,7 @@ We include two identical `<circle>` and two identical `<ellipse>` elements in an
 
 #### CSS
 
-With CSS, we style only the first circle and first ellipse, allowing their twin shapes to use default styles (with ({{cssxref("fill")}} defaulting to black). We use the `cx` property to override the value of the SVG {{SVGAttr("cx")}} attribute and also give it a `fill` and {{cssxref("stroke")}} to differentiate the first shapes in each pair from their twin. The browser renders SVG images as `300px` wide and `150px` tall by default.
+With CSS, we style only the first circle and first ellipse, allowing their twin shapes to use default styles (with (`fill` defaulting to black). We use the `cx` property to override the value of the SVG {{SVGAttr("cx")}} attribute and also give it a `fill` and `stroke` to differentiate the first shapes in each pair from their twin. The browser renders SVG images as `300px` wide and `150px` tall by default.
 
 ```css
 svg {
@@ -145,10 +145,10 @@ When using percentage values for `cx`, the values are relative to the width of t
 ## See also
 
 - SVG {{SVGAttr("cx")}} attribute
-- Geometry properties: `cx`, {{cssxref("cy")}}, {{cssxref("r")}}, {{cssxref("rx")}}, {{cssxref("ry")}}, {{cssxref("x")}}, {{cssxref("y")}}, {{cssxref("width")}}, {{cssxref("height")}}
-- {{cssxref("fill")}}
-- {{cssxref("stroke")}}
-- {{cssxref("paint-order")}}
-- {{cssxref("border-radius")}} shorthand property
-- {{cssxref("gradient/radial-gradient", "radial-gradient")}}
-- {{cssxref("basic-shape")}} data type
+- Geometry properties: `cx`, `cy`, `r`, `rx`, `ry`, `x`, `y`, `width`, `height`
+- `fill`
+- `stroke`
+- `paint-order`
+- `border-radius` shorthand property
+- `radial-gradient`
+- `basic-shape` data type

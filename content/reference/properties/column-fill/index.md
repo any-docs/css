@@ -126,5 +126,5 @@ p.fill-balance {
 ## See also
 
 - [Learn: Multiple-column Layout](/en-US/docs/Learn_web_development/Core/CSS_layout/Multiple-column_Layout)
-- {{CSSXref("column-count")}}
-- {{CSSXref("column-width")}}
+- `column-count`
+- `column-width`

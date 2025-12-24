@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-In this guide, we explore the three properties that control the size and flexibility of flex items along the main axis: {{CSSxRef("flex-grow")}}, {{CSSxRef("flex-shrink")}}, and {{CSSxRef("flex-basis")}}. Fully understanding how these properties work with growing and shrinking items is the key to mastering [CSS flexible box layout](/guides/Flexible_box_layout).
+In this guide, we explore the three properties that control the size and flexibility of flex items along the main axis: `flex-grow`, `flex-shrink`, and `flex-basis`. Fully understanding how these properties work with growing and shrinking items is the key to mastering [CSS flexible box layout](/guides/Flexible_box_layout).
 
 ## A first look
 
@@ -16,7 +16,7 @@ Our three properties control the following aspects of a flex item's flexibility:
 - `flex-shrink`: How much negative free space can be removed from this item?
 - `flex-basis`: What is the size of the item before growing and shrinking happens?
 
-The properties are usually expressed using the shorthand {{CSSxRef("flex")}} property. The following code would set the `flex-grow` property to `2`, `flex-shrink` to `1` and `flex-basis` to `auto`.
+The properties are usually expressed using the shorthand `flex` property. The following code would set the `flex-grow` property to `2`, `flex-shrink` to `1` and `flex-basis` to `auto`.
 
 ```css
 .item {
@@ -32,7 +32,7 @@ To understand the `flex` properties, it is helpful to know the _natural size_ of
 
 To determine how much space is available to lay out flex items, the browser needs to know how big the item is to start with. How is this calculated for items that don't have a width or a height applied using an absolute length unit?
 
-In CSS, the {{CSSxRef("min-content")}} and {{CSSxRef("max-content")}} keywords can be used in place of a {{cssxref("length")}} unit. Generally, `min-content` is the smallest size an element can be while still fitting the longest word, and `max-content` is the size the element would need to be to fit all the content without wrapping.
+In CSS, the `min-content` and `max-content` keywords can be used in place of a `length` unit. Generally, `min-content` is the smallest size an element can be while still fitting the longest word, and `max-content` is the size the element would need to be to fit all the content without wrapping.
 
 The example below contains two paragraph elements with different strings of text. The first paragraph has a width of `min-content`. Notice that the text has used all of the soft wrapping opportunities available to it, becoming as small as possible without overflowing. This is the `min-content` size of that string. Essentially, the longest word in the string is dictating the size.
 
@@ -66,7 +66,7 @@ Remember this behavior and what effects `min-content` and `max-content` have as 
 
 ### Positive and negative free space
 
-We also need to understand the concept of **positive and negative free space**. When a flex container has _positive free space_, it has more space than required to display the flex items inside the container. For example, a `500px`-wide container, with {{CSSxRef("flex-direction")}} set to `row` and containing three `100px`-wide flex items has `200px` of positive free space. This positive free space can be distributed between the items if filling the container is desired.
+We also need to understand the concept of **positive and negative free space**. When a flex container has _positive free space_, it has more space than required to display the flex items inside the container. For example, a `500px`-wide container, with `flex-direction` set to `row` and containing three `100px`-wide flex items has `200px` of positive free space. This positive free space can be distributed between the items if filling the container is desired.
 
 ![Image showing space left over after items have been displayed.](basics7.png)
 
@@ -76,13 +76,13 @@ A flex container has _negative free space_ when the combined value of the natura
 
 We need to understand this distribution of positive free space and removal of negative free space to learn about the property components of the `flex` shorthand.
 
-In the following examples, the {{CSSxRef("flex-direction")}} is set to `row`, so the size of items will be determined by their width. We will be calculating the positive and negative free space by comparing the total width of all the items with the container's width. You could also try out each example with `flex-direction: column`. The main axis would then be the column, and you would then compare the height of the items and their container to calculate the positive and negative free space.
+In the following examples, the `flex-direction` is set to `row`, so the size of items will be determined by their width. We will be calculating the positive and negative free space by comparing the total width of all the items with the container's width. You could also try out each example with `flex-direction: column`. The main axis would then be the column, and you would then compare the height of the items and their container to calculate the positive and negative free space.
 
 ## The `flex-basis` property
 
-The {{CSSxRef("flex-basis")}} property specifies the initial size of a flex item before any distribution of the positive or negative free space happens. The initial value for this property is `auto`. This property accepts the same values as the {{cssxref("width")}} and {{cssxref("height")}} properties, and it also accepts the `content` keyword.
+The `flex-basis` property specifies the initial size of a flex item before any distribution of the positive or negative free space happens. The initial value for this property is `auto`. This property accepts the same values as the `width` and `height` properties, and it also accepts the `content` keyword.
 
-If `flex-basis` is set to `auto`, the initial size of the item is the {{cssxref("length-percentage")}} size of the main size, if any was set. For example, if the item has `width: 200px` set, then `200px` would be the `flex-basis` for this item. Percentage values are relative to the flex container's inner main size. If `width: 50%` were set, the `flex-basis` for this item would be half of the container's content-box width. If no such size is set, meaning the item is auto-sized, then `auto` resolves to the size of its content (see the [`min-` and `max-content` sizing](#flex_item_sizing) discussion above), meaning the `flex-basis` is the item's `max-content` size.
+If `flex-basis` is set to `auto`, the initial size of the item is the `length-percentage` size of the main size, if any was set. For example, if the item has `width: 200px` set, then `200px` would be the `flex-basis` for this item. Percentage values are relative to the flex container's inner main size. If `width: 50%` were set, the `flex-basis` for this item would be half of the container's content-box width. If no such size is set, meaning the item is auto-sized, then `auto` resolves to the size of its content (see the [`min-` and `max-content` sizing](#flex_item_sizing) discussion above), meaning the `flex-basis` is the item's `max-content` size.
 
 This example contains three inflexible flex items, with both `flex-grow` and `flex-shrink` set to `0`. The first item, which has an explicit width of `150px`, takes a `flex-basis` of `150px`, whereas the other two items have no width set and so are sized according to their content width or `max-content`.
 
@@ -115,13 +115,13 @@ This example contains three inflexible flex items, with both `flex-grow` and `fl
 
 {{EmbedLiveSample("flex-basis")}}
 
-In addition to the `auto` keyword and any other valid {{cssxref("width")}} value, you can use the `content` keyword as the `flex-basis`. This results in the `flex-basis` being based on the content size, even if there is a `width` set on the item. This creates the same effect as removing any width set and using `auto` as the `flex-basis`. While similar to setting `max-content`, the `content` value enables any {{cssxref("aspect-ratio")}} to be calculated based on the cross-axis size.
+In addition to the `auto` keyword and any other valid `width` value, you can use the `content` keyword as the `flex-basis`. This results in the `flex-basis` being based on the content size, even if there is a `width` set on the item. This creates the same effect as removing any width set and using `auto` as the `flex-basis`. While similar to setting `max-content`, the `content` value enables any `aspect-ratio` to be calculated based on the cross-axis size.
 
 To completely ignore the size of the flex item during space distribution, set `flex-basis` to `0` and set a non-zero `flex-grow` value. Let's learn `flex-grow` before looking at this value in action.
 
 ## The `flex-grow` property
 
-The {{CSSxRef("flex-grow")}} property specifies the **flex grow factor**, which determines how much a flex item will grow relative to the other flex items in the flex container when positive free space is distributed.
+The `flex-grow` property specifies the **flex grow factor**, which determines how much a flex item will grow relative to the other flex items in the flex container when positive free space is distributed.
 
 If all items have the same `flex-grow` factor, the positive free space will be distributed evenly among them. For this scenario, common practice is to set `flex-grow: 1`, but you could give them any value, such as `88`, `100`, or `1.2`; it is a ratio. If the factor is the same for all the flex items in the container and there is positive free space, that space will be distributed equally.
 
@@ -230,7 +230,7 @@ Remember that you can use any positive value here. It is the ratio between the i
 
 ## The `flex-shrink` property
 
-The {{CSSxRef("flex-shrink")}} property specifies the **flex shrink factor**, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed.
+The `flex-shrink` property specifies the **flex shrink factor**, which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when negative free space is distributed.
 
 This property deals with situations where the combined `flex-basis` value of the flex items is too large to fit in the flex container and would otherwise overflow. As long as an item's `flex-shrink` is a positive value, the item will shrink to not overflow the container.
 
@@ -366,6 +366,6 @@ Items can grow only if there is positive free space, and they won't shrink unles
 
 ### What are the other ways to distribute space?
 
-If you do not want space added to the items, remember that you can manage free space between or around items using the alignment properties described in the guide for aligning items in a flex container. The {{CSSxRef("justify-content")}} property will enable the distribution of free space between or around items. You can also use auto margins on flex items to absorb space and create gaps between items.
+If you do not want space added to the items, remember that you can manage free space between or around items using the alignment properties described in the guide for aligning items in a flex container. The `justify-content` property will enable the distribution of free space between or around items. You can also use auto margins on flex items to absorb space and create gaps between items.
 
 With all these flex properties available to you, you will find that most layout tasks are possible, although it might take a little bit of experimentation at first.

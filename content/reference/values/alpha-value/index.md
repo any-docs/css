@@ -6,11 +6,11 @@ spec-urls: https://drafts.csswg.org/css-color/#typedef-color-alpha-value
 sidebar: cssref
 ---
 
-The **`<alpha-value>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a value that can be either a {{cssxref("&lt;number&gt;")}} or a {{cssxref("&lt;percentage&gt;")}}, specifying the **{{Glossary("alpha", "alpha channel")}}** or **transparency** of a color.
+The **`<alpha-value>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a value that can be either a `&lt;number&gt;` or a `&lt;percentage&gt;`, specifying the **{{Glossary("alpha", "alpha channel")}}** or **transparency** of a color.
 
 ## Syntax
 
-The value of an `<alpha-value>` is given as either a {{cssxref("number")}} or a {{cssxref("percentage")}}.
+The value of an `<alpha-value>` is given as either a `number` or a `percentage`.
 
 If given as a number, the useful range is 0 (fully transparent) to 1.0 (fully opaque), with decimal values in between; that is, 0.5 indicates that half of the foreground color is used and half of the background color is used. Values outside the range of 0 to 1 are permitted, but are [clamped](<https://en.wikipedia.org/wiki/Clamping_(graphics)>) to lie within the range 0 to 1.
 
@@ -55,4 +55,4 @@ shape-image-threshold: 0.7;
 - [Learn: Fundamental text and font styling](/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
 - [CSS data types](/reference/values/Data_types)
 - [CSS Color](/guides/Colors)
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`

@@ -9,7 +9,7 @@ sidebar: cssref
 The **`overflow-inline`** [CSS](/en-US/docs/Web/CSS) property sets what shows when content overflows the inline start and end edges of a box. This may be nothing, a scroll bar, or the overflow content.
 
 > [!NOTE]
-> The `overflow-inline` property maps to {{Cssxref("overflow-y")}} or {{Cssxref("overflow-x")}} depending on the writing mode of the document.
+> The `overflow-inline` property maps to `overflow-y` or `overflow-x` depending on the writing mode of the document.
 
 ## Syntax
 
@@ -29,7 +29,7 @@ overflow-inline: revert-layer;
 overflow-inline: unset;
 ```
 
-The `overflow-inline` property is specified as a single {{CSSXref("overflow_value", "&lt;overflow&gt;")}} keyword value.
+The `overflow-inline` property is specified as a single `&lt;overflow&gt;` keyword value.
 
 ### Values
 
@@ -38,7 +38,7 @@ The `overflow-inline` property is specified as a single {{CSSXref("overflow_valu
 - `hidden`
   - Content is clipped if necessary to fit the inline dimension in the padding box. No scrollbars are provided.
 - `clip`
-  - Overflow content is clipped at the element's overflow clip edge that is defined using the {{CSSXref("overflow-clip-margin")}} property.
+  - Overflow content is clipped at the element's overflow clip edge that is defined using the `overflow-clip-margin` property.
 - `scroll`
   - Content is clipped if necessary to fit in the padding box in the inline dimension. Browsers display scrollbars whether or not any content is actually clipped. (This prevents scrollbars from appearing or disappearing when the content changes.) Printers may still print overflowing content.
 - `auto`
@@ -132,7 +132,7 @@ div {
 
 ## See also
 
-- {{cssxref("clip")}}, {{cssxref("display")}}, {{cssxref("overflow")}}, {{cssxref("overflow-block")}}, {{cssxref("overflow-clip-margin")}}, {{cssxref("overflow-x")}}, {{cssxref("overflow-y")}}, {{cssxref("text-overflow")}}, {{cssxref("white-space")}}
+- `clip`, `display`, `overflow`, `overflow-block`, `overflow-clip-margin`, `overflow-x`, `overflow-y`, `text-overflow`, `white-space`
 - [CSS overflow](/guides/Overflow) module
 - [CSS logical properties](/guides/Logical_properties_and_values)
 - [CSS writing modes](/guides/Writing_modes)

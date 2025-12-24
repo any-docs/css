@@ -5,13 +5,13 @@ page-type: guide
 sidebar: cssref
 ---
 
-The [CSS environment variables module](/guides/Environment_variables) introduces the concept of environment variables in CSS and defines the {{cssxref("env")}} function to enable using environment variables. In this guide, we look at [what environment variables are](#what_are_environment_variables), the [environment variables defined by the browser](#browser-defined_environment_variables), and [how to use environment variables](#using_environment_variables_with_env_example) with [the `env()` function](#the_env_function).
+The [CSS environment variables module](/guides/Environment_variables) introduces the concept of environment variables in CSS and defines the `env` function to enable using environment variables. In this guide, we look at [what environment variables are](#what_are_environment_variables), the [environment variables defined by the browser](#browser-defined_environment_variables), and [how to use environment variables](#using_environment_variables_with_env_example) with [the `env()` function](#the_env_function).
 
 ## What are environment variables?
 
 CSS environment variables are global variables; globally scoped to the entire document. They are defined by the user agent. Environment variables are special values provided by the browser or operating system that help your styles adapt to the user's device or context. They are accessed using the `env()` function.
 
-Environment variables work similarly to [custom properties](/reference/properties/--*) and the {{cssxref("var()")}} function, but are globally defined and scoped. This means they are always scoped to the entire document, unlike custom properties, which are scoped to elements. In addition, environment variables are read-only, whereas custom properties are mutable.
+Environment variables work similarly to [custom properties](/reference/properties/--*) and the `var()` function, but are globally defined and scoped. This means they are always scoped to the entire document, unlike custom properties, which are scoped to elements. In addition, environment variables are read-only, whereas custom properties are mutable.
 
 Similar to custom properties, environment variables are case-sensitive. Unlike custom properties, which cannot be used outside of declarations, the `env()` function can be used in place of any part of a property value, or any part of a descriptor (for example, in [Media query rules](/en-US/docs/Web/CSS/Reference/At-rules/@media)).
 
@@ -32,7 +32,7 @@ Common issues that can be solved by using environment variables include:
 The CSS environment variables specification defines a few case-sensitive variables, including:
 
 - `preferred-text-scale`
-  - The `preferred-text-scale` environment variable represents the user's preferred text scale factor. This is the adjustment made to the "default" font size of the operating system or user agent. On devices and browsers where {{cssxref("text-size-adjust")}} has an effect, this is the scale factor applied by `text-size-adjust: auto`. For example, if `text-size-adjust: auto` would cause the text size to double, then `env(preferred-text-scale)` would resolve to `2`.
+  - The `preferred-text-scale` environment variable represents the user's preferred text scale factor. This is the adjustment made to the "default" font size of the operating system or user agent. On devices and browsers where `text-size-adjust` has an effect, this is the scale factor applied by `text-size-adjust: auto`. For example, if `text-size-adjust: auto` would cause the text size to double, then `env(preferred-text-scale)` would resolve to `2`.
 
 - `safe-area-inset-*`
   - The four safe area inset environment variables - `safe-area-inset-top`, `safe-area-inset-right`, `safe-area-inset-bottom`, and `safe-area-inset-left` - define a rectangular safe area by its top, right, bottom, and left insets from the edge of the viewport. It is safe to place content inside this area without having it cut off by the shape of a non‑rectangular display. For rectangular, unobstructed viewports, such as regular desktop and laptop monitors, these four values are all equal to `0`. For non-rectangular displays — including rounded-corner devices with full-size screens and rounded or [round-display](/guides/Round_display) smart watches — these four values, set by the user agent, form a rectangle such that all content inside the rectangle is visible and unobstructed.
@@ -45,19 +45,19 @@ The CSS environment variables specification defines a few case-sensitive variabl
 
 Other specifications define additional environment variables.
 
-The [Window Controls Overlay API](/en-US/docs/Web/API/Window_Controls_Overlay_API) defines the {{domxref("WindowControlsOverlay")}} interface, which exposes information about the geometry of the title bar area in [progressive web applications (PWAs)](/en-US/docs/Glossary/Progressive_web_apps) installed on desktop devices. When using the `window-controls-overlay` [display_override](/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display_override) value, the following environment variables are defined:
+The [Window Controls Overlay API](/en-US/docs/Web/API/Window_Controls_Overlay_API) defines the `WindowControlsOverlay` interface, which exposes information about the geometry of the title bar area in [progressive web applications (PWAs)](/en-US/docs/Glossary/Progressive_web_apps) installed on desktop devices. When using the `window-controls-overlay` [display_override](/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display_override) value, the following environment variables are defined:
 
 - `titlebar-area-*`
   - The `titlebar-area-x`, `titlebar-area-y`, `titlebar-area-width`, and `titlebar-area-height` variables define the area that would generally be occupied by the title bar in an installed web application running on a desktop environment. Use the `titlebar-area-*` variables to ensure content doesn't overlap with the window control buttons (that is, minimize, maximize, and close).
 
 - `keyboard-inset-*`
-  - The `keyboard-inset-top`, `keyboard-inset-right`, `keyboard-inset-bottom`, `keyboard-inset-left`, `keyboard-inset-width`, and `keyboard-inset-height` variables provide information about the on-screen virtual keyboard's position and size, specifically its top, right, bottom, and left insets from the edge of the viewport (the width and height insets are calculated from the other insets). To learn more, see the {{domxref("VirtualKeyboard API", "VirtualKeyboard API", "", "nocode")}}.
+  - The `keyboard-inset-top`, `keyboard-inset-right`, `keyboard-inset-bottom`, `keyboard-inset-left`, `keyboard-inset-width`, and `keyboard-inset-height` variables provide information about the on-screen virtual keyboard's position and size, specifically its top, right, bottom, and left insets from the edge of the viewport (the width and height insets are calculated from the other insets). To learn more, see the `VirtualKeyboard API", "VirtualKeyboard API", "", "nocode")}}.
 
 You may have noticed that all the previous variable names include the physical terms of left, right, top, bottom, height, and width. Logical equivalents are not needed because the variable names refer to the physical properties of the device hardware rather than the displayed website.
 
 ## The `env()` function
 
-The {{cssxref("env")}} function is used to insert the value of an environment variable into a CSS context. The `env()` function can be used in place of any part of a value in any property on any element, or any part of a value in any descriptor on any at-rule, including within custom property values. It can be used wherever a CSS value is allowed.
+The `env` function is used to insert the value of an environment variable into a CSS context. The `env()` function can be used in place of any part of a value in any property on any element, or any part of a value in any descriptor on any at-rule, including within custom property values. It can be used wherever a CSS value is allowed.
 
 The basic syntax is as follows:
 
@@ -74,7 +74,7 @@ margin: env(safe-area-inset-top, 0) env(safe-area-inset-right, auto)
   env(safe-area-inset-bottom, 3em) env(safe-area-inset-left, auto);
 ```
 
-The first argument is the [name of the environment variable](#browser-defined_environment_variables) to be substituted. The argument after the comma, if provided, is the fallback value, which is used if the environment variable referenced in the first argument does not exist. In these examples, if the `preferred-text-scale` environment variable doesn't exist in a browser, the {{cssxref("line-height")}} will be set to `2`. And, if the browser doesn't have `safe-area-inset-*` values, the {{cssxref("margin")}} will be set to `margin: 0 auto 3em auto`.
+The first argument is the [name of the environment variable](#browser-defined_environment_variables) to be substituted. The argument after the comma, if provided, is the fallback value, which is used if the environment variable referenced in the first argument does not exist. In these examples, if the `preferred-text-scale` environment variable doesn't exist in a browser, the `line-height` will be set to `2`. And, if the browser doesn't have `safe-area-inset-*` values, the `margin` will be set to `margin: 0 auto 3em auto`.
 
 The syntax of the fallback is similar to the custom properties syntax in that it allows for multiple commas. Anything between the first comma and the end of the function is considered the fallback value. However, if the property value or descriptor doesn't support commas, the value is not valid.
 
@@ -109,7 +109,7 @@ main {
 }
 ```
 
-The `<footer>` is positioned to be stuck to the bottom of the viewport. The declaration [`position: sticky`](/reference/properties/position#sticky) offsets the element relative to the `<body>` (its scrolling ancestor and [containing block](/guides/Display/Containing_block)), based on the {{cssxref("bottom")}} value of `0`. We give the `<footer>` a {{cssxref("padding")}} value of `1em` on all four sides. We then add the `safe-area-inset-bottom` value to the `1em` of bottom padding, with a fallback of `1em`.
+The `<footer>` is positioned to be stuck to the bottom of the viewport. The declaration [`position: sticky`](/reference/properties/position#sticky) offsets the element relative to the `<body>` (its scrolling ancestor and [containing block](/guides/Display/Containing_block)), based on the `bottom` value of `0`. We give the `<footer>` a `padding` value of `1em` on all four sides. We then add the `safe-area-inset-bottom` value to the `1em` of bottom padding, with a fallback of `1em`.
 
 ```css
 footer {
@@ -152,7 +152,7 @@ In the future, we may see support for developer-defined environment variables, b
 
 ## See also
 
-- {{cssxref("var")}}
+- `var`
 - [`@media` `shape` descriptor](/en-US/docs/Web/CSS/Reference/At-rules/@media/shape)
 - [CSS environment_variables](/guides/Environment_variables) module
 - [CSS round display](/guides/Round_display) module

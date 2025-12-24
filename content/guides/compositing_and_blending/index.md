@@ -88,18 +88,18 @@ Click "Play" in the example above to see or edit the code for the animation in t
 
 ### Properties
 
-- {{cssxref("background-blend-mode")}}
-- {{cssxref("isolation")}}
-- {{cssxref("mix-blend-mode")}}
+- `background-blend-mode`
+- `isolation`
+- `mix-blend-mode`
 
 ## Related concepts
 
-- {{cssxref("blend-mode")}} data type
-- {{cssxref("backdrop-filter")}} CSS property
-- {{cssxref("filter")}} CSS property
-- {{cssxref("mask-composite")}} CSS property
-- {{cssxref("background-color")}} CSS property
-- {{cssxref("background-image")}} CSS property
+- `blend-mode` data type
+- `backdrop-filter` CSS property
+- `filter` CSS property
+- `mask-composite` CSS property
+- `background-color` CSS property
+- `background-image` CSS property
 - {{glossary("stacking context")}} glossary term
 - {{ SVGElement("feBlend")}} SVG filter primitive
 - {{ SVGElement("feComposite")}} SVG filter primitive

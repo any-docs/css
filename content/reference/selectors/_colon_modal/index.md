@@ -65,7 +65,7 @@ showNumber.addEventListener("click", () => {
 Examples of elements that will prevent user interaction with the rest of the page and will be selected by the `:modal` pseudo-class include:
 
 - The [`dialog`](/en-US/docs/Web/HTML/Reference/Elements/dialog) element opened with the `showModal()` API.
-- The element selected by the {{cssxref(":fullscreen")}} pseudo-class when opened with the `requestFullscreen()` API.
+- The element selected by the `:fullscreen` pseudo-class when opened with the `requestFullscreen()` API.
 
 ## Examples
 
@@ -158,5 +158,5 @@ favDialog.addEventListener("close", () => {
 ## See also
 
 - [`dialog`](/en-US/docs/Web/HTML/Reference/Elements/dialog) element
-- Other element display state pseudo-classes: {{CSSxRef(":fullscreen")}} and {{CSSxRef(":picture-in-picture")}}
+- Other element display state pseudo-classes: `:fullscreen` and `:picture-in-picture`
 - Complete list of [pseudo-classes](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes)

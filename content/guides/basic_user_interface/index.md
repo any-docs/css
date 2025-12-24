@@ -75,9 +75,9 @@ textarea:nth-of-type(3) {
 
 {{EmbedLiveSample("basicUI", "", "300px")}}
 
-The CSS {{CSSxRef("outline")}} and {{CSSxRef("outline-offset")}} properties were used to provide feedback to users on which element currently has focus. An {{CSSxRef("accent-color")}} provides a theme color to all the form controls. The caret that appears when the text is edited has the same color thanks to the {{CSSxRef("caret-color")}} property. These can all be considered UI improvements.
+The CSS `outline` and `outline-offset` properties were used to provide feedback to users on which element currently has focus. An `accent-color` provides a theme color to all the form controls. The caret that appears when the text is edited has the same color thanks to the `caret-color` property. These can all be considered UI improvements.
 
-Some features harm usability. The {{CSSxRef("cursor")}} property was used to change cursors from the browser default, which is confusing. The {{CSSxRef("resize")}} property prevents the second {{HTMLElement("textarea")}} from being resizable while the {{CSSxRef("pointer-events")}} property prevents the third `<textarea>` from receiving click events. It is still focusable using the keyboard.
+Some features harm usability. The `cursor` property was used to change cursors from the browser default, which is confusing. The `resize` property prevents the second {{HTMLElement("textarea")}} from being resizable while the `pointer-events` property prevents the third `<textarea>` from receiving click events. It is still focusable using the keyboard.
 
 Click "Play" in the example above to see or edit the code for the animation in the MDN Playground.
 
@@ -85,37 +85,37 @@ Click "Play" in the example above to see or edit the code for the animation in t
 
 ### Properties
 
-- {{CSSxRef("accent-color")}}
-- {{CSSxRef("appearance")}}
-- {{CSSxRef("caret-animation")}}
-- {{CSSxRef("caret-color")}}
-- {{CSSxRef("caret-shape")}}
-- {{CSSxRef("cursor")}}
-- {{CSSxRef("interest-delay")}}, shorthand for:
-  - {{CSSxRef("interest-delay-start")}}
-  - {{CSSxRef("interest-delay-end")}}
-- {{CSSxRef("outline")}}, shorthand for:
-  - {{CSSxRef("outline-color")}}
-  - {{CSSxRef("outline-style")}}
-  - {{CSSxRef("outline-width")}}
-- {{CSSxRef("outline-offset")}}
-- {{CSSxRef("pointer-events")}}
-- {{CSSxRef("resize")}}
-- {{CSSxRef("user-select")}}
+- `accent-color`
+- `appearance`
+- `caret-animation`
+- `caret-color`
+- `caret-shape`
+- `cursor`
+- `interest-delay`, shorthand for:
+  - `interest-delay-start`
+  - `interest-delay-end`
+- `outline`, shorthand for:
+  - `outline-color`
+  - `outline-style`
+  - `outline-width`
+- `outline-offset`
+- `pointer-events`
+- `resize`
+- `user-select`
 
-The CSS basic user interface module also defines the {{CSSxRef("caret")}}, `nav-down`, `nav-left`, `nav-right`, and `nav-up` properties. Currently, no browsers support these features.
+The CSS basic user interface module also defines the `caret`, `nav-down`, `nav-left`, `nav-right`, and `nav-up` properties. Currently, no browsers support these features.
 
 ## Guides
 
 - [Learn forms: advanced form styling](/en-US/docs/Learn_web_development/Extensions/Forms/Advanced_form_styling)
-  - Explains how {{CSSxRef("appearance")}} can be used to style form controls.
+  - Explains how `appearance` can be used to style form controls.
 
 ## Related concepts
 
-- CSS {{cssxref("cursor")}} property
+- CSS `cursor` property
 - SVG [`cursor`](/en-US/docs/Web/SVG/Reference/Attribute/cursor) attribute
-- CSS {{CSSxRef(":focus")}}, {{CSSxRef(":focus-within")}}, and {{CSSxRef(":focus-visible")}} pseudoclasses
-- {{DOMXref("CaretPosition")}} Interface
+- CSS `:focus`, `:focus-within`, and `:focus-visible` pseudoclasses
+- `CaretPosition` Interface
 
 ## Specifications
 

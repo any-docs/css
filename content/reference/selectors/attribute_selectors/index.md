@@ -59,9 +59,9 @@ a[class~="logo"] {
 ### Values
 
 - `<attr>`
-  - An {{cssxref("ident")}}, that is, the unquoted name of the attribute. This can be any valid language-specific attribute (SVG, HTML, XML, etc), a [`data-*` attribute](/en-US/docs/Web/HTML/Reference/Global_attributes/data-*), or an author-created attribute.
+  - An `ident`, that is, the unquoted name of the attribute. This can be any valid language-specific attribute (SVG, HTML, XML, etc), a [`data-*` attribute](/en-US/docs/Web/HTML/Reference/Global_attributes/data-*), or an author-created attribute.
 - `<value>`
-  - An {{cssxref("ident")}} or {{cssxref("string")}}, representing the attribute value. The value must be quoted if it contains spaces or special characters.
+  - An `ident` or `string`, representing the attribute value. The value must be quoted if it contains spaces or special characters.
 - `s` or `i`
   - Case sensitivity or insensitivity flag. If included before the closing bracket (`]`), makes the value case sensitive or insensitive, irrespective of the markup language.
 
@@ -250,7 +250,7 @@ ol[type="a" i] {
 
 ## See also
 
-- {{CSSxRef("attr")}}
-- Selecting a single element: {{DOMxRef("Document.querySelector()")}}, {{DOMxRef("DocumentFragment.querySelector()")}}, or {{DOMxRef("Element.querySelector()")}}
-- Selecting all matching elements: {{DOMxRef("Document.querySelectorAll()")}}, {{DOMxRef("DocumentFragment.querySelectorAll()")}}, or {{DOMxRef("Element.querySelectorAll()")}}
+- `attr`
+- Selecting a single element: `Document.querySelector()`, `DocumentFragment.querySelector()`, or `Element.querySelector()`
+- Selecting all matching elements: `Document.querySelectorAll()`, `DocumentFragment.querySelectorAll()`, or `Element.querySelectorAll()`
 - [Case-insensitive attribute selector values](https://html.spec.whatwg.org/multipage/semantics-other.html#case-sensitivity-of-selectors) on WHATWG

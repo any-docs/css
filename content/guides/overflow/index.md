@@ -219,33 +219,33 @@ A link is included in the content box above to demonstrate the effects of keyboa
 
 ### Properties
 
-- {{CSSxRef("line-clamp")}}
-- {{CSSxRef("overflow")}} shorthand
-- {{CSSxRef("overflow-block")}}
-- {{CSSxRef("overflow-clip-margin")}}
-- {{CSSxRef("overflow-inline")}}
-- {{CSSxRef("overflow-x")}}
-- {{CSSxRef("overflow-y")}}
-- {{CSSxRef("scroll-behavior")}}
-- {{cssxref("scroll-marker-group")}}
-- {{cssxref("scroll-target-group")}}
-- {{CSSxRef("scrollbar-gutter")}}
-- {{CSSxRef("text-overflow")}}
+- `line-clamp`
+- `overflow` shorthand
+- `overflow-block`
+- `overflow-clip-margin`
+- `overflow-inline`
+- `overflow-x`
+- `overflow-y`
+- `scroll-behavior`
+- `scroll-marker-group`
+- `scroll-target-group`
+- `scrollbar-gutter`
+- `text-overflow`
 
 The CSS overflow level 4 module also introduces the `block-ellipsis`, `continue`, `max-lines`, `overflow-clip-margin-block`, `overflow-clip-margin-block-end`, `overflow-clip-margin-block-start`, `overflow-clip-margin-bottom`, `overflow-clip-margin-inline`, `overflow-clip-margin-inline-end`, `overflow-clip-margin-inline-start`, `overflow-clip-margin-left`, `overflow-clip-margin-right`, and `overflow-clip-margin-top` properties. Currently, no browsers support these features.
 
 ### Selectors and pseudo-elements
 
-- {{cssxref("::scroll-button()")}}
-- {{cssxref("::scroll-marker")}}
-- {{cssxref("::scroll-marker-group")}}
-- {{cssxref(":target-after")}}
-- {{cssxref(":target-before")}}
-- {{cssxref(":target-current")}}
+- `::scroll-button()`
+- `::scroll-marker`
+- `::scroll-marker-group`
+- `:target-after`
+- `:target-before`
+- `:target-current`
 
 ### Data types
 
-- {{cssxref("&lt;overflow&gt;")}} enumerated values
+- `&lt;overflow&gt;` enumerated values
 
 ### Glossary terms and definitions
 
@@ -263,28 +263,28 @@ The CSS overflow level 4 module also introduces the `block-ellipsis`, `continue`
 
 ## Related concepts
 
-- {{cssxref("::column")}}
-- {{CSSxRef("scrollbar-width")}} CSS property
-- {{CSSxRef("scrollbar-color")}} CSS property
-- {{CSSxRef("scrollbar-gutter")}} CSS property
-- {{CSSxRef("scroll-behavior")}} CSS property
-- {{cssxref("scroll-margin")}} CSS shorthand property
-- {{cssxref("scroll-padding")}} CSS shorthand property
-- {{cssxref("scroll-snap-align")}} CSS property
-- {{cssxref("scroll-snap-stop")}} CSS property
-- {{cssxref("scroll-snap-type")}} CSS property
-- {{cssxref("text-overflow")}} CSS property
-- {{CSSxRef("::-webkit-scrollbar")}} pseudo-element
+- `::column`
+- `scrollbar-width` CSS property
+- `scrollbar-color` CSS property
+- `scrollbar-gutter` CSS property
+- `scroll-behavior` CSS property
+- `scroll-margin` CSS shorthand property
+- `scroll-padding` CSS shorthand property
+- `scroll-snap-align` CSS property
+- `scroll-snap-stop` CSS property
+- `scroll-snap-type` CSS property
+- `text-overflow` CSS property
+- `::-webkit-scrollbar` pseudo-element
 - [`scrollbar`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/scrollbar_role) ARIA role
-- Element {{domxref("Element.scroll", "scroll()")}} method
-- Element {{domxref("Element.scrollBy", "scrollBy()")}} method
-- Element {{domxref("Element.scrollIntoView", "scrollIntoView()")}} method
-- Element {{domxref("Element.scrollTo", "scrollTo()")}} method
-- Element {{domxref("Element.scrollTop", "scrollTop")}} property
-- Element {{domxref("Element.scrollLeft", "scrollLeft")}} property
-- Element {{domxref("Element.scrollWidth", "scrollWidth")}} property
-- Element {{domxref("Element.scrollHeight", "scrollHeight")}} property
-- Document {{domxref("Document.scroll_event", "scroll")}} event
+- Element `scroll()` method
+- Element `scrollBy()` method
+- Element `scrollIntoView()` method
+- Element `scrollTo()` method
+- Element `scrollTop` property
+- Element `scrollLeft` property
+- Element `scrollWidth` property
+- Element `scrollHeight` property
+- Document `scroll` event
 - {{Glossary("Scroll container")}} glossary term
 - {{Glossary("Ink overflow")}} glossary term
 

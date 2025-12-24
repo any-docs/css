@@ -46,7 +46,7 @@ isolation: isolate;
 }
 ```
 
-This property is especially helpful when used in conjunction with {{cssxref("mix-blend-mode")}} and {{cssxref("z-index")}}.
+This property is especially helpful when used in conjunction with `mix-blend-mode` and `z-index`.
 
 ## Syntax
 
@@ -138,5 +138,5 @@ The `isolation` property is specified as one of the keyword values listed below.
 
 ## See also
 
-- {{cssxref("&lt;blend-mode&gt;")}}
-- {{cssxref("mix-blend-mode")}}, {{cssxref("background-blend-mode")}}
+- `&lt;blend-mode&gt;`
+- `mix-blend-mode`, `background-blend-mode`

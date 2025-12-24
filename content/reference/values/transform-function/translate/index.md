@@ -7,7 +7,7 @@ sidebar: cssref
 ---
 
 The **`translate()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) repositions an element in the horizontal and/or vertical
-directions. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+directions. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: translate()")}}
 
@@ -73,16 +73,16 @@ transform: translate(30%, 50%);
 ### Values
 
 - Single `<length-percentage>` values
-  - This value is a {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} representing the abscissa
+  - This value is a `&lt;length&gt;` or `&lt;percentage&gt;` representing the abscissa
     (horizontal, x-component) of the translating vector [tx, 0]. The ordinate (vertical, y-component) of the translating
     vector will be set to `0`. For example, `translate(2px)` is equivalent to
     `translate(2px, 0)`. A percentage value refers to the width of the reference box defined by the
-    {{cssxref("transform-box")}} property.
+    `transform-box` property.
 - Double `<length-percentage>` values
-  - This value describes two {{cssxref("&lt;length&gt;")}} or {{cssxref("&lt;percentage&gt;")}} values representing
+  - This value describes two `&lt;length&gt;` or `&lt;percentage&gt;` values representing
     both the abscissa (horizontal, x-component) and the ordinate (vertical, y-component) of the translating vector [tx, ty]. A percentage as first
     value refers to the width, as second part to the height of the reference box defined by the
-    {{cssxref("transform-box")}} property.
+    `transform-box` property.
 
 <table class="standard-table">
   <thead>
@@ -197,6 +197,6 @@ div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
-- {{cssxref("translate")}}
+- `transform`
+- `&lt;transform-function&gt;`
+- `translate`

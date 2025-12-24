@@ -6,10 +6,10 @@ spec-urls: https://drafts.csswg.org/css-images-4/#funcdef-image
 sidebar: cssref
 ---
 
-The **`image()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines an {{cssxref("image")}} in a similar fashion to the {{CSSxRef("url_function", "url()")}} function, but with added functionality including specifying the image's directionality, displaying just a part of that image defined by a media fragment, and specifying a solid color as a fallback in case none of the specified images are able to be rendered.
+The **`image()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines an `image` in a similar fashion to the `url()` function, but with added functionality including specifying the image's directionality, displaying just a part of that image defined by a media fragment, and specifying a solid color as a fallback in case none of the specified images are able to be rendered.
 
 > [!NOTE]
-> The CSS `image()` function should not confused with {{DOMxRef("HTMLImageElement/Image", '<code>Image()</code>, the <code>HTMLImageElement</code> constructor', '', 1)}}.
+> The CSS `image()` function should not confused with `HTMLImageElement/Image", '<code>Image()</code>, the <code>HTMLImageElement</code> constructor', '', 1)}}.
 
 ## Syntax
 
@@ -37,7 +37,7 @@ image(rgb(0 0 255 / 0.5)), url("bg-image.png");
 - `image-tags` <Badge type="info" text="Optional" />
   - The directionality of the image, either `ltr` for left-to-right or `rtl` for right-to-left.
 - `image-src` <Badge type="info" text="Optional" />
-  - Zero or more {{cssxref("url_value", "&lt;url&gt;")}}s or {{CSSxRef("&lt;string&gt;")}}s specifying the image sources, with optional image fragment identifiers.
+  - Zero or more `&lt;url&gt;`s or `&lt;string&gt;`s specifying the image sources, with optional image fragment identifiers.
 - `color` <Badge type="info" text="Optional" />
   - A color, specifying a solid background color to use as a fallback if no `image-src` is found, supported, or declared.
 
@@ -71,9 +71,9 @@ Browsers that understand `image()` also understand the fragment notation. Theref
 
 If a color is specified in `image()` along with your image sources, it acts as a fallback if the images are invalid and do not appear. In such cases, the `image()` function renders as if no image were included, generating a solid-color image. As a use case, consider a dark image being used as a background for some white text. A dark background color may be needed for foreground text to be legible, if the image does not render.
 
-Omitting image sources while including a color is valid and creates a color swatch. Unlike declaring a {{CSSxRef("background-color")}}, which is placed under or behind all the background images, this can be used to put (generally semi-transparent) colors over other images.
+Omitting image sources while including a color is valid and creates a color swatch. Unlike declaring a `background-color`, which is placed under or behind all the background images, this can be used to put (generally semi-transparent) colors over other images.
 
-The size of the color swatch can be set with the {{CSSxRef("background-size")}} property. This is different from the `background-color`, which sets a color to cover the entire element. Both `image(color)` and `background-color` placements are impacted by the {{CSSxRef("background-clip")}} and {{CSSxRef("background-origin")}} properties.
+The size of the color swatch can be set with the `background-size` property. This is different from the `background-color`, which sets a color to cover the entire element. Both `image(color)` and `background-color` placements are impacted by the `background-clip` and `background-origin` properties.
 
 ## Formal syntax
 
@@ -149,7 +149,7 @@ When the user hovers over the box, the cursor will change to display the 16x16 p
 </div>
 ```
 
-The above will put a semi-transparent black mask over the Firefox logo background image. Had we used the {{cssxref("background-color")}} property instead, the color would have appeared behind the logo image instead of on top of it. Additionally, the entire container would have had the same background color. Because we used `image()` along with the {{CSSxRef("background-size")}} property (and prevented the image from repeating with the {{CSSxRef("background-repeat")}} property, the color swatch will only cover a quarter of the container.
+The above will put a semi-transparent black mask over the Firefox logo background image. Had we used the `background-color` property instead, the color would have appeared behind the logo image instead of on top of it. Additionally, the entire container would have had the same background color. Because we used `image()` along with the `background-size` property (and prevented the image from repeating with the `background-repeat` property, the color swatch will only cover a quarter of the container.
 
 {{EmbedLiveSample("Putting_color_on_top_of_a_background_image", "100%", 220)}}
 
@@ -163,11 +163,11 @@ Currently, no browsers support this feature.
 
 ## See also
 
-- {{cssxref("image")}}
-- {{cssxref("element()")}}
-- {{cssxref("url_value", "&lt;url&gt;")}}
-- {{CSSxRef("clip-path")}}
-- {{cssxref("gradient")}}
-- {{CSSxRef("image/image-set", "image-set()")}}
-- {{cssxref("cross-fade()")}}
+- `image`
+- `element()`
+- `&lt;url&gt;`
+- `clip-path`
+- `gradient`
+- `image-set()`
+- `cross-fade()`
 - [CSS images](/guides/Images) module

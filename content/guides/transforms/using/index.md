@@ -15,11 +15,11 @@ CSS transforms are implemented using a set of CSS properties that let you apply 
 
 ## CSS transforms properties
 
-Two major properties are used to define CSS transforms: {{cssxref("transform")}} (or the individual {{cssxref('translate')}}, {{cssxref('rotate')}}, and {{cssxref('scale')}} properties) and {{cssxref("transform-origin")}}.
+Two major properties are used to define CSS transforms: `transform` (or the individual {{cssxref('translate')}}, {{cssxref('rotate')}}, and {{cssxref('scale')}} properties) and `transform-origin`.
 
-- {{cssxref("transform-origin")}}
+- `transform-origin`
   - Specifies the position of the origin. By default, it is at the center of the element and can be moved. It is used by several transforms, like rotations, scaling or skewing, that need a specific point as a parameter.
-- {{cssxref("transform")}}
+- `transform`
   - Specifies the transforms to apply to the element. It is a space-separated list of transforms, which are applied one after the other, as requested by the composition operation. Composite transforms are effectively applied in order from right to left.
 
 ## Examples
@@ -68,7 +68,7 @@ Performing CSS transformations in 3D space is a bit more complex. You have to st
 
 ### Perspective
 
-The first element to set is the {{cssxref("perspective")}}. The perspective is what gives us the 3D impression. The farther from the viewer the elements are, the smaller they are.
+The first element to set is the `perspective`. The perspective is what gives us the 3D impression. The farther from the viewer the elements are, the smaller they are.
 
 #### Setting perspective
 

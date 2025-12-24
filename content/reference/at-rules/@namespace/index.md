@@ -54,7 +54,7 @@ svg|a {
 
 The defined namespaces can be used to restrict the [universal](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors), [type](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors), and [attribute](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors) [selectors](/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors) to only select elements within that namespace. The `@namespace` rule is generally only useful when dealing with documents containing multiple namespaces—such as HTML with inline SVG or MathML, or XML that mixes multiple vocabularies.
 
-Any `@namespace` rules must follow all {{cssxref("@charset")}} and {{cssxref("@import")}} rules, and precede all other at-rules and [style declarations](/en-US/docs/Web/API/CSSStyleDeclaration) in a style sheet.
+Any `@namespace` rules must follow all `@charset` and `@import` rules, and precede all other at-rules and [style declarations](/en-US/docs/Web/API/CSSStyleDeclaration) in a style sheet.
 
 `@namespace` can be used to define the **default namespace** for the style sheet. When a default namespace is defined, all universal and type selectors (but not attribute selectors, see note below) apply only to elements in that namespace.
 

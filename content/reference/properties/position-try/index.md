@@ -6,14 +6,14 @@ browser-compat: css.properties.position-try
 sidebar: cssref
 ---
 
-The **`position-try`** [CSS](/en-US/docs/Web/CSS) property is a shorthand that corresponds to the {{cssxref("position-try-order")}} and {{cssxref("position-try-fallbacks")}} properties.
+The **`position-try`** [CSS](/en-US/docs/Web/CSS) property is a shorthand that corresponds to the `position-try-order` and `position-try-fallbacks` properties.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("position-try-order")}}
-- {{cssxref("position-try-fallbacks")}}
+- `position-try-order`
+- `position-try-fallbacks`
 
 ## Syntax
 
@@ -50,7 +50,7 @@ position-try: unset;
 
 ### Values
 
-See {{cssxref("position-try-order")}} and {{cssxref("position-try-fallbacks")}} for value descriptions.
+See `position-try-order` and `position-try-fallbacks` for value descriptions.
 
 The `position-try` shorthand can specify values for `position-try-fallbacks`, or `position-try-order` and `position-try-fallbacks`, in that order. If `position-try-order` is omitted, it is set to the property's initial value, which is `normal`, meaning the position-try fallback options are tried in the order they appear in the property.
 
@@ -82,7 +82,7 @@ The HTML includes two {{htmlelement("div")}} elements that will become an anchor
 
 #### CSS
 
-In the CSS, the anchor is given an {{cssxref("anchor-name")}} and has a {{cssxref("position")}} value of `absolute` set on it. We position it in the top-half of the viewport using {{cssxref("top")}} and {{cssxref("left")}} values:
+In the CSS, the anchor is given an `anchor-name` and has a `position` value of `absolute` set on it. We position it in the top-half of the viewport using `top` and `left` values:
 
 ```css hidden
 .anchor {
@@ -165,10 +165,10 @@ The element appears below its anchor, even though it is initially positioned abo
 
 ## See also
 
-- {{cssxref("position-area")}}
-- {{cssxref("position-try-fallbacks")}}
-- {{cssxref("position-try-order")}}
-- The {{cssxref("@position-try")}} at-rule
+- `position-area`
+- `position-try-fallbacks`
+- `position-try-order`
+- The `@position-try` at-rule
 - The [`<position-area>`](/reference/values/position-area_value) value
 - [CSS anchor positioning](/guides/Anchor_positioning) module
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide

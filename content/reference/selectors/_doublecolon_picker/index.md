@@ -22,14 +22,14 @@ The **`::picker()`** [CSS](/en-US/docs/Web/CSS) [pseudo-element](/en-US/docs/Web
 
 ### Parameters
 
-- {{cssxref("ident")}}
+- `ident`
   - A string representing the element whose picker you want to target. The following values are available:
     - `select`
       - The drop-down picker of customizable select elements.
 
 ## Description
 
-The `::picker()` pseudo-element targets the picker part of a form control, that is, the pop-up part that appears to allow you to make a selection when you press the control button. It is only available to target when the originating element has a picker and has base appearance set on it via the {{cssxref("appearance")}} property `base-select` value.
+The `::picker()` pseudo-element targets the picker part of a form control, that is, the pop-up part that appears to allow you to make a selection when you press the control button. It is only available to target when the originating element has a picker and has base appearance set on it via the `appearance` property `base-select` value.
 
 The `::picker(select)` selector targets all descendants of customizable `<select>` element except for the first `<button>` child; these descendants are grouped together by the browser and rendered as the picker. The first `<button>` child represents the control button that opens the picker when pressed.
 
@@ -77,7 +77,7 @@ A further side-effect of the implicit invoker/popover relationship mentioned abo
 
 ### Basic custom select usage
 
-To opt-in to the custom select functionality and minimal browser base styles (and remove the OS-provided styling), the `<select>` element and its picker both need to have an {{cssxref("appearance")}} value of `base-select` set on them:
+To opt-in to the custom select functionality and minimal browser base styles (and remove the OS-provided styling), the `<select>` element and its picker both need to have an `appearance` value of `base-select` set on them:
 
 ```css
 select,
@@ -86,7 +86,7 @@ select,
 }
 ```
 
-You could then, for example, remove the picker's default black {{cssxref("border")}}:
+You could then, for example, remove the picker's default black `border`:
 
 ```css
 ::picker(select) {
@@ -105,7 +105,7 @@ You could then, for example, remove the picker's default black {{cssxref("border
 ## See also
 
 - {{htmlelement("select")}}, {{htmlelement("option")}}, {{htmlelement("optgroup")}}, {{htmlelement("label")}}, {{htmlelement("button")}}, {{htmlelement("selectedcontent")}}
-- {{cssxref("appearance")}}
-- {{cssxref("::picker-icon")}}, {{cssxref("::checkmark")}}
-- {{cssxref(":open")}}, {{cssxref(":checked")}}
+- `appearance`
+- `::picker-icon`, `::checkmark`
+- `:open`, `:checked`
 - [Customizable select elements](/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select)

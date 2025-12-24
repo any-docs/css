@@ -24,7 +24,7 @@ The `<calc-sum>` type defines two numeric values and one of the following [arith
 
 ## Description
 
-The operands in the expression may be any {{cssxref("&lt;length&gt;")}} syntax value. You can use {{cssxref("&lt;length&gt;")}}, {{cssxref("&lt;frequency&gt;")}}, {{cssxref("angle")}}, {{cssxref("&lt;time&gt;")}}, {{cssxref("&lt;percentage&gt;")}}, {{cssxref("&lt;number&gt;")}}, or {{cssxref("&lt;integer&gt;")}}.
+The operands in the expression may be any `&lt;length&gt;` syntax value. You can use `&lt;length&gt;`, `&lt;frequency&gt;`, `angle`, `&lt;time&gt;`, `&lt;percentage&gt;`, `&lt;number&gt;`, or `&lt;integer&gt;`.
 
 The two operands' types must be consistent. For lengths, you can't use `0` to mean `0px` (or another length unit). Instead, you must add an explicit unit: `margin-top: calc(0px + 20px);` is valid, while `margin-top: calc(0 + 20px);` is invalid. Percentage value types are resolved based on the context. For example, `margin-top: calc(50% + 20px);` is valid because `margin-top` resolves percentages to lengths.
 
@@ -38,6 +38,6 @@ The `+` and `-` operators **must be surrounded by {{Glossary("whitespace")}}**. 
 
 ## See also
 
-- {{CSSxRef("&lt;calc-product&gt;")}}
-- {{CSSxRef("&lt;calc-value&gt;")}}
-- {{CSSxRef("&lt;calc-keyword&gt;")}}
+- `&lt;calc-product&gt;`
+- `&lt;calc-value&gt;`
+- `&lt;calc-keyword&gt;`

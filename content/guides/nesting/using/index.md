@@ -420,7 +420,7 @@ Note that in order to preserve the parsing order, all the rules before nesting a
 That's why the `color-black` is inside a nested declaration even though it is a top level declaration in the original document.
 
 > [!NOTE]
-> Support for the rule was added with {{domxref("CSSNestedDeclarations")}}.
+> Support for the rule was added with `CSSNestedDeclarations`.
 > Browsers that [do not support this interface](/en-US/docs/Web/API/CSSNestedDeclarations#browser_compatibility) may parse nested rules in the wrong order.
 
 ## Concatenation (is not possible)
@@ -479,5 +479,5 @@ In the following example, there is an invalid selector (`%` is not a valid chara
 - [`&` nesting selector](/en-US/docs/Web/CSS/Reference/Selectors/Nesting_selector)
 - [Nesting `@` at-rules](/guides/Nesting/At-rules)
 - [Nesting and specificity](/guides/Nesting/Nesting_and_specificity)
-- {{domxref("CSSNestedDeclarations")}}
+- `CSSNestedDeclarations`
 - [The Nested Declarations Rule](https://drafts.csswg.org/css-nesting-1/#nested-declarations-rule)

@@ -29,13 +29,13 @@ p::selection {
 
 Only certain CSS properties can be used with `::selection`:
 
-- {{CSSxRef("color")}}
-- {{CSSxRef("background-color")}}
-- {{CSSxRef("text-decoration")}} and its associated properties
-- {{CSSxRef("text-shadow")}}
-- {{CSSxRef("-webkit-text-stroke-color")}}, {{CSSxRef("-webkit-text-fill-color")}} and {{CSSxRef("-webkit-text-stroke-width")}}
+- `color`
+- `background-color`
+- `text-decoration` and its associated properties
+- `text-shadow`
+- `-webkit-text-stroke-color`, `-webkit-text-fill-color` and `-webkit-text-stroke-width`
 
-In particular, {{CSSxRef("background-image")}} is ignored.
+In particular, `background-image` is ignored.
 
 ## Syntax
 
@@ -108,4 +108,4 @@ p::selection {
 
 ## See also
 
-- {{cssxref("pointer-events")}} - control which events are active on the element
+- `pointer-events` - control which events are active on the element

@@ -24,16 +24,16 @@ The **`@keyframes`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rule
 
 ### Values
 
-- {{cssxref("custom-ident")}}
+- `custom-ident`
   - A name identifying the keyframe list. This must match the identifier production in CSS syntax.
 - `from`
   - A starting offset of `0%`.
 - `to`
   - An ending offset of `100%`.
-- {{cssxref("&lt;percentage&gt;")}}
+- `&lt;percentage&gt;`
   - A percentage of the time through the animation sequence at which the specified keyframe should occur.
-- `<timeline-range-name>` {{cssxref("&lt;percentage&gt;")}}
-  - A percentage of the time through the specified {{cssxref("animation-range")}} at which the specified keyframe should occur. See [CSS scroll-driven animations](/guides/Scroll-driven_animations) for more information on the kinds of animations that use named timeline ranges.
+- `<timeline-range-name>` `&lt;percentage&gt;`
+  - A percentage of the time through the specified `animation-range` at which the specified keyframe should occur. See [CSS scroll-driven animations](/guides/Scroll-driven_animations) for more information on the kinds of animations that use named timeline ranges.
 
 ## Description
 
@@ -41,7 +41,7 @@ To use keyframes, create a `@keyframes` rule with a name that is then used by th
 
 You can list the keyframe percentages in any order; they will be handled in the order they should occur.
 
-JavaScript can access the `@keyframes` at-rule with the CSS object model interface {{domxref("CSSKeyframesRule")}}.
+JavaScript can access the `@keyframes` at-rule with the CSS object model interface `CSSKeyframesRule`.
 
 ### Valid keyframe lists
 
@@ -156,10 +156,10 @@ See [Using CSS animations](/guides/Animations/Using) and [scroll-driven animatio
 
 ## See also
 
-- {{cssxref("animation-name")}}
+- `animation-name`
 - [Using CSS animations](/guides/Animations/Using)
 - [CSS animations](/guides/Animations) module
 - [CSS scroll-driven animation timelines](/guides/Scroll-driven_animations/Timelines)
 - [CSS scroll-driven animations](/guides/Scroll-driven_animations) module
 - [Animate elements on scroll with Scroll-driven animations](https://developer.chrome.com/docs/css-ui/scroll-driven-animations)
-- {{domxref("AnimationEvent")}}
+- `AnimationEvent`

@@ -61,22 +61,22 @@ grid-area: 2 / 1 / 2 / 4;
 
 If four `<grid-line>` values are specified, `grid-row-start` is set to the first value, `grid-column-start` is set to the second value, `grid-row-end` is set to the third value, and `grid-column-end` is set to the fourth value.
 
-When `grid-column-end` is omitted, if `grid-column-start` is a {{cssxref("&lt;custom-ident&gt;")}}, `grid-column-end` is set to that `<custom-ident>`; otherwise, it is set to `auto`.
+When `grid-column-end` is omitted, if `grid-column-start` is a `&lt;custom-ident&gt;`, `grid-column-end` is set to that `<custom-ident>`; otherwise, it is set to `auto`.
 
 When `grid-row-end` is omitted, if `grid-row-start` is a `<custom-ident>`, `grid-row-end` is set to that `<custom-ident>`; otherwise, it is set to `auto`.
 
 When `grid-column-start` is omitted, if `grid-row-start` is a `<custom-ident>`, all four longhands are set to that value. Otherwise, it is set to `auto`.
 
-The `grid-area` property can also be set to a {{cssxref("&lt;custom-ident&gt;")}} which acts as a name for the area, which can then be placed using {{cssxref("grid-template-areas")}}.
+The `grid-area` property can also be set to a `&lt;custom-ident&gt;` which acts as a name for the area, which can then be placed using `grid-template-areas`.
 
 ## Constituent properties
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("grid-row-start")}}
-- {{cssxref("grid-column-start")}}
-- {{cssxref("grid-row-end")}}
-- {{cssxref("grid-column-end")}}
+- `grid-row-start`
+- `grid-column-start`
+- `grid-row-end`
+- `grid-column-end`
 
 ## Syntax
 
@@ -123,16 +123,16 @@ grid-area: unset;
 - `<integer> && <custom-ident>?`
   - Contributes the n-th grid line to the grid item's placement. If a negative integer is given, it instead counts in reverse, starting from the end edge of the explicit grid.
 
-    If a name is given as a {{cssxref("&lt;custom-ident&gt;")}}, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position.
+    If a name is given as a `&lt;custom-ident&gt;`, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines are assumed to have that name for the purpose of finding this position.
 
-    An {{cssxref("&lt;integer&gt;")}} value of `0` is invalid.
+    An `&lt;integer&gt;` value of `0` is invalid.
 
 - `span && [ <integer> || <custom-ident> ]`
   - Contributes a grid span to the grid item's placement such that the corresponding edge of the grid item's grid area is _n_ lines from the opposite edge.
 
-    If a name is given as a {{cssxref("&lt;custom-ident&gt;")}}, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span.
+    If a name is given as a `&lt;custom-ident&gt;`, only lines with that name are counted. If not enough lines with that name exist, all implicit grid lines on the side of the explicit grid corresponding to the search direction are assumed to have that name for the purpose of counting this span.
 
-    If the {{cssxref("&lt;integer&gt;")}} is omitted, it defaults to `1`. Negative integers or 0 are invalid.
+    If the `&lt;integer&gt;` is omitted, it defaults to `1`. Negative integers or 0 are invalid.
 
 ## Formal definition
 
@@ -193,12 +193,12 @@ grid-area: unset;
 
 ## See also
 
-- {{cssxref("grid-row")}}
-- {{cssxref("grid-row-start")}}
-- {{cssxref("grid-row-end")}}
-- {{cssxref("grid-column")}}
-- {{cssxref("grid-column-start")}}
-- {{cssxref("grid-column-end")}}
-- {{cssxref("grid-template-areas")}}
+- `grid-row`
+- `grid-row-start`
+- `grid-row-end`
+- `grid-column`
+- `grid-column-start`
+- `grid-column-end`
+- `grid-template-areas`
 - [Grid template areas](/guides/Grid_layout/Grid_template_areas)
 - Video: [Grid template areas](https://gridbyexample.com/video/grid-template-areas/)

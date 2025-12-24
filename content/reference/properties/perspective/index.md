@@ -119,7 +119,7 @@ perspective: unset;
 - `none`
   - Indicates that no perspective transform is to be applied.
 - `<length>`
-  - A {{cssxref("&lt;length&gt;")}} giving the distance from the user to the z=0 plane. It is used to apply a perspective transform to the children of the element. Negative values are syntax errors. If the value is smaller than `1px`, it is clamped to `1px`.
+  - A `&lt;length&gt;` giving the distance from the user to the z=0 plane. It is used to apply a perspective transform to the children of the element. Negative values are syntax errors. If the value is smaller than `1px`, it is clamped to `1px`.
 
 ## Description
 
@@ -129,7 +129,7 @@ small values of `perspective` cause a large transformation.
 
 The parts of the 3D elements that are behind the user — i.e., their z-axis coordinates are greater than the value of the `perspective` CSS property — are not drawn.
 
-The _vanishing point_ is by default placed at the center of the element, but its position can be changed using the {{cssxref("perspective-origin")}} property.
+The _vanishing point_ is by default placed at the center of the element, but its position can be changed using the `perspective-origin` property.
 
 Using this property with a value other than `none` creates a new [stacking context](/guides/Positioned_layout/Stacking_context). Also, in that case, the object will act as a containing block for `position: fixed` elements that it contains.
 

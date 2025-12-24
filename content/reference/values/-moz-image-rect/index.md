@@ -11,7 +11,7 @@ sidebar: cssref
 
 {{Non-standard_Header}}{{Deprecated_Header}}
 
-The **`-moz-image-rect`** value for [CSS](/en-US/docs/Web/CSS) {{CSSxRef("background-image")}} lets you use a portion of a larger image as a background.
+The **`-moz-image-rect`** value for [CSS](/en-US/docs/Web/CSS) `background-image` lets you use a portion of a larger image as a background.
 
 ## Syntax
 
@@ -21,26 +21,26 @@ The **`-moz-image-rect`** value for [CSS](/en-US/docs/Web/CSS) {{CSSxRef("backgr
 
 ### Values
 
-- {{CSSxRef("url_value", "&lt;url&gt;")}}
+- `&lt;url&gt;`
   - The URI of the image from which to take the sub-image.
 - `top`
-  - The top edge, specified as an {{CSSxRef("&lt;integer&gt;")}} or {{CSSxRef("&lt;percentage&gt;")}}, of the sub-image within the specified image.
+  - The top edge, specified as an `&lt;integer&gt;` or `&lt;percentage&gt;`, of the sub-image within the specified image.
 - `right`
-  - The right edge, specified as an {{CSSxRef("&lt;integer&gt;")}} or {{CSSxRef("&lt;percentage&gt;")}}, of the sub-image within the specified image.
+  - The right edge, specified as an `&lt;integer&gt;` or `&lt;percentage&gt;`, of the sub-image within the specified image.
 - `bottom`
-  - The bottom edge, specified as an {{CSSxRef("&lt;integer&gt;")}} or {{CSSxRef("&lt;percentage&gt;")}}, of the sub-image within the specified image.
+  - The bottom edge, specified as an `&lt;integer&gt;` or `&lt;percentage&gt;`, of the sub-image within the specified image.
 - `left`
-  - The left edge, specified as an {{CSSxRef("&lt;integer&gt;")}} or {{CSSxRef("&lt;percentage&gt;")}}, of the sub-image within the specified image.
+  - The left edge, specified as an `&lt;integer&gt;` or `&lt;percentage&gt;`, of the sub-image within the specified image.
 
 ## Description
 
 This property allows you to, for example, use different parts of one larger image as backgrounds in different parts of your content.
 
-The syntax for the rectangle is similar to the [`rect()`](/reference/values/shape#syntax) function generating a {{CSSxRef("&lt;shape&gt;")}} CSS type. All four values are relative to the upper left corner of the image.
+The syntax for the rectangle is similar to the [`rect()`](/reference/values/shape#syntax) function generating a `&lt;shape&gt;` CSS type. All four values are relative to the upper left corner of the image.
 
 ## Examples
 
-This example loads an image and uses it in four segments to draw the Firefox logo in four {{HTMLElement("div")}} blocks. Clicking on their container causes the four segments to rotate around by swapping the {{CSSxRef("background-image")}} property values among the four {{HTMLElement("div")}} blocks.
+This example loads an image and uses it in four segments to draw the Firefox logo in four {{HTMLElement("div")}} blocks. Clicking on their container causes the four segments to rotate around by swapping the `background-image` property values among the four {{HTMLElement("div")}} blocks.
 
 ### CSS
 
@@ -151,7 +151,7 @@ function rotate() {
 document.getElementById("container").addEventListener("click", rotate);
 ```
 
-This uses {{DOMxRef("window.getComputedStyle()")}} to fetch the style of each element, shifting it to the following element. Notice that before it begins doing so it saves a copy of the last box's style since it will be overwritten by the third element's style. By copying the values of the {{CSSxRef("background-image")}} property from one element to the next with each mouse click, we achieve the desired effect.
+This uses `window.getComputedStyle()` to fetch the style of each element, shifting it to the following element. Notice that before it begins doing so it saves a copy of the last box's style since it will be overwritten by the third element's style. By copying the values of the `background-image` property from one element to the next with each mouse click, we achieve the desired effect.
 
 ### What it looks like
 

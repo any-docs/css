@@ -106,6 +106,6 @@ globalThis.customElements.define(
 ## See also
 
 - [`part`](/en-US/docs/Web/HTML/Reference/Global_attributes/part) attribute
-- {{CSSxRef(":state",":state()")}} pseudo-class function
+- `:state()` pseudo-class function
 - [`exportparts`](/en-US/docs/Web/HTML/Reference/Global_attributes/exportparts) attribute
 - [CSS shadow parts](/guides/Shadow_parts) module

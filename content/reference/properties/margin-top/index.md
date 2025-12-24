@@ -87,14 +87,14 @@ The `margin-top` property is specified as the keyword `auto`, or a `<length>`, o
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - The size of the margin as a fixed value.
-    - For _anchor-positioned elements_, the {{cssxref("anchor-size()")}} function resolves to a {{cssxref("&lt;length&gt;")}} value relative to the associated _anchor element_'s width or height (see [Setting element margin based on anchor size](/guides/Anchor_positioning/Using#setting_element_margin_based_on_anchor_size)).
+    - For _anchor-positioned elements_, the `anchor-size()` function resolves to a `&lt;length&gt;` value relative to the associated _anchor element_'s width or height (see [Setting element margin based on anchor size](/guides/Anchor_positioning/Using#setting_element_margin_based_on_anchor_size)).
 
-- {{cssxref("&lt;percentage&gt;")}}
-  - The size of the margin as a percentage, relative to the inline size (_width_ in a horizontal language, defined by {{cssxref("writing-mode")}}) of the [containing block](/guides/Display/Containing_block).
+- `&lt;percentage&gt;`
+  - The size of the margin as a percentage, relative to the inline size (_width_ in a horizontal language, defined by `writing-mode`) of the [containing block](/guides/Display/Containing_block).
 - `auto`
-  - The browser selects a suitable value to use. See {{cssxref("margin")}}.
+  - The browser selects a suitable value to use. See `margin`.
 
 ## Formal definition
 
@@ -133,8 +133,8 @@ The `margin-top` property is specified as the keyword `auto`, or a `<length>`, o
 
 ## See also
 
-- {{cssxref("margin-right")}}, {{cssxref("margin-bottom")}}, and {{cssxref("margin-left")}}
-- {{cssxref("margin")}} shorthand
-- {{cssxref("margin-block-start")}}, {{cssxref("margin-block-end")}}, {{cssxref("margin-inline-start")}}, and {{cssxref("margin-inline-end")}}
-- {{cssxref("margin-block")}} and {{cssxref("margin-inline")}} shorthands
+- `margin-right`, `margin-bottom`, and `margin-left`
+- `margin` shorthand
+- `margin-block-start`, `margin-block-end`, `margin-inline-start`, and `margin-inline-end`
+- `margin-block` and `margin-inline` shorthands
 - [CSS box model](/guides/Box_model) module

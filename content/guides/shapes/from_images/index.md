@@ -10,9 +10,9 @@ In this guide, we will take a look at how we can create a shape from an image fi
 
 ## Creating shapes from images
 
-To use an image for creating a shape, the image needs to have an Alpha Channel, an area that is not fully opaque. The {{cssxref("shape-image-threshold")}} property is used to set a threshold for this opacity. Pixels that are more opaque than this value will be used to calculate the area of the shape.
+To use an image for creating a shape, the image needs to have an Alpha Channel, an area that is not fully opaque. The `shape-image-threshold` property is used to set a threshold for this opacity. Pixels that are more opaque than this value will be used to calculate the area of the shape.
 
-In the example below, there is an image of a star with a solid red area and an area that is fully transparent. The path to the image file is used as the value for the {{cssxref("shape-outside")}} property. The content now wraps around the star shape.
+In the example below, there is an image of a star with a solid red area and an area that is fully transparent. The path to the image file is used as the value for the `shape-outside` property. The content now wraps around the star shape.
 
 ```html live-sample___simple-example
 <div class="box">
@@ -45,7 +45,7 @@ img {
 
 {{EmbedLiveSample("simple-example", "", "340px")}}
 
-You can use {{cssxref("shape-margin")}} to move the text away from the shape, giving a margin around the created shape and the text.
+You can use `shape-margin` to move the text away from the shape, giving a margin around the created shape and the text.
 
 ```html hidden live-sample___margin
 <div class="box">
@@ -90,7 +90,7 @@ DevTools can help you to identify CORS errors. In Chrome the Console will alert 
 
 ## Setting a threshold
 
-The {{cssxref("shape-image-threshold")}} property enables the creation of shapes from areas which are not fully transparent. If the value of `shape-image-threshold` is `0.0` (which is the initial value) then the area must be fully transparent. If the value is `1.0` then it is fully opaque. Values in between mean that you can set a semi-transparent area as the defining area.
+The `shape-image-threshold` property enables the creation of shapes from areas which are not fully transparent. If the value of `shape-image-threshold` is `0.0` (which is the initial value) then the area must be fully transparent. If the value is `1.0` then it is fully opaque. Values in between mean that you can set a semi-transparent area as the defining area.
 
 In the example below, the background of the star is not fully transparent, it has a 20% opacity as created in my graphics program. If I set `shape-image-threshold` to `0.2` or greater, then I see the shape, if I set it to something smaller than `0.2` I do not get the shape.
 
@@ -129,7 +129,7 @@ img {
 
 ## Using images with generated content
 
-In the above example, I have both used the image as the value of {{cssxref("shape-outside")}} and also added it to the page. Many demos do this as it helps to show the shape we are following, however, the `shape-outside` property is not related to the image that is displayed on the page and so you do not need to display an image to use an image to create a shape.
+In the above example, I have both used the image as the value of `shape-outside` and also added it to the page. Many demos do this as it helps to show the shape we are following, however, the `shape-outside` property is not related to the image that is displayed on the page and so you do not need to display an image to use an image to create a shape.
 
 You do need something to float, but that could be some generated content as in the below example. I am floating generated content and using a larger star image to shape my content without displaying any image on the page.
 
@@ -170,7 +170,7 @@ body {
 
 Because a [CSS gradient](/guides/Images/Using_gradients) is treated as an image, you can use a gradient to generate a shape by having transparent or semi-transparent areas as part of the gradient.
 
-The next example uses generated content. The content has been floated, giving it a background image of a linear gradient. I am using that same value as the value of {{cssxref("shape-outside")}}. The linear gradient goes from purple to transparent. By changing the value of {{cssxref("shape-image-threshold")}}, you can decide how transparent the pixels need to be that create the shape. You can play with that value in the example below to see how the diagonal line will move across the shape depending on that value.
+The next example uses generated content. The content has been floated, giving it a background image of a linear gradient. I am using that same value as the value of `shape-outside`. The linear gradient goes from purple to transparent. By changing the value of `shape-image-threshold`, you can decide how transparent the pixels need to be that create the shape. You can play with that value in the example below to see how the diagonal line will move across the shape depending on that value.
 
 You could also try removing the background image completely, thus using the gradient purely to create the shape and not displaying it on the page at all.
 

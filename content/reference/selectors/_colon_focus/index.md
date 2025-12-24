@@ -42,7 +42,7 @@ select:focus {
 ```
 
 > [!NOTE]
-> This pseudo-class applies only to the focused element itself. Use {{CSSxRef(":focus-within")}} if you want to select an element that _contains_ a focused element.
+> This pseudo-class applies only to the focused element itself. Use `:focus-within` if you want to select an element that _contains_ a focused element.
 
 ## Syntax
 
@@ -101,5 +101,5 @@ Never just remove the focus outline (visible focus indicator) without replacing 
 
 ## See also
 
-- {{CSSxRef(":focus-visible")}}
-- {{CSSxRef(":focus-within")}}
+- `:focus-visible`
+- `:focus-within`

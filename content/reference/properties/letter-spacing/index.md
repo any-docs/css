@@ -72,7 +72,7 @@ letter-spacing: unset;
 
 - `normal`
   - The normal letter spacing for the current font. Unlike a value of `0`, this keyword allows the {{glossary("user agent")}} to alter the space between characters in order to justify text.
-- {{cssxref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - Specifies extra inter-character space _in addition to_ the default space between characters. Values may be negative, but there may be implementation-specific limits. User agents may not further increase or decrease the inter-character space in order to justify text.
 
 ## Accessibility
@@ -146,6 +146,6 @@ Some written languages should not have any letter spacing applied. For instance,
 
 ## See also
 
-- {{cssxref("font-kerning")}}
-- {{cssxref("word-spacing")}}
+- `font-kerning`
+- `word-spacing`
 - SVG {{SVGAttr("letter-spacing")}} attribute

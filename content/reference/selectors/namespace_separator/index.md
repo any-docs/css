@@ -23,7 +23,7 @@ myNameSpace|a {
 }
 ```
 
-[Type selectors](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors) and the [universal selector](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors) allow an optional namespace component. When a namespace has been previously declared via {{CSSXref("@namespace")}}, these selectors can be namespaced by prepending the selector with the name of the namespace separated by the namespace separator (`|`). This is useful when dealing with documents containing multiple namespaces such as HTML with inline SVG or MathML, or XML that mixes multiple vocabularies.
+[Type selectors](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors) and the [universal selector](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors) allow an optional namespace component. When a namespace has been previously declared via `@namespace`, these selectors can be namespaced by prepending the selector with the name of the namespace separated by the namespace separator (`|`). This is useful when dealing with documents containing multiple namespaces such as HTML with inline SVG or MathML, or XML that mixes multiple vocabularies.
 
 - `ns|h1` - matches `<h1>` elements in namespace `ns`
 - `*|h1` - matches all `<h1>` elements
@@ -37,7 +37,7 @@ namespace|element { style properties }
 
 ## Examples
 
-By default, all elements in an HTML or SVG element have a namespace as the `http://www.w3.org/1999/xhtml` and `http://www.w3.org/2000/svg` namespace are implied. The {{domxref("document.createElementNS")}} method, with an empty string for the namespace parameter, can be used to create elements with no namespace.
+By default, all elements in an HTML or SVG element have a namespace as the `http://www.w3.org/1999/xhtml` and `http://www.w3.org/2000/svg` namespace are implied. The `document.createElementNS` method, with an empty string for the namespace parameter, can be used to create elements with no namespace.
 
 ### Named namespace example
 
@@ -119,7 +119,7 @@ No namespaces are explicitly declared in the HTML or within the SVG.
 
 #### JavaScript
 
-With JavaScript, with {{DOMXRef("document.createElementNS")}}, we create an anchor link without a namespace, then append the link.
+With JavaScript, with `document.createElementNS`, we create an anchor link without a namespace, then append the link.
 
 ```js
 // create 'no namespace' anchor
@@ -132,7 +132,7 @@ document.body.appendChild(a);
 
 #### CSS
 
-We declare a namespace with {{cssxref("@namespace")}}. By omitting the name for the namespace, the `@namespace` declaration creates a default namespace.
+We declare a namespace with `@namespace`. By omitting the name for the namespace, the `@namespace` declaration creates a default namespace.
 
 ```css
 /* By omitting a name, this sets SVG as the default namespace */
@@ -181,7 +181,7 @@ The selector with no namespace, the `|a`, matched the JavaScript defined and app
 
 ## See also
 
-- {{cssxref("@namespace")}}
+- `@namespace`
 - [`Document.createElementNS()`](/en-US/docs/Web/API/Document/createElementNS) method
 - [`Element.namespaceURI`](/en-US/docs/Web/API/Element/namespaceURI) property
 - [CSS type selector](/en-US/docs/Web/CSS/Reference/Selectors/Type_selectors)

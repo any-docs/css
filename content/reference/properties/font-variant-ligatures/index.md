@@ -224,10 +224,10 @@ p {
 
 ## See also
 
-- {{cssxref("font-variant")}}
-- {{cssxref("font-variant-caps")}}
-- {{cssxref("font-variant-emoji")}}
-- {{cssxref("font-variant-east-asian")}}
-- {{cssxref("font-variant-numeric")}}
-- {{cssxref("font-variant-position")}}
+- `font-variant`
+- `font-variant-caps`
+- `font-variant-emoji`
+- `font-variant-east-asian`
+- `font-variant-numeric`
+- `font-variant-position`
 - [CSS fonts module](/guides/Fonts)

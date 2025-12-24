@@ -49,9 +49,9 @@ direction: rtl;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("border-inline-color")}}
-- {{cssxref("border-inline-style")}}
-- {{cssxref("border-inline-width")}}
+- `border-inline-color`
+- `border-inline-style`
+- `border-inline-width`
 
 ## Syntax
 
@@ -73,17 +73,17 @@ border-inline: unset;
 The `border-inline` is specified with one or more of the following, in any order:
 
 - `<'border-width'>`
-  - The width of the border. See {{cssxref("border-width")}}.
+  - The width of the border. See `border-width`.
 - `<'border-style'>`
-  - The line style of the border. See {{cssxref("border-style")}}.
-- {{CSSXref("&lt;color&gt;")}}
+  - The line style of the border. See `border-style`.
+- `&lt;color&gt;`
   - The color of the border.
 
 ## Description
 
-The physical borders to which `border-inline` maps depends on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("border-top")}} and {{cssxref("border-bottom")}} or {{cssxref("border-right")}}, and {{cssxref("border-left")}} properties, depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The physical borders to which `border-inline` maps depends on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top` and `border-bottom` or `border-right`, and `border-left` properties, depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
-The borders in the other dimension can be set with {{cssxref("border-block")}}, which sets {{cssxref("border-block-start")}}, and {{cssxref("border-block-end")}}.
+The borders in the other dimension can be set with `border-block`, which sets `border-block-start`, and `border-block-end`.
 
 ## Formal definition
 
@@ -135,5 +135,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- This property maps to one of the physical border properties: {{cssxref("border-top")}}, {{cssxref("border-right")}}, {{cssxref("border-bottom")}}, or {{cssxref("border-left")}}.
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- This property maps to one of the physical border properties: `border-top`, `border-right`, `border-bottom`, or `border-left`.
+- `writing-mode`, `direction`, `text-orientation`

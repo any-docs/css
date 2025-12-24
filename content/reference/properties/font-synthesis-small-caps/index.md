@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`font-synthesis-small-caps`** [CSS](/en-US/docs/Web/CSS) property lets you specify whether or not the browser may synthesize small-caps typeface when it is missing in a font family. Small-caps glyphs typically use the form of uppercase letters but are reduced to the size of lowercase letters.
 
-It is often convenient to use the shorthand property {{cssxref("font-synthesis")}} to control all typeface synthesis values.
+It is often convenient to use the shorthand property `font-synthesis` to control all typeface synthesis values.
 
 ## Syntax
 
@@ -91,5 +91,5 @@ This example shows turning off synthesis of the small-caps typeface by the brows
 ## See also
 
 - [font-synthesis](/reference/properties/font-synthesis) shorthand, [font-synthesis-style](/reference/properties/font-synthesis-style), [font-synthesis-weight](/reference/properties/font-synthesis-weight)
-- {{cssxref("font-style")}}, {{cssxref("font-variant")}}, {{cssxref("font-variant-caps")}}, {{cssxref("font-weight")}}
+- `font-style`, `font-variant`, `font-variant-caps`, `font-weight`
 - [CanvasRenderingContext2D: fontVariantCaps property](/en-US/docs/Web/API/CanvasRenderingContext2D/fontVariantCaps)

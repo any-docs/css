@@ -16,9 +16,9 @@ The **`-webkit-border-before`** [CSS](/en-US/docs/Web/CSS) property is a shortha
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("-webkit-border-before-color")}}
-- {{cssxref("-webkit-border-before-style")}}
-- {{cssxref("-webkit-border-before-width")}}
+- `-webkit-border-before-color`
+- `-webkit-border-before-style`
+- `-webkit-border-before-width`
 
 ## Syntax
 
@@ -41,19 +41,19 @@ This property is a shorthand for the following CSS properties:
 One or more of the following, in any order:
 
 - `<'border-width'>`
-  - See {{cssxref("border-width")}}
+  - See `border-width`
 - `<'border-style'>`
-  - See {{cssxref("border-style")}}
+  - See `border-style`
 - `<'color'>`
-  - See {{cssxref("color")}}
+  - See `color`
 
 ## Description
 
-The `-webkit-border-before` property maps to a physical border depending on the element's writing mode, directionality, and text orientation. It corresponds to the {{cssxref("border-top")}}, {{cssxref("border-right")}}, {{cssxref("border-bottom")}}, or {{cssxref("border-left")}} property depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The `-webkit-border-before` property maps to a physical border depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top`, `border-right`, `border-bottom`, or `border-left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
-It relates to {{cssxref("-webkit-border-after")}}, {{cssxref("-webkit-border-start")}}, and {{cssxref("-webkit-border-end")}}, which define the other borders of the element.
+It relates to `-webkit-border-after`, `-webkit-border-start`, and `-webkit-border-end`, which define the other borders of the element.
 
-The standard-track equivalent of this property is {{cssxref("border-block-start")}}.
+The standard-track equivalent of this property is `border-block-start`.
 
 ## Formal definition
 
@@ -95,7 +95,7 @@ div {
 
 ## Specifications
 
-Not part of any standard, but it relates to the standards-track {{cssxref("border-block-start")}} property.
+Not part of any standard, but it relates to the standards-track `border-block-start` property.
 
 ## Browser compatibility
 
@@ -103,6 +103,6 @@ Not part of any standard, but it relates to the standards-track {{cssxref("borde
 
 ## See also
 
-- {{cssxref("border-block-start")}}
-- The mapped physical properties: {{cssxref("border-top")}}, {{cssxref("border-right")}}, {{cssxref("border-bottom")}}, and {{cssxref("border-left")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- `border-block-start`
+- The mapped physical properties: `border-top`, `border-right`, `border-bottom`, and `border-left`
+- `writing-mode`, `direction`, `text-orientation`

@@ -17,24 +17,24 @@ This module defines CSS features to set and reset a list's counters, set which [
 
 ### Properties
 
-- {{cssxref("counter-increment")}}
-- {{cssxref("counter-reset")}}
-- {{cssxref("counter-set")}}
-- {{cssxref("list-style-image")}}
-- {{cssxref("list-style-type")}}
-- {{cssxref("list-style-position")}}
-- {{cssxref("list-style")}} shorthand
+- `counter-increment`
+- `counter-reset`
+- `counter-set`
+- `list-style-image`
+- `list-style-type`
+- `list-style-position`
+- `list-style` shorthand
 
 There is also a `marker-side` property, which is yet to be fully defined or implemented.
 
 ### Pseudo-elements
 
-- {{cssxref("::marker")}}
+- `::marker`
 
 ### Functions
 
-- {{cssxref("counter")}}
-- {{cssxref("counters")}}
+- `counter`
+- `counters`
 
 ### Data types
 
@@ -53,10 +53,10 @@ There is also a `marker-side` property, which is yet to be fully defined or impl
 ## Related concepts
 
 - [CSS counter styles](/guides/Counter_styles)
-  - {{cssxref("@counter-style")}} at-rule
+  - `@counter-style` at-rule
   - [`<counter-style-name>`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style#counter-style-name) data type
   - [`<symbol>`](/en-US/docs/Web/CSS/Reference/At-rules/@counter-style/symbols#values) data type
-  - {{cssxref("symbols()")}} function
+  - `symbols()` function
 
 - {{HTMLElement("ol")}} `start`, `reversed`, and `type` attributes
 - {{HTMLElement("ul")}} `type` attribute

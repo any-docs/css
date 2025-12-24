@@ -22,11 +22,11 @@ The `:open` pseudo-class selects any element currently in the open state, which 
 
 - {{htmlelement("details")}} and {{htmlelement("dialog")}} elements that are in an open state, that is, they have the `open` attribute set.
 - {{htmlelement("input")}} elements that display a picker interface for the user to choose a value from (for example [`<input type="color">`](/en-US/docs/Web/HTML/Reference/Elements/input/color)), when the picker is displayed.
-- {{htmlelement("select")}} elements that display a drop-down picker for the user to choose a value from, when the picker is displayed. Note that when implementing [customizable select elements](/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select), the picker itself can be selected using the {{cssxref("::picker()", "::picker(select)")}} pseudo-element.
+- {{htmlelement("select")}} elements that display a drop-down picker for the user to choose a value from, when the picker is displayed. Note that when implementing [customizable select elements](/en-US/docs/Learn_web_development/Extensions/Forms/Customizable_select), the picker itself can be selected using the `::picker(select)` pseudo-element.
 
-Note that the open and closed states are semantic states, and don't necessary correlate with the visibility of the element in question. For example, a `<details>` element that is expanded to show its content is open, and will be selected by the `details:open` selector, even if it is hidden with a {{cssxref("visibility")}} value of `hidden`.
+Note that the open and closed states are semantic states, and don't necessary correlate with the visibility of the element in question. For example, a `<details>` element that is expanded to show its content is open, and will be selected by the `details:open` selector, even if it is hidden with a `visibility` value of `hidden`.
 
-{{domxref("Popover API", "Popover", "", "nocode")}} elements (that is, elements with the [`popover`](/en-US/docs/Web/HTML/Reference/Global_attributes/popover) attribute set on them) have distinct semantic states representing popovers that are showing or hidden, which can coexist alongside open and closed states. To target a popover element in a showing state, use the {{cssxref(":popover-open")}} pseudo-class instead.
+`Popover API", "Popover", "", "nocode")}} elements (that is, elements with the [`popover`](/en-US/docs/Web/HTML/Reference/Global_attributes/popover) attribute set on them) have distinct semantic states representing popovers that are showing or hidden, which can coexist alongside open and closed states. To target a popover element in a showing state, use the `:popover-open` pseudo-class instead.
 
 ## Examples
 
@@ -122,9 +122,9 @@ There is nothing special about our fruit selector.
 
 #### CSS
 
-In the CSS, we set an {{cssxref("appearance")}} value of `none` on our `<select>` element to remove the default OS styling from the select box, and provide some basic styles of or own. Most notably, we set an {{glossary("SVG")}} background image of a down arrow on the right-hand side — users tend to recognize `<select>` elements by the down arrow, so it is a good idea to include it.
+In the CSS, we set an `appearance` value of `none` on our `<select>` element to remove the default OS styling from the select box, and provide some basic styles of or own. Most notably, we set an {{glossary("SVG")}} background image of a down arrow on the right-hand side — users tend to recognize `<select>` elements by the down arrow, so it is a good idea to include it.
 
-We then set some {{cssxref("padding")}} on the surrounding {{htmlelement("label")}} element, and a transparent border to keep the layout consistent when we later add a colored border to it.
+We then set some `padding` on the surrounding {{htmlelement("label")}} element, and a transparent border to keep the layout consistent when we later add a colored border to it.
 
 ```css
 select {
@@ -148,7 +148,7 @@ label {
 }
 ```
 
-When the `<select>` is opened, we use the `:open` pseudo-class to set a different background color and change the background image to an up arrow. We also set a different background color and border on the enclosing `<label>` element using a combination of the `:open` and {{cssxref(":has()")}} pseudo-classes to create a parent selector. We are literally saying "select the `<label>`, but only when its descendant `<select>` is open."
+When the `<select>` is opened, we use the `:open` pseudo-class to set a different background color and change the background image to an up arrow. We also set a different background color and border on the enclosing `<label>` element using a combination of the `:open` and `:has()` pseudo-classes to create a parent selector. We are literally saying "select the `<label>`, but only when its descendant `<select>` is open."
 
 ```css
 select:open {
@@ -179,5 +179,5 @@ The result is as follows. Try opening the `<select>` dropdown to see the effect 
 ## See also
 
 - {{htmlelement("details")}}, {{htmlelement("dialog")}}, {{htmlelement("select")}}, and {{htmlelement("input")}} elements
-- {{cssxref(":popover-open")}} pseudo-class
-- {{Cssxref(":modal")}}
+- `:popover-open` pseudo-class
+- `:modal`

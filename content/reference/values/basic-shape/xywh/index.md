@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.xywh
 sidebar: cssref
 ---
 
-The **`xywh()`** [CSS](/en-US/docs/Web/CSS) function creates a rectangle using the specified distances from the left (`x`) and top (`y`) edges of the containing block and the specified width (`w`) and height (`h`) of the rectangle. It is a basic shape function of the {{cssxref("basic-shape")}} [data type](/reference/values/Data_types). You can use the `xywh()` function in CSS properties such as {{cssxref("offset-path")}} to create the rectangular path along which an element moves and in {{cssxref("clip-path")}} to define the shape of the clipping region.
+The **`xywh()`** [CSS](/en-US/docs/Web/CSS) function creates a rectangle using the specified distances from the left (`x`) and top (`y`) edges of the containing block and the specified width (`w`) and height (`h`) of the rectangle. It is a basic shape function of the `basic-shape` [data type](/reference/values/Data_types). You can use the `xywh()` function in CSS properties such as `offset-path` to create the rectangular path along which an element moves and in `clip-path` to define the shape of the clipping region.
 
 ## Syntax
 
@@ -18,11 +18,11 @@ clip-path: xywh(1px 2% 3px 4em round 0 1% 2px 3em);
 ### Values
 
 - `<length-percentage>`
-  - Specifies the {{cssxref("&lt;length-percentage&gt;")}} values for the `x` and `y` coordinates of the rectangle.
+  - Specifies the `&lt;length-percentage&gt;` values for the `x` and `y` coordinates of the rectangle.
 - `<length-percentage [0,∞]>`
-  - Specifies non-negative {{cssxref("&lt;length-percentage&gt;")}} values for the width and height of the rectangle. The minimum value can be zero, and the maximum value has no limit.
+  - Specifies non-negative `&lt;length-percentage&gt;` values for the width and height of the rectangle. The minimum value can be zero, and the maximum value has no limit.
 - `round <'border-radius'>`
-  - Specifies the radius of the rounded corners of the rectangle using the same syntax as the CSS {{cssxref("border-radius")}} shorthand property. This parameter is optional.
+  - Specifies the radius of the rounded corners of the rectangle using the same syntax as the CSS `border-radius` shorthand property. This parameter is optional.
 
 ## Formal syntax
 
@@ -32,7 +32,7 @@ clip-path: xywh(1px 2% 3px 4em round 0 1% 2px 3em);
 
 ### Creating offset-path using xywh()
 
-In the example below, the {{cssxref("offset-path")}} property uses the `xywh()` function to define the shape of the path on which the element, a magenta box in this case, moves. Two different scenarios are shown, each with different values for the `xywh()` function. The arrow inside the boxes points to the right edge of the box.
+In the example below, the `offset-path` property uses the `xywh()` function to define the shape of the path on which the element, a magenta box in this case, moves. Two different scenarios are shown, each with different values for the `xywh()` function. The arrow inside the boxes points to the right edge of the box.
 
 ```html
 <div class="container">
@@ -99,10 +99,10 @@ In the example below, the {{cssxref("offset-path")}} property uses the `xywh()` 
 
 ## See also
 
-- {{cssxref("basic-shape/inset","inset()")}} function
-- {{cssxref("basic-shape/rect","rect()")}} function
-- {{cssxref("clip-path")}} property
-- {{cssxref("offset-path")}} property
-- {{cssxref("basic-shape")}} data type
+- `inset()` function
+- `rect()` function
+- `clip-path` property
+- `offset-path` property
+- `basic-shape` data type
 - [CSS shapes](/guides/Shapes) module
 - [Guide to basic shapes](/guides/Shapes/Using_shape-outside)

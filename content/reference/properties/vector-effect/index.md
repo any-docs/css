@@ -131,6 +131,6 @@ The result is visually identical to that of the previous example. What we can se
 
 ## See also
 
-- {{cssxref("stroke")}}
-- {{cssxref("basic-shape")}} data type
+- `stroke`
+- `basic-shape` data type
 - SVG {{SVGAttr("vector-effect")}} attribute

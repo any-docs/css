@@ -10,7 +10,7 @@ The `max-content` sizing keyword represents the [maximum intrinsic size](/en-US/
 The keyword expands the element to the largest size needed to display its content without any soft wraps.
 For text content, this keyword does not wrap the content at all, even if it causes overflow.
 
-The {{cssxref("interpolate-size")}} property and {{cssxref("calc-size()")}} function can be used to enable animations to and from `max-content`.
+The `interpolate-size` property and `calc-size()` function can be used to enable animations to and from `max-content`.
 
 ## Syntax
 
@@ -107,5 +107,5 @@ grid-template-columns: 200px 1fr max-content;
 
 ## See also
 
-- Related sizing keywords: {{cssxref("min-content")}}, {{cssxref("fit-content")}}
+- Related sizing keywords: `min-content`, `fit-content`
 - [CSS box sizing](/guides/Box_sizing) module

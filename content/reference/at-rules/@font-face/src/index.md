@@ -45,7 +45,7 @@ src:
 ### Values
 
 - `url()`
-  - Specifies an external reference consisting of a {{cssxref("url_value", "&lt;url&gt;")}}, followed by optional hints using the `format()` and `tech()` component values that specify the format and font technology of the resource referenced by the URL. The `format()` and `tech()` components are a comma-separated list of strings of known [font formats](#font_formats) and technologies. If a user agent doesn't support the font technology or formats, it skips downloading the font resource. If no format or technology hints are supplied, the font resource is always downloaded.
+  - Specifies an external reference consisting of a `&lt;url&gt;`, followed by optional hints using the `format()` and `tech()` component values that specify the format and font technology of the resource referenced by the URL. The `format()` and `tech()` components are a comma-separated list of strings of known [font formats](#font_formats) and technologies. If a user agent doesn't support the font technology or formats, it skips downloading the font resource. If no format or technology hints are supplied, the font resource is always downloaded.
 
 - `format()`
   - An optional declaration that follows the `url()` value that provides a hint for the user agent on the font format.
@@ -75,7 +75,7 @@ src:
     The name can optionally be enclosed in quotes. The font face name [is not case-sensitive](https://drafts.csswg.org/css-fonts-3/#font-family-casing).
 
 > [!NOTE]
-> The {{domxref("Local Font Access API", "Local Font Access API", "", "nocode")}} can be used to access the user's locally installed font data — this includes higher-level details such as names, styles, and families, as well as the raw bytes of the underlying font files.
+> The `Local Font Access API", "Local Font Access API", "", "nocode")}} can be used to access the user's locally installed font data — this includes higher-level details such as names, styles, and families, as well as the raw bytes of the underlying font files.
 
 ## Description
 
@@ -106,7 +106,7 @@ src: url("fonts.svg#WhichFont");
 ### Font formats
 
 The following table shows the valid font keywords and their corresponding font formats.
-To check if a font format is supported by a browser within CSS, use the {{cssxref("@supports", "@supports")}} rule.
+To check if a font format is supported by a browser within CSS, use the `@supports` rule.
 
 | Keyword             | Font Format           | Common extensions |
 | ------------------- | --------------------- | ----------------- |
@@ -135,7 +135,7 @@ Older non-normalized `format()` values have the following equivalent syntax; pro
 ### Font technologies
 
 The following table shows valid values for the `tech()` descriptor and their corresponding font technologies.
-To check if a font technology is supported by a browser within CSS, use the {{cssxref("@supports", "@supports")}} at-rule.
+To check if a font technology is supported by a browser within CSS, use the `@supports` at-rule.
 
 | Keyword             | Description                                                                                   |
 | :------------------ | :-------------------------------------------------------------------------------------------- |
@@ -250,7 +250,7 @@ Note that multiple `src` descriptors are attempted in reverse-order, so at the e
 
 ### Checking if the user agent supports a font
 
-The following example shows how to check if the user agent supports a font technology using the {{cssxref("@supports")}} rule.
+The following example shows how to check if the user agent supports a font technology using the `@supports` rule.
 The block of CSS inside `@supports` will be applied if the user agent supports `color-COLRv1` technology.
 
 ```css
@@ -276,13 +276,13 @@ The block of CSS inside `@supports` will be applied if the user agent supports `
 
 ## See also
 
-- {{cssxref("@font-face", "@font-face")}}
-- {{cssxref("@supports", "@supports")}}
-- {{cssxref("@font-face/font-display", "font-display")}}
-- {{cssxref("@font-face/font-family", "font-family")}}
-- {{cssxref("@font-face/font-stretch", "font-stretch")}}
-- {{cssxref("@font-face/font-style", "font-style")}}
-- {{cssxref("@font-face/font-weight", "font-weight")}}
-- {{cssxref("font-feature-settings", "font-feature-settings")}}
-- {{cssxref("@font-face/font-variation-settings", "font-variation-settings")}}
-- {{cssxref("@font-face/unicode-range", "unicode-range")}}
+- `@font-face`
+- `@supports`
+- `font-display`
+- `font-family`
+- `font-stretch`
+- `font-style`
+- `font-weight`
+- `font-feature-settings`
+- `font-variation-settings`
+- `unicode-range`

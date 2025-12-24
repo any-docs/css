@@ -6,31 +6,31 @@ browser-compat: css.types.filter-function
 sidebar: cssref
 ---
 
-The **`<filter-function>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a graphical effect that can change the appearance of an input image. It is used in the {{cssxref("filter")}} and {{cssxref("backdrop-filter")}} properties.
+The **`<filter-function>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a graphical effect that can change the appearance of an input image. It is used in the `filter` and `backdrop-filter` properties.
 
 ## Syntax
 
 The `<filter-function>` data type is specified using one of the filter functions listed below. Each function requires an argument which, if invalid, results in no filter being applied.
 
-- {{cssxref("filter-function/blur", "blur()")}}
+- `blur()`
   - Blurs the image.
-- {{cssxref("filter-function/brightness", "brightness()")}}
+- `brightness()`
   - Makes the image brighter or darker.
-- {{cssxref("filter-function/contrast", "contrast()")}}
+- `contrast()`
   - Increases or decreases the image's contrast.
-- {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
+- `drop-shadow()`
   - Applies a drop shadow behind the image.
-- {{cssxref("filter-function/grayscale", "grayscale()")}}
+- `grayscale()`
   - Converts the image to grayscale.
-- {{cssxref("filter-function/hue-rotate", "hue-rotate()")}}
+- `hue-rotate()`
   - Changes the overall hue of the image.
-- {{cssxref("filter-function/invert", "invert()")}}
+- `invert()`
   - Inverts the colors of the image.
-- {{cssxref("filter-function/opacity", "opacity()")}}
+- `opacity()`
   - Makes the image transparent.
-- {{cssxref("filter-function/saturate", "saturate()")}}
+- `saturate()`
   - Super-saturates or desaturates the input image.
-- {{cssxref("filter-function/sepia", "sepia()")}}
+- `sepia()`
   - Converts the image to sepia.
 
 ## Formal syntax
@@ -207,4 +207,4 @@ setDiv(selectElem.value);
 
 ## See also
 
-- Properties that use this data type: {{cssxref("filter")}} and {{cssxref("backdrop-filter")}}
+- Properties that use this data type: `filter` and `backdrop-filter`

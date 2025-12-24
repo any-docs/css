@@ -117,6 +117,6 @@ For reference, this image shows the same div as above, but with the user's syste
 
 - [CSS overflow](/guides/Overflow) module
 - [CSS scrollbars styling](/guides/Scrollbars_styling) module
-- {{CSSxRef("overflow")}}
-- {{CSSxRef("scrollbar-width")}}
-- {{CSSxRef("scrollbar-color")}}
+- `overflow`
+- `scrollbar-width`
+- `scrollbar-color`

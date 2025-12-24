@@ -6,7 +6,7 @@ browser-compat: css.types.gradient.repeating-radial-gradient
 sidebar: cssref
 ---
 
-The **`repeating-radial-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of repeating gradients that radiate from an origin. It is similar to {{cssxref("gradient/radial-gradient", "radial-gradient()")}} and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container, similar to {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}. The function's result is an object of the {{cssxref("gradient")}} data type, which is a special kind of {{cssxref("image")}}.
+The **`repeating-radial-gradient()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates an image consisting of repeating gradients that radiate from an origin. It is similar to `radial-gradient()` and takes the same arguments, but it repeats the color stops infinitely in all directions so as to cover its entire container, similar to `repeating-linear-gradient()`. The function's result is an object of the `gradient` data type, which is a special kind of `image`.
 
 {{InteractiveExample("CSS Demo: repeating-radial-gradient()")}}
 
@@ -44,7 +44,7 @@ With each repetition, the positions of the color stops are shifted by a multiple
 
 As with any gradient, a repeating radial gradient has [no intrinsic dimensions](/reference/values/image#description); i.e., it has no natural or preferred size, nor a preferred ratio. Its concrete size will match the size of the element it applies to.
 
-Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `repeating-radial-gradient()` won't work on {{cssxref("background-color")}} and other properties that use the {{cssxref("&lt;color&gt;")}} data type.
+Because `<gradient>`s belong to the `<image>` data type, they can only be used where `<image>`s can be used. For this reason, `repeating-radial-gradient()` won't work on `background-color` and other properties that use the `&lt;color&gt;` data type.
 
 ## Syntax
 
@@ -63,8 +63,8 @@ repeating-radial-gradient(farthest-corner at 20% 20%, red 0, green, red 20%)
 
 ### Values
 
-- {{cssxref("&lt;position&gt;")}}
-  - The position of the gradient, interpreted in the same way as {{cssxref("background-position")}} or {{cssxref("transform-origin")}}. If unspecified, it defaults to `center`.
+- `&lt;position&gt;`
+  - The position of the gradient, interpreted in the same way as `background-position` or `transform-origin`. If unspecified, it defaults to `center`.
 - `<shape>`
   - The gradient's shape. The value can be `circle` (meaning that the gradient's shape is a circle with constant radius) or `ellipse` (meaning that the shape is an axis-aligned ellipse). If unspecified, it defaults to `ellipse`.
 - `<extent-keyword>`
@@ -81,7 +81,7 @@ repeating-radial-gradient(farthest-corner at 20% 20%, red 0, green, red 20%)
     > Early implementations of this function included other keywords (`cover` and `contain`) as synonyms of the standard `farthest-corner` and `closest-side`, respectively. Use the standard keywords only, as some implementations have already dropped those older variants.
 
 - `<color-stop>`
-  - A color-stop's {{cssxref("&lt;color&gt;")}} value, followed by an optional stop position (either a {{cssxref("&lt;percentage&gt;")}} or a {{cssxref("&lt;length&gt;")}} along the gradient's axis). A percentage of `0%`, or a length of `0`, represents the center of the gradient; the value `100%` represents the intersection of the ending shape with the virtual gradient ray. Percentage values in between are linearly positioned on the virtual gradient ray.
+  - A color-stop's `&lt;color&gt;` value, followed by an optional stop position (either a `&lt;percentage&gt;` or a `&lt;length&gt;` along the gradient's axis). A percentage of `0%`, or a length of `0`, represents the center of the gradient; the value `100%` represents the intersection of the ending shape with the virtual gradient ray. Percentage values in between are linearly positioned on the virtual gradient ray.
 
 ## Formal syntax
 
@@ -215,11 +215,11 @@ The box on the left uses [shorter interpolation](/reference/values/hue-interpola
 ## See also
 
 - [Using CSS gradients](/guides/Images/Using_gradients)
-- Other gradient functions: {{cssxref("gradient/radial-gradient", "radial-gradient()")}}, {{cssxref("gradient/linear-gradient", "linear-gradient()")}}, {{cssxref("gradient/repeating-linear-gradient", "repeating-linear-gradient()")}}, {{cssxref("gradient/conic-gradient", "conic-gradient()")}}, {{cssxref("gradient/repeating-conic-gradient", "repeating-conic-gradient()")}}
-- {{cssxref("hue-interpolation-method")}}
-- {{cssxref("color-interpolation-method")}}
-- {{cssxref("image")}}
-- {{cssxref("image/image","image()")}}
-- {{cssxref("element()")}}
-- {{cssxref("image/image-set","image-set()")}}
-- {{cssxref("cross-fade()")}}
+- Other gradient functions: `radial-gradient()`, `linear-gradient()`, `repeating-linear-gradient()`, `conic-gradient()`, `repeating-conic-gradient()`
+- `hue-interpolation-method`
+- `color-interpolation-method`
+- `image`
+- `image()`
+- `element()`
+- `image-set()`
+- `cross-fade()`

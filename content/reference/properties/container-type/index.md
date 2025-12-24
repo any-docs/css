@@ -59,7 +59,7 @@ The `container-type` property can take a single value from the list below, or tw
 
 ## Description
 
-Container queries allow you to selectively apply styles inside a container based on conditional queries performed on the container. The {{cssxref("@container")}} at-rule is used to specify the tests performed on a container, and the rules that will apply to the container's contents if the query returns `true`.
+Container queries allow you to selectively apply styles inside a container based on conditional queries performed on the container. The `@container` at-rule is used to specify the tests performed on a container, and the rules that will apply to the container's contents if the query returns `true`.
 
 The container query tests are only performed on elements with a `container-type` property, which defines the elements as a size or scroll-state container, or both.
 
@@ -146,7 +146,7 @@ h3 {
 }
 ```
 
-Writing a container query via the {{Cssxref("@container")}} at-rule will apply styles to the elements of the container when it is wider than 400px:
+Writing a container query via the `@container` at-rule will apply styles to the elements of the container when it is wider than 400px:
 
 ```css
 @container (width > 400px) {
@@ -172,7 +172,7 @@ Writing a container query via the {{Cssxref("@container")}} at-rule will apply s
 - [CSS container queries](/guides/Containment/Container_queries)
 - [Using container size and style queries](/guides/Containment/Container_size_and_style_queries)
 - [Using container scroll-state queries](/guides/Conditional_rules/Container_scroll-state_queries)
-- {{Cssxref("@container")}} at-rule
-- CSS {{Cssxref("container")}} shorthand property
-- CSS {{Cssxref("container-name")}} property
-- CSS {{cssxref("content-visibility")}} property
+- `@container` at-rule
+- CSS `container` shorthand property
+- CSS `container-name` property
+- CSS `content-visibility` property

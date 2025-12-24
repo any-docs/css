@@ -6,7 +6,7 @@ spec-urls: https://www.w3.org/TR/css-color-5/#at-profile
 sidebar: cssref
 ---
 
-The **`@color-profile`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) defines and names a color profile which can later be used in the {{cssxref("color_value/color", "color()")}} function to specify a color.
+The **`@color-profile`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-rules) defines and names a color profile which can later be used in the `color()` function to specify a color.
 
 ## Syntax
 
@@ -19,7 +19,7 @@ The **`@color-profile`** [CSS](/en-US/docs/Web/CSS) [at-rule](/guides/Syntax/At-
 ### Parameters
 
 - profile name
-  - Either a {{cssxref("&lt;dashed-ident&gt;")}} or the identifier `device-cmyk`.
+  - Either a `&lt;dashed-ident&gt;` or the identifier `device-cmyk`.
 
 ### Descriptors
 

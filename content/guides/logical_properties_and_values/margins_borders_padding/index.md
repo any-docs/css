@@ -12,65 +12,65 @@ If you look at the [logical properties and values](/guides/Logical_properties_an
 
 ## Mappings for margins, borders, and padding
 
-The module details mappings for each logical value to a physical counterpart. The table below maps these values for when the {{cssxref("writing-mode")}} is `horizontal-tb` — with a left to right direction. The inline direction therefore runs horizontally — left to right — and {{cssxref("margin-inline-start")}} would be equivalent to {{cssxref("margin-left")}}.
+The module details mappings for each logical value to a physical counterpart. The table below maps these values for when the `writing-mode` is `horizontal-tb` — with a left to right direction. The inline direction therefore runs horizontally — left to right — and `margin-inline-start` would be equivalent to `margin-left`.
 
-If you were using a `horizontal-tb` writing mode with a right-to-left text direction then {{cssxref("margin-inline-start")}} would be the same as {{cssxref("margin-right")}}, and in a vertical writing mode it would be the same as using {{cssxref("margin-top")}}.
+If you were using a `horizontal-tb` writing mode with a right-to-left text direction then `margin-inline-start` would be the same as `margin-right`, and in a vertical writing mode it would be the same as using `margin-top`.
 
 | {{glossary("Logical properties","Logical property")}} | {{glossary("Physical properties", "Physical property")}} |
 | ----------------------------------------------------- | -------------------------------------------------------- |
-| {{cssxref("border-block-end")}}                       | {{cssxref("border-bottom")}}                             |
-| {{cssxref("border-block-end-color")}}                 | {{cssxref("border-bottom-color")}}                       |
-| {{cssxref("border-block-end-style")}}                 | {{cssxref("border-bottom-style")}}                       |
-| {{cssxref("border-block-end-width")}}                 | {{cssxref("border-bottom-width")}}                       |
-| {{cssxref("border-block-start")}}                     | {{cssxref("border-top")}}                                |
-| {{cssxref("border-block-start-color")}}               | {{cssxref("border-top-color")}}                          |
-| {{cssxref("border-block-start-style")}}               | {{cssxref("border-top-style")}}                          |
-| {{cssxref("border-block-start-width")}}               | {{cssxref("border-top-width")}}                          |
-| {{cssxref("border-inline-end")}}                      | {{cssxref("border-right")}}                              |
-| {{cssxref("border-inline-end-color")}}                | {{cssxref("border-right-color")}}                        |
-| {{cssxref("border-inline-end-style")}}                | {{cssxref("border-right-style")}}                        |
-| {{cssxref("border-inline-end-width")}}                | {{cssxref("border-right-width")}}                        |
-| {{cssxref("border-inline-start")}}                    | {{cssxref("border-left")}}                               |
-| {{cssxref("border-inline-start-color")}}              | {{cssxref("border-left-color")}}                         |
-| {{cssxref("border-inline-start-style")}}              | {{cssxref("border-left-style")}}                         |
-| {{cssxref("border-inline-start-width")}}              | {{cssxref("border-left-width")}}                         |
-| {{cssxref("border-start-start-radius")}}              | {{cssxref("border-top-left-radius")}}                    |
-| {{cssxref("border-end-start-radius")}}                | {{cssxref("border-bottom-left-radius")}}                 |
-| {{cssxref("border-start-end-radius")}}                | {{cssxref("border-top-right-radius")}}                   |
-| {{cssxref("border-end-end-radius")}}                  | {{cssxref("border-bottom-right-radius")}}                |
-| {{cssxref("margin-block-end")}}                       | {{cssxref("margin-bottom")}}                             |
-| {{cssxref("margin-block-start")}}                     | {{cssxref("margin-top")}}                                |
-| {{cssxref("margin-inline-end")}}                      | {{cssxref("margin-right")}}                              |
-| {{cssxref("margin-inline-start")}}                    | {{cssxref("margin-left")}}                               |
-| {{cssxref("padding-block-end")}}                      | {{cssxref("padding-bottom")}}                            |
-| {{cssxref("padding-block-start")}}                    | {{cssxref("padding-top")}}                               |
-| {{cssxref("padding-inline-end")}}                     | {{cssxref("padding-right")}}                             |
-| {{cssxref("padding-inline-start")}}                   | {{cssxref("padding-left")}}                              |
+| `border-block-end`                       | `border-bottom`                             |
+| `border-block-end-color`                 | `border-bottom-color`                       |
+| `border-block-end-style`                 | `border-bottom-style`                       |
+| `border-block-end-width`                 | `border-bottom-width`                       |
+| `border-block-start`                     | `border-top`                                |
+| `border-block-start-color`               | `border-top-color`                          |
+| `border-block-start-style`               | `border-top-style`                          |
+| `border-block-start-width`               | `border-top-width`                          |
+| `border-inline-end`                      | `border-right`                              |
+| `border-inline-end-color`                | `border-right-color`                        |
+| `border-inline-end-style`                | `border-right-style`                        |
+| `border-inline-end-width`                | `border-right-width`                        |
+| `border-inline-start`                    | `border-left`                               |
+| `border-inline-start-color`              | `border-left-color`                         |
+| `border-inline-start-style`              | `border-left-style`                         |
+| `border-inline-start-width`              | `border-left-width`                         |
+| `border-start-start-radius`              | `border-top-left-radius`                    |
+| `border-end-start-radius`                | `border-bottom-left-radius`                 |
+| `border-start-end-radius`                | `border-top-right-radius`                   |
+| `border-end-end-radius`                  | `border-bottom-right-radius`                |
+| `margin-block-end`                       | `margin-bottom`                             |
+| `margin-block-start`                     | `margin-top`                                |
+| `margin-inline-end`                      | `margin-right`                              |
+| `margin-inline-start`                    | `margin-left`                               |
+| `padding-block-end`                      | `padding-bottom`                            |
+| `padding-block-start`                    | `padding-top`                               |
+| `padding-inline-end`                     | `padding-right`                             |
+| `padding-inline-start`                   | `padding-left`                              |
 
 There are also some additional shorthands, made possible because we can target both block or both inline edges of the box simultaneously. These shorthands have no physical equivalent.
 
 | Property                           | Purpose                                                                                                                |
 | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| {{cssxref("border-block")}}        | Sets {{cssxref("border-color")}}, {{cssxref("border-style")}}, and {{cssxref("border-width")}} for both block borders. |
-| {{cssxref("border-block-color")}}  | Sets `border-color` for both block borders.                                                                            |
-| {{cssxref("border-block-style")}}  | Sets `border-style` for both block borders.                                                                            |
-| {{cssxref("border-block-width")}}  | Sets `border-width` for both block borders.                                                                            |
-| {{cssxref("border-inline")}}       | Sets `border-color`, `-style`, and `-width` for both inline borders.                                                   |
-| {{cssxref("border-inline-color")}} | Sets `border-color` for both inline borders.                                                                           |
-| {{cssxref("border-inline-style")}} | Sets `border-style` for both inline borders.                                                                           |
-| {{cssxref("border-inline-width")}} | Sets `border-width` for both inline borders.                                                                           |
-| {{cssxref("margin-block")}}        | Sets all the block {{cssxref("margin")}}s.                                                                             |
-| {{cssxref("margin-inline")}}       | Sets all the inline `margin`s.                                                                                         |
-| {{cssxref("padding-block")}}       | Sets the block {{cssxref("padding")}}.                                                                                 |
-| {{cssxref("padding-inline")}}      | Sets the inline `padding`.                                                                                             |
+| `border-block`        | Sets `border-color`, `border-style`, and `border-width` for both block borders. |
+| `border-block-color`  | Sets `border-color` for both block borders.                                                                            |
+| `border-block-style`  | Sets `border-style` for both block borders.                                                                            |
+| `border-block-width`  | Sets `border-width` for both block borders.                                                                            |
+| `border-inline`       | Sets `border-color`, `-style`, and `-width` for both inline borders.                                                   |
+| `border-inline-color` | Sets `border-color` for both inline borders.                                                                           |
+| `border-inline-style` | Sets `border-style` for both inline borders.                                                                           |
+| `border-inline-width` | Sets `border-width` for both inline borders.                                                                           |
+| `margin-block`        | Sets all the block `margin`s.                                                                             |
+| `margin-inline`       | Sets all the inline `margin`s.                                                                                         |
+| `padding-block`       | Sets the block `padding`.                                                                                 |
+| `padding-inline`      | Sets the inline `padding`.                                                                                             |
 
 ## Margin examples
 
-The mapped margin properties of {{cssxref("margin-inline-start")}}, {{cssxref("margin-inline-end")}}, {{cssxref("margin-block-start")}}, and {{cssxref("margin-inline-end")}} can be used instead of their physical counterparts.
+The mapped margin properties of `margin-inline-start`, `margin-inline-end`, `margin-block-start`, and `margin-inline-end` can be used instead of their physical counterparts.
 
 This example has two boxes with different sized margins to each edge. An extra container with a border has been included to make the margin more apparent.
 
-One box uses physical properties and the other logical properties. Try changing the {{cssxref("direction")}} property to `rtl` to cause the boxes to display in a right-to-left direction; the margins on the first box will stay in the same place, while the margins on the inline dimension of the second box will switch.
+One box uses physical properties and the other logical properties. Try changing the `direction` property to `rtl` to cause the boxes to display in a right-to-left direction; the margins on the first box will stay in the same place, while the margins on the inline dimension of the second box will switch.
 
 Also try changing the `writing-mode` from `horizontal-tb` to `vertical-rl`. Notice how the margins stay in the same place for the first box, but switch around to follow the text direction in the second.
 
@@ -140,7 +140,7 @@ body {
 
 ### Margin shorthands
 
-There are shorthands available to target either both the inline sides or both the block sides, {{cssxref("margin-inline")}} and {{cssxref("margin-block")}} respectively. Each accepts two values. The first value will apply to the start of that dimension, the second to the end. If only one value is set, it is applied to both.
+There are shorthands available to target either both the inline sides or both the block sides, `margin-inline` and `margin-block` respectively. Each accepts two values. The first value will apply to the start of that dimension, the second to the end. If only one value is set, it is applied to both.
 
 In a horizontal writing mode this CSS would apply a `5px` margin to the top of the box and a `10px` margin to the bottom.
 
@@ -152,7 +152,7 @@ In a horizontal writing mode this CSS would apply a `5px` margin to the top of t
 
 ## Padding examples
 
-The mapped padding properties of {{cssxref("padding-inline-start")}}, {{cssxref("padding-inline-end")}}, {{cssxref("padding-block-start")}}, and {{cssxref("padding-inline-end")}} can be used instead of their physical counterparts.
+The mapped padding properties of `padding-inline-start`, `padding-inline-end`, `padding-block-start`, and `padding-inline-end` can be used instead of their physical counterparts.
 
 In this example, there are two boxes. One has physical padding properties set and the other uses logical padding properties. With a `writing-mode` of `horizontal-tb`, both boxes should appear the same.
 
@@ -221,7 +221,7 @@ body {
 
 ### Padding shorthands
 
-As with margin, there are two-value shorthands for padding — {{cssxref("padding-inline")}} and {{cssxref("padding-block")}} — which allow you to set the padding of the two inline, and two block dimensions, respectively.
+As with margin, there are two-value shorthands for padding — `padding-inline` and `padding-block` — which allow you to set the padding of the two inline, and two block dimensions, respectively.
 
 In a horizontal `writing-mode`, this CSS would apply `5px` of padding to the top of the box and `10px` of padding to the bottom:
 
@@ -303,7 +303,7 @@ There are two-value shorthands to set the width, style, and color of the block o
 
 ### Flow relative border-radius properties
 
-The module has flow-relative equivalents for the {{cssxref("border-radius")}} longhands. The below example, in a horizontal `writing-mode`, would set the top-right border radius to `1em`, the bottom-right to `0`, the bottom-left to `20px` and the top-left to `40px`.
+The module has flow-relative equivalents for the `border-radius` longhands. The below example, in a horizontal `writing-mode`, would set the top-right border radius to `1em`, the bottom-right to `0`, the bottom-left to `20px` and the top-left to `40px`.
 
 ```css
 .box {

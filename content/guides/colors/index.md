@@ -11,7 +11,7 @@ sidebar: cssref
 
 The **CSS colors** module defines colors, color types, color blending, opacity, and how you can apply these colors and effects to HTML content.
 
-While this module has only two CSS properties, {{cssxref("color")}} and {{cssxref("opacity")}}, over 20 CSS and SVG properties, CSS images, at-rules, and @media rules depend on these two properties.
+While this module has only two CSS properties, `color` and `opacity`, over 20 CSS and SVG properties, CSS images, at-rules, and @media rules depend on these two properties.
 
 ## Colors in action
 
@@ -19,7 +19,7 @@ The color syntax converter below shows the values of the currently selected colo
 
 {{EmbedGHLiveSample("css-examples/modules/colors.html", '100%', 450)}}
 
-Selecting a color via the [color picker](/en-US/docs/Web/HTML/Reference/Elements/input/color) and an opacity via the [slider](/en-US/docs/Web/HTML/Reference/Elements/input/range) updates the RGB, HEX, HSL, and HWB values. When you choose a new color or opacity value, the color of the background and the slider update via the CSS properties {{cssxref("background-color")}} and {{cssxref("accent-color")}}, respectively.
+Selecting a color via the [color picker](/en-US/docs/Web/HTML/Reference/Elements/input/color) and an opacity via the [slider](/en-US/docs/Web/HTML/Reference/Elements/input/range) updates the RGB, HEX, HSL, and HWB values. When you choose a new color or opacity value, the color of the background and the slider update via the CSS properties `background-color` and `accent-color`, respectively.
 
 To see the code for this color syntax converter, [view the source on GitHub](https://github.com/mdn/css-examples/blob/main/modules/colors.html).
 
@@ -27,12 +27,12 @@ To see the code for this color syntax converter, [view the source on GitHub](htt
 
 ### Properties
 
-- {{cssxref("color")}}
-- {{cssxref("opacity")}}
+- `color`
+- `opacity`
 
 ### At-rules and descriptors
 
-The CSS colors module also introduces the {{cssxref("@color-profile")}} at-rule, along with its `components`, `rendering-intent` and `src` descriptors. Currently, no browsers support these features.
+The CSS colors module also introduces the `@color-profile` at-rule, along with its `components`, `rendering-intent` and `src` descriptors. Currently, no browsers support these features.
 
 ### Functions
 
@@ -47,19 +47,19 @@ The CSS colors module also introduces the {{cssxref("@color-profile")}} at-rule,
   - [`color()`](/reference/values/color_value/color)
 - [`color-mix()`](/reference/values/color_value/color-mix)
 - [`contrast-color()`](/reference/values/color_value/contrast-color)
-- {{CSSXref("color_value/light-dark", "light-dark()")}}
+- `light-dark()`
 
-The CSS color modules also introduce the {{CSSXref("color_value/device-cmyk", "device-cmyk()")}} function. Currently, no browsers support this feature.
+The CSS color modules also introduce the `device-cmyk()` function. Currently, no browsers support this feature.
 
 ### Data types
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
 - [`<color-function>`](#functions)
-- {{cssxref("hex-color")}}
-- {{cssxref("named-color")}}
-- {{cssxref("alpha-value")}}
-- {{cssxref("hue")}}
-- {{cssxref("system-color")}}
+- `hex-color`
+- `named-color`
+- `alpha-value`
+- `hue`
+- `system-color`
 - [`<colorspace-params>`](/reference/values/color_value/color#using_predefined_color_spaces_with_color)
 
 ### Glossary terms and keywords
@@ -94,23 +94,23 @@ The CSS color module also introduces the `CSSColorProfileRule` interface. Curren
 ## Related concepts
 
 - CSS properties that are part of other specifications:
-  - {{cssxref("accent-color")}}
-  - {{cssxref("background-color")}}
-  - {{cssxref("background-image")}}
-  - {{cssxref("border-color")}}
-  - {{cssxref("box-shadow")}}
-  - {{cssxref("caret-color")}}
-  - {{cssxref("color")}}
-  - {{cssxref("color-scheme")}}
-  - {{cssxref("column-rule-color")}}
-  - {{cssxref("dynamic-range-limit")}}
-  - {{cssxref("outline-color")}}
-  - {{cssxref("scrollbar-color")}}
-  - {{cssxref("text-decoration-color")}}
-  - {{cssxref("text-emphasis-color")}}
-  - {{cssxref("text-shadow")}}
-  - {{cssxref("-webkit-tap-highlight-color")}}
-- {{cssxref("dynamic-range-limit-mix()")}} function
+  - `accent-color`
+  - `background-color`
+  - `background-image`
+  - `border-color`
+  - `box-shadow`
+  - `caret-color`
+  - `color`
+  - `color-scheme`
+  - `column-rule-color`
+  - `dynamic-range-limit`
+  - `outline-color`
+  - `scrollbar-color`
+  - `text-decoration-color`
+  - `text-emphasis-color`
+  - `text-shadow`
+  - `-webkit-tap-highlight-color`
+- `dynamic-range-limit-mix()` function
 - SVG color properties that are part of other specifications:
   - [`fill`](/en-US/docs/Web/SVG/Reference/Attribute/fill)
   - [`flood-color`](/en-US/docs/Web/SVG/Reference/Attribute/flood-color)
@@ -120,8 +120,8 @@ The CSS color module also introduces the `CSSColorProfileRule` interface. Curren
 - SVG [`color`](/en-US/docs/Web/SVG/Reference/Attribute/color) attribute
 - {{glossary("Color wheel")}} glossary term
 - {{glossary("Interpolation")}} glossary term
-- The {{cssxref("@font-palette-values")}} at-rule [`override-colors`](/en-US/docs/Web/CSS/Reference/At-rules/@font-palette-values/override-colors) descriptor
-- The {{cssxref("@color-profile")}} at-rule
+- The `@font-palette-values` at-rule [`override-colors`](/en-US/docs/Web/CSS/Reference/At-rules/@font-palette-values/override-colors) descriptor
+- The `@color-profile` at-rule
 - The [`color-gamut`](/en-US/docs/Web/CSS/Reference/At-rules/@media/color-gamut) @media feature
 - The [`forced-colors`](/en-US/docs/Web/CSS/Reference/At-rules/@media/forced-colors) @media feature
 
@@ -131,8 +131,8 @@ The CSS color module also introduces the `CSSColorProfileRule` interface. Curren
 
 ## See also
 
-- [CSS color adjustment](/guides/Color_adjustment) module and {{cssxref("print-color-adjust")}}
-- {{cssxref("gradient")}} defined in [CSS images](/guides/Images) module
+- [CSS color adjustment](/guides/Color_adjustment) module and `print-color-adjust`
+- `gradient` defined in [CSS images](/guides/Images) module
 - The [`VideoColorSpace`](/en-US/docs/Web/API/VideoColorSpace) interface
 - [`<feColorMatrix>`](/en-US/docs/Web/SVG/Reference/Element/feColorMatrix) SVG element
 - [Canvas API: applying styles and colors](/en-US/docs/Web/API/Canvas_API/Tutorial/Applying_styles_and_colors#colors)

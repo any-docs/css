@@ -16,7 +16,7 @@ When there are multiple [declared values](#declared_value), with multiple declar
 
 To determine which [declared value](#declared_value) is applied, the user agent gathers and processes all the styles from different sources, such as inline styles, and internal and external stylesheets.
 
-The [cascade](/guides/Cascade/Introduction) determines which value should be applied when multiple conflicting styles target the same element. The [cascade algorithm](/guides/Cascade/Introduction#cascading_order) defines how user agents combine property values originating from different sources, scopes, and/or [layers](/guides/Cascade/Introduction#cascade_layers). When a selector matches an element, the property's [declared value](#declared_value) from the [origin](/guides/Cascade/Introduction#origin_types) with the highest precedence gets applied, even if a selector from a lower precedence [origin](/guides/Cascade/Introduction#origin_types) or [layers](/guides/Cascade/Introduction#cascade_layers) has greater {{cssxref("specificity")}}.
+The [cascade](/guides/Cascade/Introduction) determines which value should be applied when multiple conflicting styles target the same element. The [cascade algorithm](/guides/Cascade/Introduction#cascading_order) defines how user agents combine property values originating from different sources, scopes, and/or [layers](/guides/Cascade/Introduction#cascade_layers). When a selector matches an element, the property's [declared value](#declared_value) from the [origin](/guides/Cascade/Introduction#origin_types) with the highest precedence gets applied, even if a selector from a lower precedence [origin](/guides/Cascade/Introduction#origin_types) or [layers](/guides/Cascade/Introduction#cascade_layers) has greater `specificity`.
 
 Certain properties inherit values from their parent elements unless explicitly overridden. [Inheritance](/guides/Cascade/Inheritance) may occur when no style information exists for a specific property on an element. If the property is inherited, the value is set to the [computed value](#computed_value) of the parent element. If the property is not inherited, its value is set to the [initial value](#initial_value) for that element.
 
@@ -31,13 +31,13 @@ Before diving into the individual value stages, it's important to understand the
 **Filtering** is the process of identifying all declarations that apply to each element. A declaration applies to an element only if:
 
 - The declaration belongs to a style sheet that currently applies to this document
-- Any [conditional rules](/guides/Conditional_rules) (like {{cssxref("@media")}} or {{cssxref("@supports")}}) that contain the declaration are currently true.
+- Any [conditional rules](/guides/Conditional_rules) (like `@media` or `@supports`) that contain the declaration are currently true.
 - The declaration belongs to a style rule whose selector matches the element
 - The declaration is syntactically valid: the property name is recognized by the browser and the value matches the expected syntax for that property
 
 Only valid declarations become declared values. Declarations with invalid property names or invalid values get filtered out according to [CSS error handling rules](/guides/Syntax/Error_handling).
 
-In this example, only the {{cssxref("font-size")}} and {{cssxref("font-weight")}} declarations are processed. The [CSS parser filters out errors](/guides/Syntax/Error_handling#css_parser_errors), ignoring or "filtering" out the declaration with the invalid property name:
+In this example, only the `font-size` and `font-weight` declarations are processed. The [CSS parser filters out errors](/guides/Syntax/Error_handling#css_parser_errors), ignoring or "filtering" out the declaration with the invalid property name:
 
 ```css
 p {
@@ -53,7 +53,7 @@ When filtering is complete, every element has zero or more [declared values](#de
 
 [Cascade](/guides/Cascade/Introduction) resolves conflicts when multiple declarations apply to the same property on the same element. Cascade sorts declarations using [the cascade sorting order](/guides/Cascade/Introduction#cascading_order) algorithm.
 
-For example, both {{cssxref("font-size")}} declarations match `<p class="large">CSS is fun!</p>`, but the second declaration gets applied because it has higher {{cssxref("specificity")}}. Both declarations have author origin, but the second selector has specificity of `0-1-1` while the first has `0-0-1`:
+For example, both `font-size` declarations match `<p class="large">CSS is fun!</p>`, but the second declaration gets applied because it has higher `specificity`. Both declarations have author origin, but the second selector has specificity of `0-1-1` while the first has `0-0-1`:
 
 ```css
 p {
@@ -77,11 +77,11 @@ This involves:
 
 As a result of defaulting, every property is guaranteed to have a [specified value](#specified_value).
 
-Note that explicit defaulting keywords ({{cssxref("initial")}}, {{cssxref("inherit")}}, {{cssxref("unset")}}, {{cssxref("revert")}}, {{cssxref("revert-layer")}}) are also resolved to their corresponding values to determine the [specified value](#specified_value).
+Note that explicit defaulting keywords (`initial`, `inherit`, `unset`, `revert`, `revert-layer`) are also resolved to their corresponding values to determine the [specified value](#specified_value).
 
 ## Processing stages
 
-All elements that are part of the document's flattened element tree have [declared](#declared_value), [cascaded](#cascaded_value), [specified](#specified_value), [computed](#computed_value), [used](#used_value), and [actual](#actual_value) values. For a specific property, these values may or may not be the same. For example, if your large code base includes the CSS `p { font-size: 1.25em; }` and your HTML includes `<p class="large">CSS is fun!</p>`, what size will the paragraph be? The {{cssxref("font-size")}} value moves through a few stages to go from the `em` specified value to the rendered `px` value.
+All elements that are part of the document's flattened element tree have [declared](#declared_value), [cascaded](#cascaded_value), [specified](#specified_value), [computed](#computed_value), [used](#used_value), and [actual](#actual_value) values. For a specific property, these values may or may not be the same. For example, if your large code base includes the CSS `p { font-size: 1.25em; }` and your HTML includes `<p class="large">CSS is fun!</p>`, what size will the paragraph be? The `font-size` value moves through a few stages to go from the `em` specified value to the rendered `px` value.
 
 The value processing stages are:
 
@@ -158,7 +158,7 @@ A property's **initial value** is the default value as listed in its definition 
 - For [inherited properties](/guides/Cascade/Inheritance#inherited_properties), the initial value is used on the _root element only_, which has no parent element, when no cascaded value exists.
 - For [non-inherited properties](/guides/Cascade/Inheritance#non-inherited_properties), the initial value is used on _all elements_ when no cascaded value exists.
 
-You can explicitly set the initial value by using the {{cssxref("initial")}} keyword.
+You can explicitly set the initial value by using the `initial` keyword.
 
 > [!NOTE]
 > The initial value can be found in the formal syntax section of each CSS property reference page. For example, the [initial value of `font-size` is `medium`](/reference/properties/font-size#formal_definition). The initial value should not be confused with the value specified by the browser's style sheet.
@@ -169,7 +169,7 @@ The **computed value** of a property is the value transferred from parent to chi
 
 The computed value is calculated from the [specified value](#specified_value) by:
 
-1. Handling the special values {{cssxref("inherit")}}, {{cssxref("initial")}}, {{cssxref("revert")}}, {{cssxref("revert-layer")}}, and {{cssxref("unset")}}.
+1. Handling the special values `inherit`, `initial`, `revert`, `revert-layer`, and `unset`.
 2. Doing the computation needed to reach the value described in the "Computed value" line in the property's definition table.
 
 The computation needed to reach a property's computed value typically involves converting relative values (such as those in `em` units or percentages) to absolute values. For example, if an element has specified values `font-size: 16px` and `padding-top: 2em`, then the computed value of `padding-top` is `32px` (double the font size).
@@ -180,9 +180,9 @@ However, for some properties (those where percentages are relative to something 
 
 The **used value** is the property's value after all calculations have been performed on the [computed value](#computed_value) and it has been refined with layout-specific details (e.g., percentages resolved to actual pixel values).
 
-Every CSS property has a used value. The used values of dimensions (e.g., {{cssxref("width")}} or {{cssxref("line-height")}}) are in pixels. The used values of shorthand properties (e.g., {{cssxref("background")}}) are consistent with those of their component properties (e.g., {{cssxref("background-color")}} or {{cssxref("background-size")}}) and with {{cssxref("position")}} and {{cssxref("float")}}.
+Every CSS property has a used value. The used values of dimensions (e.g., `width` or `line-height`) are in pixels. The used values of shorthand properties (e.g., `background`) are consistent with those of their component properties (e.g., `background-color` or `background-size`) and with `position` and `float`.
 
-The used value for the {{cssxref("width")}} or {{cssxref("inline-size")}} of an element is a pixel value even if the specified value of the property was set with percentages or keyword values.
+The used value for the `width` or `inline-size` of an element is a pixel value even if the specified value of the property was set with percentages or keyword values.
 
 If we have three container elements with their width set as `auto`, `50%`, and `inherit`:
 
@@ -241,7 +241,7 @@ updateAllUsedWidths();
 window.addEventListener("resize", updateAllUsedWidths);
 ```
 
-While the three specified values, `auto`, `50%`, and `inherit`, are keyword and {{cssxref("percentage")}} values, retrieving the `width` using `window.getComputedStyle(el)["width"];` returns an [absolute length](/reference/values/length#absolute_length_units) `px` value:
+While the three specified values, `auto`, `50%`, and `inherit`, are keyword and `percentage` values, retrieving the `width` using `window.getComputedStyle(el)["width"];` returns an [absolute length](/reference/values/length#absolute_length_units) `px` value:
 
 {{ EmbedLiveSample('Example', '80%', 372) }}
 
@@ -264,24 +264,24 @@ The calculation includes these steps:
 
 ### Resolved value
 
-The **resolved value** of a property is the value after applying active stylesheets and resolving any basic computation those values may contain. The {{domxref("Window.getComputedStyle", "getComputedStyle()")}} method returns a live {{domxref("CSSStyleDeclaration")}} object containing the resolved values of all CSS properties applied to a specified element. Each resolved value is either the [computed value](#computed_value) or the [used value](#used_value), depending on the property.
+The **resolved value** of a property is the value after applying active stylesheets and resolving any basic computation those values may contain. The `getComputedStyle()` method returns a live `CSSStyleDeclaration` object containing the resolved values of all CSS properties applied to a specified element. Each resolved value is either the [computed value](#computed_value) or the [used value](#used_value), depending on the property.
 
 Historically, `getComputedStyle()` returned the computed value of an element or pseudo-element. As CSS evolved, so did the concept of "computed value", but the values returned by `getComputedStyle()` had to remain the same for backward compatibility with deployed scripts. These values are the "resolved values".
 
-For most properties, the resolved value is the computed value, but for a few legacy properties (including {{cssxref("width")}} and {{cssxref("height")}}), it is the used value. The [CSSOM specification](https://drafts.csswg.org/cssom/#resolved_values) provides per-property details.
+For most properties, the resolved value is the computed value, but for a few legacy properties (including `width` and `height`), it is the used value. The [CSSOM specification](https://drafts.csswg.org/cssom/#resolved_values) provides per-property details.
 
 CSS 2.0 defined _computed value_ as the last step in a property's calculation. CSS 2.1 introduced the distinct definition of "used value". An element could then explicitly inherit the width/height of its parent, whose computed value is a percentage. For CSS properties that don't depend on layout (e.g., `display`, `font-size`, or `line-height`), the computed values and used values are the same. The following list contains the CSS 2.1 properties that _do_ depend on layout, and therefore have a different computed value and used value (taken from [CSS 2.1 Changes: Specified, computed, and actual values](https://www.w3.org/TR/CSS2/changes.html#q21.36)):
 
-- {{cssxref("background-position")}}
-- {{cssxref("bottom")}}, {{cssxref("left")}}, {{cssxref("right")}}, {{cssxref("top")}}
-- {{cssxref("height")}}, {{cssxref("width")}}
-- {{cssxref("margin-bottom")}}, {{cssxref("margin-left")}}, {{cssxref("margin-right")}}, {{cssxref("margin-top")}}
-- {{cssxref("min-height")}}, {{cssxref("min-width")}}
-- {{cssxref("padding-bottom")}}, {{cssxref("padding-left")}}, {{cssxref("padding-right")}}, {{cssxref("padding-top")}}
-- {{cssxref("text-indent")}}
+- `background-position`
+- `bottom`, `left`, `right`, `top`
+- `height`, `width`
+- `margin-bottom`, `margin-left`, `margin-right`, `margin-top`
+- `min-height`, `min-width`
+- `padding-bottom`, `padding-left`, `padding-right`, `padding-top`
+- `text-indent`
 
 ## See also
 
-- CSS values for controlling inheritance: {{cssxref("inherit")}}, {{cssxref("initial")}}, {{cssxref("revert")}}, {{cssxref("revert-layer")}}, and {{cssxref("unset")}}
+- CSS values for controlling inheritance: `inherit`, `initial`, `revert`, `revert-layer`, and `unset`
 - [CSS cascading and inheritance](/guides/Cascade) module
 - [CSS syntax](/guides/Syntax) module

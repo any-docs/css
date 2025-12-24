@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`<hex-color>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) is a notation for describing the _hexadecimal color syntax_ of an [sRGB](/en-US/docs/Glossary/RGB) color using its primary color components (red, green, blue) written as hexadecimal numbers, as well as its transparency.
 
-A `<hex-color>` value can be used everywhere where a {{cssxref("&lt;color&gt;")}} can be used.
+A `<hex-color>` value can be used everywhere where a `&lt;color&gt;` can be used.
 
 ## Syntax
 
@@ -111,7 +111,7 @@ div {
 
 ## See also
 
-- {{cssxref("&lt;color&gt;")}} data type
-- {{cssxref("named-color")}} data-type
+- `&lt;color&gt;` data type
+- `named-color` data-type
 - [`rgb()`](/reference/values/color_value/rgb) color function
 - [CSS color](/guides/Colors) module

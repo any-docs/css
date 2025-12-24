@@ -13,7 +13,7 @@ sidebar: cssref
 The **`text-decoration-skip`** [CSS](/en-US/docs/Web/CSS) property sets what parts of an element's content any text decoration affecting the element must skip over. It controls all text decoration lines drawn by the element and also any text decoration lines drawn by its ancestors.
 
 > [!NOTE]
-> Most other browsers are converging on supporting the simpler {{cssxref("text-decoration-skip-ink")}} property.
+> Most other browsers are converging on supporting the simpler `text-decoration-skip-ink` property.
 
 ## Syntax
 
@@ -45,7 +45,7 @@ text-decoration-skip: unset;
 - `objects`
   - The entire margin box of the element is skipped if it is an atomic inline such as an image or inline-block.
 - `spaces`
-  - All spacing is skipped: all [Unicode white space characters](https://www.unicode.org/reports/tr44/#White_Space) and all word separators, plus any adjacent {{cssxref("letter-spacing")}} or {{cssxref("word-spacing")}}.
+  - All spacing is skipped: all [Unicode white space characters](https://www.unicode.org/reports/tr44/#White_Space) and all word separators, plus any adjacent `letter-spacing` or `word-spacing`.
 - `leading-spaces`
   - The same as `spaces`, except that only leading spaces are skipped.
 - `trailing-spaces`
@@ -101,4 +101,4 @@ p {
 
 ## See also
 
-- {{cssxref("text-decoration-skip-ink")}}
+- `text-decoration-skip-ink`

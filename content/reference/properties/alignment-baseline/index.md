@@ -49,7 +49,7 @@ alignment-baseline: unset;
 ### Values
 
 - `baseline`
-  - Use the {{cssxref("dominant-baseline")}} value of the parent.
+  - Use the `dominant-baseline` value of the parent.
 
 - `alphabetic`
   - Used in writing Latin, Cyrillic, Greek, and many other scripts; matches the box's alphabetic baseline to that of its parent, corresponding to the bottom of most, but not all characters.
@@ -73,7 +73,7 @@ alignment-baseline: unset;
   - Matches the top of the box to the top of the parent's content area; the line-over edge of an inline's content box.
 
 > [!NOTE]
-> In SVG2, the `auto`, `before-edge`, and `after-edge` were deprecated and `text-before-edge` is an alias for `text-top`, and `text-after-edge` is an alias for `text-bottom`. These keywords should not be used as part of the {{cssxref("vertical-align")}} shorthand property. Browsers support `auto` as a synonym for `baseline` and `hanging`, wherein the alignment-point of the object being aligned is aligned with the "hanging" baseline of the parent text content element, but neither is part of the specification.
+> In SVG2, the `auto`, `before-edge`, and `after-edge` were deprecated and `text-before-edge` is an alias for `text-top`, and `text-after-edge` is an alias for `text-bottom`. These keywords should not be used as part of the `vertical-align` shorthand property. Browsers support `auto` as a synonym for `baseline` and `hanging`, wherein the alignment-point of the object being aligned is aligned with the "hanging" baseline of the parent text content element, but neither is part of the specification.
 
 ## Formal definition
 
@@ -151,7 +151,7 @@ text:nth-of-type(8) {
 
 ## See also
 
-- {{cssxref("dominant-baseline")}}
+- `dominant-baseline`
 - SVG {{SVGAttr("alignment-baseline")}} attribute
 - [CSS inline layout](/guides/Inline_layout) module
 - [CSS box alignment](/guides/Box_alignment) module

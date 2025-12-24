@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`object-position`** [CSS](/en-US/docs/Web/CSS) property specifies the alignment of the selected {{ glossary("replaced elements", "replaced element")}}'s contents within the element's box. Areas of the box which aren't covered by the replaced element's object will show the element's background.
 
-You can adjust how the replaced element's object's intrinsic size (that is, its natural size) is adjusted to fit within the element's box using the {{cssxref("object-fit")}} property.
+You can adjust how the replaced element's object's intrinsic size (that is, its natural size) is adjusted to fit within the element's box using the `object-fit` property.
 
 {{InteractiveExample("CSS Demo: object-position")}}
 
@@ -79,7 +79,7 @@ object-position: unset;
 
 ### Values
 
-- {{cssxref("&lt;position&gt;")}}
+- `&lt;position&gt;`
   - From one to four values that define the 2D position of the element. Relative or absolute offsets can be used.
 
 > [!NOTE]
@@ -145,4 +145,4 @@ The first image is positioned with its left edge inset 10 pixels from the left e
 
 ## See also
 
-- Other image-related CSS properties: {{cssxref("object-fit")}}, {{cssxref("image-orientation")}}, {{cssxref("image-rendering")}}, {{cssxref("image-resolution")}}.
+- Other image-related CSS properties: `object-fit`, `image-orientation`, `image-rendering`, `image-resolution`.

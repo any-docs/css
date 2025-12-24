@@ -24,14 +24,14 @@ For a cross-document view transition to work, the current and destination docume
 - `navigation`
   - A keyword specifying the effect this at-rule will have on the document's view transition behavior. Possible values are:
     - `auto`
-      - The document will undergo a view transition when taking part in a navigation, provided the navigation is [same-origin](/en-US/docs/Web/Security/Defenses/Same-origin_policy), without cross-origin redirects, and its {{domxref("NavigateEvent.navigationType", "navigationType")}} is `traverse`, `push`, or `replace`. In the case of `push` or `replace`, the navigation must be initiated by a user interacting with the page content, not by a browser UI feature.
+      - The document will undergo a view transition when taking part in a navigation, provided the navigation is [same-origin](/en-US/docs/Web/Security/Defenses/Same-origin_policy), without cross-origin redirects, and its `navigationType` is `traverse`, `push`, or `replace`. In the case of `push` or `replace`, the navigation must be initiated by a user interacting with the page content, not by a browser UI feature.
     - `none`
       - The document will not undergo a view transition.
 
 - `types`
   - Specifies the view transition [types](/en-US/docs/Web/API/View_Transition_API/Using_types) to set on the active view transition for the current and destination documents. Possible values are:
     - `<custom-ident>#`
-      - One or more comma-separated {{cssxref("&lt;custom-ident>")}} values representing the types to set.
+      - One or more comma-separated `&lt;custom-ident>` values representing the types to set.
     - `none`
       - No types are set.
 
@@ -55,7 +55,7 @@ The `@view-transition` at-rule is specified in the CSS for both your current and
 }
 ```
 
-In addition to the `@view-transition` at-rule, we use the {{cssxref("@keyframes")}} at-rule to define two keyframe animations and use the {{cssxref("animation")}} shorthand property to apply those keyframe animations to the elements in the outbound ({{cssxref("::view-transition-old()")}}) and inbound ({{cssxref("::view-transition-new()")}}) pages that we want to animate.
+In addition to the `@view-transition` at-rule, we use the `@keyframes` at-rule to define two keyframe animations and use the `animation` shorthand property to apply those keyframe animations to the elements in the outbound (`::view-transition-old()`) and inbound (`::view-transition-new()`) pages that we want to animate.
 
 ```css
 /* Create a custom animation */
@@ -114,11 +114,11 @@ See [Using types with cross-document view transitions via `@view-transition`](/e
 
 ## See also
 
-- {{cssxref("::view-transition", "::view-transition")}}
-- {{cssxref("::view-transition-new()")}}
-- {{cssxref("::view-transition-old()")}}
-- {{cssxref("::view-transition-group()")}}
-- {{cssxref("::view-transition-image-pair()")}}
+- `::view-transition`
+- `::view-transition-new()`
+- `::view-transition-old()`
+- `::view-transition-group()`
+- `::view-transition-image-pair()`
 - [View Transition API](/en-US/docs/Web/API/View_Transition_API)
 - [Using view transition types](/en-US/docs/Web/API/View_Transition_API/Using_types)
 - [CSS at-rules](/guides/Syntax/At-rules)

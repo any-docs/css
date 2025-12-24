@@ -30,59 +30,59 @@ CSS was initially designed with only physical coordinates. The logical propertie
 
 ### Properties
 
-- {{cssxref("block-size")}}
-- {{cssxref("border-block")}}
-- {{cssxref("border-block-color")}}
-- {{cssxref("border-block-end")}}
-- {{cssxref("border-block-end-color")}}
-- {{cssxref("border-block-end-style")}}
-- {{cssxref("border-block-end-width")}}
-- {{cssxref("border-block-start")}}
-- {{cssxref("border-block-start-color")}}
-- {{cssxref("border-block-start-style")}}
-- {{cssxref("border-block-start-width")}}
-- {{cssxref("border-block-style")}}
-- {{cssxref("border-block-width")}}
-- {{cssxref("border-end-end-radius")}}
-- {{cssxref("border-end-start-radius")}}
-- {{cssxref("border-inline")}}
-- {{cssxref("border-inline-color")}}
-- {{cssxref("border-inline-end")}}
-- {{cssxref("border-inline-end-color")}}
-- {{cssxref("border-inline-end-style")}}
-- {{cssxref("border-inline-end-width")}}
-- {{cssxref("border-inline-start")}}
-- {{cssxref("border-inline-start-color")}}
-- {{cssxref("border-inline-start-style")}}
-- {{cssxref("border-inline-start-width")}}
-- {{cssxref("border-inline-style")}}
-- {{cssxref("border-inline-width")}}
-- {{cssxref("border-start-end-radius")}}
-- {{cssxref("border-start-start-radius")}}
-- {{cssxref("inline-size")}}
-- {{cssxref("inset")}}
-- {{cssxref("inset-block")}}
-- {{cssxref("inset-block-end")}}
-- {{cssxref("inset-block-start")}}
-- {{cssxref("inset-inline")}}
-- {{cssxref("inset-inline-end")}}
-- {{cssxref("inset-inline-start")}}
-- {{cssxref("margin-block")}}
-- {{cssxref("margin-block-end")}}
-- {{cssxref("margin-block-start")}}
-- {{cssxref("margin-inline")}}
-- {{cssxref("margin-inline-end")}}
-- {{cssxref("margin-inline-start")}}
-- {{cssxref("max-block-size")}}
-- {{cssxref("max-inline-size")}}
-- {{cssxref("min-block-size")}}
-- {{cssxref("min-inline-size")}}
-- {{cssxref("padding-block")}}
-- {{cssxref("padding-block-end")}}
-- {{cssxref("padding-block-start")}}
-- {{cssxref("padding-inline")}}
-- {{cssxref("padding-inline-end")}}
-- {{cssxref("padding-inline-start")}}
+- `block-size`
+- `border-block`
+- `border-block-color`
+- `border-block-end`
+- `border-block-end-color`
+- `border-block-end-style`
+- `border-block-end-width`
+- `border-block-start`
+- `border-block-start-color`
+- `border-block-start-style`
+- `border-block-start-width`
+- `border-block-style`
+- `border-block-width`
+- `border-end-end-radius`
+- `border-end-start-radius`
+- `border-inline`
+- `border-inline-color`
+- `border-inline-end`
+- `border-inline-end-color`
+- `border-inline-end-style`
+- `border-inline-end-width`
+- `border-inline-start`
+- `border-inline-start-color`
+- `border-inline-start-style`
+- `border-inline-start-width`
+- `border-inline-style`
+- `border-inline-width`
+- `border-start-end-radius`
+- `border-start-start-radius`
+- `inline-size`
+- `inset`
+- `inset-block`
+- `inset-block-end`
+- `inset-block-start`
+- `inset-inline`
+- `inset-inline-end`
+- `inset-inline-start`
+- `margin-block`
+- `margin-block-end`
+- `margin-block-start`
+- `margin-inline`
+- `margin-inline-end`
+- `margin-inline-start`
+- `max-block-size`
+- `max-inline-size`
+- `min-block-size`
+- `min-inline-size`
+- `padding-block`
+- `padding-block-end`
+- `padding-block-start`
+- `padding-inline`
+- `padding-inline-end`
+- `padding-inline-start`
 
 ### Data types and values
 
@@ -118,59 +118,59 @@ CSS was initially designed with only physical coordinates. The logical propertie
 
 ## Related concepts
 
-- {{CSSxRef("caption-side")}}
-- {{CSSxRef("clear")}}
-- {{CSSxRef("float")}}
-- {{CSSxRef("resize")}}
-- {{CSSxRef("text-align")}}
+- `caption-side`
+- `clear`
+- `float`
+- `resize`
+- `text-align`
 
 [CSS box model](/guides/Box_model)
 
-- {{CSSxRef("margin")}} shorthand
-- {{CSSxRef("padding")}} shorthand
+- `margin` shorthand
+- `padding` shorthand
 
 [CSS box sizing](/guides/Box_sizing)
 
-- {{CSSxRef("max-height")}}
-- {{CSSxRef("max-width")}}
-- {{CSSxRef("min-height")}}
-- {{CSSxRef("min-width")}}
+- `max-height`
+- `max-width`
+- `min-height`
+- `min-width`
 
 [CSS backgrounds and borders](/guides/Backgrounds_and_borders)
 
-- {{CSSxRef("border-color")}}
-- {{CSSxRef("border-style")}}
-- {{CSSxRef("border-width")}}
-- {{CSSxRef("border")}} shorthand
-- {{CSSxRef("border-radius")}}
+- `border-color`
+- `border-style`
+- `border-width`
+- `border` shorthand
+- `border-radius`
 
 [CSS positioned layout](/guides/Positioned_layout)
 
-- {{CSSxRef("top")}}
-- {{CSSxRef("right")}}
-- {{CSSxRef("bottom")}}
-- {{CSSxRef("left")}}
+- `top`
+- `right`
+- `bottom`
+- `left`
 
 [CSS writing modes](/guides/Writing_modes)
 
-- {{CSSxRef("direction")}}
-- {{CSSxRef("text-orientation")}}
-- {{CSSxRef("writing-mode")}}
+- `direction`
+- `text-orientation`
+- `writing-mode`
 
 [CSS containment](/guides/Containment)
 
-- {{CSSxRef("contain-intrinsic-block-size")}}
-- {{CSSxRef("contain-intrinsic-inline-size")}}
+- `contain-intrinsic-block-size`
+- `contain-intrinsic-inline-size`
 
 [CSS overflow](/guides/Overflow)
 
-- {{CSSxRef("overflow-block")}}
-- {{CSSxRef("overflow-inline")}}
+- `overflow-block`
+- `overflow-inline`
 
 [CSS overscroll behavior](/guides/Overscroll_behavior)
 
-- {{CSSxRef("overscroll-behavior-block")}}
-- {{CSSxRef("overscroll-behavior-inline")}}
+- `overscroll-behavior-block`
+- `overscroll-behavior-inline`
 
 ## Specifications
 

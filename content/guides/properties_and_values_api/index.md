@@ -13,7 +13,7 @@ The CSS properties and values API is part of the [CSS Houdini](/en-US/docs/Web/A
 
 Custom properties let you reuse values across a project to simplify complex or repetitive stylesheets.
 Basic custom properties are defined in the [CSS custom properties for cascading variables](/guides/Cascading_variables) module.
-The CSS properties and values API expands on that module, enabling adding metadata to custom properties using CSS with the {{cssxref("@property")}} at-rule or, alternatively, using JavaScript's {{domxref('CSS/registerProperty_static', 'CSS.registerProperty')}} method.
+The CSS properties and values API expands on that module, enabling adding metadata to custom properties using CSS with the `@property` at-rule or, alternatively, using JavaScript's {{domxref('CSS/registerProperty_static', 'CSS.registerProperty')}} method.
 
 Whether registered with CSS or JavaScript, setting metadata on custom properties provides for an expected data type that the browser can use depending on the context, defines an initial value, and lets you control inheritance.
 
@@ -66,7 +66,7 @@ The value of `--stop-color` is set to `cornflowerblue` at first, but when you ho
 
 ### At-rules and descriptors
 
-- {{cssxref("@property")}}
+- `@property`
   - [syntax](/en-US/docs/Web/CSS/Reference/At-rules/@property#descriptors) descriptor
     - [`+` and `#`](/en-US/docs/Web/CSS/Reference/At-rules/@property#descriptors) multipliers
     - [`|`](/en-US/docs/Web/CSS/Reference/At-rules/@property#descriptors) combinator
@@ -89,7 +89,7 @@ The value of `--stop-color` is set to `cornflowerblue` at first, but when you ho
 
 ## Related concepts
 
-- {{cssxref("var")}}
+- `var`
 - [CSSRule](/en-US/docs/Web/API/CSSRule)
 - [CSSStyleValue](/en-US/docs/Web/API/CSSStyleValue)
 - [CSS scoping](/guides/Scoping)

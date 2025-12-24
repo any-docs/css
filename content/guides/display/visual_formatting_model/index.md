@@ -26,7 +26,7 @@ If the viewport is smaller than the size of the document then the user agent nee
 
 ## Box generation
 
-**Box generation** is the part of the CSS visual formatting model that creates boxes from the document's elements. Generated boxes are of different types, which affect their visual formatting. The type of the box generated depends on the value of the CSS {{cssxref("display")}} property.
+**Box generation** is the part of the CSS visual formatting model that creates boxes from the document's elements. Generated boxes are of different types, which affect their visual formatting. The type of the box generated depends on the value of the CSS `display` property.
 
 Initially defined in CSS2, the `display` property was extended in the [CSS display](/guides/Display), [CSS flexible box layout](/guides/Flexible_box_layout), [CSS grid layout](/guides/Grid_layout), and [CSS ruby layout](/guides/Ruby_layout) modules. In addition, some of the terminologies around the display have been updated and clarified in the years since CSS2.
 
@@ -172,7 +172,7 @@ Boxes also have an inner display type, dictating how their children behave. For 
 
 However, the inner display type might be something like `grid` or `flex`, in which case the direct children will display as a grid, or flex items. In such a case the element is described as creating a grid or flex [formatting context](/guides/Display/Formatting_contexts). In many ways, this is similar to a block formatting context, however, the children behave as flex or grid items rather than items in normal flow.
 
-The interactions between block-level and inline-level boxes are described in the {{cssxref("display")}} property reference.
+The interactions between block-level and inline-level boxes are described in the `display` property reference.
 
 In addition, the references for specific values of display explain how these formatting contexts work in terms of box layout.
 
@@ -258,5 +258,5 @@ A block box is a block-level box that is also a block container. As described in
 - [Layout modes](/en-US/docs/Glossary/Layout_mode)
 - [Margin collapsing](/guides/Box_model/Margin_collapsing)
 - {{glossary("Replaced elements")}}
-- {{DOMxRef("VisualViewport")}} interface
+- `VisualViewport` interface
 - {{glossary("Scroll container")}}

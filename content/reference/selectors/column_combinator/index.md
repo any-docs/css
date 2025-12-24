@@ -83,7 +83,7 @@ Currently, no browsers support this feature.
 
 - {{HTMLElement("col")}}
 - {{HTMLElement("colgroup")}}
-- {{CSSxRef("grid")}}
-- {{CSSxRef(":nth-of-type")}}
-- {{CSSxRef(":nth-last-of-type")}}
+- `grid`
+- `:nth-of-type`
+- `:nth-last-of-type`
 - [CSS selectors](/guides/Selectors) module

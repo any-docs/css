@@ -90,7 +90,7 @@ scroll-margin-inline-end: unset;
 
 ### Values
 
-- {{CSSXref("&lt;length&gt;")}}
+- `&lt;length&gt;`
   - An outset from the inline end edge of the scroll container.
 
 ## Formal definition

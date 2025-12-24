@@ -17,9 +17,9 @@ The **`:scope`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/R
 
 Which element(s) `:scope` matches depends on the context in which it is used:
 
-- When used at the root level of a stylesheet, `:scope` is equivalent to {{cssxref(":root")}}, which in a regular HTML document matches the {{htmlelement("html")}} element.
-- When used inside a {{cssxref("@scope")}} block, `:scope` matches the block's defined scope root. It provides a way to apply styles to the root of the scope from inside the `@scope` block itself.
-- When used within a DOM API call — such as {{domxref("Element.querySelector", "querySelector()")}}, {{domxref("Element.querySelectorAll", "querySelectorAll()")}}, {{domxref("Element.matches", "matches()")}}, or {{domxref("Element.closest()")}} — `:scope` matches the element on which the method was called.
+- When used at the root level of a stylesheet, `:scope` is equivalent to `:root`, which in a regular HTML document matches the {{htmlelement("html")}} element.
+- When used inside a `@scope` block, `:scope` matches the block's defined scope root. It provides a way to apply styles to the root of the scope from inside the `@scope` block itself.
+- When used within a DOM API call — such as `querySelector()`, `querySelectorAll()`, `matches()`, or `Element.closest()` — `:scope` matches the element on which the method was called.
 
 ## Syntax
 
@@ -106,7 +106,7 @@ div {
 
 ### Using `:scope` in JavaScript
 
-This example demonstrates using the `:scope` pseudo-class in JavaScript. This can be useful if you need to get a direct descendant of an already retrieved {{domxref("Element")}}.
+This example demonstrates using the `:scope` pseudo-class in JavaScript. This can be useful if you need to get a direct descendant of an already retrieved `Element`.
 
 #### HTML
 
@@ -153,9 +153,9 @@ The scope of `context` is the element with the [`id`](/en-US/docs/Web/HTML/Refer
 
 ## See also
 
-- The {{cssxref("@scope")}} [at-rule](/guides/Syntax/At-rules)
-- The {{cssxref(":root")}} [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes)
+- The `@scope` [at-rule](/guides/Syntax/At-rules)
+- The `:root` [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes)
 - [Selection and traversal on the DOM tree](/en-US/docs/Web/API/Document_Object_Model/Selection_and_traversal_on_the_DOM_tree)
-- {{domxref("Element.querySelector()")}} and {{domxref("Element.querySelectorAll()")}}
-- {{domxref("Document.querySelector()")}} and {{domxref("Document.querySelectorAll()")}}
-- {{domxref("DocumentFragment.querySelector()")}} and {{domxref("DocumentFragment.querySelectorAll()")}}
+- `Element.querySelector()` and `Element.querySelectorAll()`
+- `Document.querySelector()` and `Document.querySelectorAll()`
+- `DocumentFragment.querySelector()` and `DocumentFragment.querySelectorAll()`

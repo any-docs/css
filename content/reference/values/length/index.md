@@ -6,14 +6,14 @@ browser-compat: css.types.length
 sidebar: cssref
 ---
 
-The **`<length>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a distance value. Lengths can be used in numerous CSS properties, such as {{Cssxref("width")}}, {{Cssxref("height")}}, {{Cssxref("margin")}}, {{Cssxref("padding")}}, {{Cssxref("border-width")}}, {{Cssxref("font-size")}}, and {{Cssxref("text-shadow")}}.
+The **`<length>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a distance value. Lengths can be used in numerous CSS properties, such as `width`, `height`, `margin`, `padding`, `border-width`, `font-size`, and `text-shadow`.
 
 > [!NOTE]
-> Although {{cssxref("&lt;percentage&gt;")}} values are usable in some of the same properties that accept `<length>` values, they are not themselves `<length>` values. See {{cssxref("&lt;length-percentage&gt;")}}.
+> Although `&lt;percentage&gt;` values are usable in some of the same properties that accept `<length>` values, they are not themselves `<length>` values. See `&lt;length-percentage&gt;`.
 
 ## Syntax
 
-The `<length>` data type consists of a {{cssxref("&lt;number&gt;")}} followed by one of the units listed below. As with all CSS dimensions, there is no space between the number and the unit literal. Specifying the length unit is optional if the number is `0`.
+The `<length>` data type consists of a `&lt;number&gt;` followed by one of the units listed below. As with all CSS dimensions, there is no space between the number and the unit literal. Specifying the length unit is optional if the number is `0`.
 
 > [!NOTE]
 > Some properties allow negative `<length>` values, while others do not.
@@ -37,31 +37,31 @@ Font lengths define the `<length>` value in terms of the size of a particular ch
 > These units, especially `em` and the root relative `rem`, are often used to create scalable layouts, which maintain the vertical rhythm of the page even when the user changes the font size.
 
 - `cap`
-  - Represents the "cap height" (nominal height of capital letters) of the element's {{Cssxref("font")}}.
+  - Represents the "cap height" (nominal height of capital letters) of the element's `font`.
 - `ch`
-  - Represents the width or, more precisely, the {{Glossary("advance measure")}} of the glyph `0` (zero, the Unicode character U+0030) in the element's {{Cssxref("font")}}.
+  - Represents the width or, more precisely, the {{Glossary("advance measure")}} of the glyph `0` (zero, the Unicode character U+0030) in the element's `font`.
     In cases where determining the measure of the `0` glyph is impossible or impractical, it must be assumed to be `0.5em` wide by `1em` tall.
 - `em`
-  - Represents the calculated {{Cssxref("font-size")}} of the element. If used on the {{Cssxref("font-size")}} property itself, it represents the _inherited_ font-size of the element.
+  - Represents the calculated `font-size` of the element. If used on the `font-size` property itself, it represents the _inherited_ font-size of the element.
 - `ex`
-  - Represents the [x-height](https://en.wikipedia.org/wiki/X-height) of the element's {{Cssxref("font")}}. In fonts with the `x` letter, this is generally the height of lowercase letters in the font; `1ex ≈ 0.5em` in many fonts.
+  - Represents the [x-height](https://en.wikipedia.org/wiki/X-height) of the element's `font`. In fonts with the `x` letter, this is generally the height of lowercase letters in the font; `1ex ≈ 0.5em` in many fonts.
 - `ic`
   - Equal to the used {{Glossary("advance measure")}} of the "水" glyph (CJK water ideograph, U+6C34), found in the font used to render it.
 - `lh`
-  - Equal to the computed value of the {{Cssxref("line-height")}} property of the element on which it is used, converted to an absolute length. This unit enables length calculations based on the theoretical size of an ideal empty line. However, the size of actual line boxes may differ based on their content.
+  - Equal to the computed value of the `line-height` property of the element on which it is used, converted to an absolute length. This unit enables length calculations based on the theoretical size of an ideal empty line. However, the size of actual line boxes may differ based on their content.
 
 ### Relative length units based on root element's font
 
 Root element font relative length units define the `<length>` value in terms of the size of a particular character or font attribute of the [root](/en-US/docs/Web/CSS/Reference/Selectors/:root) element:
 
 - `rcap`
-  - Equal to the "cap height" (nominal height of capital letters) of the root element's {{Cssxref("font")}}.
+  - Equal to the "cap height" (nominal height of capital letters) of the root element's `font`.
 - `rch`
-  - Equal to the width or the {{Glossary("advance measure")}} of the glyph `0` (zero, the Unicode character U+0030) in the root element's {{Cssxref("font")}}.
+  - Equal to the width or the {{Glossary("advance measure")}} of the glyph `0` (zero, the Unicode character U+0030) in the root element's `font`.
 - `rem`
-  - Represents the {{Cssxref("font-size")}} of the root element (typically {{HTMLElement("html")}}). When used within the root element {{Cssxref("font-size")}}, it represents its initial value. A common browser default is `16px`, but user-defined preferences may modify this.
+  - Represents the `font-size` of the root element (typically {{HTMLElement("html")}}). When used within the root element `font-size`, it represents its initial value. A common browser default is `16px`, but user-defined preferences may modify this.
 - `rex`
-  - Represents the x-height of the root element's {{Cssxref("font")}}.
+  - Represents the x-height of the root element's `font`.
 - `ric`
   - Equal to the value of [`ic`](#ic) unit on the root element's font.
 - `rlh`
@@ -102,7 +102,7 @@ The **viewport-percentage length units** are based on four different viewport si
 Viewport-percentage lengths define `<length>` values in percentage relative to the size of the initial [containing block](/guides/Display/Containing_block), which in turn is based on either the size of the {{Glossary("viewport")}} or the page area, i.e., the visible portion of the document. When the height or width of the initial containing block is changed, the elements that are sized based on them are scaled accordingly. There is a viewport-percentage length unit variant corresponding to each of the viewport sizes, as described below.
 
 > [!NOTE]
-> Viewport lengths are invalid in {{cssxref("@page")}} declaration blocks.
+> Viewport lengths are invalid in `@page` declaration blocks.
 
 - `vh`
   - Represents a percentage of the height of the viewport's initial [containing block](/guides/Display/Containing_block). `1vh` is 1% of the viewport height. For example, if the viewport height is `300px`, then a value of `70vh` on a property will be `210px`.

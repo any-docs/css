@@ -26,7 +26,7 @@ These examples work only in browsers based on WebKit and Blink.
 
 ### Changing the cursor in the spin controls
 
-In this example, the CSS {{cssxref("cursor")}} is changed to `pointer` whenever the cursor is positioned over the inner part of the input's spin controls.
+In this example, the CSS `cursor` is changed to `pointer` whenever the cursor is positioned over the inner part of the input's spin controls.
 
 #### HTML
 
@@ -56,5 +56,5 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref("::-webkit-textfield-decoration-container")}}
+- `::-webkit-textfield-decoration-container`
 - [Styling Form Controls – WebKit](https://trac.webkit.org/wiki/Styling%20Form%20Controls#inputelement)

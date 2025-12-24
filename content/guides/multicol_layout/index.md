@@ -285,23 +285,23 @@ blockquote p::after {
 
 ### Properties
 
-- {{cssxref("column-fill")}}
-- {{cssxref("column-gap")}}
-- {{cssxref("column-span")}}
-- {{cssxref("column-rule")}} shorthand
-  - {{cssxref("column-rule-color")}}
-  - {{cssxref("column-rule-style")}}
-  - {{cssxref("column-rule-width")}}
-- {{cssxref("columns")}} shorthand
-  - {{cssxref("column-count")}}
-  - {{cssxref("column-width")}}
+- `column-fill`
+- `column-gap`
+- `column-span`
+- `column-rule` shorthand
+  - `column-rule-color`
+  - `column-rule-style`
+  - `column-rule-width`
+- `columns` shorthand
+  - `column-count`
+  - `column-width`
 
 > [!NOTE]
 > Bear in mind that setting container height and line length can pose challenges for people with visual or cognitive disabilities. [WCAG Success Criterion 1.4.8](/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable#guideline_1.4_make_it_easier_for_users_to_see_and_hear_content_including_separating_foreground_from_background) states that even when the text size is doubled, content should not need to be scrolled.
 
 ## Selectors and pseudo-elements
 
-- {{cssxref("::column")}}
+- `::column`
 
 ## Guides
 
@@ -324,29 +324,29 @@ blockquote p::after {
 
 [CSS fragmentation](/guides/Fragmentation) module
 
-- {{cssxref("break-after")}}
-- {{cssxref("break-before")}}
-- {{cssxref("break-inside")}}
-- {{cssxref("orphans")}}
-- {{cssxref("widows")}}
+- `break-after`
+- `break-before`
+- `break-inside`
+- `orphans`
+- `widows`
 
 [CSS box alignment](/guides/Box_alignment) module
 
-- {{cssxref("gap")}}
+- `gap`
 
 [CSS box sizing](/guides/Box_sizing) module
 
-- {{cssxref("height")}}
-- {{cssxref("max-height")}}
-- {{cssxref("block-size")}}
-- {{cssxref("width")}}
-- {{cssxref("max-width")}}
+- `height`
+- `max-height`
+- `block-size`
+- `width`
+- `max-width`
 
 [CSS overflow](/guides/Overflow) module
 
-- {{cssxref("overflow")}}
-- {{cssxref("::scroll-marker")}}
-- {{cssxref("::scroll-marker-group")}}
+- `overflow`
+- `::scroll-marker`
+- `::scroll-marker-group`
 - {{glossary("Scroll container")}} glossary term
 
 [CSS display](/guides/Display) module

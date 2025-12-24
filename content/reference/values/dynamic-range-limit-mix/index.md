@@ -10,7 +10,7 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`dynamic-range-limit-mix()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates a custom maximum luminance limit by mixing different {{cssxref("dynamic-range-limit")}} keywords in specified amounts.
+The **`dynamic-range-limit-mix()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) creates a custom maximum luminance limit by mixing different `dynamic-range-limit` keywords in specified amounts.
 
 ## Syntax
 
@@ -26,7 +26,7 @@ dynamic-range-limit-mix(
 
 ### Parameters
 
-- {{cssxref("dynamic-range-limit")}} {{cssxref("&lt;percentage>")}}
+- `dynamic-range-limit` `&lt;percentage>`
   - A pair consisting of a `dynamic-range-limit` value (which can be another `dynamic-range-limit-mix()` function) and a `<percentage>` between `0%` and `100%` (inclusive). The `<percentage>` specifies the proportion of a `dynamic-range-limit` keyword value in the custom limit. The `dynamic-range-limit-mix()` function can take two or more of these pairs as parameters.
 
 ### Return value
@@ -35,7 +35,7 @@ A custom maximum luminance limit, expressed as a number of photographic stops hi
 
 ## Description
 
-The {{cssxref("dynamic-range-limit")}} property allows you to control the brightness of High Dynamic Range (HDR) content. The `dynamic-range-limit-mix()` function can be provided as a value of `dynamic-range-limit`, and enables you to create custom brightness limits by mixing together percentages of the `dynamic-range-limit` keyword values.
+The `dynamic-range-limit` property allows you to control the brightness of High Dynamic Range (HDR) content. The `dynamic-range-limit-mix()` function can be provided as a value of `dynamic-range-limit`, and enables you to create custom brightness limits by mixing together percentages of the `dynamic-range-limit` keyword values.
 
 ### Calculating the percentages
 
@@ -130,4 +130,4 @@ You can see the `dynamic-range-limit` property in action in our [dynamic-range-l
 
 ## See also
 
-- {{cssxref("dynamic-range-limit")}}
+- `dynamic-range-limit`

@@ -55,9 +55,9 @@ div {
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("caret-color")}}
-- {{cssxref("caret-animation")}}
-- {{cssxref("caret-shape")}}
+- `caret-color`
+- `caret-animation`
+- `caret-shape`
 
 ## Syntax
 
@@ -88,13 +88,13 @@ The `caret` property is specified as one, two, or three values from the constitu
 
 ### Values
 
-- {{cssxref("caret-color")}}
+- `caret-color`
   - Sets the color of the caret.
 
-- {{cssxref("caret-animation")}}
+- `caret-animation`
   - Controls whether the caret blinks.
 
-- {{cssxref("caret-shape")}}
+- `caret-shape`
   - Sets the visual shape of the caret.
 
 ## Description
@@ -113,7 +113,7 @@ When values are omitted from the shorthand, they reset to their initial values:
 
 Unlike some CSS shorthands, the `caret` property accepts values in any order. The browser determines which value applies to which property based on the value type:
 
-- {{cssxref("&lt;color>")}} values apply to `caret-color`.
+- `&lt;color>` values apply to `caret-color`.
 - `auto`/`manual` keywords apply to `caret-animation`.
 - Shape keywords (`bar`, `block`, `underscore`) apply to `caret-shape`.
 
@@ -222,5 +222,5 @@ span {
 
 ## See also
 
-- {{cssxref("caret-color")}}, {{cssxref("caret-animation")}}, {{cssxref("caret-shape")}}
+- `caret-color`, `caret-animation`, `caret-shape`
 - [CSS basic user interface](/guides/Basic_user_interface) module

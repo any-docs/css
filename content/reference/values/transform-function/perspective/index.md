@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`perspective()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) defines a transformation that sets the distance between the
 user and the z=0 plane, the perspective from which the viewer would be if the 2-dimensional interface were
-3-dimensional. Its result is a {{cssxref("&lt;transform-function&gt;")}} data type.
+3-dimensional. Its result is a `&lt;transform-function&gt;` data type.
 
 {{InteractiveExample("CSS Demo: perspective()")}}
 
@@ -115,7 +115,7 @@ perspective(d)
 ### Values
 
 - _d_
-  - Is a {{cssxref("&lt;length&gt;")}} representing the distance from the user to the z=0 plane. The z=0 plane is the plane where everything appears in a 2-dimensional view, or the screen. Values smaller than `1px` (including zero) are clamped to `1px`. Negative values are syntax errors.
+  - Is a `&lt;length&gt;` representing the distance from the user to the z=0 plane. The z=0 plane is the plane where everything appears in a 2-dimensional view, or the screen. Values smaller than `1px` (including zero) are clamped to `1px`. Negative values are syntax errors.
 
     Values other than `none` cause elements with positive z positions to appear larger, and elements with negative z positions to appear smaller. Elements with z positions equal to or larger than the perspective value disappear as though they are behind the user. Large values of perspective represent a small transformation; small values of `perspective()` represent a large transformation; `perspective(none)` represents perspective from infinite distance and no transformation.
 
@@ -238,9 +238,9 @@ p + div {
 
 ## See also
 
-- {{cssxref("transform")}}
-- {{cssxref("&lt;transform-function&gt;")}}
+- `transform`
+- `&lt;transform-function&gt;`
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`

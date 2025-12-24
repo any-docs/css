@@ -8,12 +8,12 @@ sidebar: cssref
 
 The **`counter-set`** [CSS](/en-US/docs/Web/CSS) property sets [CSS counters](/guides/Counter_styles/Using_counters) on the element to the given values.
 
-If the counters don't exist the `counter-set` property creates a new counter for each named counter in the list of space-separated counter and value pairs. However, to create a new counter it is recommended to use the {{cssxref("counter-reset")}} CSS property.
+If the counters don't exist the `counter-set` property creates a new counter for each named counter in the list of space-separated counter and value pairs. However, to create a new counter it is recommended to use the `counter-reset` CSS property.
 
 If a named counter in the list is missing a value, the value of the counter will be set to `0`.
 
 > [!NOTE]
-> The counter's value can be incremented or decremented using the {{cssxref("counter-increment")}} CSS property.
+> The counter's value can be incremented or decremented using the `counter-increment` CSS property.
 
 {{InteractiveExample("CSS Demo: counter-set")}}
 
@@ -100,9 +100,9 @@ The `counter-set` property is specified as either one of the following:
 
 ### Values
 
-- {{cssxref("custom-ident", "&lt;custom-ident&gt;")}}
+- `&lt;custom-ident&gt;`
   - The name of the counter to set.
-- {{cssxref("&lt;integer&gt;")}}
+- `&lt;integer&gt;`
   - The value to set the counter to on each occurrence of the element. Defaults to `0` if not specified. If there isn't currently a counter of the given name on the element, the element will create a new counter of the given name with a starting value of `0` (though it may then immediately set or increment that value to something different).
 - `none`
   - No counter set is to be performed. This can be used to override a `counter-set` defined in a less specific rule.
@@ -138,10 +138,10 @@ h1 {
 ## See also
 
 - [Using CSS Counters](/guides/Counter_styles/Using_counters)
-- {{cssxref("counter-increment")}}
-- {{cssxref("counter-reset")}}
-- {{cssxref("@counter-style")}}
-- {{cssxref("counter()")}} and {{cssxref("counters()")}} functions
-- {{cssxref("content")}} property
+- `counter-increment`
+- `counter-reset`
+- `@counter-style`
+- `counter()` and `counters()` functions
+- `content` property
 - [CSS lists and counters](/guides/Lists) module
 - [CSS counter styles](/guides/Counter_styles) module

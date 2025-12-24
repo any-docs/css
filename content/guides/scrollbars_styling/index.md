@@ -65,25 +65,25 @@ for us to breathe.
 
 ### CSS properties
 
-- {{CSSxRef("scrollbar-width")}}
-- {{CSSxRef("scrollbar-color")}}
+- `scrollbar-width`
+- `scrollbar-color`
 
 ## Related concepts
 
-- {{CSSxRef("overflow-block")}} CSS property
-- {{CSSxRef("overflow-inline")}} CSS property
-- {{CSSxRef("overflow-x")}} CSS property
-- {{CSSxRef("overflow-y")}} CSS property
-- {{CSSxRef("overflow")}} CSS shorthand property
-- {{CSSxRef("overflow-clip-margin")}} CSS property
-- {{CSSxRef("scrollbar-gutter")}} CSS property
-- {{CSSxRef("scroll-behavior")}} CSS property
-- {{cssxref("scroll-margin")}} CSS shorthand property
-- {{cssxref("scroll-padding")}} CSS shorthand property
-- {{cssxref("scroll-snap-align")}} CSS property
-- {{cssxref("scroll-snap-stop")}} CSS property
-- {{cssxref("scroll-snap-type")}} CSS property
-- {{CSSxRef("::-webkit-scrollbar")}} pseudo-element
+- `overflow-block` CSS property
+- `overflow-inline` CSS property
+- `overflow-x` CSS property
+- `overflow-y` CSS property
+- `overflow` CSS shorthand property
+- `overflow-clip-margin` CSS property
+- `scrollbar-gutter` CSS property
+- `scroll-behavior` CSS property
+- `scroll-margin` CSS shorthand property
+- `scroll-padding` CSS shorthand property
+- `scroll-snap-align` CSS property
+- `scroll-snap-stop` CSS property
+- `scroll-snap-type` CSS property
+- `::-webkit-scrollbar` pseudo-element
 - {{glossary("scroll container")}} glossary term
 - [`scrollbar`](/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/scrollbar_role) ARIA role
 

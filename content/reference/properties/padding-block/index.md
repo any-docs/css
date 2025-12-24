@@ -58,8 +58,8 @@ writing-mode: vertical-lr;
 
 This property is a shorthand for the following CSS properties:
 
-- {{cssxref("padding-block-start")}}
-- {{cssxref("padding-block-end")}}
+- `padding-block-start`
+- `padding-block-end`
 
 ## Syntax
 
@@ -80,15 +80,15 @@ padding-block: revert-layer;
 padding-block: unset;
 ```
 
-The `padding-block` property may be specified with one or two values. If one value is given, it is used as the value for both {{cssxref("padding-block-start")}} and {{cssxref("padding-block-end")}}. If two values are given, the first is used for {{cssxref("padding-block-start")}} and the second for {{cssxref("padding-block-end")}}.
+The `padding-block` property may be specified with one or two values. If one value is given, it is used as the value for both `padding-block-start` and `padding-block-end`. If two values are given, the first is used for `padding-block-start` and the second for `padding-block-end`.
 
 ### Values
 
-The `padding-block` property takes the same values as the {{cssxref("padding-left")}} property.
+The `padding-block` property takes the same values as the `padding-left` property.
 
 ## Description
 
-The padding values specified by `padding-block` can be equivalent to the {{cssxref("padding-top")}} and {{cssxref("padding-bottom")}} properties or the {{cssxref("padding-right")}} and {{cssxref("padding-left")}} properties, depending on the values defined for {{cssxref("writing-mode")}}, {{cssxref("direction")}}, and {{cssxref("text-orientation")}}.
+The padding values specified by `padding-block` can be equivalent to the `padding-top` and `padding-bottom` properties or the `padding-right` and `padding-left` properties, depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
 
 ## Formal definition
 
@@ -141,5 +141,5 @@ div {
 ## See also
 
 - [CSS Logical Properties and Values](/guides/Logical_properties_and_values)
-- The mapped physical properties: {{cssxref("padding-top")}}, {{cssxref("padding-right")}}, {{cssxref("padding-bottom")}}, and {{cssxref("padding-left")}}
-- {{cssxref("writing-mode")}}, {{cssxref("direction")}}, {{cssxref("text-orientation")}}
+- The mapped physical properties: `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`
+- `writing-mode`, `direction`, `text-orientation`

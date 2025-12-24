@@ -7,9 +7,9 @@ sidebar: cssref
 ---
 
 > [!NOTE]
-> The `attr()` function can be used with any CSS property, but support for properties other than {{CSSxRef("content")}} is experimental.
+> The `attr()` function can be used with any CSS property, but support for properties other than `content` is experimental.
 
-The **`attr()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is used to retrieve the value of an attribute of the selected element and use it in a property value, similar to how the {{cssxref("var()")}} function substitutes a custom property value. It can also be used with [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements), in which case the attribute's value on the pseudo-element's originating element is returned.
+The **`attr()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is used to retrieve the value of an attribute of the selected element and use it in a property value, similar to how the `var()` function substitutes a custom property value. It can also be used with [pseudo-elements](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements), in which case the attribute's value on the pseudo-element's originating element is returned.
 
 {{InteractiveExample("CSS Demo: attr()", "tabbed-shorter")}}
 
@@ -71,7 +71,7 @@ The parameters are:
 - `<attr-name>`
   - The attribute name whose value should be retrieved from the selected HTML element(s).
 - `<attr-type>`
-  - Specifies how the attribute value is parsed into a CSS value. This can be the `raw-string` keyword, a {{cssxref("type()")}} function, or a CSS dimension unit (specified using an `<attr-unit>` identifier). When omitted, it defaults to `raw-string`.
+  - Specifies how the attribute value is parsed into a CSS value. This can be the `raw-string` keyword, a `type()` function, or a CSS dimension unit (specified using an `<attr-unit>` identifier). When omitted, it defaults to `raw-string`.
     - `raw-string`
       - The `raw-string` keyword causes the attribute's literal value to be treated as the value of a CSS string, with no CSS parsing performed (including CSS escapes, whitespace removal, comments, etc). The `<fallback-value>` is only used if the attribute is omitted; specifying an empty value doesn't trigger the fallback.
 
@@ -82,10 +82,10 @@ The parameters are:
         > [!NOTE]
         > This keyword was originally named and supported in Chromium browsers as `string`. Both keywords will be supported briefly, for backward compatibility purposes.
 
-    - {{cssxref("type()")}}
+    - `type()`
       - The `type()` function takes a `<syntax>` as its argument that specifies what data type to parse the value into.
         > [!NOTE]
-        > For [security reasons](#limitations_and_security) {{CSSxRef("url_value", "&lt;url&gt;")}} is not allowed as an `attr()` data type.
+        > For [security reasons](#limitations_and_security) `&lt;url&gt;` is not allowed as an `attr()` data type.
 
     - `<attr-unit>`
       - The `<attr-unit>` identifier specifies the unit a numeric value should have (if any). It can be the `%` character (percentage) or a [CSS distance unit](/guides/Values_and_units/Numeric_data_types#distance_units) such as `px`, `rem`, `deg`, `s`, etc.
@@ -125,7 +125,7 @@ span[data-icon] {
 ```
 
 However, this restriction applies only to places that strictly require a `<url>` type.
-Some functions — such as {{CSSxRef("image/image-set","image-set()")}} — can accept a `<string>` value that is later interpreted as a URL, allowing `attr()` to work in those contexts, depending on browser support:
+Some functions — such as `image-set()` — can accept a `<string>` value that is later interpreted as a URL, allowing `attr()` to work in those contexts, depending on browser support:
 
 ```css
 span[data-icon] {
@@ -183,7 +183,7 @@ To prevent this sort of situation, don't pass inherited `attr()` values onto chi
 
 ### Feature detection
 
-You can feature detect support for modern `attr()` syntax using the {{CSSxRef("@supports")}} at-rule. In the test, try to assign an advanced `attr()` to a (non-custom) CSS property.
+You can feature detect support for modern `attr()` syntax using the `@supports` at-rule. In the test, try to assign an advanced `attr()` to a (non-custom) CSS property.
 
 For example:
 
@@ -267,7 +267,7 @@ p::after {
 
 {{SeeCompatTable}}
 
-In this example, we set the CSS value of {{CSSXRef("background-color")}} to the value of the `data-background` [`data-*`](/en-US/docs/Web/HTML/Reference/Global_attributes/data-*) [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) assigned to the {{HTMLElement("div")}} element.
+In this example, we set the CSS value of `background-color` to the value of the `data-background` [`data-*`](/en-US/docs/Web/HTML/Reference/Global_attributes/data-*) [global attribute](/en-US/docs/Web/HTML/Reference/Global_attributes) assigned to the {{HTMLElement("div")}} element.
 
 #### HTML
 
@@ -347,9 +347,9 @@ div {
 
 {{SeeCompatTable}}
 
-In this example, the values for the {{cssxref("view-transition-name")}} property are derived from the `id` attribute of the element. The attribute gets parsed into a {{CSSxRef("&lt;custom-ident&gt;")}}, which is what {{cssxref("view-transition-name")}} accepts as a value.
+In this example, the values for the `view-transition-name` property are derived from the `id` attribute of the element. The attribute gets parsed into a `&lt;custom-ident&gt;`, which is what `view-transition-name` accepts as a value.
 
-The resulting values for {{cssxref("view-transition-name")}} are `card-1`, `card-2`, `card-3`, etc.
+The resulting values for `view-transition-name` are `card-1`, `card-2`, `card-3`, etc.
 
 #### HTML
 
@@ -448,7 +448,7 @@ The cards are laid out in a flex container:
 }
 ```
 
-On each card, the `attr()` function gets the `id` attribute and parses it into a {{CSSxRef("&lt;custom-ident&gt;")}}, which is used as the value for the {{cssxref("view-transition-name")}} property. When there is no `id` set on a card, the fallback value `none` is used instead.
+On each card, the `attr()` function gets the `id` attribute and parses it into a `&lt;custom-ident&gt;`, which is used as the value for the `view-transition-name` property. When there is no `id` set on a card, the fallback value `none` is used instead.
 
 ```css
 .card {
@@ -459,7 +459,7 @@ On each card, the `attr()` function gets the `id` attribute and parses it into a
 
 #### JavaScript
 
-When the `<button>` is pressed, the cards are shuffled. This is done by randomizing the order of an array containing references to all the cards and then updating the {{CSSxRef("order")}} property of each card to its new array index position.
+When the `<button>` is pressed, the cards are shuffled. This is done by randomizing the order of an array containing references to all the cards and then updating the `order` property of each card to its new array index position.
 
 To animate each card to its new position, [View Transitions](/en-US/docs/Web/API/View_Transition_API/Using) are used. This is done by wrapping the `order` update in a call to [`document.startViewTransition`](/en-US/docs/Web/API/Document/startViewTransition).
 

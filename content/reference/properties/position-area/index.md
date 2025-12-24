@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`position-area`** [CSS](/en-US/docs/Web/CSS) property enables an anchor-positioned element to be positioned relative to the edges of its associated anchor element by placing the positioned element on one or more tiles of an implicit 3x3 grid, where the anchoring element is the center cell.
 
-`position-area` provides a convenient alternative to tethering and positioning an element relative to its anchor via {{glossary("inset properties")}} and the {{cssxref("anchor()")}} function. The grid-based concept solves the common use-case of positioning the edges of the positioned element's containing block relative to the edges of its default anchor element.
+`position-area` provides a convenient alternative to tethering and positioning an element relative to its anchor via {{glossary("inset properties")}} and the `anchor()` function. The grid-based concept solves the common use-case of positioning the edges of the positioned element's containing block relative to the edges of its default anchor element.
 
 If an element does not have a default anchor element, or is not an absolutely-positioned element, this property has no effect.
 
@@ -96,7 +96,7 @@ When a [`<position-area>`](/reference/values/position-area_value) value is set o
 
 #### Self-alignment property `normal` value
 
-The `normal` value of the self-alignment properties, including {{cssxref("align-items")}}, {{cssxref("align-self")}}, {{cssxref("justify-items")}}, and {{cssxref("justify-self")}}, behaves as either `start`, `end`, or [`anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center). Which value a self-alignment property defaults to depends on the positioning of the element:
+The `normal` value of the self-alignment properties, including `align-items`, `align-self`, `justify-items`, and `justify-self`, behaves as either `start`, `end`, or [`anchor-center`](/guides/Anchor_positioning/Using#centering_on_the_anchor_using_anchor-center). Which value a self-alignment property defaults to depends on the positioning of the element:
 
 - If the `position-area` value specifies the center region in an axis, the default alignment in that axis is `anchor-center`.
 - Otherwise, the behavior is the opposite of the region specified by the `position-area` property. For example, if the `position-area` value specifies the start region of its axis, the default alignment in that axis is `end`.
@@ -105,7 +105,7 @@ For example, if the `writing-mode` is set to `horizontal-tb`, `position-area: to
 
 #### inset properties and values
 
-When an anchor-positioned element is positioned using the `position-area` property, any {{glossary("inset properties")}} set, such as {{cssxref("top")}} or {{cssxref("inset-inline-end")}}, specify offsets from the position-area. Some other property values, like [`max-block-size: 100%`](/reference/properties/max-block-size), will also be relative to the position-area. Any inset properties set or defaulting to `auto` will behave as if their value was set to `0`.
+When an anchor-positioned element is positioned using the `position-area` property, any {{glossary("inset properties")}} set, such as `top` or `inset-inline-end`, specify offsets from the position-area. Some other property values, like [`max-block-size: 100%`](/reference/properties/max-block-size), will also be relative to the position-area. Any inset properties set or defaulting to `auto` will behave as if their value was set to `0`.
 
 ### An aside on positioned element width
 
@@ -113,7 +113,7 @@ If the positioned element does not have a specific size set on it, its size will
 
 If the positioned element is placed in a single top-center, bottom-center, or center-center cell, its block size will be the same as the anchor's containing block size, growing up, down, or in both directions respectively. The positioned element will align with the specified grid square but adopt the same width as the anchor element. However, it won't allow its content to overflow — its minimum `width` will be its `min-content` (as defined by the width of its longest word).
 
-If the positioned element is placed in any other single grid square (say with `position-area: top left`) or is set to span two or more grid squares (for example using `position-area: bottom span-all`), it will align with the specified grid area but behave as if it has a {{cssxref("width")}} of `max-content` set on it. It is being sized according to its containing block size, which is the size imposed on it when it was set to `position: fixed`. It will stretch as wide as the text content, although it may also be constrained by the edge of the `<body>`.
+If the positioned element is placed in any other single grid square (say with `position-area: top left`) or is set to span two or more grid squares (for example using `position-area: bottom span-all`), it will align with the specified grid area but behave as if it has a `width` of `max-content` set on it. It is being sized according to its containing block size, which is the size imposed on it when it was set to `position: fixed`. It will stretch as wide as the text content, although it may also be constrained by the edge of the `<body>`.
 
 ### Using `position-area` to position popovers
 
@@ -159,7 +159,7 @@ The HTML includes a {{htmlelement("div")}} and a {{htmlelement("p")}}. The `<p>`
 
 #### CSS
 
-We convert the `<div>` to an anchor element with the {{cssxref("anchor-name")}} property. We then associate the absolutely-positioned `<p>` with it by setting its {{cssxref("position-anchor")}} value to the same anchor name.
+We convert the `<div>` to an anchor element with the `anchor-name` property. We then associate the absolutely-positioned `<p>` with it by setting its `position-anchor` value to the same anchor name.
 
 We set the initial `position-area` value to `top center`. This value is set on a `p` selector, so the value has less [specificity](/guides/Cascade/Specificity) than any value added to the `<style>` block's `.positionedElement` [class selector](/en-US/docs/Web/CSS/Reference/Selectors/Class_selectors). As a result, you can override the initial `position-area` value by setting a `position-area` value inside the style block.
 
@@ -207,7 +207,7 @@ This demo creates an anchor and tethers a positioned element to it. It also prov
 
 In the HTML, we specify two {{htmlelement("div")}} elements, one with a class of `anchor` and one with a class of `infobox`. These are intended to be the anchor element and the positioned element we will associate with it, respectively. We've included the `contenteditable` attribute on both, making them directly editable.
 
-We've also included two forms that contain the {{htmlelement("select")}} and [`<input type="text">`](/en-US/docs/Web/HTML/Reference/Elements/input/text) elements for setting different `position-area` values, and the [`<input type="checkbox">`](/en-US/docs/Web/HTML/Reference/Elements/input/checkbox) element for toggling the vertical {{cssxref("writing-mode")}} on and off. The code for these, along with the JavaScript, has been hidden for the sake of brevity.
+We've also included two forms that contain the {{htmlelement("select")}} and [`<input type="text">`](/en-US/docs/Web/HTML/Reference/Elements/input/text) elements for setting different `position-area` values, and the [`<input type="checkbox">`](/en-US/docs/Web/HTML/Reference/Elements/input/checkbox) element for toggling the vertical `writing-mode` on and off. The code for these, along with the JavaScript, has been hidden for the sake of brevity.
 
 ```html
 <div class="anchor" contenteditable>⚓︎</div>
@@ -283,9 +283,9 @@ We've also included two forms that contain the {{htmlelement("select")}} and [`<
 
 #### CSS
 
-In the CSS, we first declare the `anchor` `<div>` as an anchor element by setting an anchor name on it via the {{cssxref("anchor-name")}} property.
+In the CSS, we first declare the `anchor` `<div>` as an anchor element by setting an anchor name on it via the `anchor-name` property.
 
-The positioned element is associated with the anchor element by setting its anchor name as the value of the positioned element's {{cssxref("position-anchor")}} property. We also give it an initial position with `position-area: top left`; this will be overridden when new values are selected from the `<select>` menu. Finally, we set its {{cssxref("opacity")}} to `0.8`, so that when the positioned element is given a `position-area` value that places it over the top of the anchor, you can still see the elements' position relative to one another.
+The positioned element is associated with the anchor element by setting its anchor name as the value of the positioned element's `position-anchor` property. We also give it an initial position with `position-area: top left`; this will be overridden when new values are selected from the `<select>` menu. Finally, we set its `opacity` to `0.8`, so that when the positioned element is given a `position-area` value that places it over the top of the anchor, you can still see the elements' position relative to one another.
 
 ```css hidden
 .anchor {
@@ -437,9 +437,9 @@ Try selecting new `position-area` values from the `<select>` menu to see the eff
 
 ## See also
 
-- {{cssxref("anchor-name")}}
-- {{cssxref("position-anchor")}}
-- {{cssxref("position-try-fallbacks")}}
+- `anchor-name`
+- `position-anchor`
+- `position-try-fallbacks`
 - The [`anchor()`](/reference/values/anchor) function
 - The [`<position-area>`](/reference/values/position-area_value) value
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide

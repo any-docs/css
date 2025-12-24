@@ -33,7 +33,7 @@ The `line-height-step` property is specified as any one of the following:
 ### Values
 
 - `<length>`
-  - The specified {{cssxref("&lt;length&gt;")}} is used in the calculation of the line box height step.
+  - The specified `&lt;length&gt;` is used in the calculation of the line box height step.
 
 ## Formal definition
 
@@ -75,7 +75,7 @@ Currently, no browsers support this feature.
 
 ## See also
 
-- {{Cssxref("font")}}
-- {{Cssxref("font-size")}}
-- {{Cssxref("line-height")}}
+- `font`
+- `font-size`
+- `line-height`
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/) specification

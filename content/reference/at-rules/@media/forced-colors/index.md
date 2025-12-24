@@ -27,26 +27,26 @@ In forced colors mode, the values of the following properties are treated as if 
 
 These browser-specified values are selected from the set of system colors — this ensures a consistent contrast for common UI elements for users that have forced colors enabled.
 
-- {{cssxref("color")}}
-- {{cssxref("background-color")}}
-- {{cssxref("text-decoration-color")}}
-- {{cssxref("text-emphasis-color")}}
-- {{cssxref("border-color")}}
-- {{cssxref("outline-color")}}
-- {{cssxref("column-rule-color")}}
-- {{cssxref("-webkit-tap-highlight-color")}}
+- `color`
+- `background-color`
+- `text-decoration-color`
+- `text-emphasis-color`
+- `border-color`
+- `outline-color`
+- `column-rule-color`
+- `-webkit-tap-highlight-color`
 - [SVG fill attribute](/en-US/docs/Web/SVG/Reference/Attribute/fill)
 - [SVG stroke attribute](/en-US/docs/Web/SVG/Reference/Attribute/stroke)
 
 Additionally the following properties have special behavior in forced colors mode:
 
-- {{cssxref("box-shadow")}} is forced to 'none'
-- {{cssxref("text-shadow")}} is forced to 'none'
-- {{cssxref("background-image")}} is forced to 'none' for values that are not url-based
-- {{cssxref("color-scheme")}} is forced to 'light dark'
-- {{cssxref("scrollbar-color")}} is forced to 'auto'
+- `box-shadow` is forced to 'none'
+- `text-shadow` is forced to 'none'
+- `background-image` is forced to 'none' for values that are not url-based
+- `color-scheme` is forced to 'light dark'
+- `scrollbar-color` is forced to 'auto'
 
-The system colors that are forced for the above properties depend on the context of the element. For example the {{cssxref("color")}} property on button element will be forced to `ButtonText`. On normal text it will be forced to `CanvasText`. See the [list of system colors](/reference/values/system-color) for additional details of when each might be appropriate in various UI contexts.
+The system colors that are forced for the above properties depend on the context of the element. For example the `color` property on button element will be forced to `ButtonText`. On normal text it will be forced to `CanvasText`. See the [list of system colors](/reference/values/system-color) for additional details of when each might be appropriate in various UI contexts.
 
 > [!NOTE]
 > User agents choose system colors based on native element semantics, _not_ on added ARIA roles.
@@ -56,9 +56,9 @@ In addition to these adjustments, browsers will help ensure text legibility by d
 
 There are some cases where the user agent does not force the values for the above properties:
 
-When {{cssxref("forced-color-adjust")}} is set to `none` on an element, none of the forced color values will apply, and author styles will be applied as normal. Additionally, the backplate for text will be disabled.
+When `forced-color-adjust` is set to `none` on an element, none of the forced color values will apply, and author styles will be applied as normal. Additionally, the backplate for text will be disabled.
 
-When {{cssxref("forced-color-adjust")}} is set to `preserve-parent-color` on an element, and the {{cssxref("color")}} value on the element does not inherit from its parent, then the element will behave the same as setting `preserve-parent-color` to `none`.
+When `forced-color-adjust` is set to `preserve-parent-color` on an element, and the `color` value on the element does not inherit from its parent, then the element will behave the same as setting `preserve-parent-color` to `none`.
 
 When a [system color](/reference/values/system-color) is specified, it will be used instead of the value that would otherwise have been forced.
 
@@ -79,7 +79,7 @@ This media feature is active only if the user has enabled color scheme preferenc
 > [!NOTE]
 > The below example will only work when using a browser that supports this media feature, and with a preference such as High Contrast mode enabled in your OS.
 
-This example is a button that normally gets its contrast via {{cssxref("box-shadow")}}. Under forced colors mode, box-shadow is forced to none, so the example uses the forced-colors media feature to ensure there is a border of the appropriate color (ButtonText in this case)
+This example is a button that normally gets its contrast via `box-shadow`. Under forced colors mode, box-shadow is forced to none, so the example uses the forced-colors media feature to ensure there is a border of the appropriate color (ButtonText in this case)
 
 ### HTML
 
@@ -122,4 +122,4 @@ This example is a button that normally gets its contrast via {{cssxref("box-shad
 
 - [@media](/en-US/docs/Web/CSS/Reference/At-rules/@media)
 - [Styling for Windows high contrast with standards for forced colors.](https://blogs.windows.com/msedgedev/2020/09/17/styling-for-windows-high-contrast-with-new-standards-for-forced-colors/)
-- {{cssxref("forced-color-adjust")}}
+- `forced-color-adjust`

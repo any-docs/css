@@ -11,7 +11,7 @@ sidebar: cssref
 {{deprecated_header}}
 
 > [!WARNING]
-> This property has been replaced by the {{cssxref("break-before")}} property.
+> This property has been replaced by the `break-before` property.
 
 The **`page-break-before`** [CSS](/en-US/docs/Web/CSS) property adjusts page breaks _before_ the current element.
 
@@ -104,7 +104,7 @@ page-break-before: unset;
 
 ## Page break aliases
 
-The `page-break-before` property is now a legacy property, replaced by {{cssxref("break-before")}}.
+The `page-break-before` property is now a legacy property, replaced by `break-before`.
 
 For compatibility reasons, `page-break-before` should be treated by browsers as an alias of `break-before`. This ensures that sites using `page-break-before` continue to work as designed. A subset of values should be aliased as follows:
 
@@ -145,6 +145,6 @@ div.note {
 
 ## See also
 
-- {{cssxref("break-before")}}, {{cssxref("break-after")}}, {{cssxref("break-inside")}}
-- {{cssxref("page-break-after")}}, {{cssxref("page-break-inside")}}
-- {{cssxref("orphans")}}, {{cssxref("widows")}}
+- `break-before`, `break-after`, `break-inside`
+- `page-break-after`, `page-break-inside`
+- `orphans`, `widows`

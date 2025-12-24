@@ -6,7 +6,7 @@ browser-compat: css.properties.list-style-position
 sidebar: cssref
 ---
 
-The **`list-style-position`** [CSS](/en-US/docs/Web/CSS) property sets the position of the {{cssxref("::marker")}} relative to a list item.
+The **`list-style-position`** [CSS](/en-US/docs/Web/CSS) property sets the position of the `::marker` relative to a list item.
 
 {{InteractiveExample("CSS Demo: list-style-position")}}
 
@@ -88,17 +88,17 @@ The `list-style-position` property is specified as one of the keyword values lis
 ### Values
 
 - `inside`
-  - The {{cssxref("::marker")}} is the first element among the list item's contents.
+  - The `::marker` is the first element among the list item's contents.
 - `outside`
-  - The {{cssxref("::marker")}} is outside the principal block box. This is the default value for {{cssxref("list-style")}}.
+  - The `::marker` is outside the principal block box. This is the default value for `list-style`.
 
 ## Description
 
-This property is applied to list items, i.e., elements with `{{cssxref("display")}}: list-item;`. [By default](https://html.spec.whatwg.org/multipage/rendering.html#lists) this includes {{HTMLElement("li")}} elements. Because this property is inherited, it can be set on the parent element (normally {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to let it apply to all list items.
+This property is applied to list items, i.e., elements with ``display`: list-item;`. [By default](https://html.spec.whatwg.org/multipage/rendering.html#lists) this includes {{HTMLElement("li")}} elements. Because this property is inherited, it can be set on the parent element (normally {{HTMLElement("ol")}} or {{HTMLElement("ul")}}) to let it apply to all list items.
 
 If a block element is the first child of a list element declared as `list-style-position: inside`, then the block element is placed on the line after the marker-box.
 
-It is often more convenient to use the shorthand {{cssxref("list-style")}}.
+It is often more convenient to use the shorthand `list-style`.
 
 ## Formal definition
 
@@ -171,9 +171,9 @@ It is often more convenient to use the shorthand {{cssxref("list-style")}}.
 
 ## See also
 
-- {{Cssxref("list-style")}} shorthand
-- {{Cssxref("list-style-type")}} property
-- {{Cssxref("list-style-image")}} property
-- {{cssxref("::marker")}} pseudo-element
+- `list-style` shorthand
+- `list-style-type` property
+- `list-style-image` property
+- `::marker` pseudo-element
 - [CSS lists and counters](/guides/Lists) module
 - [CSS counter styles](/guides/Counter_styles) module

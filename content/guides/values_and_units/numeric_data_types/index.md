@@ -6,7 +6,7 @@ spec-urls: https://drafts.csswg.org/css-values/
 sidebar: cssref
 ---
 
-Every CSS declaration consists of a property/value pair. The value can include various data types depending on the property, such as a single number, keyword, function, or a combination of different types; some values have units, while others do not. Numeric data types include {{cssxref("&lt;integer&gt;")}}, {{cssxref("&lt;number&gt;")}}, {{cssxref("&lt;dimension&gt;")}}, and {{cssxref("&lt;percentage&gt;")}} values. This guide is an overview of numeric data types. Refer to the page for each value type for more detailed information.
+Every CSS declaration consists of a property/value pair. The value can include various data types depending on the property, such as a single number, keyword, function, or a combination of different types; some values have units, while others do not. Numeric data types include `&lt;integer&gt;`, `&lt;number&gt;`, `&lt;dimension&gt;`, and `&lt;percentage&gt;` values. This guide is an overview of numeric data types. Refer to the page for each value type for more detailed information.
 
 ## Integers
 
@@ -14,32 +14,32 @@ An integer is one or more decimal digits, `0` through `9`, such as `1024` or `-5
 
 ## Numbers
 
-A {{cssxref("&lt;number&gt;")}} represents a real number, which may or may not have a decimal point with a fractional component, for example `0.255`, `128` or `-1.2`. Numbers may also be preceded by a `+` or `-` symbol.
+A `&lt;number&gt;` represents a real number, which may or may not have a decimal point with a fractional component, for example `0.255`, `128` or `-1.2`. Numbers may also be preceded by a `+` or `-` symbol.
 
 ## Dimensions
 
-A {{cssxref("&lt;dimension&gt;")}} is a `<number>` with a unit attached to it, for example `45deg`, `100ms`, or `10px`. The attached unit identifier is case insensitive. There is never a space or any other characters between the number and the unit identifier: i.e., `1 cm` is not valid.
+A `&lt;dimension&gt;` is a `<number>` with a unit attached to it, for example `45deg`, `100ms`, or `10px`. The attached unit identifier is case insensitive. There is never a space or any other characters between the number and the unit identifier: i.e., `1 cm` is not valid.
 
 CSS uses dimensions to specify:
 
-- {{cssxref("&lt;length&gt;")}} (Distance units)
-- {{cssxref("angle")}}
-- {{cssxref("&lt;time&gt;")}}
-- {{cssxref("&lt;frequency&gt;")}}
-- {{cssxref("&lt;flex&gt;")}}
-- {{cssxref("resolution")}}
+- `&lt;length&gt;` (Distance units)
+- `angle`
+- `&lt;time&gt;`
+- `&lt;frequency&gt;`
+- `&lt;flex&gt;`
+- `resolution`
 
 These are all covered in subsections below.
 
 ### Distance units
 
-Where a distance unit, also known as a length, is allowed as a value for a property, this is described as the {{cssxref("&lt;length&gt;")}} type. There are two types of lengths in CSS: relative and absolute. Relative length units specify a length in relation to something else.
+Where a distance unit, also known as a length, is allowed as a value for a property, this is described as the `&lt;length&gt;` type. There are two types of lengths in CSS: relative and absolute. Relative length units specify a length in relation to something else.
 
 There are two types of relative lengths: font-relative lengths and viewport-percentage lengths. These both come in two types. Font-relative length units are either local font-relative or root font-relative. Viewport percentage lengths are either relative to the viewport height or width size or, as defined in the [CSS Containment module](/guides/Containment), relative to a [container](/guides/Containment/Container_queries#container_query_length_units).
 
 #### Local font-relative lengths
 
-Local font-relative lengths are relative to the "local" font size or line height, specifying a length in relation to a computed size of a feature of the [element](/en-US/docs/Web/HTML/Reference/Elements) itself, or relative to the element's inherited value in the case of a circular reference, such as the `em` value for a {{cssxref("font-size")}} property or a `lh` value for a {{cssxref("line-height")}} property.
+Local font-relative lengths are relative to the "local" font size or line height, specifying a length in relation to a computed size of a feature of the [element](/en-US/docs/Web/HTML/Reference/Elements) itself, or relative to the element's inherited value in the case of a circular reference, such as the `em` value for a `font-size` property or a `lh` value for a `line-height` property.
 For example, `em` is relative to the font size on the element and `ex` is relative to the x-height of the element's font.
 
 | Unit  | Relative to                                                                                                                            |
@@ -117,7 +117,7 @@ When including a length value, if the length is `0`, the unit identifier is not 
 
 #### Angle units
 
-Angle values are represented by the type {{cssxref("angle")}} and accept the following values:
+Angle values are represented by the type `angle` and accept the following values:
 
 | Unit   | Name     | Description                              |
 | ------ | -------- | ---------------------------------------- |
@@ -128,7 +128,7 @@ Angle values are represented by the type {{cssxref("angle")}} and accept the fol
 
 #### Time units
 
-Time values are represented by the type {{cssxref("&lt;time&gt;")}}. When including a time value, the unit identifier — the `s` or `ms` — is required. It accepts the following values.
+Time values are represented by the type `&lt;time&gt;`. When including a time value, the unit identifier — the `s` or `ms` — is required. It accepts the following values.
 
 | Unit | Name         | Description                               |
 | ---- | ------------ | ----------------------------------------- |
@@ -137,7 +137,7 @@ Time values are represented by the type {{cssxref("&lt;time&gt;")}}. When includ
 
 #### Frequency units
 
-Frequency values are represented by the type {{cssxref("&lt;frequency&gt;")}}. It accepts the following values.
+Frequency values are represented by the type `&lt;frequency&gt;`. It accepts the following values.
 
 | Unit  | Name      | Description                                      |
 | ----- | --------- | ------------------------------------------------ |
@@ -148,7 +148,7 @@ Frequency values are represented by the type {{cssxref("&lt;frequency&gt;")}}. I
 
 #### Flex units
 
-Flex units are represented by the type {{cssxref("&lt;flex&gt;")}}. It accepts the following value.
+Flex units are represented by the type `&lt;flex&gt;`. It accepts the following value.
 
 | Unit | Name | Description                                          |
 | ---- | ---- | ---------------------------------------------------- |
@@ -156,7 +156,7 @@ Flex units are represented by the type {{cssxref("&lt;flex&gt;")}}. It accepts t
 
 #### Resolution units
 
-Resolution units are represented by the type {{cssxref("resolution")}}. They represent the size of a single dot in a graphical representation, such as a screen, by indicating how many of these dots fit in a CSS inch, centimeter, or pixel. It accepts the following values:
+Resolution units are represented by the type `resolution`. They represent the size of a single dot in a graphical representation, such as a screen, by indicating how many of these dots fit in a CSS inch, centimeter, or pixel. It accepts the following values:
 
 | Unit        | Description          |
 | ----------- | -------------------- |
@@ -166,11 +166,11 @@ Resolution units are represented by the type {{cssxref("resolution")}}. They rep
 
 ### Percentages
 
-A {{cssxref("&lt;percentage&gt;")}} is a type that represents a fraction of some other value.
+A `&lt;percentage&gt;` is a type that represents a fraction of some other value.
 
 Percentage values are always relative to another quantity, for example a length. Each property that allows percentages also defines the quantity to which the percentage refers. This quantity can be a value of another property of the same element, the value of a property of an ancestor element, a measurement of a containing block, or something else.
 
-As an example, if you specify the {{cssxref("width")}} of a box as a percentage, it refers to the percentage of the box's parent's computed width:
+As an example, if you specify the `width` of a box as a percentage, it refers to the percentage of the box's parent's computed width:
 
 ```css
 .box {
@@ -180,38 +180,38 @@ As an example, if you specify the {{cssxref("width")}} of a box as a percentage,
 
 ## Mixing percentages and dimensions
 
-Some properties accept a dimension that could be either one of two types, for example a `<length>` **or** a `<percentage>`. In this case the allowed value is detailed in the specification as a combination unit, e.g., {{cssxref("&lt;length-percentage&gt;")}}. Other possible combinations are as follows:
+Some properties accept a dimension that could be either one of two types, for example a `<length>` **or** a `<percentage>`. In this case the allowed value is detailed in the specification as a combination unit, e.g., `&lt;length-percentage&gt;`. Other possible combinations are as follows:
 
-- {{cssxref("&lt;frequency-percentage&gt;")}}
-- {{cssxref("&lt;angle-percentage&gt;")}}
-- {{cssxref("&lt;time-percentage&gt;")}}
+- `&lt;frequency-percentage&gt;`
+- `&lt;angle-percentage&gt;`
+- `&lt;time-percentage&gt;`
 
 ## Special data types (defined in other specs)
 
-- {{cssxref("&lt;color&gt;")}}
-- {{cssxref("image")}}
-- {{cssxref("&lt;position&gt;")}}
+- `&lt;color&gt;`
+- `image`
+- `&lt;position&gt;`
 
 ### Color
 
-The {{cssxref("&lt;color&gt;")}} value specifies the color of an element feature (e.g., it's background color), and is defined in the [CSS Color Module](https://drafts.csswg.org/css-color-3/).
+The `&lt;color&gt;` value specifies the color of an element feature (e.g., it's background color), and is defined in the [CSS Color Module](https://drafts.csswg.org/css-color-3/).
 
 ### Image
 
-The {{cssxref("image")}} value specifies all the different types of image that can be used in CSS, and is defined in the [CSS Image Values and Replaced Content Module](https://drafts.csswg.org/css-images-4/).
+The `image` value specifies all the different types of image that can be used in CSS, and is defined in the [CSS Image Values and Replaced Content Module](https://drafts.csswg.org/css-images-4/).
 
 ### Position
 
-The {{cssxref("&lt;position&gt;")}} type defines 2D positioning of an object inside a positioning area, for example a background image inside a container. This type is interpreted as a {{cssxref("background-position")}} and therefore specified in the [CSS Backgrounds and Borders specification](https://drafts.csswg.org/css-backgrounds/).
+The `&lt;position&gt;` type defines 2D positioning of an object inside a positioning area, for example a background image inside a container. This type is interpreted as a `background-position` and therefore specified in the [CSS Backgrounds and Borders specification](https://drafts.csswg.org/css-backgrounds/).
 
 ## Functional notation
 
-- {{cssxref("calc()")}}
-- {{cssxref("min()")}}
-- {{cssxref("max()")}}
-- {{cssxref("minmax()")}}
-- {{cssxref("clamp()")}}
-- {{cssxref("attr()")}}
+- `calc()`
+- `min()`
+- `max()`
+- `minmax()`
+- `clamp()`
+- `attr()`
 
 [Functional notation](/reference/values/Functions) is a type of value that can represent more complex types or invoke special processing by CSS. The syntax starts with the name of the function immediately followed by a left parenthesis `(` followed by the argument(s) to the notation followed by a right parenthesis `)`. Functions can take multiple arguments, which are formatted similarly to a CSS property value.
 

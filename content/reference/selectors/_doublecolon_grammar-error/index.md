@@ -14,14 +14,14 @@ The `::grammar-error` pseudo-element follows a special inheritance model common 
 
 Only a small subset of CSS properties can be used in a rule with `::grammar-error` in its selector:
 
-- {{cssxref("color")}}
-- {{cssxref("background-color")}}
-- {{cssxref("cursor")}}
-- {{cssxref("caret-color")}}
-- {{cssxref("outline")}} and its longhands
-- {{cssxref("text-decoration")}} and its associated properties
-- {{cssxref("text-emphasis-color")}}
-- {{cssxref("text-shadow")}}
+- `color`
+- `background-color`
+- `cursor`
+- `caret-color`
+- `outline` and its longhands
+- `text-decoration` and its associated properties
+- `text-emphasis-color`
+- `text-shadow`
 
 ## Syntax
 
@@ -68,5 +68,5 @@ In this example, eventual supporting browsers should highlight any flagged gramm
 
 ## See also
 
-- {{cssxref("::spelling-error")}}
-- {{cssxref("text-decoration-line")}}
+- `::spelling-error`
+- `text-decoration-line`

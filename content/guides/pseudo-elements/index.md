@@ -14,32 +14,32 @@ The **CSS pseudo-element** module defines abstract elements that are not directl
 
 Pseudo-elements are prefixed with a double colon (`::`). You add pseudo-elements to selectors (as in `p::first-line`) to target and style these faux elements.
 
-Pseudo-elements enable targeting entities not included in HTML and sections of content that cannot be targeted otherwise without adding extra markup. Consider the placeholder of an {{HTMLelement("input")}} element. This is an abstract element and not a distinct node in the document tree. You can select this placeholder by using the {{CSSXref("::placeholder")}} pseudo-element. As another example, the {{CSSXref("::selection")}} pseudo-element matches the content currently highlighted by a user, allowing you to style what is matched as the user interacts with the content and changes the selection. Similarly, the {{CSSXref("::first-line")}} pseudo-element targets the first line of an element, updating automatically if the character count of the first line changes, without having to query the element's line length.
+Pseudo-elements enable targeting entities not included in HTML and sections of content that cannot be targeted otherwise without adding extra markup. Consider the placeholder of an {{HTMLelement("input")}} element. This is an abstract element and not a distinct node in the document tree. You can select this placeholder by using the `::placeholder` pseudo-element. As another example, the `::selection` pseudo-element matches the content currently highlighted by a user, allowing you to style what is matched as the user interacts with the content and changes the selection. Similarly, the `::first-line` pseudo-element targets the first line of an element, updating automatically if the character count of the first line changes, without having to query the element's line length.
 
 ## Reference
 
 ### Selectors
 
-- {{CSSXref("::after")}}
-- {{CSSXref("::before")}}
-- {{CSSXref("::file-selector-button")}}
-- {{CSSXref("::first-letter")}}
-- {{CSSXref("::first-line")}}
-- {{CSSXref("::grammar-error")}}
-- {{CSSXref("::highlight()")}}
-- {{CSSXref("::marker")}}
-- {{CSSXref("::placeholder")}}
-- {{CSSXref("::selection")}}
-- {{CSSXref("::spelling-error")}}
-- {{CSSXref("::target-text")}}
+- `::after`
+- `::before`
+- `::file-selector-button`
+- `::first-letter`
+- `::first-line`
+- `::grammar-error`
+- `::highlight()`
+- `::marker`
+- `::placeholder`
+- `::selection`
+- `::spelling-error`
+- `::target-text`
 
-The specification also defines the `::details-content` and `::search-text` pseudo-elements and the `::postfix` and `::prefix` sub-pseudo elements. These are not yet supported by any browser. The {{CSSXref("::highlight()")}} pseudo-element is included within this module, but most details are provided in the [CSS custom highlight API](/en-US/docs/Web/API/CSS_Custom_Highlight_API).
+The specification also defines the `::details-content` and `::search-text` pseudo-elements and the `::postfix` and `::prefix` sub-pseudo elements. These are not yet supported by any browser. The `::highlight()` pseudo-element is included within this module, but most details are provided in the [CSS custom highlight API](/en-US/docs/Web/API/CSS_Custom_Highlight_API).
 
 ### Interfaces
 
-- {{DOMxRef("CSSPseudoElement")}} interface
-  - {{DOMxRef("CSSPseudoElement.element")}} property
-  - {{DOMxRef("CSSPseudoElement.type")}} property
+- `CSSPseudoElement` interface
+  - `CSSPseudoElement.element` property
+  - `CSSPseudoElement.type` property
 
 ### Terms
 
@@ -58,36 +58,36 @@ The specification also defines the `::details-content` and `::search-text` pseud
 
 ## Related concepts
 
-- {{cssxref("::backdrop")}}
+- `::backdrop`
 
 - Web Video Text Tracks Format (WebVTT) cues:
-  - {{cssxref("::cue")}}
-  - {{cssxref("::cue()")}}
+  - `::cue`
+  - `::cue()`
 
 - [CSS multi-column layout](/guides/Multicol_layout) module
-  - {{cssxref("::column")}}
+  - `::column`
 
 - [CSS overflow](/guides/Overflow) module
-  - {{cssxref("::scroll-button()")}}
-  - {{cssxref("::scroll-marker")}}
-  - {{cssxref("::scroll-marker-group")}}
-  - {{cssxref(":target-current")}}
+  - `::scroll-button()`
+  - `::scroll-marker`
+  - `::scroll-marker-group`
+  - `:target-current`
 
 - [CSS scoping](/guides/Scoping) module
-  - {{CSSXref(":host")}}
-  - {{cssxref(":host()")}}
-  - {{cssxref(":host-context()")}}
-  - {{cssxref("::slotted()")}}
+  - `:host`
+  - `:host()`
+  - `:host-context()`
+  - `::slotted()`
 
 - [CSS shadow parts](/guides/Shadow_parts) module
-  - {{CSSXref("::part")}}
+  - `::part`
 
 - [CSS view transitions](/guides/View_transitions) module
-  - {{cssxref("::view-transition")}} {{Experimental_Inline}}
-  - {{cssxref("::view-transition-image-pair()")}} {{Experimental_Inline}}
-  - {{cssxref("::view-transition-group()")}} {{Experimental_Inline}}
-  - {{cssxref("::view-transition-new()")}} {{Experimental_Inline}}
-  - {{cssxref("::view-transition-old()")}} {{Experimental_Inline}}
+  - `::view-transition` {{Experimental_Inline}}
+  - `::view-transition-image-pair()` {{Experimental_Inline}}
+  - `::view-transition-group()` {{Experimental_Inline}}
+  - `::view-transition-new()` {{Experimental_Inline}}
+  - `::view-transition-old()` {{Experimental_Inline}}
 
 - [CSS selectors](/guides/Selectors)
   - [Attribute selectors](/en-US/docs/Web/CSS/Reference/Selectors/Attribute_selectors)
@@ -99,17 +99,17 @@ The specification also defines the `::details-content` and `::search-text` pseud
   - [Universal selectors](/en-US/docs/Web/CSS/Reference/Selectors/Universal_selectors)
 
 - [`placeholder`](/en-US/docs/Web/HTML/Reference/Elements/input#placeholder) attribute of the `<input>` element
-- {{cssxref(":placeholder-shown")}} selector
+- `:placeholder-shown` selector
 
 - [CSS generated content](/guides/Generated_content)
-  - {{cssxref("content")}} property
-  - {{cssxref("quotes")}} property
+  - `content` property
+  - `quotes` property
 
 - [Text fragments](/en-US/docs/Web/URI/Reference/Fragment/Text_fragments)
 
-- {{DOMXref("AnimationEvent.pseudoElement")}} property
-- {{DOMXref("KeyframeEffect.pseudoElement")}} property
-- {{DOMXref("TransitionEvent.pseudoElement")}} property
+- `AnimationEvent.pseudoElement` property
+- `KeyframeEffect.pseudoElement` property
+- `TransitionEvent.pseudoElement` property
 
 ## Specifications
 

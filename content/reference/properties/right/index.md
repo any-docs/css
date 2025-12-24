@@ -85,29 +85,29 @@ right: unset;
 
 ### Values
 
-- {{cssxref("&lt;length&gt;")}}
-  - A negative, null, or positive {{cssxref("&lt;length&gt;")}}:
+- `&lt;length&gt;`
+  - A negative, null, or positive `&lt;length&gt;`:
     - for _absolutely positioned elements_, it represents the distance to the right edge of the containing block.
-    - for _anchor-positioned elements_, the {{cssxref("anchor()")}} function resolves to a {{cssxref("&lt;length&gt;")}} value relative to the position of the associated _anchor element_'s left or right edge (see [Using inset properties with `anchor()` function values](/guides/Anchor_positioning/Using#using_inset_properties_with_anchor_function_values)), and the {{cssxref("anchor-size()")}} function resolves to a {{cssxref("&lt;length&gt;")}} value relative to the associated anchor element's width or height (see [Setting element position based on anchor size](/guides/Anchor_positioning/Using#setting_element_position_based_on_anchor_size)).
+    - for _anchor-positioned elements_, the `anchor()` function resolves to a `&lt;length&gt;` value relative to the position of the associated _anchor element_'s left or right edge (see [Using inset properties with `anchor()` function values](/guides/Anchor_positioning/Using#using_inset_properties_with_anchor_function_values)), and the `anchor-size()` function resolves to a `&lt;length&gt;` value relative to the associated anchor element's width or height (see [Setting element position based on anchor size](/guides/Anchor_positioning/Using#setting_element_position_based_on_anchor_size)).
     - for _relatively positioned elements_, it represents the distance that the element is moved to the left of its normal position.
 
-- {{cssxref("&lt;percentage&gt;")}}
-  - A {{cssxref("&lt;percentage&gt;")}} of the containing block's width.
+- `&lt;percentage&gt;`
+  - A `&lt;percentage&gt;` of the containing block's width.
 - `auto`
   - Specifies that:
-    - for _absolutely positioned elements_, the position of the element is based on the {{Cssxref("left")}} property, while `width: auto` is treated as a width based on the content; or if `left` is also `auto`, the element is positioned where it should horizontally be positioned if it were a static element.
-    - for _relatively positioned elements_, the distance of the element from its normal position is based on the {{Cssxref("left")}} property; or if `left` is also `auto`, the element is not moved horizontally at all.
+    - for _absolutely positioned elements_, the position of the element is based on the `left` property, while `width: auto` is treated as a width based on the content; or if `left` is also `auto`, the element is positioned where it should horizontally be positioned if it were a static element.
+    - for _relatively positioned elements_, the distance of the element from its normal position is based on the `left` property; or if `left` is also `auto`, the element is not moved horizontally at all.
 
 ## Description
 
-The effect of `right` depends on how the element is positioned (i.e., the value of the {{cssxref("position")}} property):
+The effect of `right` depends on how the element is positioned (i.e., the value of the `position` property):
 
-- When `position` is set to `absolute` or `fixed`, the `right` property specifies the distance between the element's outer margin of right edge and the inner border of the right edge of its containing block. If the positioned element has an associated [_anchor element_](/guides/Anchor_positioning/Using), and the property value includes an {{cssxref("anchor()")}} function, `right` positions the right edge of the positioned element relative to the specified [`<anchor-side>`](/reference/values/anchor#anchor-side) edge. The `right` property is [compatible](/reference/values/anchor#compatibility_of_inset_properties_and_anchor-side_values) with the `left`, `right`, `start`, `end`, `self-start`, `self-end`, `center`, and `<percentage>` values.
+- When `position` is set to `absolute` or `fixed`, the `right` property specifies the distance between the element's outer margin of right edge and the inner border of the right edge of its containing block. If the positioned element has an associated [_anchor element_](/guides/Anchor_positioning/Using), and the property value includes an `anchor()` function, `right` positions the right edge of the positioned element relative to the specified [`<anchor-side>`](/reference/values/anchor#anchor-side) edge. The `right` property is [compatible](/reference/values/anchor#compatibility_of_inset_properties_and_anchor-side_values) with the `left`, `right`, `start`, `end`, `self-start`, `self-end`, `center`, and `<percentage>` values.
 - When `position` is set to `relative`, the `right` property specifies the distance the element's right edge is moved to the left from its normal position.
 - When `position` is set to `sticky`, the `right` property is used to compute the sticky-constraint rectangle.
 - When `position` is set to `static`, the `right` property has _no effect_.
 
-When both {{cssxref("left")}} and `right` are defined, if not prevented from doing so by other properties, the element will stretch to satisfy both. If the element cannot stretch to satisfy both — for example, if a `width` is declared — the position of the element is _over-constrained_. When this is the case, the `left` value has precedence when the container is left-to-right; the `right` value has precedence when the container is right-to-left.
+When both `left` and `right` are defined, if not prevented from doing so by other properties, the element will stretch to satisfy both. If the element cannot stretch to satisfy both — for example, if a `width` is declared — the position of the element is _over-constrained_. When this is the case, the `left` value has precedence when the container is left-to-right; the `right` value has precedence when the container is right-to-left.
 
 ## Formal definition
 
@@ -209,9 +209,9 @@ div {
 
 ## See also
 
-- {{cssxref("top")}}, {{cssxref("bottom")}}, and {{cssxref("left")}}
-- {{cssxref("inset")}} shorthand
-- {{cssxref("inset-block-start")}}, {{cssxref("inset-block-end")}}, {{cssxref("inset-inline-start")}}, and {{cssxref("inset-inline-end")}}
-- {{cssxref("inset-block")}} and {{cssxref("inset-inline")}} shorthands
-- {{cssxref("position")}}
+- `top`, `bottom`, and `left`
+- `inset` shorthand
+- `inset-block-start`, `inset-block-end`, `inset-inline-start`, and `inset-inline-end`
+- `inset-block` and `inset-inline` shorthands
+- `position`
 - [CSS positioned layout](/guides/Positioned_layout) module

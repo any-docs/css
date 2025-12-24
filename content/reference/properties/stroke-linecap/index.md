@@ -98,11 +98,11 @@ The first path has `butt` linecaps, which essentially means the stroke runs exac
 
 ## See also
 
-- {{cssxref("stroke-dasharray")}}
-- {{cssxref("stroke-dashoffset")}}
-- {{cssxref("stroke-linejoin")}}
-- {{cssxref("stroke-miterlimit")}}
-- {{cssxref("stroke-opacity")}}
-- {{cssxref("stroke-width")}}
-- {{cssxref("stroke")}}
+- `stroke-dasharray`
+- `stroke-dashoffset`
+- `stroke-linejoin`
+- `stroke-miterlimit`
+- `stroke-opacity`
+- `stroke-width`
+- `stroke`
 - SVG {{SVGAttr("stroke-linecap")}} attribute

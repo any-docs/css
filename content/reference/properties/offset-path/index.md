@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`offset-path`** [CSS](/en-US/docs/Web/CSS) property specifies a path for an element to follow and determines the element's positioning within the path's parent container or the SVG coordinate system. The path is a line, a curve, or a geometrical shape along which the element gets positioned or moves.
 
-The `offset-path` property is used in combination with the {{cssxref("offset-distance")}}, {{cssxref("offset-rotate")}}, and {{cssxref("offset-anchor")}} properties to control the position and orientation of the element along a path.
+The `offset-path` property is used in combination with the `offset-distance`, `offset-rotate`, and `offset-anchor` properties to control the position and orientation of the element along a path.
 
 {{InteractiveExample("CSS Demo: offset-path")}}
 
@@ -118,28 +118,28 @@ offset-path: unset;
 
 ### Values
 
-The `offset-path` property takes as its value an `<offset-path>` value, a [`<coord-box>`](/reference/values/box-edge#values) value, or both, or the `none` keyword. The `<offset-path>` value is a {{cssxref("ray","ray()")}} function, a {{cssxref("url_value", "&lt;url&gt;")}} value, or a {{cssxref("basic-shape")}} value.
+The `offset-path` property takes as its value an `<offset-path>` value, a [`<coord-box>`](/reference/values/box-edge#values) value, or both, or the `none` keyword. The `<offset-path>` value is a `ray()` function, a `&lt;url&gt;` value, or a `basic-shape` value.
 
 - `none`
-  - Specifies that the element does not follow any offset path. The `none` value is equivalent to the element not having any [offset transform](/reference/properties/offset). The element's movement in this case is determined by its default position properties, such as {{cssxref("top")}} and {{cssxref("left")}}, instead of an offset path. This is the default value.
+  - Specifies that the element does not follow any offset path. The `none` value is equivalent to the element not having any [offset transform](/reference/properties/offset). The element's movement in this case is determined by its default position properties, such as `top` and `left`, instead of an offset path. This is the default value.
 
 - `<offset-path>`
-  - A `ray()` function, a `<url>` value, or a `<basic-shape>` value that specifies the geometrical offset path. If omitted, the path shape for the `<coord-box>` value is `inset(0 round X)`, where `X` is the value of {{cssxref("border-radius")}} of the element that establishes the [containing block](/guides/Display/Containing_block).
-    - {{cssxref("ray","ray()")}}
-      - Defines a line starting at a set position, of a set length, and extending at the specified angle. The `ray()` function accepts up to four parameters – an {{CSSxRef("angle")}}, an optional size value, the optional keyword `contain`, and an optional `at <position>`.
+  - A `ray()` function, a `<url>` value, or a `<basic-shape>` value that specifies the geometrical offset path. If omitted, the path shape for the `<coord-box>` value is `inset(0 round X)`, where `X` is the value of `border-radius` of the element that establishes the [containing block](/guides/Display/Containing_block).
+    - `ray()`
+      - Defines a line starting at a set position, of a set length, and extending at the specified angle. The `ray()` function accepts up to four parameters – an `angle`, an optional size value, the optional keyword `contain`, and an optional `at <position>`.
 
-    - {{cssxref("url_value", "&lt;url&gt;")}}
+    - `&lt;url&gt;`
       - Specifies the ID of an [SVG shape element](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Basic_shapes). The path is the shape of the SVG {{SVGElement("circle")}}, {{SVGElement("ellipse")}}, {{SVGElement("line")}}, {{SVGElement("path")}}, {{SVGElement("polygon")}}, {{SVGElement("polyline")}}, or {{SVGElement("rect")}} element referenced by its `id` in the `url()` function. If the URL does not reference a shape element or is otherwise invalid, the resolved value for the offset path is `path("M0,0")` (which is a valid `<basic-shape>` value).
 
-    - {{cssxref("basic-shape")}}
-      - Specifies the offset path as the equivalent path of a [CSS basic shape function](/reference/values/basic-shape), such as {{cssxref("basic-shape/circle","circle()")}}, {{cssxref("basic-shape/ellipse","ellipse()")}}, {{cssxref("basic-shape/inset","inset()")}}, {{cssxref("basic-shape/path","path()")}}, {{cssxref("basic-shape/polygon","polygon()")}}, {{cssxref("basic-shape/rect","rect()")}}, or {{cssxref("basic-shape/xywh","xywh()")}}. For example, if the `<basic_shape>` is an `ellipse()` function, then the path is the outline of the ellipse, starting at the rightmost point of the ellipse, proceeding clockwise through a full rotation. For `ellipse()` and `circle()`, which accept the `at <position>` parameter, if the `<position>` is omitted, the position defaults to `center` unless the element has an {{cssxref("offset-position")}} specified. In this case, the `offset-position` value is used for the `at <position>` parameter. More complex shapes can be defined using the {{cssxref("basic-shape/shape","shape()")}} function.
+    - `basic-shape`
+      - Specifies the offset path as the equivalent path of a [CSS basic shape function](/reference/values/basic-shape), such as `circle()`, `ellipse()`, `inset()`, `path()`, `polygon()`, `rect()`, or `xywh()`. For example, if the `<basic_shape>` is an `ellipse()` function, then the path is the outline of the ellipse, starting at the rightmost point of the ellipse, proceeding clockwise through a full rotation. For `ellipse()` and `circle()`, which accept the `at <position>` parameter, if the `<position>` is omitted, the position defaults to `center` unless the element has an `offset-position` specified. In this case, the `offset-position` value is used for the `at <position>` parameter. More complex shapes can be defined using the `shape()` function.
 
 - [`<coord-box>`](/reference/values/box-edge#values)
   - Specifies the size information of the [reference box](/guides/Shapes/Using_shape-outside#the_reference_box) containing the path. The reference box is derived from the element that establishes the containing block for this element. This parameter is optional. If not specified, the default value is `border-box` in CSS contexts. In SVG contexts, the value is treated as `view-box`. If `ray()` or `<basic-shape>` is used to define the offset path, the `<coord-box>` value provides the reference box for the ray or the `<basic-shape>`, respectively. If `<url>` is used to define the offset path, the `<coord-box>` value provides the viewport and user coordinate system for the shape element, with the origin (`0 0`) at the top left corner and size being `1px`.
 
 ## Description
 
-The `offset-path` property defines a path an animated element can follow. An offset path is either a specified path with one or multiple sub-paths or the geometry of a not-styled basic shape. The element's exact position on the offset path is determined by the {{cssxref("offset-distance")}} property. Each shape or path must define an initial position for the computed value of `0` for {{cssxref("offset-distance")}} and an initial direction which specifies the rotation of the object to the initial position.
+The `offset-path` property defines a path an animated element can follow. An offset path is either a specified path with one or multiple sub-paths or the geometry of a not-styled basic shape. The element's exact position on the offset path is determined by the `offset-distance` property. Each shape or path must define an initial position for the computed value of `0` for `offset-distance` and an initial direction which specifies the rotation of the object to the initial position.
 
 Early versions of the spec called this property `motion-path`. It was changed to `offset-path` because the property describes static positions, not motion.
 
@@ -371,7 +371,7 @@ The SVG rectangle that defines the path shape is shown here only to visually dem
 
 ### Different shapes
 
-This example involves different {{cssxref("basic-shape")}} values: {{cssxref("basic-shape/circle", "circle()")}}, {{cssxref("basic-shape/ellipse", "ellipse()")}}, {{cssxref("basic-shape/inset", "inset()")}}, {{cssxref("basic-shape/polygon", "polygon()")}}.
+This example involves different `basic-shape` values: `circle()`, `ellipse()`, `inset()`, `polygon()`.
 
 ```html
 <div class="container">
@@ -478,8 +478,8 @@ This example involves different {{cssxref("basic-shape")}} values: {{cssxref("ba
 
 ## See also
 
-- {{cssxref("offset")}}
-- {{cssxref("offset-distance")}}
-- {{cssxref("offset-rotate")}}
+- `offset`
+- `offset-distance`
+- `offset-rotate`
 - SVG [paths](/en-US/docs/Web/SVG/Tutorials/SVG_from_scratch/Paths) tutorial
-- {{cssxref("basic-shape/path","path()")}}
+- `path()`

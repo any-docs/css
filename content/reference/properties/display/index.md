@@ -121,7 +121,7 @@ The keyword values can be grouped into six value categories.
 
 ### Outside
 
-- {{CSSxRef("&lt;display-outside&gt;")}}
+- `&lt;display-outside&gt;`
   - These keywords specify the element's outer display type, which is essentially its role in flow layout:
     - `block`
       - The element generates a block box, generating line breaks both before and after the element when in the normal flow.
@@ -145,14 +145,14 @@ The keyword values can be grouped into six value categories.
 
 ### Inside
 
-- {{CSSxRef("&lt;display-inside&gt;")}}
+- `&lt;display-inside&gt;`
   - These keywords specify the element's inner display type, which defines the type of formatting context that its contents are laid out in (assuming it is a non-replaced element). When one of these keywords is used by itself as a single value, the element's outer display type defaults to `block` (with the exception of `ruby`, which defaults to `inline`).
     - `flow`
       - The element lays out its contents using flow layout (block-and-inline layout).
 
         If its outer display type is `inline`, and it is participating in a block or inline formatting context, then it generates an inline box. Otherwise it generates a block box.
 
-        Depending on the value of other properties (such as {{CSSxRef("position")}}, {{CSSxRef("float")}}, or {{CSSxRef("overflow")}}) and whether it is itself participating in a block or inline formatting context, it either establishes a new [block formatting context](/guides/Display/Block_formatting_context) (BFC) for its contents or integrates its contents into its parent formatting context.
+        Depending on the value of other properties (such as `position`, `float`, or `overflow`) and whether it is itself participating in a block or inline formatting context, it either establishes a new [block formatting context](/guides/Display/Block_formatting_context) (BFC) for its contents or integrates its contents into its parent formatting context.
 
     - `flow-root`
       - The element generates a block box that establishes a new [block formatting context](/guides/Display/Block_formatting_context), defining where the formatting root lies.
@@ -170,13 +170,13 @@ The keyword values can be grouped into six value categories.
 
 ### List Item
 
-- {{CSSxRef("&lt;display-listitem&gt;")}}
+- `&lt;display-listitem&gt;`
   - The element generates a block box for the content and a separate list-item inline box.
 
 A single value of `list-item` will cause the element to behave like a list item.
-This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("list-style-position")}}.
+This can be used together with `list-style-type` and `list-style-position`.
 
-`list-item` can also be combined with any {{CSSxRef("&lt;display-outside&gt;")}} keyword and the `flow` or `flow-root` {{CSSxRef("&lt;display-inside&gt;")}} keyword.
+`list-item` can also be combined with any `&lt;display-outside&gt;` keyword and the `flow` or `flow-root` `&lt;display-inside&gt;` keyword.
 
 > [!NOTE]
 > In browsers that support the multi-keyword syntax, if no inner value is specified, it will default to `flow`.
@@ -184,7 +184,7 @@ This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("lis
 
 ### Internal
 
-- {{CSSxRef("&lt;display-internal&gt;")}}
+- `&lt;display-internal&gt;`
   - Some layout models such as `table` and `ruby` have a complex internal structure, with several different roles that their children and descendants can fill.
     This section defines those "internal" display values, which only have meaning within that particular layout mode.
     - `table-row-group`
@@ -214,18 +214,18 @@ This can be used together with {{CSSxRef("list-style-type")}} and {{CSSxRef("lis
 
 ### Box
 
-- {{CSSxRef("&lt;display-box&gt;")}}
+- `&lt;display-box&gt;`
   - These values define whether an element generates display boxes at all.
     - `contents`
       - These elements don't produce a specific box by themselves. They are replaced by their pseudo-box and their child boxes. Please note that the CSS Display Level 3 spec defines how the `contents` value should affect "unusual elements" — elements that aren't rendered purely by CSS box concepts such as replaced elements. See [Appendix B: Effects of display: contents on Unusual Elements](https://drafts.csswg.org/css-display/#unbox) for more details.
 
     - `none`
       - Turns off the display of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off.
-        To have an element take up the space that it would normally take, but without actually rendering anything, use the {{CSSxRef("visibility")}} property instead.
+        To have an element take up the space that it would normally take, but without actually rendering anything, use the `visibility` property instead.
 
 ### Precomposed
 
-- {{CSSxRef("&lt;display-legacy&gt;")}}
+- `&lt;display-legacy&gt;`
   - CSS 2 used a single-keyword, precomposed syntax for the `display` property, requiring separate keywords for block-level and inline-level variants of the same layout mode.
     - `inline-block`
       - The element generates a block box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
@@ -318,14 +318,14 @@ There is one exception, which is when animating to or from `display: none`. In t
 - When animating `display` from `none` to `block` (or another visible `display` value), the value will flip to `block` at `0%` of the animation duration so it is visible throughout.
 - When animating `display` from `block` (or another visible `display` value) to `none`, the value will flip to `none` at `100%` of the animation duration so it is visible throughout.
 
-This behavior is useful for creating entry/exit animations where you want to for example remove a container from the DOM with `display: none`, but have it fade out with {{cssxref("opacity")}} rather than disappearing immediately.
+This behavior is useful for creating entry/exit animations where you want to for example remove a container from the DOM with `display: none`, but have it fade out with `opacity` rather than disappearing immediately.
 
 When animating `display` with [CSS animations](/guides/Animations), you need to provide the starting `display` value in an explicit keyframe (for example using `0%` or `from`). See [Using CSS animations](/guides/Animations/Using) for an example.
 
 When animating `display` with [CSS transitions](/guides/Transitions), two additional features are needed:
 
-- {{cssxref("@starting-style")}} provides starting values for properties you want to transition from when the animated element is first shown. This is needed to avoid unexpected behavior. By default, CSS transitions are not triggered on an element's first style update or when the `display` type changes from `none` to another type.
-- [`transition-behavior: allow-discrete`](/reference/properties/transition-behavior) needs to be set on the {{cssxref("transition-property")}} declaration (or the {{cssxref("transition")}} shorthand) to enable `display` transitions.
+- `@starting-style` provides starting values for properties you want to transition from when the animated element is first shown. This is needed to avoid unexpected behavior. By default, CSS transitions are not triggered on an element's first style update or when the `display` type changes from `none` to another type.
+- [`transition-behavior: allow-discrete`](/reference/properties/transition-behavior) needs to be set on the `transition-property` declaration (or the `transition` shorthand) to enable `display` transitions.
 
 For examples of transitioning the `display` property, see the [`@starting-style`](/en-US/docs/Web/CSS/Reference/At-rules/@starting-style#examples) and [`transition-behavior`](/reference/properties/transition-behavior#examples) pages.
 
@@ -369,7 +369,7 @@ In some browsers, changing the `display` value of a {{HTMLElement("table")}} ele
 
 In this example we have two block-level container elements, each one with three inline children. Below that, we have a select menu that allows you to apply different `display` values to the containers, allowing you to compare and contrast how the different values affect the element's layout, and that of their children.
 
-We have included {{cssxref("padding")}} and {{cssxref("background-color")}} on the containers and their children, so that it is easier to see the effect the display values are having.
+We have included `padding` and `background-color` on the containers and their children, so that it is easier to see the effect the display values are having.
 
 #### HTML
 
@@ -500,8 +500,8 @@ You can find more examples in the pages for each separate display type under [Gr
 
 ## See also
 
-- {{CSSxRef("visibility")}}, {{CSSxRef("float")}}, {{CSSxRef("position")}}
-- {{CSSxRef("grid")}}, {{CSSxRef("flex")}}
+- `visibility`, `float`, `position`
+- `grid`, `flex`
 - SVG {{SVGAttr("display")}} attribute
 - [Block and inline layout in normal flow](/guides/Display/Block_and_inline_layout)
 - [Introduction to formatting contexts](/guides/Display/Formatting_contexts)

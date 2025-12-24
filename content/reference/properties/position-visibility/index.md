@@ -41,9 +41,9 @@ In some situations you might not want to display an anchor-positioned element. F
 
 The `position-visibility` property can be used to `always` show the anchor-positioned element, or conditionally hide it if the associated anchor element is completely hidden (`anchors-visible`) or if the anchor-positioned element itself is partially hidden (`no-overflow`).
 
-When an element is hidden due to `position-visibility`, it is referred to as **strongly hidden**. This means that it will act as though it and its descendant elements have a {{cssxref("visibility")}} value of `hidden` set, regardless of what their actual visibility value is.
+When an element is hidden due to `position-visibility`, it is referred to as **strongly hidden**. This means that it will act as though it and its descendant elements have a `visibility` value of `hidden` set, regardless of what their actual visibility value is.
 
-`position-visibility` should only be used in situations in which hiding the positioned element altogether is preferred. In most cases, it makes more sense to attempt to change the placement of positioned elements when they start to overflow, to keep them on-screen and usable. This can be done with the {{cssxref("position-try-fallbacks")}} property and {{cssxref("@position-try")}} at-rule. See the [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide for more information.
+`position-visibility` should only be used in situations in which hiding the positioned element altogether is preferred. In most cases, it makes more sense to attempt to change the placement of positioned elements when they start to overflow, to keep them on-screen and usable. This can be done with the `position-try-fallbacks` property and `@position-try` at-rule. See the [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide for more information.
 
 ## Formal definition
 
@@ -227,10 +227,10 @@ Select different `position-visibility` values and then scroll the page up and do
 
 ## See also
 
-- {{cssxref("anchor-name")}}
-- {{cssxref("position-anchor")}}
-- {{cssxref("position")}}
-- {{cssxref("position-area")}}
+- `anchor-name`
+- `position-anchor`
+- `position`
+- `position-area`
 - [CSS anchor positioning](/guides/Anchor_positioning) module
 - [Using CSS anchor positioning](/guides/Anchor_positioning/Using) guide
 - [Fallback options and conditional hiding for overflow](/guides/Anchor_positioning/Try_options_hiding) guide

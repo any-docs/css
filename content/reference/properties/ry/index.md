@@ -31,16 +31,16 @@ ry: unset;
 
 ### Values
 
-The {{cssxref("length")}}, {{cssxref("percentage")}}, or `auto` keyword value denotes the vertical radius of ellipses and the vertical border-radius of rectangles.
+The `length`, `percentage`, or `auto` keyword value denotes the vertical radius of ellipses and the vertical border-radius of rectangles.
 
-- {{cssxref("length")}}
-  - Absolute or relative lengths can be expressed in any unit allowed by the CSS {{cssxref("&lt;length&gt;")}} data type. Negative values are invalid.
+- `length`
+  - Absolute or relative lengths can be expressed in any unit allowed by the CSS `&lt;length&gt;` data type. Negative values are invalid.
 
-- {{cssxref("percentage")}}
+- `percentage`
   - Percentages refer to the height of the current SVG viewport. The used value for a `<rect>` is never more than 50% of the height of the rectangle.
 
 - `auto`
-  - When set or defaulting to `auto`, the `ry` value equals the absolute length value used for {{cssxref("rx")}}. If both `ry` and `rx` have a computed value of `auto`, the used value is `0`.
+  - When set or defaulting to `auto`, the `ry` value equals the absolute length value used for `rx`. If both `ry` and `rx` have a computed value of `auto`, the used value is `0`.
 
 ## Formal definition
 
@@ -123,7 +123,7 @@ We include two identical `<ellipse>` elements in an SVG; each with the `ry` attr
 
 #### CSS
 
-We only style the first ellipse, letting its twin use default user agent styles (with {{cssxref("fill")}} defaulting to black). The geometric `ry` property overrides the value of the SVG {{SVGAttr("ry")}} attribute. We also set the `fill` and {{cssxref("stroke")}} properties to differentiate the styled shape from its twin.
+We only style the first ellipse, letting its twin use default user agent styles (with `fill` defaulting to black). The geometric `ry` property overrides the value of the SVG {{SVGAttr("ry")}} attribute. We also set the `fill` and `stroke` properties to differentiate the styled shape from its twin.
 
 ```css
 svg {
@@ -190,11 +190,11 @@ When using percentage values for `ry`, the values are relative to the height of 
 
 ## See also
 
-- Geometry properties: `ry`, {{cssxref("cx")}}, {{cssxref("cy")}}, {{cssxref("r")}}, {{cssxref("rx")}}, {{cssxref("x")}}, {{cssxref("y")}}, {{cssxref("height")}}, {{cssxref("height")}}
-- {{cssxref("fill")}}
-- {{cssxref("stroke")}}
-- {{cssxref("paint-order")}}
-- {{cssxref("border-radius")}} shorthand property
-- {{cssxref("gradient/radial-gradient", "radial-gradient")}}
-- {{cssxref("basic-shape")}} data type
+- Geometry properties: `ry`, `cx`, `cy`, `r`, `rx`, `x`, `y`, `height`, `height`
+- `fill`
+- `stroke`
+- `paint-order`
+- `border-radius` shorthand property
+- `radial-gradient`
+- `basic-shape` data type
 - SVG {{SVGAttr("ry")}} attribute

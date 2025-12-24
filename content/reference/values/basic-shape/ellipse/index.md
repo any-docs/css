@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.ellipse
 sidebar: cssref
 ---
 
-The **`ellipse()`** [CSS](/en-US/docs/Web/CSS) function is one of the {{cssxref("basic-shape")}} [data types](/reference/values/Data_types).
+The **`ellipse()`** [CSS](/en-US/docs/Web/CSS) function is one of the `basic-shape` [data types](/reference/values/Data_types).
 
 {{InteractiveExample("CSS Demo: ellipse()")}}
 
@@ -51,19 +51,19 @@ shape-outside: ellipse(40% 50% at left);
 shape-outside: ellipse(closest-side farthest-side at 30%);
 ```
 
-An ellipse is essentially a squashed circle and so `ellipse()` acts in a very similar way to {{cssxref("basic-shape/circle","circle()")}} except that we have to specify two radii x and y.
+An ellipse is essentially a squashed circle and so `ellipse()` acts in a very similar way to `circle()` except that we have to specify two radii x and y.
 
 ### Values
 
 - `<shape-radius>`
-  - Two radii, x and y in that order. These may be a {{cssxref("length")}}, or a {{cssxref("percentage")}} or values `closest-side` and `farthest-side`.
+  - Two radii, x and y in that order. These may be a `length`, or a `percentage` or values `closest-side` and `farthest-side`.
     - `closest-side`
       - Uses the length from the center of the shape to the closest side of the reference box. For ellipses, this is the closest side in the radius dimension.
     - `farthest-side`
       - Uses the length from the center of the shape to the farthest side of the reference box. For ellipses, this is the farthest side in the radius dimension.
 
 - `<position>`
-  - Moves the center of the ellipse. May be a {{cssxref("length")}}, or a {{cssxref("percentage")}}, or a values such as `left`. The `<position>` value defaults to center if omitted.
+  - Moves the center of the ellipse. May be a `length`, or a `percentage`, or a values such as `left`. The `<position>` value defaults to center if omitted.
 
 ## Formal syntax
 
@@ -154,5 +154,5 @@ body {
 
 ## See also
 
-- Properties that use this data type: {{cssxref("clip-path")}}, {{cssxref("shape-outside")}}
+- Properties that use this data type: `clip-path`, `shape-outside`
 - [Guide to Basic Shapes](/guides/Shapes/Using_shape-outside)

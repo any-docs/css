@@ -125,7 +125,7 @@ align-content: unset;
 - `space-evenly`
   - The items are evenly distributed within the alignment container along the cross axis. The spacing between each pair of adjacent items, the start edge and the first item, and the end edge and the last item, are all exactly the same.
 - `stretch`
-  - If the combined size of the items along the cross axis is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by {{cssxref("max-height")}}/{{cssxref("max-width")}} (or equivalent functionality), so that the combined size exactly fills the alignment container along the cross axis.
+  - If the combined size of the items along the cross axis is less than the size of the alignment container, any `auto`-sized items have their size increased equally (not proportionally), while still respecting the constraints imposed by `max-height`/`max-width` (or equivalent functionality), so that the combined size exactly fills the alignment container along the cross axis.
 - `safe`
   - Used alongside an alignment keyword. If the chosen keyword means that the item overflows the alignment container causing data loss, the item is instead aligned as if the alignment mode were `start`.
 - `unsafe`
@@ -146,7 +146,7 @@ align-content: unset;
 
 ### Effects of different align-content values
 
-In this example, you can switch between three different {{cssxref("display")}} property values, including `flex`, `grid`, and `block`. You can also switch between the different values for `align-content`.
+In this example, you can switch between three different `display` property values, including `flex`, `grid`, and `block`. You can also switch between the different values for `align-content`.
 
 #### HTML
 
@@ -288,4 +288,4 @@ In [block layout](/guides/Box_alignment/In_block_abspos_tables#align-content_and
 - [CSS box alignment](/guides/Box_alignment)
 - [Block and inline layout in normal flow](/guides/Display/Block_and_inline_layout)
 - [Block-level content](/en-US/docs/Glossary/Block-level_content)
-- {{CSSXRef("display")}}
+- `display`

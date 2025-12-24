@@ -16,7 +16,7 @@ Media queries are a key component of [responsive design](/en-US/docs/Learn_web_d
 
 Other common examples include increasing the font size and hiding navigation menus when printing a page, adjusting the padding between paragraphs when a page is viewed in portrait or landscape mode, or increasing the size of buttons to provide a larger hit area on touchscreens.
 
-In [CSS](/en-US/docs/Web/CSS), use the {{cssxref("@media")}} [at-rule](/guides/Syntax/At-rules) to conditionally apply part of a style sheet based on the result of a media query. To conditionally apply an entire style sheet, use {{cssxref("@import")}}.
+In [CSS](/en-US/docs/Web/CSS), use the `@media` [at-rule](/guides/Syntax/At-rules) to conditionally apply part of a style sheet based on the result of a media query. To conditionally apply an entire style sheet, use `@import`.
 
 When designing reusable HTML components, you may also use [container queries](/guides/Containment/Container_queries), which allow you to apply styles based on the size of a containing element rather than the viewport or other device characteristics.
 
@@ -24,54 +24,54 @@ When designing reusable HTML components, you may also use [container queries](/g
 
 ### At-rules and descriptors
 
-- {{cssxref("@import")}}
-- {{cssxref("@custom-media")}}
-- {{cssxref("@media")}}
-  - {{cssxref("@media/any-hover", "any-hover")}}
-  - {{cssxref("@media/any-pointer", "any-pointer")}}
-  - {{cssxref("@media/aspect-ratio", "aspect-ratio")}}
-  - {{cssxref("@media/color", "color")}}
-  - {{cssxref("@media/color-gamut", "color-gamut")}}
-  - {{cssxref("@media/color-index", "color-index")}}
-  - {{cssxref("@media/device-aspect-ratio", "device-aspect-ratio")}}
-  - {{cssxref("@media/device-height", "device-height")}}
-  - {{cssxref("@media/device-width", "device-width")}}
-  - {{cssxref("@media/display-mode", "display-mode")}}
-  - {{cssxref("@media/dynamic-range", "dynamic-range")}}
-  - {{cssxref("@media/forced-colors", "forced-colors")}}
-  - {{cssxref("@media/grid", "grid")}}
-  - {{cssxref("@media/height", "height")}}
-  - {{cssxref("@media/horizontal-viewport-segments", "horizontal-viewport-segments")}}
-  - {{cssxref("@media/hover", "hover")}}
-  - {{cssxref("@media/inverted-colors", "inverted-colors")}}
-  - {{cssxref("@media/monochrome", "monochrome")}}
-  - {{cssxref("@media/orientation", "orientation")}}
-  - {{cssxref("@media/overflow-block", "overflow-block")}}
-  - {{cssxref("@media/overflow-inline", "overflow-inline")}}
-  - {{cssxref("@media/pointer", "pointer")}}
-  - {{cssxref("@media/prefers-color-scheme", "prefers-color-scheme")}}
-  - {{cssxref("@media/prefers-contrast", "prefers-contrast")}}
-  - {{cssxref("@media/prefers-reduced-data", "prefers-reduced-data")}}
-  - {{cssxref("@media/prefers-reduced-motion", "prefers-reduced-motion")}}
-  - {{cssxref("@media/prefers-reduced-transparency", "prefers-reduced-transparency")}}
-  - {{cssxref("@media/resolution", "resolution")}}
-  - {{cssxref("@media/scan", "scan")}}
-  - {{cssxref("@media/scripting", "scripting")}}
-  - {{cssxref("@media/update", "update")}}
-  - {{cssxref("@media/vertical-viewport-segments", "vertical-viewport-segments")}}
-  - {{cssxref("@media/video-dynamic-range", "video-dynamic-range")}}
-  - {{cssxref("@media/width", "width")}}
+- `@import`
+- `@custom-media`
+- `@media`
+  - `any-hover`
+  - `any-pointer`
+  - `aspect-ratio`
+  - `color`
+  - `color-gamut`
+  - `color-index`
+  - `device-aspect-ratio`
+  - `device-height`
+  - `device-width`
+  - `display-mode`
+  - `dynamic-range`
+  - `forced-colors`
+  - `grid`
+  - `height`
+  - `horizontal-viewport-segments`
+  - `hover`
+  - `inverted-colors`
+  - `monochrome`
+  - `orientation`
+  - `overflow-block`
+  - `overflow-inline`
+  - `pointer`
+  - `prefers-color-scheme`
+  - `prefers-contrast`
+  - `prefers-reduced-data`
+  - `prefers-reduced-motion`
+  - `prefers-reduced-transparency`
+  - `resolution`
+  - `scan`
+  - `scripting`
+  - `update`
+  - `vertical-viewport-segments`
+  - `video-dynamic-range`
+  - `width`
 
 The CSS media queries level 5 module also introduces the `environment-blending`, `nav-controls`, and `video-color-gamut` `@media` descriptors. Currently, no browsers support these features.
 
 > [!NOTE]
-> CSS media queries level 4 deprecated three `@media` descriptors: {{cssxref("@media/device-aspect-ratio", "device-aspect-ratio")}}, {{cssxref("@media/device-height", "device-height")}}, and {{cssxref("@media/device-width", "device-width")}}.
+> CSS media queries level 4 deprecated three `@media` descriptors: `device-aspect-ratio`, `device-height`, and `device-width`.
 
 ### Data types and operators
 
 - [`<media-types>`](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_types)
 - [`<media-features>`](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features)
-- {{cssxref("resolution")}}
+- `resolution`
 - [Logical operators](/en-US/docs/Web/CSS/Reference/At-rules/@media#logical_operators)
 
 ### Glossary terms
@@ -102,26 +102,26 @@ The CSS media queries level 5 module also introduces the `environment-blending`,
 ## Related concepts
 
 - [CSS containment](/guides/Containment) module
-  - {{cssxref("@container")}} at-rule
+  - `@container` at-rule
   - [Using container queries](/guides/Containment/Container_queries)
   - [Using size and style container queries](/guides/Containment/Container_size_and_style_queries)
 - [CSS conditional rules](/guides/Conditional_rules) module
-  - {{cssxref("@supports")}} at-rule
+  - `@supports` at-rule
   - [Using feature queries](/guides/Conditional_rules/Using_feature_queries)
 - [CSS environment variables](/guides/Environment_variables)
-  - {{cssxref("env()")}} function
+  - `env()` function
 - [CSS paged media](/guides/Paged_media) module
-  - {{cssxref("@page")}} at-rule
+  - `@page` at-rule
 - [CSS object model](/en-US/docs/Web/API/CSS_Object_Model) module
-  - {{DOMxRef("MediaQueryList")}} interface
-    - {{DOMxRef("MediaQueryList.matches", "matches")}} property
-    - {{DOMxRef("MediaQueryList.media", "media")}} property
-    - {{DOMxRef("MediaQueryList.change_event", "change")}} event
-  - {{DOMxRef("MediaList")}} interface
-    - {{DOMxRef("MediaList.mediaText", "mediaText")}} property
-  - {{DOMxRef("MediaQueryListEvent")}} object
+  - `MediaQueryList` interface
+    - `matches` property
+    - `media` property
+    - `change` event
+  - `MediaList` interface
+    - `mediaText` property
+  - `MediaQueryListEvent` object
 - [Device Posture API](/en-US/docs/Web/API/Device_Posture_API)
-  - {{cssxref("@media/device-posture", "device-posture")}} descriptor
+  - `device-posture` descriptor
 - HTML
   - `sizes` attribute for [`<img>`](/en-US/docs/Web/HTML/Reference/Elements/img#sizes), [`<link>`](/en-US/docs/Web/HTML/Reference/Elements/link#sizes), and [`<source>`](/en-US/docs/Web/HTML/Reference/Elements/source#sizes) for {{HTMLElement("picture")}}
   - `media` attribute for [`<link>`](/en-US/docs/Web/HTML/Reference/Elements/link#media), [`<source>`](/en-US/docs/Web/HTML/Reference/Elements/source#media), and [`<style>`](/en-US/docs/Web/HTML/Reference/Elements/style#media) [HTML](/en-US/docs/Web/HTML)
@@ -137,4 +137,4 @@ The CSS media queries level 5 module also introduces the `environment-blending`,
 - [Container queries](/guides/Containment/Container_queries)
 - [Using the `srcset` and `sizes` attributes](/en-US/docs/Web/HTML/Reference/Elements/img#using_the_srcset_and_sizes_attributes)
 - [CSS paged media](/guides/Paged_media)
-- Use {{cssxref("@supports")}} to apply styles that depend on browser support for various CSS technologies.
+- Use `@supports` to apply styles that depend on browser support for various CSS technologies.

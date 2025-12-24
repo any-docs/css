@@ -10,10 +10,10 @@ sidebar: cssref
 
 {{SeeCompatTable}}
 
-The **`:target-current`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) selects the **active** scroll marker — the scroll marker of a {{cssxref("scroll-marker-group")}} that is currently scrolled to. This [selector](/guides/Selectors) can be used to style the active navigation position within a scroll marker group.
+The **`:target-current`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes) selects the **active** scroll marker — the scroll marker of a `scroll-marker-group` that is currently scrolled to. This [selector](/guides/Selectors) can be used to style the active navigation position within a scroll marker group.
 
 > [!NOTE]
-> The `:target-current` pseudo-class is only valid on {{cssxref("::scroll-marker")}} pseudo-elements and elements that have been designated as scroll markers using the {{cssxref("scroll-target-group")}} property.
+> The `:target-current` pseudo-class is only valid on `::scroll-marker` pseudo-elements and elements that have been designated as scroll markers using the `scroll-target-group` property.
 
 ## Syntax
 
@@ -25,7 +25,7 @@ The **`:target-current`** [CSS](/en-US/docs/Web/CSS) [pseudo-class](/en-US/docs/
 
 ## Examples
 
-See [Creating CSS carousels](/guides/Overflow/Carousels) and {{cssxref("::scroll-marker")}} for complete examples that use the `:target-current` pseudo-class.
+See [Creating CSS carousels](/guides/Overflow/Carousels) and `::scroll-marker` for complete examples that use the `:target-current` pseudo-class.
 
 ### Basic usage
 
@@ -49,11 +49,11 @@ See [Creating CSS carousels](/guides/Overflow/Carousels) and {{cssxref("::scroll
 
 ## See also
 
-- {{cssxref("scroll-marker-group")}}
-- {{cssxref("scroll-target-group")}}
-- {{cssxref(":target-before")}}, {{cssxref(":target-after")}}
-- {{cssxref("::scroll-marker")}}
-- {{cssxref("::scroll-marker-group")}}
+- `scroll-marker-group`
+- `scroll-target-group`
+- `:target-before`, `:target-after`
+- `::scroll-marker`
+- `::scroll-marker-group`
 - [Creating CSS carousels](/guides/Overflow/Carousels)
 - [CSS overflow](/guides/Overflow) module
 - [CSS Carousel Gallery](https://chrome.dev/carousel/) via chrome.dev (2025)

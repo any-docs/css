@@ -8,7 +8,7 @@ sidebar: cssref
 
 The **`fill-rule`** [CSS](/en-US/docs/Web/CSS) property defines the rule used to determine which parts of the SVG shape's canvas are included inside a shape to be filled. If present, it overrides the element's {{SVGAttr("fill-rule")}} attribute.
 
-The `fill-rule` clarifies which areas of a shape should be considered "inside" the shape. It provides two values you can set to tell the browser how the inside of a shape should be determined. For shapes that don't have intersecting paths, like a circle, the bounds of what is inside a shape to be filled are intuitively clear. With complex shapes that include intersecting paths (such as a Venn diagram) or paths enclosing other paths (such as a donut), the interpretation of which sections of the shape are "inside" the shape and should be filled by the {{cssxref("fill")}} property, may not be obvious.
+The `fill-rule` clarifies which areas of a shape should be considered "inside" the shape. It provides two values you can set to tell the browser how the inside of a shape should be determined. For shapes that don't have intersecting paths, like a circle, the bounds of what is inside a shape to be filled are intuitively clear. With complex shapes that include intersecting paths (such as a Venn diagram) or paths enclosing other paths (such as a donut), the interpretation of which sections of the shape are "inside" the shape and should be filled by the `fill` property, may not be obvious.
 
 > [!NOTE]
 > The `fill-rule` property only applies to {{SVGElement("path")}}, {{SVGElement("polygon")}}, {{SVGElement("polyline")}}, {{SVGElement("text")}}, {{SVGElement("textPath")}}, and {{SVGElement("tspan")}} elements nested in an {{SVGElement("svg")}}. It doesn't apply to other SVG, HTML, or pseudo-elements.
@@ -52,7 +52,7 @@ This example demonstrates how a `fill-rule` is declared, the effect of the prope
 
 #### HTML
 
-We define an SVG with two complex shapes defined using the SVG {{SVGElement("polygon")}} and {{SVGElement("path")}} elements. The polygon has the SVG `fill-rule` attribute set to `evenodd` and the star-shaped path is set to `nonzero`, which is the default. To make the lines visible, we set the outline to `red` using the SVG {{SVGAttr("stroke")}} attribute (we could have alternatively used the {{CSSXRef("stroke")}} property).
+We define an SVG with two complex shapes defined using the SVG {{SVGElement("polygon")}} and {{SVGElement("path")}} elements. The polygon has the SVG `fill-rule` attribute set to `evenodd` and the star-shaped path is set to `nonzero`, which is the default. To make the lines visible, we set the outline to `red` using the SVG {{SVGAttr("stroke")}} attribute (we could have alternatively used the `stroke` property).
 
 ```html hidden
 <p>Original SVG</p>
@@ -139,8 +139,8 @@ With the `nonzero` value for `fill-rule`, the "inside" of the shape is the entir
 ## See also
 
 - SVG {{SVGAttr("fill-rule")}} attribute
-- Presentation properties: `fill-rule`, {{cssxref("clip-rule")}}, {{cssxref("color-interpolation-filters")}}, {{cssxref("fill-opacity")}}, {{cssxref("fill")}}, {{cssxref("marker-end")}}, {{cssxref("marker-mid")}}, {{cssxref("marker-start")}}, {{cssxref("shape-rendering")}}, {{cssxref("stop-color")}}, {{cssxref("stop-opacity")}}, {{cssxref("stroke")}}, {{cssxref("stroke-dasharray")}}, {{cssxref("stroke-dashoffset")}}, {{cssxref("stroke-linecap")}}, {{cssxref("stroke-linejoin")}}, {{cssxref("stroke-miterlimit")}}, {{cssxref("stroke-opacity")}}, {{cssxref("stroke-width")}}, {{cssxref("text-anchor")}}, and {{cssxref("vector-effect")}}
-- {{cssxref("opacity")}}
-- {{cssxref("background-color")}}
-- {{cssxref("color_value", "&lt;color>")}}
-- {{cssxref("basic-shape")}} data type
+- Presentation properties: `fill-rule`, `clip-rule`, `color-interpolation-filters`, `fill-opacity`, `fill`, `marker-end`, `marker-mid`, `marker-start`, `shape-rendering`, `stop-color`, `stop-opacity`, `stroke`, `stroke-dasharray`, `stroke-dashoffset`, `stroke-linecap`, `stroke-linejoin`, `stroke-miterlimit`, `stroke-opacity`, `stroke-width`, `text-anchor`, and `vector-effect`
+- `opacity`
+- `background-color`
+- `&lt;color>`
+- `basic-shape` data type

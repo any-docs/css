@@ -6,7 +6,7 @@ browser-compat: css.types.transform-function
 sidebar: cssref
 ---
 
-The **`<transform-function>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a transformation that affects an element's appearance. Transformation [functions](/reference/values/Functions) can rotate, resize, distort, or move an element in 2D or 3D space. It is used in the {{cssxref("transform")}} property.
+The **`<transform-function>`** [CSS](/en-US/docs/Web/CSS) [data type](/reference/values/Data_types) represents a transformation that affects an element's appearance. Transformation [functions](/reference/values/Functions) can rotate, resize, distort, or move an element in 2D or 3D space. It is used in the `transform` property.
 
 ## Syntax
 
@@ -119,7 +119,7 @@ However, one major transformation is not linear, and therefore must be special-c
 > Though trickier than Cartesian coordinates, [homogeneous coordinates](https://en.wikipedia.org/wiki/Homogeneous_coordinates) in [projective geometry](https://en.wikipedia.org/wiki/Projective_geometry) lead to 3×3 transformation matrices, and can express translations as linear functions.
 
 > [!NOTE]
-> Transform functions are used with the `transform` property but not with individual transform properties-{{cssxref("translate")}}, {{cssxref("scale")}}, and {{cssxref("rotate")}}.
+> Transform functions are used with the `transform` property but not with individual transform properties-`translate`, `scale`, and `rotate`.
 
 ## Examples
 
@@ -268,8 +268,8 @@ selectElem.addEventListener("change", () => {
 
 ## See also
 
-- CSS {{cssxref("transform")}} property
+- CSS `transform` property
 - Individual transform properties:
-  - {{cssxref("translate")}}
-  - {{cssxref("scale")}}
-  - {{cssxref("rotate")}}
+  - `translate`
+  - `scale`
+  - `rotate`

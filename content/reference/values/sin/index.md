@@ -6,7 +6,7 @@ browser-compat: css.types.sin
 sidebar: cssref
 ---
 
-The **`sin()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the sine of a number, which is a value between `-1` and `1`. The function contains a single calculation that must resolve to either a {{cssxref("&lt;number&gt;")}} or an {{cssxref("angle")}} by interpreting the result of the argument as radians. That is, `sin(45deg)`, `sin(0.125turn)`, and `sin(3.14159 / 4)` all represent the same value, approximately `0.707`.
+The **`sin()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) is a trigonometric function that returns the sine of a number, which is a value between `-1` and `1`. The function contains a single calculation that must resolve to either a `&lt;number&gt;` or an `angle` by interpreting the result of the argument as radians. That is, `sin(45deg)`, `sin(0.125turn)`, and `sin(3.14159 / 4)` all represent the same value, approximately `0.707`.
 
 {{InteractiveExample("CSS Demo: sin()")}}
 
@@ -92,7 +92,7 @@ width: calc(100px * sin(e / 4));
 The `sin(angle)` function accepts only one value as its parameter.
 
 - `angle`
-  - A calculation which resolves to a {{cssxref("&lt;number&gt;")}} or an {{cssxref("angle")}}. When specifying unitless numbers they are interpreted as a number of radians, representing an {{cssxref("angle")}}
+  - A calculation which resolves to a `&lt;number&gt;` or an `angle`. When specifying unitless numbers they are interpreted as a number of radians, representing an `angle`
 
 ### Return value
 
@@ -121,7 +121,7 @@ div {
 
 ### Controlling animation duration
 
-Another use case is to control the {{cssxref("animation-duration")}}, reducing the duration based on the sine value. In this case, the animation duration will be `1s`.
+Another use case is to control the `animation-duration`, reducing the duration based on the sine value. In this case, the animation duration will be `1s`.
 
 ```css
 div {
@@ -140,9 +140,9 @@ div {
 
 ## See also
 
-- {{CSSxRef("cos")}}
-- {{CSSxRef("tan")}}
-- {{CSSxRef("asin")}}
-- {{CSSxRef("acos")}}
-- {{CSSxRef("atan")}}
-- {{CSSxRef("atan2")}}
+- `cos`
+- `tan`
+- `asin`
+- `acos`
+- `atan`
+- `atan2`

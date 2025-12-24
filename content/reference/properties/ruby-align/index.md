@@ -149,4 +149,4 @@ ruby {
 ## See also
 
 - HTML Ruby elements: {{HTMLElement("ruby")}}, {{HTMLElement("rt")}}, {{HTMLElement("rp")}}, and {{HTMLElement("rtc")}}.
-- CSS Ruby properties: {{cssxref("ruby-position")}}, {{cssxref("ruby-merge")}}.
+- CSS Ruby properties: `ruby-position`, `ruby-merge`.

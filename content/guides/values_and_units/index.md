@@ -19,74 +19,74 @@ Every CSS declaration consists of a property/value pair. The value can take vari
 
 ### Properties
 
-- {{cssxref("interpolate-size")}}
+- `interpolate-size`
 
 ### Functions
 
-- {{cssxref("abs()")}}
-- {{cssxref("acos()")}}
-- {{cssxref("asin()")}}
-- {{cssxref("atan()")}}
-- {{cssxref("atan2()")}}
-- {{cssxref("attr()")}}
-- {{cssxref("calc()")}}
-- {{cssxref("calc-size()")}}
-- {{cssxref("clamp()")}}
-- {{cssxref("cos()")}}
-- {{cssxref("exp()")}}
-- {{cssxref("hypot()")}}
-- {{cssxref("ident()")}}
-- {{cssxref("if()")}}
-- {{cssxref("inherit()")}}
-- {{cssxref("log()")}}
-- {{cssxref("max()")}}
-- {{cssxref("min()")}}
-- {{cssxref("mod()")}}
-- {{cssxref("pow()")}}
-- {{cssxref("progress()")}}
-- {{cssxref("rem()")}}
-- {{cssxref("round()")}}
-- {{cssxref("sibling-count()")}}
-- {{cssxref("sibling-index()")}}
-- {{cssxref("sign()")}}
-- {{cssxref("sin()")}}
-- {{cssxref("sqrt()")}}
-- {{cssxref("tan()")}}
-- {{cssxref("url_function", "url()")}}
+- `abs()`
+- `acos()`
+- `asin()`
+- `atan()`
+- `atan2()`
+- `attr()`
+- `calc()`
+- `calc-size()`
+- `clamp()`
+- `cos()`
+- `exp()`
+- `hypot()`
+- `ident()`
+- `if()`
+- `inherit()`
+- `log()`
+- `max()`
+- `min()`
+- `mod()`
+- `pow()`
+- `progress()`
+- `rem()`
+- `round()`
+- `sibling-count()`
+- `sibling-index()`
+- `sign()`
+- `sin()`
+- `sqrt()`
+- `tan()`
+- `url()`
 
 The CSS values and units module also introduces the `calc-mix()`, `crossorigin()`, `first-valid()`, `integrity()`, `random()`, `random-item()`, `referrerpolicy()`, `src()`, `type()`, and `toggle()` functions. Currently, no browsers support these features.
 
 ### Data types
 
-- {{cssxref("angle-percentage")}}
-- {{cssxref("angle")}}
+- `angle-percentage`
+- `angle`
 - [`<attr-name>`](/reference/values/attr#attr-name)
 - [`<attr-type>`](/reference/values/attr#attr-type)
-- {{CSSxRef("&lt;calc-keyword&gt;")}} (`e`, `pi`, `infinity`, {{glossary("NaN")}})
+- `&lt;calc-keyword&gt;` (`e`, `pi`, `infinity`, {{glossary("NaN")}})
 - [`<calc-size-basis>`](/reference/values/calc-size#calc-size-basis)
-- {{cssxref("calc-sum")}}
-- {{cssxref("custom-ident")}}
-- {{cssxref("dashed-ident")}}
-- {{cssxref("dimension")}}
-- {{cssxref("easing-function")}}
-- {{cssxref("ident")}}
-- {{cssxref("integer")}}
-- {{cssxref("length-percentage")}}
-- {{cssxref("length")}}
-- {{cssxref("number")}}
-- {{cssxref("percentage")}}
-- {{cssxref("&lt;position&gt;")}}
-- {{cssxref("ratio")}}
-- {{cssxref("resolution")}}
+- `calc-sum`
+- `custom-ident`
+- `dashed-ident`
+- `dimension`
+- `easing-function`
+- `ident`
+- `integer`
+- `length-percentage`
+- `length`
+- `number`
+- `percentage`
+- `&lt;position&gt;`
+- `ratio`
+- `resolution`
 - [`<rounding-strategy>`](/reference/values/round#rounding-strategy) (`down`, `up`, `to-zero`)
-- {{cssxref("string")}}
+- `string`
 - [`<syntax>`](/guides/Syntax/Introduction)
-- {{cssxref("time-percentage")}}
-- {{cssxref("time")}}
-- {{cssxref("url_value", "&lt;url&gt;")}}
+- `time-percentage`
+- `time`
+- `&lt;url&gt;`
 - [`<url-modifier>`](/reference/values/url_function#url-modifier)
 
-The CSS values and units module also introduces the {{cssxref("frequency")}} and {{cssxref("frequency-percentage")}} data types. Currently, no browsers support these features.
+The CSS values and units module also introduces the `frequency` and `frequency-percentage` data types. Currently, no browsers support these features.
 
 #### Units
 
@@ -218,28 +218,28 @@ The CSS values and units module also introduces the {{cssxref("frequency")}} and
 ## Related
 
 - [CSS cascading and inheritance](/guides/Cascade) module
-  - {{cssxref("initial")}}
-  - {{cssxref("inherit")}}
-  - {{cssxref("revert")}}
-  - {{cssxref("revert-layer")}}
-  - {{cssxref("unset")}}
-  - {{cssxref("all")}}
+  - `initial`
+  - `inherit`
+  - `revert`
+  - `revert-layer`
+  - `unset`
+  - `all`
 
 - [CSS grid layout](/guides/Grid_layout) module
-  - {{cssxref("&lt;flex&gt;")}}
+  - `&lt;flex&gt;`
   - [Flex units](/guides/Values_and_units/Numeric_data_types#flex_units) (`fr`)
 
 - [CSS conditional rules](/guides/Conditional_rules) module
   - [Container units](/guides/Values_and_units/Numeric_data_types#container_units) (`cqb`, `cqh`, `cqi`, `cqmax`, `cqmin`, `cqw`)
 
 - [CSS colors](/guides/Colors) module
-  - {{cssxref("&lt;color&gt;")}}
-  - {{cssxref("system-color")}}
+  - `&lt;color&gt;`
+  - `system-color`
   - [`color-mix()`](/reference/values/color_value/color-mix)
 
 - [CSS images](/guides/Images) module
-  - {{cssxref("image")}}
-  - {{cssxref("gradient")}}
+  - `image`
+  - `gradient`
 
 ## Specifications
 

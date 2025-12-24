@@ -127,4 +127,4 @@ Not part of any standard.
 
 ## See also
 
-- {{cssxref("align-items")}}, {{cssxref("box-orient")}}, {{cssxref("box-direction")}}, {{cssxref("box-pack")}}
+- `align-items`, `box-orient`, `box-direction`, `box-pack`

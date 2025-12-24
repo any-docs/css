@@ -87,7 +87,7 @@ box-shadow: unset;
 
 Specify a single box-shadow using:
 
-- Two, three, or four {{cssxref("length")}} values.
+- Two, three, or four `length` values.
   - If only two values are given, they are interpreted as `<offset-x>` and `<offset-y>` values.
   - If a third value is given, it is interpreted as a `<blur-radius>`.
   - If a fourth value is given, it is interpreted as a `<spread-radius>`.
@@ -100,8 +100,8 @@ To specify multiple shadows, provide a comma-separated list of shadows.
 ### Values
 
 - `<color>` <Badge type="info" text="Optional" />
-  - Specifies color for the shadow. See {{cssxref("&lt;color&gt;")}} values for possible keywords and notations.
-    If not specified, the value of the {{cssxref("color")}} property defined in the parent element is used.
+  - Specifies color for the shadow. See `&lt;color&gt;` values for possible keywords and notations.
+    If not specified, the value of the `color` property defined in the parent element is used.
 
 - `<length>`
   - Specifies the offset length of the shadow. This parameter accepts two, three, or four values. Third and fourth values are optional. They are interpreted as follows:
@@ -118,13 +118,13 @@ To specify multiple shadows, provide a comma-separated list of shadows.
 
 ### Interpolation
 
-When animating shadows, such as when multiple shadow values on a box transition to new values on hover, the values are interpolated. {{Glossary("Interpolation")}} determines intermediate values of properties, such as the blur radius, spread radius, and color, as shadows transition. For each shadow in a list of shadows, the color, x, y, blur, and spread transition; the color as {{cssxref("&lt;color&gt;")}}, and the other values as {{cssxref("length")}}s.
+When animating shadows, such as when multiple shadow values on a box transition to new values on hover, the values are interpolated. {{Glossary("Interpolation")}} determines intermediate values of properties, such as the blur radius, spread radius, and color, as shadows transition. For each shadow in a list of shadows, the color, x, y, blur, and spread transition; the color as `&lt;color&gt;`, and the other values as `length`s.
 
 In interpolating multiple shadows between two comma-separated lists of multiple box shadows, the shadows are paired, in order, with interpolation occurring between paired shadows. If the lists of shadows have different lengths, then the shorter list is padded at the end with shadows whose color is `transparent`, and X, Y, and blur are `0`, with the inset, or lack of inset, being set to match. If in any pair of shadows, one has `inset` set and the other does not, the entire shadow list is uninterpolated; the shadows will change to the new values without an animating effect.
 
 ## Description
 
-The `box-shadow` property enables you to cast a drop shadow from the frame of almost any element. If a {{cssxref("border-radius")}} is specified on the element with a box shadow, the box shadow takes on the same rounded corners. The z-ordering of multiple box shadows is the same as multiple [text shadows](/reference/properties/text-shadow) (the first specified shadow is on top).
+The `box-shadow` property enables you to cast a drop shadow from the frame of almost any element. If a `border-radius` is specified on the element with a box shadow, the box shadow takes on the same rounded corners. The z-ordering of multiple box shadows is the same as multiple [text shadows](/reference/properties/text-shadow) (the first specified shadow is on top).
 
 [Box-shadow generator](/guides/Backgrounds_and_borders/Box-shadow_generator) is an interactive tool allowing you to generate a `box-shadow`.
 
@@ -212,9 +212,9 @@ p {
 
 ## See also
 
-- {{cssxref("&lt;color&gt;")}}
-- {{cssxref("text-shadow")}}
-- {{cssxref("filter-function/drop-shadow", "drop-shadow()")}}
+- `&lt;color&gt;`
+- `text-shadow`
+- `drop-shadow()`
 - [Introduction to text shadows](/guides/Text_decoration/Text_shadows)
 - [Applying color to HTML elements using CSS](/guides/Colors/Applying_color)
 - [CSS backgrounds and borders](/guides/Backgrounds_and_borders) module

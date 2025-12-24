@@ -12,7 +12,7 @@ sidebar: cssref
 
 The **CSS conditional rules** module defines CSS media and support queries, enabling you to define styles that are only applied if specific conditions are met. The conditional rules defined in this module are based on device, user-agent, and viewport capabilities. With conditional rules, you can target CSS styles based on query values or browser and device features, independent of the document being rendered.
 
-The first CSS conditional rules were [media types](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_types) specifying the intended destination medium for the linked styles, for example `screen` or `print`. These were set as the value of the HTML {{HTMLElement("link")}} and {{HTMLElement("style")}} elements' `media` attributes or as a comma-separated list of media types within an {{cssxref("@import")}} statement or at-rule. The ability to conditionally apply CSS rules has been greatly expanded since the CSS 2.1 and HTML 4.01 implementations that limited conditional queries to a few media types.
+The first CSS conditional rules were [media types](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_types) specifying the intended destination medium for the linked styles, for example `screen` or `print`. These were set as the value of the HTML {{HTMLElement("link")}} and {{HTMLElement("style")}} elements' `media` attributes or as a comma-separated list of media types within an `@import` statement or at-rule. The ability to conditionally apply CSS rules has been greatly expanded since the CSS 2.1 and HTML 4.01 implementations that limited conditional queries to a few media types.
 
 CSS conditional rules now include feature queries; the `@supports` at-rule enables targeting CSS styles based on a user-agent's CSS capabilities. Additional conditions include which selector, font-formats, and font-techs are supported.
 
@@ -26,15 +26,15 @@ There are plans to further extend possible queries by adding the generalized con
 
 ### Properties
 
-- {{cssxref("container")}}
-- {{cssxref("container-name")}}
-- {{cssxref("container-type")}}
+- `container`
+- `container-name`
+- `container-type`
 
 ### At-rules and descriptors
 
-- {{cssxref("@container")}}
-- {{cssxref("@media")}}
-- {{cssxref("@supports")}}
+- `@container`
+- `@media`
+- `@supports`
 
 The CSS conditional rules module also introduces the `@else` and `@when` at-rules. Currently, no browsers support these features.
 
@@ -59,10 +59,10 @@ The CSS conditional rules module also introduces a `media()` CSS function. Curre
 
 ### Interfaces
 
-- {{domxref("CSSConditionRule")}}
-- {{domxref("CSSMediaRule")}}
-- {{domxref("CSSSupportsRule")}}
-- {{domxref("CSS.supports_static", "supports()")}} method
+- `CSSConditionRule`
+- `CSSMediaRule`
+- `CSSSupportsRule`
+- `supports()` method
 
 ### Terms and glossary definitions
 
@@ -89,7 +89,7 @@ The CSS conditional rules module also introduces a `media()` CSS function. Curre
 ## Related concepts
 
 - [CSS cascading and inheritance](/guides/Cascade) module
-  - {{cssxref("@import")}} at-rule
+  - `@import` at-rule
 
 - [CSS media queries](/guides/Media_queries) module
   - [`<media-feature>`](/en-US/docs/Web/CSS/Reference/At-rules/@media#media_features)
@@ -99,22 +99,22 @@ The CSS conditional rules module also introduces a `media()` CSS function. Curre
   - [CSS logical operators](/en-US/docs/Web/CSS/Reference/At-rules/@media#logical_operators) (`not`, `or`, and `and`)
 
 - [CSSOM view](/guides/CSSOM_view) module
-  - {{domxref("CSS")}} API
-  - {{domxref("CSSGroupingRule")}} API
-  - {{domxref("MediaQueryList")}} API
-  - {{domxref("CSSRule")}} API
-  - {{domxref("MediaList")}} interface
-    - {{domxref("MediaList.mediaText")}} property
+  - `CSS` API
+  - `CSSGroupingRule` API
+  - `MediaQueryList` API
+  - `CSSRule` API
+  - `MediaList` interface
+    - `MediaList.mediaText` property
 
 - [CSS syntax](/guides/Syntax) module
-  - {{cssxref("@charset")}} declaration
-  - {{cssxref("at-rule")}} term
+  - `@charset` declaration
+  - `at-rule` term
   - [`invalid`](/guides/Syntax/Error_handling) term
   - {{glossary("parse")}} term
   - [style rule](/en-US/docs/Web/API/CSSStyleRule) term
 
 - [CSS namespaces](/guides/Namespaces) module
-  - {{cssxref("@namespace")}} at-rule
+  - `@namespace` at-rule
 
 ## Specifications
 

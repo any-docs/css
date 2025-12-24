@@ -40,10 +40,10 @@ The `reading-flow` property takes one of the following keywords as its value:
   - The default value. The reading order follows the order of elements in the DOM.
 
 - `flex-visual`
-  - Only affects {{glossary("Flex Container", "flex containers")}}. The reading order follows the visual order of the `flex` items, taking the {{cssxref("writing-mode")}} into account. Therefore, a document in English with `flex-direction: row-reverse` and `reading-flow: flex-visual` set would have a reading order of left-to-right.
+  - Only affects {{glossary("Flex Container", "flex containers")}}. The reading order follows the visual order of the `flex` items, taking the `writing-mode` into account. Therefore, a document in English with `flex-direction: row-reverse` and `reading-flow: flex-visual` set would have a reading order of left-to-right.
 
 - `flex-flow`
-  - Only affects flex containers. The reading order follows the {{cssxref("flex-flow")}} direction.
+  - Only affects flex containers. The reading order follows the `flex-flow` direction.
 
 - `grid-columns`
   - Only affects {{glossary("Grid Container", "grid containers")}}. The reading order follows the visual order of grid items, column by column, taking the writing mode into account.
@@ -52,10 +52,10 @@ The `reading-flow` property takes one of the following keywords as its value:
   - Only affects grid containers. The reading order follows the visual order of grid items, row by row, taking the writing mode into account.
 
 - `grid-order`
-  - Only affects grid containers. if the {{cssxref("order")}} property is applied to any of the container's children, the reading order follows the modified item order. If the `order` property is not applied to the grid items, `grid-order` behaves as `normal`.
+  - Only affects grid containers. if the `order` property is applied to any of the container's children, the reading order follows the modified item order. If the `order` property is not applied to the grid items, `grid-order` behaves as `normal`.
 
 - `source-order`
-  - Affects grid, flex, and block containers. Has no effect on its own — the container's reading order continues to follow the order of elements in the DOM — but allows the reading order to be modified by setting the {{cssxref("reading-order")}} property on the container's children.
+  - Affects grid, flex, and block containers. Has no effect on its own — the container's reading order continues to follow the order of elements in the DOM — but allows the reading order to be modified by setting the `reading-order` property on the container's children.
 
 ## Description
 
@@ -63,7 +63,7 @@ The `reading-flow` property modifies the {{glossary("reading order")}} of elemen
 
 By default, web content is read out in DOM source order. Generally, the source order should express a sensible reading order for the content, and this should also be reflected by the visual order in the content layout. However, sometimes the visual order or tab order differs from the source order. For example, when applying multiple flexbox or grid layouts to a document via [media queries](/guides/Media_queries/Using) to suit different device or user requirements, the content order may differ based on the viewport width. In such a case, the `reading-flow` can be used to ensure the reading and tabbing order reflect the visual order.
 
-In some cases you may wish to further fine-tune the reading order within a reading flow container. You can use {{cssxref("reading-order")}} property values on the container's children, putting them into ordinal groups which are then read out in numerical order.
+In some cases you may wish to further fine-tune the reading order within a reading flow container. You can use `reading-order` property values on the container's children, putting them into ordinal groups which are then read out in numerical order.
 
 ### Interaction with `tabindex`
 
@@ -103,9 +103,9 @@ The markup includes a {{htmlelement("select")}} element for selecting different 
 
 #### CSS
 
-We use a {{cssxref("display")}} value of `flex` to turn the `<div>` into a flex container, and display the flex items in a row in reverse DOM order with a {{cssxref("flex-direction")}} value of `row-reverse`. Initially, we set a `reading-flow` of `normal` so the items are read or tabbed through in DOM source order.
+We use a `display` value of `flex` to turn the `<div>` into a flex container, and display the flex items in a row in reverse DOM order with a `flex-direction` value of `row-reverse`. Initially, we set a `reading-flow` of `normal` so the items are read or tabbed through in DOM source order.
 
-We also set an {{cssxref("order")}} value of `1` on the first `<a>` element to cause it to display after the second and third item in the flex flow. The resulting visual order of the flex items from left to right is "Item 1", "Item 3", then "Item 2", but the DOM order remains unchanged.
+We also set an `order` value of `1` on the first `<a>` element to cause it to display after the second and third item in the flex flow. The resulting visual order of the flex items from left to right is "Item 1", "Item 3", then "Item 2", but the DOM order remains unchanged.
 
 ```css
 .wrapper {
@@ -174,9 +174,9 @@ The markup includes a {{htmlelement("select")}} element for selecting different 
 
 #### CSS
 
-We use a {{cssxref("display")}} value of `grid` to turn the `<div>` into a grid container, and display the grid items in three columns using {{cssxref("grid-template-columns")}}. We also set {{cssxref("grid-template-areas")}} to describe different placement areas in those columns, and place the `<a>` elements in those areas using {{cssxref("grid-area")}}. Initially, we set a `reading-flow` of `normal` so the items are read or tabbed through in the default DOM source order.
+We use a `display` value of `grid` to turn the `<div>` into a grid container, and display the grid items in three columns using `grid-template-columns`. We also set `grid-template-areas` to describe different placement areas in those columns, and place the `<a>` elements in those areas using `grid-area`. Initially, we set a `reading-flow` of `normal` so the items are read or tabbed through in the default DOM source order.
 
-Finally, we set an {{cssxref("order")}} value of `1` on the first `<a>` element; this has no effect on the layout because it does not override the grid area placement, but it does have an effect when a certain `reading-flow` value is set, as you'll se later on.
+Finally, we set an `order` value of `1` on the first `<a>` element; this has no effect on the layout because it does not override the grid area placement, but it does have an effect when a certain `reading-flow` value is set, as you'll se later on.
 
 Reading from left to right, the resulting display order of the grid items is "Item D", "Item B", "Item C", then "Item A".
 
@@ -254,7 +254,7 @@ The markup includes a wrapper {{htmlelement("div")}} containing four {{htmleleme
 
 #### CSS
 
-We set a `reading-flow` of `source-order` so the items are read or tabbed through in DOM source order, but modifications are allowed to the reading order via {{cssxref("reading-order")}}. We set a `reading-order` value of `1` on the first `<a>` element.
+We set a `reading-flow` of `source-order` so the items are read or tabbed through in DOM source order, but modifications are allowed to the reading order via `reading-order`. We set a `reading-order` value of `1` on the first `<a>` element.
 
 ```css
 .wrapper {
@@ -284,5 +284,5 @@ Try tabbing through the links: the tabbing order is "Item B", "Item C", "Item D"
 
 ## See also
 
-- {{cssxref("reading-order")}}
+- `reading-order`
 - [CSS `reading-flow` examples](https://chrome.dev/reading-flow-examples/) via chrome.dev

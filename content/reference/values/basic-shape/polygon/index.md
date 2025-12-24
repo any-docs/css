@@ -6,7 +6,7 @@ browser-compat: css.types.basic-shape.polygon
 sidebar: cssref
 ---
 
-The **`polygon()`** [CSS](/en-US/docs/Web/CSS) function is one of the {{cssxref("basic-shape")}} [data types](/reference/values/Data_types). It's used to draw a [polygon](https://en.wikipedia.org/wiki/Polygon) by providing one or more pairs of coordinates, each of which represents a vertex of the shape.
+The **`polygon()`** [CSS](/en-US/docs/Web/CSS) function is one of the `basic-shape` [data types](/reference/values/Data_types). It's used to draw a [polygon](https://en.wikipedia.org/wiki/Polygon) by providing one or more pairs of coordinates, each of which represents a vertex of the shape.
 
 {{InteractiveExample("CSS Demo: polygon()")}}
 
@@ -60,7 +60,7 @@ polygon(nonzero, 0% 0%, 50% 50%, 0% 100%)
 polygon(evenodd, 0% 0%, 50% 50%, 0% 100%)
 ```
 
-The `polygon()` parameters are separated by a comma and optional whitespace. The first parameter is an optional [`<fill-rule>`](/en-US/docs/Web/SVG/Reference/Attribute/fill-rule) value. Additional parameters are points that define the polygon. Each point is a pair of x/y coordinate {{cssxref("length-percentage")}} values separated by a space, e.g., "0 0" and "100% 100%" for the left/top and bottom right corners, respectively.
+The `polygon()` parameters are separated by a comma and optional whitespace. The first parameter is an optional [`<fill-rule>`](/en-US/docs/Web/SVG/Reference/Attribute/fill-rule) value. Additional parameters are points that define the polygon. Each point is a pair of x/y coordinate `length-percentage` values separated by a space, e.g., "0 0" and "100% 100%" for the left/top and bottom right corners, respectively.
 
 Note: The SVG [`<polygon>`](/en-US/docs/Web/SVG/Reference/Element/polygon) element has separate attributes for [`fill-rule`](/en-US/docs/Web/SVG/Reference/Attribute/fill-rule) and [`points`](/en-US/docs/Web/SVG/Reference/Attribute/points), and `points` is flexible about the use of space and comma separators. CSS `polygon()` rules for separators are strictly enforced.
 
@@ -68,12 +68,12 @@ Note: The SVG [`<polygon>`](/en-US/docs/Web/SVG/Reference/Element/polygon) eleme
 
 - [`<fill-rule>`](/en-US/docs/Web/SVG/Reference/Attribute/fill-rule) <Badge type="info" text="Optional" />
   - An optional value of `nonzero` (the default when omitted) or `evenodd`, which specifies the filling rule.
-- {{cssxref("length-percentage")}}
+- `length-percentage`
   - Each vertex of the polygon is represented by a pair of `<length-percentage>` values, which give the x/y coordinates of the vertex relative to the shape's [reference box](/guides/Shapes/Using_shape-outside#the_reference_box).
 
 ### Return value
 
-Returns a {{cssxref("basic-shape")}} value.
+Returns a `basic-shape` value.
 
 ## Description
 
@@ -90,7 +90,7 @@ Given the above, mapping the coordinates of the container can be visualized as:
 | x    | 0%      | 100%    | 100%    | 0%      | x<sub>n</sub> |
 | y    | 0%      | 0%      | 100%    | 100%    | y<sub>n</sub> |
 
-Applying those coordinates to the CSS {{cssxref("clip-path")}} property using the `polygon()` function:
+Applying those coordinates to the CSS `clip-path` property using the `polygon()` function:
 
 ```css
 clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
@@ -133,7 +133,7 @@ The coordinates for the triangle are the top-right corner (`100% 0%`), the cente
 
 ### Setting a polygon for shape-outside
 
-In this example a shape is created for text to follow using the {{cssxref("shape-outside")}} property.
+In this example a shape is created for text to follow using the `shape-outside` property.
 
 ```html
 <div class="box">
@@ -193,5 +193,5 @@ p {
 
 ## See also
 
-- Properties that use this data type: {{cssxref("clip-path")}}, {{cssxref("shape-outside")}}
+- Properties that use this data type: `clip-path`, `shape-outside`
 - [Guide to Basic Shapes](/guides/Shapes/Using_shape-outside)

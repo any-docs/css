@@ -6,7 +6,7 @@ browser-compat: css.types.calc
 sidebar: cssref
 ---
 
-The **`calc()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) lets you perform calculations when specifying CSS property values. It can be used with {{cssxref("&lt;length&gt;")}}, {{cssxref("&lt;frequency&gt;")}}, {{cssxref("angle")}}, {{cssxref("&lt;time&gt;")}}, {{cssxref("&lt;percentage&gt;")}}, {{cssxref("&lt;number&gt;")}}, {{cssxref("&lt;integer&gt;")}}, and {{cssxref("color_value", "&lt;color-function&gt;")}} values.
+The **`calc()`** [CSS](/en-US/docs/Web/CSS) [function](/reference/values/Functions) lets you perform calculations when specifying CSS property values. It can be used with `&lt;length&gt;`, `&lt;frequency&gt;`, `angle`, `&lt;time&gt;`, `&lt;percentage&gt;`, `&lt;number&gt;`, `&lt;integer&gt;`, and `&lt;color-function&gt;` values.
 
 {{InteractiveExample("CSS Demo: calc()")}}
 
@@ -70,7 +70,7 @@ The `calc()` function takes a single expression as its parameter, and the expres
 - `/`
   - Divides the left-side operand (dividend) by the right-side operand (divisor).
 
-All operands, except those of type {{cssxref("&lt;number&gt;")}}, must be suffixed with an appropriate unit string, such as `px`, `em`, or `%`. You can use a different unit with each operand in your expression. You may also use parentheses to establish computation order when needed.
+All operands, except those of type `&lt;number&gt;`, must be suffixed with an appropriate unit string, such as `px`, `em`, or `%`. You can use a different unit with each operand in your expression. You may also use parentheses to establish computation order when needed.
 
 ## Description
 
@@ -80,32 +80,32 @@ There are a few points to note about `calc()`, which are detailed in the section
 
 The `calc()` function must stand in place of a full CSS value of one of the following types:
 
-- {{cssxref("&lt;length&gt;")}}
-- {{cssxref("&lt;frequency&gt;")}}
-- {{cssxref("angle")}}
-- {{cssxref("&lt;time&gt;")}}
-- {{cssxref("flex_value", "&lt;flex&gt;")}}
-- {{cssxref("resolution")}}
-- {{cssxref("&lt;percentage&gt;")}}
-- {{cssxref("&lt;number&gt;")}}
-- {{cssxref("&lt;integer&gt;")}}
-- One of the mixed types like {{cssxref("&lt;length-percentage&gt;")}}
+- `&lt;length&gt;`
+- `&lt;frequency&gt;`
+- `angle`
+- `&lt;time&gt;`
+- `&lt;flex&gt;`
+- `resolution`
+- `&lt;percentage&gt;`
+- `&lt;number&gt;`
+- `&lt;integer&gt;`
+- One of the mixed types like `&lt;length-percentage&gt;`
 
 `calc()` cannot only replace the numeric part of percentage values, length values, etc., without also replacing the unit after it. For example, `calc(100 / 4)%` is invalid, while `calc(100% / 4)` is valid.
 
 The resulting value of `calc()` must be compatible with the context in which it is used. For example, `margin: calc(1px + 2px)` is valid, but `margin: calc(1 + 2)` is not: it is equivalent to specifying `margin: 3`, which results in the property being ignored.
 
-When an {{cssxref("&lt;integer&gt;")}} is expected, the `calc()` expression can also evaluate to a `<number>`, which gets rounded to the nearest integer. So, `calc(1.4)` will result in a value of `1`. If the fractional part of the value is exactly `0.5`, the value is rounded towards positive infinity. For example, `calc(1.5)` will result in a value of `2`, while `calc(-1.5)` will round to `-1`.
+When an `&lt;integer&gt;` is expected, the `calc()` expression can also evaluate to a `<number>`, which gets rounded to the nearest integer. So, `calc(1.4)` will result in a value of `1`. If the fractional part of the value is exactly `0.5`, the value is rounded towards positive infinity. For example, `calc(1.5)` will result in a value of `2`, while `calc(-1.5)` will round to `-1`.
 
-`calc()` performs floating point math following the IEEE-754 standard, which results in some considerations concerning the `infinity` and `NaN` values. For more details on how constants are serialized, see the {{cssxref("calc-keyword")}} page.
+`calc()` performs floating point math following the IEEE-754 standard, which results in some considerations concerning the `infinity` and `NaN` values. For more details on how constants are serialized, see the `calc-keyword` page.
 
 ### Input considerations
 
-- `calc()` cannot perform calculations on [intrinsic size values](/en-US/docs/Glossary/Intrinsic_Size) such as {{cssxref("auto")}} and {{cssxref("fit-content")}}. Use the {{cssxref("calc-size()")}} function instead.
+- `calc()` cannot perform calculations on [intrinsic size values](/en-US/docs/Glossary/Intrinsic_Size) such as `auto` and `fit-content`. Use the `calc-size()` function instead.
 - The `*` and `/` operators do not require whitespace, but adding it for consistency is recommended.
 - It is permitted to nest `calc()` functions, in which case, the inner ones are treated as simple parentheses.
 - Math expressions involving percentages for widths and heights on table columns, table column groups, table rows, table row groups, and table cells in both auto and fixed layout tables _may_ be treated as if `auto` is specified.
-- See {{cssxref("calc-sum", "&lt;calc-sum&gt;")}} for more information on the syntax of `+` and `-` expressions.
+- See `&lt;calc-sum&gt;` for more information on the syntax of `+` and `-` expressions.
 
 ### CSS typed arithmetic
 
@@ -113,7 +113,7 @@ When using `calc()` to multiply values, using the `*` operator, only one value c
 
 Inversely, `200px / 4px` resolves to `50`, which does make sense in CSS. Therefore, when using the `calc()` function to divide numbers, using the `/` operator, [supporting browsers](#browser_compatibility) allow units on both sides of the operand, provided they are of the same data type. For example, `100vw / 1px` is valid and results in a unitless value.
 
-The quotient can then be used in the values of properties or functions that accept a {{cssxref("number")}} as a value or parameter, or converted into a different data type by multiplying it by a typed value.
+The quotient can then be used in the values of properties or functions that accept a `number` as a value or parameter, or converted into a different data type by multiplying it by a typed value.
 
 For a full explanation of typed arithmetic in CSS, along with examples, see [Using CSS typed arithmetic](/guides/Values_and_units/Using_typed_arithmetic).
 
@@ -121,7 +121,7 @@ For a full explanation of typed arithmetic in CSS, along with examples, see [Usi
 
 The `calc()` function can be used to manipulate color channels directly within the context of [relative colors](/guides/Colors/Using_relative_colors). This allows for dynamic adjustments of color channels in color models such as [`rgb()`](/reference/values/color_value/rgb), [`hsl()`](/reference/values/color_value/hsl), and [`lch()`](/reference/values/color_value/lch).
 
-The relative color syntax defines several color-channel keywords, each of which represents the value of the color channel as a {{cssxref("&lt;number&gt;")}} (see [Channel values resolve to `<number>` values](/guides/Colors/Using_relative_colors#channel_values_resolve_to_number_values) for more information). The `calc()` function can use these color-channel keywords to perform dynamic adjustments on the color channels, for example, `calc(r + 10)`.
+The relative color syntax defines several color-channel keywords, each of which represents the value of the color channel as a `&lt;number&gt;` (see [Channel values resolve to `<number>` values](/guides/Colors/Using_relative_colors#channel_values_resolve_to_number_values) for more information). The `calc()` function can use these color-channel keywords to perform dynamic adjustments on the color channels, for example, `calc(r + 10)`.
 
 ## Formal syntax
 
@@ -220,7 +220,7 @@ After all variables are expanded, `--width-c`'s value will be `calc(calc(100px /
 
 The `calc()` function can be used to adjust individual color channels in [relative colors](/guides/Colors/Using_relative_colors) without the need for storing color channel values as variables.
 
-In the example below, the first paragraph uses a {{cssxref("named-color")}}.
+In the example below, the first paragraph uses a `named-color`.
 In the paragraphs that follow, `calc()` is used with the [`rgb()`](/reference/values/color_value/rgb) and [`hsl()`](/reference/values/color_value/hsl) functions to adjust the values of each color channel relative to the original named color.
 
 ```html
@@ -269,7 +269,7 @@ For another example of using the `calc()` function to derive relative colors, se
 
 ## See also
 
-- {{CSSxRef("&lt;calc-sum&gt;")}}
-- {{CSSxRef("&lt;calc-keyword&gt;")}}
+- `&lt;calc-sum&gt;`
+- `&lt;calc-keyword&gt;`
 - [CSS functions](/reference/values/Functions)
 - [A Complete Guide to calc() in CSS](https://css-tricks.com/a-complete-guide-to-calc-in-css/) (CSS-Tricks)

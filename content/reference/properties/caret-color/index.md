@@ -62,16 +62,16 @@ caret-color: unset;
 ### Values
 
 - `auto`
-  - Generally resolves to [`currentColor`](/reference/values/color_value#currentcolor_keyword), the {{cssxref("color")}} of the text that will be modified.
+  - Generally resolves to [`currentColor`](/reference/values/color_value#currentcolor_keyword), the `color` of the text that will be modified.
 
-- {{cssxref("&lt;color&gt;")}}
+- `&lt;color&gt;`
   - The color of the caret.
 
 ## Description
 
 An insertion caret is a visible indicator of the spot within editable text — or within an element that accepts text input — where content will be inserted (or deleted) by the user. The caret is typically a thin vertical line indicating where the addition or deletion of characters will occur. It generally blinks (flashes on and off), so it is more noticeable. The caret only appears when the editable element has focus. By default, this caret is the color of the text. The `caret-color` property can be used to set the color of this caret to something other than the `currentColor`, or to reset a colored caret back to its default.
 
-The `auto` value sets the insertion caret to `currentColor`, which is the {{cssxref("color")}} of the text that is being added or deleted. User agents may choose a different color to ensure good visibility and contrast with the surrounding content, taking into account the {{cssxref("color")}}, {{cssxref("background-color")}}, shadows, and other factors. In practice, however, all browsers use the current color by default, and when `caret-color` is set to `auto`. You can set any valid `<color>` as the value.
+The `auto` value sets the insertion caret to `currentColor`, which is the `color` of the text that is being added or deleted. User agents may choose a different color to ensure good visibility and contrast with the surrounding content, taking into account the `color`, `background-color`, shadows, and other factors. In practice, however, all browsers use the current color by default, and when `caret-color` is set to `auto`. You can set any valid `<color>` as the value.
 
 ### Understanding insertion carets
 
@@ -79,7 +79,7 @@ The insertion caret, and therefore this property, only applies to text or elemen
 
 The caret may appear in `<input>` elements of type `password`, `text`, `search`, `tel`, and `email`. No caret exists with date, `color`, `hidden`, `radio`, or `checkbox` input types. Some browsers display a caret with the `number` input type. It is possible in some browsers to make a caret appear in elements that never have text content — for example, by setting [`appearance: none`](/reference/properties/appearance) and adding the `contenteditable` attribute. However, this is not recommended.
 
-A caret may be displayed in an editable element or its descendants, provided the editability is not disabled, for example by setting a descendant element's `contentEditable` attribute to `false`. If an element is not editable or selectable, for example if {{cssxref("user-select")}} is set to `none`, the caret should not appear.
+A caret may be displayed in an editable element or its descendants, provided the editability is not disabled, for example by setting a descendant element's `contentEditable` attribute to `false`. If an element is not editable or selectable, for example if `user-select` is set to `none`, the caret should not appear.
 
 ### Caret versus cursor
 
@@ -87,11 +87,11 @@ There are multiple types of carets. The insertion caret is the only type affecte
 
 Many browsers have a **navigation caret**, which acts similarly to an insertion caret but can be moved around in non-editable text.
 
-The mouse cursor image shown for certain {{cssxref("cursor")}} property values (for example, `auto` or `text`) may resemble a caret, but it's not. It's a cursor.
+The mouse cursor image shown for certain `cursor` property values (for example, `auto` or `text`) may resemble a caret, but it's not. It's a cursor.
 
 ### Animating from `auto`
 
-Generally, when the `caret-color` is set to or defaults to `auto`, user agents use `currentColor`, which is animatable. However, `auto` is not an animatable value by default: when animating or transitioning the `caret-color` from `auto` to any color value, no interpolation happens. The animation is [discrete](/guides/Animations/Animatable_properties#discrete); the color switches from or to the `currentColor` color at the midpoint of the {{cssxref("animation-duration")}} or {{cssxref("transition-duration")}}.
+Generally, when the `caret-color` is set to or defaults to `auto`, user agents use `currentColor`, which is animatable. However, `auto` is not an animatable value by default: when animating or transitioning the `caret-color` from `auto` to any color value, no interpolation happens. The animation is [discrete](/guides/Animations/Animatable_properties#discrete); the color switches from or to the `currentColor` color at the midpoint of the `animation-duration` or `transition-duration`.
 
 ## Formal definition
 
@@ -147,12 +147,12 @@ p.custom {
 
 ## See also
 
-- {{cssxref("caret-animation")}}, {{cssxref("caret-shape")}}
-- {{cssxref("caret")}} shorthand
-- {{cssxref("color")}}
-- {{cssxref("text-emphasis")}}
-- {{cssxref("cursor")}}
-- {{cssxref("text-emphasis")}}
-- CSS {{cssxref("&lt;color&gt;")}} data type
+- `caret-animation`, `caret-shape`
+- `caret` shorthand
+- `color`
+- `text-emphasis`
+- `cursor`
+- `text-emphasis`
+- CSS `&lt;color&gt;` data type
 - {{HTMLElement("input")}} element
 - HTML [`contenteditable`](/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable) attribute

@@ -20,30 +20,30 @@ The `@property` rule represents a custom property registration directly in a sty
 }
 ```
 
-The custom property name is a {{cssxref("dashed-ident")}} that starts with `--` and is followed by a valid, user-defined identifier. It is case-sensitive.
+The custom property name is a `dashed-ident` that starts with `--` and is followed by a valid, user-defined identifier. It is case-sensitive.
 
 ### Descriptors
 
-- {{cssxref("@property/syntax","syntax")}}
+- `syntax`
   - A string that describes the allowed value types for the registered custom property.
     May be a data type name (such as `<color>`, `<length>`, or `<number>`, etc.), with multipliers (`+`, `#`) and combinators (`|`), or a custom ident.
     See the [syntax](/en-US/docs/Web/CSS/Reference/At-rules/@property/syntax) descriptor page for more details.
-- {{cssxref("@property/inherits","inherits")}}
+- `inherits`
   - A boolean value that controls whether the custom property registration specified by `@property` inherits by default.
-- {{cssxref("@property/initial-value","initial-value")}}
+- `initial-value`
   - A value that sets the starting value for the property.
 
 ## Description
 
 The following conditions must be met for the `@property` rule to be valid:
 
-- The `@property` rule must include both the {{cssxref("@property/syntax","syntax")}} and {{cssxref("@property/inherits","inherits")}} descriptors.
+- The `@property` rule must include both the `syntax` and `inherits` descriptors.
   If either is missing, the entire `@property` rule is invalid and ignored.
-- The {{cssxref("@property/initial-value","initial-value")}} descriptor is optional if the value of the `syntax` descriptor is the universal syntax definition (that is, `syntax: "*"`).
+- The `initial-value` descriptor is optional if the value of the `syntax` descriptor is the universal syntax definition (that is, `syntax: "*"`).
   If the `initial-value` descriptor is required but omitted, the entire `@property` rule is invalid and ignored.
-- If the value of the `syntax` descriptor is not the universal syntax definition, the {{cssxref("@property/initial-value","initial-value")}} descriptor has to be a [computationally independent](https://drafts.css-houdini.org/css-properties-values-api-1/#computationally-independent) value.
+- If the value of the `syntax` descriptor is not the universal syntax definition, the `initial-value` descriptor has to be a [computationally independent](https://drafts.css-houdini.org/css-properties-values-api-1/#computationally-independent) value.
   This means the value can be converted into a computed value without depending on other values, except for "global" definitions independent of CSS.
-  For example, `10px` is computationally independent—it doesn't change when converted to a computed value. `2in` is also valid, because `1in` is always equivalent to `96px`. However, `3em` is not valid, because the value of an `em` is dependent on the parent's {{cssxref("font-size")}}.
+  For example, `10px` is computationally independent—it doesn't change when converted to a computed value. `2in` is also valid, because `1in` is always equivalent to `96px`. However, `3em` is not valid, because the value of an `em` is dependent on the parent's `font-size`.
 - Unknown descriptors are invalid and ignored, but do not invalidate the `@property` rule.
 
 ## Formal syntax
@@ -64,7 +64,7 @@ In this example, we define two custom properties, `--item-size` and `--item-colo
 </div>
 ```
 
-The following code uses the CSS `@property` at-rule to define a custom property named `--item-size`. The property sets the initial value to `40%`, limiting valid values to {{cssxref("percentage")}} values only. This means, when used as the value for an item's size, its size will always be relative to its parent's size. The property is inheritable.
+The following code uses the CSS `@property` at-rule to define a custom property named `--item-size`. The property sets the initial value to `40%`, limiting valid values to `percentage` values only. This means, when used as the value for an item's size, its size will always be relative to its parent's size. The property is inheritable.
 
 ```css
 @property --item-size {
@@ -74,7 +74,7 @@ The following code uses the CSS `@property` at-rule to define a custom property 
 }
 ```
 
-We define a second custom property, `--item-color`, using [JavaScript](/en-US/docs/Web/JavaScript) instead of CSS. The JavaScript {{domxref('CSS.registerProperty_static', 'registerProperty()')}} method is equivalent to `@property` at-rule. The property is defined to have an initial value of `aqua`, to accept only {{cssxref("&lt;color&gt;")}} values, and is not inherited.
+We define a second custom property, `--item-color`, using [JavaScript](/en-US/docs/Web/JavaScript) instead of CSS. The JavaScript {{domxref('CSS.registerProperty_static', 'registerProperty()')}} method is equivalent to `@property` at-rule. The property is defined to have an initial value of `aqua`, to accept only `&lt;color&gt;` values, and is not inherited.
 
 ```js
 window.CSS.registerProperty({
@@ -126,11 +126,11 @@ For item one, none of these custom properties have been set. The `--item-size` i
 
 For item two, CSS global keywords are set for both custom properties which are valid values for all value types and therefore valid no matter the `syntax` descriptor value. The `--item-size` is set to `initial` and uses the `initial-value: 40%;` set in the `@property` declaration. The `initial` value means the `initialValue` value for the property is used. The `--item-color` is set to `inherit`, explicitly inheriting the `orange` value from its parent even though the custom property is set to otherwise not be inherited. This is why item two is orange.
 
-For item three, the `--item-size` value gets set to `1000px`. While `1000px` is a {{cssxref("length")}} value, the `@property` declaration requires the value be a `<percentage>`, so the declaration is not valid and is ignored, meaning the inheritable `20%` set on the parent is used. The `xyz` value is also invalid. As `registerProperty()` set `--item-color` to not be inherited, the default initial value of `aqua` is used and not the parent's `orange` value.
+For item three, the `--item-size` value gets set to `1000px`. While `1000px` is a `length` value, the `@property` declaration requires the value be a `<percentage>`, so the declaration is not valid and is ignored, meaning the inheritable `20%` set on the parent is used. The `xyz` value is also invalid. As `registerProperty()` set `--item-color` to not be inherited, the default initial value of `aqua` is used and not the parent's `orange` value.
 
 ### Animating a custom property value
 
-In this example, we define a custom property called `--progress` using `@property`: this accepts {{cssxref("percentage")}} values and has an initial value of `25%`. We use `--progress` to define the position value of the color stops in a {{cssxref("linear-gradient()")}}, specifying where a green color stops, and black starts. We then animate the value of `--progress` to `100%` over 2.5 seconds, giving the effect of animating a progress bar.
+In this example, we define a custom property called `--progress` using `@property`: this accepts `percentage` values and has an initial value of `25%`. We use `--progress` to define the position value of the color stops in a `linear-gradient()`, specifying where a green color stops, and black starts. We then animate the value of `--progress` to `100%` over 2.5 seconds, giving the effect of animating a progress bar.
 
 ```html
 <div class="bar"></div>
@@ -175,7 +175,7 @@ In this example, we define a custom property called `--progress` using `@propert
 
 ## See also
 
-- {{cssxref("var")}}
+- `var`
 - [CSS Properties and Values API](/en-US/docs/Web/API/CSS_Properties_and_Values_API)
 - [CSS Painting API](/en-US/docs/Web/API/CSS_Painting_API)
 - [CSS Typed Object Model](/en-US/docs/Web/API/CSS_Typed_OM_API)

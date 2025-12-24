@@ -51,7 +51,7 @@ resize: none;
 `resize` does not apply to the following:
 
 - Inline elements
-- Block elements for which the {{cssxref("overflow")}} property is set to `visible` or `clip`
+- Block elements for which the `overflow` property is set to `visible` or `clip`
 
 ## Syntax
 
@@ -85,9 +85,9 @@ The `resize` property is specified as a single keyword value from the list below
 - `vertical`
   - The element displays a mechanism for allowing the user to resize it in the _vertical_ direction.
 - `block`
-  - The element displays a mechanism for allowing the user to resize it in the _block_ direction (either horizontally or vertically, depending on the {{cssxref("writing-mode")}} and {{cssxref("direction")}} value).
+  - The element displays a mechanism for allowing the user to resize it in the _block_ direction (either horizontally or vertically, depending on the `writing-mode` and `direction` value).
 - `inline`
-  - The element displays a mechanism for allowing the user to resize it in the _inline_ direction (either horizontally or vertically, depending on the {{cssxref("writing-mode")}} and {{cssxref("direction")}} value).
+  - The element displays a mechanism for allowing the user to resize it in the _inline_ direction (either horizontally or vertically, depending on the `writing-mode` and `direction` value).
 
 ## Formal definition
 

@@ -11,7 +11,7 @@ sidebar: cssref
 {{deprecated_header}}
 
 > [!WARNING]
-> This property has been replaced by the {{cssxref("break-after")}} property.
+> This property has been replaced by the `break-after` property.
 
 The **`page-break-after`** [CSS](/en-US/docs/Web/CSS) property adjusts page breaks _after_ the current element.
 
@@ -104,7 +104,7 @@ This property applies to block elements that generate a box. It won't apply on a
 
 ## Page break aliases
 
-The `page-break-after` property is now a legacy property, replaced by {{cssxref("break-after")}}.
+The `page-break-after` property is now a legacy property, replaced by `break-after`.
 
 For compatibility reasons, `page-break-after` should be treated by browsers as an alias of `break-after`. This ensures that sites using `page-break-after` continue to work as designed. A subset of values should be aliased as follows:
 
@@ -145,6 +145,6 @@ div.footnotes {
 
 ## See also
 
-- {{cssxref("break-before")}}, {{cssxref("break-after")}}, {{cssxref("break-inside")}}
-- {{cssxref("page-break-before")}}, {{cssxref("page-break-inside")}}
-- {{cssxref("orphans")}}, {{cssxref("widows")}}
+- `break-before`, `break-after`, `break-inside`
+- `page-break-before`, `page-break-inside`
+- `orphans`, `widows`

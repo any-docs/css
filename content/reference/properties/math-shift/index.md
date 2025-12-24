@@ -89,5 +89,5 @@ Note that the second "2" has a more compact (lower) shift.
 
 ## See also
 
-- {{cssxref("math-depth")}}
-- {{cssxref("font-size")}}
+- `math-depth`
+- `font-size`

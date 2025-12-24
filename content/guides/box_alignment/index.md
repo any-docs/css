@@ -19,26 +19,26 @@ The alignment of text and inline-level content is defined in [CSS text module](/
 
 ### CSS Properties
 
-- {{cssxref("align-content")}}
-- {{cssxref("align-items")}}
-- {{cssxref("align-self")}}
-- {{cssxref("column-gap")}}
-- {{cssxref("gap")}}
-- {{cssxref("justify-content")}}
-- {{cssxref("justify-items")}}
-- {{cssxref("justify-self")}}
-- {{cssxref("place-content")}}
-- {{cssxref("place-items")}}
-- {{cssxref("place-self")}}
-- {{cssxref("row-gap")}}
+- `align-content`
+- `align-items`
+- `align-self`
+- `column-gap`
+- `gap`
+- `justify-content`
+- `justify-items`
+- `justify-self`
+- `place-content`
+- `place-items`
+- `place-self`
+- `row-gap`
 
 ### Data types
 
-- {{cssxref("baseline-position")}}
-- {{cssxref("content-distribution")}}
-- {{cssxref("content-position")}}
-- {{cssxref("overflow-position")}}
-- {{cssxref("self-position")}}
+- `baseline-position`
+- `content-distribution`
+- `content-position`
+- `overflow-position`
+- `self-position`
 
 ### Terms and definitions
 
@@ -68,9 +68,9 @@ The alignment of text and inline-level content is defined in [CSS text module](/
 
 ## Related concepts
 
-- {{cssxref("alignment-baseline")}}
-- {{cssxref("dominant-baseline")}}
-- {{cssxref("scroll-snap-align")}}
+- `alignment-baseline`
+- `dominant-baseline`
+- `scroll-snap-align`
 - SVG {{SVGAttr("dominant-baseline")}} attribute
 - {{Glossary("Cross axis")}}
 - {{Glossary("Main axis")}}

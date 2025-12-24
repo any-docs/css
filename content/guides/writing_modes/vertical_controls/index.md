@@ -6,7 +6,7 @@ page-type: guide
 sidebar: cssref
 ---
 
-The guide explains how to use the CSS {{cssxref("writing-mode")}} and {{cssxref("direction")}} properties to create and configure vertical form controls. This includes:
+The guide explains how to use the CSS `writing-mode` and `direction` properties to create and configure vertical form controls. This includes:
 
 - [`<input type="range">`](/en-US/docs/Web/HTML/Reference/Elements/input/range) sliders, {{htmlelement("progress")}} bars, and {{htmlelement("meter")}} elements.
 - {{htmlelement("select")}} elements.
@@ -15,7 +15,7 @@ The guide explains how to use the CSS {{cssxref("writing-mode")}} and {{cssxref(
 
 ## General technique
 
-In modern browsers, the {{cssxref("writing-mode")}} property can be set to a vertical value to vertically display form controls with text characters that are normally horizontal (for example in Latin languages), with text displayed at a 90-degree angle from the default. Normally vertical text characters, for example in Chinese or Japanese, are unaffected in this regard.
+In modern browsers, the `writing-mode` property can be set to a vertical value to vertically display form controls with text characters that are normally horizontal (for example in Latin languages), with text displayed at a 90-degree angle from the default. Normally vertical text characters, for example in Chinese or Japanese, are unaffected in this regard.
 
 This is useful when creating vertical language forms.
 
@@ -27,12 +27,12 @@ Specifically:
 You could use a [transform](/reference/properties/transform) to rotate the controls by 90 degrees, but that would place the controls in their own layer and cause unintended layout side effects such as other content being overlapped. Using `writing-mode` offers a more reliable solution.
 
 > [!NOTE]
-> While the {{cssxref("writing-mode")}} property is well supported, creating vertically-oriented form controls with `writing-mode` only gained full browser support in 2024.
+> While the `writing-mode` property is well supported, creating vertically-oriented form controls with `writing-mode` only gained full browser support in 2024.
 
 > [!NOTE]
 > The experimental `sideways-lr` and `sideways-rl` values have a similar effect as `vertical-lr` and `vertical-rl` respectively, except that normally vertical text characters (for example in Chinese or Japanese) are rotated 90 degrees to display on their sides, while horizontal text characters (for example in Latin languages) are unaffected by these values.
 
-In addition, the {{cssxref("direction")}} property can be used to control the direction of the content inside the controls:
+In addition, the `direction` property can be used to control the direction of the content inside the controls:
 
 - `direction: ltr` will cause the content to start at the top and flow towards the bottom.
 - `direction: rtl` will cause the content to start at the bottom and flow towards the top.
@@ -73,7 +73,7 @@ progress {
 }
 ```
 
-{{cssxref("writing-mode", "writing-mode: vertical-lr")}} (and `vertical-rl`) causes the controls to be displayed vertically in modern browsers.
+`writing-mode: vertical-lr` (and `vertical-rl`) causes the controls to be displayed vertically in modern browsers.
 
 The result of this looks like so:
 
@@ -81,7 +81,7 @@ The result of this looks like so:
 
 ### Drawing the control from bottom to top
 
-By default, the controls have a {{cssxref("direction")}} value of `ltr`. This causes your sliders, meters, and progress bars to be drawn from top to bottom, as seen above.
+By default, the controls have a `direction` value of `ltr`. This causes your sliders, meters, and progress bars to be drawn from top to bottom, as seen above.
 
 You can change this by setting `direction: rtl` — this causes them to be drawn from bottom to top instead:
 
@@ -180,7 +180,7 @@ The result of this looks like so:
 
 ### Adjusting text direction and option order
 
-Again, it is possible to use a {{cssxref("direction")}} property value of `rtl` to set the text direction to go from bottom to top, instead of the default direction of top to bottom.
+Again, it is possible to use a `direction` property value of `rtl` to set the text direction to go from bottom to top, instead of the default direction of top to bottom.
 
 It is also worth noting that in the above example, the inline direction for the select options goes from right to left because we used `writing-mode: vertical-rl`. If we use `writing-mode: vertical-lr` instead, the `<option>` text will appear from left to right.
 
@@ -390,7 +390,7 @@ The result looks like so:
 
 ### Adjusting text direction and line layout order
 
-You can use a {{cssxref("direction")}} property value of `rtl` to change the text direction from the default top-to-bottom to bottom-to-top. You can also set `writing-mode` to `vertical-lr` instead of `vertical-rl`, to cause multiple lines of text in `<textarea>`s to appear from left-to-right rather than the default right-to-left.
+You can use a `direction` property value of `rtl` to change the text direction from the default top-to-bottom to bottom-to-top. You can also set `writing-mode` to `vertical-lr` instead of `vertical-rl`, to cause multiple lines of text in `<textarea>`s to appear from left-to-right rather than the default right-to-left.
 
 This example uses three copies of the same text controls we saw in the previous example, so you can easily see the effects of changing `direction` and `writing-mode` as discussed above:
 

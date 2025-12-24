@@ -69,7 +69,7 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 ```
 
 > [!NOTE]
-> The {{cssxref("mask-border")}} page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
+> The `mask-border` page features a working example (using the out-of-date prefixed border mask properties supported in Chromium), so you can get an idea of the effect.
 
 ## Specifications
 
@@ -81,8 +81,8 @@ Chromium-based browsers support an outdated version of this property — `mask-b
 
 ## See also
 
-- {{cssxref("mask-border")}}
-- {{cssxref("mask-border-mode")}}
-- {{cssxref("mask-border-outset")}}
-- {{cssxref("mask-border-source")}}
-- {{cssxref("mask-border-width")}}
+- `mask-border`
+- `mask-border-mode`
+- `mask-border-outset`
+- `mask-border-source`
+- `mask-border-width`

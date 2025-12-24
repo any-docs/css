@@ -55,7 +55,7 @@ Specifically, `field-sizing` to `content` affects the following elements:
 
 ### `field-sizing` interaction with other size settings
 
-The sizing flexibility provided to form controls by `field-sizing: content` can be overridden if you use other CSS sizing properties. Avoid setting a fixed {{cssxref("width")}} and {{cssxref("height")}} when using `field-sizing: content` because they will reimpose a fixed size on the control. However, using properties like {{cssxref("min-width")}} and {{cssxref("max-width")}} alongside `field-sizing: content` is quite effective because they allow the control to grow and shrink with the entered text and also prevent the control from becoming too large or too small.
+The sizing flexibility provided to form controls by `field-sizing: content` can be overridden if you use other CSS sizing properties. Avoid setting a fixed `width` and `height` when using `field-sizing: content` because they will reimpose a fixed size on the control. However, using properties like `min-width` and `max-width` alongside `field-sizing: content` is quite effective because they allow the control to grow and shrink with the entered text and also prevent the control from becoming too large or too small.
 
 The [`maxlength`](/en-US/docs/Web/HTML/Reference/Elements/input#maxlength) attribute causes the control to stop growing in size when the maximum character limit is reached.
 
@@ -95,12 +95,12 @@ The HTML in this example contains three form fields, each with an associated {{h
 Note the following points about the HTML:
 
 - The first two fields have a [`maxlength`](/en-US/docs/Web/HTML/Reference/Elements/input#maxlength) attribute set, which stops the size of the field from increasing when the character limit is reached.
-- The `<textarea>` will grow in the inline direction until the edge of the {{cssxref("min-width")}} constraint (set in the CSS code below) is reached, then start to add new lines in the block direction to contain subsequent characters.
+- The `<textarea>` will grow in the inline direction until the edge of the `min-width` constraint (set in the CSS code below) is reached, then start to add new lines in the block direction to contain subsequent characters.
 - The `email` input has a placeholder set. This causes the field to render big enough to show the entire placeholder. Once the field is focused and the user starts typing, the field changes size to the `min-width` value. The `text` field, which doesn't have a placeholder, renders initially at `min-width`.
 
 #### CSS
 
-In the CSS, we set `field-sizing: content` on the three form fields, along with a {{cssxref("min-width")}} and {{cssxref("max-width")}} to constrain the input size. It is worth reiterating that, if no minimum width was set on the fields, they would be rendered only as wide as the text cursor.
+In the CSS, we set `field-sizing: content` on the three form fields, along with a `min-width` and `max-width` to constrain the input size. It is worth reiterating that, if no minimum width was set on the fields, they would be rendered only as wide as the text cursor.
 
 We also give the `<label>`s some rudimentary styling so that they sit neatly next to the fields.
 
