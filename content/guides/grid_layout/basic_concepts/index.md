@@ -1,10 +1,10 @@
 ---
 title: Basic concepts of grid layout
-short-title: Basic concepts
-slug: Web/CSS/Guides/Grid_layout/Basic_concepts
-page-type: guide
-sidebar: cssref
+description: CSS grid layout introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. 
+source: mdn
 ---
+
+# {{ $frontmatter.title }}
 
 [CSS grid layout](/guides/Grid_layout) introduces a two-dimensional grid system to CSS. Grids can be used to lay out major page areas or small user interface elements. This guide introduces the CSS grid layout and the terminology that is part of the CSS grid layout specification. The features shown in this overview will then be explained in greater detail in the other guides in this series.
 
@@ -82,7 +82,7 @@ We make the `.wrapper` a grid container using `display: grid;`.
 
 All the direct children are now grid items. In a web browser, you won't see any difference to how these items are displayed before turning them into a grid, as grid has created a single column grid for the items. If you inspect the grid in your browsers developer tools, you may see a small icon next to the value `grid`. Click this and, in most browsers, the grid on this element will be overlaid in the browser window.
 
-![Using the grid highlighter in Firefox DevTools to view a grid](1-grid-inspector.png)
+![Using the grid highlighter in Firefox DevTools to view a grid](/images/1-grid-inspector.png)
 
 As you learn and then work with the CSS grid layout, your browser tools will give you a better idea of what is happening with your grids visually.
 
@@ -92,7 +92,7 @@ If we want to start making this more grid-like we need to add column tracks.
 
 We define rows and columns on our grid with the `grid-template-rows` and `grid-template-columns` properties. These define {{glossary("grid tracks")}}. A _grid track_ is the space between any two adjacent lines on the grid. The image below shows a highlighted track – this is the first-row track in our grid.
 
-![A box with 3 grid items. Above the three items is a solid light green area which is the track.](1_grid_track.png)
+![A box with 3 grid items. Above the three items is a solid light green area which is the track.](/images/1_grid_track.png)
 
 Grid tracks are defined in the [explicit grid](#implicit_and_explicit_grids) by using the `grid-template-columns` and `grid-template-rows` properties or the shorthand `grid` or `grid-template` properties. Tracks are also created in the implicit grid by positioning a grid item outside of the tracks created in the explicit grid.
 
@@ -415,7 +415,7 @@ In this example, we use `minmax()` within the `grid-auto-rows` property value. B
 
 It should be noted that when we define a grid we define the grid tracks, not the lines. Grid then gives us numbered lines to use when positioning items. In our three column, two row grid we have four column lines.
 
-![Diagram showing numbered grid lines.](1_diagram_numbered_grid_lines.png)
+![Diagram showing numbered grid lines.](/images/1_diagram_numbered_grid_lines.png)
 
 Lines are numbered according to the writing mode of the document. In a left-to-right language, line 1 is on the left-hand side of the grid. In a right-to-left language, it is on the right-hand side of the grid. Lines can also be named, which is discussed in the [grid layout using named grid lines](/guides/Grid_layout/Named_grid_lines) guide.
 
@@ -510,13 +510,13 @@ You can omit the end value if the area only spans one track.
 
 A _grid cell_ is the smallest unit on a grid. Conceptually it is like a table cell. As we saw in our earlier examples, once a grid is defined as a parent the child items will lay themselves out in one cell each of the defined grid. In the below image, the first cell of the grid is highlighted.
 
-![The first cell of the grid highlighted](1_grid_cell.png)
+![The first cell of the grid highlighted](/images/1_grid_cell.png)
 
 ## Grid areas
 
 Items can span one or more cells both by row or by column, and this creates a _grid area_. Grid areas must be rectangular – it isn't possible to create an L-shaped area for example. The highlighted grid area spans two row and two column tracks.
 
-![A grid area](1_grid_area.png)
+![A grid area](/images/1_grid_area.png)
 
 ## Gutters
 
@@ -571,7 +571,7 @@ Any space used by gaps will be accounted for before space is assigned to the fle
 
 A grid item can become a grid container. In the following example, we extend the three-column grid with two positioned items seen earlier, adding sub-items to the first grid item. As these nested items are not direct children of the grid they do not participate in grid layout and so display in a normal document flow.
 
-![Nested grid in flow](1_nested_grids_in_flow.png)
+![Nested grid in flow](/images/1_nested_grids_in_flow.png)
 
 ### Nesting without subgrid
 

@@ -1,0 +1,67 @@
+// .vitepress/config.ts
+export default {
+themeConfig: {
+sidebar: [
+{
+text: 'CSS Overview',
+link: '/en-US/docs/Web/CSS'
+},
+{
+text: 'Modules (Guides)',
+collapsed: true,
+items: [
+{ text: 'Anchor positioning', link: '/en-US/docs/Web/CSS/Guides/Anchor_positioning' },
+{ text: 'Animations', link: '/en-US/docs/Web/CSS/Guides/Animations' },
+{ text: 'Backgrounds and borders', link: '/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders' },
+{ text: 'Box model', link: '/en-US/docs/Web/CSS/Guides/Box_model' },
+{ text: 'Cascading and inheritance', link: '/en-US/docs/Web/CSS/Guides/Cascade' },
+{ text: 'Flexbox', link: '/en-US/docs/Web/CSS/Guides/Flexible_box_layout' },
+{ text: 'Grid layout', link: '/en-US/docs/Web/CSS/Guides/Grid_layout' },
+{ text: 'Selectors', link: '/en-US/docs/Web/CSS/Guides/Selectors' },
+{ text: 'Transforms', link: '/en-US/docs/Web/CSS/Guides/Transforms' },
+{ text: 'Transitions', link: '/en-US/docs/Web/CSS/Guides/Transitions' }
+// ... (full list extracted from HTML)
+]
+},
+{
+text: 'How to (Layout Cookbook)',
+collapsed: false,
+items: [
+{ text: 'Media objects', link: '/en-US/docs/Web/CSS/How_to/Layout_cookbook/Media_objects' },
+{ text: 'Column layouts', link: '/en-US/docs/Web/CSS/How_to/Layout_cookbook/Column_layouts' },
+{ text: 'Center an element', link: '/en-US/docs/Web/CSS/How_to/Layout_cookbook/Center_an_element' },
+{ text: 'Sticky footers', link: '/en-US/docs/Web/CSS/How_to/Layout_cookbook/Sticky_footers' },
+{ text: 'Card', link: '/en-US/docs/Web/CSS/How_to/Layout_cookbook/Card' }
+]
+},
+{
+text: 'Tools & Generators',
+items: [
+{ text: 'Border-image generator', link: '/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Border-image_generator' },
+{ text: 'Box-shadow generator', link: '/en-US/docs/Web/CSS/Guides/Backgrounds_and_borders/Box-shadow_generator' },
+{ text: 'Color mixer', link: '/en-US/docs/Web/CSS/Guides/Colors/Color_mixer' }
+]
+},
+{
+text: 'Reference',
+collapsed: true,
+items: [
+{
+text: 'Properties (A-Z)',
+collapsed: true,
+items: [
+{ text: 'accent-color', link: '/en-US/docs/Web/CSS/Reference/Properties/accent-color' },
+{ text: 'align-content', link: '/en-US/docs/Web/CSS/Reference/Properties/align-content' },
+{ text: 'animation', link: '/en-US/docs/Web/CSS/Reference/Properties/animation' },
+{ text: 'aspect-ratio', link: '/en-US/docs/Web/CSS/Reference/Properties/aspect-ratio' },
+{ text: 'background', link: '/en-US/docs/Web/CSS/Reference/Properties/background' }
+// ... (500+ items available in the source file)
+]
+},
+{ text: 'At-rules', link: '/en-US/docs/Web/CSS/At-rules' },
+{ text: 'Functions', link: '/en-US/docs/Web/CSS/CSS_Functions' }
+]
+}
+]
+}
+}

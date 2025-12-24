@@ -150,7 +150,7 @@ The `hsl()` CSS color function was the first hue-based color function to be supp
 The `hsl()` and `hwb()` sRGB color functions are both cylindrical. Hue defines the color as an `angle` on a circular {{glossary("color wheel")}}. The diagram below shows an HSL color cylinder. Saturation is a percentage that defines how far the color is along a scale between completely grayscale and having the maximum possible amount of the given hue.
 As the value of lightness increases, the color transitions from the darkest to the lightest possible color (from black to white).
 
-![HSL color cylinder](640px-hsl_color_solid_cylinder.png)
+![HSL color cylinder](/images/640px-hsl_color_solid_cylinder.png)
 
 Image courtesy of user [SharkD](https://commons.wikimedia.org/wiki/User:SharkD) on [Wikipedia](https://en.wikipedia.org/), distributed under the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) license.
 

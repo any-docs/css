@@ -1,11 +1,11 @@
 ---
 title: Using environment variables
-slug: Web/CSS/Guides/Environment_variables/Using
-page-type: guide
-sidebar: cssref
+source: mdn
 ---
 
-The [CSS environment variables module](/guides/Environment_variables) introduces the concept of environment variables in CSS and defines the `env` function to enable using environment variables. In this guide, we look at [what environment variables are](#what_are_environment_variables), the [environment variables defined by the browser](#browser-defined_environment_variables), and [how to use environment variables](#using_environment_variables_with_env_example) with [the `env()` function](#the_env_function).
+# {{ $frontmatter.title }}
+
+The [CSS environment variables module](/guides/environment_variables) introduces the concept of environment variables in CSS and defines the `env` function to enable using environment variables. In this guide, we look at [what environment variables are](#what_are_environment_variables), the [environment variables defined by the browser](#browser-defined_environment_variables), and [how to use environment variables](#using_environment_variables_with_env_example) with [the `env()` function](#the_env_function).
 
 ## What are environment variables?
 

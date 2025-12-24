@@ -1,5 +1,4 @@
 import {defineConfig, loadEnv} from 'vitepress'
-import {items as HTMLSidebarItems} from "./sidebars/html";
 import {items as CSSSidebarItems} from "./sidebars/css";
 
 // https://vitepress.dev/reference/site-config
@@ -9,8 +8,8 @@ export default ({mode}) => {
   return defineConfig({
     srcDir: "content",
 
-    title: "AnyDocs — Modern & Beautiful All-in-One Developer Documentation",
-    description: "AnyDocs aggregates the world's most important developer documentation into one sleek, unified interface.",
+    title: "AnyDocs CSS",
+    description: "AnyDocs CSS aggregates the world's most important developer documentation into one sleek, unified interface.",
     head: [
       ['link', {rel: 'icon', href: '/images/icon-512.png'}]
     ],
@@ -52,18 +51,8 @@ export default ({mode}) => {
           ]
         },
       ],
-
       sidebar: {
         '/': CSSSidebarItems,
-        '/html/': HTMLSidebarItems,
-        '/php/': [{
-          text: 'PHP',
-          items: [
-            {text: 'Welcome to PHP', link: '/php/introduction'},
-            {text: 'Installation', link: '/php/installation'},
-            {text: 'Basic Syntax', link: '/php/basic-syntax'}
-          ]
-        }]
       },
       socialLinks: [
         { icon: 'github', link: 'https://github.com/any-docs/anydocs' }
@@ -78,6 +67,7 @@ export default ({mode}) => {
         port: env.VITE_CSS_PORT as unknown as number,
         strictPort: true
       }
-    }
+    },
+    cleanUrls: false
   })
 }

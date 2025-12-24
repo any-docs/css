@@ -59,23 +59,23 @@ In this example, we will create an appropriate color palette for a website for a
 
 Use a color picker tool to select a color sample for the base color. For this example, we've selected `#D79C7A`, which is a rusty orange-red color. We can use [Paletton](https://www.paletton.com/) to come up with the other colors for our palette. Upon opening Paletton, we see:
 
-![Right after loading Paletton.](paletton1.png)
+![Right after loading Paletton.](/images/paletton1.png)
 
 Next, we enter our color's hex code (`D79C7A`) into the "Base RGB" box at the bottom-left corner of the tool:
 
-![After entering base color](paletton2.png)
+![After entering base color](/images/paletton2.png)
 
 We now see a monochromatic palette based on the color we picked from the Mars photo. If you need related colors, these are likely good options. To find an accent color that pop alongside the base color, we click the "add complementary" toggle underneath the menu that lets you select the palette type. The default was "Monochromatic". Paletton computes an appropriate accent color; clicking on the accent color in the bottom-right corner tells us that this color is `#508D7C`.
 
-![Now with complementary colors included.](paletton3.png)
+![Now with complementary colors included.](/images/paletton3.png)
 
 If the proposed color doesn't work for your needs, you can change the color scheme. For example, if the proposed greenish-blue color doesn't work, select the Triad color scheme icon, which results in the following:
 
-![Triad color scheme selected](paletton4.png)
+![Triad color scheme selected](/images/paletton4.png)
 
 Click on the greyish blue in the top-right. The color is `#556E8D`. This can be used as an accent color to make things stand out, such as for headlines, tabs highlights, or other indicators on the site:
 
-![Triad color scheme selected](paletton-color-detail.png)
+![Triad color scheme selected](/images/paletton-color-detail.png)
 
 Now we have our base color and our accent. We also have a few complementary shades of both, which can be used to create gradients or as an accent color to indicate focus, such as for link hover states. The colors can be exported in several formats for you to use.
 

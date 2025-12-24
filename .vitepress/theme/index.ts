@@ -1,5 +1,7 @@
 import DefaultTheme from 'vitepress/theme';
 import type { Theme } from 'vitepress';
+import LicenseFooter from './components/LicenseFooter.vue'
+import { h } from 'vue'
 
 // Define your global function
 const InteractiveExample = (name: string) => {
@@ -11,6 +13,12 @@ const glossary = () => {}
 
 export default {
     extends: DefaultTheme,
+    Layout() {
+        return h(DefaultTheme.Layout, null, {
+            // This "slot" places the component right after the markdown content
+            'doc-after': () => h(LicenseFooter)
+        })
+    },
     enhanceApp({ app }) {
         // Register the function globally on the Vue application instance
         app.config.globalProperties.InteractiveExample = InteractiveExample;
