@@ -1,5 +1,5 @@
 import {defineConfig, loadEnv} from 'vitepress'
-import {items as CSSSidebarItems} from "./sidebars/css";
+import {items as sidebarItems} from "./sidebars";
 
 // https://vitepress.dev/reference/site-config
 export default ({mode}) => {
@@ -14,7 +14,6 @@ export default ({mode}) => {
       ['link', {rel: 'icon', href: '/images/icon-512.png'}]
     ],
     themeConfig: {
-      siteTitle: 'AnyDocs',
       logo: '/images/icon-512.png',
       logoLink: env.VITE_MAIN_URL,
       search: {
@@ -52,7 +51,7 @@ export default ({mode}) => {
         },
       ],
       sidebar: {
-        '/': CSSSidebarItems,
+        '/': sidebarItems,
       },
       socialLinks: [
         { icon: 'github', link: 'https://github.com/any-docs/anydocs' }

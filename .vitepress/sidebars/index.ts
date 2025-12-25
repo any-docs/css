@@ -1,5 +1,5 @@
 export const items = [{
-    text: 'CSS',
+    text: 'Introduction',
     link: '/',
     items: [
         {
