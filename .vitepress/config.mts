@@ -29,23 +29,23 @@ export default ({mode}) => {
           items: [
             {
               text: 'Javascript',
-              link: '/javascript/index',
+              link: env.VITE_JAVASCRIPT_URL,
             },
             {
               text: 'HTML',
-              link: '/html/index',
+              link: env.VITE_HTML_URL,
             },
             {
               text: 'PHP',
-              link: '/php/introduction',
+              link: env.VITE_PHP_URL,
             },
             {
               text: 'Rust',
-              link: '/rust'
+              link: env.VITE_RUST_URL
             },
             {
               text: 'Zig',
-              link: '/zig'
+              link: env.VITE_ZIG_URL
             }
           ]
         },
